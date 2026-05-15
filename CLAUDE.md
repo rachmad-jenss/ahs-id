@@ -11,8 +11,14 @@ Jangan deviate dari spec tanpa konfirmasi eksplisit dari maintainer.
 
 ## Current Phase
 
-**Phase 1: MVP — "One Chain Works"**
-Exit criteria: Satu AHSP calculation chain (3.2.1 Lapis Pondasi Agregat Kelas A) menghasilkan HSP yang benar, tervalidasi terhadap kalkulasi manual independen (ΔRp ≤ 1).
+**Phase 1: MVP — "One Chain Works"** ✅ COMPLETE (2026-05-16)
+- 35 tests passing (28 unit + 7 golden)
+- AHSP 3.2.1 + 3.1.1 full chain verified
+- Distance sensitivity, Fpr berat, volume conversion all tested
+
+**Next: Phase 2 — "Usable by Others"**
+Entry requirement: Phase 1 complete ✅
+Exit criteria: External developer can `npm install`, calculate HSP for any Bina Marga item, and export to Excel.
 
 Lihat `PROGRESS.md` untuk status terkini setiap task.
 
@@ -28,26 +34,19 @@ tests/golden/          ← Cross-engine golden test fixtures
 docs/                  ← Architecture spec, legal, calculation reference
 ```
 
-## Phase 1 Scope (STRICT — do NOT exceed)
+## Phase 2 Scope
 
-### Included:
-- `@ahs-id/core`: createCalculator(), hsd-peralatan.ts (ownership only), produktivitas/siklus.ts, produktivitas/lintasan.ts, konversi-volume.ts, koefisien.ts, hsp.ts, margin.ts, validate-bundle.ts, types/index.ts
-- `@ahs-id/pupr-2023` (PARTIAL): tenaga-kerja.json (L.01-L.06), peralatan-master.json (E.01, E.08, E.11, E.19, E.22, E.25), bahan-master.json (items for test AHSP only), faktor-konversi.json, ahsp/bina-marga/divisi-3/3.2.1 + 3.1.1
-- `@ahs-id/hsd-kaltim-2025`: 1 region HSD
-- tests/golden/: minimum 5 fixtures
-- README.md, CONTRIBUTING.md, LICENSE (MIT), LEGAL.md
+### New in Phase 2:
+- `@ahs-id/core`: produktivitas/throughput.ts (AMP, batching plant), hsd-peralatan.ts → add mode sewa, sub-ahsp resolver (nesting + circular dependency check), mode estimasi-kasar (koef_referensi with warnings), exporter/excel.ts (RAB format), validate-refs.ts (cross-bundle integrity)
+- `@ahs-id/pupr-2023` (Bina Marga COMPLETE): ahsp/bina-marga/ → all divisi (1-7+)
+- `@ahs-id/hsd-[region]-[year]` (≥3 regions)
+- `apps/cli/` (basic commands: calc-hsp, export-rab, validate)
+- Published to npm (first public release)
+- Golden tests: ≥10 fixtures
 
-### NOT included in Phase 1 (hard boundary):
-- ✗ CLI tool
-- ✗ Python bindings
-- ✗ Excel/PDF exporter
-- ✗ Mode sewa (rental)
-- ✗ sub_ahsp nesting
-- ✗ Mode estimasi-kasar
-- ✗ Throughput productivity (AMP)
-- ✗ Mob/demob module
-- ✗ CDN/API fetching
-- ✗ Demo site
+### Known technical debt from Phase 1:
+- Equipment E.11 (Wheel Loader), E.19 (Motor Grader), E.25 (Water Tanker) use placeholder specs — need research
+- JSON Schema validation at build time (deferred from Phase 1)
 
 ## Key Technical Constraints
 

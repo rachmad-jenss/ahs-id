@@ -96,10 +96,64 @@
 | Audit trail in output | ✅ | |
 | All golden tests passing | ✅ | 7 golden + 28 unit = 35 tests |
 
-## Test Summary
+## Phase 1 Test Summary
 - **Unit tests**: 28 passing (5 test files in packages/core)
 - **Golden tests**: 7 passing (1 test file in tests/golden)
 - **Total**: 35 tests passing
+
+---
+
+## Phase 2: Functional Library — "Usable by Others"
+
+> Entry: Phase 1 complete ✅. Exit: External dev can npm install, calc HSP for any Bina Marga item, export to Excel.
+
+### Milestone 8: Technical Debt & Data Quality
+| Task | Status | Notes |
+|------|--------|-------|
+| Research E.11 Wheel Loader actual specs | ⬜ | Replace placeholder |
+| Research E.19 Motor Grader actual specs | ⬜ | Replace placeholder |
+| Research E.25 Water Tanker actual specs | ⬜ | Replace placeholder |
+| JSON Schema validation at build time | ⬜ | Deferred from Phase 1 |
+
+### Milestone 9: Engine Extensions
+| Task | Status | Notes |
+|------|--------|-------|
+| produktivitas/throughput.ts (AMP, batching plant) | ⬜ | |
+| hsd-peralatan.ts → add mode sewa | ⬜ | |
+| sub-ahsp resolver (nesting + circular dep check) | ⬜ | |
+| Mode estimasi-kasar (koef_referensi + warnings) | ⬜ | |
+| validate-refs.ts (cross-bundle integrity) | ⬜ | |
+
+### Milestone 10: Data Expansion (Bina Marga Complete)
+| Task | Status | Notes |
+|------|--------|-------|
+| ahsp/bina-marga/divisi-1 (all items) | ⬜ | |
+| ahsp/bina-marga/divisi-2 (all items) | ⬜ | |
+| ahsp/bina-marga/divisi-3 (remaining items) | ⬜ | 3.2.1 + 3.1.1 done |
+| ahsp/bina-marga/divisi-4 (all items) | ⬜ | |
+| ahsp/bina-marga/divisi-5 (all items) | ⬜ | |
+| ahsp/bina-marga/divisi-6 (all items) | ⬜ | |
+| ahsp/bina-marga/divisi-7+ (all items) | ⬜ | |
+| Additional peralatan-master entries | ⬜ | |
+| Additional bahan-master entries | ⬜ | |
+| HSD region 2 | ⬜ | |
+| HSD region 3 | ⬜ | |
+
+### Milestone 11: Export & CLI
+| Task | Status | Notes |
+|------|--------|-------|
+| exporter/excel.ts (RAB format) | ⬜ | |
+| apps/cli/ scaffold | ⬜ | |
+| CLI: calc-hsp command | ⬜ | |
+| CLI: export-rab command | ⬜ | |
+| CLI: validate command | ⬜ | |
+
+### Milestone 12: Publish & Tests
+| Task | Status | Notes |
+|------|--------|-------|
+| Golden tests ≥10 fixtures | ⬜ | Currently 7 |
+| npm publish setup | ⬜ | |
+| First public release | ⬜ | |
 
 ## Legend
 - ⬜ Not started
