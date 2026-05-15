@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahs-id.dev/schemas/hsd-regional.schema.json",
+  "title": "HsdRegional",
+  "type": "object",
+  "required": ["version", "region", "tenaga_kerja", "bahan", "peralatan_sewa", "bahan_bakar"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string" },
+    "region": {
+      "type": "object",
+      "required": ["provinsi", "kode_provinsi", "kabupaten", "tahun_berlaku", "kuartal", "dasar_hukum", "tanggal_terbit"],
+      "additionalProperties": false,
+      "properties": {
+        "provinsi": { "type": "string", "minLength": 1 },
+        "kode_provinsi": { "type": "string", "pattern": "^\\d{2}$" },
+        "kabupaten": { "type": ["string", "null"] },
+        "tahun_berlaku": { "type": "integer", "minimum": 2020, "maximum": 2040 },
+        "kuartal": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "dasar_hukum": { "type": "string" },
+        "tanggal_terbit": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+      }
+    },
+    "tenaga_kerja": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ref", "harga_rp", "satuan", "sumber_data"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "pattern": "^L\\." },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 },
+          "satuan": { "const": "OH" },
+          "sumber_data": { "type": "string" }
+        }
+      }
+    },
+    "bahan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "nama", "harga_rp", "satuan", "sumber_data"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "pattern": "^M\\." },
+          "nama": { "type": "string", "minLength": 1 },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 },
+          "satuan": { "type": "string", "minLength": 1 },
+          "sumber_data": { "type": "string" }
+        }
+      }
+    },
+    "peralatan_sewa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "nama", "harga_rp", "satuan", "sumber_data"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "pattern": "^E\\." },
+          "nama": { "type": "string", "minLength": 1 },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 },
+          "satuan": { "const": "jam" },
+          "sumber_data": { "type": "string" }
+        }
+      }
+    },
+    "bahan_bakar": {
+      "type": "object",
+      "required": ["solar_industri_rp_per_liter", "oli_mesin_rp_per_liter", "oli_hidrolik_rp_per_liter", "grease_rp_per_kg"],
+      "additionalProperties": false,
+      "properties": {
+        "solar_industri_rp_per_liter": { "type": "number", "exclusiveMinimum": 0 },
+        "oli_mesin_rp_per_liter": { "type": "number", "exclusiveMinimum": 0 },
+        "oli_hidrolik_rp_per_liter": { "type": "number", "exclusiveMinimum": 0 },
+        "grease_rp_per_kg": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    }
+  }
+}

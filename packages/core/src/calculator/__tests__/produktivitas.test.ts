@@ -6,6 +6,7 @@ import {
   produktivitasWaterTanker,
   produktivitasVibroRoller,
   produktivitasMotorGrader,
+  produktivitasThroughput,
 } from '../produktivitas/index.js';
 
 describe('siklus: Dump Truck', () => {
@@ -135,5 +136,31 @@ describe('lintasan: Motor Grader', () => {
 
     expect(result.produktivitas).toBeCloseTo(Q, 4);
     expect(result.satuan).toBe('m2/jam');
+  });
+});
+
+describe('produktivitasThroughput', () => {
+  it('calculates AMP productivity as rated capacity × efficiency', () => {
+    const result = produktivitasThroughput({
+      kapasitas_rated: 60,
+      satuan_kapasitas: 'ton/jam',
+      faktor_efisiensi: 0.83,
+    });
+
+    expect(result.produktivitas).toBeCloseTo(60 * 0.83, 4);
+    expect(result.satuan).toBe('ton/jam');
+    expect(result.audit).toHaveLength(1);
+    expect(result.audit[0]!.step).toBe('produktivitas_throughput');
+  });
+
+  it('works with m3/jam capacity', () => {
+    const result = produktivitasThroughput({
+      kapasitas_rated: 30,
+      satuan_kapasitas: 'm3/jam',
+      faktor_efisiensi: 0.75,
+    });
+
+    expect(result.produktivitas).toBeCloseTo(30 * 0.75, 4);
+    expect(result.satuan).toBe('m3/jam');
   });
 });

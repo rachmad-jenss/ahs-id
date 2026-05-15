@@ -1,0 +1,51 @@
+{
+  "version": "2025.1.0",
+  "region": {
+    "provinsi": "Jawa Barat",
+    "kode_provinsi": "32",
+    "kabupaten": null,
+    "tahun_berlaku": 2025,
+    "kuartal": 1,
+    "dasar_hukum": "SK Gubernur Jabar No. XXX/2025",
+    "tanggal_terbit": "2025-01-10"
+  },
+  "tenaga_kerja": [
+    { "ref": "L.01",  "harga_rp": 115000, "satuan": "OH", "sumber_data": "UMK Jabar 2025" },
+    { "ref": "L.02a", "harga_rp": 145000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.02b", "harga_rp": 145000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.02c", "harga_rp": 150000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.03",  "harga_rp": 165000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.04",  "harga_rp": 185000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.05",  "harga_rp": 170000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.06",  "harga_rp": 135000, "satuan": "OH", "sumber_data": "Survei Dinas PU" }
+  ],
+  "bahan": [
+    { "ref": "M.01",   "nama": "Semen Portland 50 kg", "harga_rp": 68000,  "satuan": "zak",  "sumber_data": "Survei distributor" },
+    { "ref": "M.02",   "nama": "Pasir Pasang",         "harga_rp": 250000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.03",   "nama": "Pasir Beton",          "harga_rp": 310000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.04",   "nama": "Kerikil/Agregat Kasar","harga_rp": 340000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.a", "nama": "Agregat Kelas A",      "harga_rp": 385000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.b", "nama": "Agregat Kelas B",      "harga_rp": 310000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.s", "nama": "Agregat Kelas S",      "harga_rp": 435000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.50",   "nama": "Besi Beton Polos",     "harga_rp": 13500,  "satuan": "kg",   "sumber_data": "Harga pasar" },
+    { "ref": "M.51",   "nama": "Besi Beton Ulir",      "harga_rp": 14200,  "satuan": "kg",   "sumber_data": "Harga pasar" },
+    { "ref": "M.80",   "nama": "Aspal AC-60/70",       "harga_rp": 8500,   "satuan": "kg",   "sumber_data": "Pertamina" }
+  ],
+  "peralatan_sewa": [
+    { "ref": "E.01", "nama": "Excavator PC-200",    "harga_rp": 400000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.02", "nama": "Bulldozer D6R",       "harga_rp": 580000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.08", "nama": "Dump Truck 12T",      "harga_rp": 250000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.11", "nama": "Wheel Loader 1.5 m3", "harga_rp": 320000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.14", "nama": "Compressor 4000L/m",  "harga_rp": 155000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.15", "nama": "Jack Hammer",          "harga_rp": 75000,  "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.19", "nama": "Motor Grader >100HP", "harga_rp": 475000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.22", "nama": "Vibro Roller 8-10T",  "harga_rp": 350000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.25", "nama": "Water Tanker 4000L",  "harga_rp": 245000, "satuan": "jam", "sumber_data": "Survei rental" }
+  ],
+  "bahan_bakar": {
+    "solar_industri_rp_per_liter": 18500,
+    "oli_mesin_rp_per_liter": 62000,
+    "oli_hidrolik_rp_per_liter": 68000,
+    "grease_rp_per_kg": 42000
+  }
+}

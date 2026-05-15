@@ -6,6 +6,18 @@
       "nama": "Agregat Kelas A (CBR Min 90%)",
       "satuan": "m3",
       "kategori": "agregat"
+    },
+    {
+      "kode": "M.09.b",
+      "nama": "Agregat Kelas B (CBR Min 60%)",
+      "satuan": "m3",
+      "kategori": "agregat"
+    },
+    {
+      "kode": "M.09.s",
+      "nama": "Agregat Kelas S (Stabilisasi Semen)",
+      "satuan": "m3",
+      "kategori": "agregat"
     }
   ]
 }

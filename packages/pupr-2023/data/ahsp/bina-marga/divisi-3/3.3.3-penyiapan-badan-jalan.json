@@ -1,0 +1,149 @@
+{
+  "kode_ahsp": "3.3.3",
+  "nama": "Penyiapan Badan Jalan",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.3",
+  "satuan_bayar": "m2",
+  "volume_state_bayar": null,
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.040,
+      "koef_sumber": "tabel",
+      "catatan": null
+    },
+    {
+      "ref": "L.04",
+      "koefisien": 0.005,
+      "koef_sumber": "tabel",
+      "catatan": null
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.19",
+      "nama": "Motor Grader >100 HP",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["lebar_hamparan_m", "jumlah_lintasan"],
+      "koef_referensi": {
+        "value": 0.0010,
+        "asumsi": {
+          "fa": 0.83,
+          "lebar_hamparan_m": 2.4,
+          "jumlah_lintasan": 6,
+          "kecepatan_km_jam": 3.0
+        }
+      },
+      "catatan": "Perataan permukaan badan jalan"
+    },
+    {
+      "ref": "E.22",
+      "nama": "Vibratory Roller 8-10 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["jumlah_passing"],
+      "koef_referensi": {
+        "value": 0.0008,
+        "asumsi": {
+          "fa": 0.83,
+          "tebal_hamparan_m": 0.15,
+          "jumlah_passing": 6,
+          "kecepatan_km_jam": 2.5
+        }
+      },
+      "catatan": "Pemadatan badan jalan setelah perataan"
+    },
+    {
+      "ref": "E.25",
+      "nama": "Water Tank Truck 4000L",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["jarak_sumber_air_km"],
+      "koef_referensi": null,
+      "catatan": "Penyiraman permukaan badan jalan"
+    }
+  ],
+  "variabel": {
+    "jarak_sumber_air_km": {
+      "label": "Jarak Sumber Air ke Lokasi",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 100
+    },
+    "faktor_efisiensi": {
+      "label": "Faktor Efisiensi Alat (Fa)",
+      "tipe": "number",
+      "default": 0.83,
+      "min": 0.60,
+      "max": 0.90
+    },
+    "kondisi_operasi": {
+      "label": "Kondisi Operasi (untuk Fpr)",
+      "tipe": "enum",
+      "options": ["normal", "berat", "sangat_berat"],
+      "default": "normal"
+    },
+    "jumlah_passing": {
+      "label": "Jumlah Passing Roller",
+      "tipe": "number",
+      "default": 6,
+      "min": 4,
+      "max": 12
+    },
+    "lebar_hamparan_m": {
+      "label": "Lebar Badan Jalan",
+      "satuan": "m",
+      "tipe": "number",
+      "default": 2.4,
+      "min": 1.0,
+      "max": 10.0
+    },
+    "jumlah_lintasan": {
+      "label": "Jumlah Lintasan Grader",
+      "tipe": "number",
+      "default": 6,
+      "min": 2,
+      "max": 12
+    }
+  },
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
+    "halaman": "III-35",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Satuan bayar dalam m2 (area, bukan volume)",
+    "Penyiapan badan jalan sebelum pemasangan lapis pondasi",
+    "Meliputi perataan, pemadatan, dan penyiraman permukaan"
+  ]
+}

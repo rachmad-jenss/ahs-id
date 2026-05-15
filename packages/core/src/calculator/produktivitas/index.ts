@@ -15,3 +15,7 @@ export type {
 export { produktivitasVibroRoller, produktivitasMotorGrader } from './lintasan.js';
 
 export type { LintasanVibroRollerParams, LintasanMotorGraderParams } from './lintasan.js';
+
+export { produktivitasThroughput } from './throughput.js';
+
+export type { ThroughputParams, ThroughputResult } from './throughput.js';

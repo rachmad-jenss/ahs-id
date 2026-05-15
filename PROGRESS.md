@@ -94,12 +94,12 @@
 | Biaya langsung = Σ(koef × HSD) correct | ✅ | |
 | Overhead+profit (15%) applied | ✅ | |
 | Audit trail in output | ✅ | |
-| All golden tests passing | ✅ | 7 golden + 28 unit = 35 tests |
+| All golden tests passing | ✅ | 12 golden + 39 unit = 51 tests |
 
-## Phase 1 Test Summary
-- **Unit tests**: 28 passing (5 test files in packages/core)
-- **Golden tests**: 7 passing (1 test file in tests/golden)
-- **Total**: 35 tests passing
+## Test Summary (Phase 1 + Phase 2)
+- **Unit tests**: 39 passing (6 test files in packages/core)
+- **Golden tests**: 12 passing (1 test file in tests/golden)
+- **Total**: 51 tests passing
 
 ---
 
@@ -110,34 +110,35 @@
 ### Milestone 8: Technical Debt & Data Quality
 | Task | Status | Notes |
 |------|--------|-------|
-| Research E.11 Wheel Loader actual specs | ⬜ | Replace placeholder |
-| Research E.19 Motor Grader actual specs | ⬜ | Replace placeholder |
-| Research E.25 Water Tanker actual specs | ⬜ | Replace placeholder |
-| JSON Schema validation at build time | ⬜ | Deferred from Phase 1 |
+| Research E.11 Wheel Loader actual specs | ✅ | 154HP, 17.0t, Rp1.6B (CAT 950 class) |
+| Research E.19 Motor Grader actual specs | ✅ | 135HP, 13.3t, Rp2.2B, blade 2.5m |
+| Research E.25 Water Tanker actual specs | ✅ | 133HP, 9.5t, Rp550M, 54L/m³ |
+| JSON Schema validation at build time | ✅ | 6 schemas, ajv, runs in `pnpm build` |
 
 ### Milestone 9: Engine Extensions
 | Task | Status | Notes |
 |------|--------|-------|
-| produktivitas/throughput.ts (AMP, batching plant) | ⬜ | |
-| hsd-peralatan.ts → add mode sewa | ⬜ | |
-| sub-ahsp resolver (nesting + circular dep check) | ⬜ | |
-| Mode estimasi-kasar (koef_referensi + warnings) | ⬜ | |
-| validate-refs.ts (cross-bundle integrity) | ⬜ | |
+| produktivitas/throughput.ts (AMP, batching plant) | ✅ | Q=Kapasitas×Fa, hsp.ts integrated, 2 tests |
+| hsd-peralatan.ts → add mode sewa | ✅ | hitungHsdPeralatanSewa + hitungHsdPeralatanAny dispatcher, 4 tests |
+| sub-ahsp resolver (nesting + circular dep check) | ✅ | resolveSubAhsp + hsp.ts integration, 5 tests |
+| Mode estimasi-kasar (koef_referensi + warnings) | ✅ | CalculatorConfig.mode, penuh errors, kasar fallback, 2 golden tests |
+| validate-refs.ts (cross-bundle integrity) | ✅ | Sub-AHSP refs, namespace L./E./M., FK coverage — merged into validate-bundle.ts |
 
 ### Milestone 10: Data Expansion (Bina Marga Complete)
 | Task | Status | Notes |
 |------|--------|-------|
+| ahsp/bina-marga/divisi-3 (all 12 items) | ✅ | 3.1.1-3.1.6, 3.2.1-3.2.3, 3.3.1-3.3.3 |
+| Additional peralatan-master entries | ✅ | E.02 Bulldozer, E.14 Compressor, E.15 Jack Hammer (9 total) |
+| Additional bahan-master entries | ✅ | M.09.b Agregat Kelas B, M.09.s Agregat Kelas S (3 total) |
+| Additional faktor-konversi entries | ✅ | agregat_kelas_b, agregat_kelas_s, batu (8 total) |
 | ahsp/bina-marga/divisi-1 (all items) | ⬜ | |
 | ahsp/bina-marga/divisi-2 (all items) | ⬜ | |
-| ahsp/bina-marga/divisi-3 (remaining items) | ⬜ | 3.2.1 + 3.1.1 done |
 | ahsp/bina-marga/divisi-4 (all items) | ⬜ | |
 | ahsp/bina-marga/divisi-5 (all items) | ⬜ | |
 | ahsp/bina-marga/divisi-6 (all items) | ⬜ | |
 | ahsp/bina-marga/divisi-7+ (all items) | ⬜ | |
-| Additional peralatan-master entries | ⬜ | |
-| Additional bahan-master entries | ⬜ | |
-| HSD region 2 | ⬜ | |
-| HSD region 3 | ⬜ | |
+| HSD region 2 (Jawa Barat) | ✅ | hsd-jabar-2025, lowest prices (Java accessibility) |
+| HSD region 3 (Papua) | ✅ | hsd-papua-2025, highest prices (remote logistics) |
 
 ### Milestone 11: Export & CLI
 | Task | Status | Notes |
@@ -151,7 +152,7 @@
 ### Milestone 12: Publish & Tests
 | Task | Status | Notes |
 |------|--------|-------|
-| Golden tests ≥10 fixtures | ⬜ | Currently 7 |
+| Golden tests ≥10 fixtures | ✅ | 12 golden tests (3.1.5 jack hammer, 3.3.1 timbunan, cross-region) |
 | npm publish setup | ⬜ | |
 | First public release | ⬜ | |
 

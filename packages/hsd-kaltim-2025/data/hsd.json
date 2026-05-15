@@ -25,11 +25,16 @@
     { "ref": "M.03",   "nama": "Pasir Beton",          "harga_rp": 350000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
     { "ref": "M.04",   "nama": "Kerikil/Agregat Kasar","harga_rp": 375000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
     { "ref": "M.09.a", "nama": "Agregat Kelas A",      "harga_rp": 425000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.b", "nama": "Agregat Kelas B",      "harga_rp": 350000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.s", "nama": "Agregat Kelas S",      "harga_rp": 475000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
     { "ref": "M.50",   "nama": "Besi Beton Polos",     "harga_rp": 14500,  "satuan": "kg",   "sumber_data": "Harga pasar" },
     { "ref": "M.51",   "nama": "Besi Beton Ulir",      "harga_rp": 15200,  "satuan": "kg",   "sumber_data": "Harga pasar" },
     { "ref": "M.80",   "nama": "Aspal AC-60/70",       "harga_rp": 8750,   "satuan": "kg",   "sumber_data": "Pertamina" }
   ],
   "peralatan_sewa": [
+    { "ref": "E.02", "nama": "Bulldozer D6R",       "harga_rp": 650000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.14", "nama": "Compressor 4000L/m",  "harga_rp": 175000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.15", "nama": "Jack Hammer",          "harga_rp": 85000,  "satuan": "jam", "sumber_data": "Survei rental" },
     { "ref": "E.01", "nama": "Excavator PC-200",    "harga_rp": 450000, "satuan": "jam", "sumber_data": "Survei rental" },
     { "ref": "E.08", "nama": "Dump Truck 12T",      "harga_rp": 285000, "satuan": "jam", "sumber_data": "Survei rental" },
     { "ref": "E.11", "nama": "Wheel Loader 1.5 m3", "harga_rp": 350000, "satuan": "jam", "sumber_data": "Survei rental" },

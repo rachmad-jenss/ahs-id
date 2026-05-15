@@ -1,0 +1,28 @@
+{
+  "name": "@ahs-id/hsd-jabar-2025",
+  "version": "0.0.1",
+  "description": "HSD regional price data — Jawa Barat Q1 2025",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "data"],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@ahs-id/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "license": "MIT"
+}

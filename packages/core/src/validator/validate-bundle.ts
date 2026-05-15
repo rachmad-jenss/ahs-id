@@ -65,6 +65,49 @@ export function validateBundle(
     if (!item.provenance.halaman) {
       errors.push(warn(`${prefix}.provenance`, 'Missing halaman reference', 'PROVENANCE_INCOMPLETE'));
     }
+
+    // Sub-AHSP ref validity
+    const ahspCodes = new Set(bundle.ahsp_items.map((a) => a.kode_ahsp));
+    for (const sub of item.sub_ahsp) {
+      if (!ahspCodes.has(sub.ref_ahsp)) {
+        errors.push(err(`${prefix}.sub_ahsp`, `Ref AHSP "${sub.ref_ahsp}" not found in bundle`, 'SUB_AHSP_REF_MISSING'));
+      }
+      if (sub.koefisien <= 0) {
+        errors.push(err(`${prefix}.sub_ahsp[${sub.ref_ahsp}].koefisien`, `Coefficient must be > 0, got ${sub.koefisien}`, 'RANGE_KOEF'));
+      }
+    }
+
+    // Namespace pattern validation
+    for (const tk of item.tenaga_kerja) {
+      if (!tk.ref.startsWith('L.')) {
+        errors.push(err(`${prefix}.tenaga_kerja[${tk.ref}]`, `Ref must start with "L.", got "${tk.ref}"`, 'NAMESPACE_INVALID'));
+      }
+    }
+    for (const bahan of item.bahan) {
+      if (!bahan.ref.startsWith('M.')) {
+        errors.push(err(`${prefix}.bahan[${bahan.ref}]`, `Ref must start with "M.", got "${bahan.ref}"`, 'NAMESPACE_INVALID'));
+      }
+    }
+    for (const alat of item.peralatan) {
+      if (!alat.ref.startsWith('E.')) {
+        errors.push(err(`${prefix}.peralatan[${alat.ref}]`, `Ref must start with "E.", got "${alat.ref}"`, 'NAMESPACE_INVALID'));
+      }
+    }
+  }
+
+  // Faktor konversi coverage: materials used in volume conversion should have factors
+  const fkMaterials = new Set(bundle.faktor_konversi.items.map((f) => f.material));
+  for (const item of bundle.ahsp_items) {
+    const hasVolumeConversion = item.peralatan.some(
+      (e) => e.volume_state !== null && e.volume_state !== item.volume_state_bayar,
+    );
+    if (hasVolumeConversion && fkMaterials.size === 0) {
+      errors.push(warn(
+        `ahsp[${item.kode_ahsp}]`,
+        'Item requires volume conversion but no faktor_konversi entries exist',
+        'FK_COVERAGE_MISSING',
+      ));
+    }
   }
 
   for (const fk of bundle.faktor_konversi.items) {

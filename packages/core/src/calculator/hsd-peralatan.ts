@@ -3,6 +3,7 @@ import type {
   HsdRegional,
   KondisiOperasi,
   AuditEntry,
+  ModeBiaya,
 } from '../types/index.js';
 
 export interface HsdPeralatanBreakdown {
@@ -177,6 +178,65 @@ function getFpr(
       }
       return fpr.sangat_berat;
   }
+}
+
+export interface HsdPeralatanSewaResult {
+  readonly hsd_rp_per_jam: number;
+  readonly mode: 'sewa';
+  readonly audit: readonly AuditEntry[];
+}
+
+/**
+ * Look up HSD Peralatan rental rate from regional HSD data.
+ */
+export function hitungHsdPeralatanSewa(
+  ref: string,
+  hsd: HsdRegional,
+): HsdPeralatanSewaResult {
+  const entry = hsd.peralatan_sewa.find((s) => s.ref === ref);
+  if (!entry) {
+    throw new Error(`HSD peralatan sewa "${ref}" not found in regional data`);
+  }
+
+  const audit: AuditEntry[] = [
+    {
+      step: 'hsd_peralatan_sewa',
+      detail: `${ref} (${entry.nama}): sewa = ${entry.harga_rp} Rp/jam`,
+      value: entry.harga_rp,
+      unit: 'Rp/jam',
+    },
+  ];
+
+  return {
+    hsd_rp_per_jam: entry.harga_rp,
+    mode: 'sewa',
+    audit,
+  };
+}
+
+export type HsdPeralatanAnyResult =
+  | (HsdPeralatanResult & { readonly mode: 'ownership' })
+  | HsdPeralatanSewaResult;
+
+export interface HsdPeralatanDispatchConfig extends HsdPeralatanConfig {
+  readonly mode_biaya: ModeBiaya;
+}
+
+/**
+ * Dispatch to ownership or sewa calculation based on mode_biaya.
+ */
+export function hitungHsdPeralatanAny(
+  ref: string,
+  alat: PeralatanMaster,
+  hsd: HsdRegional,
+  config: HsdPeralatanDispatchConfig,
+): HsdPeralatanAnyResult {
+  if (config.mode_biaya === 'sewa') {
+    return hitungHsdPeralatanSewa(ref, hsd);
+  }
+
+  const result = hitungHsdPeralatan(alat, hsd, config);
+  return { ...result, mode: 'ownership' };
 }
 
 function findTenagaKerja(hsd: HsdRegional, ref: string): number {

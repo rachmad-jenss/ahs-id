@@ -4,7 +4,8 @@
   "private": true,
   "description": "Open source AHSP calculation engine & data bundles for Indonesian construction cost estimation",
   "scripts": {
-    "build": "turbo run build",
+    "validate-data": "node scripts/validate-data.mjs",
+    "build": "node scripts/validate-data.mjs && turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
+    "ajv": "^8.20.0",
     "eslint": "^9.0.0",
     "prettier": "^3.3.0",
     "turbo": "^2.0.0",

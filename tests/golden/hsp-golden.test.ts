@@ -2,6 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { createCalculator, validateBundle } from '@ahs-id/core';
 import { bundle } from '@ahs-id/pupr-2023';
 import { hsd } from '@ahs-id/hsd-kaltim-2025';
+import { hsd as hsdJabar } from '@ahs-id/hsd-jabar-2025';
+import { hsd as hsdPapua } from '@ahs-id/hsd-papua-2025';
 
 describe('validateBundle', () => {
   it('pupr-2023 + kaltim HSD passes validation', () => {
@@ -167,6 +169,118 @@ describe('HSP golden tests', () => {
       const dtCoef10 = result10.groups[2]!.components.find((c) => c.ref === 'E.08')!.coefficient;
       const dtCoef50 = result50.groups[2]!.components.find((c) => c.ref === 'E.08')!.coefficient;
       expect(dtCoef50).toBeGreaterThan(dtCoef10 * 2);
+    });
+  });
+
+  describe('mode estimasi-kasar', () => {
+    const calcKasar = createCalculator(bundle, hsd, { mode: 'estimasi-kasar' });
+
+    it('uses koef_referensi fallback when variabel incomplete', () => {
+      const result = calcKasar.hitungHSP('3.2.1', {
+        jarak_quarry_km: 25,
+        jarak_sumber_air_km: 8,
+        kondisi_jalan: 'sedang',
+        jenis_material: 'agregat_kelas_a',
+        faktor_efisiensi: 0.83,
+        kondisi_operasi: 'normal',
+      });
+
+      expect(result.warnings.length).toBeGreaterThan(0);
+      expect(result.warnings.some((w) => w.includes('estimasi-kasar'))).toBe(true);
+      expect(result.grandTotal).toBeGreaterThan(0);
+    });
+
+    it('penuh mode throws when variabel incomplete', () => {
+      expect(() =>
+        calc.hitungHSP('3.2.1', {
+          jarak_quarry_km: 25,
+          jarak_sumber_air_km: 8,
+          kondisi_jalan: 'sedang',
+          jenis_material: 'agregat_kelas_a',
+          faktor_efisiensi: 0.83,
+          kondisi_operasi: 'normal',
+        }),
+      ).toThrow('missing required variabel_input');
+    });
+  });
+
+  describe('3.1.5 Galian Perkerasan Beraspal (Jack Hammer)', () => {
+    it('produces HSP using compressor + jack hammer equipment', () => {
+      const result = calc.hitungHSP('3.1.5', {
+        jarak_buang_km: 15,
+        kondisi_jalan: 'sedang',
+        jenis_material: 'batu_pecah',
+        faktor_efisiensi: 0.83,
+        kondisi_operasi: 'berat',
+      });
+
+      expect(result.kode_ahsp).toBe('3.1.5');
+      expect(result.satuan_bayar).toBe('m3');
+
+      const equipRefs = result.groups[2]!.components.map((c) => c.ref);
+      expect(equipRefs).toContain('E.14');
+      expect(equipRefs).toContain('E.15');
+      expect(equipRefs).toContain('E.01');
+      expect(equipRefs).toContain('E.08');
+
+      expect(result.groups[1]!.total).toBe(0);
+      expect(result.grandTotal).toBeCloseTo(result.baseTotal * 1.15, 0);
+    });
+  });
+
+  describe('3.3.1 Timbunan Biasa', () => {
+    it('produces HSP with 5 equipment items and no bahan', () => {
+      const result = calc.hitungHSP('3.3.1', {
+        jarak_angkut_km: 20,
+        jarak_sumber_air_km: 5,
+        kondisi_jalan: 'sedang',
+        jenis_material: 'tanah_biasa',
+        faktor_efisiensi: 0.83,
+        kondisi_operasi: 'normal',
+        tebal_hamparan_m: 0.30,
+        jumlah_passing: 8,
+      });
+
+      expect(result.kode_ahsp).toBe('3.3.1');
+      expect(result.satuan_bayar).toBe('m3');
+      expect(result.groups[2]!.components).toHaveLength(5);
+      expect(result.groups[1]!.total).toBe(0);
+
+      const equipRefs = result.groups[2]!.components.map((c) => c.ref);
+      expect(equipRefs).toContain('E.01');
+      expect(equipRefs).toContain('E.08');
+      expect(equipRefs).toContain('E.02');
+      expect(equipRefs).toContain('E.22');
+      expect(equipRefs).toContain('E.25');
+
+      expect(result.grandTotal).toBeCloseTo(result.baseTotal * 1.15, 0);
+    });
+  });
+
+  describe('cross-region HSD price comparison', () => {
+    it('Papua HSP > Kaltim HSP > Jabar HSP for same AHSP item', () => {
+      const vars = {
+        jarak_quarry_km: 25,
+        jarak_sumber_air_km: 8,
+        kondisi_jalan: 'sedang' as const,
+        jenis_material: 'agregat_kelas_a' as const,
+        faktor_efisiensi: 0.83,
+        kondisi_operasi: 'normal' as const,
+        tebal_hamparan_m: 0.20,
+        jumlah_passing: 6,
+        lebar_hamparan_m: 3.0,
+        jumlah_lintasan: 6,
+      };
+
+      const calcJabar = createCalculator(bundle, hsdJabar);
+      const calcPapua = createCalculator(bundle, hsdPapua);
+
+      const resultJabar = calcJabar.hitungHSP('3.2.1', vars);
+      const resultKaltim = calc.hitungHSP('3.2.1', vars);
+      const resultPapua = calcPapua.hitungHSP('3.2.1', vars);
+
+      expect(resultPapua.grandTotal).toBeGreaterThan(resultKaltim.grandTotal);
+      expect(resultKaltim.grandTotal).toBeGreaterThan(resultJabar.grandTotal);
     });
   });
 

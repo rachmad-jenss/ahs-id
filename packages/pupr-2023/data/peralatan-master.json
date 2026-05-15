@@ -2,6 +2,111 @@
   "version": "1.0.0",
   "items": [
     {
+      "kode": "E.02",
+      "nama": "Bulldozer",
+      "tipe_default": "D6R",
+      "daya_hp": 175,
+      "berat_operasi_ton": 18.5,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 2800000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.02,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.10,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "kapasitas_rated": 100,
+        "satuan_kapasitas": "m3/jam",
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.14",
+      "nama": "Compressor",
+      "tipe_default": "4000 L/min",
+      "daya_hp": 60,
+      "berat_operasi_ton": 1.5,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 150000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.02,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.03,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.10,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "kapasitas_rated": 4,
+        "satuan_kapasitas": "m3/jam",
+        "volume_state_output": null
+      }
+    },
+    {
+      "kode": "E.15",
+      "nama": "Jack Hammer / Breaker",
+      "tipe_default": "Hand-held",
+      "daya_hp": 0,
+      "berat_operasi_ton": 0.03,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 25000000,
+        "umur_ekonomis_tahun": 3,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.3811,
+        "asuransi_pajak_pct": 0.02,
+        "bahan_bakar_ch": 0,
+        "pelumas": {
+          "mesin":    { "cp": 0, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0, "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.10,
+        "perbaikan_pct": 0.15,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.0,
+          "sangat_berat": 1.0,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "kapasitas_rated": 3,
+        "satuan_kapasitas": "m3/jam",
+        "volume_state_output": "bank"
+      }
+    },
+    {
       "kode": "E.01",
       "nama": "Excavator",
       "tipe_default": "PC-200",
@@ -111,11 +216,11 @@
       "nama": "Wheel Loader",
       "tipe_default": "WL 1.5 m3",
       "kapasitas_bucket_m3": 1.5,
-      "daya_hp": 120,
-      "berat_operasi_ton": 12.0,
+      "daya_hp": 154,
+      "berat_operasi_ton": 17.0,
       "tipe_produksi": "siklus",
       "hsd_params": {
-        "harga_pokok_rp": 1200000000,
+        "harga_pokok_rp": 1600000000,
         "umur_ekonomis_tahun": 5,
         "jam_kerja_per_tahun": 2000,
         "nilai_sisa_pct": 0.10,
@@ -124,11 +229,11 @@
         "bahan_bakar_ch": 0.175,
         "pelumas": {
           "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
-          "hidrolik": { "cp": 0.0012, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
           "grease":   { "cp": 0.08,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
         },
         "perawatan_pct": 0.065,
-        "perbaikan_pct": 0.10,
+        "perbaikan_pct": 0.125,
         "fpr": {
           "normal": 1.0,
           "berat": 1.2,
@@ -150,11 +255,11 @@
       "kode": "E.19",
       "nama": "Motor Grader",
       "tipe_default": "MG >100 HP",
-      "daya_hp": 125,
-      "berat_operasi_ton": 13.0,
+      "daya_hp": 135,
+      "berat_operasi_ton": 13.3,
       "tipe_produksi": "lintasan",
       "hsd_params": {
-        "harga_pokok_rp": 1600000000,
+        "harga_pokok_rp": 2200000000,
         "umur_ekonomis_tahun": 5,
         "jam_kerja_per_tahun": 2000,
         "nilai_sisa_pct": 0.10,
@@ -163,7 +268,7 @@
         "bahan_bakar_ch": 0.175,
         "pelumas": {
           "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
-          "hidrolik": { "cp": 0.0010, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0012, "satuan": "liter/HP/jam" },
           "grease":   { "cp": 0.08,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
         },
         "perawatan_pct": 0.065,
@@ -180,7 +285,7 @@
           "agregat": 3.0,
           "tanah": 2.5
         },
-        "lebar_efektif_m": 2.4,
+        "lebar_efektif_m": 2.5,
         "volume_state_output": null
       }
     },
@@ -234,11 +339,11 @@
       "kode": "E.25",
       "nama": "Water Tank Truck",
       "tipe_default": "WT 4000L",
-      "daya_hp": 150,
-      "berat_operasi_ton": 10.0,
+      "daya_hp": 133,
+      "berat_operasi_ton": 9.5,
       "tipe_produksi": "siklus",
       "hsd_params": {
-        "harga_pokok_rp": 650000000,
+        "harga_pokok_rp": 550000000,
         "umur_ekonomis_tahun": 5,
         "jam_kerja_per_tahun": 2000,
         "nilai_sisa_pct": 0.10,
@@ -261,7 +366,7 @@
       },
       "produktivitas_params": {
         "kapasitas_liter": 4000,
-        "kebutuhan_air_liter_per_m3": 70,
+        "kebutuhan_air_liter_per_m3": 54,
         "volume_state_output": null
       }
     }

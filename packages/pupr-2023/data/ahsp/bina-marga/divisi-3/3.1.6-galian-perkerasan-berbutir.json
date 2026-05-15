@@ -1,0 +1,121 @@
+{
+  "kode_ahsp": "3.1.6",
+  "nama": "Galian Perkerasan Berbutir",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.1",
+  "satuan_bayar": "m3",
+  "volume_state_bayar": "bank",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.080,
+      "koef_sumber": "tabel",
+      "catatan": null
+    },
+    {
+      "ref": "L.04",
+      "koefisien": 0.025,
+      "koef_sumber": "tabel",
+      "catatan": null
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.01",
+      "nama": "Excavator PC-200",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": ["jenis_material"],
+      "koef_referensi": {
+        "value": 0.0095,
+        "asumsi": {
+          "fa": 0.83,
+          "jenis_material": "kerikil",
+          "kapasitas_bucket_m3": 0.93,
+          "waktu_siklus_menit": 0.50
+        }
+      },
+      "catatan": "Menggali lapisan perkerasan berbutir lama"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Dump Truck 12 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": ["jarak_buang_km", "kondisi_jalan"],
+      "koef_referensi": null,
+      "catatan": "Pengangkutan material bongkaran"
+    }
+  ],
+  "variabel": {
+    "jarak_buang_km": {
+      "label": "Jarak Buang Material",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 100
+    },
+    "kondisi_jalan": {
+      "label": "Kondisi Jalan Hauling",
+      "tipe": "enum",
+      "options": ["baik", "sedang", "rusak"],
+      "default": "sedang"
+    },
+    "jenis_material": {
+      "label": "Jenis Material",
+      "tipe": "enum",
+      "options": ["kerikil", "batu_pecah", "agregat_kelas_a"],
+      "default": "kerikil"
+    },
+    "faktor_efisiensi": {
+      "label": "Faktor Efisiensi Alat (Fa)",
+      "tipe": "number",
+      "default": 0.83,
+      "min": 0.60,
+      "max": 0.90
+    },
+    "kondisi_operasi": {
+      "label": "Kondisi Operasi (untuk Fpr)",
+      "tipe": "enum",
+      "options": ["normal", "berat", "sangat_berat"],
+      "default": "normal"
+    }
+  },
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
+    "halaman": "III-24",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Volume dibayar dalam m3 bank",
+    "Untuk pembongkaran lapis pondasi agregat eksisting",
+    "Material dapat digunakan kembali jika memenuhi spesifikasi"
+  ]
+}

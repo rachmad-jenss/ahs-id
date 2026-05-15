@@ -1,0 +1,190 @@
+{
+  "kode_ahsp": "3.3.1",
+  "nama": "Timbunan Biasa dari Sumber Galian",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.3",
+  "satuan_bayar": "m3",
+  "volume_state_bayar": "compacted",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.070,
+      "koef_sumber": "tabel",
+      "catatan": null
+    },
+    {
+      "ref": "L.04",
+      "koefisien": 0.007,
+      "koef_sumber": "tabel",
+      "catatan": null
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.01",
+      "nama": "Excavator PC-200",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": ["jenis_material"],
+      "koef_referensi": {
+        "value": 0.0081,
+        "asumsi": {
+          "fa": 0.83,
+          "jenis_material": "tanah_biasa",
+          "kapasitas_bucket_m3": 0.93,
+          "waktu_siklus_menit": 0.45
+        }
+      },
+      "catatan": "Loading material timbunan dari stockpile"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Dump Truck 12 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": ["jarak_angkut_km", "kondisi_jalan"],
+      "koef_referensi": null,
+      "catatan": "Koefisien tergantung jarak angkut"
+    },
+    {
+      "ref": "E.02",
+      "nama": "Bulldozer D6R",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.012,
+        "asumsi": {
+          "fa": 0.83,
+          "kapasitas_rated": 100
+        }
+      },
+      "catatan": "Penghamparan material timbunan"
+    },
+    {
+      "ref": "E.22",
+      "nama": "Vibratory Roller 8-10 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "compacted",
+      "variabel_input": ["tebal_hamparan_m", "jumlah_passing"],
+      "koef_referensi": {
+        "value": 0.025,
+        "asumsi": {
+          "fa": 0.83,
+          "tebal_hamparan_m": 0.30,
+          "jumlah_passing": 8,
+          "kecepatan_km_jam": 2.0
+        }
+      },
+      "catatan": "Pemadatan timbunan per lapisan"
+    },
+    {
+      "ref": "E.25",
+      "nama": "Water Tank Truck 4000L",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["jarak_sumber_air_km"],
+      "koef_referensi": null,
+      "catatan": "Penyiraman untuk mencapai kadar air optimum"
+    }
+  ],
+  "variabel": {
+    "jarak_angkut_km": {
+      "label": "Jarak Angkut Material",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 200
+    },
+    "jarak_sumber_air_km": {
+      "label": "Jarak Sumber Air ke Lokasi",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 100
+    },
+    "kondisi_jalan": {
+      "label": "Kondisi Jalan Hauling",
+      "tipe": "enum",
+      "options": ["baik", "sedang", "rusak"],
+      "default": "sedang"
+    },
+    "jenis_material": {
+      "label": "Jenis Material Timbunan",
+      "tipe": "enum",
+      "options": ["tanah_biasa", "tanah_lempung", "kerikil"],
+      "default": "tanah_biasa"
+    },
+    "faktor_efisiensi": {
+      "label": "Faktor Efisiensi Alat (Fa)",
+      "tipe": "number",
+      "default": 0.83,
+      "min": 0.60,
+      "max": 0.90
+    },
+    "kondisi_operasi": {
+      "label": "Kondisi Operasi (untuk Fpr)",
+      "tipe": "enum",
+      "options": ["normal", "berat", "sangat_berat"],
+      "default": "normal"
+    },
+    "tebal_hamparan_m": {
+      "label": "Tebal Hamparan per Layer",
+      "satuan": "m",
+      "tipe": "number",
+      "default": 0.30,
+      "min": 0.15,
+      "max": 0.50
+    },
+    "jumlah_passing": {
+      "label": "Jumlah Passing Roller",
+      "tipe": "number",
+      "default": 8,
+      "min": 4,
+      "max": 16
+    }
+  },
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
+    "halaman": "III-30",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Volume dibayar dalam m3 compacted (setelah pemadatan)",
+    "Material dari sumber galian (borrow pit atau cut)",
+    "Pemadatan per lapisan, tebal maksimal 30cm per lapisan",
+    "Kadar air optimum harus dicapai sebelum pemadatan"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahs-id.dev/schemas/ahsp-item.schema.json",
+  "title": "AhspItem",
+  "type": "object",
+  "required": [
+    "kode_ahsp", "nama", "bidang", "divisi", "sub_divisi",
+    "satuan_bayar", "volume_state_bayar", "jenis_pekerjaan", "is_lump_sum",
+    "sub_ahsp", "tenaga_kerja", "bahan", "peralatan",
+    "variabel", "margin", "provenance", "catatan_umum"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "kode_ahsp": { "type": "string", "pattern": "^\\d+\\.\\d+" },
+    "nama": { "type": "string", "minLength": 1 },
+    "bidang": { "type": "string", "enum": ["umum", "sda", "bina-marga", "cipta-karya"] },
+    "divisi": { "type": "integer", "minimum": 1 },
+    "sub_divisi": { "type": "string" },
+    "satuan_bayar": { "type": "string", "minLength": 1 },
+    "volume_state_bayar": { "type": ["string", "null"], "enum": ["bank", "loose", "compacted", null] },
+    "jenis_pekerjaan": { "type": "string", "enum": ["manual", "mekanis", "semi-mekanis"] },
+    "is_lump_sum": { "type": "boolean" },
+    "sub_ahsp": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sub_ahsp_entry" }
+    },
+    "tenaga_kerja": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/tk_entry" }
+    },
+    "bahan": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/bahan_entry" }
+    },
+    "peralatan": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/peralatan_entry" }
+    },
+    "variabel": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/variabel_definition" }
+    },
+    "margin": { "$ref": "#/$defs/margin" },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "catatan_umum": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "volume_state": {
+      "type": ["string", "null"],
+      "enum": ["bank", "loose", "compacted", null]
+    },
+    "koef_sumber": {
+      "type": "string",
+      "enum": ["tabel", "kalkulasi"]
+    },
+    "sub_ahsp_entry": {
+      "type": "object",
+      "required": ["ref_ahsp", "nama", "koefisien", "satuan_koefisien", "satuan_konteks", "volume_state"],
+      "additionalProperties": false,
+      "properties": {
+        "ref_ahsp": { "type": "string" },
+        "nama": { "type": "string" },
+        "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "satuan_koefisien": { "type": "string" },
+        "satuan_konteks": { "const": "parent" },
+        "volume_state": { "$ref": "#/$defs/volume_state" },
+        "catatan": { "type": ["string", "null"] }
+      }
+    },
+    "tk_entry": {
+      "type": "object",
+      "required": ["ref", "koefisien", "koef_sumber", "catatan"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "pattern": "^L\\." },
+        "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
+        "catatan": { "type": ["string", "null"] }
+      }
+    },
+    "bahan_entry": {
+      "type": "object",
+      "required": ["ref", "koefisien", "koef_sumber", "volume_state", "catatan"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "pattern": "^M\\." },
+        "nama_override": { "type": "string" },
+        "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
+        "faktor_kehilangan_pct": { "type": "number", "minimum": 0, "maximum": 50 },
+        "volume_state": { "$ref": "#/$defs/volume_state" },
+        "catatan": { "type": ["string", "null"] }
+      }
+    },
+    "peralatan_entry": {
+      "type": "object",
+      "required": ["ref", "nama", "koef_sumber", "mode_biaya", "volume_state", "variabel_input", "koef_referensi"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "pattern": "^E\\." },
+        "nama": { "type": "string", "minLength": 1 },
+        "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
+        "mode_biaya": { "type": "string", "enum": ["ownership", "sewa"] },
+        "volume_state": { "$ref": "#/$defs/volume_state" },
+        "variabel_input": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "koef_referensi": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["value", "asumsi"],
+              "additionalProperties": false,
+              "properties": {
+                "value": { "type": "number", "exclusiveMinimum": 0 },
+                "asumsi": { "type": "object" }
+              }
+            }
+          ]
+        },
+        "catatan": { "type": ["string", "null"] }
+      }
+    },
+    "variabel_definition": {
+      "type": "object",
+      "required": ["label", "tipe", "default"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "satuan": { "type": "string" },
+        "tipe": { "type": "string", "enum": ["number", "enum"] },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "required": { "type": "boolean" },
+        "default": { "type": ["number", "string", "null"] },
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "catatan": { "type": "string" }
+      }
+    },
+    "margin": {
+      "type": "object",
+      "required": ["overhead_pct", "profit_pct", "constraint"],
+      "additionalProperties": false,
+      "properties": {
+        "overhead_pct": {
+          "type": "object",
+          "required": ["label", "min", "max", "default"],
+          "properties": {
+            "label": { "type": "string" },
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "default": { "type": "number" },
+            "catatan": { "type": "string" }
+          }
+        },
+        "profit_pct": {
+          "type": "object",
+          "required": ["label", "min", "max", "default"],
+          "properties": {
+            "label": { "type": "string" },
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "default": { "type": "number" },
+            "catatan": { "type": "string" }
+          }
+        },
+        "constraint": {
+          "type": "object",
+          "required": ["rule"],
+          "properties": {
+            "rule": { "type": "string" },
+            "catatan": { "type": "string" }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["sumber_regulasi", "halaman", "diverifikasi_oleh", "tanggal_verifikasi"],
+      "additionalProperties": false,
+      "properties": {
+        "sumber_regulasi": { "type": "string" },
+        "halaman": { "type": "string" },
+        "diverifikasi_oleh": { "type": ["string", "null"] },
+        "tanggal_verifikasi": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

@@ -12,9 +12,10 @@ import type {
   FaktorKonversiEntry,
   VolumeState,
 } from '../types/index.js';
-import { hitungHsdPeralatan } from './hsd-peralatan.js';
+import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
 import { hitungMargin } from './margin.js';
 import { convertVolume } from './konversi-volume.js';
+import { resolveSubAhsp } from './sub-ahsp.js';
 
 export interface Calculator {
   readonly hitungHSP: (kodeAhsp: string, variabel: VariabelInput) => HSPResult;
@@ -23,12 +24,17 @@ export interface Calculator {
 export function createCalculator(
   bundle: DataBundle,
   hsd: HsdRegional,
-  _config?: CalculatorConfig,
+  config?: CalculatorConfig,
 ): Calculator {
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
+  const mode = config?.mode ?? 'penuh';
 
-  function hitungHSP(kodeAhsp: string, variabel: VariabelInput): HSPResult {
+  function hitungHSPInternal(
+    kodeAhsp: string,
+    variabel: VariabelInput,
+    resolveStack: readonly string[],
+  ): HSPResult {
     const item = bundle.ahsp_items.find((a) => a.kode_ahsp === kodeAhsp);
     if (!item) {
       throw new Error(`AHSP item "${kodeAhsp}" not found in bundle`);
@@ -39,7 +45,7 @@ export function createCalculator(
 
     const tkComponents = calcTenagaKerja(item, hsd, audit);
     const bahanComponents = calcBahan(item, hsd, audit);
-    const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings);
+    const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
 
     const tkGroup: AhspGroup = {
       type: 'L',
@@ -62,7 +68,17 @@ export function createCalculator(
       total: alatComponents.reduce((s, c) => s + c.total_price, 0),
     };
 
-    const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total;
+    const materialKey = (variabel['jenis_material'] as string | undefined) ?? 'agregat_kelas_a';
+    const subAhspResult = resolveSubAhsp(
+      item,
+      (childKode) => hitungHSPInternal(childKode, variabel, resolveStack),
+      fkMap,
+      materialKey,
+      resolveStack,
+    );
+    audit.push(...subAhspResult.audit);
+
+    const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total + subAhspResult.total;
 
     const overheadPct = variabel['overhead_pct'] as number | undefined ?? item.margin.overhead_pct.default;
     const profitPct = variabel['profit_pct'] as number | undefined ?? item.margin.profit_pct.default;
@@ -83,6 +99,10 @@ export function createCalculator(
       warnings,
       audit_trail: audit,
     };
+  }
+
+  function hitungHSP(kodeAhsp: string, variabel: VariabelInput): HSPResult {
+    return hitungHSPInternal(kodeAhsp, variabel, []);
   }
 
   return { hitungHSP };
@@ -154,6 +174,7 @@ function calcPeralatan(
   fkMap: Map<string, FaktorKonversiEntry>,
   audit: AuditEntry[],
   warnings: string[],
+  mode: 'penuh' | 'estimasi-kasar',
 ): AhspComponent[] {
   return item.peralatan.map((entry) => {
     const alat = alatMap.get(entry.ref);
@@ -161,31 +182,19 @@ function calcPeralatan(
       throw new Error(`Peralatan master "${entry.ref}" not found`);
     }
 
-    let unitPrice: number;
-    if (entry.mode_biaya === 'sewa') {
-      const sewaEntry = hsd.peralatan_sewa.find((s) => s.ref === entry.ref);
-      if (!sewaEntry) {
-        throw new Error(`HSD peralatan sewa "${entry.ref}" not found`);
-      }
-      unitPrice = sewaEntry.harga_rp;
-      audit.push({
-        step: 'hsd_peralatan_sewa',
-        detail: `${entry.ref}: sewa = ${unitPrice} Rp/jam`,
-        value: unitPrice,
-        unit: 'Rp/jam',
-      });
-    } else {
-      const kondisi = (variabel['kondisi_operasi'] as KondisiOperasi | undefined) ?? 'normal';
-      const hsdResult = hitungHsdPeralatan(alat, hsd, { kondisi_operasi: kondisi });
-      unitPrice = hsdResult.hsd_rp_per_jam;
-      audit.push(...hsdResult.audit);
-    }
+    const kondisi = (variabel['kondisi_operasi'] as KondisiOperasi | undefined) ?? 'normal';
+    const hsdResult = hitungHsdPeralatanAny(entry.ref, alat, hsd, {
+      mode_biaya: entry.mode_biaya,
+      kondisi_operasi: kondisi,
+    });
+    const unitPrice = hsdResult.hsd_rp_per_jam;
+    audit.push(...hsdResult.audit);
 
     let coefficient: number;
     if (entry.koef_sumber === 'tabel') {
       coefficient = entry.koef_referensi?.value ?? 0;
     } else {
-      coefficient = resolveKalkulasiKoef(entry, alat, item, variabel, fkMap, audit, warnings);
+      coefficient = resolveKalkulasiKoef(entry, alat, item, variabel, fkMap, audit, warnings, mode);
     }
 
     const total = coefficient * unitPrice;
@@ -216,14 +225,16 @@ function resolveKalkulasiKoef(
   fkMap: Map<string, FaktorKonversiEntry>,
   audit: AuditEntry[],
   warnings: string[],
+  mode: 'penuh' | 'estimasi-kasar',
 ): number {
   const fa = (variabel['faktor_efisiensi'] as number | undefined) ?? 0.83;
+  const hasFull = hasAllVariabelInput(entry, variabel);
 
-  if (entry.koef_referensi !== null && !hasAllVariabelInput(entry, variabel)) {
-    warnings.push(`${entry.ref}: using koef_referensi fallback (${entry.koef_referensi.value}) — not all variabel_input provided`);
+  if (!hasFull && entry.koef_referensi !== null && mode === 'estimasi-kasar') {
+    warnings.push(`${entry.ref}: using koef_referensi fallback (${entry.koef_referensi.value}) — mode estimasi-kasar`);
     audit.push({
       step: 'koef_fallback',
-      detail: `${entry.ref}: fallback to koef_referensi = ${entry.koef_referensi.value}`,
+      detail: `${entry.ref}: fallback to koef_referensi = ${entry.koef_referensi.value} (estimasi-kasar)`,
       value: entry.koef_referensi.value,
     });
 
@@ -232,8 +243,9 @@ function resolveKalkulasiKoef(
     return koef;
   }
 
-  if (entry.koef_referensi === null && !hasAllVariabelInput(entry, variabel)) {
-    throw new Error(`${entry.ref}: no koef_referensi and missing required variabel_input: ${entry.variabel_input.join(', ')}`);
+  if (!hasFull) {
+    const missing = entry.variabel_input.filter((v) => variabel[v] === undefined);
+    throw new Error(`${entry.ref}: missing required variabel_input: ${missing.join(', ')}`);
   }
 
   const produktivitas = calcProduktivitas(alat, variabel, fa, audit);
@@ -276,7 +288,7 @@ function calcProduktivitas(
     if (alat.kode === 'E.08') {
       const V = alat.kapasitas_m3 ?? 8;
       const Fm = resolveMapParam(pp['faktor_muatan'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.95);
-      const jarakKm = (variabel['jarak_quarry_km'] ?? variabel['jarak_buang_km']) as number;
+      const jarakKm = (variabel['jarak_quarry_km'] ?? variabel['jarak_buang_km'] ?? variabel['jarak_angkut_km']) as number;
       const kondisiJalan = (variabel['kondisi_jalan'] as string) ?? 'sedang';
       const Vi = resolveSpeedParam(pp['kecepatan_isi_km_jam'] as Record<string, number>, kondisiJalan, 30);
       const Vk = resolveSpeedParam(pp['kecepatan_kosong_km_jam'] as Record<string, number>, kondisiJalan, 40);
@@ -336,6 +348,21 @@ function calcProduktivitas(
       audit.push({ step: 'produktivitas_motor_grader', detail: `Q = (${vM} × ${b} × ${fa}) / ${n} = ${Q.toFixed(4)} m2/jam`, value: Q, unit: 'm2/jam' });
       return Q;
     }
+  }
+
+  if (alat.tipe_produksi === 'throughput') {
+    const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
+      ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
+      ?? 0;
+    const satuan = pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam';
+    const Q = kapasitas * fa;
+    audit.push({
+      step: 'produktivitas_throughput',
+      detail: `Q = ${kapasitas} × ${fa} = ${Q.toFixed(4)}`,
+      value: Q,
+      unit: satuan,
+    });
+    return Q;
   }
 
   throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);

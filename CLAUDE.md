@@ -12,12 +12,13 @@ Jangan deviate dari spec tanpa konfirmasi eksplisit dari maintainer.
 ## Current Phase
 
 **Phase 1: MVP — "One Chain Works"** ✅ COMPLETE (2026-05-16)
-- 35 tests passing (28 unit + 7 golden)
-- AHSP 3.2.1 + 3.1.1 full chain verified
-- Distance sensitivity, Fpr berat, volume conversion all tested
 
-**Next: Phase 2 — "Usable by Others"**
-Entry requirement: Phase 1 complete ✅
+**Phase 2: Functional Library — "Usable by Others"** 🔨 IN PROGRESS
+- 51 tests passing (39 unit + 12 golden)
+- Divisi 3 complete (12 AHSP items), 3 HSD regions (Kaltim, Jabar, Papua)
+- Engine extensions done: throughput, mode sewa, sub-ahsp, estimasi-kasar, cross-bundle validation
+- Remaining: Excel exporter, CLI app, npm publish
+
 Exit criteria: External developer can `npm install`, calculate HSP for any Bina Marga item, and export to Excel.
 
 Lihat `PROGRESS.md` untuk status terkini setiap task.
@@ -27,26 +28,29 @@ Lihat `PROGRESS.md` untuk status terkini setiap task.
 ```
 packages/
 ├── core/              ← Engine: calculator, productivity, volume conversion, validator
-├── pupr-2023/         ← Data bundle: Permen PUPR 8/2023 coefficients
-└── hsd-kaltim-2025/   ← Regional HSD: Kalimantan Timur Q1 2025
+├── pupr-2023/         ← Data bundle: Permen PUPR 8/2023 coefficients (12 AHSP items, 9 equipment, 3 bahan)
+├── hsd-kaltim-2025/   ← Regional HSD: Kalimantan Timur Q1 2025
+├── hsd-jabar-2025/    ← Regional HSD: Jawa Barat Q1 2025 (lowest prices)
+└── hsd-papua-2025/    ← Regional HSD: Papua Q1 2025 (highest prices)
 
-tests/golden/          ← Cross-engine golden test fixtures
+scripts/               ← Build-time validation (validate-data.mjs)
+tests/golden/          ← Cross-engine golden test fixtures (12 tests)
 docs/                  ← Architecture spec, legal, calculation reference
 ```
 
 ## Phase 2 Scope
 
-### New in Phase 2:
-- `@ahs-id/core`: produktivitas/throughput.ts (AMP, batching plant), hsd-peralatan.ts → add mode sewa, sub-ahsp resolver (nesting + circular dependency check), mode estimasi-kasar (koef_referensi with warnings), exporter/excel.ts (RAB format), validate-refs.ts (cross-bundle integrity)
-- `@ahs-id/pupr-2023` (Bina Marga COMPLETE): ahsp/bina-marga/ → all divisi (1-7+)
-- `@ahs-id/hsd-[region]-[year]` (≥3 regions)
+### Done in Phase 2:
+- `@ahs-id/core`: throughput productivity ✅, mode sewa ✅, sub-ahsp resolver ✅, estimasi-kasar ✅, cross-bundle validation ✅, JSON Schema validation ✅
+- `@ahs-id/pupr-2023`: Divisi 3 complete (12 items) ✅, E.02/E.14/E.15 added ✅, M.09.b/M.09.s added ✅
+- `@ahs-id/hsd-jabar-2025` + `@ahs-id/hsd-papua-2025` ✅ (3 regions total)
+- Golden tests: 12 fixtures ✅
+
+### Remaining in Phase 2:
+- `@ahs-id/core`: exporter/excel.ts (RAB format)
 - `apps/cli/` (basic commands: calc-hsp, export-rab, validate)
 - Published to npm (first public release)
-- Golden tests: ≥10 fixtures
-
-### Known technical debt from Phase 1:
-- Equipment E.11 (Wheel Loader), E.19 (Motor Grader), E.25 (Water Tanker) use placeholder specs — need research
-- JSON Schema validation at build time (deferred from Phase 1)
+- Optional: Bina Marga divisi 1-2, 4-7+ data expansion
 
 ## Key Technical Constraints
 

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { hitungHsdPeralatan } from '../hsd-peralatan.js';
+import { hitungHsdPeralatan, hitungHsdPeralatanSewa, hitungHsdPeralatanAny } from '../hsd-peralatan.js';
 import type { PeralatanMaster, HsdRegional } from '../../types/index.js';
 
 const excavator: PeralatanMaster = {
@@ -48,7 +48,10 @@ const hsdKaltim: HsdRegional = {
     { ref: 'L.06', harga_rp: 155000, satuan: 'OH', sumber_data: 'Survei' },
   ],
   bahan: [],
-  peralatan_sewa: [],
+  peralatan_sewa: [
+    { ref: 'E.01', nama: 'Excavator PC-200', harga_rp: 450000, satuan: 'jam' as const, sumber_data: 'Survei rental' },
+    { ref: 'E.08', nama: 'Dump Truck 12T', harga_rp: 285000, satuan: 'jam' as const, sumber_data: 'Survei rental' },
+  ],
   bahan_bakar: {
     solar_industri_rp_per_liter: 18500,
     oli_mesin_rp_per_liter: 65000,
@@ -123,5 +126,39 @@ describe('hitungHsdPeralatan', () => {
     const result = hitungHsdPeralatan(excavator, hsdKaltim);
     expect(result.audit.length).toBeGreaterThan(0);
     expect(result.audit.some((a) => a.step === 'hsd_total')).toBe(true);
+  });
+});
+
+describe('hitungHsdPeralatanSewa', () => {
+  it('returns sewa rate from HSD regional data', () => {
+    const result = hitungHsdPeralatanSewa('E.01', hsdKaltim);
+    expect(result.hsd_rp_per_jam).toBe(450000);
+    expect(result.mode).toBe('sewa');
+    expect(result.audit).toHaveLength(1);
+    expect(result.audit[0]!.step).toBe('hsd_peralatan_sewa');
+  });
+
+  it('throws when sewa ref not found', () => {
+    expect(() => hitungHsdPeralatanSewa('E.99', hsdKaltim)).toThrow(
+      'HSD peralatan sewa "E.99" not found',
+    );
+  });
+});
+
+describe('hitungHsdPeralatanAny', () => {
+  it('dispatches to sewa when mode_biaya is sewa', () => {
+    const result = hitungHsdPeralatanAny('E.01', excavator, hsdKaltim, {
+      mode_biaya: 'sewa',
+    });
+    expect(result.mode).toBe('sewa');
+    expect(result.hsd_rp_per_jam).toBe(450000);
+  });
+
+  it('dispatches to ownership when mode_biaya is ownership', () => {
+    const result = hitungHsdPeralatanAny('E.01', excavator, hsdKaltim, {
+      mode_biaya: 'ownership',
+    });
+    expect(result.mode).toBe('ownership');
+    expect(result.hsd_rp_per_jam).toBeGreaterThan(450000);
   });
 });
