@@ -1,0 +1,46 @@
+{
+  "version": "2025.1.0",
+  "region": {
+    "provinsi": "Kalimantan Timur",
+    "kode_provinsi": "64",
+    "kabupaten": null,
+    "tahun_berlaku": 2025,
+    "kuartal": 1,
+    "dasar_hukum": "SK Gubernur Kaltim No. XXX/2025",
+    "tanggal_terbit": "2025-01-15"
+  },
+  "tenaga_kerja": [
+    { "ref": "L.01",  "harga_rp": 135000, "satuan": "OH", "sumber_data": "UMK Kaltim 2025" },
+    { "ref": "L.02a", "harga_rp": 165000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.02b", "harga_rp": 165000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.02c", "harga_rp": 170000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.03",  "harga_rp": 185000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.04",  "harga_rp": 210000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.05",  "harga_rp": 195000, "satuan": "OH", "sumber_data": "Survei Dinas PU" },
+    { "ref": "L.06",  "harga_rp": 155000, "satuan": "OH", "sumber_data": "Survei Dinas PU" }
+  ],
+  "bahan": [
+    { "ref": "M.01",   "nama": "Semen Portland 50 kg", "harga_rp": 75000,  "satuan": "zak",  "sumber_data": "Survei distributor" },
+    { "ref": "M.02",   "nama": "Pasir Pasang",         "harga_rp": 285000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.03",   "nama": "Pasir Beton",          "harga_rp": 350000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.04",   "nama": "Kerikil/Agregat Kasar","harga_rp": 375000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.09.a", "nama": "Agregat Kelas A",      "harga_rp": 425000, "satuan": "m3",   "sumber_data": "Survei quarry lokal" },
+    { "ref": "M.50",   "nama": "Besi Beton Polos",     "harga_rp": 14500,  "satuan": "kg",   "sumber_data": "Harga pasar" },
+    { "ref": "M.51",   "nama": "Besi Beton Ulir",      "harga_rp": 15200,  "satuan": "kg",   "sumber_data": "Harga pasar" },
+    { "ref": "M.80",   "nama": "Aspal AC-60/70",       "harga_rp": 8750,   "satuan": "kg",   "sumber_data": "Pertamina" }
+  ],
+  "peralatan_sewa": [
+    { "ref": "E.01", "nama": "Excavator PC-200",    "harga_rp": 450000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.08", "nama": "Dump Truck 12T",      "harga_rp": 285000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.11", "nama": "Wheel Loader 1.5 m3", "harga_rp": 350000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.19", "nama": "Motor Grader >100HP", "harga_rp": 525000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.22", "nama": "Vibro Roller 8-10T",  "harga_rp": 385000, "satuan": "jam", "sumber_data": "Survei rental" },
+    { "ref": "E.25", "nama": "Water Tanker 4000L",  "harga_rp": 275000, "satuan": "jam", "sumber_data": "Survei rental" }
+  ],
+  "bahan_bakar": {
+    "solar_industri_rp_per_liter": 18500,
+    "oli_mesin_rp_per_liter": 65000,
+    "oli_hidrolik_rp_per_liter": 72000,
+    "grease_rp_per_kg": 45000
+  }
+}

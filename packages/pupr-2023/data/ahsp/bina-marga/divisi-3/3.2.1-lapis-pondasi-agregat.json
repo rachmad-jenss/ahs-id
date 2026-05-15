@@ -1,0 +1,213 @@
+{
+  "kode_ahsp": "3.2.1",
+  "nama": "Lapis Pondasi Agregat Kelas A (CBR Min 90%)",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.2",
+  "satuan_bayar": "m3",
+  "volume_state_bayar": "compacted",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.065,
+      "koef_sumber": "tabel",
+      "catatan": null
+    },
+    {
+      "ref": "L.04",
+      "koefisien": 0.007,
+      "koef_sumber": "tabel",
+      "catatan": null
+    }
+  ],
+  "bahan": [
+    {
+      "ref": "M.09.a",
+      "nama_override": "Agregat Kelas A (CBR Min 90%)",
+      "koefisien": 1.025,
+      "koef_sumber": "tabel",
+      "faktor_kehilangan_pct": 2.5,
+      "volume_state": "compacted",
+      "catatan": "Koefisien sudah termasuk faktor kehilangan"
+    }
+  ],
+  "peralatan": [
+    {
+      "ref": "E.11",
+      "nama": "Wheel Loader 1.5 m3",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": ["jenis_material"],
+      "koef_referensi": {
+        "value": 0.020,
+        "asumsi": {
+          "fa": 0.83,
+          "jenis_material": "agregat",
+          "kapasitas_bucket_m3": 1.5
+        }
+      },
+      "catatan": "Koefisien tergantung kapasitas dan jenis material"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Dump Truck 12 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": ["jarak_quarry_km", "kondisi_jalan"],
+      "koef_referensi": null,
+      "catatan": "Koefisien sangat tergantung jarak quarry ke lokasi"
+    },
+    {
+      "ref": "E.19",
+      "nama": "Motor Grader >100 HP",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["lebar_hamparan_m", "jumlah_lintasan"],
+      "koef_referensi": {
+        "value": 0.030,
+        "asumsi": {
+          "fa": 0.83,
+          "lebar_hamparan_m": 3.0,
+          "jumlah_lintasan": 6,
+          "kecepatan_km_jam": 3.0
+        }
+      }
+    },
+    {
+      "ref": "E.22",
+      "nama": "Vibratory Roller 8-10 Ton",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": "compacted",
+      "variabel_input": ["tebal_hamparan_m", "jumlah_passing"],
+      "koef_referensi": {
+        "value": 0.020,
+        "asumsi": {
+          "fa": 0.83,
+          "tebal_hamparan_m": 0.20,
+          "jumlah_passing": 6,
+          "kecepatan_km_jam": 2.5
+        }
+      }
+    },
+    {
+      "ref": "E.25",
+      "nama": "Water Tank Truck 4000L",
+      "koef_sumber": "kalkulasi",
+      "mode_biaya": "ownership",
+      "volume_state": null,
+      "variabel_input": ["jarak_sumber_air_km"],
+      "koef_referensi": null
+    }
+  ],
+  "variabel": {
+    "jarak_quarry_km": {
+      "label": "Jarak Quarry ke Lokasi",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 200
+    },
+    "jarak_sumber_air_km": {
+      "label": "Jarak Sumber Air ke Lokasi",
+      "satuan": "km",
+      "tipe": "number",
+      "required": true,
+      "default": null,
+      "min": 0.5,
+      "max": 100
+    },
+    "kondisi_jalan": {
+      "label": "Kondisi Jalan Hauling",
+      "tipe": "enum",
+      "options": ["baik", "sedang", "rusak"],
+      "default": "sedang"
+    },
+    "jenis_material": {
+      "label": "Jenis Material",
+      "tipe": "enum",
+      "options": ["tanah_biasa", "tanah_lempung", "kerikil", "batu_pecah", "agregat_kelas_a"],
+      "default": "agregat_kelas_a"
+    },
+    "faktor_efisiensi": {
+      "label": "Faktor Efisiensi Alat (Fa)",
+      "tipe": "number",
+      "default": 0.83,
+      "min": 0.60,
+      "max": 0.90
+    },
+    "kondisi_operasi": {
+      "label": "Kondisi Operasi (untuk Fpr)",
+      "tipe": "enum",
+      "options": ["normal", "berat", "sangat_berat"],
+      "default": "normal"
+    },
+    "tebal_hamparan_m": {
+      "label": "Tebal Hamparan",
+      "satuan": "m",
+      "tipe": "number",
+      "default": 0.20,
+      "min": 0.10,
+      "max": 0.50
+    },
+    "jumlah_passing": {
+      "label": "Jumlah Passing Roller",
+      "tipe": "number",
+      "default": 6,
+      "min": 2,
+      "max": 16
+    },
+    "lebar_hamparan_m": {
+      "label": "Lebar Hamparan",
+      "satuan": "m",
+      "tipe": "number",
+      "default": 3.0,
+      "min": 1.0,
+      "max": 10.0
+    },
+    "jumlah_lintasan": {
+      "label": "Jumlah Lintasan Grader",
+      "tipe": "number",
+      "default": 6,
+      "min": 2,
+      "max": 12
+    }
+  },
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
+    "halaman": "III-45",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "AHSP ini bersifat informatif, koefisien dapat disesuaikan kondisi lapangan",
+    "Untuk HPS gunakan Fa = 0.83 (kondisi operasi baik sekali)",
+    "Koefisien Dump Truck dan Water Tanker WAJIB dihitung berdasarkan jarak aktual",
+    "Volume state: satuan bayar dalam m3 compacted"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "kode": "M.09.a",
+      "nama": "Agregat Kelas A (CBR Min 90%)",
+      "satuan": "m3",
+      "kategori": "agregat"
+    }
+  ]
+}
