@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "derivation_rule": "loose_to_compacted = bank_to_compacted / bank_to_loose (derived by engine, not stored)",
+  "items": [
+    {
+      "material": "tanah_biasa",
+      "bank_to_loose": 1.25,
+      "bank_to_compacted": 0.85,
+      "berat_jenis_bank_ton_m3": 1.60
+    },
+    {
+      "material": "tanah_lempung",
+      "bank_to_loose": 1.30,
+      "bank_to_compacted": 0.90,
+      "berat_jenis_bank_ton_m3": 1.75
+    },
+    {
+      "material": "kerikil",
+      "bank_to_loose": 1.12,
+      "bank_to_compacted": 0.88,
+      "berat_jenis_bank_ton_m3": 1.85
+    },
+    {
+      "material": "batu_pecah",
+      "bank_to_loose": 1.40,
+      "bank_to_compacted": null,
+      "berat_jenis_bank_ton_m3": 2.60
+    },
+    {
+      "material": "agregat_kelas_a",
+      "bank_to_loose": 1.20,
+      "bank_to_compacted": 0.95,
+      "berat_jenis_bank_ton_m3": 2.10
+    },
+    {
+      "material": "agregat_kelas_b",
+      "bank_to_loose": 1.18,
+      "bank_to_compacted": 0.93,
+      "berat_jenis_bank_ton_m3": 1.95
+    },
+    {
+      "material": "agregat_kelas_s",
+      "bank_to_loose": 1.15,
+      "bank_to_compacted": 0.92,
+      "berat_jenis_bank_ton_m3": 2.00
+    },
+    {
+      "material": "batu",
+      "bank_to_loose": 1.65,
+      "bank_to_compacted": null,
+      "berat_jenis_bank_ton_m3": 2.60
+    }
+  ]
+}

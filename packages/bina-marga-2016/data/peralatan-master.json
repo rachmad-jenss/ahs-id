@@ -1,0 +1,542 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "kode": "E.01",
+      "nama": "Asphalt Mixing Plant",
+      "tipe_default": "60 T/Jam",
+      "daya_hp": 294,
+      "berat_operasi_ton": 25.0,
+      "tipe_produksi": "throughput",
+      "kapasitas_ton": 60,
+      "hsd_params": {
+        "harga_pokok_rp": 5500000000,
+        "umur_ekonomis_tahun": 10,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.16275,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.10,
+        "pelumas": {
+          "mesin":    { "cp": 0.0025, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0010, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.022,
+        "perbaikan_pct": 0.064,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 60, "satuan_kapasitas": "t/jam", "volume_state_output": null }
+    },
+    {
+      "kode": "E.02",
+      "nama": "Asphalt Finisher",
+      "tipe_default": "8 Ton",
+      "daya_hp": 120,
+      "berat_operasi_ton": 8.0,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 750000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.15,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.022,
+        "perbaikan_pct": 0.064,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 4.0,
+        "lebar_efektif_m": 3.0,
+        "tebal_padat_m": 0.05,
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.03",
+      "nama": "Asphalt Sprayer",
+      "tipe_default": "4000 L",
+      "daya_hp": 30,
+      "berat_operasi_ton": 4.5,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 200000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.15,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.03,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.022,
+        "perbaikan_pct": 0.064,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 4000, "satuan_kapasitas": "liter/jam", "volume_state_output": null }
+    },
+    {
+      "kode": "E.04",
+      "nama": "Bulldozer",
+      "tipe_default": "D65E",
+      "daya_hp": 140,
+      "berat_operasi_ton": 15.0,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 1500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.10,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 80, "satuan_kapasitas": "m3/jam", "volume_state_output": "loose" }
+    },
+    {
+      "kode": "E.05",
+      "nama": "Concrete Mixer",
+      "tipe_default": "350 L",
+      "daya_hp": 12,
+      "berat_operasi_ton": 0.5,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 25000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.03,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.022,
+        "perbaikan_pct": 0.064,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 0.35, "satuan_kapasitas": "m3/batch", "volume_state_output": null }
+    },
+    {
+      "kode": "E.06",
+      "nama": "Concrete Vibrator",
+      "tipe_default": "5.5 HP",
+      "daya_hp": 5,
+      "berat_operasi_ton": 0.1,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 8000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.02,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.022,
+        "perbaikan_pct": 0.064,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 6, "satuan_kapasitas": "m3/jam", "volume_state_output": null }
+    },
+    {
+      "kode": "E.07",
+      "nama": "Dump Truck 3-4 M3",
+      "tipe_default": "3.5 Ton",
+      "daya_hp": 115,
+      "berat_operasi_ton": 3.5,
+      "tipe_produksi": "siklus",
+      "kapasitas_m3": 3.5,
+      "hsd_params": {
+        "harga_pokok_rp": 250000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.20,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.15,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.05,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 3.5, "satuan_kapasitas": "m3", "volume_state_output": "loose" }
+    },
+    {
+      "kode": "E.08",
+      "nama": "Motor Grader",
+      "tipe_default": "130 HP",
+      "daya_hp": 130,
+      "berat_operasi_ton": 13.0,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 1200000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.08,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 3.5,
+        "lebar_efektif_m": 2.4,
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.09",
+      "nama": "Dump Truck 6-8 M3",
+      "tipe_default": "10 Ton",
+      "daya_hp": 190,
+      "berat_operasi_ton": 10.0,
+      "tipe_produksi": "siklus",
+      "kapasitas_m3": 8,
+      "hsd_params": {
+        "harga_pokok_rp": 450000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.20,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.15,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.05,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 8, "satuan_kapasitas": "m3", "volume_state_output": "loose" }
+    },
+    {
+      "kode": "E.10",
+      "nama": "Excavator PC-200",
+      "tipe_default": "PC-200",
+      "daya_hp": 138,
+      "berat_operasi_ton": 20.0,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 0.93,
+      "hsd_params": {
+        "harga_pokok_rp": 1600000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.10,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kapasitas_bucket_m3": 0.93,
+        "satuan_kapasitas": "m3/siklus",
+        "volume_state_output": "bank"
+      }
+    },
+    {
+      "kode": "E.11",
+      "nama": "Crane on Truck",
+      "tipe_default": "10 Ton",
+      "daya_hp": 200,
+      "berat_operasi_ton": 20.0,
+      "tipe_produksi": "siklus",
+      "hsd_params": {
+        "harga_pokok_rp": 1500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.08,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.05,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 10, "satuan_kapasitas": "ton", "volume_state_output": null }
+    },
+    {
+      "kode": "E.13",
+      "nama": "Vibrator Roller",
+      "tipe_default": "10 Ton",
+      "daya_hp": 130,
+      "berat_operasi_ton": 10.0,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 750000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.08,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 1.5,
+        "lebar_efektif_m": 1.68,
+        "tebal_padat_m": 0.20,
+        "jumlah_lintasan": 8,
+        "volume_state_output": "compacted"
+      }
+    },
+    {
+      "kode": "E.14",
+      "nama": "Compressor",
+      "tipe_default": "4000 L/min",
+      "daya_hp": 60,
+      "berat_operasi_ton": 1.5,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 150000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.03,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 4000, "satuan_kapasitas": "liter/menit", "volume_state_output": null }
+    },
+    {
+      "kode": "E.15",
+      "nama": "Wheel Loader",
+      "tipe_default": "1.0 M3",
+      "daya_hp": 120,
+      "berat_operasi_ton": 10.0,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 900000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.0032, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.08,   "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "sangat_berat": 1.5, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kapasitas_bucket_m3": 1.0,
+        "satuan_kapasitas": "m3/siklus",
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.17",
+      "nama": "Water Tanker",
+      "tipe_default": "4000 L",
+      "daya_hp": 120,
+      "berat_operasi_ton": 8.0,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 350000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.20,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.15,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.05,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 4000, "satuan_kapasitas": "liter", "volume_state_output": null }
+    },
+    {
+      "kode": "E.19",
+      "nama": "Plate Tamper / Jumping Jack",
+      "tipe_default": "5.5 HP",
+      "daya_hp": 5,
+      "berat_operasi_ton": 0.1,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 15000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.03,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 1.0,
+        "lebar_efektif_m": 0.45,
+        "jumlah_lintasan": 4,
+        "volume_state_output": "compacted"
+      }
+    },
+    {
+      "kode": "E.23",
+      "nama": "Pedestrian Roller",
+      "tipe_default": "1.5 Ton",
+      "daya_hp": 15,
+      "berat_operasi_ton": 1.5,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 180000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.05,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 1.5,
+        "lebar_efektif_m": 0.85,
+        "jumlah_lintasan": 4,
+        "volume_state_output": "compacted"
+      }
+    },
+    {
+      "kode": "E.36",
+      "nama": "Cold Milling Machine",
+      "tipe_default": "W2000",
+      "daya_hp": 500,
+      "berat_operasi_ton": 28.0,
+      "tipe_produksi": "lintasan",
+      "hsd_params": {
+        "harga_pokok_rp": 7000000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 1500,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0015, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.10,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.125,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": {
+        "kecepatan_operasi": 4.0,
+        "lebar_efektif_m": 2.0,
+        "tebal_padat_m": 0.05,
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.37",
+      "nama": "Rock Drill / Pneumatic Drill",
+      "tipe_default": "30 HP",
+      "daya_hp": 30,
+      "berat_operasi_ton": 0.3,
+      "tipe_produksi": "throughput",
+      "hsd_params": {
+        "harga_pokok_rp": 80000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 0.10,
+        "faktor_angsuran": 0.2638,
+        "asuransi_pajak_pct": 0.002,
+        "bahan_bakar_ch": 0.175,
+        "pelumas": {
+          "mesin":    { "cp": 0.003, "satuan": "liter/HP/jam" },
+          "hidrolik": { "cp": 0.0005, "satuan": "liter/HP/jam" },
+          "grease":   { "cp": 0.02,  "satuan": "kg/ton/jam", "basis": "berat_operasi" }
+        },
+        "perawatan_pct": 0.065,
+        "perbaikan_pct": 0.10,
+        "fpr": { "normal": 1.0, "berat": 1.2, "default": "normal" }
+      },
+      "produktivitas_params": { "kapasitas_rated": 2.5, "satuan_kapasitas": "m3/jam", "volume_state_output": "bank" }
+    }
+  ]
+}

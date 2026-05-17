@@ -1,0 +1,84 @@
+{
+  "kode_ahsp": "3.3.1",
+  "nama": "Penyiapan Badan Jalan",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.3",
+  "satuan_bayar": "m2",
+  "volume_state_bayar": "compacted",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.00049176,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.00344234 Jam/unit ÷ 7 jam efektif/hari"
+    },
+    {
+      "ref": "L.02a",
+      "koefisien": 0.00024588,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.00172117 Jam/unit ÷ 7 jam efektif/hari"
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.13",
+      "nama": "Vibrator Roller",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "compacted",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.0017211704,
+        "asumsi": {}
+      },
+      "catatan": "0.00172117 Jam/unit (unit output: m2)"
+    },
+    {
+      "ref": "E.19",
+      "nama": "Plate Tamper",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "compacted",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.0244220124,
+        "asumsi": {}
+      },
+      "catatan": "0.02442201 Jam/unit (unit output: m2)"
+    }
+  ],
+  "variabel": {},
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
+    "halaman": "Sheet D3 — Analisa EI-331",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",
+    "Koefisien peralatan dalam Jam/unit (satuan output)",
+    "HSP referensi (asumsi Excel BIMTEK 2019, harga DKI 2019): Rp 12,967.92/m2"
+  ]
+}

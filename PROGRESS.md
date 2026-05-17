@@ -156,6 +156,12 @@
 | npm publish setup | ⬜ | |
 | First public release | ⬜ | |
 
+### Milestone 13: Bundle Tambahan (Historis)
+| Task | Status | Notes |
+|------|--------|-------|
+| @ahs-id/bina-marga-2016 — Divisi 3 (23 item) | ✅ | Permen PUPR 28/2016 & Spesif. Umum 2010 Rev.3 via BIMTEK v5.0 2019 |
+| @ahs-id/bina-marga-2016 — Divisi 1, 2, 4-10 | ⬜ | Dapat diekstrak dari file Excel BIMTEK yang sama |
+
 ## Legend
 - ⬜ Not started
 - 🔨 In progress

@@ -1,0 +1,88 @@
+{
+  "kode_ahsp": "3.1.7",
+  "nama": "Galian Perkerasan Beraspal dengan Cold Milling Machine",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.1",
+  "satuan_bayar": "m3",
+  "volume_state_bayar": "loose",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.01511716,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.10582011 Jam/unit ÷ 7 jam efektif/hari"
+    },
+    {
+      "ref": "L.03",
+      "koefisien": 0.00755858,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.05291005 Jam/unit ÷ 7 jam efektif/hari"
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.36",
+      "nama": "Cold Milling Machine",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.0529100529,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.05291005 Jam/unit (unit output: m3)"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Motor Grader",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "loose",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.1077698094,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.10776981 Jam/unit (unit output: m3)"
+    }
+  ],
+  "variabel": {},
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
+    "halaman": "Sheet D3 — Analisa EI-317",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",
+    "Koefisien peralatan dalam Jam/unit (satuan output)",
+    "HSP referensi (asumsi Excel BIMTEK 2019, harga DKI 2019): Rp 139,006.16/m3"
+  ]
+}

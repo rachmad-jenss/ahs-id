@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "kode": "L.01",
+      "nama": "Pekerja / Buruh Tak Terampil",
+      "satuan": "OH",
+      "kualifikasi": "non-terampil",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.02a",
+      "nama": "Tukang Batu",
+      "satuan": "OH",
+      "kualifikasi": "terampil",
+      "rumpun": "L.02",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.02b",
+      "nama": "Tukang Kayu",
+      "satuan": "OH",
+      "kualifikasi": "terampil",
+      "rumpun": "L.02",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.02c",
+      "nama": "Tukang Besi",
+      "satuan": "OH",
+      "kualifikasi": "terampil",
+      "rumpun": "L.02",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.03",
+      "nama": "Mandor",
+      "satuan": "OH",
+      "kualifikasi": "pengawas",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.04",
+      "nama": "Operator Alat Berat",
+      "satuan": "OH",
+      "kualifikasi": "operator",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.05",
+      "nama": "Pembantu Operator",
+      "satuan": "OH",
+      "kualifikasi": "semi-terampil",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.06",
+      "nama": "Sopir / Driver",
+      "satuan": "OH",
+      "kualifikasi": "operator",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.07",
+      "nama": "Pembantu Sopir / Driver",
+      "satuan": "OH",
+      "kualifikasi": "semi-terampil",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.08",
+      "nama": "Mekanik",
+      "satuan": "OH",
+      "kualifikasi": "terampil",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.09",
+      "nama": "Pembantu Mekanik",
+      "satuan": "OH",
+      "kualifikasi": "semi-terampil",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L.10",
+      "nama": "Kepala Tukang",
+      "satuan": "OH",
+      "kualifikasi": "terampil-senior",
+      "jam_kerja_nominal": 8,
+      "jam_efektif": 7
+    }
+  ]
+}

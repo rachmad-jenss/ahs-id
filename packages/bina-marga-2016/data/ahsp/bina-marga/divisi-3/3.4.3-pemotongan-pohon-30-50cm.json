@@ -1,0 +1,113 @@
+{
+  "kode_ahsp": "3.4.3",
+  "nama": "Pemotongan Pohon Pilihan Diameter 30–50 cm",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.4",
+  "satuan_bayar": "buah",
+  "volume_state_bayar": "bank",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.04306881,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.30148166 Jam/unit ÷ 7 jam efektif/hari"
+    },
+    {
+      "ref": "L.03",
+      "koefisien": 0.00430688,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.03014817 Jam/unit ÷ 7 jam efektif/hari"
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.14",
+      "nama": "Compressor",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.0301481662,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.03014817 Jam/unit (unit output: buah)"
+    },
+    {
+      "ref": "E.09",
+      "nama": "Dump Truck 6-8 M3",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.0605667265,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.06056673 Jam/unit (unit output: buah)"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Motor Grader",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.3181818182,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.31818182 Jam/unit (unit output: buah)"
+    }
+  ],
+  "variabel": {
+    "L_km": {
+      "label": "Jarak Angkut / Buang Material",
+      "satuan": "km",
+      "tipe": "number",
+      "required": false,
+      "default": 2.0,
+      "min": 0.5,
+      "max": 100
+    }
+  },
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
+    "halaman": "Sheet D3 — Analisa EI-343",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",
+    "Koefisien peralatan dalam Jam/unit (satuan output)",
+    "HSP referensi (asumsi Excel BIMTEK 2019, harga DKI 2019): Rp 47,456.49/buah"
+  ]
+}

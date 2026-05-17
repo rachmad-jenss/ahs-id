@@ -1,0 +1,103 @@
+{
+  "kode_ahsp": "3.4.5",
+  "nama": "Pemotongan Pohon Pilihan Diameter > 75 cm",
+  "bidang": "bina-marga",
+  "divisi": 3,
+  "sub_divisi": "3.4",
+  "satuan_bayar": "buah",
+  "volume_state_bayar": "bank",
+  "jenis_pekerjaan": "mekanis",
+  "is_lump_sum": false,
+  "sub_ahsp": [],
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "koefisien": 0.20502177,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 1.43515237 Jam/unit ÷ 7 jam efektif/hari"
+    },
+    {
+      "ref": "L.03",
+      "koefisien": 0.02050218,
+      "koef_sumber": "kalkulasi",
+      "catatan": "Dihitung dari 0.14351524 Jam/unit ÷ 7 jam efektif/hari"
+    }
+  ],
+  "bahan": [],
+  "peralatan": [
+    {
+      "ref": "E.14",
+      "nama": "Compressor",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.1435152374,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.14351524 Jam/unit (unit output: buah)"
+    },
+    {
+      "ref": "E.08",
+      "nama": "Motor Grader",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.25,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.25 Jam/unit (unit output: buah)"
+    },
+    {
+      "ref": "E.11",
+      "nama": "Crane",
+      "koef_sumber": "tabel",
+      "mode_biaya": "ownership",
+      "volume_state": "bank",
+      "variabel_input": [],
+      "koef_referensi": {
+        "value": 0.1779546758,
+        "asumsi": {
+          "L_km": 2.0
+        }
+      },
+      "catatan": "0.17795468 Jam/unit (unit output: buah)"
+    }
+  ],
+  "variabel": {},
+  "margin": {
+    "overhead_pct": {
+      "label": "Biaya Umum (Overhead)",
+      "min": 0,
+      "max": 15,
+      "default": 10
+    },
+    "profit_pct": {
+      "label": "Keuntungan (Profit)",
+      "min": 0,
+      "max": 15,
+      "default": 5
+    },
+    "constraint": {
+      "rule": "10 <= overhead_pct + profit_pct <= 15"
+    }
+  },
+  "provenance": {
+    "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
+    "halaman": "Sheet D3 — Analisa EI-345",
+    "diverifikasi_oleh": null,
+    "tanggal_verifikasi": null
+  },
+  "catatan_umum": [
+    "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",
+    "Koefisien peralatan dalam Jam/unit (satuan output)",
+    "HSP referensi (asumsi Excel BIMTEK 2019, harga DKI 2019): Rp 358,655.55/buah"
+  ]
+}
