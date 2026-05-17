@@ -33,6 +33,29 @@ importers:
         specifier: ^2.0.0
         version: 2.1.9
 
+  packages/bina-marga-2016:
+    dependencies:
+      '@ahs-id/core':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+
+  packages/bina-marga-2022:
+    dependencies:
+      '@ahs-id/core':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9
+
   packages/cipta-karya-2024:
     dependencies:
       '@ahs-id/core':
@@ -94,6 +117,9 @@ importers:
 
   tests/golden:
     devDependencies:
+      '@ahs-id/bina-marga-2016':
+        specifier: workspace:*
+        version: link:../../packages/bina-marga-2016
       '@ahs-id/cipta-karya-2024':
         specifier: workspace:*
         version: link:../../packages/cipta-karya-2024
