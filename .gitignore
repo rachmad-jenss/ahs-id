@@ -8,3 +8,8 @@ coverage/
 .env
 .env.*
 !.env.example
+
+# Internal dev notes — tidak di-publish
+CLAUDE.md
+PROGRESS.md
+NEXT-SESSION-PROMPT.md
