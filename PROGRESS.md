@@ -140,6 +140,25 @@
 | HSD region 2 (Jawa Barat) | ✅ | hsd-jabar-2025, lowest prices (Java accessibility) |
 | HSD region 3 (Papua) | ✅ | hsd-papua-2025, highest prices (remote logistics) |
 
+### Milestone 13: Bundle @ahs-id/bina-marga-2022 (NEW)
+| Task | Status | Notes |
+|------|--------|-------|
+| Python extraction script (scripts/extract-bina-marga-2022.py) | ✅ | Parses D2-D10 sheets, 422 items extracted |
+| packages/bina-marga-2022 package scaffold | ✅ | package.json, tsconfig.json, src/index.ts |
+| AHSP data: Divisi 2 (41 items) | ✅ | D2 sheet: galian, gorong-gorong, saluran |
+| AHSP data: Divisi 3 (23 items) | ✅ | D3 sheet: perkerasan berbutir |
+| AHSP data: Divisi 4 (38 items) | ✅ | D4 sheet: perkerasan aspal |
+| AHSP data: Divisi 5 (17 items) | ✅ | D5 sheet: perkerasan beton |
+| AHSP data: Divisi 6 (35 items) | ✅ | D6 sheet: struktur |
+| AHSP data: Divisi 7 (113 items) | ✅ | D7(1)+D7(2) sheets: jembatan |
+| AHSP data: Divisi 8 (72 items) | ✅ | D8 sheet: drainase & rehabilitasi |
+| AHSP data: Divisi 9 (61 items) | ✅ | D9(1)+D9(2) sheets: pekerjaan harian |
+| AHSP data: Divisi 10 (22 items) | ✅ | D10 sheet: pekerjaan pemeliharaan rutin |
+| tenaga-kerja.json (L01-L25 codes) | ✅ | 32 labor codes with hourly rates |
+| bahan-master.json (M01-M122 codes) | ✅ | 311 bahan codes with prices |
+| TypeScript build passes | ✅ | tsc --noEmit clean |
+| Total: 422 items across 9 divisi | ✅ | D2-D10, Permen PUPR 1/2022 |
+
 ### Milestone 11: Export & CLI
 | Task | Status | Notes |
 |------|--------|-------|

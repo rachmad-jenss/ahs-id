@@ -1,0 +1,6963 @@
+[
+  {
+    "kode_ahsp": "8.1.(1)",
+    "nama": "Cairan perekat epoxy resin",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.430292599,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 3.012048 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M125",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.6024096386,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E68",
+        "nama": "Peralatan E68",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.6024096386,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 340653.84
+  },
+  {
+    "kode_ahsp": "8.1.(2)",
+    "nama": "Bahan Penutup (Sealant)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0511339987,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.357938 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0102267997,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.071588 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M126",
+        "koefisien": 1.1,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1.2048192771,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E69",
+        "nama": "Peralatan E69",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0715875982,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 244667.44
+  },
+  {
+    "kode_ahsp": "8.1.(3a)",
+    "nama": "Tabung Penyuntik, penyediaan",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.05,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.35 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.01,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.07 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M127",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 197068.69
+  },
+  {
+    "kode_ahsp": "8.1.(3b)",
+    "nama": "Tabung Penyuntik, penggunaan",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.05,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.35 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.01,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.07 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M127",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 197068.69
+  },
+  {
+    "kode_ahsp": "8.2.(1)",
+    "nama": "Penambalan (Patching)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0369219371,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.258454 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0092304843,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.064613 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.06461339,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.06461339,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 4491792.25
+  },
+  {
+    "kode_ahsp": "8.2.(2)",
+    "nama": "Perbaikan dengan Cara Graut",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 2.9954102123,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 20.967871 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.7488525531,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 5.241968 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M132",
+        "koefisien": 9.75,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 5.3754016064,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 13316662.63
+  },
+  {
+    "kode_ahsp": "8.3.(1a)",
+    "nama": "Pengecatan Protektif pada elemen struktur beton, tebal 200 μm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E64",
+        "nama": "Peralatan E64",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 198622.85
+  },
+  {
+    "kode_ahsp": "8.3.(2a)",
+    "nama": "Pengecatan dekoratif pada elemen struktur beton, tebal 100 µm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E64",
+        "nama": "Peralatan E64",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 198622.85
+  },
+  {
+    "kode_ahsp": "8.4.(1)",
+    "nama": "Perkuatan Struktur dengan bahan FRP  jenis e-glass per lapis pada daerah kering",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0258175559,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.180723 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1600336.33
+  },
+  {
+    "kode_ahsp": "8.4.(2)",
+    "nama": "Perkuatan Struktur dengan bahan FRP  jenis e-glass per lapis pada daerah basah",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0258175559,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.180723 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1684486.33
+  },
+  {
+    "kode_ahsp": "8.4.(3)",
+    "nama": "Perkuatan Struktur dengan bahan FRP  laminasi jenis glass pada daerah kering",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0258175559,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.180723 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1600336.33
+  },
+  {
+    "kode_ahsp": "8.4.(4)",
+    "nama": "Perkuatan Struktur dengan bahan FRP jenis carbon per lapis pada daerah kering",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0258175559,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.180723 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1600336.33
+  },
+  {
+    "kode_ahsp": "8.4.(5)",
+    "nama": "Perkuatan Struktur dengan bahan FRP jenis carbon per lapis pada daerah basah",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0258175559,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.180723 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1042636.33
+  },
+  {
+    "kode_ahsp": "8.4.(7)",
+    "nama": "Pemasangan perkuatan pelat lantai dengan steel plate bonding",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0016444303,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.011511 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0008222152,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.005756 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0002740717,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.001919 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0127900136,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.001918502,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1035427.64
+  },
+  {
+    "kode_ahsp": "8.4.(8)",
+    "nama": "Pemasangan external stressing jembatan beton bentang .…. m",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.4",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.5714285714,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 4.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0476190476,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.333333 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E63",
+        "nama": "Peralatan E63",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.8032128514,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 30.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 61809751.26
+  },
+  {
+    "kode_ahsp": "8.5.(1a)",
+    "nama": "Penggantian baut mutu tinggi A325 Tipe 1 diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2008032129,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.405622 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0100401606,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.070281 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M25",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 114516.19
+  },
+  {
+    "kode_ahsp": "8.5.(2a)",
+    "nama": "Penggantian Baut Mutu Tinggi A490 Tipe 1 diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2008032129,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.405622 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0100401606,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.070281 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M25",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 103554.69
+  },
+  {
+    "kode_ahsp": "8.5.(3a)",
+    "nama": "Penggantian Baut Biasa Grade A diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2008032129,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.405622 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0100401606,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.070281 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M25",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 98604.69
+  },
+  {
+    "kode_ahsp": "8.5.(4a)",
+    "nama": "Penggantian Baut Biasa Grade B diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2008032129,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.405622 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0100401606,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.070281 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M25",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 95304.69
+  },
+  {
+    "kode_ahsp": "8.5.(5a)",
+    "nama": "Penggantian Baut Biasa Grade C untuk anchor bolts diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2008032129,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.405622 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0100401606,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.070281 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M25",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Buah"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0702811245,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 93104.69
+  },
+  {
+    "kode_ahsp": "8.5.(6a)",
+    "nama": "Pengencangan Baut Biasa Grade A diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1434308663,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.004016 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0071715433,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.050201 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 58646.21
+  },
+  {
+    "kode_ahsp": "8.5.(7a)",
+    "nama": "Pengencangan Baut Biasa Grade B diameter M25",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.5",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1434308663,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.004016 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0071715433,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.050201 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E78",
+        "nama": "Peralatan E78",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 58646.21
+  },
+  {
+    "kode_ahsp": "8.6.(1a)",
+    "nama": "Pengelasan SMAW pada baja Grade 30",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.6",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1032702238,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.722892 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E32",
+        "nama": "Crane On Truck 25 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072289157,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 99075.5
+  },
+  {
+    "kode_ahsp": "8.6.(2a)",
+    "nama": "Pengelasan SAW pada baja Grade 30",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.6",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1032702238,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.722892 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E32",
+        "nama": "Crane On Truck 25 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072289157,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 99075.5
+  },
+  {
+    "kode_ahsp": "8.6.(3a)",
+    "nama": "Pengelasan GMAW pada baja Grade 30",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.6",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1032702238,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.722892 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E32",
+        "nama": "Crane On Truck 25 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E69",
+        "nama": "Peralatan E69",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072289157,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 99075.5
+  },
+  {
+    "kode_ahsp": "8.6.(4a)",
+    "nama": "Pengelasan FCAW pada baja Grade 30",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.6",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1032702238,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.722892 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0516351119,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.361446 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E32",
+        "nama": "Crane On Truck 25 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E69",
+        "nama": "Peralatan E69",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072289157,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 99075.5
+  },
+  {
+    "kode_ahsp": "8.7.(1a)",
+    "nama": "Pengecatan struktur baja pada daerah kering tebal 80 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1204819277,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 199433.48
+  },
+  {
+    "kode_ahsp": "8.7.(1b)",
+    "nama": "Pengecatan struktur baja pada daerah kering tebal 240 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 308015.54
+  },
+  {
+    "kode_ahsp": "8.7.(2a)",
+    "nama": "Pengecatan struktur baja pada daerah basah/pasang surut 360 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 308015.54
+  },
+  {
+    "kode_ahsp": "8.7.(2b)",
+    "nama": "Pengecatan struktur baja pada daerah basah/pasang surut 500 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 308015.54
+  },
+  {
+    "kode_ahsp": "8.7.(3a)",
+    "nama": "Pengecatan pada elemen sandaran dan/atau pagar pengaman (guard rail) 80 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 308015.54
+  },
+  {
+    "kode_ahsp": "8.7.(3b)",
+    "nama": "Pengecatan pada elemen sandaran dan/atau pagar pengaman (guard rail) 160 mikron",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.7",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1721170396,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.204819 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E77",
+        "nama": "Peralatan E77",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.2409638554,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 308015.54
+  },
+  {
+    "kode_ahsp": "8.8.(1)",
+    "nama": "Perbaikan Elemen Struktur Baja dengan Cara Pelurusan",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.8",
+    "satuan_bayar": "lump sum",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 7.7165806081,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 54.016064 Jam/lump sum ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 7.7165806081,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 54.016064 Jam/lump sum ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.7716580608,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 5.401606 Jam/lump sum ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M195",
+        "koefisien": 0.42,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E07",
+        "nama": "Concrete Vibrator",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 5.4016064257,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 7254853.05
+  },
+  {
+    "kode_ahsp": "8.8.(2)",
+    "nama": "Penggantian Elemen Struktur Baja Grade 250 (Kuat Leleh 250 Mpa)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.8",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0186476383,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.130533 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E07",
+        "nama": "Concrete Vibrator",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1305334684,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0025702811,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1182968.43
+  },
+  {
+    "kode_ahsp": "8.8.(3)",
+    "nama": "Penggantian Elemen Struktur Baja Grade 345 (Kuat Leleh 345 Mpa)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.8",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0186476383,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.130533 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E07",
+        "nama": "Concrete Vibrator",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1305334684,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0025702811,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0077108434,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1182126.35
+  },
+  {
+    "kode_ahsp": "8.8.(4)",
+    "nama": "Penggantian Elemen Struktur Baja Grade 485 (Kuat Leleh 485 Mpa)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.8",
+    "satuan_bayar": "kg",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1864763834,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.305335 Jam/kg ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0186476383,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.130533 Jam/kg ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E07",
+        "nama": "Concrete Vibrator",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1305334684,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0025702811,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0077108434,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1182687.35
+  },
+  {
+    "kode_ahsp": "8.9.(1)",
+    "nama": "Perkuatan dengan external stressing untuk jembatan baja dengan bentang …..m",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.9",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.5714285714,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 4.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0476190476,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.333333 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E63",
+        "nama": "Peralatan E63",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.8032128514,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 30.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E74",
+        "nama": "Peralatan E74",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 3.6144578313,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 30.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 62062091.2
+  },
+  {
+    "kode_ahsp": "8.10.(1)",
+    "nama": "Penggantian Lantai Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 1.4457831325,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 10.120482 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.4457831325,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 10.120482 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.2065404475,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.445783 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 72.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1.4457831325,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 4.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 33305616.11
+  },
+  {
+    "kode_ahsp": "8.10.(2)",
+    "nama": "Perbaikan Lantai Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 3.453815261,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 24.176707 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 3.453815261,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 24.176707 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.4934021801,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 3.453815 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 172.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 3.453815261,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 1.0,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 34859368.25
+  },
+  {
+    "kode_ahsp": "8.10.(3)",
+    "nama": "Penggantian Gelagar Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.4589787722,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 3.212851 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0917957544,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.64257 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0458978772,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.321285 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 16.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.3212851406,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 32328604.53
+  },
+  {
+    "kode_ahsp": "8.10.(4)",
+    "nama": "Perbaikan Gelagar Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.4016064257,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 2.811245 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0803212851,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.562249 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0401606426,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.281124 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 14.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.281124498,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 32269078.06
+  },
+  {
+    "kode_ahsp": "8.10.(5)",
+    "nama": "Penggantian Balok Kepala Tiang Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1434308663,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.004016 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0286861733,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.200803 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 5.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1004016064,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 32001208.98
+  },
+  {
+    "kode_ahsp": "8.10.(6)",
+    "nama": "Perbaikan Papan Lajur Kendaraan",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.6597819851,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 4.618474 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.131956397,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.923695 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0659781985,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.461847 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 23.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.4618473896,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 32536947.15
+  },
+  {
+    "kode_ahsp": "8.10.(7)",
+    "nama": "Penggantian Papan Lajur Kendaraan",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2409638554,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.686747 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.2409638554,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.686747 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M133",
+        "koefisien": 104.659968,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg/m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 43.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.8634538153,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 35344980.74
+  },
+  {
+    "kode_ahsp": "8.10.(8)",
+    "nama": "Perbaikan dan/atau Penggantian Kerb Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 6.397016638,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 44.779116 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.2794033276,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 8.955823 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.6397016638,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 4.477912 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M142",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 223.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah/m3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 4.4779116466,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 37533307.9
+  },
+  {
+    "kode_ahsp": "8.10.(9)",
+    "nama": "Perbaikan dan/atau Penggantian Sandaran Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 1.3482501434,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 9.437751 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.2696500287,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.88755 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.1348250143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.943775 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.9437751004,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 33266724.29
+  },
+  {
+    "kode_ahsp": "8.10.(10)",
+    "nama": "Pengecatan/Perlindungan Gelagar",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M224",
+        "koefisien": 0.2856,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M225",
+        "koefisien": 0.255,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M33",
+        "koefisien": 0.204,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E73",
+        "nama": "Peralatan E73",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 82858.65
+  },
+  {
+    "kode_ahsp": "8.10.(11)",
+    "nama": "Pengecatan/Perlindungan Lantai Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E12e",
+        "nama": "Peralatan E12e",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E98d",
+        "nama": "Peralatan E98d",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 82858.65
+  },
+  {
+    "kode_ahsp": "8.10.(12)",
+    "nama": "Pengecatan/Perlindungan Tiang Pancang Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M224",
+        "koefisien": 0.2856,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M225",
+        "koefisien": 0.255,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M33",
+        "koefisien": 0.204,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E73",
+        "nama": "Peralatan E73",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 82858.65
+  },
+  {
+    "kode_ahsp": "8.10.(13)",
+    "nama": "Pengecatan/Perlindungan Balok Kepala Kayu",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m2",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m2 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m2 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M224",
+        "koefisien": 0.2856,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M225",
+        "koefisien": 0.255,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M33",
+        "koefisien": 0.204,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E73",
+        "nama": "Peralatan E73",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 82858.65
+  },
+  {
+    "kode_ahsp": "8.10.(14)",
+    "nama": "Pengecatan/Perlindungan Sandaran",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.10",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.017211704,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.120482 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.008605852,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.060241 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M224",
+        "koefisien": 0.2856,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M225",
+        "koefisien": 0.255,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M33",
+        "koefisien": 0.204,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E73",
+        "nama": "Peralatan E73",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0602409639,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 82858.65
+  },
+  {
+    "kode_ahsp": "8.11.(1)",
+    "nama": "Penggantian dan Perbaikan Sambungan Siar Muai Tipe Asphaltic Plug",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.2581755594,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.807229 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.3442340792,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 2.409639 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M133",
+        "koefisien": 4.8042,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg/m1"
+      },
+      {
+        "ref": "M165",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m'"
+      },
+      {
+        "ref": "M255",
+        "koefisien": 12.852,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg/m1"
+      },
+      {
+        "ref": "M77",
+        "koefisien": 45.045,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg/m1"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1041666667,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E06",
+        "nama": "Concrete Mixer 0.3-0.6 M3",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0030120482,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0860585198,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E25",
+        "nama": "Tamper (Compactor)",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072289157,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1041666667,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0860585198,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E79",
+        "nama": "Peralatan E79",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1144578313,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1216958.67
+  },
+  {
+    "kode_ahsp": "8.11.(2)",
+    "nama": "Penggantian dan Perbaikan Sambungan Siar Muai Tipe Silicone Seal",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.7745266781,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 5.421687 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.3872633391,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 2.710843 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.1290877797,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.903614 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M226",
+        "koefisien": 0.04896,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M179",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m"
+      },
+      {
+        "ref": "M227",
+        "koefisien": 7.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0014189607,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1042377.03
+  },
+  {
+    "kode_ahsp": "8.11.(3)",
+    "nama": "Penggantian Karet Pengisi Sambungan Siar Muai Tipe Strip Seal",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0286861733,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.200803 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1358094.25
+  },
+  {
+    "kode_ahsp": "8.11.(4)",
+    "nama": "Penggantian Karet Pengisi Sambungan Siar Muai Tipe Compression Seal",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0430292599,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.301205 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1414111.63
+  },
+  {
+    "kode_ahsp": "8.11.(5)",
+    "nama": "Penggantian Sambungan Siar Muai Tipe Modular, lebar",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0082616179,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.057831 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.004130809,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.028916 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0013769363,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.009639 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E12",
+        "nama": "Motor Grader > 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0014189607,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 225081.44
+  },
+  {
+    "kode_ahsp": "8.11.(6)",
+    "nama": "Penggantian Sambungan Siar Muai Tipe Finger Plate, lebar",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0082616179,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.057831 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.004130809,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.028916 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0013769363,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.009639 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0096385542,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0014189607,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 4107201.44
+  },
+  {
+    "kode_ahsp": "8.11.(7)",
+    "nama": "Penggantian Sambungan Siar Muai Tipe Dobel Siku dengan Penutup Karet Neoprene",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.11",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0413080895,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.289157 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0206540448,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.144578 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0068846816,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.048193 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0481927711,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0481927711,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E76",
+        "nama": "Peralatan E76",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0014189607,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 3247351.44
+  },
+  {
+    "kode_ahsp": "8.12.(2)",
+    "nama": "Penggantian Landasan Elastomer Karet Alam Berlapis Baja Ukuran ….mm x …mm x ….mm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M264",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: bh"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 7085875.42
+  },
+  {
+    "kode_ahsp": "8.12.(3)",
+    "nama": "Penggantian Landasan Elastomer Sintetis Berlapis Baja Ukuran ….mm x …mm x ….mm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E83",
+        "nama": "Peralatan E83",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 11695843.4
+  },
+  {
+    "kode_ahsp": "8.12.(4)",
+    "nama": "Penggantian Landasan Karet Strip Tebal  …..mm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M81",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: bh"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 6416525.42
+  },
+  {
+    "kode_ahsp": "8.12.(5)",
+    "nama": "Penggantian Landasan Logam Berongga (Pot Bearing)",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M234",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: bh"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 15030624.6
+  },
+  {
+    "kode_ahsp": "8.12.(6)",
+    "nama": "Penggantian Landasan Logam Jenis Spherical",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M235",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: bh"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E83",
+        "nama": "Peralatan E83",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E84",
+        "nama": "Peralatan E84",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 0.5,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 11114075.42
+  },
+  {
+    "kode_ahsp": "8.12.(7)",
+    "nama": "Penggantian Stopper Lateral dan Horizontal",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.12",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 10.2857142857,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 72.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L08",
+        "koefisien": 1.7142857143,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 12.0 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M236",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: bh"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E82",
+        "nama": "Peralatan E82",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E83",
+        "nama": "Peralatan E83",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E84",
+        "nama": "Peralatan E84",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 12.0,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 17415843.4
+  },
+  {
+    "kode_ahsp": "8.13.(1)",
+    "nama": "Perbaikan Sandaran Baja",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.13",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0688468158,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.481928 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0688468158,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.481928 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0344234079,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.240964 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M202",
+        "koefisien": 0.2856,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M203",
+        "koefisien": 1.326,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M33",
+        "koefisien": 0.1166835165,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 405429.44
+  },
+  {
+    "kode_ahsp": "8.13.(2)",
+    "nama": "Penggantian Sandaran Baja",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.13",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.04,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.28 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.08,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.56 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.24,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.68 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M24a",
+        "koefisien": 2.04,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M"
+      },
+      {
+        "ref": "M237",
+        "koefisien": 1.53,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 300437.47
+  },
+  {
+    "kode_ahsp": "8.13.(3)",
+    "nama": "Perbaikan Tembok Sandaran Beton",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.13",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.2,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.4 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.2,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 1.4 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.1,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.7 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 844855.57
+  },
+  {
+    "kode_ahsp": "8.13.(4)",
+    "nama": "Perbaikan Sandaran Beton-Baja",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.13",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1333333333,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.933333 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1333333333,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.933333 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0666666667,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.466667 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M59",
+        "koefisien": 0.0408,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M130",
+        "koefisien": 0.5304,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m2"
+      },
+      {
+        "ref": "M24a",
+        "koefisien": 0.408,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m"
+      },
+      {
+        "ref": "M238",
+        "koefisien": 14.81295,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 4.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 2845790.55
+  },
+  {
+    "kode_ahsp": "8.13.(5)",
+    "nama": "Penggantian Sandaran Beton-Baja",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.13",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.1333333333,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.933333 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.1333333333,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.933333 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0666666667,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.466667 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M59",
+        "koefisien": 0.102,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M130",
+        "koefisien": 1.326,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m2"
+      },
+      {
+        "ref": "M24a",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m"
+      },
+      {
+        "ref": "M238",
+        "koefisien": 14.81295,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      },
+      {
+        "ref": "M223",
+        "koefisien": 4.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah"
+      }
+    ],
+    "peralatan": [],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 3331667.88
+  },
+  {
+    "kode_ahsp": "8.14.(1)",
+    "nama": "Penggantian Deck Drain",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.14",
+    "satuan_bayar": "buah",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0028123924,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.019687 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.0028123924,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.019687 Jam/buah ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0014061962,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.009843 Jam/buah ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M239",
+        "koefisien": 1.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah"
+      },
+      {
+        "ref": "M125",
+        "koefisien": 0.0942100805,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      },
+      {
+        "ref": "M226",
+        "koefisien": 0.00817,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 2.5641230769,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0098433735,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0098433735,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 160618.19
+  },
+  {
+    "kode_ahsp": "8.14.(2)",
+    "nama": "Penggantian Pipa Penyalur, Pipa Cucuran PVC diameter ….mm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.14",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.004302926,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.03012 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.004302926,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.03012 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.002151463,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.01506 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M242",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m"
+      },
+      {
+        "ref": "M244",
+        "koefisien": 2.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah"
+      },
+      {
+        "ref": "M226",
+        "koefisien": 0.0573285413,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 17.9923422,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.015060241,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.015060241,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 330288.91
+  },
+  {
+    "kode_ahsp": "8.14.(3)",
+    "nama": "Penggantian Pipa Penyalur, Pipa Cucuran Baja diameter ….mm",
+    "bidang": "bina-marga",
+    "divisi": 8,
+    "sub_divisi": "8.14",
+    "satuan_bayar": "m",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.004302926,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.03012 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L02",
+        "koefisien": 0.004302926,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.03012 Jam/m ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.002151463,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.01506 Jam/m ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M241",
+        "koefisien": 1.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m"
+      },
+      {
+        "ref": "M243",
+        "koefisien": 2.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: buah"
+      },
+      {
+        "ref": "M125",
+        "koefisien": 0.0942100805,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: kg"
+      },
+      {
+        "ref": "M226",
+        "koefisien": 0.0573285413,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: m3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 17.9923422,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: liter"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E05",
+        "nama": "Bulldozer 100 HP",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.015060241,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E26",
+        "nama": "Generator Set",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.015060241,
+          "asumsi": {
+            "fa": 0.83,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D8",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 750158.91
+  }
+]

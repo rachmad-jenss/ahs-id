@@ -1,0 +1,2465 @@
+[
+  {
+    "kode_ahsp": "5.1.(1)",
+    "nama": "Lapis Fondasi Agregat Kelas A",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.1",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0111282569,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.077898 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0013910321,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.009737 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M26",
+        "koefisien": 1.2889655172,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.136015991,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0027309237,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0087001149,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0097372248,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 495835.41
+  },
+  {
+    "kode_ahsp": "5.1.(2)",
+    "nama": "Lapis Fondasi Agregat Kelas B",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.1",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "ref": "M27",
+        "koefisien": 1.2714285714,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0027309237,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.008581746,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0097372248,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 457940.44
+  },
+  {
+    "kode_ahsp": "5.1.(3)",
+    "nama": "Lapis Fondasi Agregat Kelas S",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.1",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [],
+    "bahan": [],
+    "peralatan": [
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0027309237,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0087001149,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0097372248,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 464337.25
+  },
+  {
+    "kode_ahsp": "5.1.(4)",
+    "nama": "Lapis Drainase",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.1",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "ref": "M38",
+        "koefisien": 1.2714285714,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0027309237,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.008581746,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0058423349,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 507209.64
+  },
+  {
+    "kode_ahsp": "5.2.(1)",
+    "nama": "Lapis Permukaan Agregat Tanpa Penutup Aspal",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.2",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0222565137,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.155796 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0027820642,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.019474 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M26",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.136015991,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0054618474,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0087001149,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0194744495,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0140562249,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 432836.46
+  },
+  {
+    "kode_ahsp": "5.2.(2)",
+    "nama": "Lapis Fondasi Agregat Tanpa Penutup Aspal",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.2",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0099429884,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.069601 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0012428736,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.0087 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M27",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.136015991,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0027309237,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0087001149,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0097372248,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0140562249,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 399491.02
+  },
+  {
+    "kode_ahsp": "5.3.(1a)",
+    "nama": "Perkerasan Beton Semen",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0717154332,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.502008 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 331.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.5163103448,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9413793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M171",
+        "koefisien": 0.9945,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.4375,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.87,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M67a",
+        "koefisien": 0.9945,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1503113.13
+  },
+  {
+    "kode_ahsp": "5.3.(1b)",
+    "nama": "Perkerasan Beton Semen Fast Track 8 Jam",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0717154332,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.502008 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 405.45,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M05",
+        "koefisien": 135.15,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.4163793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9232758621,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M67a",
+        "koefisien": 4.8654,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M256",
+        "koefisien": 24.327,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.4375,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.87,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M257",
+        "koefisien": 3.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 3485174.93
+  },
+  {
+    "kode_ahsp": "5.3.(1c)",
+    "nama": "Perkerasan Beton Semen Fast Track 24 Jam",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0717154332,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.502008 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 405.45,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M05",
+        "koefisien": 135.15,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.4163793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9232758621,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M67a",
+        "koefisien": 4.8654,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M256",
+        "koefisien": 0.8109,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.4375,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.87,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M257",
+        "koefisien": 3.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 3032490.0
+  },
+  {
+    "kode_ahsp": "5.3.(2a)",
+    "nama": "Perkerasan Beton Semen dengan Anyaman Tulangan Tunggal",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0215146299,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.150602 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 331.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.5163103448,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9413793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M67a",
+        "koefisien": 0.9945,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M258",
+        "koefisien": 12.06558,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.328125,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.6525,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 1915427.6
+  },
+  {
+    "kode_ahsp": "5.3.(2b)",
+    "nama": "Perkerasan Beton Semen Fast Track 8 Jam dengan Anyaman Tulangan Tunggal",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0215146299,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.150602 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 405.45,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M05",
+        "koefisien": 135.15,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.4163793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9232758621,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M67a",
+        "koefisien": 4.8654,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M256",
+        "koefisien": 24.327,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M258",
+        "koefisien": 12.06558,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.4375,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.87,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M257",
+        "koefisien": 3.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 23.0
+  },
+  {
+    "kode_ahsp": "5.3.(2c)",
+    "nama": "Perkerasan Beton Semen Fast Track 24 Jam dengan Anyaman Tulangan Tunggal",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0215146299,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.150602 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0860585198,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.60241 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 405.45,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M05",
+        "koefisien": 135.15,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.4163793103,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9232758621,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M170",
+        "koefisien": 162.18,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M171",
+        "koefisien": 4.8654,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M256",
+        "koefisien": 0.8109,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M39a",
+        "koefisien": 15.875,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M258",
+        "koefisien": 0.99,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M94",
+        "koefisien": 12.06558,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M95",
+        "koefisien": 0.02,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M96",
+        "koefisien": 0.17,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M97",
+        "koefisien": 0.4375,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M98",
+        "koefisien": 0.87,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Ltr"
+      },
+      {
+        "ref": "M195",
+        "koefisien": 0.57,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      },
+      {
+        "ref": "M257",
+        "koefisien": 3.5,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 23.0
+  },
+  {
+    "kode_ahsp": "5.3.(3)",
+    "nama": "Lapis Pondasi Bawah Beton Kurus",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0143430866,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.100402 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0573723465,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.401606 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 231.54,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M01a",
+        "koefisien": 0.5995862069,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M03",
+        "koefisien": 0.9247241379,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E80",
+        "nama": "Peralatan E80",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0502008032,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 23.0
+  },
+  {
+    "kode_ahsp": "5.4.(1)",
+    "nama": "Stabilisasi Tanah Dasar dengan Semen",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.4",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0042498034,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.029749 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0004249803,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.002975 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M12",
+        "koefisien": 55.692,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M259",
+        "koefisien": 2.7110883423,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M2"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0018206158,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E18",
+        "nama": "Asphalt Distributor 4000 L",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0072853773,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.046184739,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E27",
+        "nama": "Track Loader",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0029748624,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 827998.06
+  },
+  {
+    "kode_ahsp": "5.4.(2)",
+    "nama": "Lapis Fondasi Tanah Semen",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.4",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L01",
+        "koefisien": 0.0042498034,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.029749 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L03",
+        "koefisien": 0.0004249803,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.002975 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M09",
+        "koefisien": 1.3084444444,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M12",
+        "koefisien": 1766.4,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      },
+      {
+        "ref": "M259",
+        "koefisien": 128.0,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1316347718,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E13",
+        "nama": "Tandem Roller 6-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0018206158,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0083996115,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E18",
+        "nama": "Asphalt Distributor 4000 L",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0101995283,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.046184739,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      },
+      {
+        "ref": "E27",
+        "nama": "Track Loader",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0029748624,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 846923.63
+  },
+  {
+    "kode_ahsp": "5.5.(1)",
+    "nama": "Lapis Fondasi Agregat Semen Kelas A (Cement Treated Base = CTB)",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0001593676,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.001116 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0015936763,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.011156 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M26",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M12",
+        "koefisien": 90.78,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1932297815,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0087001149,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0064914832,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0140562249,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 23.0
+  },
+  {
+    "kode_ahsp": "5.5.(2)",
+    "nama": "Lapis Fondasi Agregat Semen Kelas B (Cement Treated Sub-Base = CTSB)",
+    "bidang": "bina-marga",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m3",
+    "volume_state_bayar": "bank",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "sub_ahsp": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L03",
+        "koefisien": 0.0001593676,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.001116 Jam/m3 ÷ 7.0 jam/OH"
+      },
+      {
+        "ref": "L01",
+        "koefisien": 0.0015936763,
+        "koef_sumber": "kalkulasi",
+        "catatan": "Sumber: 0.011156 Jam/m3 ÷ 7.0 jam/OH"
+      }
+    ],
+    "bahan": [
+      {
+        "ref": "M27",
+        "koefisien": 1.05,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: M3"
+      },
+      {
+        "ref": "M12",
+        "koefisien": 102.39984,
+        "koef_sumber": "kalkulasi",
+        "volume_state": null,
+        "catatan": "Satuan: Kg"
+      }
+    ],
+    "peralatan": [
+      {
+        "ref": "E09",
+        "nama": "Dump Truck 10 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.1339288633,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E15",
+        "nama": "Vibratory Roller 5-8 T",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.008581746,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E19",
+        "nama": "Compressor 4000-6500 L/M",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0064914832,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: jam"
+      },
+      {
+        "ref": "E23",
+        "nama": "Truck Crane 25 Ton",
+        "koef_sumber": "kalkulasi",
+        "mode_biaya": "ownership",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 0.0140562249,
+          "asumsi": {
+            "fa": 0.83,
+            "jarak_km": 8.725,
+            "jam_kerja": 7.0
+          }
+        },
+        "catatan": "Satuan: Jam"
+      }
+    ],
+    "variabel": {},
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "Permen PUPR 1/2022",
+      "halaman": "D5",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    },
+    "catatan_umum": [],
+    "hsp_referensi": 23.0
+  }
+]

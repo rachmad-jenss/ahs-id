@@ -1,0 +1,553 @@
+{
+  "version": "1.0.0",
+  "sumber": "Permen PUPR 1/2022",
+  "catatan": "HSD = total biaya sewa alat per jam (biaya pasti + biaya operasi)",
+  "items": [
+    {
+      "kode": "E01",
+      "nama": "ASPHALT MIXING PLANT",
+      "hsd_rp_per_jam": 9947496.51,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E02",
+      "nama": "ASPHALT FINISHER",
+      "hsd_rp_per_jam": 305255.13,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E03",
+      "nama": "POWER BROOM",
+      "hsd_rp_per_jam": 83348.63,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E04",
+      "nama": "BULLDOZER 100-150 HP",
+      "hsd_rp_per_jam": 788006.34,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E05",
+      "nama": "COMPRESSOR 4000-6500 L\\M",
+      "hsd_rp_per_jam": 174413.18,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E06",
+      "nama": "CONCRETE MIXER 0.3-0.6 M3",
+      "hsd_rp_per_jam": 102925.67,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E07",
+      "nama": "CRANE 10-15 TON",
+      "hsd_rp_per_jam": 658617.26,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E08",
+      "nama": "DUMP TRUCK 4 TON (2-3 M3)",
+      "hsd_rp_per_jam": 364675.38,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E09",
+      "nama": "DUMP TRUCK 10 TON (6-8 M3)",
+      "hsd_rp_per_jam": 692884.84,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E10",
+      "nama": "EXCAVATOR 80-140 HP",
+      "hsd_rp_per_jam": 496739.51,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E11",
+      "nama": "FLAT BED TRUCK 3-4 TON",
+      "hsd_rp_per_jam": 364573.17,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E12",
+      "nama": "GENERATOR SET",
+      "hsd_rp_per_jam": 394073.33,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E13",
+      "nama": "MOTOR GRADER >100 HP",
+      "hsd_rp_per_jam": 504571.85,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E14",
+      "nama": "TRACK LOADER 75-100 HP",
+      "hsd_rp_per_jam": 381307.76,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E15",
+      "nama": "WHEEL LOADER 1.0-1.6 M3",
+      "hsd_rp_per_jam": 510342.7,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E16",
+      "nama": "THREE WHEEL ROLLER 6-8 T",
+      "hsd_rp_per_jam": 263729.92,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E17",
+      "nama": "TANDEM ROLLER 6-8 T.",
+      "hsd_rp_per_jam": 451863.75,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E18",
+      "nama": "TIRE ROLLER 8-10 T.",
+      "hsd_rp_per_jam": 647396.9,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E19",
+      "nama": "VIBRATORY ROLLER 5-8 T.",
+      "hsd_rp_per_jam": 321608.16,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E20",
+      "nama": "CONCRETE VIBRATOR",
+      "hsd_rp_per_jam": 68053.37,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E21",
+      "nama": "STONE CRUSHER",
+      "hsd_rp_per_jam": 838855.15,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E22",
+      "nama": "WATER PUMP 70-100 mm",
+      "hsd_rp_per_jam": 68666.48,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E23",
+      "nama": "WATER TANKER 3000-4500 L.",
+      "hsd_rp_per_jam": 421531.71,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E24",
+      "nama": "PEDESTRIAN ROLLER",
+      "hsd_rp_per_jam": 233182.64,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E25",
+      "nama": "TAMPER",
+      "hsd_rp_per_jam": 90120.03,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E26",
+      "nama": "JACK HAMMER",
+      "hsd_rp_per_jam": 64115.25,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E27",
+      "nama": "PULVI MIXER",
+      "hsd_rp_per_jam": 762903.66,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E28",
+      "nama": "CONCRETE PUMP",
+      "hsd_rp_per_jam": 461802.16,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E29",
+      "nama": "TRAILER 20 TON",
+      "hsd_rp_per_jam": 644403.48,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E30",
+      "nama": "PILE DRIVER + HAMMER",
+      "hsd_rp_per_jam": 173377.85,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E31",
+      "nama": "CRANE ON TRACK 35 TON",
+      "hsd_rp_per_jam": 1263198.31,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E32",
+      "nama": "WELDING SET",
+      "hsd_rp_per_jam": 75554.01,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E33",
+      "nama": "BORE PILE MACHINE",
+      "hsd_rp_per_jam": 699412.12,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E34",
+      "nama": "ASPHALT LIQUID MIXER",
+      "hsd_rp_per_jam": 95408.07,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E34a",
+      "nama": "ASPHALT LIQUID MIXER",
+      "hsd_rp_per_jam": 159536.82,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E01a",
+      "nama": "ASPHALT MIXING PLANT (WARM MIX)",
+      "hsd_rp_per_jam": 9271596.67,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E01b",
+      "nama": "ASPHALT MIXING PLANT (MODIFIKASI, ASBUTON)",
+      "hsd_rp_per_jam": 10615596.67,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E17a",
+      "nama": "TANDEM ROLLER 8-10 T.",
+      "hsd_rp_per_jam": 424439.85,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E11a",
+      "nama": "FLAT BED TRUCK 10 TON",
+      "hsd_rp_per_jam": 203474.22,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E88",
+      "nama": "TRUCK 2 TON (0,9-1,5 M3)",
+      "hsd_rp_per_jam": 308291.94,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E89",
+      "nama": "DUMP TRUCK 7 TON (5-6 M3)",
+      "hsd_rp_per_jam": 571075.32,
+      "sumber_sheet": "5-Alat(1)"
+    },
+    {
+      "kode": "E35",
+      "nama": "TRONTON 15 TON",
+      "hsd_rp_per_jam": 685520.15,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E37",
+      "nama": "COLD MILLING MACHINE",
+      "hsd_rp_per_jam": 1497268.82,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E36",
+      "nama": "ROCK DRILL BREAKER",
+      "hsd_rp_per_jam": 597473.13,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E38",
+      "nama": "COLD RECYCLER",
+      "hsd_rp_per_jam": 3082989.81,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E39",
+      "nama": "HOT RECYCLER",
+      "hsd_rp_per_jam": 3708459.78,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E40",
+      "nama": "AGGREGAT (CHIP) SPREADER",
+      "hsd_rp_per_jam": 395625.59,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E41",
+      "nama": "ASPHALT DISTRIBUTOR",
+      "hsd_rp_per_jam": 418477.55,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E42",
+      "nama": "SLIP FORM PAVER",
+      "hsd_rp_per_jam": 524608.97,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E43",
+      "nama": "CONCRETE PAN MIXER",
+      "hsd_rp_per_jam": 136502.24,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E44",
+      "nama": "CONCRETE BREAKER",
+      "hsd_rp_per_jam": 800158.31,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E45",
+      "nama": "ASPHALT TANKER",
+      "hsd_rp_per_jam": 541931.48,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E46",
+      "nama": "CEMENT TANKER",
+      "hsd_rp_per_jam": 485931.48,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E47",
+      "nama": "CONCRETE MIXER (350)",
+      "hsd_rp_per_jam": 103711.44,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E48",
+      "nama": "VIBRATING RAMMER",
+      "hsd_rp_per_jam": 64752.2,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E49",
+      "nama": "TRUK MIXER (AGITATOR)",
+      "hsd_rp_per_jam": 702403.29,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E50",
+      "nama": "BORE PILE MACHINE",
+      "hsd_rp_per_jam": 448668.43,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E51",
+      "nama": "CRANE ON TRACK 75-100 TON",
+      "hsd_rp_per_jam": 2311669.63,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E52",
+      "nama": "BLENDING EQUIPMENT",
+      "hsd_rp_per_jam": 218021.19,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E53",
+      "nama": "BAR BENDER",
+      "hsd_rp_per_jam": 52316.67,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E54",
+      "nama": "BAR CUTTER",
+      "hsd_rp_per_jam": 52316.67,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E10a",
+      "nama": "MINI EXCAVATOR 40-60 HP",
+      "hsd_rp_per_jam": 153560.93,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E19a",
+      "nama": "BABY VIBRATORY ROLLER 1-2 T.",
+      "hsd_rp_per_jam": 102245.66,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E64",
+      "nama": "WATER JET BLASTING",
+      "hsd_rp_per_jam": 72230.4,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E74",
+      "nama": "KUNCI TORSI 200-1000N.M",
+      "hsd_rp_per_jam": 63467.32,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E75",
+      "nama": "POMPA + MIXER EPOXY, 810 Watt",
+      "hsd_rp_per_jam": 59431.6,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E76",
+      "nama": "CONCRETE CUTTER (0,5-0,7 m/menit)",
+      "hsd_rp_per_jam": 93421.62,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E77",
+      "nama": "SAND BLASTING",
+      "hsd_rp_per_jam": 172824.66,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E78",
+      "nama": "MOBILE CRANE 1 TON",
+      "hsd_rp_per_jam": 503861.72,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E79",
+      "nama": "DRUM MIXER",
+      "hsd_rp_per_jam": 140376.06,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E81",
+      "nama": "STAMPER",
+      "hsd_rp_per_jam": 104257.62,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E82",
+      "nama": "JACK HIDROLIK JEMBATAN",
+      "hsd_rp_per_jam": 109468.92,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E83",
+      "nama": "HYDROLIC PUMP",
+      "hsd_rp_per_jam": 93415.48,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E84",
+      "nama": "MANIFOLD GAUGE",
+      "hsd_rp_per_jam": 58402.11,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E85",
+      "nama": "THERMOPLASTIC ROAD MARKING MACHINE",
+      "hsd_rp_per_jam": 96818.68,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E86",
+      "nama": "COLD PAINT SRAY MACHINE",
+      "hsd_rp_per_jam": 83214.08,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E80",
+      "nama": "CONCRETE BATCHING PLANT",
+      "hsd_rp_per_jam": 556041.16,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E73",
+      "nama": "TRAILER 44 TON",
+      "hsd_rp_per_jam": 1259820.88,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E65",
+      "nama": "MESIN POTONG RUMPUT",
+      "hsd_rp_per_jam": 72729.83,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E29a",
+      "nama": "TRAILER 30 TON",
+      "hsd_rp_per_jam": 131799.87,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "0.0",
+      "nama": "MINI GENERATOR SET 2000 Watt",
+      "hsd_rp_per_jam": 57654.51,
+      "sumber_sheet": "5-Alat(2)"
+    },
+    {
+      "kode": "E72",
+      "nama": "CRAWLER CRANE 25 TON",
+      "hsd_rp_per_jam": 879063.07,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E73",
+      "nama": "CRAWLER CRANE 55 TON",
+      "hsd_rp_per_jam": 1141568.43,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E90",
+      "nama": "FLAT BED TRUCK 10 TON",
+      "hsd_rp_per_jam": 463957.5,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E91",
+      "nama": "DROP HAMMER 2,5 TON",
+      "hsd_rp_per_jam": 634249.97,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E92",
+      "nama": "DIESEL HAMMER SINGLE ACTING 2,5 TON",
+      "hsd_rp_per_jam": 670101.02,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E93",
+      "nama": "DIESEL HAMMER DOUBLE ACTING 2,5 TON",
+      "hsd_rp_per_jam": 723877.59,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E94",
+      "nama": "HOT COMPRESSOR AIR LANCE (HCA) 10000C",
+      "hsd_rp_per_jam": 94889.23,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E95",
+      "nama": "PRE HEATER/BOILER",
+      "hsd_rp_per_jam": 111515.1,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E96",
+      "nama": "MACHINE BEAM LAUNCHER CRANE 100 TON",
+      "hsd_rp_per_jam": 342677.88,
+      "sumber_sheet": "5-Alat(3)"
+    },
+    {
+      "kode": "E97",
+      "nama": "MACHINE BEAM LAUNCHER CRANE 300 TON",
+      "hsd_rp_per_jam": 486082.06,
+      "sumber_sheet": "5-Alat(3)"
+    }
+  ]
+}

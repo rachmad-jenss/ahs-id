@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "sumber": "Permen PUPR 1/2022",
+  "items": [
+    {
+      "kode": "L01",
+      "nama": "Pekerja",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 24996.337301587304,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L02",
+      "nama": "Tukang",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 25827.265873015876,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L03",
+      "nama": "M a n d o r",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 30066.214285714286,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L04",
+      "nama": "Operator",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 30066.214285714286,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L05",
+      "nama": "Pembantu Operator",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 25803.297619047615,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L06",
+      "nama": "Sopir / Driver",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 30066.214285714286,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L07",
+      "nama": "Pembantu Sopir / Driver",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 25803.297619047615,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L08",
+      "nama": "Mekanik",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 28271.285714285714,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L09",
+      "nama": "Pembantu Mekanik",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 25803.297619047615,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L10",
+      "nama": "Kepala Tukang",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 28271.285714285714,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L11",
+      "nama": "Tenaga Ahli Muda S1 (1 Tahun)",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 114523.80952380954,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L12",
+      "nama": "Tenaga Ahli Muda S1 (5 Tahun)",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 151666.6666666667,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L16",
+      "nama": "CAD / CAM OPERATOR",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 64071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L17",
+      "nama": "SOFTWARE PROGRAMMER / IMPLEMENTER",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 75214.28571428571,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L18",
+      "nama": "HARDWARE TECHNICIAN",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 64071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L19",
+      "nama": "FACILITATOR",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 64071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L20",
+      "nama": "SENIOR ASSISTANT PROFESSIONAL STAFF",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 81714.28571428571,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L21",
+      "nama": "ASSISTANT PROFESSIONAL STAFF",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 77071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L22",
+      "nama": "SPECIAL TECHNICIAN / INSPECTOR",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 75214.28571428571,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L23",
+      "nama": "TECHNICIAN",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 64071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L24",
+      "nama": "INSPECTOR",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 64071.42857142857,
+      "jam_efektif": 7
+    },
+    {
+      "kode": "L25",
+      "nama": "SURVEYOR",
+      "satuan": "OH",
+      "satuan_sumber": "Jam",
+      "harga_jam": 57571.42857142857,
+      "jam_efektif": 7
+    }
+  ]
+}

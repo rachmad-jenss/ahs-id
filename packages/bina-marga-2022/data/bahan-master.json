@@ -1,0 +1,1872 @@
+{
+  "version": "1.0.0",
+  "sumber": "Permen PUPR 1/2022",
+  "items": [
+    {
+      "kode": "M01b",
+      "nama": "Pasir Pasang (AC-WC, Mortar)",
+      "satuan": "M3",
+      "harga": 214700.0
+    },
+    {
+      "kode": "M01a",
+      "nama": "Pasir Kasar (Beton, Lapis Drainase)",
+      "satuan": "M3",
+      "harga": 254600.0
+    },
+    {
+      "kode": "M01c",
+      "nama": "Pasir Halus (HRS)",
+      "satuan": "M3",
+      "harga": 214700.0
+    },
+    {
+      "kode": "M01d",
+      "nama": "Pasir Urug",
+      "satuan": "M3",
+      "harga": 202200.0
+    },
+    {
+      "kode": "M02",
+      "nama": "Batu Kali",
+      "satuan": "M3",
+      "harga": 195100.0
+    },
+    {
+      "kode": "M03",
+      "nama": "Agregat Pecah Kasar",
+      "satuan": "M3",
+      "harga": 239440.4886151178
+    },
+    {
+      "kode": "M04",
+      "nama": "Boulder (Berangkal)",
+      "satuan": "M3",
+      "harga": 193100.0
+    },
+    {
+      "kode": "M05",
+      "nama": "F i l l e r (non semen) (limestone dust, kapur padam, dolomit, fly ash)",
+      "satuan": "Kg",
+      "harga": 700.0
+    },
+    {
+      "kode": "M06",
+      "nama": "Batu Belah",
+      "satuan": "M3",
+      "harga": 195100.0
+    },
+    {
+      "kode": "M07",
+      "nama": "Gravel / Kerakal / Koral",
+      "satuan": "M3",
+      "harga": 200100.0
+    },
+    {
+      "kode": "M08",
+      "nama": "Bahan Timbunan Biasa (Tanah Urug)",
+      "satuan": "M3",
+      "harga": 134900.0
+    },
+    {
+      "kode": "M09",
+      "nama": "Bahan Timbunan Pilihan",
+      "satuan": "M3",
+      "harga": 143700.0
+    },
+    {
+      "kode": "M10",
+      "nama": "Aspal 60/70",
+      "satuan": "Kg",
+      "harga": 7032.258064516129
+    },
+    {
+      "kode": "M11",
+      "nama": "Kerosen / Minyak Tanah",
+      "satuan": "Ltr",
+      "harga": 20000.0
+    },
+    {
+      "kode": "M12",
+      "nama": "Semen / PC  (kg)",
+      "satuan": "Kg",
+      "harga": 1440.0
+    },
+    {
+      "kode": "M13",
+      "nama": "Silica Fume (powder)",
+      "satuan": "Kg",
+      "harga": 18300.0
+    },
+    {
+      "kode": "M14",
+      "nama": "Kawat Beton",
+      "satuan": "Kg",
+      "harga": 25000.0
+    },
+    {
+      "kode": "M15",
+      "nama": "Kawat Bronjong",
+      "satuan": "Kg",
+      "harga": 22000.0
+    },
+    {
+      "kode": "M16",
+      "nama": "Besi Siku",
+      "satuan": "Kg",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M16a",
+      "nama": "S i r t u (4 ≤ PI ≤10 ; LL ≤ 35 %)",
+      "satuan": "M3",
+      "harga": 188600.0
+    },
+    {
+      "kode": "M16b",
+      "nama": "S i r t u (4 ≤ PI ≤15 ; LL ≤ 35 %)",
+      "satuan": "M3",
+      "harga": 188600.0
+    },
+    {
+      "kode": "M17a",
+      "nama": "Cat Marka (Non Thermoplas)",
+      "satuan": "Kg",
+      "harga": 22500.0
+    },
+    {
+      "kode": "M17b",
+      "nama": "Cat Marka (Thermoplastic)",
+      "satuan": "Kg",
+      "harga": 27500.0
+    },
+    {
+      "kode": "M18",
+      "nama": "P a k u",
+      "satuan": "Kg",
+      "harga": 36000.0
+    },
+    {
+      "kode": "M19",
+      "nama": "Kayu Perancah",
+      "satuan": "M3",
+      "harga": 2750000.0
+    },
+    {
+      "kode": "M20",
+      "nama": "B e n s i n",
+      "satuan": "Ltr",
+      "harga": 10000.0
+    },
+    {
+      "kode": "M21",
+      "nama": "S o l a r",
+      "satuan": "Ltr",
+      "harga": 14000.0
+    },
+    {
+      "kode": "M22",
+      "nama": "Minyak Pelumas / Oli",
+      "satuan": "Ltr",
+      "harga": 43500.0
+    },
+    {
+      "kode": "M23",
+      "nama": "Geotextile Filter Kelas 2",
+      "satuan": "M2",
+      "harga": 46717.0
+    },
+    {
+      "kode": "M24",
+      "nama": "Poliurerhane foam raw material",
+      "satuan": "Kg",
+      "harga": 178473.0
+    },
+    {
+      "kode": "M25",
+      "nama": "Pipa Porous diameter 4\"",
+      "satuan": "M'",
+      "harga": 40000.0
+    },
+    {
+      "kode": "M26",
+      "nama": "Agegat Kelas A",
+      "satuan": "M3",
+      "harga": 267909.8577338144
+    },
+    {
+      "kode": "M27",
+      "nama": "Agegat Kelas B",
+      "satuan": "M3",
+      "harga": 245694.6046069244
+    },
+    {
+      "kode": "M29",
+      "nama": "Agegat Kelas S",
+      "satuan": "M3",
+      "harga": 245694.6046069244
+    },
+    {
+      "kode": "M38",
+      "nama": "Lapis Drainase",
+      "satuan": "M3",
+      "harga": 283301.9084092434
+    },
+    {
+      "kode": "M30",
+      "nama": "Aspal Emulsi Modifikasi Polimer 1h",
+      "satuan": "Liter",
+      "harga": 12300.0
+    },
+    {
+      "kode": "M31",
+      "nama": "Aspal Emulsi",
+      "satuan": "Kg",
+      "harga": 8303.734988736489
+    },
+    {
+      "kode": "M32",
+      "nama": "Lem Kayu",
+      "satuan": "Kg",
+      "harga": 14750.0
+    },
+    {
+      "kode": "M33",
+      "nama": "Thinner",
+      "satuan": "Ltr",
+      "harga": 12000.0
+    },
+    {
+      "kode": "M34",
+      "nama": "Glass Bead",
+      "satuan": "Kg",
+      "harga": 185999.0
+    },
+    {
+      "kode": "M35a",
+      "nama": "Rambu (Eng. Grade) - Jalan Nasional Kelas 1 Dia 90 mm",
+      "satuan": "Bh",
+      "harga": 276000.0
+    },
+    {
+      "kode": "M35b",
+      "nama": "Rambu (High I. Grade) - Jalan Nasional Kelas 1 Dia 90 mm",
+      "satuan": "Bh",
+      "harga": 316500.0
+    },
+    {
+      "kode": "M36",
+      "nama": "Rel Pengaman",
+      "satuan": "M'",
+      "harga": 2506400.0
+    },
+    {
+      "kode": "M37",
+      "nama": "Beton Struktur Fc' 25 Mpa",
+      "satuan": "M3",
+      "harga": 2921487.7751876717
+    },
+    {
+      "kode": "M39a",
+      "nama": "BjTP 280",
+      "satuan": "Kg",
+      "harga": 8369.0
+    },
+    {
+      "kode": "M39b",
+      "nama": "BjTS 280",
+      "satuan": "Kg",
+      "harga": 9000.0
+    },
+    {
+      "kode": "M40",
+      "nama": "Kapur",
+      "satuan": "M3",
+      "harga": 185000.0
+    },
+    {
+      "kode": "M41",
+      "nama": "Chipping",
+      "satuan": "M3",
+      "harga": 239440.4886151178
+    },
+    {
+      "kode": "M41",
+      "nama": "Chipping (kg)",
+      "satuan": "Kg",
+      "harga": 127.03761068289357
+    },
+    {
+      "kode": "M42",
+      "nama": "Performed joint sealent",
+      "satuan": "M'",
+      "harga": 24723.0
+    },
+    {
+      "kode": "M43",
+      "nama": "Pemantul Cahaya (Reflector)",
+      "satuan": "Bh",
+      "harga": null
+    },
+    {
+      "kode": "M44",
+      "nama": "Geotextile stabilisator Kelas 1",
+      "satuan": "M2",
+      "harga": 58700.0
+    },
+    {
+      "kode": "M45",
+      "nama": "Aspal Modifikasi PG 76",
+      "satuan": "Kg.",
+      "harga": 13700.0
+    },
+    {
+      "kode": "M46",
+      "nama": "Baja Bergelombang",
+      "satuan": "Kg",
+      "harga": 11500.0
+    },
+    {
+      "kode": "M47",
+      "nama": "Beton Fc' 10 MPa",
+      "satuan": "M3",
+      "harga": 2557029.289198098
+    },
+    {
+      "kode": "M48",
+      "nama": "Baja Struktur Grade 240 (Kuat Leleh 240 MPa)",
+      "satuan": "Kg",
+      "harga": 13000.0
+    },
+    {
+      "kode": "M49",
+      "nama": "Baja Struktur Baja Grade 250 (Kuat Leleh 250 Mpa)",
+      "satuan": "Kg",
+      "harga": 13500.0
+    },
+    {
+      "kode": "M50",
+      "nama": "Tiang Pancang Beton Pratekan",
+      "satuan": "M3",
+      "harga": 423957.93
+    },
+    {
+      "kode": "M51",
+      "nama": "Kawat Las",
+      "satuan": "Dos",
+      "harga": 70000.0
+    },
+    {
+      "kode": "M52",
+      "nama": "Pipa Baja",
+      "satuan": "Kg",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M53",
+      "nama": "Baja Grade 345 (Kuat Leleh 345 Mpa)",
+      "satuan": "Kg",
+      "harga": 14000.0
+    },
+    {
+      "kode": "M54",
+      "nama": "Baja Grade 485 (Kuat Leleh 485 Mpa)",
+      "satuan": "Kg",
+      "harga": 14500.0
+    },
+    {
+      "kode": "M55",
+      "nama": "Asbuton Halus",
+      "satuan": "Ton",
+      "harga": null
+    },
+    {
+      "kode": "M56",
+      "nama": "PVD (Prefabricated Vertical Drains)",
+      "satuan": "M'",
+      "harga": null
+    },
+    {
+      "kode": "M57a",
+      "nama": "BjTS 420A",
+      "satuan": "Kg",
+      "harga": 9800.0
+    },
+    {
+      "kode": "M57b",
+      "nama": "BjTS 420B",
+      "satuan": "Kg",
+      "harga": 9831.0
+    },
+    {
+      "kode": "M57c",
+      "nama": "BjTS 520",
+      "satuan": "Kg",
+      "harga": 9902.0
+    },
+    {
+      "kode": "M57d",
+      "nama": "BjTS 550",
+      "satuan": "Kg",
+      "harga": 10943.0
+    },
+    {
+      "kode": "M57e",
+      "nama": "BjTS 700",
+      "satuan": "Kg",
+      "harga": 10804.0
+    },
+    {
+      "kode": "M89",
+      "nama": "PHD (Prefabricated Horizontal Drains), lebar 10 cm",
+      "satuan": "M'",
+      "harga": null
+    },
+    {
+      "kode": "M58a",
+      "nama": "Geotextile separator Kelas 1",
+      "satuan": "M2",
+      "harga": 35867.0
+    },
+    {
+      "kode": "M58b",
+      "nama": "Geotextile separator Kelas 2",
+      "satuan": "M2",
+      "harga": 46717.0
+    },
+    {
+      "kode": "M58c",
+      "nama": "Geotextile separator Kelas 3",
+      "satuan": "M2",
+      "harga": 48978.0
+    },
+    {
+      "kode": "M59",
+      "nama": "Beton Struktur Fc' 30 MPa",
+      "satuan": "M3",
+      "harga": 3054382.9142484516
+    },
+    {
+      "kode": "M60",
+      "nama": "Beton Struktur Fc' 15 MPa",
+      "satuan": "M3",
+      "harga": 2669617.254673022
+    },
+    {
+      "kode": "M61",
+      "nama": "Cerucuk",
+      "satuan": "M",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M62",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M63",
+      "nama": "Terpal 100 m x 2 m",
+      "satuan": "Rol",
+      "harga": null
+    },
+    {
+      "kode": "M64",
+      "nama": "Paku Jalan Memantul Bulat",
+      "satuan": "buah",
+      "harga": 75000.0
+    },
+    {
+      "kode": "M65",
+      "nama": "-",
+      "satuan": "buah",
+      "harga": null
+    },
+    {
+      "kode": "M66",
+      "nama": "Anti strpping agent",
+      "satuan": "Kg",
+      "harga": 80000.0
+    },
+    {
+      "kode": "M67",
+      "nama": "Sealant jenis Crack seal elastis",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M68",
+      "nama": "Beton Struktur Fc' 50 MPa",
+      "satuan": "M3",
+      "harga": 3280395.5333475615
+    },
+    {
+      "kode": "M69",
+      "nama": "Beton Struktur Fc' 40 MPa",
+      "satuan": "M3",
+      "harga": 3117571.440010132
+    },
+    {
+      "kode": "M70",
+      "nama": "Ducting (Kabel prestress)",
+      "satuan": "M'",
+      "harga": null
+    },
+    {
+      "kode": "M71",
+      "nama": "Ducting (Strand prestress)",
+      "satuan": "M'",
+      "harga": null
+    },
+    {
+      "kode": "M72",
+      "nama": "Beton Fc' 35 MPa",
+      "satuan": "M3",
+      "harga": 3046394.3263605614
+    },
+    {
+      "kode": "M73",
+      "nama": "Multipleks 12 mm",
+      "satuan": "Lbr",
+      "harga": 150850.0
+    },
+    {
+      "kode": "M74a",
+      "nama": "Elastomer jenis 1 ukuran 350 x 300 x 36 mm",
+      "satuan": "buah",
+      "harga": 385500.0
+    },
+    {
+      "kode": "M74b",
+      "nama": "Elastomer jenis 2 ukuran 400 x 350 x 39 mm",
+      "satuan": "buah",
+      "harga": 650000.0
+    },
+    {
+      "kode": "M74c",
+      "nama": "Elastomer jenis 3 ukuran 450 x 400 x 45 mm",
+      "satuan": "buah",
+      "harga": 838000.0
+    },
+    {
+      "kode": "M75d",
+      "nama": "Expansion Tipe Joint Asphaltic Plug",
+      "satuan": "M",
+      "harga": 1000000.0
+    },
+    {
+      "kode": "M75e",
+      "nama": "Expansion Join Tipe Rubber",
+      "satuan": "M",
+      "harga": 1200000.0
+    },
+    {
+      "kode": "M75f",
+      "nama": "Expansion Join Baja Siku",
+      "satuan": "M",
+      "harga": 275000.0
+    },
+    {
+      "kode": "M76",
+      "nama": "Agregat 14 mm - 20 mm",
+      "satuan": "Zak",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M77",
+      "nama": "Agregat 14 mm - 20 mm",
+      "satuan": "Kg",
+      "harga": 3750.0
+    },
+    {
+      "kode": "M78",
+      "nama": "Paving Block",
+      "satuan": "M2",
+      "harga": 132000.0
+    },
+    {
+      "kode": "M79",
+      "nama": "Mini Timber Pile",
+      "satuan": "M",
+      "harga": 27000.0
+    },
+    {
+      "kode": "M80",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M81",
+      "nama": "Strip Bearing",
+      "satuan": "Buah",
+      "harga": 229500.0
+    },
+    {
+      "kode": "M82",
+      "nama": "Joint Socket Pile 35x35",
+      "satuan": "Set",
+      "harga": null
+    },
+    {
+      "kode": "M83",
+      "nama": "Joint Socket Pile 16x16x16",
+      "satuan": "Set",
+      "harga": null
+    },
+    {
+      "kode": "M84",
+      "nama": "Mikro Pile 16x16x16",
+      "satuan": "M1",
+      "harga": null
+    },
+    {
+      "kode": "M85",
+      "nama": "Matras Concrete",
+      "satuan": "Buah",
+      "harga": null
+    },
+    {
+      "kode": "M86",
+      "nama": "Assetilline",
+      "satuan": "Botol",
+      "harga": null
+    },
+    {
+      "kode": "M87",
+      "nama": "Oxygen",
+      "satuan": "Botol",
+      "harga": null
+    },
+    {
+      "kode": "M88",
+      "nama": "Batu Bara",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M24a",
+      "nama": "Pipa Galvanis Dia 3\"",
+      "satuan": "M",
+      "harga": 68333.0
+    },
+    {
+      "kode": "M24b",
+      "nama": "Pipa Galvanis Dia 1,5\"",
+      "satuan": "M",
+      "harga": null
+    },
+    {
+      "kode": "M91",
+      "nama": "Agregat Pecah Mesin 0-5 mm",
+      "satuan": "M3",
+      "harga": 239440.4886151178
+    },
+    {
+      "kode": "M92",
+      "nama": "Agregat Pecah Mesin 5-10 & 10-20 mm",
+      "satuan": "M3",
+      "harga": 239440.4886151178
+    },
+    {
+      "kode": "M93",
+      "nama": "Agregat Pecah Mesin 20-30 mm",
+      "satuan": "M3",
+      "harga": 239440.4886151178
+    },
+    {
+      "kode": "M94",
+      "nama": "Joint Sealent",
+      "satuan": "Kg",
+      "harga": 34100.0
+    },
+    {
+      "kode": "M95",
+      "nama": "Cat Anti Karat",
+      "satuan": "Kg",
+      "harga": 35750.0
+    },
+    {
+      "kode": "M96",
+      "nama": "Expansion Cap",
+      "satuan": "Kg",
+      "harga": 6050.0
+    },
+    {
+      "kode": "M97",
+      "nama": "Plastik MembranePolytene 125 mikron",
+      "satuan": "M2",
+      "harga": 63200.0
+    },
+    {
+      "kode": "M98",
+      "nama": "Curing Compound",
+      "satuan": "Ltr",
+      "harga": 38500.0
+    },
+    {
+      "kode": "M99",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M67a",
+      "nama": "Additive",
+      "satuan": "Kg",
+      "harga": 38500.0
+    },
+    {
+      "kode": "M100",
+      "nama": "Casing Dia 800 mm",
+      "satuan": "M",
+      "harga": 24000.0
+    },
+    {
+      "kode": "M101",
+      "nama": "Pasir Tailing",
+      "satuan": "M3",
+      "harga": null
+    },
+    {
+      "kode": "M102",
+      "nama": "Polimer Latex",
+      "satuan": "Ltr",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M103",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M104",
+      "nama": "Soda api, NaOh",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M105",
+      "nama": "Ampelas",
+      "satuan": "Lembar",
+      "harga": null
+    },
+    {
+      "kode": "M106",
+      "nama": "Sabun",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M107",
+      "nama": "roller",
+      "satuan": "unit",
+      "harga": null
+    },
+    {
+      "kode": "M108",
+      "nama": "sikat kawat",
+      "satuan": "unit",
+      "harga": null
+    },
+    {
+      "kode": "M109",
+      "nama": "Rounded brush",
+      "satuan": "buah",
+      "harga": null
+    },
+    {
+      "kode": "M110",
+      "nama": "wire brush",
+      "satuan": "buah",
+      "harga": null
+    },
+    {
+      "kode": "M111",
+      "nama": "-",
+      "satuan": "",
+      "harga": null
+    },
+    {
+      "kode": "M112",
+      "nama": "Elastomer  Sintetis 450 x 400 x 45 mm",
+      "satuan": "buah",
+      "harga": 300000.0
+    },
+    {
+      "kode": "M113",
+      "nama": "Anchorage",
+      "satuan": "buah",
+      "harga": 255750.0
+    },
+    {
+      "kode": "M114",
+      "nama": "- hidup",
+      "satuan": "buah",
+      "harga": 750000.0
+    },
+    {
+      "kode": "M115",
+      "nama": "- mati",
+      "satuan": "buah",
+      "harga": 400000.0
+    },
+    {
+      "kode": "M116",
+      "nama": "Kabel Prategang",
+      "satuan": "Kg",
+      "harga": 13288.0
+    },
+    {
+      "kode": "M117",
+      "nama": "- Selongsong",
+      "satuan": "M'",
+      "harga": 98400.0
+    },
+    {
+      "kode": "M118",
+      "nama": "- Baja Prategang",
+      "satuan": "Kg",
+      "harga": 13288.0
+    },
+    {
+      "kode": "M119",
+      "nama": "- Grouting",
+      "satuan": "M2",
+      "harga": 6759.16
+    },
+    {
+      "kode": "M120",
+      "nama": "Angkur Kabel Prategang, Tipe...............",
+      "satuan": "M2",
+      "harga": 17000.0
+    },
+    {
+      "kode": "M121",
+      "nama": "Angkur Kabel Prategang, Tipe............",
+      "satuan": "buah",
+      "harga": 17000.0
+    },
+    {
+      "kode": "M122",
+      "nama": "Baja Profil",
+      "satuan": "Kg",
+      "harga": 17000.0
+    },
+    {
+      "kode": "M123",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M124",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M125",
+      "nama": "Cairan Perekat (Epoxy Resin)",
+      "satuan": "Kg",
+      "harga": 175000.0
+    },
+    {
+      "kode": "M126",
+      "nama": "Epoxy Bahan Penutup (sealant)",
+      "satuan": "Kg",
+      "harga": 125000.0
+    },
+    {
+      "kode": "M127",
+      "nama": "Alat Penyuntik Anti Gravitasi",
+      "satuan": "Buah",
+      "harga": 165000.0
+    },
+    {
+      "kode": "M128",
+      "nama": "Polymer Mortar",
+      "satuan": "Kg",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M129",
+      "nama": "Anti Korosif Baja",
+      "satuan": "Kg",
+      "harga": 65500.0
+    },
+    {
+      "kode": "M130",
+      "nama": "Acuan/multipleks",
+      "satuan": "M2",
+      "harga": 170000.0
+    },
+    {
+      "kode": "M131",
+      "nama": "Coating anti UV min 100 mikron jenis PU (Poly Uretane) 0,25 ltr/m2",
+      "satuan": "Ltr",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M132",
+      "nama": "Pipa Galvanis Dia 8\"",
+      "satuan": "M",
+      "harga": 481250.0
+    },
+    {
+      "kode": "M133",
+      "nama": "Pelat Baja",
+      "satuan": "Kg",
+      "harga": 17000.0
+    },
+    {
+      "kode": "M134",
+      "nama": "Baut Angkur",
+      "satuan": "Kg",
+      "harga": 19425.0
+    },
+    {
+      "kode": "M135",
+      "nama": "Retarder",
+      "satuan": "Kg'",
+      "harga": 13406.0
+    },
+    {
+      "kode": "M136",
+      "nama": "Cat Galvanis",
+      "satuan": "Kg",
+      "harga": 92000.0
+    },
+    {
+      "kode": "M137",
+      "nama": "Baut Mutu Tinggi A325 1\" x 3\"",
+      "satuan": "Buah",
+      "harga": 29465.0
+    },
+    {
+      "kode": "M138",
+      "nama": "Baja Struktur Titik  leleh 2500 kg/cm2",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M139",
+      "nama": "Baja Struktur Titik  leleh 2800 kg/cm2",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M140",
+      "nama": "Baja Struktur Titik  leleh 3500 kg/cm2",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M141",
+      "nama": "Bahan Grouting",
+      "satuan": "Kg",
+      "harga": 3004072.0
+    },
+    {
+      "kode": "M142",
+      "nama": "Kayu Kelas 1",
+      "satuan": "M3",
+      "harga": 27500000.0
+    },
+    {
+      "kode": "M143",
+      "nama": "Kerucut lalu lintas (rubber cone) tinggi 70 cm",
+      "satuan": "Buah",
+      "harga": 286000.0
+    },
+    {
+      "kode": "M144",
+      "nama": "Timbunan/urugan Porous",
+      "satuan": "M3",
+      "harga": 291143.734635083
+    },
+    {
+      "kode": "M145",
+      "nama": "Topi pelindung (Safety helmet)",
+      "satuan": "Buah",
+      "harga": 65000.0
+    },
+    {
+      "kode": "M146",
+      "nama": "Pelindung mata (Goggles, Spectacles)",
+      "satuan": "Set",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M147",
+      "nama": "Tameng muka (Face shield)",
+      "satuan": "Buah",
+      "harga": 250000.0
+    },
+    {
+      "kode": "M148",
+      "nama": "Masker selam (Breathing apparatus)",
+      "satuan": "Buah",
+      "harga": 5037500.0
+    },
+    {
+      "kode": "M149",
+      "nama": "Pelindung telinga (Ear plug, ear nuff)",
+      "satuan": "Set",
+      "harga": 50000.0
+    },
+    {
+      "kode": "M150",
+      "nama": "Pelindung pernafasan dan mulut (Masker)",
+      "satuan": "Buah",
+      "harga": 2000.0
+    },
+    {
+      "kode": "M151",
+      "nama": "Sarungbtangan (Safety gloves)",
+      "satuan": "Set",
+      "harga": 5000.0
+    },
+    {
+      "kode": "M152",
+      "nama": "Sepatu keselamatan (Safety shoes)",
+      "satuan": "Set",
+      "harga": 300000.0
+    },
+    {
+      "kode": "M153",
+      "nama": "Penunjang seluruh tubuh (Full bodu harness)",
+      "satuan": "Buah",
+      "harga": 600000.0
+    },
+    {
+      "kode": "M154",
+      "nama": "Jaket pelampung (Life vest)",
+      "satuan": "Buah",
+      "harga": 100000.0
+    },
+    {
+      "kode": "M155",
+      "nama": "Rompi keselamatan (Safety vest)",
+      "satuan": "Buah",
+      "harga": 120000.0
+    },
+    {
+      "kode": "M156",
+      "nama": "Celemek (Apron/coveralls)",
+      "satuan": "Buah",
+      "harga": 500000.0
+    },
+    {
+      "kode": "M157a",
+      "nama": "Pelindung jatuh (Fall arrester)",
+      "satuan": "Buah",
+      "harga": 100000.0
+    },
+    {
+      "kode": "M15b",
+      "nama": "Penahan jatuh (Harness)",
+      "satuan": "Buah",
+      "harga": 800000.0
+    },
+    {
+      "kode": "M31a",
+      "nama": "Aspal Emulsi CSS-1 atau SS-1",
+      "satuan": "Liter",
+      "harga": 10500.0
+    },
+    {
+      "kode": "M31b",
+      "nama": "Aspal Emulsi CRS-1 atau RS-1",
+      "satuan": "Liter",
+      "harga": 12300.0
+    },
+    {
+      "kode": "M31c",
+      "nama": "Aspal Modifikasi PG 70",
+      "satuan": "Kg",
+      "harga": 12700.0
+    },
+    {
+      "kode": "M31d",
+      "nama": "Aspal Emulsi Modifikasi Polimer 2h",
+      "satuan": "Liter",
+      "harga": 12300.0
+    },
+    {
+      "kode": "M158",
+      "nama": "Serat Selulosa",
+      "satuan": "Kg",
+      "harga": 22500.0
+    },
+    {
+      "kode": "M159",
+      "nama": "Zeolit",
+      "satuan": "Kg",
+      "harga": 6000.0
+    },
+    {
+      "kode": "M160",
+      "nama": "Wax",
+      "satuan": "Kg",
+      "harga": 32085.0
+    },
+    {
+      "kode": "M161",
+      "nama": "Asbuton B 5/20",
+      "satuan": "Kg",
+      "harga": 950.0
+    },
+    {
+      "kode": "M162",
+      "nama": "CPHMA",
+      "satuan": "Ton",
+      "harga": 900000.0
+    },
+    {
+      "kode": "M163",
+      "nama": "Asbuton B 50/20",
+      "satuan": "Kg",
+      "harga": 1000.0
+    },
+    {
+      "kode": "M164",
+      "nama": "Aspal Emulsi Modifikasi Polimer 1h",
+      "satuan": "Liter",
+      "harga": 12300.0
+    },
+    {
+      "kode": "M25a",
+      "nama": "Pipa Porus diameter 5\"",
+      "satuan": "M'",
+      "harga": 77000.0
+    },
+    {
+      "kode": "M25b",
+      "nama": "Pipa Porus diameter 6\"",
+      "satuan": "M'",
+      "harga": 110000.0
+    },
+    {
+      "kode": "M25c",
+      "nama": "Pipa Porus diameter 8\"",
+      "satuan": "M'",
+      "harga": 142500.0
+    },
+    {
+      "kode": "M165",
+      "nama": "Backer rod 3/8 inci",
+      "satuan": "Kg",
+      "harga": 10833.333333333334
+    },
+    {
+      "kode": "M166",
+      "nama": "Cairan Perekat (Epoxy Resin) 2 komponen",
+      "satuan": "Ltr",
+      "harga": 350000.0
+    },
+    {
+      "kode": "M167",
+      "nama": "Alat pemadam api ringan (APAR)",
+      "satuan": "Buah",
+      "harga": 485000.0
+    },
+    {
+      "kode": "M168",
+      "nama": "Sirine",
+      "satuan": "Buah",
+      "harga": 100000.0
+    },
+    {
+      "kode": "M134",
+      "nama": "Bendera K3",
+      "satuan": "Buah",
+      "harga": 50000.0
+    },
+    {
+      "kode": "M169",
+      "nama": "Lampu darurat (Emergency lamp)",
+      "satuan": "Buah",
+      "harga": 180000.0
+    },
+    {
+      "kode": "M170",
+      "nama": "Air",
+      "satuan": "Liter",
+      "harga": 14.65
+    },
+    {
+      "kode": "M171",
+      "nama": "Super plastiziser, maks 0,3 % Sm",
+      "satuan": "Kg",
+      "harga": 40000.0
+    },
+    {
+      "kode": "M172",
+      "nama": "Tyfo S Priming",
+      "satuan": "ltr",
+      "harga": 425000.0
+    },
+    {
+      "kode": "M173",
+      "nama": "Tyfo SEH51A",
+      "satuan": "ltr",
+      "harga": 800000.0
+    },
+    {
+      "kode": "M174",
+      "nama": "Concrete Grouting Non srinkage HWR",
+      "satuan": "Kg",
+      "harga": 6759.162
+    },
+    {
+      "kode": "M175",
+      "nama": "-",
+      "satuan": "-",
+      "harga": null
+    },
+    {
+      "kode": "M176",
+      "nama": "Mortar semen cepat mengeras (RSC)",
+      "satuan": "Kg",
+      "harga": 4296.2962962962965
+    },
+    {
+      "kode": "M177",
+      "nama": "Mortar pre-packed untuk stiching",
+      "satuan": "Kg",
+      "harga": 7100.0
+    },
+    {
+      "kode": "M178",
+      "nama": "Termoplastik (sealant tuang panas)",
+      "satuan": "Kg",
+      "harga": 28985.000000000004
+    },
+    {
+      "kode": "M179",
+      "nama": "Backer rod 1 1/6 inci",
+      "satuan": "M1",
+      "harga": 16554.861111111113
+    },
+    {
+      "kode": "M180",
+      "nama": "Termoseting (sealant tuang dingin)",
+      "satuan": "Kg",
+      "harga": 65333.33333333333
+    },
+    {
+      "kode": "M181",
+      "nama": "Bahan grouting tersedia jenis preformed",
+      "satuan": "Kg",
+      "harga": 24775.0
+    },
+    {
+      "kode": "M182",
+      "nama": "Plastizier",
+      "satuan": "Kg",
+      "harga": 40000.0
+    },
+    {
+      "kode": "M183",
+      "nama": "Rapid Setting Material (Beton Semen Fast Track < 24 jam)",
+      "satuan": "M3",
+      "harga": 2756809.0945542953
+    },
+    {
+      "kode": "M184",
+      "nama": "Thermocouple",
+      "satuan": "Buah",
+      "harga": 25000.0
+    },
+    {
+      "kode": "M185",
+      "nama": "Beton Struktur fc' 45 MPa",
+      "satuan": "M3",
+      "harga": 3175083.0360990115
+    },
+    {
+      "kode": "M186",
+      "nama": "Beton Struktur fc' 20 MPa",
+      "satuan": "M4",
+      "harga": 2819816.252483682
+    },
+    {
+      "kode": "M187",
+      "nama": "Baja Struktur Grade 345 (Kuat Leleh 345 MPa)",
+      "satuan": "Kg",
+      "harga": 17000.0
+    },
+    {
+      "kode": "M188",
+      "nama": "Baja Struktur Grade 485 (Kuat Leleh 485 MPa)",
+      "satuan": "Kg",
+      "harga": 18000.0
+    },
+    {
+      "kode": "M189",
+      "nama": "Baja Struktur Grade 690 (Kuat Leleh 690 Mpa untuk Tebal Pelat ≤ 2,5 inch)",
+      "satuan": "Kg",
+      "harga": 22000.0
+    },
+    {
+      "kode": "M190",
+      "nama": "Baja Struktur Grade 690 (Kuat Leleh 620 Mpa untuk Tebal Pelat > 2,5 - 4,0 inch)",
+      "satuan": "Kg",
+      "harga": 19000.0
+    },
+    {
+      "kode": "M191",
+      "nama": "Casing, diameter 800 mm",
+      "satuan": "Rp/M'",
+      "harga": 42464.6368180528
+    },
+    {
+      "kode": "M192",
+      "nama": "Bahan turap kayu",
+      "satuan": "M3/M'",
+      "harga": 1300000.0
+    },
+    {
+      "kode": "M193",
+      "nama": "Berat H Beam per m'",
+      "satuan": "Kg",
+      "harga": 18000.0
+    },
+    {
+      "kode": "M194",
+      "nama": "Strand 1/2 inci",
+      "satuan": "Kg",
+      "harga": 19182.874571313347
+    },
+    {
+      "kode": "M195",
+      "nama": "Perancah/ formwoks",
+      "satuan": "M2",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M196",
+      "nama": "Backer rod 5/6 inci",
+      "satuan": "M'",
+      "harga": 16777.0
+    },
+    {
+      "kode": "M197",
+      "nama": "Kreosot",
+      "satuan": "Kg",
+      "harga": 10000.0
+    },
+    {
+      "kode": "M198",
+      "nama": "Bonding Agent",
+      "satuan": "Kg",
+      "harga": 40000.0
+    },
+    {
+      "kode": "M199",
+      "nama": "Cat dasar beton (epoxy zinc)",
+      "satuan": "Kg",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M200",
+      "nama": "Cat akhir protektif beton (MC Urethane)",
+      "satuan": "Kg",
+      "harga": 450000.0
+    },
+    {
+      "kode": "M201",
+      "nama": "Cat akhir dekoratif beton  (polyurethane)",
+      "satuan": "Kg",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M202",
+      "nama": "Cat dasar baja (zinc rich)",
+      "satuan": "Kg",
+      "harga": 200000.0
+    },
+    {
+      "kode": "M203",
+      "nama": "Cat akhir protektif baja (alkyd)",
+      "satuan": "Kg",
+      "harga": 98000.0
+    },
+    {
+      "kode": "M204",
+      "nama": "FRP jenis E-glass untuk daerah kering",
+      "satuan": "M2",
+      "harga": 800000.0
+    },
+    {
+      "kode": "M205",
+      "nama": "FRP jenis E-glass untuk daerah basah",
+      "satuan": "M2",
+      "harga": 875000.0
+    },
+    {
+      "kode": "M206",
+      "nama": "FRP jenis glass untuk daerah kering",
+      "satuan": "M2",
+      "harga": 950000.0
+    },
+    {
+      "kode": "M207",
+      "nama": "FRP jenis carbon untuk daerah kering",
+      "satuan": "M2",
+      "harga": 1200000.0
+    },
+    {
+      "kode": "M208",
+      "nama": "FRP jenis carbon untuk daerah basah",
+      "satuan": "M2",
+      "harga": 1600000.0
+    },
+    {
+      "kode": "M209",
+      "nama": "Baja untuk pelat buhul dan pelat ganjal",
+      "satuan": "Buah",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M210",
+      "nama": "Baut mutu tinggi A325 Tipe 1 diameter M25",
+      "satuan": "Buah",
+      "harga": 29465.0
+    },
+    {
+      "kode": "M211",
+      "nama": "Baut Mutu Tinggi A490 Tipe 1 diameter M25",
+      "satuan": "Buah",
+      "harga": 19500.0
+    },
+    {
+      "kode": "M212",
+      "nama": "Baut Biasa Grade A diameter M25",
+      "satuan": "Buah",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M213",
+      "nama": "Baut Biasa Grade B diameter M25",
+      "satuan": "Buah",
+      "harga": 12000.0
+    },
+    {
+      "kode": "M214",
+      "nama": "Baut Biasa Grade C untuk anchor bolts diameter M25",
+      "satuan": "Buah",
+      "harga": 10000.0
+    },
+    {
+      "kode": "M215",
+      "nama": "Elektroda Las SMAW",
+      "satuan": "Kg",
+      "harga": 28000.0
+    },
+    {
+      "kode": "M216",
+      "nama": "Elektroda Las SAW",
+      "satuan": "Kg",
+      "harga": 28000.0
+    },
+    {
+      "kode": "M217",
+      "nama": "Elektroda Las GMAW",
+      "satuan": "Kg",
+      "harga": 28000.0
+    },
+    {
+      "kode": "M218",
+      "nama": "Elektroda Las FCAW",
+      "satuan": "Kg",
+      "harga": 28000.0
+    },
+    {
+      "kode": "M219",
+      "nama": "Rotary Sand Paper",
+      "satuan": "M3",
+      "harga": 20000.0
+    },
+    {
+      "kode": "M220",
+      "nama": "Paku jalan Tidak Memantul",
+      "satuan": "Buah",
+      "harga": 48000.0
+    },
+    {
+      "kode": "M221",
+      "nama": "Paku Jalan Memantul  Bujur Sangkar",
+      "satuan": "Buah",
+      "harga": 54000.0
+    },
+    {
+      "kode": "M222",
+      "nama": "Paku Jalan Memantul Persegi Panjang",
+      "satuan": "Buah",
+      "harga": 66000.0
+    },
+    {
+      "kode": "M223",
+      "nama": "Baut dan Mur",
+      "satuan": "Buah",
+      "harga": 13000.0
+    },
+    {
+      "kode": "M224",
+      "nama": "Cat dasar kayu",
+      "satuan": "Kg",
+      "harga": 48700.0
+    },
+    {
+      "kode": "M225",
+      "nama": "Cat akhir protektif kayu",
+      "satuan": "Kg",
+      "harga": 59800.0
+    },
+    {
+      "kode": "M226",
+      "nama": "Perkerasan beton fast track <8 jam",
+      "satuan": "Kg",
+      "harga": 3168340.8445542953
+    },
+    {
+      "kode": "M227",
+      "nama": "Silicon Seal",
+      "satuan": "Kg",
+      "harga": 65333.0
+    },
+    {
+      "kode": "M228",
+      "nama": "Karet Pengisi Sambungan Strip Seal",
+      "satuan": "M'",
+      "harga": 1200000.0
+    },
+    {
+      "kode": "M229",
+      "nama": "Karet Pengisi Sambungan Compression Seal",
+      "satuan": "M'",
+      "harga": 1200000.0
+    },
+    {
+      "kode": "M230",
+      "nama": "Sambungan siar muai tipe modular",
+      "satuan": "M'",
+      "harga": 40000.0
+    },
+    {
+      "kode": "M231",
+      "nama": "Sambungan siar muai tipe finger plate",
+      "satuan": "M'",
+      "harga": 3500000.0
+    },
+    {
+      "kode": "M232",
+      "nama": "Sambungan siar muai tipe dobel siku",
+      "satuan": "M'",
+      "harga": 1500000.0
+    },
+    {
+      "kode": "M233",
+      "nama": "Penutup karet neoprene",
+      "satuan": "M'",
+      "harga": 1200000.0
+    },
+    {
+      "kode": "M234",
+      "nama": "Landasan logam berongga (Pot Bearing)",
+      "satuan": "Buah",
+      "harga": 3331619.27623937
+    },
+    {
+      "kode": "M235",
+      "nama": "Landasan logam jenis Spherical",
+      "satuan": "Buah",
+      "harga": 4500000.0
+    },
+    {
+      "kode": "M236",
+      "nama": "Stopper Lateral dan Horizontal",
+      "satuan": "Buah",
+      "harga": 5500000.0
+    },
+    {
+      "kode": "M237",
+      "nama": "Lem PVC",
+      "satuan": "Kg",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M238",
+      "nama": "Tiang sandaran baja",
+      "satuan": "M'",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M239",
+      "nama": "Deck Drain",
+      "satuan": "Buah",
+      "harga": 100000.0
+    },
+    {
+      "kode": "M240",
+      "nama": "Pipa PVC",
+      "satuan": "M'",
+      "harga": 65000.0
+    },
+    {
+      "kode": "M241",
+      "nama": "Pipa Baja",
+      "satuan": "M'",
+      "harga": 400000.0
+    },
+    {
+      "kode": "M242",
+      "nama": "Sambungan Pipa PVC",
+      "satuan": "Buah",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M243",
+      "nama": "Sambungan Pipa Baja",
+      "satuan": "Buah",
+      "harga": 35000.0
+    },
+    {
+      "kode": "M15a",
+      "nama": "Bronjong dengan kawat dilapisi galvanis",
+      "satuan": "Kg",
+      "harga": 22000.0
+    },
+    {
+      "kode": "M15b",
+      "nama": "Bronjong dengan kawat dilapisi PVC",
+      "satuan": "Kg",
+      "harga": 22000.0
+    },
+    {
+      "kode": "M244",
+      "nama": "Turap Beton",
+      "satuan": "M3",
+      "harga": 3046394.3263605614
+    },
+    {
+      "kode": "M245",
+      "nama": "Tiang Pancang Kayu",
+      "satuan": "M3",
+      "harga": 2750000.0
+    },
+    {
+      "kode": "M246",
+      "nama": "Plat sepatu tiang pancang / plat sambung",
+      "satuan": "Kg",
+      "harga": 15500.0
+    },
+    {
+      "kode": "M247",
+      "nama": "Beton struktur bervolome besar, fc'30 MPa",
+      "satuan": "M3",
+      "harga": 3021525.3840312315
+    },
+    {
+      "kode": "M248",
+      "nama": "Beton struktur bervolume besar, fc’25 Mpa",
+      "satuan": "M3",
+      "harga": 2870466.6146093616
+    },
+    {
+      "kode": "M249",
+      "nama": "Beton struktur bervolume besar, fc’20 MPa",
+      "satuan": "M3",
+      "harga": 2805858.2456267616
+    },
+    {
+      "kode": "M250",
+      "nama": "Beton struktur memadat sendiri, fc'30 MPa",
+      "satuan": "M3",
+      "harga": 2948610.3021964417
+    },
+    {
+      "kode": "M251",
+      "nama": "Beton struktur memadat sendiri, fc’25 Mpa",
+      "satuan": "M3",
+      "harga": 2850714.9477869417
+    },
+    {
+      "kode": "M252",
+      "nama": "Beton struktur memadat sendiri, fc’20 MPa",
+      "satuan": "M3",
+      "harga": 2807037.9137312216
+    },
+    {
+      "kode": "M253",
+      "nama": "Beton Struktur, fc' 35 MPa",
+      "satuan": "M3",
+      "harga": 3046394.3263605614
+    },
+    {
+      "kode": "M254",
+      "nama": "Peremaja Hangat",
+      "satuan": "Kg",
+      "harga": null
+    },
+    {
+      "kode": "M255",
+      "nama": "Asphaltic plug",
+      "satuan": "Kg",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M256",
+      "nama": "Asphaltic plug Moveable",
+      "satuan": "Kg",
+      "harga": 45000.0
+    },
+    {
+      "kode": "M256",
+      "nama": "accelerator",
+      "satuan": "Kg",
+      "harga": 17500.0
+    },
+    {
+      "kode": "M257",
+      "nama": "Insulasi",
+      "satuan": "m2",
+      "harga": 300000.0
+    },
+    {
+      "kode": "M258",
+      "nama": "Anyaman Kawat Baja Dilas",
+      "satuan": "Kg",
+      "harga": 32000.0
+    },
+    {
+      "kode": "M259",
+      "nama": "Curing membrane",
+      "satuan": "Kg",
+      "harga": 200000.0
+    },
+    {
+      "kode": "M260",
+      "nama": "Sambungan siar muai tipe Karet (Preformed T-shape)",
+      "satuan": "Kg",
+      "harga": 800000.0
+    },
+    {
+      "kode": "M261",
+      "nama": "Bridging Plate PL 125 x 6",
+      "satuan": "Kg",
+      "harga": 15500.0
+    },
+    {
+      "kode": "M262",
+      "nama": "Perletakan logam tipe fixed 150 Ton",
+      "satuan": "Buah",
+      "harga": 1500000.0
+    },
+    {
+      "kode": "M263",
+      "nama": "Perletakan logam tipe movable 150 Ton",
+      "satuan": "Buah",
+      "harga": 2000000.0
+    },
+    {
+      "kode": "M264",
+      "nama": "Elastomer  bearing pad; (450x400x45) mm3",
+      "satuan": "Buah",
+      "harga": 838000.0
+    },
+    {
+      "kode": "M265",
+      "nama": "Beton fc 10 MPa",
+      "satuan": "M3",
+      "harga": 1740076.8222532696
+    },
+    {
+      "kode": "M266",
+      "nama": "Marmer",
+      "satuan": "M2",
+      "harga": 400000.0
+    },
+    {
+      "kode": "M267",
+      "nama": "Pohon Perdu",
+      "satuan": "Buah",
+      "harga": 15000.0
+    },
+    {
+      "kode": "M268",
+      "nama": "Pohon Mahoni",
+      "satuan": "Buah",
+      "harga": 24000.0
+    },
+    {
+      "kode": "M269",
+      "nama": "Grauting berbahan dasar semen",
+      "satuan": "Kg",
+      "harga": 350000.0
+    },
+    {
+      "kode": "M270",
+      "nama": "Graut berbahan dasar Cellular Plastic",
+      "satuan": "Kg",
+      "harga": 350000.0
+    },
+    {
+      "kode": "M271",
+      "nama": "Tanah humus",
+      "satuan": "M3",
+      "harga": 2500.0
+    },
+    {
+      "kode": "M272",
+      "nama": "Pupuk",
+      "satuan": "Kg",
+      "harga": 16000.0
+    },
+    {
+      "kode": "M273",
+      "nama": "Gebalan/ Rumput",
+      "satuan": "M2",
+      "harga": 3500.0
+    },
+    {
+      "kode": "M274",
+      "nama": "Tanah Liat",
+      "satuan": "M3",
+      "harga": 150000.0
+    },
+    {
+      "kode": "M275",
+      "nama": "Pipa Galvanise Dia 6\"",
+      "satuan": "M",
+      "harga": 200000.0
+    },
+    {
+      "kode": "M276",
+      "nama": "Lampu Tipe Merkuri 400 Watt",
+      "satuan": "Buah",
+      "harga": 950000.0
+    },
+    {
+      "kode": "M277",
+      "nama": "Lampu Tipe Merkuri 250 Watt",
+      "satuan": "Buah",
+      "harga": 700000.0
+    },
+    {
+      "kode": "M278",
+      "nama": "Lampu LED 100 watt",
+      "satuan": "Buah",
+      "harga": 1900000.0
+    },
+    {
+      "kode": "M279",
+      "nama": "Mortar",
+      "satuan": "M3",
+      "harga": 245200.0
+    }
+  ]
+}
