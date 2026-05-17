@@ -1,0 +1,938 @@
+[
+  {
+    "kode_ahsp": "1.4.1.1",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut s.d 10 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2104,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0105,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 25400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.2",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut  > 10 m s.d 20 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2254,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0112,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 27200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.3",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 20 m s.d 30 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2363,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.018,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 29900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.4",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 30 m s.d 40 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2505,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0125,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 30300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.5",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 40 m s.d 50 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2722,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0136,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 32900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.6",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 50 m s.d 100 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.344,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0172,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 41600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.7",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 100 m s.d 200 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4843,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0242,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 58500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.8",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 200 m s.d 300 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6513,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 78700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.9",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 300 m s.d 400 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.8475,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0423,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 102500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.10",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 400 m s.d 500 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0938,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0546,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 132300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.11",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 500 m s.d 600 m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.3777,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0688,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 166600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.1.12",
+    "nama": "Mengangkut 1 m3 tanah lepas, jarak angkut > 600 m untuk setiap penambahan jarak angkut 100m",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0137,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 33200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.2.1",
+    "nama": "1 m3 Pembuangan tanah lumpur sejauh 1 km",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9103,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0455,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Mobil Sedot Lumpur",
+        "satuan": "Jam",
+        "koefisien": 0.4552,
+        "harga_satuan_ref": 67500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 143900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.2.2",
+    "nama": "1 m3 Pembuangan tanah lumpur sejauh 2 km",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0502,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Mobil Sedot Lumpur",
+        "satuan": "Jam",
+        "koefisien": 0.502,
+        "harga_satuan_ref": 67500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 158700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.2.3",
+    "nama": "1 m3 Pembuangan tanah lumpur sejauh 3 km",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.0977,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0549,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Mobil Sedot Lumpur",
+        "satuan": "Jam",
+        "koefisien": 0.5489,
+        "harga_satuan_ref": 67500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 173500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.2.4",
+    "nama": "1 m3 Pembuangan tanah lumpur sejauh 4 km",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1914,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0596,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Mobil Sedot Lumpur",
+        "satuan": "Jam",
+        "koefisien": 0.5957,
+        "harga_satuan_ref": 67500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 188300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.4.2.5",
+    "nama": "1 m3 Pembuangan tanah lumpur sejauh 5 km",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.4",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2851,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0643,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Mobil Sedot Lumpur",
+        "satuan": "Jam",
+        "koefisien": 0.06426,
+        "harga_satuan_ref": 67500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 160200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Angkut Material",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

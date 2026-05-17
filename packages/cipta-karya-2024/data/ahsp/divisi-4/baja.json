@@ -1,0 +1,505 @@
+[
+  {
+    "kode_ahsp": "2.3.1.1",
+    "nama": "1 kg Pabrikasi dan Ereksi Baja Profil",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0375,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0125,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 0.0125,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil",
+        "satuan": "kg",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 16480
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "jam",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 3125
+      },
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.0013,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 55900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.3.1.2",
+    "nama": "1 kg Pemasangan angkur",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0406,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 0.0406,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0041,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Besi angkur/mur/baut",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 16660
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 30300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.3.1.3",
+    "nama": "1 kg Pemasangan baut",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0036,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baut",
+        "satuan": "Kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 17000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Kunci momen",
+        "satuan": "hari",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 29200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.3.1.4",
+    "nama": "1 kg pekerjaan  baja pelat secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0345,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0345,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0034,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Besi plat baja tebal 2 mm",
+        "satuan": "kg",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 25000
+      },
+      {
+        "nama": "kawat las",
+        "satuan": "Kg",
+        "koefisien": 0.053,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "hari",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 44500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.3.1.5",
+    "nama": "1 kg pekerjaan  baja profil siku dengan pengelasan secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0345,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0345,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0034,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil Siku",
+        "satuan": "kg",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 15500
+      },
+      {
+        "nama": "kawat las",
+        "satuan": "Kg",
+        "koefisien": 0.053,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "Jam",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 32500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.3.1.6",
+    "nama": "1 kg pekerjaan  baja profil siku tanpa pengelasan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.3",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0286,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0286,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0029,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil Siku",
+        "satuan": "kg",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 15500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 28000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "BAJA",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

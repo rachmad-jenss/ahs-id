@@ -5,9 +5,9 @@
   "type": "object",
   "required": [
     "kode_ahsp", "nama", "bidang", "divisi", "sub_divisi",
-    "satuan_bayar", "volume_state_bayar", "jenis_pekerjaan", "is_lump_sum",
-    "sub_ahsp", "tenaga_kerja", "bahan", "peralatan",
-    "variabel", "margin", "provenance", "catatan_umum"
+    "satuan_bayar", "jenis_kalkulasi", "jenis_pekerjaan", "is_lump_sum",
+    "tenaga_kerja", "bahan", "peralatan",
+    "margin", "provenance"
   ],
   "additionalProperties": false,
   "properties": {
@@ -15,9 +15,16 @@
     "nama": { "type": "string", "minLength": 1 },
     "bidang": { "type": "string", "enum": ["umum", "sda", "bina-marga", "cipta-karya"] },
     "divisi": { "type": "integer", "minimum": 1 },
-    "sub_divisi": { "type": "string" },
+    "sub_divisi": { "type": ["string", "null"] },
     "satuan_bayar": { "type": "string", "minLength": 1 },
-    "volume_state_bayar": { "type": ["string", "null"], "enum": ["bank", "loose", "compacted", null] },
+    "jenis_kalkulasi": {
+      "type": "string",
+      "enum": ["dynamic_hsd", "fixed_coefficient"]
+    },
+    "volume_state_bayar": {
+      "type": ["string", "null"],
+      "enum": ["bank", "loose", "compacted", null]
+    },
     "jenis_pekerjaan": { "type": "string", "enum": ["manual", "mekanis", "semi-mekanis"] },
     "is_lump_sum": { "type": "boolean" },
     "sub_ahsp": {
@@ -40,12 +47,23 @@
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/variabel_definition" }
     },
+    "harga_satuan_pekerjaan_ref": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
     "margin": { "$ref": "#/$defs/margin" },
     "provenance": { "$ref": "#/$defs/provenance" },
     "catatan_umum": {
       "type": "array",
       "items": { "type": "string" }
     }
+  },
+  "if": {
+    "properties": { "jenis_kalkulasi": { "const": "dynamic_hsd" } },
+    "required": ["jenis_kalkulasi"]
+  },
+  "then": {
+    "required": ["volume_state_bayar", "sub_ahsp", "variabel", "catatan_umum"]
   },
   "$defs": {
     "volume_state": {
@@ -72,24 +90,30 @@
     },
     "tk_entry": {
       "type": "object",
-      "required": ["ref", "koefisien", "koef_sumber", "catatan"],
+      "required": ["koefisien"],
       "additionalProperties": false,
       "properties": {
-        "ref": { "type": "string", "pattern": "^L\\." },
+        "ref": { "type": ["string", "null"], "pattern": "^L\\." },
+        "nama": { "type": "string", "minLength": 1 },
+        "satuan": { "type": "string" },
         "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "harga_satuan_ref": { "type": "number", "minimum": 0 },
         "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
         "catatan": { "type": ["string", "null"] }
       }
     },
     "bahan_entry": {
       "type": "object",
-      "required": ["ref", "koefisien", "koef_sumber", "volume_state", "catatan"],
+      "required": ["koefisien"],
       "additionalProperties": false,
       "properties": {
-        "ref": { "type": "string", "pattern": "^M\\." },
-        "nama_override": { "type": "string" },
+        "ref": { "type": ["string", "null"], "pattern": "^M\\." },
+        "nama": { "type": "string", "minLength": 1 },
+        "satuan": { "type": "string" },
         "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "harga_satuan_ref": { "type": "number", "minimum": 0 },
         "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
+        "nama_override": { "type": "string" },
         "faktor_kehilangan_pct": { "type": "number", "minimum": 0, "maximum": 50 },
         "volume_state": { "$ref": "#/$defs/volume_state" },
         "catatan": { "type": ["string", "null"] }
@@ -97,11 +121,14 @@
     },
     "peralatan_entry": {
       "type": "object",
-      "required": ["ref", "nama", "koef_sumber", "mode_biaya", "volume_state", "variabel_input", "koef_referensi"],
+      "required": ["nama"],
       "additionalProperties": false,
       "properties": {
-        "ref": { "type": "string", "pattern": "^E\\." },
+        "ref": { "type": ["string", "null"], "pattern": "^E\\." },
         "nama": { "type": "string", "minLength": 1 },
+        "satuan": { "type": "string" },
+        "koefisien": { "type": "number", "exclusiveMinimum": 0 },
+        "harga_satuan_ref": { "type": "number", "minimum": 0 },
         "koef_sumber": { "$ref": "#/$defs/koef_sumber" },
         "mode_biaya": { "type": "string", "enum": ["ownership", "sewa"] },
         "volume_state": { "$ref": "#/$defs/volume_state" },
@@ -184,7 +211,7 @@
       "additionalProperties": false,
       "properties": {
         "sumber_regulasi": { "type": "string" },
-        "halaman": { "type": "string" },
+        "halaman": { "type": ["string", "null"] },
         "diverifikasi_oleh": { "type": ["string", "null"] },
         "tanggal_verifikasi": { "type": ["string", "null"] }
       }

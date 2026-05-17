@@ -1,0 +1,842 @@
+[
+  {
+    "kode_ahsp": "1.3.1.1",
+    "nama": "1 m3 urukan kembali galian tanah tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 60500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.2",
+    "nama": "1 m3 urukan pasir uruk untuk volume s.d 200 m3 tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pasir urug (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 254700
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 372500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.3",
+    "nama": "1 m3 urukan pasir uruk untuk volume > 200 m3 tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0065,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pasir urug (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 254700
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 344700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.4",
+    "nama": "1 m3 urukan tanah biasa atau tanah liat berpasir tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tanah biasa (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.4,
+        "harga_satuan_ref": 146900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 239400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.5",
+    "nama": "1 m3 Urukan tanah liat (lempung) tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0125,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tanah liat (quarry-lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.4,
+        "harga_satuan_ref": 160000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 262900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.6",
+    "nama": "1m3 Urukan Batu Kerikil Tanpa Pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 1.4,
+        "harga_satuan_ref": 352300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 578800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.1.7",
+    "nama": "1 m3 Urukan tanah subur tanpa pemadatan secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tanah Subur",
+        "satuan": "m3",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 165000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 217800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.2.1",
+    "nama": "1 m3 pemadatan tanah per 20 cm menggunakan alat timbris secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 60500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.2.2",
+    "nama": "1 m3 timbunan dan pemadatan sirtu  secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sirtu (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 261800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 375900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.1",
+    "nama": "1 m3 Pemadatan tanah setebal 10 cm menggunakan  mesin Stemper kuda semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stamper Kuda",
+        "satuan": "hari",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 290000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 24500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.2",
+    "nama": "1 m3 Pemadatan pasir setebal 15 cm menggunakan mesin Stamper kodok semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stamper kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.0574,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 15700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.3",
+    "nama": "1 m3 Pemadatan pasir setebal 20 cm menggunakan mesin Stamper VRR-550 kg semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stamper D-Drum",
+        "satuan": "hari",
+        "koefisien": 0.0574,
+        "harga_satuan_ref": 310000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 19500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.4",
+    "nama": "1 m3 Pemadatan pasir setebal 20 cm menggunakan mesin Stamper VRR-1,5 Ton semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stamper Smooth_Drum",
+        "satuan": "hari",
+        "koefisien": 0.0574,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 22000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.5",
+    "nama": "1 m3 Tipbunan dan Pemadatan batu kerikil meggunakan mein stamper kodok semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 1.13,
+        "harga_satuan_ref": 352300
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Smooth_Drum",
+        "satuan": "hari",
+        "koefisien": 0.0574,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 496300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.3.3.6",
+    "nama": "1 m3 Timbunan dan Pemadatan Makadam semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.3",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "batu pecah 5/7",
+        "satuan": "m3",
+        "koefisien": 1.13,
+        "harga_satuan_ref": 351800
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.0574,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 501400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Timbunan Pemadatan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

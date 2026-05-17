@@ -1,0 +1,527 @@
+[
+  {
+    "kode_ahsp": "3.13.1",
+    "nama": "Pemasangan 1 m' slimar aluminium",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang alumunium",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0043,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Profil slimar aluminium",
+        "satuan": "m'",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 60000
+      },
+      {
+        "nama": "Skrup fixer",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 1600
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 88800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.13.2",
+    "nama": "Pemasangan 1 m2 profil jalusi aluminium",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang alumunium",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0043,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Jalusi aluminium",
+        "satuan": "m2",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 600000
+      },
+      {
+        "nama": "Sealant",
+        "satuan": "tube",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 33100
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 740500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.13.3",
+    "nama": "Pengelasan 1 m’ dengan las listrik",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0007,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat las listrik",
+        "satuan": "jam",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 28700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.13.4",
+    "nama": "Pembuatan dan pemasangan 1 m' railing besi pengaman tinggi 1.2 m",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa besi hitam 3 inch",
+        "satuan": "m'",
+        "koefisien": 4.8,
+        "harga_satuan_ref": 42000
+      },
+      {
+        "nama": "Pipa besi hitam 1 inch",
+        "satuan": "m'",
+        "koefisien": 9.9,
+        "harga_satuan_ref": 15500
+      },
+      {
+        "nama": "Cat zyncromate",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 26000
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 540500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.13.5",
+    "nama": "Pembuatan dan pemasangan 1 m' railing tangga/ramp dan hand rail tinggi 0.85 m dan 0.65 m",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa besi hitam 3 inch",
+        "satuan": "m'",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 42000
+      },
+      {
+        "nama": "Pipa besi hitam 2 inch",
+        "satuan": "m'",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 31000
+      },
+      {
+        "nama": "Pipa besi hitam 1,5 inch",
+        "satuan": "m'",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Cat zyncromate",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 26000
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 308700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.13.6",
+    "nama": "Pemasangan 1 buah Tangga Service tinggi 4 meter",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.13",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang alumunium",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tangga service",
+        "satuan": "buah",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 1144000
+      },
+      {
+        "nama": "Dynabolt M12",
+        "satuan": "m'",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 30500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4045300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Besi dan Aluminium",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

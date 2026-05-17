@@ -1,0 +1,1019 @@
+[
+  {
+    "kode_ahsp": "10.1.1",
+    "nama": "Pembuatan 1 buah cetakan Panel P1 RISHA (Asumsi 400 Kali Pakai )",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 3.0959,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 3.0959,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.3096,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1548,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil",
+        "satuan": "kg",
+        "koefisien": 51.598,
+        "harga_satuan_ref": 16480
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.053,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat las listrik",
+        "satuan": "Jam",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1866100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.2",
+    "nama": "Pembuatan 1 buah cetakan Panel P2 RISHA (Asumsi 400 Kali Pakai )",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.7275,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 2.7275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.2727,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1364,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil",
+        "satuan": "kg",
+        "koefisien": 45.458,
+        "harga_satuan_ref": 16480
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.053,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat las listrik",
+        "satuan": "Jam",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1644300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.3",
+    "nama": "Pembuatan 1 buah cetakan Panel P3 RISHA (Asumsi 400 Kali Pakai )",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.4959,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 1.4959,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.1496,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0748,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baja Profil",
+        "satuan": "kg",
+        "koefisien": 24.931,
+        "harga_satuan_ref": 16480
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.053,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat las listrik",
+        "satuan": "Jam",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 903100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.4",
+    "nama": "Pasangan dan Membuka Cetakan 1 buah Komponen P1 RISHA",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.024,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 16800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 14000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.5",
+    "nama": "Pasangan dan Membuka Cetakan 1 buah Komponen P2 RISHA",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.024,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.048,
+        "harga_satuan_ref": 16800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 13600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.6",
+    "nama": "Pasangan dan Membuka Cetakan 1 buah Komponen P3 RISHA",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.024,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 16800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 13200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.7",
+    "nama": "Produksi 1 buah Pael P1",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "nama": "1 kg Penulangan Slab untuk BjTP atau BjTS diameter < 12 mm, cara Manual",
+        "satuan": "kg",
+        "koefisien": 6.0755,
+        "harga_satuan_ref": 18474
+      },
+      {
+        "nama": "1 kg Penulangan Wiremesh M6-M10 untuk slab atau dinding atau Ferrocement secara manual",
+        "satuan": "m2",
+        "koefisien": 0.2464,
+        "harga_satuan_ref": 13808
+      },
+      {
+        "nama": "Pembuatan 1 buah Cetakan Panel P1 RISHA (Asumsi 400 kali pakai)",
+        "satuan": "buah",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 1866138
+      },
+      {
+        "nama": "Pemasangan dan membuat cetakan 1 buah komponen P1 RISHA",
+        "satuan": "unit",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 14069
+      },
+      {
+        "nama": "1 m3 beton mutu sedang fc 25 Mpa, Slum (100 ±  25) mm, agregat maks 19 mm secara mekanis",
+        "satuan": "m3",
+        "koefisien": 0.0204,
+        "harga_satuan_ref": 1382685
+      },
+      {
+        "nama": "Penulangan/Menebar Beton 1 m3 untuk Kolom Beton Pracetak",
+        "satuan": "m3",
+        "koefisien": 0.0204,
+        "harga_satuan_ref": 68915
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 180300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.8",
+    "nama": "Produksi 1 buah Pael P2",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "nama": "1 kg Penulangan Slab untuk BjTP atau BjTS diameter < 12 mm, cara Manual",
+        "satuan": "kg",
+        "koefisien": 5.5027,
+        "harga_satuan_ref": 18474
+      },
+      {
+        "nama": "1 kg Penulangan Wiremesh M6-M10 untuk slab atau dinding atau Ferrocement secara manual",
+        "satuan": "m2",
+        "koefisien": 0.1344,
+        "harga_satuan_ref": 13808
+      },
+      {
+        "nama": "Pembuatan 1 buah Cetakan Panel P2 RISHA (Asumsi 400 kali pakai)",
+        "satuan": "buah",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 1644397
+      },
+      {
+        "nama": "Pemasangan dan membuat cetakan 1 buah komponen P1 RISHA",
+        "satuan": "unit",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 13625
+      },
+      {
+        "nama": "1 m3 beton mutu sedang fc 25 Mpa, Slum (100 ±  25) mm, agregat maks 19 mm secara mekanis",
+        "satuan": "m3",
+        "koefisien": 0.0145,
+        "harga_satuan_ref": 1382685
+      },
+      {
+        "nama": "Penulangan/Menebar Beton 1 m3 untuk Kolom Beton Pracetak",
+        "satuan": "m3",
+        "koefisien": 0.0145,
+        "harga_satuan_ref": 68915
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 156500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.1.9",
+    "nama": "Produksi 1 buah Pael P3",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "nama": "1 kg Penulangan Slab untuk BjTP atau BjTS diameter < 12 mm, cara Manual",
+        "satuan": "kg",
+        "koefisien": 5.5027,
+        "harga_satuan_ref": 18474
+      },
+      {
+        "nama": "Pembuatan 1 buah Cetakan Panel P3 RISHA (Asumsi 400 kali pakai)",
+        "satuan": "buah",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 903118
+      },
+      {
+        "nama": "Pemasangan dan membuat cetakan 1 buah komponen P3 RISHA",
+        "satuan": "unit",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 13292
+      },
+      {
+        "nama": "1 m3 beton mutu sedang fc 25 Mpa, Slum (100 ±  25) mm, agregat maks 19 mm secara mekanis",
+        "satuan": "m3",
+        "koefisien": 0.0145,
+        "harga_satuan_ref": 1382685
+      },
+      {
+        "nama": "Penulangan/Menebar Beton 1 m3 untuk Kolom Beton Pracetak",
+        "satuan": "m3",
+        "koefisien": 0.0145,
+        "harga_satuan_ref": 68915
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 152000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.2.1",
+    "nama": "Pengepakan 1 set Panel dan Aksesoris RISHA T-36",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.2",
+    "satuan_bayar": "set",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.257,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.063,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Stepping Band Lebar 15 mm",
+        "satuan": "m",
+        "koefisien": 57.6,
+        "harga_satuan_ref": 8570
+      },
+      {
+        "nama": "Palet Kayu uk. 120x120x10 cm",
+        "satuan": "buah",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 123000
+      },
+      {
+        "nama": "Kayu kaso 5/7 kelas III",
+        "satuan": "m3",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 3500000
+      },
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "m3",
+        "koefisien": 0.0204,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1314700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.2.2",
+    "nama": "Pengiriman 1 set Panel dan Aksesoris RISHA T-36",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.2",
+    "satuan_bayar": "set",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "nama": "Panel P1",
+        "satuan": "m",
+        "koefisien": 57.6,
+        "harga_satuan_ref": 1866138
+      },
+      {
+        "nama": "Panel P2",
+        "satuan": "buah",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 1644397
+      },
+      {
+        "nama": "Panel P3",
+        "satuan": "m3",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 903118
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 123671200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.3.1",
+    "nama": "Pekerjaan Perakitan Panel dan Alat Sambung Modul T36 RISHA",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Baut dan Mur f12 L=4\"",
+        "satuan": "buah",
+        "koefisien": 104.0,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Baut dan Mur f12, L=6\"",
+        "satuan": "buah",
+        "koefisien": 133.0,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Baut dan Mur f12, L=7\"",
+        "satuan": "buah",
+        "koefisien": 156.0,
+        "harga_satuan_ref": 23000
+      },
+      {
+        "nama": "Ring Plat",
+        "satuan": "buah",
+        "koefisien": 786.0,
+        "harga_satuan_ref": 2500
+      },
+      {
+        "nama": "Pelat Strip t=2,6 mm, L=12 cm",
+        "satuan": "buah",
+        "koefisien": 80.0,
+        "harga_satuan_ref": 21000
+      },
+      {
+        "nama": "Pelat Strip t=2,6 mm, L=14 cm",
+        "satuan": "buah",
+        "koefisien": 24.0,
+        "harga_satuan_ref": 29000
+      },
+      {
+        "nama": "Pelat Strip t=2,6 mm, L=17 cm",
+        "satuan": "buah",
+        "koefisien": 174.0,
+        "harga_satuan_ref": 39000
+      },
+      {
+        "nama": "Pelat Strip t=2,6 mm, L=34 cm",
+        "satuan": "buah",
+        "koefisien": 12.0,
+        "harga_satuan_ref": 58000
+      },
+      {
+        "nama": "Angkur Baja Full Drat ASTM 307 dia. 10 mm Panjang 35 cm",
+        "satuan": "buah",
+        "koefisien": 30.0,
+        "harga_satuan_ref": 9200
+      },
+      {
+        "nama": "Angkur Baja Full Drat ASTM 307 dia 10 mm Panjang 65 cm",
+        "satuan": "buah",
+        "koefisien": 15.0,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 24305600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "10.3.2",
+    "nama": "Pekerjaan Perakitan Panel Modul T36 RISHA",
+    "bidang": "cipta-karya",
+    "divisi": 10,
+    "sub_divisi": "10.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1325500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Strutur Risha ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

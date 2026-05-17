@@ -1,0 +1,2907 @@
+[
+  {
+    "kode_ahsp": "1.1.1.1",
+    "nama": "Pembuatan 1 m’ pagar sementara dari kayu tinggi 2 meter",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0387,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Papan Kayu ukuran 2/20 cm",
+        "satuan": "m3",
+        "koefisien": 0.0396,
+        "harga_satuan_ref": 2500000
+      },
+      {
+        "nama": "Paku biasa 5 inchi",
+        "satuan": "kg",
+        "koefisien": 0.5872,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 26.406,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "kg",
+        "koefisien": 61.56,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "kg",
+        "koefisien": 83.349,
+        "harga_satuan_ref": 210
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 17.415,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Residu",
+        "satuan": "liter",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 21000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 799800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.1.2",
+    "nama": "Pembuatan 1 m’ pagar sementara dari seng gelombang rangka kayu tinggi 2 meter",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.031,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Seng gelombang",
+        "satuan": "lembar",
+        "koefisien": 1.3125,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Paku biasa 5 inchi",
+        "satuan": "kg",
+        "koefisien": 0.4271,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 26.406,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 61.56,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "kg",
+        "koefisien": 83.349,
+        "harga_satuan_ref": 210
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 17.415,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 639300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.1.3",
+    "nama": "Pembuatan 1 m’ pagar sementara dari kawat duri tinggi 2 meter",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.308,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.031,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0139,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Kawat duri",
+        "satuan": "m'",
+        "koefisien": 20.4457,
+        "harga_satuan_ref": 1750
+      },
+      {
+        "nama": "Paku biasa 5 inchi",
+        "satuan": "kg",
+        "koefisien": 0.4715,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 26.406,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 61.56,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "Kg",
+        "koefisien": 83.349,
+        "harga_satuan_ref": 210
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 17.415,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 378200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.1.4",
+    "nama": "Pembuatan 1 m’ pagar sementara  seng gelombang rangka baja L.40.40.4 tinggi pagar 1.8 meter",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Seng gelombang bjls  30 panjang 180 cm",
+        "satuan": "lembar",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 73300
+      },
+      {
+        "nama": "Baja L 40.40.4",
+        "satuan": "kg",
+        "koefisien": 13.5,
+        "harga_satuan_ref": 14840
+      },
+      {
+        "nama": "Kawat seng 3mm",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 18800
+      },
+      {
+        "nama": "Pasangan batu ukuran 20/50 t=40cm",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 286500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 428900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.1.5",
+    "nama": "Pembuatan 1 m2 pagar BRC Galvanis",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.042,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat jaring panjang 240 cm",
+        "satuan": "lembar",
+        "koefisien": 0.01649,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 17400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.1.6",
+    "nama": "Pemasangan 1 m2 panel beton pracetak 50x50x240 untuk pagar",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.375,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Panel beton pracetak",
+        "satuan": "lembar",
+        "koefisien": 0.986,
+        "harga_satuan_ref": 125000
+      },
+      {
+        "nama": "Kolom beton pracetak",
+        "satuan": "batang",
+        "koefisien": 0.525,
+        "harga_satuan_ref": 282000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 45.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "m3",
+        "koefisien": 0.074,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 0.0146,
+        "harga_satuan_ref": 352300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 434000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.1",
+    "nama": "1 buah papan nama pekerjaan ukuran 0.8x1.2 menggunakan multiflex 18 mm, frame besi siku dan tiang kayu 8/12",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Tukang pelitur",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Multiplek tebal 18 mm",
+        "satuan": "lembar",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 226600
+      },
+      {
+        "nama": "Tiang kayu 8/12 kelas II tinggi 4m",
+        "satuan": "m3",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Frame besi L.30.30.3",
+        "satuan": "kg",
+        "koefisien": 5.8,
+        "harga_satuan_ref": 14840
+      },
+      {
+        "nama": "Paku campuran 5 cm + 7 cm",
+        "satuan": "kg",
+        "koefisien": 1.25,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Cat kayu",
+        "satuan": "kg",
+        "koefisien": 2.5,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1909000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.2",
+    "nama": "1 buah papan nama pekerjaan ukuran 0.6x08 menggunakan multiplex 10 mm, frame allumunium siku dan tiang kayu 5/7, printing banner plastik",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.75,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.75,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Multiplek tebal 9 mm",
+        "satuan": "lembar",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 116700
+      },
+      {
+        "nama": "Tiang kayu 5/7 kelas II tinggi 3m",
+        "satuan": "m3",
+        "koefisien": 0.021,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Frame Allum L.10.1",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 25000
+      },
+      {
+        "nama": "Banner plastik 0.6x0.8 m2",
+        "satuan": "m2",
+        "koefisien": 0.48,
+        "harga_satuan_ref": 100000
+      },
+      {
+        "nama": "Paku campuran 5 cm + 7 cm",
+        "satuan": "kg",
+        "koefisien": 1.25,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Cat kayu",
+        "satuan": "kg",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 702500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.3",
+    "nama": "Pembuatan 1 m2 kantor sementara/rumah jaga/gudang semen dan peralatan lantai plesteran, dinding setengah tembok",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "m'",
+        "koefisien": 1.25,
+        "harga_satuan_ref": 5000
+      },
+      {
+        "nama": "Kayu",
+        "satuan": "m3",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Paku biasa 5 inchi",
+        "satuan": "kg",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Besi strip",
+        "satuan": "kg",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 7500
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 35.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "m3",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Koral Beton",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 352300
+      },
+      {
+        "nama": "Bata merah",
+        "satuan": "buah",
+        "koefisien": 30.0,
+        "harga_satuan_ref": 700
+      },
+      {
+        "nama": "Seng pelat",
+        "satuan": "lembar",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 72200
+      },
+      {
+        "nama": "Jendela nako",
+        "satuan": "buah",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 400000
+      },
+      {
+        "nama": "Kaca polos",
+        "satuan": "m2",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 120000
+      },
+      {
+        "nama": "Kunci tanam",
+        "satuan": "buah",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 65800
+      },
+      {
+        "nama": "Plywood 4 mm",
+        "satuan": "lembar",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 75000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3501200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.4",
+    "nama": "Pembuatan 1 m2 direksi keet (Kantor), los kerja dan gudang",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 4 mm",
+        "satuan": "lembar",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 116700
+      },
+      {
+        "nama": "Fondasi pasangan batu",
+        "satuan": "m3",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "GRC Pelat t=4 mm uk 122x244 cm",
+        "satuan": "lembar",
+        "koefisien": 1.24,
+        "harga_satuan_ref": 200000
+      },
+      {
+        "nama": "Paku",
+        "satuan": "kg",
+        "koefisien": 0.75,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Asbes gelombang",
+        "satuan": "lembar",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 62400
+      },
+      {
+        "nama": "Paku asbes",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 21000
+      },
+      {
+        "nama": "Floor lantai (Beton lantai kerja)",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 805600
+      },
+      {
+        "nama": "Pintu Double teakwood rangka kayu",
+        "satuan": "m2",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 150000
+      },
+      {
+        "nama": "Frame besi kaca nako",
+        "satuan": "daun",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 400000
+      },
+      {
+        "nama": "cat dinding",
+        "satuan": "m2",
+        "koefisien": 16.5,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5699600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.5",
+    "nama": "Pembuatan 1 m2 jalan sementara lapis macadam",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 2.0296,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.1309,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Agg Pokok",
+        "satuan": "m3",
+        "koefisien": 1.0594,
+        "harga_satuan_ref": 350000
+      },
+      {
+        "nama": "Agg Pengunci",
+        "satuan": "m3",
+        "koefisien": 0.3311,
+        "harga_satuan_ref": 360000
+      },
+      {
+        "nama": "Agg Penutup",
+        "satuan": "kg",
+        "koefisien": 0.1854,
+        "harga_satuan_ref": 370000
+      },
+      {
+        "nama": "Aspal",
+        "satuan": "kg",
+        "koefisien": 80.0,
+        "harga_satuan_ref": 1200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Wheel Loader",
+        "satuan": "jam",
+        "koefisien": 0.0071,
+        "harga_satuan_ref": 472400
+      },
+      {
+        "nama": "Dump Truck 1",
+        "satuan": "jam",
+        "koefisien": 0.3189,
+        "harga_satuan_ref": 556100
+      },
+      {
+        "nama": "Dump Truck 2",
+        "satuan": "jam",
+        "koefisien": 0.3202,
+        "harga_satuan_ref": 556100
+      },
+      {
+        "nama": "Dump Truck 3",
+        "satuan": "jam",
+        "koefisien": 0.3237,
+        "harga_satuan_ref": 556100
+      },
+      {
+        "nama": "Three Wheel Roller",
+        "satuan": "jam",
+        "koefisien": 0.0655,
+        "harga_satuan_ref": 262300
+      },
+      {
+        "nama": "Asphalt Distributor",
+        "satuan": "jam",
+        "koefisien": 0.0157,
+        "harga_satuan_ref": 307300
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1368300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.6",
+    "nama": "Pembuatan 1 m2 jalan sementara (Jalan Tanah)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pembersihan & Pengupasan (Buang Top Soil dan Segala Tanaman)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 12000,
+        "ref": null
+      },
+      {
+        "nama": "Penyiapan Badan Jalan (Pemadatan Fondasi Timbunan)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 2900,
+        "ref": null
+      },
+      {
+        "nama": "Timbunan Pilihan (CBR>10%)",
+        "satuan": "m3",
+        "koefisien": 0.2048,
+        "harga_satuan_ref": 496300,
+        "ref": null
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sewa Lahan (Jika di luar Rumija, Luas lahan bisa lebih besar dari contoh)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 1000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1281300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.7",
+    "nama": "Pembuatan 1 m2 jalan sementara (Jalan Kerikil)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pembersihan & Pengupasan (Buang Top Soil dan Segala Tanaman)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 12000,
+        "ref": null
+      },
+      {
+        "nama": "Penyiapan Badan Jalan (Pemadatan Fondasi Timbunan)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 2900,
+        "ref": null
+      },
+      {
+        "nama": "Lapis Fondasi Agregat Kelas C (CBR > 30% ukuran butiran maksimum 2.5 cm)",
+        "satuan": "m3",
+        "koefisien": 0.2048,
+        "harga_satuan_ref": 695000,
+        "ref": null
+      },
+      {
+        "nama": "Lapis Resap Pengikat",
+        "satuan": "liter",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 15600,
+        "ref": null
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sewa Lahan (Jika di luar Rumija, Luas lahan bisa lebih besar dari contoh)",
+        "satuan": "m2",
+        "koefisien": 1.0476,
+        "harga_satuan_ref": 1000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1343200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.1",
+    "nama": "1 m3 Pembersihan dan pengupasan permukaan tanah (striping) s.d. tanaman ∅ 2 cm",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 12100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.2",
+    "nama": "Tebas tebang 1 m2 tanaman/tumbuhan ∅ < 5 cm",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.3.",
+    "nama": "Tebas tebang 1 m\n2\n tanaman/tumbuhan ∅ >5 s.d. 15 cm",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 6600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.4",
+    "nama": "Tebas tebang 1 batang pohon/tumbuhan ∅ >15 s.d. 30 cm",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 22300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.5",
+    "nama": "Tebas tebang 1 batang pohon/tumbuhan ∅ > 30 s.d 50 cm",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 22200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.6",
+    "nama": "Tebas tebang 1 batang pohon/tumbuhan ∅ > 50 s.d 75 cm (diameter pohon diukur 1 m di atas permukaan tanah)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 30”; 7,5HP",
+        "satuan": "hari",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 48800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.7",
+    "nama": "Tebas tebang 1 batang pohon/tumbuhan ∅ > 75 cm (diameter pohon diukur 1 m di atas permukaan tanah)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 30”; 7,5HP",
+        "satuan": "hari",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 62700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.8",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 5 s.d. 15 cm (termasuk pembuangan sisa tunggul tanpa menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1429,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0143,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 48500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.9",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 15 cm  s.d. 30 cm (termasuk pembuangan sisa tunggul tanpa menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1675,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0168,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.14,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 68300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.10",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 30 cm  s.d. 50 cm (termasuk pembuangan sisa tunggul tanpa menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1825,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0182,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.22,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 96600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.11",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 50 cm  s.d. 75 cm (termasuk pembuangan sisa tunggul tanpa menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2613,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0261,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 149900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.12",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 75 cm (termasuk pembuangan sisa tunggul tanpa menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3433,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0343,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.524,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 218200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.13",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 5 s.d. 15 cm (termasuk pembuangan sisa tunggul dengan menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1507,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0151,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 49500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.14",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 15 cm s.d. 30 cm (termasuk pembuangan sisa tunggul dengan menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2495,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.14,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 79100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.15",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 15 cm s.d. 50 cm (termasuk pembuangan sisa tunggul dengan menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3083,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0308,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.22,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 113200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.16",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ > 15 cm s.d. 75 cm (termasuk pembuangan sisa tunggul dengan menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4713,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0471,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 177700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.3.17",
+    "nama": "Gali dan cabut 1 tunggul pohon tanaman keras ∅ >  75 cm (termasuk pembuangan sisa tunggul dengan menutup kembali bekas lubang)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.75,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Chainsaw 20”; 5,5HP",
+        "satuan": "hari",
+        "koefisien": 0.524,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 271900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.1",
+    "nama": "Pengukuran ulang topografi seluas 1 Ha",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "ha",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Juru ukur",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 175000,
+        "ref": "L.05"
+      },
+      {
+        "nama": "Pembantu juru ukur",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 150000,
+        "ref": "L.06"
+      },
+      {
+        "nama": "Juru gambar",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 150000,
+        "ref": "L.14b"
+      },
+      {
+        "nama": "Ahli topografi",
+        "satuan": "OH",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 400000,
+        "ref": "L.12d"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.151,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Paku payung",
+        "satuan": "kg",
+        "koefisien": 0.508,
+        "harga_satuan_ref": 35590
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Waterpass",
+        "satuan": "hari",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 75000
+      },
+      {
+        "nama": "Theodolit",
+        "satuan": "hari",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 150000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3277000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.2",
+    "nama": "Pasangan 1 m' bouwplank",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7",
+        "satuan": "m3",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Kayu papan 3/20 cm",
+        "satuan": "m3",
+        "koefisien": 0.007,
+        "harga_satuan_ref": 2825000
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Waterpass",
+        "satuan": "hari",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 171500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.3",
+    "nama": "Patok Kayu (kaso5/7) Panjang 0,5 m'",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Paku Payung",
+        "satuan": "bh",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 35590
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Waterpass",
+        "satuan": "hari",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 191300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.4",
+    "nama": "1 Buah Patok Kayu (Kaso 5/7) panjang 1 m'",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0035,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Paku Payung",
+        "satuan": "bh",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 35590
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Waterpass",
+        "satuan": "hari",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 75000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 85500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.5",
+    "nama": "Patok Tetap Bantu (PTB)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Galian tanah biasa",
+        "satuan": "m3",
+        "koefisien": 0.273,
+        "harga_satuan_ref": 90860,
+        "ref": null
+      },
+      {
+        "nama": "Timbunan Pasir",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 372504,
+        "ref": null
+      },
+      {
+        "nama": "Pembesian",
+        "satuan": "kg",
+        "koefisien": 2.3,
+        "harga_satuan_ref": 17065,
+        "ref": null
+      },
+      {
+        "nama": "Beton fc' 15 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 1278955,
+        "ref": null
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pen Kuningan titik acuan",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 27000
+      },
+      {
+        "nama": "Marmer Graphir 10x10 cm",
+        "satuan": "bauh",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 144200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "1.1.4.6",
+    "nama": "Patok Tetap Utama (PTU)",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Galian tanah biasa",
+        "satuan": "m3",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 90860,
+        "ref": null
+      },
+      {
+        "nama": "Timbunan Pasir",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 372504,
+        "ref": null
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 4.1,
+        "harga_satuan_ref": 17065,
+        "ref": null
+      },
+      {
+        "nama": "Beton fc' 15 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 1278955,
+        "ref": null
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pen kuningan titik acuan",
+        "satuan": "m3",
+        "koefisien": 0.0035,
+        "harga_satuan_ref": 27000
+      },
+      {
+        "nama": "Marmer Graphir 12x12 cm",
+        "satuan": "bh",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 215800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Persiapan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

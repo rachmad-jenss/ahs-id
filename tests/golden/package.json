@@ -14,6 +14,7 @@
     "@ahs-id/hsd-kaltim-2025": "workspace:*",
     "@ahs-id/hsd-jabar-2025": "workspace:*",
     "@ahs-id/hsd-papua-2025": "workspace:*",
+    "@ahs-id/cipta-karya-2024": "workspace:*",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
   }

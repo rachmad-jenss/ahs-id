@@ -1,0 +1,2084 @@
+[
+  {
+    "kode_ahsp": "3.8.1",
+    "nama": "Pengikisan/pengerokan 1 m2 permukaan cat lama (cat minyak)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Soda api",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 17900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 19100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.2",
+    "nama": "Pencucian 1 m2 permukaan tembok yang pernah dicat",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sabun",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 19400
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 19200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.3",
+    "nama": "Pengerokan 1 m2 karat pada permukaan baja cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cairan perontok karat",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 19200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.4",
+    "nama": "Pengecatan 1 m2 bidang kayu baru (1 lapis plamir, 1 lapis cat dasar, 2 lapis cat penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0009,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Meni kayu",
+        "satuan": "kg",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 34500
+      },
+      {
+        "nama": "Plamir kayu",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 30100
+      },
+      {
+        "nama": "Cat dasar (cat kayu)",
+        "satuan": "kg",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 38200
+      },
+      {
+        "nama": "Cat penutup (cat kayu)",
+        "satuan": "kg",
+        "koefisien": 0.26,
+        "harga_satuan_ref": 58500
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "kg",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 47400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.5",
+    "nama": "Pengecatan 1 m2 bidang kayu baru (1 lapis plamir, 1 lapis cat dasar, 3 lapis cat penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.105,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0105,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0035,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Meni kayu",
+        "satuan": "kg",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 34500
+      },
+      {
+        "nama": "Plamir kayu",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 30100
+      },
+      {
+        "nama": "Cat dasar (cat kayu)",
+        "satuan": "kg",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 38200
+      },
+      {
+        "nama": "Cat penutup (cat kayu)",
+        "satuan": "kg",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 58500
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "kg",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 71000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.6",
+    "nama": "Pelaburan 1 m2 bidang kayu dengan teak oil",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.063,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0021,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Teak oil",
+        "satuan": "liter",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 29200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 27600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.7",
+    "nama": "Pelaburan 1 m2 bidang kayu dengan pelitur",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pelitur",
+        "satuan": "liter",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 73700
+      },
+      {
+        "nama": "Pelitur jadi",
+        "satuan": "liter",
+        "koefisien": 0.372,
+        "harga_satuan_ref": 66200
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 63300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.8",
+    "nama": "Pelaburan 1 m2 bidang kayu dengan residu atau Ter",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Residu",
+        "satuan": "liter",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 21000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 20100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.9",
+    "nama": "Pelaburan 1 m2 bidang kayu dengan vernis",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.16,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.16,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0053,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Vernis",
+        "satuan": "liter",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 44500
+      },
+      {
+        "nama": "Dempul",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 33500
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 56900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.10.1",
+    "nama": "Pengecatan 1 m2 tembok baru Interior( 1 lapis cat dasar, 2 lapis cat penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0667,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.0667,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 119100
+      },
+      {
+        "nama": "Cat penutup (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.26,
+        "harga_satuan_ref": 130500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 70100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.10.2",
+    "nama": "Pengecatan 1 m2 tembok baru Ekterior (1 lapis cat dasar, 2 lapis cat penutup), eksterior",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0769,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.0769,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0077,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0026,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 128500
+      },
+      {
+        "nama": "Cat penutup (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.26,
+        "harga_satuan_ref": 136600
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 75900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.11.1",
+    "nama": "Pengecatan 1 m2 tembok lama Interior  (1 lapis cat dasar, 2 lapis cat penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 119100
+      },
+      {
+        "nama": "Cat penutup (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 130500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 56300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.11.2",
+    "nama": "Pengecatan 1 m2 tembok lama Ekterior (1 lapis cat dasar, 2 lapis cat penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 128500
+      },
+      {
+        "nama": "Cat penutup (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 136600
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 58800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.12",
+    "nama": "Pelaburan 1 m2 tembok baru dengan kapur padam (kapur pemutih)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0001,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 3.3e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kapur padam",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 7000
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 3900
+      },
+      {
+        "nama": "Alang-alang",
+        "satuan": "ikat",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 30000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 26500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.13",
+    "nama": "Pelaburan 1 m2 tembok lama dengan kapur padam (kapur pemutih)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kapur padam",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 7000
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 3900
+      },
+      {
+        "nama": "Alang-alang",
+        "satuan": "ikat",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 30000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 16700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.14",
+    "nama": "Pengecatan 1 m2 permukaan baja galvanis 3 lapis cat terakhir secara semprot",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 52300
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 76700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.15",
+    "nama": "Pengecatan 1 m2 permukaan baja galvanis secara manual sistem 3 lapis",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0267,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 52300
+      },
+      {
+        "nama": "Cat antara (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.17,
+        "harga_satuan_ref": 49700
+      },
+      {
+        "nama": "Cat penutup (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 54700
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 213600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.16",
+    "nama": "Pengecatan 1 m2 permukaan baja dengan menie besi (Zinc Chromate)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Meni besi",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 39700
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 44200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.17",
+    "nama": "Pengecatan 1 m2 permukaan baja dengan menie besi dengan perancah",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.225,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0225,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0075,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Meni besi",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 39700
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Perancah kayu",
+        "satuan": "m3",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 2500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 79500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.18",
+    "nama": "Pengecatan 1 m2 permukaan baja galvanis secara manual sistem 4 lapis",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0083,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 52300
+      },
+      {
+        "nama": "Cat antara (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 49700
+      },
+      {
+        "nama": "Cat penutup (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 54700
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 90300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.19",
+    "nama": "Pengecatan 1 m2 permukaan baja galvanis secara manual sistem 1 lapis cat penutup",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat penutup (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 54700
+      },
+      {
+        "nama": "Kuas 3 inch",
+        "satuan": "buah",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 10400
+      },
+      {
+        "nama": "Pengencer cat kayu/besi",
+        "satuan": "liter",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 20000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 36100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.20.1",
+    "nama": "Pengecatan 1 m2 plafon Interior ( 1 lapis Cat Dasar dan 2 Lapis Cat Penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0021,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 119100
+      },
+      {
+        "nama": "Cat penutup (cat tembok interior)",
+        "satuan": "kg",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 130500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 60000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.20.2",
+    "nama": "Pengecatan 1 m2 plafon eksterior ( 1 lapis Cat Dasar dan 2 Lapis Cat Penutup)",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0021,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat dasar (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 128500
+      },
+      {
+        "nama": "Cat penutup (cat tembok eksterior)",
+        "satuan": "kg",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 136600
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 62500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.21",
+    "nama": "Pengecatan 1 m2 cat epoxy tebal 2 mm",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat epoxy",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 30000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 92200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.8.22",
+    "nama": "Pelituran 1 m2 dengan pelitur melamic",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.8",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Wood filler",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 53000
+      },
+      {
+        "nama": "Woodstain",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 87000
+      },
+      {
+        "nama": "Sanding",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 90000
+      },
+      {
+        "nama": "Melamic",
+        "satuan": "kg",
+        "koefisien": 0.24,
+        "harga_satuan_ref": 60000
+      },
+      {
+        "nama": "Thinner",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 21800
+      },
+      {
+        "nama": "Amplas",
+        "satuan": "lembar",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 3900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 306400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pengecatan dan Pelituran",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

@@ -5,6 +5,7 @@
   "divisi": 3,
   "sub_divisi": "3.2",
   "satuan_bayar": "m3",
+  "jenis_kalkulasi": "dynamic_hsd",
   "volume_state_bayar": "compacted",
   "jenis_pekerjaan": "mekanis",
   "is_lump_sum": false,
@@ -14,13 +15,15 @@
       "ref": "L.01",
       "koefisien": 0.065,
       "koef_sumber": "tabel",
-      "catatan": null
+      "catatan": null,
+      "nama": "Pekerja"
     },
     {
       "ref": "L.04",
       "koefisien": 0.007,
       "koef_sumber": "tabel",
-      "catatan": null
+      "catatan": null,
+      "nama": "Mandor"
     }
   ],
   "bahan": [
@@ -31,7 +34,8 @@
       "koef_sumber": "tabel",
       "faktor_kehilangan_pct": 2.5,
       "volume_state": "compacted",
-      "catatan": "Koefisien sudah termasuk faktor kehilangan"
+      "catatan": "Koefisien sudah termasuk faktor kehilangan",
+      "nama": "Agregat Kelas B (CBR Min 60%)"
     }
   ],
   "peralatan": [
@@ -41,9 +45,11 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": "loose",
-      "variabel_input": ["jenis_material"],
+      "variabel_input": [
+        "jenis_material"
+      ],
       "koef_referensi": {
-        "value": 0.020,
+        "value": 0.02,
         "asumsi": {
           "fa": 0.83,
           "jenis_material": "agregat",
@@ -58,7 +64,10 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": "loose",
-      "variabel_input": ["jarak_quarry_km", "kondisi_jalan"],
+      "variabel_input": [
+        "jarak_quarry_km",
+        "kondisi_jalan"
+      ],
       "koef_referensi": null,
       "catatan": "Koefisien sangat tergantung jarak quarry ke lokasi"
     },
@@ -68,9 +77,12 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": null,
-      "variabel_input": ["lebar_hamparan_m", "jumlah_lintasan"],
+      "variabel_input": [
+        "lebar_hamparan_m",
+        "jumlah_lintasan"
+      ],
       "koef_referensi": {
-        "value": 0.030,
+        "value": 0.03,
         "asumsi": {
           "fa": 0.83,
           "lebar_hamparan_m": 3.0,
@@ -85,12 +97,15 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": "compacted",
-      "variabel_input": ["tebal_hamparan_m", "jumlah_passing"],
+      "variabel_input": [
+        "tebal_hamparan_m",
+        "jumlah_passing"
+      ],
       "koef_referensi": {
-        "value": 0.020,
+        "value": 0.02,
         "asumsi": {
           "fa": 0.83,
-          "tebal_hamparan_m": 0.20,
+          "tebal_hamparan_m": 0.2,
           "jumlah_passing": 6,
           "kecepatan_km_jam": 2.5
         }
@@ -102,7 +117,9 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": null,
-      "variabel_input": ["jarak_sumber_air_km"],
+      "variabel_input": [
+        "jarak_sumber_air_km"
+      ],
       "koef_referensi": null
     }
   ],
@@ -128,35 +145,49 @@
     "kondisi_jalan": {
       "label": "Kondisi Jalan Hauling",
       "tipe": "enum",
-      "options": ["baik", "sedang", "rusak"],
+      "options": [
+        "baik",
+        "sedang",
+        "rusak"
+      ],
       "default": "sedang"
     },
     "jenis_material": {
       "label": "Jenis Material",
       "tipe": "enum",
-      "options": ["tanah_biasa", "tanah_lempung", "kerikil", "batu_pecah", "agregat_kelas_b"],
+      "options": [
+        "tanah_biasa",
+        "tanah_lempung",
+        "kerikil",
+        "batu_pecah",
+        "agregat_kelas_b"
+      ],
       "default": "agregat_kelas_b"
     },
     "faktor_efisiensi": {
       "label": "Faktor Efisiensi Alat (Fa)",
       "tipe": "number",
       "default": 0.83,
-      "min": 0.60,
-      "max": 0.90
+      "min": 0.6,
+      "max": 0.9
     },
     "kondisi_operasi": {
       "label": "Kondisi Operasi (untuk Fpr)",
       "tipe": "enum",
-      "options": ["normal", "berat", "sangat_berat"],
+      "options": [
+        "normal",
+        "berat",
+        "sangat_berat"
+      ],
       "default": "normal"
     },
     "tebal_hamparan_m": {
       "label": "Tebal Hamparan",
       "satuan": "m",
       "tipe": "number",
-      "default": 0.20,
-      "min": 0.10,
-      "max": 0.50
+      "default": 0.2,
+      "min": 0.1,
+      "max": 0.5
     },
     "jumlah_passing": {
       "label": "Jumlah Passing Roller",

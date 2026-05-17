@@ -1,0 +1,112 @@
+[
+  {
+    "kode_ahsp": "6.6.1.1",
+    "nama": "Pembuatan 1 buah sumur Resapan Air Hujan diameter 80 cm, t=100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 6,
+    "sub_divisi": "6.6",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.086,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.143,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Galian tanah biasa",
+        "satuan": "m3",
+        "koefisien": 1.006,
+        "harga_satuan_ref": 45000
+      },
+      {
+        "nama": "Buis beton dia. 80 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 255400
+      },
+      {
+        "nama": "kerikil",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 210
+      },
+      {
+        "nama": "Beton",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 825000
+      },
+      {
+        "nama": "Tulangan",
+        "satuan": "kg",
+        "koefisien": 5.024,
+        "harga_satuan_ref": 10300
+      },
+      {
+        "nama": "Bekisting",
+        "satuan": "m2",
+        "koefisien": 0.502,
+        "harga_satuan_ref": 37500
+      },
+      {
+        "nama": "Pipa PVC AW Ø 4\"",
+        "satuan": "m'",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 72375
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 505500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Sistem Air Hujan",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

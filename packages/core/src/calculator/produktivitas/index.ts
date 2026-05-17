@@ -19,3 +19,7 @@ export type { LintasanVibroRollerParams, LintasanMotorGraderParams } from './lin
 export { produktivitasThroughput } from './throughput.js';
 
 export type { ThroughputParams, ThroughputResult } from './throughput.js';
+
+export { hitungHsdTransportSatuan } from './transport-satuan.js';
+
+export type { TransportSatuanParams, TransportSatuanResult } from './transport-satuan.js';

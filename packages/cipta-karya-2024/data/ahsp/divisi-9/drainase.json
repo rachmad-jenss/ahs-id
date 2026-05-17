@@ -1,0 +1,7869 @@
+[
+  {
+    "kode_ahsp": "8.1.1.1",
+    "nama": "1 m' Saluran U-Ditch 30x30x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0049,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 30x30x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 220000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 445500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.2",
+    "nama": "1 m Saluran U-Ditch 30x40x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0057,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 30x40x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 240000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 492900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.3",
+    "nama": "1 m Saluran U-Ditch 40x40x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x40x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 270000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 561200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.4",
+    "nama": "1 m Saluran U-Ditch 50x50x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0068,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x50x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 290000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 599700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.5",
+    "nama": "1 m Saluran U-Ditch 40x60x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0071,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 320000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 639400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.6",
+    "nama": "1 m Saluran U-Ditch 50x50x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0074,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x50x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 340000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 685500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.7",
+    "nama": "1 m Saluran U-Ditch 50x60x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 370000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 807500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.8",
+    "nama": "1 m Saluran U-Ditch 50x70x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0102,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x70x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 390000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 835200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.9",
+    "nama": "1 m Saluran U-Ditch 60x60x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0108,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 420000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 898000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.10",
+    "nama": "1 m Saluran U-Ditch 60x70x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0108,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x70x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 440000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 916700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.11",
+    "nama": "1 m Saluran U-Ditch 60x80x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0109,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x80x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 470000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 948700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.12",
+    "nama": "1 m Saluran U-Ditch 80x60x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.055,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 490000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 995900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.13",
+    "nama": "1 m Saluran U-Ditch 80x80x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9045,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2261,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0452,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0545,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.109,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x80x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 520000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2261,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1115400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.14",
+    "nama": "1 m Saluran U-Ditch 80x100x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9525,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2381,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0476,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0545,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.109,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 540000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2381,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1160600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.15",
+    "nama": "1 m Saluran U-Ditch 100x100x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9651,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2413,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0483,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0665,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.133,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 100x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 570000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2413,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1224400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.16",
+    "nama": "1 m Saluran U-Ditch 100x120x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9841,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.246,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0492,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0665,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.133,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 100x120x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 590000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.246,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1253300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.17",
+    "nama": "1 m Saluran U-Ditch 120x120x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1034,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2758,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0552,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 120x120x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 620000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2758,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1373100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.18",
+    "nama": "1 m Saluran U-Ditch 120x140x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1259,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2815,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0563,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 120x140x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 640000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2815,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1404100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.19",
+    "nama": "1 m Saluran U-Ditch 140x140x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2795,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3199,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0885,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.1779,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 140x140x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 670000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3199,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1546000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.20",
+    "nama": "1 m Saluran U-Ditch 150x100x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1408,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2852,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.057,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.192,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 680000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2852,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1495300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.21",
+    "nama": "1 m Saluran U-Ditch 150x150x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2919,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.323,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0646,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0955,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.191,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x150x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 710000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.323,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1606200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.22",
+    "nama": "1 m Saluran U-Ditch 150x170x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2956,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3239,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0648,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0955,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.191,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x170x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 730000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3239,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1626600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.23",
+    "nama": "1 m Saluran U-Ditch 160x160x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3267,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3317,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0663,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0995,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.199,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 160x160x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 750000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3317,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1672100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.24",
+    "nama": "1 m Saluran U-Ditch 160x180x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3469,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3367,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0673,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0985,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.197,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 160x180x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 780000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3367,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1708300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.25",
+    "nama": "1 m Saluran U-Ditch 180x180x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3488,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3372,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0674,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1125,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.225,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 180x180x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3372,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1761800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.26",
+    "nama": "1 m Saluran U-Ditch 180x200x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3649,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3412,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0682,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1125,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.225,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 180x200x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 830000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3412,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1798300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.1.27",
+    "nama": "1 m Saluran U-Ditch 200x200x120 cm dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3788,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3447,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0689,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1725,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.345,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 200x200x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 850000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3447,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1970500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.1",
+    "nama": "1 m Saluran U-Ditch 30x30x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0049,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 30x30x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 220000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.0976,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 437000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.2",
+    "nama": "1 m Saluran U-Ditch 30x40x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0057,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 30x40x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 240000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1131,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 484400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.3",
+    "nama": "1 m Saluran U-Ditch 40x40x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0063,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x40x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 270000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1251,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 550200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.4",
+    "nama": "1 m Saluran U-Ditch 40x50x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0068,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x50x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 290000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1359,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 588700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.5",
+    "nama": "1 m Saluran U-Ditch 40x60x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0071,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0325,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.065,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 40x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 320000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1424,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 628400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.6",
+    "nama": "1 m Saluran U-Ditch 50x50x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0074,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x50x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 340000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1481,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 672100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.7",
+    "nama": "1 m Saluran U-Ditch 50x60x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0099,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 370000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.1986,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 794300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.8",
+    "nama": "1 m Saluran U-Ditch 50x70x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0102,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0395,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.079,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 50x70x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 390000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2035,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 821800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.9",
+    "nama": "1 m Saluran U-Ditch 60x60x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0108,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 420000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2158,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 882900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.10",
+    "nama": "1 m Saluran U-Ditch 60x70x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0108,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x70x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 440000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.216,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 901600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.11",
+    "nama": "1 m Saluran U-Ditch 60x80x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0109,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0445,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.089,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 60x80x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 470000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2184,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 933600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.12",
+    "nama": "1 m Saluran U-Ditch 80x60x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.055,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x60x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 490000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2202,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 977300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.13",
+    "nama": "1 m Saluran U-Ditch 80x80x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9045,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2261,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0452,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0545,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.109,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x80x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 520000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2261,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1096900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.14",
+    "nama": "1 m Saluran U-Ditch 80x100x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9525,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2381,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0476,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0545,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.109,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 80x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 540000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2381,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1142100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.15",
+    "nama": "1 m Saluran U-Ditch 100x100x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9651,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2413,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0483,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0665,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.133,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 100x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 570000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2413,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1201900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.16",
+    "nama": "1 m Saluran U-Ditch 100x120x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.9841,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.246,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0492,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0665,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.133,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 100x120x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 590000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.246,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1230700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.17",
+    "nama": "1 m Saluran U-Ditch 120x120x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1034,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2758,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0552,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 120x120x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 620000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2758,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1347000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.18",
+    "nama": "1 m Saluran U-Ditch 120x140x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1259,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2815,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0563,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.154,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 120x140x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 640000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2815,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1378000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.19",
+    "nama": "1 m Saluran U-Ditch 140x140x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2795,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3199,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0885,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.177,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 140x140x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 670000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3199,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1515600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.20",
+    "nama": "1 m Saluran U-Ditch 150x100x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.1408,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.2852,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.057,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.192,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x100x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 680000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.2852,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1462800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.21",
+    "nama": "1 m Saluran U-Ditch 150x150x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2919,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.323,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0646,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0955,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.191,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x150x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 710000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.323,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1573800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.22",
+    "nama": "1 m Saluran U-Ditch 150x170x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.2956,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3239,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0648,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0955,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.191,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 150x170x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 730000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3239,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1594200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.23",
+    "nama": "1 m Saluran U-Ditch 160x160x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3267,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3317,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0663,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0995,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.199,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 160x160x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 750000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3317,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1638300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.24",
+    "nama": "1 m Saluran U-Ditch 160x180x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3469,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3367,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0673,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0985,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.197,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 160x180x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 780000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3367,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1675000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.25",
+    "nama": "1 m Saluran U-Ditch 180x180x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3488,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3372,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0674,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1125,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.225,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 180x180x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3372,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1723700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.26",
+    "nama": "1 m Saluran U-Ditch 180x200x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3649,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3412,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0682,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1125,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.225,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 180x200x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 830000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3412,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1760200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.2.27",
+    "nama": "1 m Saluran U-Ditch 200x200x120 cm dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 1.3788,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.3447,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0689,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1725,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.345,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "U-Ditch 200x200x120 cm",
+        "satuan": "buah",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 850000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa mobil crane",
+        "satuan": "jam",
+        "koefisien": 0.3447,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1912000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.1",
+    "nama": "1 m' Tutup U-Ditch 39x60x6 (Tipe LD) untuk 30x30x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0018,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 39x60x6 (tipe LD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 70000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 138300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.2",
+    "nama": "1 m' Tutup U-Ditch 51x60x7 (Tipe LD) untuk 40x40x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0794,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0397,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 51x60x7 (tipe LD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 199200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.3",
+    "nama": "1 m' Tutup U-Ditch 62x60x7,5 (Tipe LD) untuk 50x50x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0873,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0437,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0044,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 62x60x7,5 (tipe LD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 125000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 246700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.4",
+    "nama": "1 m' Tutup U-Ditch 73x60x8 (Tipe LD) untuk 60x60x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1032,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0516,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 73x60x7,8 (tipe LD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 165000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 323200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.5",
+    "nama": "1 m' Tutup U-Ditch 94x60x8 (Tipe LD) untuk 80x80x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0722,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0722,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 94x60x10 (tipe LD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 195000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 377700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.6",
+    "nama": "1 m' Tutup U-Ditch 39x60x9 (Tipe HD) untuk 30x30x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0357,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 39x60x9 (tipe HD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 125000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 243500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.7",
+    "nama": "1 m' Tutup U-Ditch 51x60x10 (Tipe HD) untuk 40x40x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0952,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0476,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 51x60x10 (tipe HD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 176000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 341700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.8",
+    "nama": "1 m' Tutup U-Ditch 62x60x13 (Tipe HD) untuk 50x50x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0654,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0654,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0033,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 51x60x10 (tipe HD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 176000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0654,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 375500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.9",
+    "nama": "1 m' Tutup U-Ditch 73x60x14 (Tipe HD) untuk 60x60x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0732,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0732,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0037,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 73x60x14 (tipe HD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 235000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0732,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 490000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.10",
+    "nama": "1 m' Tutup U-Ditch 94x60x15 (Tipe HD) untuk 80x80x120 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0838,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OJ",
+        "koefisien": 0.0838,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0042,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tutup U-Ditch 94x60x15 (tipe HD)",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 375000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0838,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 755200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.1.3.11",
+    "nama": "1 m' Grill Penutup Saluran, Besi Siku+Plat Strip",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.339,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.339,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.034,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Plat Strip 3/30 mm",
+        "satuan": "m",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 9900
+      },
+      {
+        "nama": "Besi siku 40x40x4",
+        "satuan": "m",
+        "koefisien": 2.6,
+        "harga_satuan_ref": 20825
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 268700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.1",
+    "nama": "1 m' Buis Beton 1/2 D 30-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0156,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton 1/2 dia. 30 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 93000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 124100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.2",
+    "nama": "1 m' Buis Beton 1/2 D 40-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0214,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0214,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0203,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton 1/2 dia. 40 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 110250
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 151900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.3",
+    "nama": "1 m' Buis Beton 1/2 D 50-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0385,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton 1/2 dia. 50 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 162300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.4",
+    "nama": "1 m' Buis Beton 1/2 D 60-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0459,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0459,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0023,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0622,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton 1/2 dia. 60 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 125500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0459,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 210200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.5",
+    "nama": "1 m' Buis Beton 1/2 D 80-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0582,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0582,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0029,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.1106,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton 1/2 dia. 80 cm",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 150600
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0582,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 432000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.6",
+    "nama": "1 m' Buis Beton 1/2 D 100-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0641,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0641,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0032,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.1357,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis Beton 1/2 dia. 100 cm",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 190000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0641,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 540600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.7",
+    "nama": "1 m' Buis Beton  D 30-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0476,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0238,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0024,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0311,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis Beton dia. 30 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 75000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 117300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.8",
+    "nama": "1 m' Buis Beton D 40-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0423,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0423,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0021,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.0553,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton dia. 40 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 120000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0423,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 200800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.9",
+    "nama": "1 m' Buis Beton D 50-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0501,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0501,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton dia. 50 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 150000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0501,
+        "harga_satuan_ref": 0
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 222800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.10",
+    "nama": "1 m' Buis Beton D 60-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.062,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.062,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0031,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.1244,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton dia. 60 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.062,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 379600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.11",
+    "nama": "1 m' Buis Beton D 80-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.2212,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis beton dia. 80 cm",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 255400
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 696800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.2.12",
+    "nama": "1 m' Buis Beton D 100-100 cm",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0781,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.0781,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0039,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Pemasangan Plesteran 1  SP : 4 PP Tebal 15 mm",
+        "satuan": "m2",
+        "koefisien": 0.2714,
+        "harga_satuan_ref": 56784
+      },
+      {
+        "nama": "Buis Beton dia. 100 cm",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 269500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Excavator 95 HP",
+        "satuan": "jam",
+        "koefisien": 0.0781,
+        "harga_satuan_ref": 480000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 750800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.1",
+    "nama": "1 m' Box Culvert 40x40x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2231,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2231,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0112,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0365,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.073,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 40x40x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 855000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.0781,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1216400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.2",
+    "nama": "1 m' Box Culvert 50x50x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0117,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0425,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.085,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 50x50x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1119000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1773000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.3",
+    "nama": "1 m' Box Culvert 60x60x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0126,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0495,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.099,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 60x60x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1504000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2248200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.4",
+    "nama": "1 m' Box Culvert 80x80x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6487,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.3244,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0324,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 80x80x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2560000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.3244,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3615700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.5",
+    "nama": "1 m' Box Culvert 100x100x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.92,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.46,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.046,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0725,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.145,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 100x100x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3052000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.46,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4452000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1. 6",
+    "nama": "1 m' Box Culvert 150x150x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0395,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.5197,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1005,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.201,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 150x150x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3570000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.5197,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 5209100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1.7",
+    "nama": "1 m' Box Culvert 200x200x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.4607,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.6152,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.123,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1275,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.255,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 200x200x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3930000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.6152,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6010300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.1. 8",
+    "nama": "1 m' Box Culvert 300x300x100 dengan lantai kerja fc 10 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 3.6491,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.9123,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1825,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 10 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1875,
+        "harga_satuan_ref": 1236000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.375,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 300x300x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 4110000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.9123,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 7019400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.1",
+    "nama": "1 m' Box Culvert 40x40x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2231,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2231,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0112,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0365,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.073,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 40x40x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 855000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.2231,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1435300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.2",
+    "nama": "1 m' Box Culvert 50x50x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0117,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0425,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.085,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 50x50x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1119000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1758600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.3",
+    "nama": "1 m' Box Culvert 60x60x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0126,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0495,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.099,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 50x50x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1119000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.2524,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1807900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.4",
+    "nama": "1 m' Box Culvert 80x80x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6487,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.3244,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0324,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0625,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 80x80x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2560000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.3244,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3594500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.5",
+    "nama": "1 m' Box Culvert 100x100x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.92,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.46,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.046,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.0725,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.145,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 100x100x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3052000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.46,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4427400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.6",
+    "nama": "1 m' Box Culvert 150x150x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0395,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.5197,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1005,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.201,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 150x150x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3570000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.5197,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 5175100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.7",
+    "nama": "1 m' Box Culvert 200x200x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.4607,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.6152,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.123,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1275,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.255,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 200x200x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3930000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.6152,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 5967100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "8.3.2.8",
+    "nama": "1 m' Box Culvert 300x300x100 dengan lantai kerja fc 7,5 Mpa",
+    "bidang": "cipta-karya",
+    "divisi": 8,
+    "sub_divisi": "8.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 3.6491,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.9123,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1825,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lantai Kerja fc 7,5 Mpa",
+        "satuan": "m3",
+        "koefisien": 0.1875,
+        "harga_satuan_ref": 928000
+      },
+      {
+        "nama": "Urukan Pasir Uruk",
+        "satuan": "m3",
+        "koefisien": 0.375,
+        "harga_satuan_ref": 488180
+      },
+      {
+        "nama": "Box Culvert 300x300x100 cm",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 4110000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "jam",
+        "koefisien": 0.9123,
+        "harga_satuan_ref": 1450000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6955900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Drainase",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

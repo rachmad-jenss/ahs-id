@@ -1,0 +1,4396 @@
+[
+  {
+    "kode_ahsp": "5.5.4.1",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 6,4 mm (1/4\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.056,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1/4\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 34300
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 76279,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.2",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 9,5 mm (3/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.048,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 3/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 45300
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 215352,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.3",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 12,7 mm (1/2\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1/2\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 46400
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 109191,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.4",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 15,9 mm (5/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 5/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 101600
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 200271,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.5",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 19,1 mm (3/4\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.095,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.159,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 3/4\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 122700
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 247972,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.6",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 22,2 mm (7/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.112,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.187,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 7/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 351600
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 632791,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.7",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 25,4 mm (1\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.129,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.215,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.021,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.007,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 370000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 670092,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.8",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 28,6 mm (1-1/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.143,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.239,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.024,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1-1/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 375000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 684507,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.9",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 34,9 mm (1-3/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.174,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.29,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.029,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1-3/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 380000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 705704,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.10",
+    "nama": "Pemasangan 1 m Pipa Tembaga B280 Dia. 41,3 mm (1-5/8\")",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.207,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.346,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa Tembaga B280 1-5/8\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 290000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      },
+      {
+        "nama": "Duct Tape",
+        "satuan": "Gulung",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 9050
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 571361,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.11",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 1/2\" (15 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.056,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 1/2\" (m)",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 6875
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 26000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.12",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 3/4\" (20 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.048,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 3/4\" (m)",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 8750
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 35200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.13",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 1\" (25 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 1\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 11250
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 46200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.14",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 1-1/4\" (32 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.081,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.135,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 1-1/4\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 18500
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 65300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.15",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 1-1/2\" (40 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.095,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.159,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 1-1/2\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 73500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.16",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 2\" (50 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.129,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.215,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.021,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.007,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 2\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 26000
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 97500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.3.4.17",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 2-1/2\" (65 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.16,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.266,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.027,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 2-1/2\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 33625
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 123200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.18",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 3\" (80 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.19,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.318,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.032,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 3\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 51075
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 165000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.5.4.19",
+    "nama": "Pemasangan 1 m' pipa PVC AW, dia. 4\" (100 mm) + Isolasi",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.5",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.255,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.425,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC AW Ø 4\"",
+        "satuan": "m'",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 72375
+      },
+      {
+        "nama": "Isolasi",
+        "satuan": "m'",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 416
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 227100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.1",
+    "nama": "Pemasanga 1 Unit PRV Set Dia. 50 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.512,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pipa",
+        "satuan": "OH",
+        "koefisien": 0.855,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.085,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 50 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 6131000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 7970900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.2",
+    "nama": "Pemasanga 1 Unit PRV Set Dia. 65 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.636,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.062,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.106,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 65 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 8397000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 10889600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.3",
+    "nama": "Pemasanga 1 Unit PRV Set Dia. 80 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.636,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.062,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.106,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 80 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 8550000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 12493900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.4",
+    "nama": "Pemasanga 1 Unit PRV Set Dia. 100 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.012,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.69,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.169,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.056,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 100 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 14250000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 20803200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.5",
+    "nama": "Pemasangan 1 Unit PRV SET dia. 150 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.524,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 2.545,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.254,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.085,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 150 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 14500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 21376100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.6",
+    "nama": "Pemasangan 1 Unit PRV SET dia. 200 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.029,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 3.388,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.339,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.113,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "PRV SET dia. 200 mm dan aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 15500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 23018600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.7",
+    "nama": "Pemasangan 1 Unit MCV Set dia. 80 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.457,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.763,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.076,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "MCV Set dia. 80 mm",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 20500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 29507000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.8",
+    "nama": "Pemasangan 1 Unit MCV Set dia. 100 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.607,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.014,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.101,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.034,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "MCV Set dia. 100 mm",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 20900000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 30142400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.9",
+    "nama": "Pemasangan 1 Unit MCV Set dia. 150 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.917,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.531,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.153,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.051,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "MCV Set dia. 150 mm",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 30300000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 43714700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.10",
+    "nama": "Pemasangan 1 Unit BCV Set dia. 50 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.255,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.425,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BCV Set dia. 50 mm",
+        "satuan": "Set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1700000
+      },
+      {
+        "nama": "Temper Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 700000
+      },
+      {
+        "nama": "Flow Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 104000
+      },
+      {
+        "nama": "Sigh Glass",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Test Drain Valve",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 750000
+      },
+      {
+        "nama": "Coupling 1 set",
+        "satuan": "set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4731500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.11",
+    "nama": "Pemasangan 1 Unit BCV Set dia. 65 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.321,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.537,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.054,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.018,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BCV Set dia. 65 mm",
+        "satuan": "Set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 1900000
+      },
+      {
+        "nama": "Temper Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 700000
+      },
+      {
+        "nama": "Flow Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 104000
+      },
+      {
+        "nama": "Sigh Glass",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Test Drain Valve",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 750000
+      },
+      {
+        "nama": "Coupling 1 set",
+        "satuan": "set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4979700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.12",
+    "nama": "Pemasangan 1 Unit BCV Set dia. 80 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.381,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.636,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.021,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BCV Set dia. 80 mm",
+        "satuan": "Set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2100000
+      },
+      {
+        "nama": "Temper Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 700000
+      },
+      {
+        "nama": "Flow Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 104000
+      },
+      {
+        "nama": "Sigh Glass",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Test Drain Valve",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 750000
+      },
+      {
+        "nama": "Coupling 1 set",
+        "satuan": "set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5224600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.13",
+    "nama": "Pemasangan 1 Unit BCV Set dia. 100 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.512,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.855,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.085,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BCV Set dia. 100 mm",
+        "satuan": "Set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2400000
+      },
+      {
+        "nama": "Temper Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 700000
+      },
+      {
+        "nama": "Flow Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 104000
+      },
+      {
+        "nama": "Sigh Glass",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Test Drain Valve",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 750000
+      },
+      {
+        "nama": "Coupling 1 set",
+        "satuan": "set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5609600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.14",
+    "nama": "Pemasangan 1 Unit BCV Set dia. 150 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.762,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.272,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.042,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BCV Set dia. 150 mm",
+        "satuan": "Set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2600000
+      },
+      {
+        "nama": "Temper Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 700000
+      },
+      {
+        "nama": "Flow Switch",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 104000
+      },
+      {
+        "nama": "Sigh Glass",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Test Drain Valve",
+        "satuan": "buah",
+        "koefisien": 2.0,
+        "harga_satuan_ref": 750000
+      },
+      {
+        "nama": "Coupling 1 set",
+        "satuan": "set",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 115000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5934700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.15",
+    "nama": "Pemasangan 1 Unit Automatic Air Vent dia. 50mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.093,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.155,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Automatic Air Vent  dia. 50 mm",
+        "satuan": "unit",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 635000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 842400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.16",
+    "nama": "Pemasangan 1 Unit Automatic Air Vent dia. 80mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.183,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.306,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.031,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Automatic Air Vent  dia. 80 mm",
+        "satuan": "unit",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 766500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1046700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.17",
+    "nama": "Pemasangan 1 Unit Automatic Air Vent dia. 100mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.631,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.054,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.105,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Automatic Air Vent  dia. 100 mm",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 980000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1666800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.18",
+    "nama": "Pemasangan 1 Unit Automatic Air Vent dia. 150mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.94,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.571,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.157,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Automatic Air Vent  dia. 150 mm",
+        "satuan": "unit",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 1150000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2040100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.19",
+    "nama": "Pemasangan 1 Unit Flow Meter Analog dia.100 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.721,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.205,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Flow Meter Analog dia. 100 mm",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1300000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1876400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.20",
+    "nama": "Pemasangan 1 Unit Flow Meter Analog dia.200 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.762,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.272,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.042,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Flow Meter Analog dia. 200 mm",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2135300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.21",
+    "nama": "Pemasangan 1 Unit Landing Velve 2,5\"",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.21,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Landing Velve 2,5\"",
+        "satuan": "unit",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 1259000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1680900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.1.22",
+    "nama": "Pemasangan 1 Unit Orifice Plate dia. 25 mm",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Orifice Plate dia. 25 mm",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1500000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1842100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.1",
+    "nama": "Pemasangan 1 unit Sprinkler Head Pendant",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.087,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sprinkler Head Pendant dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 85000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 124800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.2",
+    "nama": "Pemasangan 1 unit Sprinkler Head Upright",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.087,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Sprinkler Head Upright dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 82900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 122200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.3",
+    "nama": "Pemasangan 1 unit Hydrant Pillar",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.269,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 2.119,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.212,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Hydrant Pillar dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 3750000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5071500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.4",
+    "nama": "Pemasangan 1 unit Indoor Hydrant Box (IHB)",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.269,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 2.119,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.212,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Indoor Hydrant Box dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1986000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.5",
+    "nama": "Pemasangan 1 unit outdoor Hydrant Box (OHB)",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.774,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 2.962,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.296,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.099,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Outdoor Hydrant Box dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1700000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2803300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.2.6",
+    "nama": "Pemasangan 1 unit Siamesse Connection",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.762,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 1.272,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.042,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Siamesse Connection dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 2200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2982300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.3.1",
+    "nama": "Pemasangan 1 unit Fire Extinguisher 3 kg",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.102,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.171,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.017,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Fire Extinguisher 3 kg  dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 171500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 250600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.3.2",
+    "nama": "Pemasangan 1 unit Fire Extinguisher 5 kg",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.102,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.171,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.017,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Fire Extinguisher 5 kg  dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 227900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 318800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.3.3",
+    "nama": "Pemasangan 1 unit Fire Extinguisher 25 kg",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.102,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 0.171,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.017,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Fire Extinguisher 25 kg  dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 1900000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2342000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.4.1",
+    "nama": "Pemasangan 1 Unit Jockey Fire Pump Vertical Multi Stage, 25 USGPM",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 6.338,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 10.585,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 1.058,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.353,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Jockey Fire Pump Vertical Multi Stage 25 USGPM",
+        "satuan": "unit",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 7400000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 11213800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.4.2",
+    "nama": "Pemasangan 1 Unit Main Fire Pump Centrifugal End Suction, 1.000 USGPM",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 22.821,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 38.112,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 3.811,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 1.27,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Main Fire Pump Centrifugal  End Suction 1.000 USGPM",
+        "satuan": "unit",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 10000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 21152100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.4.3",
+    "nama": "Pemasangan 1 Unit Diesel Fire Pump Centrifugal End Suction, 1.000 USGPM",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 30.476,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 50.895,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 5.09,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 1.697,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Diesel Fire Pump Centrifugal End Suction dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 12000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 26683200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.4.4",
+    "nama": "Pemasangan 1 Unit Main Fire Pump Centrifugal End Suction, 1.250 USGPM",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 25.098,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 41.918,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 4.191,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 1.897,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Main Fire Pump Centrifugal End Suction dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 14000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 26840800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "5.6.4.5",
+    "nama": "Pemasangan 1 Unit Diesel Fire Centrifugal Ed Suction, 1.250 USGPM",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.6",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 33.457,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Pipa",
+        "satuan": "OH",
+        "koefisien": 55.873,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 5.587,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 1.862,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Diesel Fire Pump Centrifugal End Suction dan Aksesoris",
+        "satuan": "unit",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 12000000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 27937100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Perpipaan dan proteksi kebakar ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

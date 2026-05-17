@@ -1,0 +1,192 @@
+[
+  {
+    "kode_ahsp": "3.14.1",
+    "nama": "Pembuatan 1 m2 Plywood Rangkap, Rangka Expose Kayu Kelas I",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.14",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5952,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.2976,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0298,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0099,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas I",
+        "satuan": "m3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 26000000
+      },
+      {
+        "nama": "Paku 1 inch",
+        "satuan": "kg",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 15000
+      },
+      {
+        "nama": "Lem kayu",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 16400
+      },
+      {
+        "nama": "Plywood 4 mm",
+        "satuan": "lembar",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 75000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 924200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Kayu",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.14.2",
+    "nama": "Pembuatan 1 m2 Plywood Lapis Formika, Rangka Expose Kayu Kelas Ii",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.14",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5952,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.2976,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0298,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0099,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas II",
+        "satuan": "M3",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 14000000
+      },
+      {
+        "nama": "Paku 1 inch",
+        "satuan": "kg",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 15000
+      },
+      {
+        "nama": "Lem kayu",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 16400
+      },
+      {
+        "nama": "Plywood 4 mm",
+        "satuan": "lembar",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 75000
+      },
+      {
+        "nama": "Formika",
+        "satuan": "lembar",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 170000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 696700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Kayu",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

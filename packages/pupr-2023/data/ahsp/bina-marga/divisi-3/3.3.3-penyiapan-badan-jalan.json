@@ -5,6 +5,7 @@
   "divisi": 3,
   "sub_divisi": "3.3",
   "satuan_bayar": "m2",
+  "jenis_kalkulasi": "dynamic_hsd",
   "volume_state_bayar": null,
   "jenis_pekerjaan": "mekanis",
   "is_lump_sum": false,
@@ -12,15 +13,17 @@
   "tenaga_kerja": [
     {
       "ref": "L.01",
-      "koefisien": 0.040,
+      "koefisien": 0.04,
       "koef_sumber": "tabel",
-      "catatan": null
+      "catatan": null,
+      "nama": "Pekerja"
     },
     {
       "ref": "L.04",
       "koefisien": 0.005,
       "koef_sumber": "tabel",
-      "catatan": null
+      "catatan": null,
+      "nama": "Mandor"
     }
   ],
   "bahan": [],
@@ -31,9 +34,12 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": null,
-      "variabel_input": ["lebar_hamparan_m", "jumlah_lintasan"],
+      "variabel_input": [
+        "lebar_hamparan_m",
+        "jumlah_lintasan"
+      ],
       "koef_referensi": {
-        "value": 0.0010,
+        "value": 0.001,
         "asumsi": {
           "fa": 0.83,
           "lebar_hamparan_m": 2.4,
@@ -49,7 +55,9 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": null,
-      "variabel_input": ["jumlah_passing"],
+      "variabel_input": [
+        "jumlah_passing"
+      ],
       "koef_referensi": {
         "value": 0.0008,
         "asumsi": {
@@ -67,7 +75,9 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": null,
-      "variabel_input": ["jarak_sumber_air_km"],
+      "variabel_input": [
+        "jarak_sumber_air_km"
+      ],
       "koef_referensi": null,
       "catatan": "Penyiraman permukaan badan jalan"
     }
@@ -86,13 +96,17 @@
       "label": "Faktor Efisiensi Alat (Fa)",
       "tipe": "number",
       "default": 0.83,
-      "min": 0.60,
-      "max": 0.90
+      "min": 0.6,
+      "max": 0.9
     },
     "kondisi_operasi": {
       "label": "Kondisi Operasi (untuk Fpr)",
       "tipe": "enum",
-      "options": ["normal", "berat", "sangat_berat"],
+      "options": [
+        "normal",
+        "berat",
+        "sangat_berat"
+      ],
       "default": "normal"
     },
     "jumlah_passing": {

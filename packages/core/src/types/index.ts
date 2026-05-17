@@ -12,7 +12,7 @@ export type VolumeState = 'bank' | 'loose' | 'compacted';
 // ============================================================
 
 export interface AhsMeta {
-  readonly permen_nomor: number;
+  readonly permen_nomor: number | null;
   readonly permen_tahun: number;
   readonly regulation: string;
   readonly supplement: string | null;
@@ -193,6 +193,52 @@ export interface AhspPeralatanEntry {
   readonly variabel_input: readonly string[];
   readonly koef_referensi: KoefReferensi | null;
   readonly catatan?: string | null;
+}
+
+// ============================================================
+// Fixed-Coefficient AHSP (Cipta Karya)
+// ============================================================
+
+export interface FixedCoeffTkEntry {
+  readonly ref?: string | null;
+  readonly nama: string;
+  readonly satuan: string;
+  readonly koefisien: number;
+  readonly harga_satuan_ref: number;
+}
+
+export interface FixedCoeffBahanEntry {
+  readonly ref?: string | null;
+  readonly nama: string;
+  readonly satuan: string;
+  readonly koefisien: number;
+  readonly harga_satuan_ref: number;
+}
+
+export interface FixedCoeffPeralatanEntry {
+  readonly ref?: string | null;
+  readonly nama: string;
+  readonly satuan: string;
+  readonly koefisien: number;
+  readonly harga_satuan_ref: number;
+}
+
+export interface FixedCoefficientItem {
+  readonly kode_ahsp: string;
+  readonly nama: string;
+  readonly bidang: string;
+  readonly divisi: number;
+  readonly sub_divisi: string;
+  readonly satuan_bayar: string;
+  readonly jenis_kalkulasi: 'fixed_coefficient';
+  readonly jenis_pekerjaan: 'manual' | 'mekanis' | 'semi-mekanis';
+  readonly is_lump_sum: boolean;
+  readonly tenaga_kerja: readonly FixedCoeffTkEntry[];
+  readonly bahan: readonly FixedCoeffBahanEntry[];
+  readonly peralatan: readonly FixedCoeffPeralatanEntry[];
+  readonly harga_satuan_pekerjaan_ref?: number | null;
+  readonly margin: MarginDefinition;
+  readonly provenance: Provenance;
 }
 
 export interface SubAhspEntry {

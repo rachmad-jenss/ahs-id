@@ -21,6 +21,7 @@ const schemas = {
   'faktor-konversi': ajv.compile(loadSchema('faktor-konversi.schema.json')),
   'ahsp-item': ajv.compile(loadSchema('ahsp-item.schema.json')),
   'hsd-regional': ajv.compile(loadSchema('hsd-regional.schema.json')),
+  'hsd-acuan': ajv.compile(loadSchema('hsd-acuan.schema.json')),
 };
 
 function detectSchema(filePath) {
@@ -30,6 +31,7 @@ function detectSchema(filePath) {
   if (name === 'peralatan-master') return 'peralatan-master';
   if (name === 'faktor-konversi') return 'faktor-konversi';
   if (name === 'hsd') return 'hsd-regional';
+  if (name === 'hsd-acuan') return 'hsd-acuan';
   return 'ahsp-item';
 }
 
@@ -60,17 +62,33 @@ function validatePackage(pkgDir) {
     }
 
     const data = JSON.parse(readFileSync(file, 'utf-8'));
-    const valid = validate(data);
     const rel = relative(root, file);
 
-    if (valid) {
-      console.log(`  [OK]   ${rel} (${schemaKey})`);
+    // Support both single objects and arrays of ahsp-item
+    const itemsToValidate = Array.isArray(data) && schemaKey === 'ahsp-item' ? data : [data];
+    let fileErrors = 0;
+    for (let idx = 0; idx < itemsToValidate.length; idx++) {
+      const valid = validate(itemsToValidate[idx]);
+      if (!valid) {
+        fileErrors++;
+        if (fileErrors === 1) {
+          console.error(`  [FAIL] ${rel} (${schemaKey})`);
+        }
+        const prefix = Array.isArray(data) ? `[${idx}] ` : '';
+        for (const err of validate.errors) {
+          console.error(`         ${prefix}${err.instancePath || '/'} ${err.message}`);
+        }
+        if (fileErrors >= 3) {
+          console.error(`         ... (more errors omitted for ${rel}[${idx}])`);
+          break;
+        }
+      }
+    }
+    if (fileErrors === 0) {
+      const count = Array.isArray(data) ? ` (${data.length} items)` : '';
+      console.log(`  [OK]   ${rel} (${schemaKey})${count}`);
     } else {
       errors++;
-      console.error(`  [FAIL] ${rel} (${schemaKey})`);
-      for (const err of validate.errors) {
-        console.error(`         ${err.instancePath || '/'} ${err.message}`);
-      }
     }
   }
 
@@ -96,6 +114,10 @@ totalErrors += validatePackage(hsdJabar);
 const hsdPapua = resolve(root, 'packages', 'hsd-papua-2025');
 console.log('\n@ahs-id/hsd-papua-2025:');
 totalErrors += validatePackage(hsdPapua);
+
+const ciptaKarya2024 = resolve(root, 'packages', 'cipta-karya-2024');
+console.log('\n@ahs-id/cipta-karya-2024:');
+totalErrors += validatePackage(ciptaKarya2024);
 
 console.log('');
 if (totalErrors > 0) {

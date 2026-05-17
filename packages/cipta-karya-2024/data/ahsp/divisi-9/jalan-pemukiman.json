@@ -1,0 +1,2295 @@
+[
+  {
+    "kode_ahsp": "7.1.1.1",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 6 cm fc'20 Mpa dan Pengunci Uskup untuk Jalan Lingkungan (Jalan Lokal) Secara Manual",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 6 cm fc 20 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 70000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 146800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.2",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 6 cm fc'25 Mpa dan Pengunci Uskup untuk Jalan Lakses/Penghubug (Jalan Kolektor) Secara Manual",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 6 cm fc 25 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 82000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 160600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.3",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 6 cm fc'20 Mpa dan Pengunci Uskup untuk Jalan Lingkungan (Jalan Lokal) Secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 6 cm fc 20 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 70000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.01175,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 129800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.4",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 6 cm fc'25 Mpa dan Pengunci Uskup untuk Jalan Lingkungan (Jalan Lokal) Secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 6 cm fc 25 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 82000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.01175,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 143700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.5",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 8 cm fc'20 Mpa dan Pengunci Topi Uskup untuk Jalan Lingkungan (Jalan Lokal) Secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 8 cm fc 20 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 179100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.6",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 8 cm fc'25 Mpa dan Pengunci Topi Uskup untuk Jalan akses/penghubung (Jalan kolektor) Secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 8 cm fc 25 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 97000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 192900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.7",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 8 cm fc'20 Mpa dan Pengunci Topi Uskup untuk Jalan Lingkungan (Jalan Lokal) Secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 8 cm fc 20 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 85000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.01286,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 174300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.1.8",
+    "nama": "Pemasangan 1 m2 Paving Block (Blok Beton) Natural Tebal 8 cm fc'25 Mpa dan Pengunci Topi Uskup untuk Jalan Akses/Penghubung  (Jalan Kolektor) Secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paving Block Tebal 8 cm fc 25 Mpa",
+        "satuan": "m2",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 97000
+      },
+      {
+        "nama": "Pasir Filler",
+        "satuan": "m3",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.096,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stamper Kodok 150 kg",
+        "satuan": "hari",
+        "koefisien": 0.01286,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 176300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.2.1",
+    "nama": "Pemasangan 1 m' Kanstin, Tebal 10x20x40 cm dengan kupingan untuk jalan Lingkungan (Jalan Lokal)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kanstin uk. 10x20x40",
+        "satuan": "buah",
+        "koefisien": 2.5,
+        "harga_satuan_ref": 27383
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "Kg",
+        "koefisien": 1.2854,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "kg",
+        "koefisien": 7.2244,
+        "harga_satuan_ref": 300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 86200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.2.2",
+    "nama": "Pemasangan 1 m' Kanstin, Tebal 15x40x460 cm dengan kupingan untuk jalan Akses/penghubung (Jalan Kolektor)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kanstin uk. 15x40x60",
+        "satuan": "buah",
+        "koefisien": 1.6667,
+        "harga_satuan_ref": 93000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "Kg",
+        "koefisien": 1.9282,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "kg",
+        "koefisien": 10.8366,
+        "harga_satuan_ref": 300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 183500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.2.3",
+    "nama": "Pemasangan 1 m' Kanstin, Tebal 10x20x40 cm tanpa kupingan untuk jalan Lingkungan (Jalan Lokal)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kanstin uk. 10x20x40",
+        "satuan": "buah",
+        "koefisien": 2.4,
+        "harga_satuan_ref": 27383
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "Kg",
+        "koefisien": 1.6282,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "kg",
+        "koefisien": 9.1509,
+        "harga_satuan_ref": 300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 84300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.1.2.4",
+    "nama": "Pemasangan 1 m' Kanstin, Tebal 15x40x460 cm Tanpa kupingan untuk jalan Akses/penghubung (Jalan Kolektor)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0333,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kanstin uk. 15x40x60",
+        "satuan": "buah",
+        "koefisien": 1.6333,
+        "harga_satuan_ref": 93000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "Kg",
+        "koefisien": 2.4423,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "kg",
+        "koefisien": 13.7264,
+        "harga_satuan_ref": 300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 181800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.1.1",
+    "nama": "1 m3 Beton Kurus fc 10 Mpa untuk Jalan Lingkungan (Jalan Lokal) Semi Mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2625,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.0263,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.105,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 279.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "Kg",
+        "koefisien": 873.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Agregar Kasar",
+        "satuan": "kg",
+        "koefisien": 909.0,
+        "harga_satuan_ref": 226
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 195.0,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1237,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Tandon Air kap. 2 m3",
+        "satuan": "hari",
+        "koefisien": 0.7554,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1790200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.1.2",
+    "nama": "1 m3 Beton Kurus fc 10 Mpa untuk Jalan Akses/Penghubung (Jalan Kolektor) Semi Mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.0275,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 279.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "Kg",
+        "koefisien": 873.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Agregar Kasar",
+        "satuan": "kg",
+        "koefisien": 909.0,
+        "harga_satuan_ref": 226
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 195.0,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0177,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1355,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Tandon Air kap. 2 m3",
+        "satuan": "hari",
+        "koefisien": 0.7554,
+        "harga_satuan_ref": 25000
+      },
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1540200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.1.3",
+    "nama": "1 m3 Beton Kurus fc 10 Mpa untuk JalanLingkungan (Jalan Lokal) Ready Mixed",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.42,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.105,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.0105,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.042,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Adukan beton K-100 ready mix",
+        "satuan": "m3`",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 788100
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1237,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1537200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.1.4",
+    "nama": "1 m3 Beton Kurus fc 10 Mpa untuk Jalan Akses / penghubung  (Jalan Kolektor) Ready Mixed",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.44,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.044,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Adukan beton K-100 ready mix",
+        "satuan": "m3`",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 788100
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1237,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1659300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.2.1",
+    "nama": "1 m3Perkerasan Beton Sc 3,5 Mpa (Setara Fc 25 Mpa) untuk Jalan Lingkungan (Jalan Lokal) Semi Mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.23,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2875,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.0288,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.123,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen PortlanD (PC)",
+        "satuan": "kg",
+        "koefisien": 383.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "Kg",
+        "koefisien": 764.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Agregar Kasar",
+        "satuan": "kg",
+        "koefisien": 934.0,
+        "harga_satuan_ref": 226
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 195.0,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0324,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1486,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Joint Sealant",
+        "satuan": "kg",
+        "koefisien": 0.625,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Curing Compound",
+        "satuan": "liter",
+        "koefisien": 1.3333,
+        "harga_satuan_ref": 44100
+      },
+      {
+        "nama": "Polytene 125 Mikron",
+        "satuan": "kg",
+        "koefisien": 0.5556,
+        "harga_satuan_ref": 46000
+      },
+      {
+        "nama": "Zat Aditif",
+        "satuan": "kg",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Tandon Air Kap. 2 m3",
+        "satuan": "hari",
+        "koefisien": 0.7568,
+        "harga_satuan_ref": 25000
+      },
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0068,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1991000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.2.2",
+    "nama": "1 m3 Perkerasan Beton Sc 3,8 Mpa (Setara Fc 30 Mpa) untuk Jalan Akses/Penghubung (Jalan Kolektor) Semi Mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.28,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.128,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen PortlanD (PC)",
+        "satuan": "kg",
+        "koefisien": 428.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "Kg",
+        "koefisien": 731.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Agregar Kasar",
+        "satuan": "kg",
+        "koefisien": 930.0,
+        "harga_satuan_ref": 226
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 195.0,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0252,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1159,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Joint Sealant",
+        "satuan": "kg",
+        "koefisien": 0.625,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Curing Compound",
+        "satuan": "liter",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 44100
+      },
+      {
+        "nama": "Polytene 125 Mikron",
+        "satuan": "kg",
+        "koefisien": 0.4167,
+        "harga_satuan_ref": 46000
+      },
+      {
+        "nama": "Dowel dia. 25 mm (BjTs)",
+        "satuan": "kg",
+        "koefisien": 38.7836,
+        "harga_satuan_ref": 15368
+      },
+      {
+        "nama": "Tie Bar Dia. 16 mm (BjTS)",
+        "satuan": "kg",
+        "koefisien": 6.629,
+        "harga_satuan_ref": 17722
+      },
+      {
+        "nama": "Zat Aditif",
+        "satuan": "kg",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      },
+      {
+        "nama": "Tandon Air Kap. 2 m3",
+        "satuan": "hari",
+        "koefisien": 0.9448,
+        "harga_satuan_ref": 25000
+      },
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0072,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2737900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.2.3",
+    "nama": "1 m3 Perkerasan Beton Sc 3,5 Mpa (Setara Fc 25 Mpa) untuk Jalan Lingkungan (Jalan Lokal) Ready Mixed",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.46,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.115,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.0115,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.046,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Adukan beton K-300 ready mix",
+        "satuan": "m3",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 961200
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0324,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1486,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Joint Sealant",
+        "satuan": "kg",
+        "koefisien": 0.625,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Curing Compound",
+        "satuan": "liter",
+        "koefisien": 1.3333,
+        "harga_satuan_ref": 44100
+      },
+      {
+        "nama": "Polytene 125 Mikron",
+        "satuan": "kg",
+        "koefisien": 0.5556,
+        "harga_satuan_ref": 46000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0068,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1759100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.2.2.4",
+    "nama": "1 m3 Perkerasan Beton Sc 3,8 Mpa (Setara Fc 30 Mpa) untuk Jalan Akses/Penghubung (Jalan Jalan Kolektor) Ready Mixed",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.48,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.048,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Adukan beton K-350 ready mix",
+        "satuan": "m3",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 1001900
+      },
+      {
+        "nama": "Kaso 5/7 kayu kelas II",
+        "satuan": "m3",
+        "koefisien": 0.0252,
+        "harga_satuan_ref": 10214200
+      },
+      {
+        "nama": "Multiplek tebal 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.2546,
+        "harga_satuan_ref": 152600
+      },
+      {
+        "nama": "Paku 2 inch",
+        "satuan": "kg",
+        "koefisien": 0.1159,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Joint Sealant",
+        "satuan": "kg",
+        "koefisien": 0.625,
+        "harga_satuan_ref": 22000
+      },
+      {
+        "nama": "Curing Compound",
+        "satuan": "liter",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 44100
+      },
+      {
+        "nama": "Polytene 125 Mikron",
+        "satuan": "kg",
+        "koefisien": 0.4167,
+        "harga_satuan_ref": 46000
+      },
+      {
+        "nama": "Dowel Dia. 25 mm (BjTS)",
+        "satuan": "kg",
+        "koefisien": 38.7836,
+        "harga_satuan_ref": 15368
+      },
+      {
+        "nama": "Tie Bar dia. 16 mm (BjTS)",
+        "satuan": "kg",
+        "koefisien": 6.629,
+        "harga_satuan_ref": 17722
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.0861,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0072,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2488700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.3.1",
+    "nama": "1 Ton Pekerjaan Lapisan Antara (AC-BC)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2008,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lolos screen 2 ukuran 9,5-19,0",
+        "satuan": "m3",
+        "koefisien": 0.221,
+        "harga_satuan_ref": 1970000
+      },
+      {
+        "nama": "Lolos screen 2 ukuran 0-5",
+        "satuan": "m3",
+        "koefisien": 0.321,
+        "harga_satuan_ref": 1799000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "lembar",
+        "koefisien": 9.87,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Aspal",
+        "satuan": "kg",
+        "koefisien": 62.83,
+        "harga_satuan_ref": 1200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Wheel Loader",
+        "satuan": "jam",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 472400
+      },
+      {
+        "nama": "AMP",
+        "satuan": "jam",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 3981125
+      },
+      {
+        "nama": "Generator set  135 KVA",
+        "satuan": "jam",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 410200
+      },
+      {
+        "nama": "Dump truck 1",
+        "satuan": "jam",
+        "koefisien": 0.2589,
+        "harga_satuan_ref": 556100
+      },
+      {
+        "nama": "Asphalt Finisher",
+        "satuan": "jam",
+        "koefisien": 0.137,
+        "harga_satuan_ref": 450000
+      },
+      {
+        "nama": "Tandem roller 6-8 ton",
+        "satuan": "jam",
+        "koefisien": 0.0135,
+        "harga_satuan_ref": 469500
+      },
+      {
+        "nama": "P. Tyre Roller",
+        "satuan": "jam",
+        "koefisien": 0.0058,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1572400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "7.3.2",
+    "nama": "1 Ton Pekerjaan Lapisan Aus (AC-WC)",
+    "bidang": "cipta-karya",
+    "divisi": 7,
+    "sub_divisi": "7.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2008,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lolos screen 2 ukuran 9,5-19,0",
+        "satuan": "m3",
+        "koefisien": 0.389,
+        "harga_satuan_ref": 1970000
+      },
+      {
+        "nama": "Lolos screen 2 ukuran 0-5",
+        "satuan": "m3",
+        "koefisien": 0.273,
+        "harga_satuan_ref": 1799000
+      },
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "lembar",
+        "koefisien": 9.45,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Aspal",
+        "satuan": "kg",
+        "koefisien": 57.68,
+        "harga_satuan_ref": 1200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Wheel Loader",
+        "satuan": "jam",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 472400
+      },
+      {
+        "nama": "AMP",
+        "satuan": "jam",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 3981125
+      },
+      {
+        "nama": "Generator set  135 KVA",
+        "satuan": "jam",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 410200
+      },
+      {
+        "nama": "Dump truck 1",
+        "satuan": "jam",
+        "koefisien": 0.2589,
+        "harga_satuan_ref": 556100
+      },
+      {
+        "nama": "Asphalt Finisher",
+        "satuan": "jam",
+        "koefisien": 0.11,
+        "harga_satuan_ref": 450000
+      },
+      {
+        "nama": "Tandem roller 6-8 ton",
+        "satuan": "jam",
+        "koefisien": 0.0108,
+        "harga_satuan_ref": 469500
+      },
+      {
+        "nama": "P. Tyre Roller",
+        "satuan": "jam",
+        "koefisien": 0.0046,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1819000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Jalan Pada Pemukiman",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

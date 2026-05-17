@@ -79,3 +79,15 @@ export type { SubAhspResult, SubAhspResolvedComponent } from './calculator/sub-a
 
 export { resolveStaticKoefisien, resolveDynamicKoefisien } from './calculator/koefisien.js';
 export type { ResolvedKoefisien } from './calculator/koefisien.js';
+
+export { hitungHsdTransportSatuan } from './calculator/produktivitas/transport-satuan.js';
+export type { TransportSatuanParams, TransportSatuanResult } from './calculator/produktivitas/transport-satuan.js';
+
+export { calcHspFixedCoefficient } from './calculator/fixed-coefficient.js';
+
+export type {
+  FixedCoefficientItem,
+  FixedCoeffTkEntry,
+  FixedCoeffBahanEntry,
+  FixedCoeffPeralatanEntry,
+} from './types/index.js';

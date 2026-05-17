@@ -1,0 +1,314 @@
+[
+  {
+    "kode_ahsp": "6.3.1",
+    "nama": "Pemasangan 1 buah bak kontrol pas. bata 30x30 cm tinggi 35 cm dengan tutup beton",
+    "bidang": "cipta-karya",
+    "divisi": 6,
+    "sub_divisi": "6.3",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.16,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.72,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bata merah",
+        "satuan": "buah",
+        "koefisien": 40.0,
+        "harga_satuan_ref": 700
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 44.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 275000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Batu split 1/2",
+        "satuan": "m3",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 1.6,
+        "harga_satuan_ref": 14250
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 561600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Bak Kontrol",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "6.3.2",
+    "nama": "Pemasangan 1 buah bak kontrol pas. bata 45x45 cm tinggi 50 cm dengan tutup beton",
+    "bidang": "cipta-karya",
+    "divisi": 6,
+    "sub_divisi": "6.3",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 3.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bata merah",
+        "satuan": "buah",
+        "koefisien": 70.0,
+        "harga_satuan_ref": 700
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 77.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.13,
+        "harga_satuan_ref": 275000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Batu split 1/2",
+        "satuan": "m3",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 2.6,
+        "harga_satuan_ref": 14250
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 829900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Bak Kontrol",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "6.3.3",
+    "nama": "Pemasangan 1 buah bak kontrol pas. bata 60x60 cm tinggi 65 cm dengan tutup beton",
+    "bidang": "cipta-karya",
+    "divisi": 6,
+    "sub_divisi": "6.3",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 3.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bata merah",
+        "satuan": "buah",
+        "koefisien": 123.0,
+        "harga_satuan_ref": 700
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 114.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.184,
+        "harga_satuan_ref": 275000
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Batu split 1/2",
+        "satuan": "m3",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 4.85,
+        "harga_satuan_ref": 14250
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 992700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Bak Kontrol",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

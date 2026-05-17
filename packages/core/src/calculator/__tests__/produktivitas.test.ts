@@ -7,6 +7,7 @@ import {
   produktivitasVibroRoller,
   produktivitasMotorGrader,
   produktivitasThroughput,
+  hitungHsdTransportSatuan,
 } from '../produktivitas/index.js';
 
 describe('siklus: Dump Truck', () => {
@@ -162,5 +163,141 @@ describe('produktivitasThroughput', () => {
 
     expect(result.produktivitas).toBeCloseTo(30 * 0.75, 4);
     expect(result.satuan).toBe('m3/jam');
+  });
+});
+
+describe('hitungHsdTransportSatuan', () => {
+  it('calculates derived HSD without TK cost (backward-compat)', () => {
+    // V=5 polybag/trip, Qz=2 polybag/menit, L=5km, V1=20km/jam
+    // HSD_alat=80_000/jam, no TK
+    const result = hitungHsdTransportSatuan({
+      kapasitas_angkut: 5,
+      kapasitas_angkat_per_menit: 2,
+      jarak_km: 5,
+      kecepatan_km_jam: 20,
+      hsd_alat_per_jam: 80_000,
+      hsd_dasar_per_item: 150_000,
+    });
+
+    // T_muat = 5×2/2 = 5 menit, T_jalan = 5/20×60 = 15, Ts = 20
+    // biaya_alat = 80_000 × 20/60 = 26_666.67
+    // biaya_angkut = 26_666.67 / 5 = 5_333.33
+    const t_muat = (5 * 2) / 2;
+    const t_jalan = (5 / 20) * 60;
+    const ts = t_muat + t_jalan;
+    const biaya_angkut = (80_000 * (ts / 60)) / 5;
+
+    expect(result.t_muat_menit).toBeCloseTo(t_muat, 4);
+    expect(result.t_jalan_menit).toBeCloseTo(t_jalan, 4);
+    expect(result.ts_menit).toBeCloseTo(ts, 4);
+    expect(result.biaya_angkut_per_item).toBeCloseTo(biaya_angkut, 2);
+    expect(result.hsd_per_item).toBeCloseTo(150_000 + biaya_angkut, 2);
+    // audit: t_muat, t_jalan, ts, biaya_alat, biaya_angkut, hsd = 6 entries (no biaya_tk)
+    expect(result.audit).toHaveLength(6);
+  });
+
+  it('zero transport distance yields only muat/bongkar cost', () => {
+    const result = hitungHsdTransportSatuan({
+      kapasitas_angkut: 10,
+      kapasitas_angkat_per_menit: 5,
+      jarak_km: 0,
+      kecepatan_km_jam: 20,
+      hsd_alat_per_jam: 60_000,
+      hsd_dasar_per_item: 200_000,
+    });
+
+    expect(result.t_jalan_menit).toBeCloseTo(0, 6);
+    expect(result.ts_menit).toBeCloseTo(4, 4);
+    // biaya_angkut = (60_000 × 4/60) / 10 = 400
+    expect(result.biaya_angkut_per_item).toBeCloseTo(400, 2);
+    expect(result.hsd_per_item).toBeCloseTo(200_400, 2);
+  });
+
+  it('larger capacity reduces per-item cost', () => {
+    const base = hitungHsdTransportSatuan({
+      kapasitas_angkut: 5,
+      kapasitas_angkat_per_menit: 2,
+      jarak_km: 3,
+      kecepatan_km_jam: 20,
+      hsd_alat_per_jam: 80_000,
+      hsd_dasar_per_item: 100_000,
+    });
+    const bigger = hitungHsdTransportSatuan({
+      kapasitas_angkut: 10,
+      kapasitas_angkat_per_menit: 2,
+      jarak_km: 3,
+      kecepatan_km_jam: 20,
+      hsd_alat_per_jam: 80_000,
+      hsd_dasar_per_item: 100_000,
+    });
+    expect(bigger.biaya_angkut_per_item).toBeLessThan(base.biaya_angkut_per_item);
+  });
+
+  // ── Real data from SE Bina Konstruksi No. 68/2024 Sheet Lansekap ──────────
+  // All three items use L=100km, V1=40km/jam, HSD_TK=25,000/jam
+
+  it('4.1.1.1 Pohon Kecil Polybag 25L → ~80,642 Rp/buah', () => {
+    // V=100 polybag, Qz=2 polybag/menit, HSD_DT=365,412.21/jam, nursery=65,000/buah
+    // T_muat = 100×2/2 = 100 menit
+    // T_jalan = 100/40×60 = 150 menit  →  Ts = 250 menit
+    // biaya_DT = 365,412.21 × 250/60 = 1,522,550.875
+    // biaya_TK = 25,000 × 100/60 = 41,666.67
+    // biaya/polybag = (1,522,550.875 + 41,666.67) / 100 = 15,642.18
+    // HSD = 65,000 + 15,642.18 = 80,642.18
+    const result = hitungHsdTransportSatuan({
+      kapasitas_angkut: 100,
+      kapasitas_angkat_per_menit: 2,
+      jarak_km: 100,
+      kecepatan_km_jam: 40,
+      hsd_alat_per_jam: 365_412.21,
+      hsd_tk_per_jam: 25_000,
+      hsd_dasar_per_item: 65_000,
+    });
+
+    expect(result.ts_menit).toBeCloseTo(250, 4);
+    expect(result.hsd_per_item).toBeCloseTo(80_642.18, 1);
+  });
+
+  it('4.1.1.2 Pohon Sedang Polybag 50L → ~1,528,992 Rp/buah', () => {
+    // V=200, Qz=1, HSD_DT=614,377.5/jam, nursery=1,500,000/buah
+    // T_muat = 200×2/1 = 400 menit, T_jalan = 150  →  Ts = 550 menit
+    // biaya_DT = 614,377.5 × 550/60 = 5,631,793.75
+    // biaya_TK = 25,000 × 400/60 = 166,666.67
+    // biaya/polybag = 5,798,460.42 / 200 = 28,992.30
+    // HSD = 1,500,000 + 28,992.30 = 1,528,992.30
+    const result = hitungHsdTransportSatuan({
+      kapasitas_angkut: 200,
+      kapasitas_angkat_per_menit: 1,
+      jarak_km: 100,
+      kecepatan_km_jam: 40,
+      hsd_alat_per_jam: 614_377.5,
+      hsd_tk_per_jam: 25_000,
+      hsd_dasar_per_item: 1_500_000,
+    });
+
+    expect(result.ts_menit).toBeCloseTo(550, 4);
+    expect(result.hsd_per_item).toBeCloseTo(1_528_992.3, 1);
+  });
+
+  it('4.1.1.3 Pohon Besar Polybag 100L → ~13,017,601 Rp/buah', () => {
+    // V=5, Qz=0.03, HSD_DT=614,377.5/jam, nursery=12,000,000/buah
+    // T_muat = 5×2/0.03 = 333.33 menit, T_jalan = 150  →  Ts = 483.33 menit
+    // biaya_DT = 614,377.5 × 483.33/60 = 4,949,117.95
+    // biaya_TK = 25,000 × 333.33/60 = 138,887.5
+    // biaya/polybag = 5,088,005.45 / 5 = 1,017,601.09
+    // HSD = 12,000,000 + 1,017,601.09 = 13,017,601.09
+    const result = hitungHsdTransportSatuan({
+      kapasitas_angkut: 5,
+      kapasitas_angkat_per_menit: 0.03,
+      jarak_km: 100,
+      kecepatan_km_jam: 40,
+      hsd_alat_per_jam: 614_377.5,
+      hsd_tk_per_jam: 25_000,
+      hsd_dasar_per_item: 12_000_000,
+    });
+
+    // Excel rounds T_muat to 333.33 in cells; exact arithmetic gives ~13,017,608.
+    // Verify within 10 Rp of the rounded display value (0.0001% tolerance).
+    expect(Math.abs(result.hsd_per_item - 13_017_601)).toBeLessThan(10);
   });
 });

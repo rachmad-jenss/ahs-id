@@ -1,0 +1,4868 @@
+[
+  {
+    "kode_ahsp": "2.2.2.1.1",
+    "nama": "Pemasangan 1 m3 batu kosong (anstamping) untuk pondasi gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.78,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.39,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.039,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Pasir urug (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 254700
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 657500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.2",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe M 17,5 Mpa setara 1SP : 2PP, cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (pc)",
+        "satuan": "kg",
+        "koefisien": 252.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.44,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1149300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.3",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe M 17,5 Mpa (setara 1SP : 2PP), cara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 252.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.44,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0443,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1098000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.4",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe S 12,5 Mpa (setara 1SP : 3PP), cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.485,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1091500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.5",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe S 12,5 Mpa (setara 1SP : 3PP), cara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (pc)",
+        "satuan": "kg",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.485,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0443,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1040100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.6",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe N 5,2 Mpa (setara 1SP : 4PP), cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 163.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.52,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1046300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.7",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe N 5,2 Mpa (setara 1SP : 4PP), cara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 163.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.52,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0443,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 994900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.8",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe O 2,4 Mpa (setara 1SP : 5PP), cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 135.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.544,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1013500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.9",
+    "nama": "Pemasangan 1 m3 pondasi batu belah mortar tipe O 2,4 Mpa (setara 1SP : 5PP), cara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 135.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.544,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0443,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 962100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.1.10",
+    "nama": "Pemasangan 1 m3 pondasi batu belah campuran 1SP : 6PP, cara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.5,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 117.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.561,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 992900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.11",
+    "nama": "Pemasangan 1 m3 pondasi batu belah campuran 1SP : 6PP, cara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 117.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.561,
+        "harga_satuan_ref": 275000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0443,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 941500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.1",
+    "nama": "Pembuatan 1 m3 pondasi beton siklop, 60% beton fc' 15 MPa : 40% batu belah untuk vol. s.d 200 m3 secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.3901,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2896,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0695,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.528,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 190.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "kg",
+        "koefisien": 494.0,
+        "harga_satuan_ref": 264
+      },
+      {
+        "nama": "Agregat kasar",
+        "satuan": "kg",
+        "koefisien": 606.0,
+        "harga_satuan_ref": 285
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 121.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1012900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.2",
+    "nama": "Pembuatan 1 m3 pondasi beton siklop, 60% beton fc' 15 MPa : 40% batu belah untuk vol. > 200 m3 secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.251,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.261,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.125,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.528,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 190.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "kg",
+        "koefisien": 494.0,
+        "harga_satuan_ref": 264
+      },
+      {
+        "nama": "Agregat kasar",
+        "satuan": "kg",
+        "koefisien": 606.0,
+        "harga_satuan_ref": 285
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 121.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1005200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.3",
+    "nama": "Pembuatan 1 m3 pondasi beton siklop, 60% beton fc' 15 MPa : 40% batu belah untuk vol. > 200 m3 secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.834,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1738,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0834,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.528,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 184.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "kg",
+        "koefisien": 499.0,
+        "harga_satuan_ref": 264
+      },
+      {
+        "nama": "Agregat kasar",
+        "satuan": "kg",
+        "koefisien": 606.0,
+        "harga_satuan_ref": 285
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 121.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1309,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 972300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.4",
+    "nama": "Pembuatan 1 m3 pondasi beton siklop, 70% beton fc' 15 MPa : 30% batu belah untuk vol. > 200 m3 secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.3485,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2644,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1349,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.396,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 221.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "kg",
+        "koefisien": 576.0,
+        "harga_satuan_ref": 264
+      },
+      {
+        "nama": "Agregat kasar",
+        "satuan": "kg",
+        "koefisien": 706.0,
+        "harga_satuan_ref": 285
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 141.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1081000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.5",
+    "nama": "Pembuatan 1 m3 pondasi beton siklop, 70% beton fc' 15 MPa : 30% batu belah untuk vol. > 200 m3 secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.889,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1763,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0899,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.396,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 221.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "kg",
+        "koefisien": 576.0,
+        "harga_satuan_ref": 264
+      },
+      {
+        "nama": "Agregat kasar",
+        "satuan": "kg",
+        "koefisien": 706.0,
+        "harga_satuan_ref": 285
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 141.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1309,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1049700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.2.6",
+    "nama": "Pembuatan 1 m3 pondasi sumuran, diameter 100 cm masif",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.4,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0899,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu belah (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.45,
+        "harga_satuan_ref": 286500
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 194.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.312,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 0.468,
+        "harga_satuan_ref": 210
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 973100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.1",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 20 cm pada pada tanah lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0667,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bentonite",
+        "satuan": "m3",
+        "koefisien": 0.0314,
+        "harga_satuan_ref": 20000000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.0167,
+        "harga_satuan_ref": 100000
+      },
+      {
+        "nama": "Sewa casing PVC dia. 20 cm",
+        "satuan": "m'",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 25000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 708600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.2",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 20 cm pada pada tanah sedang (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1067,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0107,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.0267,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.0267,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 19800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.3",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 20 cm pada pada tanah keras, sangat padat, dan batuan lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.7105,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.071,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.1776,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.1776,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 131800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.4",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 20 cm pada tanah berbatu (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0667,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.2667,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.2667,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 198000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.5",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 30 cm pada tanah lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bentonite",
+        "satuan": "m3",
+        "koefisien": 0.0707,
+        "harga_satuan_ref": 20000000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 30 cm",
+        "satuan": "hari",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 170000
+      },
+      {
+        "nama": "Sewa casing pipa baja dia. 30 cm",
+        "satuan": "m'",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 30700
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1576500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.6",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 30 cm pada tanah sedang (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.24,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.024,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 30 cm",
+        "satuan": "hari",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 170000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 49100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.7",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 30 cm pada pada tanah keras, sangat padat, dan batuan lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.6,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.16,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 297000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.8",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 30 cm pada tanah berbatu (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.3995,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.24,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.5999,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 20 cm",
+        "satuan": "hari",
+        "koefisien": 0.5999,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 445400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.9",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 40 cm pada tanah lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bentonite",
+        "satuan": "m3",
+        "koefisien": 0.1257,
+        "harga_satuan_ref": 20000000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 40 cm",
+        "satuan": "hari",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sewa casing pipa baja dia. 40 cm",
+        "satuan": "m'",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 43500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2811700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.10",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 40 cm pada tanah sedang (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4268,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0427,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.1067,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 40 cm",
+        "satuan": "hari",
+        "koefisien": 0.1067,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 96800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.11",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 40 cm pada pada tanah keras, sangat padat, dan batuan lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.9057,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1906,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.4764,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 40 cm",
+        "satuan": "hari",
+        "koefisien": 0.4764,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 432300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.12",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 40 cm pada tanah berbatu (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.8592,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.2859,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.7148,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 40 cm",
+        "satuan": "hari",
+        "koefisien": 0.7148,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 648600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.13",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 50 cm pada tanah lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bentonite",
+        "satuan": "m3",
+        "koefisien": 0.1963,
+        "harga_satuan_ref": 20000000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 50 cm",
+        "satuan": "hari",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 340000
+      },
+      {
+        "nama": "Sewa casing pipa baja dia. 50 cm",
+        "satuan": "m'",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 55800
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4420400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.14",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 50 cm pada tanah sedang (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6664,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0666,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 0.1666,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 50 cm",
+        "satuan": "hari",
+        "koefisien": 0.1666,
+        "harga_satuan_ref": 340000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 167600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.15",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 50 cm pada pada tanah keras, sangat padat, dan batuan lunak (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 4.4444,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.4444,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 1.1111,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 50 cm",
+        "satuan": "hari",
+        "koefisien": 1.1111,
+        "harga_satuan_ref": 340000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1118300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.16",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 50 cm pada tanah berbatu (manual)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 6.6664,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.6666,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Stang bor, batang bor dia. 1-1/4\"",
+        "satuan": "hari",
+        "koefisien": 1.6666,
+        "harga_satuan_ref": 95000
+      },
+      {
+        "nama": "Mata bor auger 50 cm",
+        "satuan": "hari",
+        "koefisien": 1.6666,
+        "harga_satuan_ref": 340000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1677400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.17",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 60 cm (mekanis) untuk  bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2494,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.2494,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0249,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Bore Pile Machine",
+        "satuan": "jam",
+        "koefisien": 0.2494,
+        "harga_satuan_ref": 476900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 139900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.18",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 80 cm (mekanis) untuk  bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2742,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.2742,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0274,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Bore Pile Machine",
+        "satuan": "jam",
+        "koefisien": 0.2742,
+        "harga_satuan_ref": 476900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 153800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.19",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 100 cm (mekanis) untuk  bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.2995,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.2995,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Bore Pile Machine",
+        "satuan": "jam",
+        "koefisien": 0.2995,
+        "harga_satuan_ref": 476900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 168000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.3.20",
+    "nama": "Pengeboran 1 m' lubang bored pile φ 120 cm (mekanis) untuk  bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.3725,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.3725,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0372,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Bore Pile Machine",
+        "satuan": "jam",
+        "koefisien": 0.3725,
+        "harga_satuan_ref": 476900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 208900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.1",
+    "nama": "Per m' penetrasi Tiang Beton ∆  28 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0912,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0456,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0091,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung Balok",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 200000
+      },
+      {
+        "nama": "Sepatu pancang beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 124500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0456,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0456,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 89500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.2",
+    "nama": "Per m' penetrasi Tiang Beton ∆  32 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0999,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung Balok",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 200000
+      },
+      {
+        "nama": "Sepatu pancang beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 124500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 92300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.3",
+    "nama": "Per m' penetrasi Tiang Beton persegi 20cm x 20 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0955,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0478,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu Pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0478,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0478,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 102000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.4",
+    "nama": "Per m' penetrasi Tiang Beton persegi 25 cm x 25 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1088,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0544,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0109,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0544,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0544,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 106300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.5",
+    "nama": "Per m' penetrasi Tiang Beton persegi 30 cm x 30 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1168,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0584,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0117,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0584,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0584,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 109000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.6",
+    "nama": "Per m' penetrasi Tiang Beton persegi 35 cm x 35 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1189,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0594,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0119,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0594,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0594,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 109600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.7",
+    "nama": "Per m' penetrasi Tiang Beton persegi 40 cm x 40 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1311,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0656,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0131,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0656,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0656,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 113700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.8",
+    "nama": "Per m' penetrasi Tiang Beton persegi 45 cm x 45 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1439,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0144,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 117900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.9",
+    "nama": "Per m' penetrasi Tiang Beton persegi 50 cm x 50 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1456,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0146,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0728,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 118400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.10",
+    "nama": "Per m' penetrasi Spun Pile Diameter 30 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1011,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0505,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0101,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0505,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0505,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 103800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.11",
+    "nama": "Per m' penetrasi Spun Pile Diameter 35 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1026,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0103,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0513,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 104300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.12",
+    "nama": "Per m' penetrasi Spun Pile Diameter 40 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1211,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0121,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 110400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.13",
+    "nama": "Per m' penetrasi Spun Pile Diameter 45 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1339,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0669,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0134,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0669,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0669,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 114600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.14",
+    "nama": "Per m' penetrasi Spun Pile Diameter 50 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1356,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0678,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0136,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0678,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0678,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 115200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.15",
+    "nama": "Per m' penetrasi Spun Pile Diameter 60 cm secara mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1384,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0138,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat Penyambung beton",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.1667,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Driver Hammer",
+        "satuan": "jam",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 50000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 116100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.16",
+    "nama": "Per m' Pengelasan Tiang Beton tebal 5 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat Las",
+        "satuan": "kg",
+        "koefisien": 0.2355,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "jam",
+        "koefisien": 0.0201,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 12600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.17",
+    "nama": "Per m' Pengelasan Tiang Beton tebal 6 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0142,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0142,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat Las",
+        "satuan": "kg",
+        "koefisien": 0.3391,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "jam",
+        "koefisien": 0.0142,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 17500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.18",
+    "nama": "Per m' Pengelasan Tiang Beton tebal 8 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat Las",
+        "satuan": "kg",
+        "koefisien": 0.6029,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "jam",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 30600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.4.19",
+    "nama": "Per m' Pengelasan Tiang Beton tebal 10 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kawat Las",
+        "satuan": "kg",
+        "koefisien": 0.942,
+        "harga_satuan_ref": 45550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Las Listrik",
+        "satuan": "jam",
+        "koefisien": 0.0096,
+        "harga_satuan_ref": 3125
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 47500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.1",
+    "nama": "Per m' penetrasi turap beton pre-cast 12 x 30 cm , pjg -4 m; berat 100 kg/m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.0837,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0418,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0084,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0418,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.0418,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 47500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.2",
+    "nama": "Per m' penetrasi turap beton pre-cast 15 x 40 cm , pjg -4 m; berat 150 kg/m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1033,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0516,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0203,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0516,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.0516,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 59000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.3",
+    "nama": "Per m' penetrasi turap beton pre-cast 22 x 50 cm , pjg -4 m; berat 275 kg/m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1384,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0138,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.0692,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 78700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.4",
+    "nama": "Per m' penetrasi turap beton pre-cast 32 x 50 cm , pjg -4 m; berat 400 kg/m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1439,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0144,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.072,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 81900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.5",
+    "nama": "Per m' penetrasi turap beton tulang  pre-cast W-400; ebar 1,0 m; pjg -4 m; berat 350 kg/m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1774,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0887,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0177,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0887,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.0887,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 100900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.2.5.6",
+    "nama": "Per m' penetrasi turap beton tulang  pre-cast W-600; lebar 1,0 m; pjg -4 m; berat 375 kg/m' (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OJ",
+        "koefisien": 0.1924,
+        "harga_satuan_ref": 12500,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OJ",
+        "koefisien": 0.0962,
+        "harga_satuan_ref": 18125,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OJ",
+        "koefisien": 0.0192,
+        "harga_satuan_ref": 25000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Crawler Crane + Ladder",
+        "satuan": "jam",
+        "koefisien": 0.0962,
+        "harga_satuan_ref": 500000
+      },
+      {
+        "nama": "Alat pancang Hidraulik Pile Driver",
+        "satuan": "jam",
+        "koefisien": 0.0962,
+        "harga_satuan_ref": 487000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 109500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Pondasi",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

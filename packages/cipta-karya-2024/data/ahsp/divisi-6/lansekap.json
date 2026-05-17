@@ -1,0 +1,6064 @@
+[
+  {
+    "kode_ahsp": "4.1.2.1",
+    "nama": "Penanaman 1 buah pohon kecil Aggur Terompet (Tecoma stans) diameter 1-2 cm, tinggi 1-2 meter, polybag 15 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.0143,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon kecil Anggur terompet",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 51400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.2",
+    "nama": "Penaman 1 buah pohon kecil pucuk merah diameter 2-3 cm, tinggi 1-2 meter polibag 25 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0067,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon kecil Pucuk merah",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 50000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 92100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.3",
+    "nama": "Penaman 1 buah pohon sedang Ketapang Kencana diameter 3-5 cm, tinggi 3-6 meter polibag 50 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon sedang Ketapang Kencana",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 150000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 223100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.4",
+    "nama": "Penaman 1 buah pohon Sedang Tabebuya diameter 5-7 cm, tinggi 3-6 meter polibag 75 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon sedang Tabebuya",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 450000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 585400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.5",
+    "nama": "Penaman 1 buah pohon Besar Kamboja diameter 7-15 cm, tinggi 6 meter polibag 100 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon Besar Kamboja",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 550000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.28,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1760900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.6",
+    "nama": "Penaman 1 buah pohon Besar beringin diameter 15-20 cm, tinggi 6 meter polibag 150 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon Besar Beringin",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 2900000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.41,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4990500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.7",
+    "nama": "Penaman 1 buah pohon Besar Pulai diameter 20-25 cm, tinggi 6 meter polibag 200 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon Besar Pulai",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 5390000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.56,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 8460200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.2.8",
+    "nama": "Penaman 1 buah pohon BesarTrembesi diameter 25-30 cm, tinggi 6 meter polibag 250 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pohon Besar Trembesi",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 650000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.7,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3528800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.1",
+    "nama": "Penaman 1 buah Palem Kecil Palem Wregu diameter s.d 5 cm, tinggi maksimal  1,5 meter polibag 50 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Kecil Palem Wregu",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 15000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 68600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.2",
+    "nama": "Penaman 1 buah Palem Kecil Palem Kuning diameter 5- 15 cm, tinggi maksimum  1,5 meter polibag 75 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Kecil Palem Kuning",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 45000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 141800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.3",
+    "nama": "Penanaman 1 buah Palem Besar Ekor Tupai diameter 15 cm, tiggi diatas 1,5 meter polybag 100 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Besar Palem Ekor Tupai",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 230000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.28,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1391300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.4",
+    "nama": "Penanaman 1 buah Palem Besar Kelapa diamter 15-20 cm, tinggi diatas 1,5 meterPolybag 150 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.067,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Besar Kelapa",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 445000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.41,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2153900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.5",
+    "nama": "Penanaman 1 buah Palem Besar Palem Botol diamter 20-25 cm, tinggi diatas 1,5 meter Polybag 200 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Besar Palem Botol",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 460000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.56,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2766100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.3.6",
+    "nama": "Penanaman 1 buah Palem Besar Palem Sadeng diamter 25-30 cm, tinggi diatas 1,5 meter Polybag 250 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Palem Besar Palem Sadeng",
+        "satuan": "buah",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 510000
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "jam",
+        "koefisien": 0.7,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3367100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.4.1",
+    "nama": "Penanaman 1 m2 Semak, Pacing (costus sp.), 25 buah/m2, Polybag 5 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semak Pacing",
+        "satuan": "buah",
+        "koefisien": 25.0,
+        "harga_satuan_ref": 1900
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 63800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.4.2",
+    "nama": "Penanaman 1 m2 Semak, Capit Udang, 16 buah/m2, Polybag 11 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semak Capit Udang",
+        "satuan": "buah",
+        "koefisien": 16.0,
+        "harga_satuan_ref": 2100
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 50200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.4.3",
+    "nama": "Penanaman 1 m2 Semak, Bunga  Kertas, 9 buah/m2, Polybag 20 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semak Capit Udang",
+        "satuan": "buah",
+        "koefisien": 9.0,
+        "harga_satuan_ref": 2100
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 36000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.5.1",
+    "nama": "Penanaman 1 m2 Penutup tanah Kacang Hias 25 buah/m2, Polybag 0,5 L",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Penutup Tanah Kacang Hias",
+        "satuan": "buah",
+        "koefisien": 25.0,
+        "harga_satuan_ref": 2500
+      },
+      {
+        "nama": "Anti Rayap tanah",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 28500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 77700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.6.1",
+    "nama": "Penanaman 1 m2 rumput",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Rumput",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 2900
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 27600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.1",
+    "nama": "Penanaman pada Lereng Tanah 1:2 (13-26,6° ), Metode Hydroseeding per m2 permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe I, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 5600
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 137800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.2",
+    "nama": "Penanama pada Lereng Tanah 1:2 (13-26,6° ), Metode Taplok Per m2 Permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe I, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 5600
+      },
+      {
+        "nama": "Perekat Matras Perkuatas",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 150300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.3",
+    "nama": "Penanama pada Lereng Tanah 1:1 (26-45° ), Metode Hydroseeding per m2 Permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe II, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 7500
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 179300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.4",
+    "nama": "Penanama pada Lereng Tanah 1:1 (26,5-45° ), Metode Taplok Per m2 Permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe II, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 7500
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 190100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.5",
+    "nama": "Penanama pada Lereng Tanah dan atau kombinasi tanah dan batuan 1:0,5  (45-63° ), Metode Hydroseeding per m2 Permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe III, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 9500
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 221100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.6",
+    "nama": "Penanama pada Lereng Tanah dan atau kombinasi tanah dan batuan 1:0,5  (45-63° ), Metode Taplok per m2 permukaan lereng",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe III, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 9500
+      },
+      {
+        "nama": "Perekat Matras Perkuatas",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Rumput)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 80000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 271700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.7",
+    "nama": "Penanama pada Lereng Tanah  1:2  (13-26,5° ), Metode Hydroseeding per m2 Permukaan lereng (mengguakan jenis biji legume crop cover/LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe I, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 5600
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 217100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.8",
+    "nama": "Penanama pada Lereng Tanah dan atau kombinasi tanah dan batuan 1:2  (13-26,5° ), Metode Taplok per m2 permukaan lereng (Menggunakan Biji Lagume Crop Cover / LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe I, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 5600
+      },
+      {
+        "nama": "Perekat Matras Perkuatas",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 152200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.9",
+    "nama": "Penanama pada Lereng Tanah  1:1  (26,5-45° ), Metode Hydroseeding per m2 Permukaan lereng (mengguakan jenis biji legume crop cover/LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe II, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 7500
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 181200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.10",
+    "nama": "Penanama pada Lereng Tanah dan atau kombinasi tanah dan batuan 1:1  (26,5-45° ), Metode Taplok per m2 permukaan lereng (Menggunakan Biji Lagume Crop Cover / LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe II, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 7500
+      },
+      {
+        "nama": "Perekat Matras Perkuatas",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 192000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.11",
+    "nama": "Penanama pada Lereng Tanah dan atau Kombinasi tanah dan batuan   1:0,5  (45-63° ), Metode Hydroseeding per m2 Permukaan lereng (mengguakan jenis biji legume crop cover/LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe III, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 9500
+      },
+      {
+        "nama": "Perekat Campuran Hydroseeding",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 16000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mesin Hydroseeding 2000L",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 350000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 223000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.7.12",
+    "nama": "Penanama pada Lereng Tanah dan atau kombinasi tanah dan batuan 1:0,5  (45-63° ), Metode Taplok per m2 permukaan lereng (Menggunakan Biji Lagume Crop Cover / LCC)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang tanam",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Matras Tipe III, Termasuk angkur / penguat matras",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 9500
+      },
+      {
+        "nama": "Perekat Matras Perkuatas",
+        "satuan": "kg",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Bibit Vegetasi (Biji Legume Crop Cover/LCC)",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 166000
+      },
+      {
+        "nama": "Mulsa",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 35000
+      },
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 178000
+      },
+      {
+        "nama": "Pupuk anorganik",
+        "satuan": "kg",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 18000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.6,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 273600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.1",
+    "nama": "Pengolahan Tanah berPH 4,50-5,50 dan bertekstur Pasir 60,01%-100,00% atau tanah sandy per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 76700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.2",
+    "nama": "Pengolahan Tanah berPH 4,50-5,50 dan bertekstur Pasir 40,01%-60,00% atau tanah sandy loam per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 0.45,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 76600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.3",
+    "nama": "Pengolahan Tanah berPH 4,50-5,50 dan bertekstur Pasir 60,01%-100,00% atau tanah sandy loam to Clay Loam per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Pasir",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 0.45,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 94900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.4",
+    "nama": "Pengolahan Tanah berPH 3,50-4,49 dan bertekstur liat 60,01%-100,00% atau tanah sandy per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 0.5,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 77400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.5",
+    "nama": "Pengolahan Tanah berPH 3,50-4,49 dan bertekstur liat 40,01%-60,00% atau tanah sandy per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 0.75,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 77600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.6",
+    "nama": "Pengolahan Tanah berPH 3,50-4,49 dan bertekstur liat 60,01%-10,00% atau tanah loam to clay per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Pasir",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Kapur",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 3100
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 120300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.7",
+    "nama": "Pengolahan Tanah berPH > 7,5 per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Sulfur",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 12000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 77100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.8",
+    "nama": "Pengolahan Tanah berPH > 7,5 dan bertekstur Pasir 60,01%-100,00% atau tanah sandy  per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Sulfur",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 12000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 77600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.9",
+    "nama": "Pengolahan Tanah berPH > 7,5 dan bertekstur Pasir 40,01%-60,00% atau tanah sandy  per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Sulfur",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 12000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 77100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.8.10",
+    "nama": "Pengolahan Tanah berPH > 7,5 dan bertekstur Pasir 60,01%-100,00% atau tanah Loam to Clay Loam  per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Pasir",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sulfur",
+        "satuan": "kg",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 12000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 118900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.9.1",
+    "nama": "Pengolahan Tanah bertekstur  liat  40,01%-60,00% atau tanah Sandy per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 10500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 75100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.9.2",
+    "nama": "Pengolahan Tanah bertekstur  liat  60,01%-100,00% atau tanah Sandy Loam per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      },
+      {
+        "nama": "Pasir",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 116900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.9.3",
+    "nama": "Pengolahan Tanah bertekstur  liat  60,01%-100,00% atau tanah Loam to Clay Loam per m3",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Material Organik",
+        "satuan": "m3",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 10500
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.0714,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 75700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.10.1",
+    "nama": "Peyiraman untuk 1 hari ( dengan selang plastik 3/4 ich) untuk 1 buah pohon/palem",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0024,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.10.2",
+    "nama": "Peyiraman untuk 1 m2 Semak/Penutup tanah untuk 1 hari ( dengan selang plastik 3/4 ich)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.10.3",
+    "nama": "Peyiraman untuk 1 m2 Rumput untuk 1 hari ( dengan selang plastik 3/4 ich)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.10.4",
+    "nama": "Peyiraman untuk 1 m2 Semak/Penutup Tanah  untuk 1 hari ( dengan Sprinkler) *Sistem Sprinkler tersedia",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.10.5",
+    "nama": "Peyiraman untuk 1 m2 Rumput untuk 1 hari ( dengan Sprinkler) *Sistem Sprinkler tersedia",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.1",
+    "nama": "Penyiraman untuk 1 hari (dengan Selang Plastik 3/4 inch) untuk 1 buah pohon/palem di tanah tidak subur di lahan datar dan tidak memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.2",
+    "nama": "Penyiraman untuk 1 hari (dengan Selang Plastik 3/4 inch) untuk 1 m2 Semak/Penutup tanah di tanah tidak subur di lahan datar dan tidak memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.3",
+    "nama": "Penyiraman untuk 1 hari (dengan Selang Plastik 3/4 inch) untuk 1 m2 Rumput  di tanah tidak subur di lahan datar dan tidak memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 5700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.4",
+    "nama": "Penyiraman untuk 1 hari (denganSprinkler) untuk 1 m2 Semak/Penutup Tanah di tanah tidak subur di lahan datar dan tidak memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 4500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.5",
+    "nama": "Penyiraman untuk 1 hari (denganSprinkler) untuk 1 m2 Rumputdi tanah tidak subur di lahan datar dan tidak memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 5700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.6",
+    "nama": "Penyiraman untuk 1 hari (denganSelang Plastik 3/4 inch) untuk 1 buah Pohon/Palem di tanah  subur di lahan datar dan memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0024,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 6300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.7",
+    "nama": "Penyiraman untuk 1 hari (denganSelang Plastik 3/4 inch) untuk 1 m2 Semak/Penutup Tanah di tanah  subur di lahan datar dan memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.8",
+    "nama": "Penyiraman untuk 1 hari (denganSelang Plastik 3/4 inch) untuk 1 m2 Rumput di tanah  subur di lahan datar dan memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.9",
+    "nama": "Penyiraman untuk 1 hari (denganSprinkler ) untuk 1 m2 Semak/Penutup Tanah di tanah  subur di lahan datar dan memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.11.10",
+    "nama": "Penyiraman untuk 1 hari (denganSprinkler ) untuk 1 m2 Rumput di tanah  subur di lahan datar dan memiliki jaringa air yang baik",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 8.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.12.1",
+    "nama": "Penyiraman untuk 1 hari di Tanah Subur di Kerengan Tanah 1:2 (13-26,6° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00051,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 5e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.12.2",
+    "nama": "Penyiraman untuk 1 hari di Tanah Subur di Kerengan Tanah 1:2 (26,5-45° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00062,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 9e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.12.3",
+    "nama": "Penyiraman untuk 1 hari di Tanah Subur di Kerengan Tanah 1:0,5 (45-63° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00111,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.1",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:2 (13-26,5° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00051,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 5e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.2",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:1 (26,5-45° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00062,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 9e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.3",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:0,5 (45-63° ) Per M2",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00111,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 7000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.4",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:2 (13-26,5° ) Per M2 untuk sumber air tersedia dilokasi pekerjaan",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00051,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 5e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 6900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.5",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:1 (26,5-45° ) Per M2 untuk sumber air tersedia dilokasi pekerjaan",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00111,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 7000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.1.13.6",
+    "nama": "Penyiraman untuk 1 hari di Tanah Tidak Subur di Kerengan Tanah 1:0,5 (45-63° ) Per M2 untuk sumber air tersedia dilokasi pekerjaan",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.1",
+    "satuan_bayar": "hari",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00111,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00022,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 10.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Water Truck",
+        "satuan": "hari",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 1550000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 7000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.1.1",
+    "nama": "Penyiraman 1 m2 area tanam untuk 1 hari (denga selang plastik 3/4 inch)",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.1.2",
+    "nama": "Penyiraman 1 m2 area tanam untuk 1 hari (denga Prinkler) *Sistem Sprinkler tersedia",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0003,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 550
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.2.1",
+    "nama": "Pemupukan Pupuk Orgaik ( 1 Kali) untuk 1 buah Pohon/Palem",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0179,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "liter",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 178000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.2.2",
+    "nama": "Pemupukan Pupuk Orgaik ( 1 Kali) untuk 1 m2 Semak/Penutup Tanah/Rumput",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk Organik",
+        "satuan": "liter",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 178000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.3.1",
+    "nama": "Pemupukan pupuk anorganik padat ( 1 kali) untuk 1 buah pohon/palem",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0143,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk anorganik (ex: NPK)",
+        "satuan": "m3",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 180000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 4100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.3.2",
+    "nama": "Pemupukan pupuk anorganik padat ( 1 kali) untuk 1 Semak/Penutup Tanah/Rumput",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0007,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk anorganik (ex: NPK)",
+        "satuan": "m3",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 180000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.3.3",
+    "nama": "Pemupukan pupuk anorganik cair ( 1 kali) untuk 1 buah Pohon/Palem",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0048,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0143,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk anorganik cair (ex: NPK)",
+        "satuan": "m3",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 15000000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 23700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.3.4",
+    "nama": "Pemupukan pupuk anorganik cair ( 1 kali) untuk 1 m2 Semak/Penutup Tanah/Rumput",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0007,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pupuk anorganik cair (ex: NPK)",
+        "satuan": "m3",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 15000000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 5.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 182700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.1",
+    "nama": "Pemangkasan 1 buah Pohon kecil (Dia. Tajuk < 5 m, tinggi 3-6 m) termasuk pengangkutan keluar area tanam",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.0476,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 7500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.2",
+    "nama": "Pemangkasan 1 buah Pohon  sedang  (Dia. Tajuk  5 -10 m) termasuk pengangkutan keluar area tanam",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.0733,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 11600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.3",
+    "nama": "Pemangkasan 1 buah Pohon  Besar  (Dia. Tajuk > 10 m) termasuk pengangkutan keluar area tanam",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.1299,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 20700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.4",
+    "nama": "Pemangkasan 1 m2  Semak/Penutup Tanah dengan gunting pangkas",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.0199,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 3100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.5",
+    "nama": "Pemangkasan 1 m2 Rumput dengan mesin gedong",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.0008,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.4.6",
+    "nama": "Pemangkasan 1 m2 Rumput dengan mesin Dorong",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Tukang Tanam",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 145000,
+        "ref": null
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": null,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.5.1",
+    "nama": "Penyemprotan Pestisida ( Insektisida/Fungisida) dengan Sprayer Gendong 1 kali untuk 1 buah pohon/palem",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0014,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Fungisida/Insektisida",
+        "satuan": "kg",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 430000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.5.2",
+    "nama": "Penyemprotan Pestisida (Fungisida/Insektisida) denga sprayer gedong 1 kali untuk 1 m2 Semak/Penutup Tanah / Rumput",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang pemelihara taman",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Fungisida/Insektisida",
+        "satuan": "kg",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 430000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.2.6.1",
+    "nama": "Pembersihan (Penyapuan) 1 m2 Area Tanam",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 55,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "4.3.1",
+    "nama": "Pembuatan dan pemasangan 1 buah Tong Sampah Kaleng 2 Tabung dengan Rangka Hollow 30x60",
+    "bidang": "cipta-karya",
+    "divisi": 4,
+    "sub_divisi": "4.3",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0017,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Tong Sampah 2 tabung",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 340000
+      },
+      {
+        "nama": "Besi Hollow 30x60",
+        "satuan": "m",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 13700
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "lkg",
+        "koefisien": 0.029,
+        "harga_satuan_ref": 45550
+      },
+      {
+        "nama": "cat minyak",
+        "satuan": "liter",
+        "koefisien": 0.077,
+        "harga_satuan_ref": 48500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 454600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Lansekap",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

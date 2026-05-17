@@ -1,0 +1,4540 @@
+[
+  {
+    "kode_ahsp": "2.2.1.1.1",
+    "nama": "1 kg penulangan slab untuk BjTP atau BjTS atau BjTS dia. < 12 mm, cara manual (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.007,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.007,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0007,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0007,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 18400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.2",
+    "nama": "1 kg penulangan slab untuk BjTP atau BjTS atau BjTS dia. ≥ 12 mm, cara semi mekanis (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0008,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 4e-05,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 8e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Bender baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 850000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 16800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.3",
+    "nama": "1 kg penulangan kolom, balok, ring balok, dan sloof untuk BjTP atau BjTS dia. < 12 mm, cara manual (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0016,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0016,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.00016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00016,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 17000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.4",
+    "nama": "1 kg penulangan kolom, balok, ring balok, sloof, dan shearwall untuk BjTP atau BjTS dia. ≥ 12 mm, cara semi mekanis (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0016,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0016,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.00016,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00016,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 800000
+      },
+      {
+        "nama": "Bender baja beton",
+        "satuan": "hari",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 850000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 89600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.5",
+    "nama": "1 kg penulangan wiremesh M6-M10 untuk slab atau dinding atau ferrocement, secara manual (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0025,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.00025,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.00025,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Wiremesh M6",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 11522
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 13800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.6",
+    "nama": "1 kg penulangan wiremesh M6-M10 untuk slab atau dinding atau ferrocement, secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 2e-05,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 4e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Wiremesh M6",
+        "satuan": "kg",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 11522
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Cutter baja beton",
+        "satuan": "hari",
+        "koefisien": 0.0001,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 13200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.7",
+    "nama": "Menaikkan 1 kg tulangan tiap kenaikan vertikal 4 m ke tapak pemasangan secara manual (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.000447,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 4.5e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 59,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.8",
+    "nama": "Mengangkut 1 kg tulangan tiap tambahan jarak horizontal 25 m ke tapak pemasangan secara manual (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.00021,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 2.1e-05,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 27,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.1.9",
+    "nama": "Mengangkut/menaikkan 1 kg tulangan tiap kenaikan vertikal 4 m atau tambahan jarak horizontal 25 m ke tapak pemasangan secara mekanis (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Tower crane arm 30 m",
+        "satuan": "hari",
+        "koefisien": 0.00025,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.2.1",
+    "nama": "Pemasangan 1 m' PVC waterstop lebar 150 mm (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.03,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Waterstop lebar 150 mm",
+        "satuan": "m'",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 75000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 98800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.2.2",
+    "nama": "Pemasangan 1 m' PVC waterstop lebar 200 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.07,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.035,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Waterstop lebar 200 mm",
+        "satuan": "m'",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 94000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 122800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.2.3",
+    "nama": "Pemasangan 1 m' PVC waterstop lebar 230-320 mm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Waterstop lebar 250 mm",
+        "satuan": "m'",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 136000
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 174900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.1",
+    "nama": "Pemasangan 1 m2 bekisting untuk pondasi telapak (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.52,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.26,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.026,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "m3",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 4 inch",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 19000
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 16800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 254500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.2",
+    "nama": "Pemasangan 1 m2 bekisting untuk sloof  (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.52,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.26,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.026,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "buah",
+        "koefisien": 0.018,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 4 inch",
+        "satuan": "kg",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 19000
+      },
+      {
+        "nama": "Minyak Bekisting",
+        "satuan": "m3",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 16800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 272100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.3",
+    "nama": "Pemasangan 1 m2 bekisting untuk kolom (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.66,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.33,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paku 12 cm",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 1500
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "Kayu balok 6/12 kelas II",
+        "satuan": "m3",
+        "koefisien": 0.00465,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Plywood 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.12705,
+        "harga_satuan_ref": 167300
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 0.65,
+        "harga_satuan_ref": 5000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 226400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.4",
+    "nama": "Pemasangan 1 m2 bekisting untuk balok (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.66,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.33,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paku 12 cm",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 1500
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "Kayu balok 6/12 kelas II",
+        "satuan": "m3",
+        "koefisien": 0.00558,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Plywood 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.12705,
+        "harga_satuan_ref": 167300
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 0.65,
+        "harga_satuan_ref": 5000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 238600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.5",
+    "nama": "Pemasangan 1 m2 bekisting untuk plat lantai (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.66,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.33,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paku 4 inch",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 19000
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "Kayu balok 6/12 kelas II",
+        "satuan": "m3",
+        "koefisien": 0.00465,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Plywood 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 167300
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 1.95,
+        "harga_satuan_ref": 5000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 241200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.6",
+    "nama": "Pemasangan 1 m2 bekisting untuk dinding shearwall (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.66,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.33,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paku 4 inch",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 19000
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "Kayu balok 6/12 kelas II",
+        "satuan": "m3",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Plywood 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 167300
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 0.975,
+        "harga_satuan_ref": 5000
+      },
+      {
+        "nama": "Formtie/penjaga jarak bekesting/spacer",
+        "satuan": "buah",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 7000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 284400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.7",
+    "nama": "Pemasangan 1 m2 bekisting untuk tangga (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.66,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.33,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Paku 4 inch",
+        "satuan": "kg",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 19000
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "Kayu balok 6/12 kelas II",
+        "satuan": "m3",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 11950000
+      },
+      {
+        "nama": "Plywood 12 mm",
+        "satuan": "lembar",
+        "koefisien": 0.127,
+        "harga_satuan_ref": 167300
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 0.65,
+        "harga_satuan_ref": 5000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 237800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.8",
+    "nama": "Pemasangan 1 m2 bekisting jembatan untuk pengecoran beton (3 kali pakai)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "m3",
+        "koefisien": 0.0106,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 12 cm",
+        "satuan": "kg",
+        "koefisien": 0.6,
+        "harga_satuan_ref": 1500
+      },
+      {
+        "nama": "Dolken kayu φ 8-10 panjang 400 cm",
+        "satuan": "batang",
+        "koefisien": 0.1625,
+        "harga_satuan_ref": 5000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 121000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.9",
+    "nama": "Pembongkaran 1 m2 bekisting secara biasa pada bangunan gedung (termasuk membersihkan dan membereskan puing-puing)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 5200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.10",
+    "nama": "Pembongkaran 1 m2 bekisting secara hati-hati pada bangunan gedung (untuk beton expose dan/atau pemanfaatan kembali bekisting)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 7900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.1",
+    "nama": "1 m3 beton mutu rendah f'c 7,5 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 250.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 888.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1.009,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 928000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.2",
+    "nama": "1 m3 beton mutu rendah f'c 10 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 267.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 871.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1236000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.3",
+    "nama": "1 m3 beton mutu rendah f'c 15 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 306.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 832.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1278900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.4",
+    "nama": "1 m3 beton mutu rendah f'c 17 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 322.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 817.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1296800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.5",
+    "nama": "1 m3 beton mutu sedang f'c 20 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 348.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 790.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1325100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.4.6",
+    "nama": "1 m3 beton mutu sedang f'c 21 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.65,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.275,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.028,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 368.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 770.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1347100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.1",
+    "nama": "1 m3 beton mutu rendah f'c 10 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 267.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 871.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1228600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.2",
+    "nama": "1 m3 beton mutu rendah f'c 15 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (pc)",
+        "satuan": "kg",
+        "koefisien": 306.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 832.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1271500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.3",
+    "nama": "1 m3 beton mutu rendah f'c 17 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 322.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 817.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1289500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.4",
+    "nama": "1 m3 beton mutu sedang f'c 20 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 348.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 790.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1317700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.5",
+    "nama": "1 m3 beton mutu sedang f'c 21 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 368.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 770.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1339700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.6",
+    "nama": "1 m3 beton mutu sedang f'c 25 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 407.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 731.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1382600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.7",
+    "nama": "1 m3 beton mutu sedang f'c 28 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (pc)",
+        "satuan": "kg",
+        "koefisien": 437.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 701.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1415600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.8",
+    "nama": "1 m3 beton mutu sedang f'c 30 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 457.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 681.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1437600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.9",
+    "nama": "1 m3 beton mutu sedang f'c 31 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 468.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 671.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1450100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.10",
+    "nama": "1 m3 beton mutu sedang f'c 35 MPa, slump (100 ± 25) mm, agregat maks 19 mm secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 408.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 629.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1009.0,
+        "harga_satuan_ref": 261
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 202.0,
+        "harga_satuan_ref": 200
+      },
+      {
+        "nama": "Fly ash",
+        "satuan": "kg",
+        "koefisien": 102.0,
+        "harga_satuan_ref": 600
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1417700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.5.11",
+    "nama": "1 m3 beton kedap air dengan aditif secara semi mekanis",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "semi-mekanis",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.025,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 400.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton",
+        "satuan": "kg",
+        "koefisien": 672.0,
+        "harga_satuan_ref": 300
+      },
+      {
+        "nama": "Batu split 2/3",
+        "satuan": "kg",
+        "koefisien": 1440.0,
+        "harga_satuan_ref": 243
+      },
+      {
+        "nama": "Strorox-100",
+        "satuan": "kg",
+        "koefisien": 1.2,
+        "harga_satuan_ref": 40000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 210.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Molen beton mixer 350 liter",
+        "satuan": "hari",
+        "koefisien": 0.1475,
+        "harga_satuan_ref": 300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 1502900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.6.1",
+    "nama": "Pengecoran 1 m3  menggunakan ready mixed (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.4,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": null
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Adukan beton K-275 ready mix",
+        "satuan": "m3",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 937100
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1122100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.1",
+    "nama": "1 m3 beton dicorkan pada tapak setiap tambah jarak 25 m', secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5037,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0504,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 66400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.2",
+    "nama": "1 m3 beton dicorkan pada tapak setiap kenaikan 4 m', secara manual",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 1.0734,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1073,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 141600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.3",
+    "nama": "Pengecoran pakai pompa beton ø 1,5\"; 5 KW; 8 bar; T = 5 m' (untuk Bangunan Gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.14,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Pompa beton φ 1,5\";5 KW; 8 bar; T = 5 m'",
+        "satuan": "hari",
+        "koefisien": 0.14,
+        "harga_satuan_ref": 6000000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 942400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.4",
+    "nama": "Pengecoran pakai pompa beton ø 2,5\", 20 KW, 20 bar, T = 18m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Pompa beton ∅ 2,5\",20 KW; 20 bar, T = 18 m'",
+        "satuan": "hari",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 6300000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 847400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.5",
+    "nama": "Pengecoran pakai pompa beton ∅ 2,5”, 75 KW; 120 bar, T = 50 m’/H= 80 m’",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Pompa beton ∅ 2,5\", 75KW; 120 bar, T= 50 m'/H=80 m’",
+        "satuan": "hari",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 6600000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 739200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.7.6",
+    "nama": "Pengecoran pakai pompa beton ∅ 3”,140 KW; 180 bar, T=75 m'/H=150 m'",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.16,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.016,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Pompa beton ∅ 3\",140KW; 180 bar, T = 75 m' / H=150 m'",
+        "satuan": "hari",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 8000000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 725100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.8.1",
+    "nama": "Pemadatan 1 m3 beton dengan baja tulangan pada bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 26400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.8.2",
+    "nama": "Pemadatan 1 m3 beton menggunakan vibrator pada bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [
+      {
+        "nama": "Concrete vibrator",
+        "satuan": "hari",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 800000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 80900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.9.1",
+    "nama": "Menggenangi 1 m2 permukaan beton dengan air selama 4 hari (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.008,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0004,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pasir Pasang",
+        "satuan": "m3",
+        "koefisien": 0.0055,
+        "harga_satuan_ref": 200000
+      },
+      {
+        "nama": "Semen Portland (pc)",
+        "satuan": "kg",
+        "koefisien": 0.55,
+        "harga_satuan_ref": 1300
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.9.2",
+    "nama": "Menyirami 1 m2 permukaan beton menggunakan media kain terpal selama 4 hari (untuk Bangunan Gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Terpal",
+        "satuan": "m2",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 12000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 15800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.9.3",
+    "nama": "Menyirami 1 m2 permukaan beton menggunakan media karung goni selama 4 hari",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Karung goni",
+        "satuan": "m2",
+        "koefisien": 1.02,
+        "harga_satuan_ref": 14500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 18600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.10.1",
+    "nama": "Pembuatan 1 m' kolom praktis beton bertulang (11x11)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "m3",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 12 cm",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 1500
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 3.0,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.45,
+        "harga_satuan_ref": 18800
+      },
+      {
+        "nama": "Semen portland (PC)",
+        "satuan": "kg",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Batu split 1/2",
+        "satuan": "m3",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 116700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.10.2",
+    "nama": "Pembuatan 1 m' balok praktis beton bertulang (10x15)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.297,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Kayu papan kelas III",
+        "satuan": "m3",
+        "koefisien": 0.003,
+        "harga_satuan_ref": 8000000
+      },
+      {
+        "nama": "Paku 12 cm",
+        "satuan": "kg",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 1500
+      },
+      {
+        "nama": "Minyak bekisting",
+        "satuan": "liter",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 16800
+      },
+      {
+        "nama": "BjTP",
+        "satuan": "kg",
+        "koefisien": 3.6,
+        "harga_satuan_ref": 14250
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 18800
+      },
+      {
+        "nama": "Semen portland (pc)",
+        "satuan": "kg",
+        "koefisien": 5.5,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir beton (quarry - lokasi pekerjaan)",
+        "satuan": "m3",
+        "koefisien": 0.009,
+        "harga_satuan_ref": 370200
+      },
+      {
+        "nama": "Batu split 1/2",
+        "satuan": "m3",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 370200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 156200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.11.1",
+    "nama": "1 m3 pekerjaan grouting secara manual pada bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2778,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0278,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0093,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen grout",
+        "satuan": "kg",
+        "koefisien": 1920.0,
+        "harga_satuan_ref": 6000
+      },
+      {
+        "nama": "Air",
+        "satuan": "liter",
+        "koefisien": 963.0,
+        "harga_satuan_ref": 200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 13027200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.11.2",
+    "nama": "1 kg pekerjaan grouting secara injeksi pada bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [],
+    "bahan": [
+      {
+        "nama": "Epoxy resin grout",
+        "satuan": "kg",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 216700
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Pressure grout machine 30 KW; 60 -75 bar (D)",
+        "satuan": "jam",
+        "koefisien": 0.16667,
+        "harga_satuan_ref": 42000
+      },
+      {
+        "nama": "Mesin bor (jam)",
+        "satuan": "jam",
+        "koefisien": 0.16667,
+        "harga_satuan_ref": 85000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 285400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

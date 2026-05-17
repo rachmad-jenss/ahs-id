@@ -1,0 +1,1210 @@
+[
+  {
+    "kode_ahsp": "2.7.1",
+    "nama": "Pemasangan 1 M' pipa suling -suling menggunakan pipa PVC dia. 1\" (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC dia. 1\"",
+        "satuan": "m'",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 11250
+      },
+      {
+        "nama": "Ijuk",
+        "satuan": "kg",
+        "koefisien": 0.4561,
+        "harga_satuan_ref": 7000
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 0.0196,
+        "harga_satuan_ref": 352300
+      },
+      {
+        "nama": "Geotextile >100 gr/m2",
+        "satuan": "m2",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 17500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 29200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.2",
+    "nama": "Pemasangan 1 M' pipa suling -suling menggunakan pipa PVC dia. 2\" (untuk bangunan gedung)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Pipa PVC dia. 2\"",
+        "satuan": "m'",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 26000
+      },
+      {
+        "nama": "Ijuk",
+        "satuan": "kg",
+        "koefisien": 0.6774,
+        "harga_satuan_ref": 7000
+      },
+      {
+        "nama": "Kerikil",
+        "satuan": "m3",
+        "koefisien": 0.0235,
+        "harga_satuan_ref": 352300
+      },
+      {
+        "nama": "Geotextile >100 gr/m2",
+        "satuan": "m2",
+        "koefisien": 0.35,
+        "harga_satuan_ref": 17500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 52400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.3",
+    "nama": "Pemasangan 1 m2 Lapisan Ijuk tebal 10 cm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Ijuk",
+        "satuan": "kg",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 7000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 66000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.4",
+    "nama": "Pemasangan 1 m2 finishing siar pasangan batu kali, campuran 1SP : 2PP",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang Batu",
+        "satuan": "OH",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala Tukang",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Portland (PC)",
+        "satuan": "kg",
+        "koefisien": 6.34,
+        "harga_satuan_ref": 1300
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 74800,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.5",
+    "nama": "1 m3 bronjong kawat digalvanis, lubang heksagonal 80 x 100 mm, beda tinggi >0 s.d 1 m' berkontak langsung dengan tanah ( kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6157,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.3957,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0616,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 13.85,
+        "harga_satuan_ref": 15680
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 617700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.6",
+    "nama": "1 m3 bronjong kawat digalvanis, lubang heksagonal 80 x 100 mm; beda tinggi > 0 s.d 1 m' tidak berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.6157,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.3957,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0616,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 13.85,
+        "harga_satuan_ref": 15680
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 522700,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.7",
+    "nama": "1 m3 bronjong kawat digalvanis, lubang heksagonal 80x100mm; beda tinggi >3 s.d 4 m' berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.9574,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.5096,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1528,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 13.85,
+        "harga_satuan_ref": 15680
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 693500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.8",
+    "nama": "1 m3 bronjong kawat digalvanis, lubang heksagonal 80x100mm; beda tinggi >3 s.d 4 m' tidak berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.9574,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.5096,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1528,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 13.85,
+        "harga_satuan_ref": 15680
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 598500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.9",
+    "nama": "1 m3 kawat bronjong kawat digalvanis, lubang heksagonal 100x120mm; beda tinggi >0 s.d 1 m' berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5205,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.3005,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 14.85,
+        "harga_satuan_ref": 15680
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 607200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.10",
+    "nama": "1 m3 kawat bronjong kawat digalvanis, lubang heksagonal 100x120mm; beda tinggi > 0 s.d 1 m' berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.5205,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.3005,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.052,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 14.85,
+        "harga_satuan_ref": 15680
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 512100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.11",
+    "nama": "1 m3 kawat bronjong kawat digalvanis, lubang heksagonal 100x120mm; beda tinggi > 3 s.d 4 m' berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.8622,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.4144,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0862,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 14.85,
+        "harga_satuan_ref": 15680
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 200000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 670500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.12",
+    "nama": "1 m3 kawat bronjong kawat digalvanis, lubang heksagonal 100x120mm; beda tinggi > 3 s.d 4 m'  tidak berkontak langsung dengan tanah (kawat dibuat sendiri)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.8622,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang penganyam bronjong",
+        "satuan": "OH",
+        "koefisien": 0.4144,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0862,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Kawat  bronjong",
+        "satuan": "kg",
+        "koefisien": 14.85,
+        "harga_satuan_ref": 15680
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 575400,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.13",
+    "nama": "1 m3 pasangan batu bronjong kawat paprikasi; beda tinggi > 0 s.d 1 m' berkontak langsung dengan tanah",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Bronjong kawat  pabrikan Uk.2x1x0,5 ø  3mm mesh 8x10",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 460000
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 0
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 712000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.14",
+    "nama": "1 m3 pasangan batu bronjong kawat paprikasi; beda tinggi > 0 s.d 1 m' tidak berkontak langsung dengan tanah",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.36,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.12,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Bronjong kawat  pabrikan Uk.2x1x0,5 ø  3mm mesh 8x10",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 460000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 712000,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.15",
+    "nama": "1 m3 pasangan batu bronjong kawat paprikasi; beda tinggi > 3 s.4  m' berkontak langsung dengan tanah",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.7017,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0701,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Bronjong kawat  pabrikan Uk.2x1x0,5 ø  3mm mesh 8x10",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 460000
+      },
+      {
+        "nama": "Pasir pasang",
+        "satuan": "m3",
+        "koefisien": 0.432,
+        "harga_satuan_ref": 0
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 775300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.7.16",
+    "nama": "1 m3 pasangan batu bronjong kawat paprikasi; beda tinggi > 3 s.4  m' tidak berkontak langsung dengan tanah",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.7",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.7017,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang batu",
+        "satuan": "OH",
+        "koefisien": 0.2339,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0701,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Batu",
+        "satuan": "m3",
+        "koefisien": 1.3,
+        "harga_satuan_ref": 97500
+      },
+      {
+        "nama": "Bronjong kawat  pabrikan Uk.2x1x0,5 ø  3mm mesh 8x10",
+        "satuan": "buah",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 460000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 775300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Dinding Penahan Tanah ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

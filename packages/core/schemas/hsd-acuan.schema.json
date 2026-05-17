@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahs-id.dev/schemas/hsd-acuan.schema.json",
+  "title": "HsdAcuan",
+  "description": "Harga Satuan Dasar Acuan — daftar harga referensi upah, bahan, dan sewa peralatan yang ditetapkan dalam suatu regulasi nasional (bukan harga regional/pasar).",
+  "type": "object",
+  "required": ["version", "sumber_regulasi", "tahun", "tenaga_kerja", "bahan", "peralatan_sewa"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string" },
+    "sumber_regulasi": { "type": "string", "minLength": 1 },
+    "tahun": { "type": "integer", "minimum": 2000, "maximum": 2100 },
+    "tenaga_kerja": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nama", "satuan", "harga_rp"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": ["string", "null"], "pattern": "^L\\." },
+          "nama": { "type": "string", "minLength": 1 },
+          "satuan": { "type": "string", "minLength": 1 },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "bahan": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nama", "satuan", "harga_rp"],
+        "additionalProperties": false,
+        "properties": {
+          "kategori": { "type": "string", "minLength": 1 },
+          "nama": { "type": "string", "minLength": 1 },
+          "satuan": { "type": "string", "minLength": 1 },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "peralatan_sewa": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nama", "satuan", "harga_rp"],
+        "additionalProperties": false,
+        "properties": {
+          "nama": { "type": "string", "minLength": 1 },
+          "satuan": { "type": "string", "minLength": 1 },
+          "harga_rp": { "type": "number", "exclusiveMinimum": 0 },
+          "catatan": { "type": "string" }
+        }
+      }
+    }
+  }
+}

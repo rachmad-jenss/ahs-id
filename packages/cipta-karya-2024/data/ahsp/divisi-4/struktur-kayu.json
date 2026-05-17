@@ -1,0 +1,254 @@
+[
+  {
+    "kode_ahsp": "2.6.2.1",
+    "nama": "Pemancangan per m' tiang pancang kayu atau dolken dia. 6-8 cm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.6",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.03"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat  penyambung tiang pancang dolken",
+        "satuan": "buah",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 350000
+      },
+      {
+        "nama": "Sepatu Pancang",
+        "satuan": "buah",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Alat Pancang Mini Pile",
+        "satuan": "hari",
+        "koefisien": 0.0605,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 167600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Struktur Kayu",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.6.2.2",
+    "nama": "Pemancangan per m' Tiang kayu Gelondongan dia. 18-20 cm",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.6",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.0759,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.0759,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0228,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Alat sambung kayu terbuat dari baja",
+        "satuan": "buah",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 250000
+      },
+      {
+        "nama": "Sepatu pancang",
+        "satuan": "buah",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 135000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Mobil Crane",
+        "satuan": "hari",
+        "koefisien": 0.0759,
+        "harga_satuan_ref": 1450000
+      },
+      {
+        "nama": "Alat Pancang Mini Pile",
+        "satuan": "hari",
+        "koefisien": 0.0759,
+        "harga_satuan_ref": 250000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 273200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Struktur Kayu",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "2.6.2.3",
+    "nama": "1 m2 Turap bambu dari geribig bambu secara manual, JAT < 0,5 m",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.6",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.111,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 0.056,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bambu panjang 4,5 m",
+        "satuan": "batang",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 14500
+      },
+      {
+        "nama": "Anyaman Bambu",
+        "satuan": "lembar",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 50000
+      },
+      {
+        "nama": "Kawat bendrat",
+        "satuan": "kg",
+        "koefisien": 0.1477,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 55500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Struktur Kayu",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

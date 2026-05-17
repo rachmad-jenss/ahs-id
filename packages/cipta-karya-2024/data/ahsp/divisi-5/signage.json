@@ -1,0 +1,702 @@
+[
+  {
+    "kode_ahsp": "3.16.1.1",
+    "nama": "Pemasangan 1 buah Logo PU plat besi finish cat uk. 80x80 cm dengan scaffolding",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.11,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Plat besi 3 mm",
+        "satuan": "kg",
+        "koefisien": 43.71,
+        "harga_satuan_ref": 34500
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.045,
+        "harga_satuan_ref": 45550
+      },
+      {
+        "nama": "Cat penutup (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 54700
+      },
+      {
+        "nama": "Dinabolt dia. 12mm (10-15 cm)",
+        "satuan": "buah",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 4550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Scaffolding",
+        "satuan": "hari",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 587
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 2795900,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.1.2",
+    "nama": "Pemasangan Logo PU Pelat Besi Finish Cat ukuran 80x80 cm dengan gendola",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2.11,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.033,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Plat besi 3 mm",
+        "satuan": "kg",
+        "koefisien": 43.71,
+        "harga_satuan_ref": 34500
+      },
+      {
+        "nama": "Kawat las",
+        "satuan": "kg",
+        "koefisien": 0.045,
+        "harga_satuan_ref": 45550
+      },
+      {
+        "nama": "Cat penutup (cat besi)",
+        "satuan": "kg",
+        "koefisien": 0.8,
+        "harga_satuan_ref": 54700
+      },
+      {
+        "nama": "Dinabolt dia. 12mm (10-15 cm)",
+        "satuan": "buah",
+        "koefisien": 6.0,
+        "harga_satuan_ref": 4550
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Sewa Gondola",
+        "satuan": "hari",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 322000
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 3149500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.2",
+    "nama": "Pemasangan 1 m2 Signage dengan Pelat Besi",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang las",
+        "satuan": "OH",
+        "koefisien": 0.018,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0018,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 14300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.3",
+    "nama": "Pemasangan Signage dengan Acrylic",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.036,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0036,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0012,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Akrilik 4 mm",
+        "satuan": "m2",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 179000
+      },
+      {
+        "nama": "Pen akrilik",
+        "satuan": "buah",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 7000
+      },
+      {
+        "nama": "Cutting sticker",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 169100,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.4",
+    "nama": "Pemasangan 1 m2 signage dengan cutting",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.09,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.018,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0018,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0006,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cutting sticker",
+        "satuan": "m2",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 100000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 123200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.5",
+    "nama": "Pemasangan 1 m2 Marka dengan Cat Thermoplast",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.04,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang cat",
+        "satuan": "OH",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0013,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Cat Thermoplast",
+        "satuan": "kg",
+        "koefisien": 3.29,
+        "harga_satuan_ref": 29120
+      },
+      {
+        "nama": "Glass Beads",
+        "satuan": "kg",
+        "koefisien": 0.459,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Compressor",
+        "satuan": "jam",
+        "koefisien": 0.0549,
+        "harga_satuan_ref": 92500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 138200,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.6",
+    "nama": "Pemasangan 1 buah Logo PU Akrilik ukuran 40x40 cm",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Logo PU Akrilik 40x40 cm",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 400000
+      },
+      {
+        "nama": "Glass Beads",
+        "satuan": "kg",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 18000
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Compressor",
+        "satuan": "jam",
+        "koefisien": 0.0549,
+        "harga_satuan_ref": 92500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 539600,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  },
+  {
+    "kode_ahsp": "3.16.7",
+    "nama": "Pemasangan 1 buah Nomor Rumah Akrilik 15x30 cm",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.16",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.05,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Nomor Rumah Akrilik 15x30 cm",
+        "satuan": "kg",
+        "koefisien": 1.0,
+        "harga_satuan_ref": 55000
+      },
+      {
+        "nama": "Paku beton",
+        "satuan": "kg",
+        "koefisien": 4.0,
+        "harga_satuan_ref": 39450
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Compressor",
+        "satuan": "jam",
+        "koefisien": 0.0549,
+        "harga_satuan_ref": 92500
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 254500,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Signage",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

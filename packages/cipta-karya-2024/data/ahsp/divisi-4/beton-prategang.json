@@ -1,0 +1,89 @@
+[
+  {
+    "kode_ahsp": "2.5.1",
+    "nama": "Pemasangan 1 kg kabel prategang (prestressed) polos/strand",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.5",
+    "satuan_bayar": "kg",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 100000,
+        "ref": "L.01"
+      },
+      {
+        "nama": "Tukang besi",
+        "satuan": "OH",
+        "koefisien": 0.005,
+        "harga_satuan_ref": 145000,
+        "ref": "L.02"
+      },
+      {
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0005,
+        "harga_satuan_ref": 175000,
+        "ref": "L.03"
+      },
+      {
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0002,
+        "harga_satuan_ref": 200000,
+        "ref": "L.04"
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "BjTS",
+        "satuan": "kg",
+        "koefisien": 1.05,
+        "harga_satuan_ref": 14500
+      },
+      {
+        "nama": "Kawat beton",
+        "satuan": "kg",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 18800
+      }
+    ],
+    "peralatan": [
+      {
+        "nama": "Crane",
+        "satuan": "unit hari",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 3442900
+      }
+    ],
+    "harga_satuan_pekerjaan_ref": 90300,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
+      "halaman": "Beton Prategang ",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null
+    }
+  }
+]

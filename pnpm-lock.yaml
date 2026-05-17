@@ -33,7 +33,7 @@ importers:
         specifier: ^2.0.0
         version: 2.1.9
 
-  packages/bina-marga-2022:
+  packages/cipta-karya-2024:
     dependencies:
       '@ahs-id/core':
         specifier: workspace:*
@@ -42,9 +42,6 @@ importers:
       typescript:
         specifier: ^5.5.0
         version: 5.9.3
-      vitest:
-        specifier: ^2.0.0
-        version: 2.1.9
 
   packages/core:
     devDependencies:
@@ -97,6 +94,9 @@ importers:
 
   tests/golden:
     devDependencies:
+      '@ahs-id/cipta-karya-2024':
+        specifier: workspace:*
+        version: link:../../packages/cipta-karya-2024
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../../packages/core

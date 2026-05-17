@@ -5,6 +5,7 @@
   "divisi": 3,
   "sub_divisi": "3.1",
   "satuan_bayar": "m3",
+  "jenis_kalkulasi": "dynamic_hsd",
   "volume_state_bayar": "bank",
   "jenis_pekerjaan": "mekanis",
   "is_lump_sum": false,
@@ -12,15 +13,17 @@
   "tenaga_kerja": [
     {
       "ref": "L.01",
-      "koefisien": 0.100,
+      "koefisien": 0.1,
       "koef_sumber": "tabel",
-      "catatan": "Lebih tinggi dari galian biasa karena material keras"
+      "catatan": "Lebih tinggi dari galian biasa karena material keras",
+      "nama": "Pekerja"
     },
     {
       "ref": "L.04",
-      "koefisien": 0.030,
+      "koefisien": 0.03,
       "koef_sumber": "tabel",
-      "catatan": null
+      "catatan": null,
+      "nama": "Mandor"
     }
   ],
   "bahan": [],
@@ -31,7 +34,9 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": "bank",
-      "variabel_input": ["jenis_material"],
+      "variabel_input": [
+        "jenis_material"
+      ],
       "koef_referensi": {
         "value": 0.0135,
         "asumsi": {
@@ -49,7 +54,10 @@
       "koef_sumber": "kalkulasi",
       "mode_biaya": "ownership",
       "volume_state": "loose",
-      "variabel_input": ["jarak_buang_km", "kondisi_jalan"],
+      "variabel_input": [
+        "jarak_buang_km",
+        "kondisi_jalan"
+      ],
       "koef_referensi": null,
       "catatan": "Koefisien tergantung jarak buang"
     }
@@ -67,26 +75,38 @@
     "kondisi_jalan": {
       "label": "Kondisi Jalan Hauling",
       "tipe": "enum",
-      "options": ["baik", "sedang", "rusak"],
+      "options": [
+        "baik",
+        "sedang",
+        "rusak"
+      ],
       "default": "sedang"
     },
     "jenis_material": {
       "label": "Jenis Material Galian",
       "tipe": "enum",
-      "options": ["batu_pecah", "batu_kapur", "batu_keras"],
+      "options": [
+        "batu_pecah",
+        "batu_kapur",
+        "batu_keras"
+      ],
       "default": "batu_pecah"
     },
     "faktor_efisiensi": {
       "label": "Faktor Efisiensi Alat (Fa)",
       "tipe": "number",
       "default": 0.83,
-      "min": 0.60,
-      "max": 0.90
+      "min": 0.6,
+      "max": 0.9
     },
     "kondisi_operasi": {
       "label": "Kondisi Operasi (untuk Fpr)",
       "tipe": "enum",
-      "options": ["normal", "berat", "sangat_berat"],
+      "options": [
+        "normal",
+        "berat",
+        "sangat_berat"
+      ],
       "default": "berat"
     }
   },
