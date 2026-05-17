@@ -63,9 +63,9 @@ const hsp = calc.hitungHSP('3.2.1', {
 See [CONTRIBUTING.md](CONTRIBUTING.md). Data contributions (new AHSP items,
 HSD regions) are especially welcome.
 
-## Relationship to EstiMara
+## Relationship to Estimara
 
-AHS-ID is the open source engine. [EstiMara](https://estimara.id) is the
+AHS-ID is the open source engine. [Estimara](https://estimara.id) is the
 commercial platform that adds WBS management, approval workflows, audit
 trails, and team collaboration on top.
 
