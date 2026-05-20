@@ -13,3 +13,8 @@ coverage/
 CLAUDE.md
 PROGRESS.md
 NEXT-SESSION-PROMPT.md
+
+# AI tool files (not for public repo)
+AGENTS.md
+TEMPLATES.md
+.opencode/
