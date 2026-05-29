@@ -1,0 +1,17 @@
+{
+  "kode_ahsp": "3.2.1",
+  "bundle": "pupr-2023",
+  "hsd_region": "hsd-kaltim-2025",
+  "variabel": {
+    "jarak_quarry_km": 25,
+    "jarak_sumber_air_km": 8,
+    "kondisi_jalan": "sedang",
+    "jenis_material": "agregat_kelas_a",
+    "faktor_efisiensi": 0.83,
+    "kondisi_operasi": "normal",
+    "tebal_hamparan_m": 0.2,
+    "jumlah_passing": 6,
+    "lebar_hamparan_m": 3.0,
+    "jumlah_lintasan": 6
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kode_ahsp": "3.3.1",
+  "baseTotal": 164448.44137083815,
+  "grandTotal": 189115.70757646387,
+  "overheadPct": 10,
+  "profitPct": 5,
+  "groups": [
+    {
+      "type": "L",
+      "total": 10920
+    },
+    {
+      "type": "M",
+      "total": 0
+    },
+    {
+      "type": "E",
+      "total": 153528.44137083815
+    }
+  ]
+}

@@ -353,6 +353,7 @@ function calcProduktivitas(
   if (alat.tipe_produksi === 'throughput') {
     const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
       ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
+      ?? (pp['kapasitas_rated'] as number | undefined)
       ?? 0;
     const satuan = pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam';
     const Q = kapasitas * fa;
