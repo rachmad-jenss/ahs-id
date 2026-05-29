@@ -1,0 +1,12 @@
+{
+  "kode_ahsp": "3.1.1",
+  "bundle": "pupr-2023",
+  "hsd_region": "hsd-jabar-2025",
+  "variabel": {
+    "jarak_buang_km": 10,
+    "kondisi_jalan": "sedang",
+    "jenis_material": "tanah_biasa",
+    "faktor_efisiensi": 0.83,
+    "kondisi_operasi": "normal"
+  }
+}
