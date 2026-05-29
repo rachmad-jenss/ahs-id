@@ -85,6 +85,8 @@ export type { TransportSatuanParams, TransportSatuanResult } from './calculator/
 
 export { calcHspFixedCoefficient } from './calculator/fixed-coefficient.js';
 
+export { exportHspToExcelBuffer } from './exporter/excel.js';
+
 export type {
   FixedCoefficientItem,
   FixedCoeffTkEntry,
