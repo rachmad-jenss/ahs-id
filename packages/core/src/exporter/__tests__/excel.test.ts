@@ -1,22 +1,82 @@
 import ExcelJS from 'exceljs';
 import { describe, it, expect } from 'vitest';
-import { createCalculator } from '../../calculator/hsp.js';
+import type { HSPResult } from '../../types/index.js';
 import { exportHspToExcelBuffer } from '../excel.js';
-import { bundle } from '@ahs-id/pupr-2023';
-import { hsd } from '@ahs-id/hsd-kaltim-2025';
 
-const VARIABEL_3_2_1 = {
-  jarak_quarry_km: 25,
-  jarak_sumber_air_km: 8,
-  kondisi_jalan: 'sedang',
-  jenis_material: 'agregat_kelas_a',
-  faktor_efisiensi: 0.83,
-  kondisi_operasi: 'normal',
-  tebal_hamparan_m: 0.2,
-  jumlah_passing: 6,
-  lebar_hamparan_m: 3.0,
-  jumlah_lintasan: 6,
-} as const;
+/** Representative HSP snapshot (3.2.1-style breakdown) — avoids workspace bundle deps in @ahs-id/core tests. */
+function mockHspResult(): HSPResult {
+  const tkTotal = 0.065 * 135_000 + 0.007 * 210_000;
+  const bahanTotal = 1.025 * 425_000;
+  const peralatanTotal = 450_000;
+  const baseTotal = tkTotal + bahanTotal + peralatanTotal;
+  const overheadPct = 10;
+  const profitPct = 5;
+  const overheadProfitValue = baseTotal * 0.15;
+  const grandTotal = baseTotal + overheadProfitValue;
+
+  return {
+    kode_ahsp: '3.2.1',
+    nama: 'Lapis Pondasi Agregat Kelas A (CBR Min 90%)',
+    satuan_bayar: 'm3',
+    groups: [
+      {
+        type: 'L',
+        title: 'Tenaga Kerja',
+        total: tkTotal,
+        components: [
+          {
+            ref: 'L.01',
+            type: 'L',
+            nama: 'Pekerja',
+            satuan: 'OH',
+            coefficient: 0.065,
+            unit_price: 135_000,
+            total_price: 0.065 * 135_000,
+          },
+        ],
+      },
+      {
+        type: 'M',
+        title: 'Bahan',
+        total: bahanTotal,
+        components: [
+          {
+            ref: 'M.09.a',
+            type: 'M',
+            nama: 'Agregat Kelas A',
+            satuan: 'm3',
+            coefficient: 1.025,
+            unit_price: 425_000,
+            total_price: bahanTotal,
+          },
+        ],
+      },
+      {
+        type: 'E',
+        title: 'Peralatan',
+        total: peralatanTotal,
+        components: [
+          {
+            ref: 'E.11',
+            type: 'E',
+            nama: 'Wheel Loader',
+            satuan: 'jam',
+            coefficient: 0.5,
+            unit_price: 900_000,
+            total_price: peralatanTotal,
+          },
+        ],
+      },
+    ],
+    baseTotal,
+    overheadPct,
+    profitPct,
+    overheadProfitValue,
+    grandTotal,
+    warnings: [],
+    audit_trail: [],
+  };
+}
 
 async function loadWorksheet(buffer: Buffer): Promise<ExcelJS.Worksheet> {
   const workbook = new ExcelJS.Workbook();
@@ -39,10 +99,8 @@ function findRowWithLabel(sheet: ExcelJS.Worksheet, label: string): ExcelJS.Row 
 }
 
 describe('exportHspToExcelBuffer', () => {
-  it('exports 3.2.1 with Kaltim HSD in RAB layout', async () => {
-    const calc = createCalculator(bundle, hsd);
-    const result = calc.hitungHSP('3.2.1', { ...VARIABEL_3_2_1 });
-
+  it('exports HSP breakdown in RAB column layout', async () => {
+    const result = mockHspResult();
     const buffer = await exportHspToExcelBuffer(result);
     expect(buffer.byteLength).toBeGreaterThan(0);
 

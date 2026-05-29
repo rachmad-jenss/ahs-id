@@ -72,12 +72,6 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0
     devDependencies:
-      '@ahs-id/hsd-kaltim-2025':
-        specifier: workspace:*
-        version: link:../hsd-kaltim-2025
-      '@ahs-id/pupr-2023':
-        specifier: workspace:*
-        version: link:../pupr-2023
       '@types/node':
         specifier: ^22.0.0
         version: 22.19.19

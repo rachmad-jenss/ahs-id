@@ -23,8 +23,6 @@
     "exceljs": "^4.4.0"
   },
   "devDependencies": {
-    "@ahs-id/hsd-kaltim-2025": "workspace:*",
-    "@ahs-id/pupr-2023": "workspace:*",
     "@types/node": "^22.0.0",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
