@@ -6,7 +6,7 @@ This public repository must **not** contain internal agent instructions, Notion 
 
 The following paths are **local-only** (see `.gitignore`):
 
-- `AGENTS.md`, `CLAUDE.md`, `TEMPLATES.md`, `PROGRESS.md`, `NEXT-SESSION-PROMPT.md`
+- `AGENTS.md`, `CLAUDE.md`, `TEMPLATES.md`, `NEXT-SESSION-PROMPT.md`
 - `.cursor/`, `.cursorrules`, `.claude/`, `.opencode/`
 - `scripts/create-backlog-issues.ps1`, `scripts/issues/`
 - `ahs-id-architecture-*.md`
@@ -17,7 +17,7 @@ Contributors: keep these files on your machine only; never commit them.
 
 ## History purge (2026-05-29)
 
-Prior to DAS-20, `AGENTS.md`, `TEMPLATES.md`, and `.opencode/` were briefly tracked on `main` (including internal Notion workflow references in `TEMPLATES.md`). They were removed from HEAD in DAS-10 and **purged from all git history** in DAS-20 (`git filter-repo`). Other local-only files (e.g. `CLAUDE.md`, `PROGRESS.md`) were never in scope for this rewrite; do not commit them.
+Prior to DAS-20, `AGENTS.md`, `TEMPLATES.md`, and `.opencode/` were briefly tracked on `main` (including internal Notion workflow references in `TEMPLATES.md`). They were removed from HEAD in DAS-10 and **purged from all git history** in DAS-20 (`git filter-repo`). `PROGRESS.md` is public (DAS-14); other local-only files (e.g. `CLAUDE.md`, `AGENTS.md`) must not be committed.
 
 If you cloned before that rewrite:
 
