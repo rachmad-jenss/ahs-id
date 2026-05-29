@@ -1,7 +1,7 @@
 # AHS-ID — Phase 2 Progress
 
 > Public checklist for **Phase 2: Functional Library — "Usable by Others"**.  
-> Last updated: 2026-05-29 (DAS-14).
+> Last updated: 2026-05-29 (Wave 1 merged).
 
 **Exit criteria:** External developer can `npm install`, calculate HSP for any Bina Marga item (PUPR path), and export to Excel.
 
@@ -22,17 +22,17 @@
 - [x] **DAS-10** — GitHub Actions CI on `main` (lint, typecheck, validate-data, test; draft PR skip; docs paths-ignore)
 - [x] **DAS-20** — Purge `AGENTS.md`, `TEMPLATES.md`, `.opencode/` from public git history (`git filter-repo`)
 
-## Wave 1 — Engineering quality (in progress)
+## Wave 1 — Engineering quality ✅
 
 Epic: [DAS-2](https://github.com/rachmad-jenss/ahs-id/issues/2) — CI, validation, golden.
 
 | Issue | Task | Status |
 |-------|------|--------|
 | DAS-10 | Land CI on main | ✅ Done |
-| DAS-11 | Extend `validate-data.mjs` to all bundle packages | 🔨 Open |
+| DAS-11 | Extend `validate-data.mjs` to all bundle packages | ✅ Done |
 | DAS-12 | CI `validateBundle` for all DataBundle packages | 🔨 Open |
-| DAS-13 | File-based golden fixtures with numeric lock | 🔨 Open |
-| DAS-14 | This file + local `AGENTS.md` sync | 🔨 In progress |
+| DAS-13 | File-based golden fixtures with numeric lock | ✅ Done |
+| DAS-14 | `PROGRESS.md` + local `AGENTS.md` sync | ✅ Done |
 
 ## Phase 2 exit — CLI, Excel, npm (remaining)
 
@@ -40,7 +40,7 @@ Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 
 | Issue | Task | Status |
 |-------|------|--------|
-| DAS-4 | RAB Excel exporter (`packages/core` `exporter/excel.ts`) | ⬜ Open |
+| DAS-4 | RAB Excel exporter (`packages/core` `exporter/excel.ts`) | ✅ Done |
 | DAS-5 | Scaffold `apps/cli` — `calc-hsp` | ⬜ Open |
 | DAS-6 | CLI `export-rab` | ⬜ Open |
 | DAS-7 | CLI `validate` for bundles | ⬜ Open |
@@ -59,10 +59,10 @@ Run: `pnpm test` (9 packages in scope; 3 run tests today).
 
 | Package | Tests |
 |---------|------:|
-| `@ahs-id/core` | 45 |
+| `@ahs-id/core` | 46 |
 | `@ahs-id/bina-marga-2022` | 24 |
-| `@ahs-id/golden-tests` | 53 |
-| **Total** | **122** |
+| `@ahs-id/golden-tests` | 57 (+1 skipped gen helper) |
+| **Total** | **127** |
 
 Golden tolerance: ε = 0.01 Rp.
 
