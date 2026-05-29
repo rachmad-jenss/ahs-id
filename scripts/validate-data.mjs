@@ -24,6 +24,24 @@ const schemas = {
   'hsd-acuan': ajv.compile(loadSchema('hsd-acuan.schema.json')),
 };
 
+/** JSON Schema validation (Permen / cipta-karya / HSD layout). */
+const SCHEMA_PACKAGES = [
+  'pupr-2023',
+  'cipta-karya-2024',
+  'hsd-kaltim-2025',
+  'hsd-jabar-2025',
+  'hsd-papua-2025',
+];
+
+/**
+ * Legacy bundle layouts (bina-marga 2016/2022) — syntax + presence only until
+ * data is aligned with core JSON schemas (see DAS-12 validateBundle in CI).
+ */
+const SYNTAX_ONLY_PACKAGES = ['bina-marga-2016', 'bina-marga-2022'];
+
+/**
+ * @returns {string | null} schema key, or null to skip (no schema yet)
+ */
 function detectSchema(filePath) {
   const name = basename(filePath, '.json');
   if (name === 'tenaga-kerja') return 'tenaga-kerja';
@@ -32,6 +50,8 @@ function detectSchema(filePath) {
   if (name === 'faktor-konversi') return 'faktor-konversi';
   if (name === 'hsd') return 'hsd-regional';
   if (name === 'hsd-acuan') return 'hsd-acuan';
+  if (name === 'items') return 'ahsp-item';
+  if (name === 'peralatan-hsd') return null;
   return 'ahsp-item';
 }
 
@@ -48,23 +68,34 @@ function collectJsonFiles(dir) {
   return files;
 }
 
-function validatePackage(pkgDir) {
+function validatePackage(pkgDir, pkgName) {
   const dataDir = resolve(pkgDir, 'data');
+  if (!statSync(dataDir, { throwIfNoEntry: false })?.isDirectory()) {
+    console.error(`  [FAIL] ${pkgName}: missing data/ directory`);
+    return 1;
+  }
+
   const files = collectJsonFiles(dataDir);
   let errors = 0;
+  let skipped = 0;
 
   for (const file of files) {
     const schemaKey = detectSchema(file);
+    const rel = relative(root, file);
+
+    if (schemaKey === null) {
+      console.log(`  [SKIP] ${rel} — no JSON schema (bundle-specific)`);
+      skipped++;
+      continue;
+    }
+
     const validate = schemas[schemaKey];
     if (!validate) {
-      console.error(`  [SKIP] ${relative(root, file)} — no schema for "${schemaKey}"`);
+      console.error(`  [SKIP] ${rel} — unknown schema key "${schemaKey}"`);
       continue;
     }
 
     const data = JSON.parse(readFileSync(file, 'utf-8'));
-    const rel = relative(root, file);
-
-    // Support both single objects and arrays of ahsp-item
     const itemsToValidate = Array.isArray(data) && schemaKey === 'ahsp-item' ? data : [data];
     let fileErrors = 0;
     for (let idx = 0; idx < itemsToValidate.length; idx++) {
@@ -75,11 +106,11 @@ function validatePackage(pkgDir) {
           console.error(`  [FAIL] ${rel} (${schemaKey})`);
         }
         const prefix = Array.isArray(data) ? `[${idx}] ` : '';
-        for (const err of validate.errors) {
+        for (const err of validate.errors ?? []) {
           console.error(`         ${prefix}${err.instancePath || '/'} ${err.message}`);
         }
         if (fileErrors >= 3) {
-          console.error(`         ... (more errors omitted for ${rel}[${idx}])`);
+          console.error(`         ... (more errors omitted)`);
           break;
         }
       }
@@ -92,6 +123,36 @@ function validatePackage(pkgDir) {
     }
   }
 
+  if (skipped > 0) {
+    console.log(`  (${skipped} file(s) skipped — no schema)`);
+  }
+
+  return errors;
+}
+
+function validatePackageSyntaxOnly(pkgDir, pkgName) {
+  const dataDir = resolve(pkgDir, 'data');
+  if (!statSync(dataDir, { throwIfNoEntry: false })?.isDirectory()) {
+    console.error(`  [FAIL] ${pkgName}: missing data/ directory`);
+    return 1;
+  }
+
+  const files = collectJsonFiles(dataDir);
+  let errors = 0;
+
+  for (const file of files) {
+    const rel = relative(root, file);
+    try {
+      const data = JSON.parse(readFileSync(file, 'utf-8'));
+      const count = Array.isArray(data) ? ` (${data.length} items)` : '';
+      console.log(`  [OK]   ${rel} (json syntax)${count}`);
+    } catch (e) {
+      errors++;
+      console.error(`  [FAIL] ${rel} — invalid JSON: ${e.message}`);
+    }
+  }
+
+  console.log('  (syntax-only — full schema validation pending data normalization)');
   return errors;
 }
 
@@ -99,27 +160,20 @@ console.log('Validating data files against JSON schemas...\n');
 
 let totalErrors = 0;
 
-const pupr2023 = resolve(root, 'packages', 'pupr-2023');
-console.log('@ahs-id/pupr-2023:');
-totalErrors += validatePackage(pupr2023);
+for (const pkgName of SCHEMA_PACKAGES) {
+  const pkgDir = resolve(root, 'packages', pkgName);
+  console.log(`@ahs-id/${pkgName}:`);
+  totalErrors += validatePackage(pkgDir, pkgName);
+  console.log('');
+}
 
-const hsdKaltim = resolve(root, 'packages', 'hsd-kaltim-2025');
-console.log('\n@ahs-id/hsd-kaltim-2025:');
-totalErrors += validatePackage(hsdKaltim);
+for (const pkgName of SYNTAX_ONLY_PACKAGES) {
+  const pkgDir = resolve(root, 'packages', pkgName);
+  console.log(`@ahs-id/${pkgName}:`);
+  totalErrors += validatePackageSyntaxOnly(pkgDir, pkgName);
+  console.log('');
+}
 
-const hsdJabar = resolve(root, 'packages', 'hsd-jabar-2025');
-console.log('\n@ahs-id/hsd-jabar-2025:');
-totalErrors += validatePackage(hsdJabar);
-
-const hsdPapua = resolve(root, 'packages', 'hsd-papua-2025');
-console.log('\n@ahs-id/hsd-papua-2025:');
-totalErrors += validatePackage(hsdPapua);
-
-const ciptaKarya2024 = resolve(root, 'packages', 'cipta-karya-2024');
-console.log('\n@ahs-id/cipta-karya-2024:');
-totalErrors += validatePackage(ciptaKarya2024);
-
-console.log('');
 if (totalErrors > 0) {
   console.error(`Schema validation failed: ${totalErrors} file(s) with errors`);
   process.exit(1);
