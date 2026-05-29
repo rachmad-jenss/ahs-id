@@ -52,6 +52,9 @@ function toExpected(result: ReturnType<ReturnType<typeof createCalculator>['hitu
 describe.skipIf(process.env.GEN_GOLDEN !== '1')('generate golden expected', () => {
   it('writes expected/*.json from fixtures', () => {
     const files = readdirSync(FIXTURES_DIR).filter((f) => f.endsWith('.json'));
+    if (files.length === 0) {
+      throw new Error(`No fixture JSON files found in: ${FIXTURES_DIR}`);
+    }
     for (const file of files) {
       const fixture = JSON.parse(readFileSync(join(FIXTURES_DIR, file), 'utf8')) as FixtureFile;
       if (fixture.bundle !== 'pupr-2023') {
