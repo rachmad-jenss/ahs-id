@@ -12,7 +12,6 @@ coverage/
 # Internal dev notes & AI workflow (private — jangan publish)
 AGENTS.md
 CLAUDE.md
-PROGRESS.md
 NEXT-SESSION-PROMPT.md
 TEMPLATES.md
 .cursor/

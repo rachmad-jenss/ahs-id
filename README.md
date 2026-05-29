@@ -37,6 +37,16 @@ const hsp = calc.hitungHSP('3.2.1', {
 console.log(hsp.grandTotal); // HSP termasuk overhead & profit (15%)
 ```
 
+Export the breakdown to Excel (RAB columns: Uraian, Satuan, Koefisien, Harga Satuan, Jumlah):
+
+```typescript
+import { createCalculator, exportHspToExcelBuffer } from '@ahs-id/core';
+import { writeFileSync } from 'node:fs';
+
+const buffer = await exportHspToExcelBuffer(hsp);
+writeFileSync('hsp-3.2.1.xlsx', buffer);
+```
+
 ## Available Packages
 
 ### Calculation Engine
@@ -101,6 +111,7 @@ docs/                      ← Architecture spec, legal notes
 ## Documentation
 
 - [Architecture Specification](docs/architecture.md)
+- [Phase 2 Progress Checklist](PROGRESS.md)
 - [Contributing Guide](CONTRIBUTING.md)
 - [Legal & Data Attribution](LEGAL.md)
 
