@@ -9,14 +9,19 @@ coverage/
 .env.*
 !.env.example
 
-# Internal dev notes — tidak di-publish
+# Internal dev notes & AI workflow (private — jangan publish)
+AGENTS.md
 CLAUDE.md
 PROGRESS.md
 NEXT-SESSION-PROMPT.md
-
-# AI tool files (not for public repo)
-AGENTS.md
 TEMPLATES.md
+.cursor/
+.cursorrules
+.claude/
 .opencode/
+
+# Internal backlog & session tooling
+scripts/create-backlog-issues.ps1
+scripts/issues/
 
 ahs-id-architecture-*.md
