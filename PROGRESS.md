@@ -30,7 +30,7 @@ Epic: [DAS-2](https://github.com/rachmad-jenss/ahs-id/issues/2) — CI, validati
 |-------|------|--------|
 | DAS-10 | Land CI on main | ✅ Done |
 | DAS-11 | Extend `validate-data.mjs` to all bundle packages | ✅ Done |
-| DAS-12 | CI `validateBundle` for all DataBundle packages | 🔨 Open |
+| DAS-12 | CI `validateBundle` for all DataBundle packages | ✅ Done |
 | DAS-13 | File-based golden fixtures with numeric lock | ✅ Done |
 | DAS-14 | `PROGRESS.md` + local `AGENTS.md` sync | ✅ Done |
 

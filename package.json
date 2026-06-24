@@ -5,6 +5,7 @@
   "description": "Open source AHSP calculation engine & data bundles for Indonesian construction cost estimation",
   "scripts": {
     "validate-data": "node scripts/validate-data.mjs",
+    "validate-bundles": "node scripts/validate-bundles.mjs",
     "build": "node scripts/validate-data.mjs && turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",

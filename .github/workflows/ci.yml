@@ -63,5 +63,8 @@ jobs:
       - name: Validate JSON data
         run: pnpm validate-data
 
+      - name: Validate cross-bundle references
+        run: pnpm validate-bundles
+
       - name: Test
         run: pnpm test
