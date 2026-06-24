@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "CLI for AHS-ID — AHSP calculation, RAB export, and bundle validation",
   "type": "module",
   "main": "dist/index.js",
@@ -8,7 +8,9 @@
   "bin": {
     "ahs-id": "dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "test": "vitest run",

@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/pupr-2023",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AHSP coefficient data bundle — Permen PUPR No. 8 Tahun 2023",
   "type": "module",
   "main": "dist/index.js",
@@ -11,7 +11,10 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "data"],
+  "files": [
+    "dist",
+    "data"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "typecheck": "tsc --noEmit",

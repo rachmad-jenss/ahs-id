@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/hsd-papua-2025",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HSD regional price data — Papua Q1 2025",
   "type": "module",
   "main": "dist/index.js",
@@ -11,7 +11,10 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "data"],
+  "files": [
+    "dist",
+    "data"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "typecheck": "tsc --noEmit",
