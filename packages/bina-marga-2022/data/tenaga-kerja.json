@@ -3,7 +3,7 @@
   "sumber": "Permen PUPR 1/2022",
   "items": [
     {
-      "kode": "L01",
+      "kode": "L.01",
       "nama": "Pekerja",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -11,7 +11,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L02",
+      "kode": "L.02",
       "nama": "Tukang",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -19,7 +19,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L03",
+      "kode": "L.03",
       "nama": "M a n d o r",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -27,7 +27,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L04",
+      "kode": "L.04",
       "nama": "Operator",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -35,7 +35,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L05",
+      "kode": "L.05",
       "nama": "Pembantu Operator",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -43,7 +43,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L06",
+      "kode": "L.06",
       "nama": "Sopir / Driver",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -51,7 +51,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L07",
+      "kode": "L.07",
       "nama": "Pembantu Sopir / Driver",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -59,7 +59,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L08",
+      "kode": "L.08",
       "nama": "Mekanik",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -67,7 +67,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L09",
+      "kode": "L.09",
       "nama": "Pembantu Mekanik",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -75,7 +75,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L10",
+      "kode": "L.10",
       "nama": "Kepala Tukang",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -83,7 +83,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L11",
+      "kode": "L.11",
       "nama": "Tenaga Ahli Muda S1 (1 Tahun)",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -91,7 +91,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L12",
+      "kode": "L.12",
       "nama": "Tenaga Ahli Muda S1 (5 Tahun)",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -99,7 +99,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L16",
+      "kode": "L.16",
       "nama": "CAD / CAM OPERATOR",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -107,7 +107,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L17",
+      "kode": "L.17",
       "nama": "SOFTWARE PROGRAMMER / IMPLEMENTER",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -115,7 +115,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L18",
+      "kode": "L.18",
       "nama": "HARDWARE TECHNICIAN",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -123,7 +123,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L19",
+      "kode": "L.19",
       "nama": "FACILITATOR",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -131,7 +131,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L20",
+      "kode": "L.20",
       "nama": "SENIOR ASSISTANT PROFESSIONAL STAFF",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -139,7 +139,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L21",
+      "kode": "L.21",
       "nama": "ASSISTANT PROFESSIONAL STAFF",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -147,7 +147,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L22",
+      "kode": "L.22",
       "nama": "SPECIAL TECHNICIAN / INSPECTOR",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -155,7 +155,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L23",
+      "kode": "L.23",
       "nama": "TECHNICIAN",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -163,7 +163,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L24",
+      "kode": "L.24",
       "nama": "INSPECTOR",
       "satuan": "OH",
       "satuan_sumber": "Jam",
@@ -171,7 +171,7 @@
       "jam_efektif": 7
     },
     {
-      "kode": "L25",
+      "kode": "L.25",
       "nama": "SURVEYOR",
       "satuan": "OH",
       "satuan_sumber": "Jam",

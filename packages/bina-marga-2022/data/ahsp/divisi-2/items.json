@@ -12,13 +12,13 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0361445783,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.253012 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0060240964,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.042169 Jam/m3 ÷ 7.0 jam/OH"
@@ -27,7 +27,7 @@
     "bahan": [],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -44,7 +44,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -102,19 +102,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0229489386,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.160643 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2753872633,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.927711 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.2753872633,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.927711 Jam/m3 ÷ 7.0 jam/OH"
@@ -122,21 +122,21 @@
     ],
     "bahan": [
       {
-        "ref": "M02",
+        "ref": "M.02",
         "koefisien": 1.4744680851,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 154.088,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.5854351145,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -145,7 +145,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -216,19 +216,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0748288392,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.523802 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0427593367,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.299315 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0053449171,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.037414 Jam/m1 ÷ 7.0 jam/OH"
@@ -236,7 +236,7 @@
     ],
     "bahan": [
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.1841319,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -245,7 +245,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -262,7 +262,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -279,7 +279,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -353,19 +353,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1964257028,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.37498 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.1122432587,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.785703 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0140304073,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.098213 Jam/m1 ÷ 7.0 jam/OH"
@@ -373,7 +373,7 @@
     ],
     "bahan": [
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.2177991,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -382,7 +382,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -399,7 +399,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -416,7 +416,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -490,19 +490,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1122432587,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.785703 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.064139005,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.448973 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0080173756,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.056122 Jam/m1 ÷ 7.0 jam/OH"
@@ -511,7 +511,7 @@
     "bahan": [],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -528,7 +528,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -545,7 +545,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -613,19 +613,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1068983417,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.748288 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.064139005,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.448973 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0106898342,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.074829 Jam/m1 ÷ 7.0 jam/OH"
@@ -633,21 +633,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.073383372,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M39a",
+        "ref": "M.39a",
         "koefisien": 5.5783004075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.719622576,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -656,7 +656,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -673,7 +673,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -690,7 +690,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -750,19 +750,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1233442404,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.86341 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0740065442,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.518046 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.012334424,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.086341 Jam/m1 ÷ 7.0 jam/OH"
@@ -770,21 +770,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.1350096144,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 10.4128274273,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.994934025,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -793,7 +793,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -810,7 +810,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -827,7 +827,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -885,19 +885,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1336229271,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.93536 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0801737562,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.561216 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0133622927,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.093536 Jam/m1 ÷ 7.0 jam/OH"
@@ -905,14 +905,14 @@
     ],
     "bahan": [
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 13.8837699031,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 1.5523125,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -921,7 +921,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -938,7 +938,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -955,7 +955,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1013,19 +1013,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1336229271,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.93536 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0801737562,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.561216 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0133622927,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.093536 Jam/m1 ÷ 7.0 jam/OH"
@@ -1033,14 +1033,14 @@
     ],
     "bahan": [
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 40.4488760659,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 1.9113525,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1049,7 +1049,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1066,7 +1066,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1083,7 +1083,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1141,19 +1141,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1603475125,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.122433 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0962085075,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.67346 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0160347512,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.112243 Jam/m1 ÷ 7.0 jam/OH"
@@ -1161,21 +1161,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.4165751859,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 66.6916804274,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 2.31,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1184,7 +1184,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1201,7 +1201,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1218,7 +1218,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1283,19 +1283,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.229067875,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.603475 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.137440725,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.962085 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0229067875,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.160348 Jam/m1 ÷ 7.0 jam/OH"
@@ -1303,21 +1303,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.6508987279,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 92.0419567237,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 2.9623125,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1326,7 +1326,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1343,7 +1343,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10a",
+        "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1360,7 +1360,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1427,19 +1427,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.25655602,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.795892 Jam/ton ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0962085075,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.67346 Jam/ton ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0320695025,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.224487 Jam/ton ÷ 7.0 jam/OH"
@@ -1447,14 +1447,14 @@
     ],
     "bahan": [
       {
-        "ref": "M46",
+        "ref": "M.46",
         "koefisien": 1030,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 18.7630080849,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1463,7 +1463,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1480,7 +1480,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E10",
+        "ref": "E.10",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1497,7 +1497,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1557,19 +1557,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1121151272,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.784806 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0672690763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.470884 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0112115127,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.078481 Jam/m1 ÷ 7.0 jam/OH"
@@ -1577,21 +1577,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.113832,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 12.52152,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.1664,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1600,7 +1600,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1617,7 +1617,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1675,19 +1675,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0840863454,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.588604 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0504518072,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.353163 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0084086345,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.05886 Jam/m1 ÷ 7.0 jam/OH"
@@ -1695,21 +1695,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.1632,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 17.952,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.215,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1718,7 +1718,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1735,7 +1735,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1793,19 +1793,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0840863454,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.588604 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0504518072,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.353163 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0084086345,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.05886 Jam/m1 ÷ 7.0 jam/OH"
@@ -1813,21 +1813,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.20808,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 22.8888,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 0.3624,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1836,7 +1836,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E11",
+        "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1853,7 +1853,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1911,19 +1911,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0960986804,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.672691 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0576592083,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.403614 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.009609868,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.067269 Jam/m1 ÷ 7.0 jam/OH"
@@ -1931,21 +1931,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.29784,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 32.7624,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 1.1744,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -1954,7 +1954,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -1971,7 +1971,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2029,19 +2029,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1201233505,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.840863 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0720740103,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.504518 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0120123351,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.084086 Jam/m1 ÷ 7.0 jam/OH"
@@ -2049,21 +2049,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.457725,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 50.34975,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 3.14,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2072,7 +2072,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2089,7 +2089,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2154,19 +2154,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.140143909,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.981007 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0840863454,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.588604 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0140143909,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.098101 Jam/m1 ÷ 7.0 jam/OH"
@@ -2174,21 +2174,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.562785,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 61.90635,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 6.9504,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2197,7 +2197,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2214,7 +2214,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2281,19 +2281,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1681726908,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.177209 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.1009036145,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.706325 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0168172691,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.117721 Jam/m1 ÷ 7.0 jam/OH"
@@ -2301,21 +2301,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.809472,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 89.04192,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 13.4504,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2324,7 +2324,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2341,7 +2341,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2408,19 +2408,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.177023885,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.239167 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.106214331,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.7435 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0177023885,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.123917 Jam/m1 ÷ 7.0 jam/OH"
@@ -2428,21 +2428,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 0.85068,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 93.5748,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 18.015,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2451,7 +2451,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2468,7 +2468,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2535,19 +2535,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1921973609,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.345382 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.1153184165,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.807229 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0192197361,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.134538 Jam/m1 ÷ 7.0 jam/OH"
@@ -2555,21 +2555,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 1.042848,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 114.71328,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 23.6384,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2578,7 +2578,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2595,7 +2595,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2662,19 +2662,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.2156060138,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.509242 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.1293636083,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.905545 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0215606014,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.150924 Jam/m1 ÷ 7.0 jam/OH"
@@ -2682,21 +2682,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 1.219104,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 134.10144,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 38.6664,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2705,7 +2705,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2722,7 +2722,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2789,19 +2789,19 @@
     ],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.2402467011,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.681727 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.1441480207,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.009036 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0240246701,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.168173 Jam/m1 ÷ 7.0 jam/OH"
@@ -2809,21 +2809,21 @@
     ],
     "bahan": [
       {
-        "ref": "M59",
+        "ref": "M.59",
         "koefisien": 1.370064,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3/M'"
       },
       {
-        "ref": "M39",
+        "ref": "M.39",
         "koefisien": 150.70704,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg/M'"
       },
       {
-        "ref": "M09",
+        "ref": "M.09",
         "koefisien": 59.84,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2832,7 +2832,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E08",
+        "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2849,7 +2849,7 @@
         "catatan": "Satuan: jam"
       },
       {
-        "ref": "E25",
+        "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2909,19 +2909,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0060301205,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.042211 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.012060241,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.084422 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.0241204819,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.168843 Jam/m1 ÷ 7.0 jam/OH"
@@ -2929,49 +2929,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 32.0549229,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.0640850555,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.0834932374,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 19.444425,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 26.7232039255,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0105105,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -2980,7 +2980,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -2997,7 +2997,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3014,7 +3014,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3071,19 +3071,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3091,49 +3091,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 64.0778229,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.12810609,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.166903065,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 38.869425,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 35.542157159,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0210105,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3142,7 +3142,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3159,7 +3159,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3176,7 +3176,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3233,19 +3233,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3253,49 +3253,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 36.6570711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.0732857928,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.0954804212,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 22.236075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 31.902119415,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0120195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3304,7 +3304,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3321,7 +3321,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3338,7 +3338,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3395,19 +3395,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3415,49 +3415,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 73.2546711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.1464526893,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.1908059384,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 44.436075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 41.6088867323,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0240195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3466,7 +3466,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3483,7 +3483,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3500,7 +3500,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3557,19 +3557,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3577,49 +3577,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 41.2317711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.0824316548,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.1073961109,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 25.011075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 32.9379025129,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0135195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3628,7 +3628,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3645,7 +3645,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3662,7 +3662,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3719,19 +3719,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3739,49 +3739,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 82.4040711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.1647444134,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.2146373178,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 49.986075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 43.6508591253,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0270195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3790,7 +3790,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3807,7 +3807,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3824,7 +3824,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3881,19 +3881,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -3901,49 +3901,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 50.3811711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.100723379,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.1312274902,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 30.561075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 35.0094687086,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0165195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -3952,7 +3952,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3969,7 +3969,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -3986,7 +3986,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4043,19 +4043,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -4063,49 +4063,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 100.7028711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.2013278617,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.2623000764,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 61.086075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 48.0899295448,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0330195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4114,7 +4114,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4131,7 +4131,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4148,7 +4148,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4205,19 +4205,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -4225,49 +4225,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 59.5305711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.1190151031,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.1550588695,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 36.111075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 37.0810349044,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0195195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4276,7 +4276,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4293,7 +4293,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4310,7 +4310,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4367,19 +4367,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -4387,49 +4387,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 119.0016711,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.23791131,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.309962835,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 72.186075,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 53.0025008091,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0390195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4438,7 +4438,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4455,7 +4455,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4472,7 +4472,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4529,19 +4529,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -4549,49 +4549,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 59.5671687,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.11908827,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.155154195,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 36.133275,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 67.0266751345,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0195315,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4600,7 +4600,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4617,7 +4617,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4634,7 +4634,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4691,19 +4691,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0573723465,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.401606 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.2868617326,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.008032 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.5737234653,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 4.016064 Jam/m1 ÷ 7.0 jam/OH"
@@ -4711,49 +4711,49 @@
     ],
     "bahan": [
       {
-        "ref": "M12",
+        "ref": "M.12",
         "koefisien": 119.0382687,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.2379844769,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.3100581605,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M195",
+        "ref": "M.195",
         "koefisien": 1,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: bh/M'"
       },
       {
-        "ref": "M170",
+        "ref": "M.170",
         "koefisien": 72.208275,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Liter"
       },
       {
-        "ref": "M57a",
+        "ref": "M.57a",
         "koefisien": 82.9481410392,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
       },
       {
-        "ref": "M14",
+        "ref": "M.14",
         "koefisien": 0.0390315,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4762,7 +4762,7 @@
     ],
     "peralatan": [
       {
-        "ref": "E06",
+        "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4779,7 +4779,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E20",
+        "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4796,7 +4796,7 @@
         "catatan": "Satuan: Jam"
       },
       {
-        "ref": "E23",
+        "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
         "mode_biaya": "ownership",
@@ -4853,19 +4853,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.4166666667,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.916667 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 3.75,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 26.25 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 7.5,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 52.5 Jam/m3 ÷ 7.0 jam/OH"
@@ -4873,14 +4873,14 @@
     ],
     "bahan": [
       {
-        "ref": "M02",
+        "ref": "M.02",
         "koefisien": 1.26,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M01",
+        "ref": "M.01",
         "koefisien": 0.3910344828,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4929,13 +4929,13 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.4,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.8 Jam/m3 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.1,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.7 Jam/m3 ÷ 7.0 jam/OH"
@@ -4943,14 +4943,14 @@
     ],
     "bahan": [
       {
-        "ref": "M03",
+        "ref": "M.03",
         "koefisien": 0.55125,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: M3"
       },
       {
-        "ref": "M10a",
+        "ref": "M.10a",
         "koefisien": 0.76125,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -4999,19 +4999,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1666666667,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.166667 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.3333333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 2.333333 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
@@ -5019,7 +5019,7 @@
     ],
     "bahan": [
       {
-        "ref": "M25",
+        "ref": "M.25",
         "koefisien": 1.02,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -5068,19 +5068,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1666666667,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.166667 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
@@ -5088,7 +5088,7 @@
     ],
     "bahan": [
       {
-        "ref": "M25",
+        "ref": "M.25",
         "koefisien": 1.02,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -5137,19 +5137,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1666666667,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.166667 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
@@ -5157,7 +5157,7 @@
     ],
     "bahan": [
       {
-        "ref": "M25",
+        "ref": "M.25",
         "koefisien": 1.02,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
@@ -5206,19 +5206,19 @@
     "sub_ahsp": [],
     "tenaga_kerja": [
       {
-        "ref": "L01",
+        "ref": "L.01",
         "koefisien": 0.1666666667,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 1.166667 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L02",
+        "ref": "L.02",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
       },
       {
-        "ref": "L03",
+        "ref": "L.03",
         "koefisien": 0.0833333333,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.583333 Jam/m1 ÷ 7.0 jam/OH"
@@ -5226,7 +5226,7 @@
     ],
     "bahan": [
       {
-        "ref": "M25",
+        "ref": "M.25",
         "koefisien": 1.02,
         "koef_sumber": "kalkulasi",
         "volume_state": null,

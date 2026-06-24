@@ -107,6 +107,8 @@ export type { ProduktivitasResult } from './calculator/produktivitas/siklus.js';
 
 export { calcHspFixedCoefficient } from './calculator/fixed-coefficient.js';
 
+export { calcHspFromBundle } from './calculator/bundle-calc.js';
+
 export { exportHspToExcelBuffer } from './exporter/excel.js';
 
 export type {

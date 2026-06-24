@@ -225,12 +225,11 @@ describe('hitungHSP', () => {
     expect(tk.total).toBe(tk.components.reduce((s, c) => s + c.total_price, 0));
   });
 
-  it('bahan uses raw koefisien from item (volume conversion planned)', () => {
+  it('bahan applies volume conversion (loose→bank)', () => {
     const result = calc.hitungHSP('3.2.1', BASE_VARS);
     const bahan = result.groups[1];
-    // Bahan coefficient = raw koefisien (1.0) — volume conversion
-    // belum diimplementasi untuk bahan, hanya untuk peralatan
-    expect(bahan.components[0].coefficient).toBe(1.0);
+    // Volume conversion: loose→bank using factor 1/1.025 ≈ 0.9756
+    expect(bahan.components[0].coefficient).toBeCloseTo(0.9756, 3);
   });
 
   it('peralatan uses productivity formulas', () => {

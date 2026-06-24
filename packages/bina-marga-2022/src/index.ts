@@ -1,4 +1,17 @@
-import type { BundleMeta, AhspItem } from '@ahs-id/core';
+import type {
+  BundleMeta,
+  AhspItem,
+  DataBundle,
+  TenagaKerjaBundle,
+  BahanMasterBundle,
+  PeralatanMasterBundle,
+  FaktorKonversi,
+} from '@ahs-id/core';
+
+import tenagaKerjaData from '../data/tenaga-kerja.json' with { type: 'json' };
+import bahanMasterData from '../data/bahan-master.json' with { type: 'json' };
+import peralatanMasterData from '../data/peralatan-master.json' with { type: 'json' };
+import faktorKonversiData from '../data/faktor-konversi.json' with { type: 'json' };
 
 import divisi2Data from '../data/ahsp/divisi-2/items.json' with { type: 'json' };
 import divisi3Data from '../data/ahsp/divisi-3/items.json' with { type: 'json' };
@@ -26,6 +39,11 @@ export const meta: BundleMeta = {
   },
 };
 
+export const tenagaKerja = tenagaKerjaData as unknown as TenagaKerjaBundle;
+export const bahanMaster = bahanMasterData as unknown as BahanMasterBundle;
+export const peralatanMaster = peralatanMasterData as unknown as PeralatanMasterBundle;
+export const faktorKonversi = faktorKonversiData as unknown as FaktorKonversi;
+
 export const ahspItems: readonly AhspItem[] = [
   ...(divisi2Data as unknown as AhspItem[]),
   ...(divisi3Data as unknown as AhspItem[]),
@@ -37,3 +55,12 @@ export const ahspItems: readonly AhspItem[] = [
   ...(divisi9Data as unknown as AhspItem[]),
   ...(divisi10Data as unknown as AhspItem[]),
 ];
+
+export const bundle: DataBundle = {
+  meta,
+  tenaga_kerja: tenagaKerja,
+  bahan: bahanMaster,
+  peralatan: peralatanMaster,
+  faktor_konversi: faktorKonversi,
+  ahsp_items: ahspItems as unknown as DataBundle['ahsp_items'],
+};

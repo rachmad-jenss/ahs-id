@@ -25,13 +25,11 @@ const BUNDLE_REGISTRY: Record<string, () => Promise<CalculatorBundle>> = {
     return { bundle: bundle as DataBundle, hsd: hsd as HsdRegional };
   },
   'bina-marga-2022': async () => {
-    await import('@ahs-id/bina-marga-2022');
-    // bina-marga-2022 exports ahspItems + meta but not a full DataBundle
-    // User must assemble with a valid HSD and core bundle structure
-    throw new Error(
-      'bina-marga-2022 uses a separate calc path — use pupr-2023 or cipta-karya-2024 for createCalculator. ' +
-      'bina-marga-2022 items are accessed through @ahs-id/bina-marga-2022 directly.',
-    );
+    const [bmMod, hsdMod] = await Promise.all([
+      import('@ahs-id/bina-marga-2022'),
+      import('@ahs-id/hsd-kaltim-2025'),
+    ]);
+    return { bundle: bmMod.bundle as DataBundle, hsd: hsdMod.hsd as HsdRegional, note: 'pre-calculated (calcHspFromBundle)' };
   },
 };
 

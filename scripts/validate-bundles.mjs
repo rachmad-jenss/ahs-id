@@ -48,7 +48,7 @@ const BUNDLES = [
   {
     label: 'bina-marga-2022',
     skip: true,
-    note: 'separate calc path — DataBundle assembly not yet available',
+    note: 'DataBundle assembled (422 items) — full HSD cross-ref pending data normalization (1169 ref gaps in hsd-kaltim-2025)',
   },
   {
     label: 'cipta-karya-2024',

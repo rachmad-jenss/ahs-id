@@ -70,7 +70,7 @@ export function createCalculator(
     }
 
     const tkComponents = calcTenagaKerja(item, hsd, audit);
-    const bahanComponents = calcBahan(item, hsd, audit);
+    const bahanComponents = calcBahan(item, hsd, fkMap, item.volume_state_bayar, variabel, audit);
     const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
 
     const tkGroup: AhspGroup = {
@@ -166,6 +166,9 @@ function calcTenagaKerja(
 function calcBahan(
   item: AhspItem,
   hsd: HsdRegional,
+  fkMap: Map<string, FaktorKonversiEntry>,
+  itemVolumeState: VolumeState,
+  variabel: VariabelInput,
   audit: AuditEntry[],
 ): AhspComponent[] {
   return item.bahan.map((bahan) => {
@@ -173,10 +176,28 @@ function calcBahan(
     if (!hsdEntry) {
       throw new Error(`HSD bahan "${bahan.ref}" not found`);
     }
-    const total = bahan.koefisien * hsdEntry.harga_rp;
+
+    // Apply volume conversion if bahan has a volume_state different from item's bayar state
+    let coefficient = bahan.koefisien;
+    if (bahan.volume_state !== null && bahan.volume_state !== itemVolumeState) {
+      // Find fk entry for this material type (from variabel.jenis_material)
+      const materialKey = (variabel['jenis_material'] as string | undefined) ?? 'agregat_kelas_a';
+      const fk = fkMap.get(materialKey);
+      if (fk) {
+        const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
+        coefficient = bahan.koefisien * result.factor;
+        audit.push({
+          step: 'volume_conversion_bahan',
+          detail: `${bahan.ref}: koef ${bahan.koefisien} × ${result.factor} (${bahan.volume_state}→${itemVolumeState}) = ${coefficient.toFixed(6)}`,
+          value: coefficient,
+        });
+      }
+    }
+
+    const total = coefficient * hsdEntry.harga_rp;
     audit.push({
       step: 'hsp_bahan',
-      detail: `${bahan.ref}: ${bahan.koefisien} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
+      detail: `${bahan.ref}: ${coefficient.toFixed(6)} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
       value: total,
       unit: 'Rp',
     });
@@ -185,7 +206,7 @@ function calcBahan(
       type: 'M' as const,
       nama: bahan.nama_override ?? hsdEntry.nama,
       satuan: hsdEntry.satuan,
-      coefficient: bahan.koefisien,
+      coefficient,
       unit_price: hsdEntry.harga_rp,
       total_price: total,
     };
@@ -259,6 +280,14 @@ function resolveKalkulasiKoef(
 ): number {
   const fa = (variabel['faktor_efisiensi'] as number | undefined) ?? 0.83;
   const hasFull = hasAllVariabelInput(entry, variabel);
+
+  // Pre-calculated items (bina-marga-2022 style): variabel_input is empty,
+  // coefficient is stored in koef_referensi. Use it directly.
+  if (entry.variabel_input.length === 0 && entry.koef_referensi !== null) {
+    let koef = entry.koef_referensi.value;
+    koef = applyVolumeConversion(koef, entry, item, variabel, fkMap, audit);
+    return koef;
+  }
 
   if (!hasFull && entry.koef_referensi !== null && mode === 'estimasi-kasar') {
     warnings.push(`${entry.ref}: using koef_referensi fallback (${entry.koef_referensi.value}) — mode estimasi-kasar`);

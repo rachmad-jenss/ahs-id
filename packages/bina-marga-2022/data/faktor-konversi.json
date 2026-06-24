@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "derivation_rule": "Permen PUPR 1/2022 — Standard earthwork volume conversion",
+  "items": [
+    {
+      "material": "tanah_biasa",
+      "bank_to_loose": 1.25,
+      "bank_to_compacted": 0.85,
+      "berat_jenis_bank_ton_m3": 1.6
+    },
+    {
+      "material": "tanah_lempung",
+      "bank_to_loose": 1.35,
+      "bank_to_compacted": 0.9,
+      "berat_jenis_bank_ton_m3": 1.8
+    },
+    {
+      "material": "kerikil",
+      "bank_to_loose": 1.18,
+      "bank_to_compacted": 0.91,
+      "berat_jenis_bank_ton_m3": 1.7
+    },
+    {
+      "material": "batu_pecah",
+      "bank_to_loose": 1.15,
+      "bank_to_compacted": 0.88,
+      "berat_jenis_bank_ton_m3": 1.9
+    },
+    {
+      "material": "agregat_kelas_a",
+      "bank_to_loose": 1.025,
+      "bank_to_compacted": 1.15,
+      "berat_jenis_bank_ton_m3": 1.8
+    }
+  ]
+}
