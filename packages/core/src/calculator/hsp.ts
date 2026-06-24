@@ -16,6 +16,19 @@ import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
 import { hitungMargin } from './margin.js';
 import { convertVolume } from './konversi-volume.js';
 import { resolveSubAhsp } from './sub-ahsp.js';
+import {
+  produktivitasDumpTruck,
+  produktivitasExcavator,
+  produktivitasWheelLoader,
+  produktivitasWaterTanker,
+  produktivitasVibroRoller,
+  produktivitasMotorGrader,
+  produktivitasThroughput,
+  type ProduktivitasResult,
+} from './produktivitas/index.js';
+import type { SiklusDumpTruckParams, SiklusExcavatorParams, SiklusWheelLoaderParams, SiklusWaterTankerParams } from './produktivitas/siklus.js';
+import type { LintasanVibroRollerParams, LintasanMotorGraderParams } from './produktivitas/lintasan.js';
+import type { ThroughputParams } from './produktivitas/throughput.js';
 
 export interface Calculator {
   readonly hitungHSP: (kodeAhsp: string, variabel: VariabelInput) => HSPResult;
@@ -128,7 +141,7 @@ function calcTenagaKerja(
     return {
       ref: tk.ref,
       type: 'L' as const,
-      nama: hsdEntry.ref,
+      nama: tk.ref,
       satuan: 'OH',
       coefficient: tk.koefisien,
       unit_price: hsdEntry.harga_rp,
@@ -217,6 +230,10 @@ function calcPeralatan(
   });
 }
 
+// ============================================================
+// Coefficient resolution — productivity-based (kalkulasi)
+// ============================================================
+
 function resolveKalkulasiKoef(
   entry: AhspItem['peralatan'][number],
   alat: DataBundle['peralatan']['items'][number],
@@ -248,11 +265,12 @@ function resolveKalkulasiKoef(
     throw new Error(`${entry.ref}: missing required variabel_input: ${missing.join(', ')}`);
   }
 
-  const produktivitas = calcProduktivitas(alat, variabel, fa, audit);
-  const rawKoef = 1 / produktivitas;
+  const prodResult = calcProduktivitas(alat, variabel, fa);
+  const rawKoef = 1 / prodResult.produktivitas;
+  audit.push(...prodResult.audit);
   audit.push({
     step: 'koef_from_productivity',
-    detail: `${entry.ref}: 1/${produktivitas.toFixed(4)} = ${rawKoef.toFixed(6)}`,
+    detail: `${entry.ref}: 1/${prodResult.produktivitas.toFixed(4)} = ${rawKoef.toFixed(6)}`,
     value: rawKoef,
   });
 
@@ -267,86 +285,89 @@ function hasAllVariabelInput(
   return entry.variabel_input.every((v) => variabel[v] !== undefined);
 }
 
+// ============================================================
+// Productivity calculation — delegates to produktivitas/ modules
+// ============================================================
+
 function calcProduktivitas(
   alat: DataBundle['peralatan']['items'][number],
   variabel: VariabelInput,
   fa: number,
-  audit: AuditEntry[],
-): number {
+): ProduktivitasResult {
   const pp = alat.produktivitas_params;
 
   if (alat.tipe_produksi === 'siklus') {
     if (alat.kode === 'E.01') {
-      const V = alat.kapasitas_bucket_m3 ?? 0;
-      const Fb = resolveMapParam(pp['faktor_bucket'] as Record<string, number>, variabel['jenis_material'] as string, 1.0);
-      const Ts = resolveMapParam(pp['waktu_siklus_menit'] as Record<string, number>, null, 0.45);
-      const Q = (V * Fb * fa * 60) / Ts;
-      audit.push({ step: 'produktivitas_excavator', detail: `Q = (${V} × ${Fb} × ${fa} × 60) / ${Ts} = ${Q.toFixed(4)}`, value: Q, unit: 'm3/jam' });
-      return Q;
+      const params: SiklusExcavatorParams = {
+        kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 0,
+        faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number>, variabel['jenis_material'] as string, 1.0),
+        faktor_efisiensi: fa,
+        waktu_siklus_menit: resolveMapParam(pp['waktu_siklus_menit'] as Record<string, number>, null, 0.45),
+      };
+      return produktivitasExcavator(params);
     }
 
     if (alat.kode === 'E.08') {
-      const V = alat.kapasitas_m3 ?? 8;
-      const Fm = resolveMapParam(pp['faktor_muatan'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.95);
-      const jarakKm = (variabel['jarak_quarry_km'] ?? variabel['jarak_buang_km'] ?? variabel['jarak_angkut_km']) as number;
-      const kondisiJalan = (variabel['kondisi_jalan'] as string) ?? 'sedang';
-      const Vi = resolveSpeedParam(pp['kecepatan_isi_km_jam'] as Record<string, number>, kondisiJalan, 30);
-      const Vk = resolveSpeedParam(pp['kecepatan_kosong_km_jam'] as Record<string, number>, kondisiJalan, 40);
-      const Tmuat = (pp['waktu_muat_menit'] as number) ?? 2.5;
-      const Tbongkar = (pp['waktu_bongkar_menit'] as number) ?? 1.5;
-      const Ttunggu = (pp['waktu_tunggu_menit'] as number) ?? 1.0;
-      const Ts = Tmuat + (jarakKm / Vi) * 60 + (jarakKm / Vk) * 60 + Tbongkar + Ttunggu;
-      const Q = (V * Fm * fa * 60) / Ts;
-      audit.push({ step: 'produktivitas_dump_truck', detail: `Ts=${Ts.toFixed(2)} min, Q = (${V} × ${Fm} × ${fa} × 60) / ${Ts.toFixed(2)} = ${Q.toFixed(4)}`, value: Q, unit: 'm3/jam' });
-      return Q;
+      const params: SiklusDumpTruckParams = {
+        kapasitas_m3: alat.kapasitas_m3 ?? 8,
+        faktor_muatan: resolveMapParam(pp['faktor_muatan'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.95),
+        jarak_km: (variabel['jarak_quarry_km'] ?? variabel['jarak_buang_km'] ?? variabel['jarak_angkut_km']) as number,
+        kecepatan_isi_km_jam: resolveSpeedParam(pp['kecepatan_isi_km_jam'] as Record<string, number>, variabel['kondisi_jalan'] as string, 30),
+        kecepatan_kosong_km_jam: resolveSpeedParam(pp['kecepatan_kosong_km_jam'] as Record<string, number>, variabel['kondisi_jalan'] as string, 40),
+        waktu_muat_menit: (pp['waktu_muat_menit'] as number) ?? 2.5,
+        waktu_bongkar_menit: (pp['waktu_bongkar_menit'] as number) ?? 1.5,
+        waktu_tunggu_menit: (pp['waktu_tunggu_menit'] as number) ?? 1.0,
+        faktor_efisiensi: fa,
+      };
+      return produktivitasDumpTruck(params);
     }
 
     if (alat.kode === 'E.11') {
-      const V = alat.kapasitas_bucket_m3 ?? 1.5;
-      const Fb = resolveMapParam(pp['faktor_bucket'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.85);
-      const Ts = (pp['waktu_siklus_menit'] as number) ?? 0.50;
-      const Q = (V * Fb * fa * 60) / Ts;
-      audit.push({ step: 'produktivitas_wheel_loader', detail: `Q = (${V} × ${Fb} × ${fa} × 60) / ${Ts} = ${Q.toFixed(4)}`, value: Q, unit: 'm3/jam' });
-      return Q;
+      const params: SiklusWheelLoaderParams = {
+        kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 1.5,
+        faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.85),
+        faktor_efisiensi: fa,
+        waktu_siklus_menit: (pp['waktu_siklus_menit'] as number) ?? 0.50,
+      };
+      return produktivitasWheelLoader(params);
     }
 
     if (alat.kode === 'E.25') {
-      const kapLiter = (pp['kapasitas_liter'] as number) ?? 4000;
-      const kebutuhanAir = (pp['kebutuhan_air_liter_per_m3'] as number) ?? 70;
-      const jarakKm = (variabel['jarak_sumber_air_km'] as number) ?? 5;
-      const Vi = 25;
-      const Vk = 35;
-      const Tmuat = 3.0;
-      const Tbongkar = 5.0;
-      const Ttunggu = 1.0;
-      const Ts = Tmuat + (jarakKm / Vi) * 60 + (jarakKm / Vk) * 60 + Tbongkar + Ttunggu;
-      const Qliter = (kapLiter * fa * 60) / Ts;
-      const Q = Qliter / kebutuhanAir;
-      audit.push({ step: 'produktivitas_water_tanker', detail: `Ts=${Ts.toFixed(2)} min, Q = ${Qliter.toFixed(2)} l/jam / ${kebutuhanAir} = ${Q.toFixed(4)}`, value: Q, unit: 'm3/jam' });
-      return Q;
+      const params: SiklusWaterTankerParams = {
+        kapasitas_liter: (pp['kapasitas_liter'] as number) ?? 4000,
+        jarak_km: (variabel['jarak_sumber_air_km'] as number) ?? 5,
+        kecepatan_isi_km_jam: 25,
+        kecepatan_kosong_km_jam: 35,
+        waktu_muat_menit: 3.0,
+        waktu_bongkar_menit: 5.0,
+        waktu_tunggu_menit: 1.0,
+        faktor_efisiensi: fa,
+        kebutuhan_air_liter_per_m3: (pp['kebutuhan_air_liter_per_m3'] as number) ?? 70,
+      };
+      return produktivitasWaterTanker(params);
     }
   }
 
   if (alat.tipe_produksi === 'lintasan') {
     if (alat.kode === 'E.22') {
-      const vKm = resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 2.5);
-      const vM = vKm * 1000;
-      const b = (pp['lebar_efektif_m'] as number) ?? 2.0;
-      const t = (variabel['tebal_hamparan_m'] as number | undefined) ?? 0.20;
-      const n = (variabel['jumlah_passing'] as number | undefined) ?? 6;
-      const Q = (vM * b * t * fa) / n;
-      audit.push({ step: 'produktivitas_vibro_roller', detail: `Q = (${vM} × ${b} × ${t} × ${fa}) / ${n} = ${Q.toFixed(4)}`, value: Q, unit: 'm3/jam' });
-      return Q;
+      const params: LintasanVibroRollerParams = {
+        kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 2.5),
+        lebar_efektif_m: (pp['lebar_efektif_m'] as number) ?? 2.0,
+        tebal_hamparan_m: (variabel['tebal_hamparan_m'] as number | undefined) ?? 0.20,
+        jumlah_passing: (variabel['jumlah_passing'] as number | undefined) ?? 6,
+        faktor_efisiensi: fa,
+      };
+      return produktivitasVibroRoller(params);
     }
 
     if (alat.kode === 'E.19') {
-      const vKm = resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 3.0);
-      const vM = vKm * 1000;
-      const b = (pp['lebar_efektif_m'] as number) ?? 2.4;
-      const n = (variabel['jumlah_lintasan'] as number | undefined) ?? 6;
-      const Q = (vM * b * fa) / n;
-      audit.push({ step: 'produktivitas_motor_grader', detail: `Q = (${vM} × ${b} × ${fa}) / ${n} = ${Q.toFixed(4)} m2/jam`, value: Q, unit: 'm2/jam' });
-      return Q;
+      const params: LintasanMotorGraderParams = {
+        kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 3.0),
+        lebar_efektif_m: (pp['lebar_efektif_m'] as number) ?? 2.4,
+        jumlah_lintasan: (variabel['jumlah_lintasan'] as number | undefined) ?? 6,
+        faktor_efisiensi: fa,
+      };
+      return produktivitasMotorGrader(params);
     }
   }
 
@@ -355,19 +376,20 @@ function calcProduktivitas(
       ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
       ?? (pp['kapasitas_rated'] as number | undefined)
       ?? 0;
-    const satuan = pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam';
-    const Q = kapasitas * fa;
-    audit.push({
-      step: 'produktivitas_throughput',
-      detail: `Q = ${kapasitas} × ${fa} = ${Q.toFixed(4)}`,
-      value: Q,
-      unit: satuan,
-    });
-    return Q;
+    const params: ThroughputParams = {
+      kapasitas_rated: kapasitas,
+      satuan_kapasitas: pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam',
+      faktor_efisiensi: fa,
+    };
+    return produktivitasThroughput(params);
   }
 
   throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);
 }
+
+// ============================================================
+// Volume conversion
+// ============================================================
 
 function applyVolumeConversion(
   koef: number,
@@ -395,6 +417,10 @@ function applyVolumeConversion(
   });
   return converted;
 }
+
+// ============================================================
+// Helpers
+// ============================================================
 
 function resolveMapParam(
   map: Record<string, number> | undefined,

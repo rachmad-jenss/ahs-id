@@ -1,3 +1,5 @@
+export type { ProduktivitasResult } from './siklus.js';
+
 export {
   produktivitasDumpTruck,
   produktivitasExcavator,
