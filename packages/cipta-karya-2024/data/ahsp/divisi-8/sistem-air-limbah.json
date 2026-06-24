@@ -70,7 +70,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -144,7 +145,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -218,7 +220,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -292,7 +295,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -366,7 +370,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -440,7 +445,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -487,19 +493,19 @@
       {
         "nama": "Galian tanah biasa",
         "satuan": "M3",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 45000
       },
       {
         "nama": "Buis beton dia. 80 cm",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 255400
       },
       {
         "nama": "Ijuk",
         "satuan": "kg",
-        "koefisien": 9.0,
+        "koefisien": 9,
         "harga_satuan_ref": 7000
       },
       {
@@ -556,7 +562,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -603,19 +610,19 @@
       {
         "nama": "Galian tanah biasa",
         "satuan": "M3",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 45000
       },
       {
         "nama": "Buis beton dia. 80 cm",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 255400
       },
       {
         "nama": "Ijuk",
         "satuan": "kg",
-        "koefisien": 9.0,
+        "koefisien": 9,
         "harga_satuan_ref": 39700
       },
       {
@@ -654,7 +661,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -728,7 +736,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -802,7 +811,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -876,7 +886,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -950,7 +961,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Limbah",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

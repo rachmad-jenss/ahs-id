@@ -93,7 +93,7 @@
           "fa": 0.83,
           "tebal_hamparan_m": 0.3,
           "jumlah_passing": 8,
-          "kecepatan_km_jam": 2.0
+          "kecepatan_km_jam": 2
         }
       },
       "catatan": "Pemadatan timbunan per lapisan"
@@ -204,7 +204,8 @@
     "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
     "halaman": "III-30",
     "diverifikasi_oleh": null,
-    "tanggal_verifikasi": null
+    "tanggal_verifikasi": null,
+    "verification_tier": "auto-extracted"
   },
   "catatan_umum": [
     "Volume dibayar dalam m3 compacted (setelah pemadatan)",

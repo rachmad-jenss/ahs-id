@@ -44,7 +44,7 @@
           "fa": 0.83,
           "lebar_hamparan_m": 2.4,
           "jumlah_lintasan": 6,
-          "kecepatan_km_jam": 3.0
+          "kecepatan_km_jam": 3
         }
       },
       "catatan": "Perataan permukaan badan jalan"
@@ -121,8 +121,8 @@
       "satuan": "m",
       "tipe": "number",
       "default": 2.4,
-      "min": 1.0,
-      "max": 10.0
+      "min": 1,
+      "max": 10
     },
     "jumlah_lintasan": {
       "label": "Jumlah Lintasan Grader",
@@ -153,7 +153,8 @@
     "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
     "halaman": "III-35",
     "diverifikasi_oleh": null,
-    "tanggal_verifikasi": null
+    "tanggal_verifikasi": null,
+    "verification_tier": "auto-extracted"
   },
   "catatan_umum": [
     "Satuan bayar dalam m2 (area, bukan volume)",

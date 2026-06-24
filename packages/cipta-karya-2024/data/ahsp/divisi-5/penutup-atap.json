@@ -43,7 +43,7 @@
       {
         "nama": "Genteng palentong",
         "satuan": "buah",
-        "koefisien": 25.0,
+        "koefisien": 25,
         "harga_satuan_ref": 2800
       }
     ],
@@ -70,7 +70,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -117,7 +118,7 @@
       {
         "nama": "Genteng kodok glazuur",
         "satuan": "buah",
-        "koefisien": 25.0,
+        "koefisien": 25,
         "harga_satuan_ref": 5800
       }
     ],
@@ -144,7 +145,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -191,7 +193,7 @@
       {
         "nama": "Genteng palentong super",
         "satuan": "buah",
-        "koefisien": 12.0,
+        "koefisien": 12,
         "harga_satuan_ref": 5300
       }
     ],
@@ -218,7 +220,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -265,7 +268,7 @@
       {
         "nama": "Genteng beton",
         "satuan": "buah",
-        "koefisien": 11.0,
+        "koefisien": 11,
         "harga_satuan_ref": 6800
       },
       {
@@ -298,7 +301,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -345,13 +349,13 @@
       {
         "nama": "Bubung genteng palentong",
         "satuan": "buah",
-        "koefisien": 5.0,
+        "koefisien": 5,
         "harga_satuan_ref": 10700
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 1300
       },
       {
@@ -384,7 +388,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -431,13 +436,13 @@
       {
         "nama": "Bubung genteng kodok",
         "satuan": "buah",
-        "koefisien": 5.0,
+        "koefisien": 5,
         "harga_satuan_ref": 8600
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 1300
       },
       {
@@ -470,7 +475,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -517,13 +523,13 @@
       {
         "nama": "Bubung genteng palentong",
         "satuan": "buah",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 10700
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 1300
       },
       {
@@ -556,7 +562,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -627,7 +634,7 @@
       {
         "nama": "Semen warna",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 7800
       }
     ],
@@ -654,7 +661,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -734,7 +742,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -814,7 +823,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -894,7 +904,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -974,7 +985,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1054,7 +1066,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1134,7 +1147,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1214,7 +1228,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1294,7 +1309,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1374,7 +1390,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1454,7 +1471,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1534,7 +1552,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1614,7 +1633,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1694,7 +1714,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1774,7 +1795,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1827,7 +1849,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -1854,7 +1876,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1907,7 +1930,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -1934,7 +1957,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1981,13 +2005,13 @@
       {
         "nama": "Nok stel gelombang 108 cm",
         "satuan": "lembar",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 80000
       },
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2014,7 +2038,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2067,7 +2092,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2094,7 +2119,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2147,7 +2173,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2174,7 +2200,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2227,7 +2254,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2254,7 +2281,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2307,7 +2335,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2334,7 +2362,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2387,7 +2416,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2414,7 +2443,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2467,7 +2497,7 @@
       {
         "nama": "Paku sekrup",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 30090
       }
     ],
@@ -2494,7 +2524,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2574,7 +2605,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2654,7 +2686,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2701,7 +2734,7 @@
       {
         "nama": "Sirap kayu",
         "satuan": "buah",
-        "koefisien": 30.0,
+        "koefisien": 30,
         "harga_satuan_ref": 5000
       },
       {
@@ -2734,7 +2767,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2814,7 +2848,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2867,7 +2902,7 @@
       {
         "nama": "Paku sekrup (buah)",
         "satuan": "buah",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 1600
       }
     ],
@@ -2894,7 +2929,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2986,7 +3022,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3066,7 +3103,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3146,7 +3184,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3226,7 +3265,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3306,7 +3346,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3330,7 +3371,7 @@
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -3386,7 +3427,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3466,7 +3508,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3513,7 +3556,7 @@
       {
         "nama": "Nok genteng aspal",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 95000
       },
       {
@@ -3552,7 +3595,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3632,7 +3676,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3706,7 +3751,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3786,7 +3832,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3860,7 +3907,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3946,7 +3994,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4032,7 +4081,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4112,7 +4162,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4192,7 +4243,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4272,7 +4324,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4352,7 +4405,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4432,7 +4486,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4506,7 +4561,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4580,7 +4636,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4654,7 +4711,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Penutup Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

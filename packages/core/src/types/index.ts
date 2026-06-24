@@ -284,9 +284,16 @@ export interface MarginDefinition {
   };
 }
 
+export type VerificationTier =
+  | 'auto-extracted'
+  | 'spot-checked'
+  | 'verified'
+  | 'executed';
+
 export interface Provenance {
   readonly sumber_regulasi: string;
   readonly halaman: string;
+  readonly verification_tier: VerificationTier;
   readonly diverifikasi_oleh: string | null;
   readonly tanggal_verifikasi: string | null;
 }

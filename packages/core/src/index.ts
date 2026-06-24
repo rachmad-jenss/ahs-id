@@ -31,6 +31,7 @@ export type {
   VariabelDefinition,
   MarginDefinition,
   Provenance,
+  VerificationTier,
   AhspItem,
   HsdRegionInfo,
   HsdTenagaKerjaEntry,

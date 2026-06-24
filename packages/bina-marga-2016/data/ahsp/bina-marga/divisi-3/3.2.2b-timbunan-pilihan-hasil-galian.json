@@ -44,7 +44,7 @@
         "value": 0.0085046067,
         "asumsi": {
           "Fk": 1.11,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.00850461 Jam/unit (unit output: m3)"
@@ -60,7 +60,7 @@
         "value": 0.1252523763,
         "asumsi": {
           "Fk": 1.11,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.12525238 Jam/unit (unit output: m3)"
@@ -76,7 +76,7 @@
         "value": 0.003968254,
         "asumsi": {
           "Fk": 1.11,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.00396825 Jam/unit (unit output: m3)"
@@ -92,7 +92,7 @@
         "value": 0.011155734,
         "asumsi": {
           "Fk": 1.11,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.01115573 Jam/unit (unit output: m3)"
@@ -108,7 +108,7 @@
         "value": 0.0341365462,
         "asumsi": {
           "Fk": 1.11,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.03413655 Jam/unit (unit output: m3)"
@@ -120,7 +120,7 @@
       "satuan": "km",
       "tipe": "number",
       "required": false,
-      "default": 2.0,
+      "default": 2,
       "min": 0.5,
       "max": 100
     }
@@ -146,7 +146,8 @@
     "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
     "halaman": "Sheet D3 — Analisa EI-322",
     "diverifikasi_oleh": null,
-    "tanggal_verifikasi": null
+    "tanggal_verifikasi": null,
+    "verification_tier": "auto-extracted"
   },
   "catatan_umum": [
     "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",

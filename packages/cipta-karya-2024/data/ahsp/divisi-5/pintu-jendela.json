@@ -43,7 +43,7 @@
       {
         "nama": "Rolling door besi",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 509100
       }
     ],
@@ -70,7 +70,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -87,14 +88,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang alumunium",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -117,7 +118,7 @@
       {
         "nama": "Rolling door aluminium",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 600600
       }
     ],
@@ -144,7 +145,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -191,7 +193,7 @@
       {
         "nama": "Pintu lipat PVC",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 750000
       }
     ],
@@ -218,7 +220,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -298,7 +301,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -384,7 +388,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -470,7 +475,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -550,7 +556,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -630,7 +637,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -710,7 +718,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -727,14 +736,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -790,7 +799,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -807,14 +817,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -870,7 +880,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -935,7 +946,7 @@
       {
         "nama": "Plywood 4 mm",
         "satuan": "lembar",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 75000
       }
     ],
@@ -962,7 +973,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1027,7 +1039,7 @@
       {
         "nama": "Plywood 4 mm",
         "satuan": "lembar",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 75000
       }
     ],
@@ -1054,7 +1066,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1071,14 +1084,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -1101,7 +1114,7 @@
       {
         "nama": "Pintu panel kayu lapis timbal uk. 1x2 m",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 10000000
       }
     ],
@@ -1128,7 +1141,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1175,13 +1189,13 @@
       {
         "nama": "Besi siku 30x30x3 mm",
         "satuan": "kg",
-        "koefisien": 15.0,
+        "koefisien": 15,
         "harga_satuan_ref": 13000
       },
       {
         "nama": "Besi plat baja tebal 2 mm",
         "satuan": "kg",
-        "koefisien": 32.0,
+        "koefisien": 32,
         "harga_satuan_ref": 25000
       },
       {
@@ -1214,7 +1228,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1261,7 +1276,7 @@
       {
         "nama": "Pintu tahan api",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 8000000
       }
     ],
@@ -1288,7 +1303,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1305,14 +1321,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang besi",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -1335,7 +1351,7 @@
       {
         "nama": "Blockboard tebal 18 mm",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 410600
       },
       {
@@ -1347,7 +1363,7 @@
       {
         "nama": "Veeneer tebal 2 mm",
         "satuan": "m2",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 150000
       }
     ],
@@ -1374,7 +1390,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1421,7 +1438,7 @@
       {
         "nama": "Pintu uPVC lebar 80 cm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1043100
       }
     ],
@@ -1448,7 +1465,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1495,7 +1513,7 @@
       {
         "nama": "Pintu uPVC lebar 70 cm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 730000
       }
     ],
@@ -1522,7 +1540,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1575,7 +1594,7 @@
       {
         "nama": "Paku sekrup (buah)",
         "satuan": "buah",
-        "koefisien": 10.0,
+        "koefisien": 10,
         "harga_satuan_ref": 1600
       }
     ],
@@ -1602,7 +1621,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1655,13 +1675,13 @@
       {
         "nama": "Paku sekrup (buah)",
         "satuan": "buah",
-        "koefisien": 10.0,
+        "koefisien": 10,
         "harga_satuan_ref": 1600
       },
       {
         "nama": "Besi strip (0,2x2) cm",
         "satuan": "m'",
-        "koefisien": 7.0,
+        "koefisien": 7,
         "harga_satuan_ref": 5000
       }
     ],
@@ -1688,7 +1708,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1762,7 +1783,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1809,7 +1831,7 @@
       {
         "nama": "Jendela Kaca Upvc 2 daun",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2000000
       }
     ],
@@ -1836,7 +1858,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1889,7 +1912,7 @@
       {
         "nama": "Skrup fixer",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 1600
       },
       {
@@ -1922,7 +1945,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1981,7 +2005,7 @@
       {
         "nama": "Lem Kayu",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 16400
       }
     ],
@@ -2008,7 +2032,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2067,7 +2092,7 @@
       {
         "nama": "Lem Kayu",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 16400
       }
     ],
@@ -2094,7 +2119,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2153,7 +2179,7 @@
       {
         "nama": "Lem Kayu",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 16400
       }
     ],
@@ -2180,7 +2206,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2239,7 +2266,7 @@
       {
         "nama": "Lem Kayu",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 16400
       }
     ],
@@ -2266,7 +2293,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2290,7 +2318,7 @@
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -2346,7 +2374,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2393,7 +2422,7 @@
       {
         "nama": "Jalusi uPVC",
         "satuan": "m3",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 49500
       }
     ],
@@ -2420,7 +2449,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2467,7 +2497,7 @@
       {
         "nama": "Kusen Bovenlight Upvc",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 270000
       }
     ],
@@ -2494,7 +2524,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2541,7 +2572,7 @@
       {
         "nama": "Kunci tanam antik",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 144300
       }
     ],
@@ -2568,7 +2599,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2615,7 +2647,7 @@
       {
         "nama": "Kunci tanam biasa",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 65800
       }
     ],
@@ -2642,7 +2674,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2689,7 +2722,7 @@
       {
         "nama": "Kunci tanam kamar mandi",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 46900
       }
     ],
@@ -2716,7 +2749,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2763,7 +2797,7 @@
       {
         "nama": "Kunci silinder",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 70000
       }
     ],
@@ -2790,7 +2824,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2837,7 +2872,7 @@
       {
         "nama": "Engsel pintu (kw 1)",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 31500
       }
     ],
@@ -2864,7 +2899,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2911,7 +2947,7 @@
       {
         "nama": "Floor hinge",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 500000
       }
     ],
@@ -2938,7 +2974,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2985,7 +3022,7 @@
       {
         "nama": "Door closer",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 167500
       }
     ],
@@ -3012,7 +3049,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3059,7 +3097,7 @@
       {
         "nama": "Door holder",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 81000
       }
     ],
@@ -3086,7 +3124,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3133,7 +3172,7 @@
       {
         "nama": "Door stop",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 58500
       }
     ],
@@ -3160,7 +3199,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3207,7 +3247,7 @@
       {
         "nama": "Rel pintu dorong",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 243100
       }
     ],
@@ -3234,7 +3274,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3281,7 +3322,7 @@
       {
         "nama": "Venetions Blinds dan Vertical Blinds",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 140000
       }
     ],
@@ -3308,7 +3349,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3388,7 +3430,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3474,7 +3517,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3548,7 +3592,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3595,7 +3640,7 @@
       {
         "nama": "Engsel kupu-kupu",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 41700
       }
     ],
@@ -3622,7 +3667,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3669,7 +3715,7 @@
       {
         "nama": "Engsel angin",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 27400
       }
     ],
@@ -3696,7 +3742,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3743,7 +3790,7 @@
       {
         "nama": "Spring knip",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 21600
       }
     ],
@@ -3770,7 +3817,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3817,7 +3865,7 @@
       {
         "nama": "Kait angin",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 12000
       }
     ],
@@ -3844,7 +3892,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3891,7 +3940,7 @@
       {
         "nama": "Kunci lemari",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 14100
       }
     ],
@@ -3918,7 +3967,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3965,7 +4015,7 @@
       {
         "nama": "Grendel",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 15000
       }
     ],
@@ -3992,7 +4042,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4039,7 +4090,7 @@
       {
         "nama": "Grendel tanam",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 150000
       }
     ],
@@ -4066,7 +4117,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4113,7 +4165,7 @@
       {
         "nama": "Hendle Jendela",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 58500
       }
     ],
@@ -4140,7 +4192,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Pintu dan Jendela",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

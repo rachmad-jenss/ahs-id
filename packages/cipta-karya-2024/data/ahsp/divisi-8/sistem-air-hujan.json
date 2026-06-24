@@ -49,7 +49,7 @@
       {
         "nama": "Buis beton dia. 80 cm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 255400
       },
       {
@@ -106,7 +106,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sistem Air Hujan",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

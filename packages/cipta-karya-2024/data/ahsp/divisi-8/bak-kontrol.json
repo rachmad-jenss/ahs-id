@@ -43,13 +43,13 @@
       {
         "nama": "Bata merah",
         "satuan": "buah",
-        "koefisien": 40.0,
+        "koefisien": 40,
         "harga_satuan_ref": 700
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 44.0,
+        "koefisien": 44,
         "harga_satuan_ref": 1300
       },
       {
@@ -100,7 +100,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Bak Kontrol",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -147,13 +148,13 @@
       {
         "nama": "Bata merah",
         "satuan": "buah",
-        "koefisien": 70.0,
+        "koefisien": 70,
         "harga_satuan_ref": 700
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 77.0,
+        "koefisien": 77,
         "harga_satuan_ref": 1300
       },
       {
@@ -204,7 +205,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Bak Kontrol",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -251,13 +253,13 @@
       {
         "nama": "Bata merah",
         "satuan": "buah",
-        "koefisien": 123.0,
+        "koefisien": 123,
         "harga_satuan_ref": 700
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 114.0,
+        "koefisien": 114,
         "harga_satuan_ref": 1300
       },
       {
@@ -308,7 +310,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Bak Kontrol",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

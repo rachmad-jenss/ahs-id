@@ -20,14 +20,14 @@
       {
         "nama": "Tukang besi",
         "satuan": "OH",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
       {
         "nama": "Tukang las",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -68,7 +68,7 @@
       {
         "nama": "Dinabolt dia. 12mm (10-15 cm)",
         "satuan": "buah",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 4550
       }
     ],
@@ -76,7 +76,7 @@
       {
         "nama": "Sewa Scaffolding",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 587
       }
     ],
@@ -102,7 +102,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -126,14 +127,14 @@
       {
         "nama": "Tukang besi",
         "satuan": "OH",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
       {
         "nama": "Tukang las",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -174,7 +175,7 @@
       {
         "nama": "Dinabolt dia. 12mm (10-15 cm)",
         "satuan": "buah",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 4550
       }
     ],
@@ -182,7 +183,7 @@
       {
         "nama": "Sewa Gondola",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 322000
       }
     ],
@@ -208,7 +209,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -275,7 +277,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -328,13 +331,13 @@
       {
         "nama": "Pen akrilik",
         "satuan": "buah",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 7000
       },
       {
         "nama": "Cutting sticker",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000
       }
     ],
@@ -361,7 +364,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -408,7 +412,7 @@
       {
         "nama": "Cutting sticker",
         "satuan": "m2",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000
       }
     ],
@@ -435,7 +439,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -522,7 +527,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -569,13 +575,13 @@
       {
         "nama": "Logo PU Akrilik 40x40 cm",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 400000
       },
       {
         "nama": "Glass Beads",
         "satuan": "kg",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 18000
       }
     ],
@@ -609,7 +615,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -656,13 +663,13 @@
       {
         "nama": "Nomor Rumah Akrilik 15x30 cm",
         "satuan": "kg",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 55000
       },
       {
         "nama": "Paku beton",
         "satuan": "kg",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 39450
       }
     ],
@@ -696,7 +703,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Signage",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

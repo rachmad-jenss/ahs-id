@@ -207,11 +207,15 @@
     },
     "provenance": {
       "type": "object",
-      "required": ["sumber_regulasi", "halaman", "diverifikasi_oleh", "tanggal_verifikasi"],
+      "required": ["sumber_regulasi", "halaman", "verification_tier", "diverifikasi_oleh", "tanggal_verifikasi"],
       "additionalProperties": false,
       "properties": {
         "sumber_regulasi": { "type": "string" },
         "halaman": { "type": ["string", "null"] },
+        "verification_tier": {
+          "type": "string",
+          "enum": ["auto-extracted", "spot-checked", "verified", "executed"]
+        },
         "diverifikasi_oleh": { "type": ["string", "null"] },
         "tanggal_verifikasi": { "type": ["string", "null"] }
       }

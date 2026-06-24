@@ -136,7 +136,7 @@ const testBundle: DataBundle = {
         profit_pct: { label: 'Profit', min: 2, max: 10, default: 5 },
         constraint: { rule: 'Sum 10-15%' },
       },
-      provenance: { sumber_regulasi: 'PUPR 8/2023', halaman: 'Lampiran III', diverifikasi_oleh: null, tanggal_verifikasi: null },
+      provenance: { sumber_regulasi: 'PUPR 8/2023', halaman: 'Lampiran III', verification_tier: 'auto-extracted', diverifikasi_oleh: null, tanggal_verifikasi: null },
       catatan_umum: [],
     },
   ],

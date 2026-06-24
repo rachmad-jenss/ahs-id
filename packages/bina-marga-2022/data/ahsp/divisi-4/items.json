@@ -19,7 +19,7 @@
       },
       {
         "ref": "L03",
-        "koefisien": 2.86862e-05,
+        "koefisien": 0.0000286862,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000201 Jam/liter ÷ 7.0 jam/OH"
       }
@@ -46,7 +46,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -63,7 +63,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -80,7 +80,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -108,7 +108,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 21091.55
@@ -133,7 +134,7 @@
       },
       {
         "ref": "L03",
-        "koefisien": 2.86862e-05,
+        "koefisien": 0.0000286862,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000201 Jam/liter ÷ 7.0 jam/OH"
       }
@@ -160,7 +161,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -177,7 +178,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -194,7 +195,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -222,7 +223,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 12204.13
@@ -247,7 +249,7 @@
       },
       {
         "ref": "L03",
-        "koefisien": 2.86862e-05,
+        "koefisien": 0.0000286862,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000201 Jam/liter ÷ 7.0 jam/OH"
       }
@@ -274,7 +276,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -291,7 +293,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -308,7 +310,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -336,7 +338,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 19424.74
@@ -361,7 +364,7 @@
       },
       {
         "ref": "L03",
-        "koefisien": 2.97619e-05,
+        "koefisien": 0.0000297619,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000208 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -388,7 +391,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -405,7 +408,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -422,7 +425,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: m2/Jam"
@@ -435,11 +438,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 2.67738e-05,
+          "value": 0.0000267738,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -456,7 +459,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -473,7 +476,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -501,7 +504,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 9918.39
@@ -526,7 +530,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -574,7 +578,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -591,7 +595,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -608,7 +612,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -621,11 +625,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 2.00803e-05,
+          "value": 0.0000200803,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -642,7 +646,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -659,7 +663,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -687,7 +691,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 22484.1
@@ -712,7 +717,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -760,7 +765,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -777,7 +782,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -794,7 +799,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -807,11 +812,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 2.00803e-05,
+          "value": 0.0000200803,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -828,7 +833,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -845,7 +850,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -873,7 +878,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 26035.46
@@ -898,7 +904,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -946,7 +952,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -963,7 +969,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -980,7 +986,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -997,7 +1003,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1014,7 +1020,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1042,7 +1048,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 26433.15
@@ -1067,7 +1074,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -1115,7 +1122,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1132,7 +1139,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1149,7 +1156,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -1166,7 +1173,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1183,7 +1190,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1211,7 +1218,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 30282.39
@@ -1236,7 +1244,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -1284,7 +1292,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1301,7 +1309,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1314,11 +1322,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 15.0,
+          "value": 15,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -1335,7 +1343,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1352,7 +1360,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1380,10 +1388,11 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
-    "hsp_referensi": 15.0
+    "hsp_referensi": 15
   },
   {
     "kode_ahsp": "4.4.(6)",
@@ -1405,7 +1414,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -1453,7 +1462,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1470,7 +1479,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1483,11 +1492,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 15.0,
+          "value": 15,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -1504,7 +1513,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1521,7 +1530,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1549,10 +1558,11 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
-    "hsp_referensi": 15.0
+    "hsp_referensi": 15
   },
   {
     "kode_ahsp": "4.5.(1)",
@@ -1574,7 +1584,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -1622,7 +1632,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1639,7 +1649,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1656,7 +1666,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -1669,11 +1679,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 3.17058e-05,
+          "value": 0.0000317058,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1690,7 +1700,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1707,7 +1717,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1735,7 +1745,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 4823.46
@@ -1760,7 +1771,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/ton ÷ 7.0 jam/OH"
       }
@@ -1779,7 +1790,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1796,7 +1807,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1813,7 +1824,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1830,7 +1841,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1847,7 +1858,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1864,7 +1875,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1892,7 +1903,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1100290.74
@@ -1917,7 +1929,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/meter persegi ÷ 7.0 jam/OH"
       }
@@ -1936,7 +1948,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1953,7 +1965,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -1970,7 +1982,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: M2/Jam"
@@ -1983,11 +1995,11 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 3.80469e-05,
+          "value": 0.0000380469,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2004,7 +2016,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2021,7 +2033,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2049,7 +2061,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 5387.58
@@ -2074,7 +2087,7 @@
       },
       {
         "ref": "L02",
-        "koefisien": 4.91763e-05,
+        "koefisien": 0.0000491763,
         "koef_sumber": "kalkulasi",
         "catatan": "Sumber: 0.000344 Jam/ton ÷ 7.0 jam/OH"
       }
@@ -2093,7 +2106,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2110,7 +2123,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2127,7 +2140,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2144,7 +2157,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2161,7 +2174,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2178,7 +2191,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2206,7 +2219,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1100290.74
@@ -2279,7 +2293,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2296,7 +2310,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2313,7 +2327,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: ton"
@@ -2330,7 +2344,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2347,7 +2361,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2364,7 +2378,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2381,7 +2395,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2409,7 +2423,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1347928.85
@@ -2482,7 +2497,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2499,7 +2514,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2516,7 +2531,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: ton"
@@ -2533,7 +2548,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2550,7 +2565,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2567,7 +2582,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2584,7 +2599,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2612,7 +2627,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1452634.39
@@ -2685,7 +2701,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2702,7 +2718,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2719,7 +2735,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: ton"
@@ -2736,7 +2752,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2753,7 +2769,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2770,7 +2786,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2787,7 +2803,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2815,7 +2831,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1125115.17
@@ -2888,7 +2905,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2905,7 +2922,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2922,7 +2939,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: ton"
@@ -2939,7 +2956,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2956,7 +2973,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2973,7 +2990,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -2990,7 +3007,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3018,7 +3035,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1035217.77
@@ -3091,7 +3109,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3108,7 +3126,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3125,7 +3143,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3142,7 +3160,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3159,7 +3177,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3176,7 +3194,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3193,7 +3211,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3221,7 +3239,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 946410.74
@@ -3294,7 +3313,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3311,7 +3330,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3328,7 +3347,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3345,7 +3364,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3362,7 +3381,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3379,7 +3398,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3396,7 +3415,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3424,7 +3443,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 967199.3
@@ -3497,7 +3517,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3514,7 +3534,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3531,7 +3551,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3548,7 +3568,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3565,7 +3585,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3582,7 +3602,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3610,7 +3630,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1721363.15
@@ -3683,7 +3704,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3700,7 +3721,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3717,7 +3738,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3734,7 +3755,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3751,7 +3772,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3768,7 +3789,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3796,7 +3817,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1736136.48
@@ -3876,7 +3898,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3893,7 +3915,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3910,7 +3932,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -3938,7 +3960,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 528521.02
@@ -3978,7 +4001,7 @@
       },
       {
         "ref": "M198",
-        "koefisien": 8.619e-06,
+        "koefisien": 0.000008619,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
@@ -4018,7 +4041,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4035,7 +4058,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4052,7 +4075,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4080,7 +4103,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 421532.77
@@ -4120,7 +4144,7 @@
       },
       {
         "ref": "M198",
-        "koefisien": 8.619e-06,
+        "koefisien": 0.000008619,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
@@ -4160,7 +4184,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4177,7 +4201,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4194,7 +4218,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4222,7 +4246,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 422098.11
@@ -4302,7 +4327,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4319,7 +4344,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4347,7 +4372,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 37164070.1
@@ -4427,7 +4453,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4455,7 +4481,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 36783394.32
@@ -4535,7 +4562,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4563,7 +4590,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 36773906.99
@@ -4617,7 +4645,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 350509.58
@@ -4650,7 +4679,7 @@
     "bahan": [
       {
         "ref": "M165",
-        "koefisien": 9.4249e-06,
+        "koefisien": 0.0000094249,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
@@ -4686,7 +4715,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 1121.66
@@ -4719,7 +4749,7 @@
     "bahan": [
       {
         "ref": "M179",
-        "koefisien": 7.17e-08,
+        "koefisien": 7.17e-8,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
         "catatan": "Satuan: Kg"
@@ -4759,7 +4789,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4776,7 +4806,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4804,7 +4834,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 340904.02
@@ -4873,7 +4904,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 29816.75
@@ -4932,7 +4964,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -4960,7 +4992,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 101998.56
@@ -5019,7 +5052,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -5047,7 +5080,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 166864.89
@@ -5106,7 +5140,7 @@
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
-            "jam_kerja": 7.0
+            "jam_kerja": 7
           }
         },
         "catatan": "Satuan: Jam"
@@ -5134,7 +5168,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 786414.54
@@ -5188,7 +5223,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 4556.26
@@ -5242,7 +5278,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 455724.39
@@ -5304,7 +5341,8 @@
       "sumber_regulasi": "Permen PUPR 1/2022",
       "halaman": "D4",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     },
     "catatan_umum": [],
     "hsp_referensi": 423730.44

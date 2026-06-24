@@ -13,7 +13,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -49,7 +49,7 @@
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 1300
       },
       {
@@ -82,7 +82,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -129,13 +130,13 @@
       {
         "nama": "Bak cuci stainlesteel",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 230600
       },
       {
         "nama": "Water drain",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 321900
       }
     ],
@@ -162,7 +163,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -209,19 +211,19 @@
       {
         "nama": "Bak cuci teraso",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 600000
       },
       {
         "nama": "Water Drain",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 321900
       },
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 20.0,
+        "koefisien": 20,
         "harga_satuan_ref": 1300
       },
       {
@@ -254,7 +256,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -301,13 +304,13 @@
       {
         "nama": "Kloset duduk/monoblok",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1490000
       },
       {
         "nama": "Flexible hose",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 55000
       }
     ],
@@ -334,7 +337,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -381,7 +385,7 @@
       {
         "nama": "Kloset jongkok",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 250000
       },
       {
@@ -414,7 +418,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -494,7 +499,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -511,14 +517,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang batu",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -541,13 +547,13 @@
       {
         "nama": "Urinoir",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 456800
       },
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 1300
       },
       {
@@ -580,7 +586,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -604,7 +611,7 @@
       {
         "nama": "Tukang batu",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -627,7 +634,7 @@
       {
         "nama": "Partisi urinoir",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 700000
       },
       {
@@ -660,7 +667,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -677,7 +685,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -707,13 +715,13 @@
       {
         "nama": "Bak teraso",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 450000
       },
       {
         "nama": "Flexible hose",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 55000
       }
     ],
@@ -740,7 +748,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -757,14 +766,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 6.0,
+        "koefisien": 6,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang batu",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -787,13 +796,13 @@
       {
         "nama": "Bata merah",
         "satuan": "buah",
-        "koefisien": 150.0,
+        "koefisien": 150,
         "harga_satuan_ref": 700
       },
       {
         "nama": "Semen portland (pc)",
         "satuan": "kg",
-        "koefisien": 120.0,
+        "koefisien": 120,
         "harga_satuan_ref": 1300
       },
       {
@@ -805,7 +814,7 @@
       {
         "nama": "Porselen 11x11 cm",
         "satuan": "buah",
-        "koefisien": 360.0,
+        "koefisien": 360,
         "harga_satuan_ref": 1000
       }
     ],
@@ -832,7 +841,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -879,19 +889,19 @@
       {
         "nama": "Bak fiberglass 70x70x66 cm",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 328400
       },
       {
         "nama": "Pipa PVC AW Ø 3/4\" (m)",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 8750
       },
       {
         "nama": "Stop kran PVC 3/4\"",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 6000
       }
     ],
@@ -918,7 +928,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -965,19 +976,19 @@
       {
         "nama": "Bak fiberglass 1 m3",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 400000
       },
       {
         "nama": "Pipa PVC AW Ø 3/4\" (m)",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 8750
       },
       {
         "nama": "Stop kran PVC 3/4\"",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 6000
       }
     ],
@@ -1004,7 +1015,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1057,31 +1069,31 @@
       {
         "nama": "BjTP",
         "satuan": "kg",
-        "koefisien": 180.0,
+        "koefisien": 180,
         "harga_satuan_ref": 14250
       },
       {
         "nama": "Kayu papan kelas III (m2)",
         "satuan": "m2",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 160000
       },
       {
         "nama": "Porselen 20x20 cm",
         "satuan": "buah",
-        "koefisien": 270.0,
+        "koefisien": 270,
         "harga_satuan_ref": 4000
       },
       {
         "nama": "Pipa PVC AW Ø 3/4\" (m)",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 8750
       },
       {
         "nama": "Stop kran PVC 3/4\"",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 6000
       }
     ],
@@ -1108,7 +1120,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1155,19 +1168,19 @@
       {
         "nama": "Bathup",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2500000
       },
       {
         "nama": "Flexible hose",
         "satuan": "m'",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 55000
       },
       {
         "nama": "Stop kran PVC 1/2\"",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 4000
       }
     ],
@@ -1194,7 +1207,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1241,7 +1255,7 @@
       {
         "nama": "Floor drain stainles steel",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 44700
       }
     ],
@@ -1268,7 +1282,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1315,7 +1330,7 @@
       {
         "nama": "Kran air",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 41700
       },
       {
@@ -1348,7 +1363,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1395,7 +1411,7 @@
       {
         "nama": "Jet washer",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000
       },
       {
@@ -1428,7 +1444,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1475,7 +1492,7 @@
       {
         "nama": "Robe hook",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 70000
       }
     ],
@@ -1502,7 +1519,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1549,7 +1567,7 @@
       {
         "nama": "Towel bar",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 150000
       }
     ],
@@ -1576,7 +1594,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1623,7 +1642,7 @@
       {
         "nama": "Grab bar",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 120000
       }
     ],
@@ -1650,7 +1669,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1697,7 +1717,7 @@
       {
         "nama": "Soap holder",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 150000
       }
     ],
@@ -1724,7 +1744,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1771,7 +1792,7 @@
       {
         "nama": "Tissue holder",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 150000
       }
     ],
@@ -1798,7 +1819,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1845,7 +1867,7 @@
       {
         "nama": "Shower Set",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       },
       {
@@ -1878,7 +1900,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Sanitair",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

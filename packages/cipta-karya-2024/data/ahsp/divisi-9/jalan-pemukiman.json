@@ -82,7 +82,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -168,7 +169,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -261,7 +263,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -354,7 +357,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -440,7 +444,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -526,7 +531,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -619,7 +625,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -712,7 +719,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -791,7 +799,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -870,7 +879,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -949,7 +959,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1028,7 +1039,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1075,25 +1087,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 279.0,
+        "koefisien": 279,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir Beton",
         "satuan": "Kg",
-        "koefisien": 873.0,
+        "koefisien": 873,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Agregar Kasar",
         "satuan": "kg",
-        "koefisien": 909.0,
+        "koefisien": 909,
         "harga_satuan_ref": 226
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 195.0,
+        "koefisien": 195,
         "harga_satuan_ref": 200
       },
       {
@@ -1145,7 +1157,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1192,25 +1205,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 279.0,
+        "koefisien": 279,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir Beton",
         "satuan": "Kg",
-        "koefisien": 873.0,
+        "koefisien": 873,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Agregar Kasar",
         "satuan": "kg",
-        "koefisien": 909.0,
+        "koefisien": 909,
         "harga_satuan_ref": 226
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 195.0,
+        "koefisien": 195,
         "harga_satuan_ref": 200
       },
       {
@@ -1274,7 +1287,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1360,7 +1374,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1459,7 +1474,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1506,25 +1522,25 @@
       {
         "nama": "Semen PortlanD (PC)",
         "satuan": "kg",
-        "koefisien": 383.0,
+        "koefisien": 383,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir Beton",
         "satuan": "Kg",
-        "koefisien": 764.0,
+        "koefisien": 764,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Agregar Kasar",
         "satuan": "kg",
-        "koefisien": 934.0,
+        "koefisien": 934,
         "harga_satuan_ref": 226
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 195.0,
+        "koefisien": 195,
         "harga_satuan_ref": 200
       },
       {
@@ -1618,7 +1634,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1665,25 +1682,25 @@
       {
         "nama": "Semen PortlanD (PC)",
         "satuan": "kg",
-        "koefisien": 428.0,
+        "koefisien": 428,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir Beton",
         "satuan": "Kg",
-        "koefisien": 731.0,
+        "koefisien": 731,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Agregar Kasar",
         "satuan": "kg",
-        "koefisien": 930.0,
+        "koefisien": 930,
         "harga_satuan_ref": 226
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 195.0,
+        "koefisien": 195,
         "harga_satuan_ref": 200
       },
       {
@@ -1713,7 +1730,7 @@
       {
         "nama": "Curing Compound",
         "satuan": "liter",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 44100
       },
       {
@@ -1789,7 +1806,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1912,7 +1930,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1989,7 +2008,7 @@
       {
         "nama": "Curing Compound",
         "satuan": "liter",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 44100
       },
       {
@@ -2047,7 +2066,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2168,7 +2188,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2289,7 +2310,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jalan Pada Pemukiman",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

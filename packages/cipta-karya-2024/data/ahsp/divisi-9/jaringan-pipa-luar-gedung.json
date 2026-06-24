@@ -36,7 +36,7 @@
       {
         "nama": "Pipa PVC dia. 63 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 14750
       }
     ],
@@ -63,7 +63,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -103,7 +104,7 @@
       {
         "nama": "Pipa PVC dia. 90 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 28600
       }
     ],
@@ -130,7 +131,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -170,7 +172,7 @@
       {
         "nama": "Pipa PVC dia. 110 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 39575
       }
     ],
@@ -197,7 +199,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -237,7 +240,7 @@
       {
         "nama": "Pipa PVC dia. 150 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 63200
       }
     ],
@@ -264,7 +267,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -304,7 +308,7 @@
       {
         "nama": "Pipa PVC dia. 200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 139575
       }
     ],
@@ -331,7 +335,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -371,7 +376,7 @@
       {
         "nama": "Pipa PVC dia. 250 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 287500
       }
     ],
@@ -405,7 +410,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -445,7 +451,7 @@
       {
         "nama": "Pipa PVC dia. 300 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 305000
       }
     ],
@@ -479,7 +485,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -519,7 +526,7 @@
       {
         "nama": "Pipa PVC dia. 400 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 336700
       }
     ],
@@ -553,7 +560,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -593,7 +601,7 @@
       {
         "nama": "Pipa PVC dia. 450 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 368000
       }
     ],
@@ -627,7 +635,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -667,7 +676,7 @@
       {
         "nama": "Pipa PVC dia. 500 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 398500
       }
     ],
@@ -701,7 +710,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -741,7 +751,7 @@
       {
         "nama": "Pipa PVC dia. 600 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 425000
       }
     ],
@@ -775,7 +785,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -815,7 +826,7 @@
       {
         "nama": "Pipa PVC dia. 800 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 487000
       }
     ],
@@ -849,7 +860,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -889,7 +901,7 @@
       {
         "nama": "Pipa PVC dia. 900 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 515000
       }
     ],
@@ -923,7 +935,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -963,7 +976,7 @@
       {
         "nama": "Pipa PVC dia. 1000 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 547000
       }
     ],
@@ -997,7 +1010,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1037,7 +1051,7 @@
       {
         "nama": "Pipa PVC dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 589000
       }
     ],
@@ -1071,7 +1085,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1111,7 +1126,7 @@
       {
         "nama": "Pipa PVC dia. 1200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 617000
       }
     ],
@@ -1145,7 +1160,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1185,7 +1201,7 @@
       {
         "nama": "Pipa PVC dia. 15 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 5200
       }
     ],
@@ -1212,7 +1228,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1252,7 +1269,7 @@
       {
         "nama": "Pipa PVC dia. 20 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 7500
       }
     ],
@@ -1279,7 +1296,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1319,7 +1337,7 @@
       {
         "nama": "Pipa PVC dia. 25 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 8300
       }
     ],
@@ -1346,7 +1364,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1386,7 +1405,7 @@
       {
         "nama": "Pipa PVC dia. 32 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 9700
       }
     ],
@@ -1413,7 +1432,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1453,7 +1473,7 @@
       {
         "nama": "Pipa PVC dia. 40 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 10500
       }
     ],
@@ -1480,7 +1500,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1520,7 +1541,7 @@
       {
         "nama": "Pipa PVC dia. 50 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 13700
       }
     ],
@@ -1547,7 +1568,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1614,7 +1636,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1681,7 +1704,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1748,7 +1772,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1815,7 +1840,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1882,7 +1908,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1949,7 +1976,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2016,7 +2044,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2083,7 +2112,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2150,7 +2180,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2217,7 +2248,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2284,7 +2316,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2351,7 +2384,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2418,7 +2452,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2485,7 +2520,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2552,7 +2588,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2619,7 +2656,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2659,7 +2697,7 @@
       {
         "nama": "Pipa Galvanis dia. 63 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 183333
       }
     ],
@@ -2693,7 +2731,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2733,7 +2772,7 @@
       {
         "nama": "Pipa Galvanis dia. 100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 309000
       }
     ],
@@ -2767,7 +2806,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2807,7 +2847,7 @@
       {
         "nama": "Pipa Galvanis dia. 125 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 435000
       }
     ],
@@ -2841,7 +2881,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2881,7 +2922,7 @@
       {
         "nama": "Pipa Galvanis dia. 150 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 395000
       }
     ],
@@ -2915,7 +2956,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2955,7 +2997,7 @@
       {
         "nama": "Pipa Galvanis dia. 200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 417000
       }
     ],
@@ -2989,7 +3031,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3029,7 +3072,7 @@
       {
         "nama": "Pipa Galvanis dia. 250 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 467000
       }
     ],
@@ -3063,7 +3106,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3103,7 +3147,7 @@
       {
         "nama": "Pipa Galvanis dia. 300 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 512000
       }
     ],
@@ -3137,7 +3181,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3177,7 +3222,7 @@
       {
         "nama": "Pipa Galvanis dia. 400 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 593000
       }
     ],
@@ -3211,7 +3256,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3251,7 +3297,7 @@
       {
         "nama": "Pipa Galvanis dia. 450 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 612000
       }
     ],
@@ -3285,7 +3331,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3325,7 +3372,7 @@
       {
         "nama": "Pipa Galvanis dia. 500 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 655000
       }
     ],
@@ -3359,7 +3406,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3399,7 +3447,7 @@
       {
         "nama": "Pipa Galvanis dia. 600 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 697000
       }
     ],
@@ -3433,7 +3481,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3473,7 +3522,7 @@
       {
         "nama": "Pipa Galvanis dia. 800 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 715000
       }
     ],
@@ -3507,7 +3556,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3547,7 +3597,7 @@
       {
         "nama": "Pipa Galvanis dia. 900 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 756000
       }
     ],
@@ -3581,7 +3631,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3621,7 +3672,7 @@
       {
         "nama": "Pipa Galvanis dia. 1000 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 799000
       }
     ],
@@ -3655,7 +3706,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3695,7 +3747,7 @@
       {
         "nama": "Pipa Galvanis dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 830000
       }
     ],
@@ -3729,7 +3781,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3769,7 +3822,7 @@
       {
         "nama": "Pipa Galvanis dia. 1200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 867000
       }
     ],
@@ -3803,7 +3856,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3843,7 +3897,7 @@
       {
         "nama": "Pipa Galvanis dia. 15 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 51000
       }
     ],
@@ -3870,7 +3924,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3910,7 +3965,7 @@
       {
         "nama": "Pipa Galvanis dia. 20 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 67000
       }
     ],
@@ -3937,7 +3992,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3977,7 +4033,7 @@
       {
         "nama": "Pipa Galvanis dia. 25 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 71000
       }
     ],
@@ -4004,7 +4060,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4044,7 +4101,7 @@
       {
         "nama": "Pipa Galvanis dia. 32 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 79000
       }
     ],
@@ -4071,7 +4128,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4111,7 +4169,7 @@
       {
         "nama": "Pipa Galvanis dia. 40 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 86000
       }
     ],
@@ -4138,7 +4196,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4178,7 +4237,7 @@
       {
         "nama": "Pipa Galvanis dia. 50 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 94000
       }
     ],
@@ -4205,7 +4264,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4272,7 +4332,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4339,7 +4400,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4406,7 +4468,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4473,7 +4536,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4540,7 +4604,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4607,7 +4672,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4674,7 +4740,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4741,7 +4808,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4808,7 +4876,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4875,7 +4944,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4942,7 +5012,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5009,7 +5080,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5076,7 +5148,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5143,7 +5216,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5210,7 +5284,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5277,7 +5352,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5317,7 +5393,7 @@
       {
         "nama": "Pipa HDPE dia. 63 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5351,7 +5427,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5391,7 +5468,7 @@
       {
         "nama": "Pipa HDPE dia. 100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5425,7 +5502,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5465,7 +5543,7 @@
       {
         "nama": "Pipa HDPE dia. 125 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5499,7 +5577,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5539,7 +5618,7 @@
       {
         "nama": "Pipa HDPE dia. 150 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5573,7 +5652,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5613,7 +5693,7 @@
       {
         "nama": "Pipa HDPE dia. 200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5647,7 +5727,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5687,7 +5768,7 @@
       {
         "nama": "Pipa HDPE dia. 250 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5721,7 +5802,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5761,7 +5843,7 @@
       {
         "nama": "Pipa HDPE dia. 300 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5795,7 +5877,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5835,7 +5918,7 @@
       {
         "nama": "Pipa HDPE dia. 400 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5869,7 +5952,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5909,7 +5993,7 @@
       {
         "nama": "Pipa HDPE dia. 450 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -5943,7 +6027,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -5983,7 +6068,7 @@
       {
         "nama": "Pipa HDPE dia. 500 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6017,7 +6102,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6057,7 +6143,7 @@
       {
         "nama": "Pipa HDPE dia. 600 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6091,7 +6177,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6131,7 +6218,7 @@
       {
         "nama": "Pipa HDPE dia. 800 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6165,7 +6252,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6205,7 +6293,7 @@
       {
         "nama": "Pipa HDPE dia. 900 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6239,7 +6327,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6279,7 +6368,7 @@
       {
         "nama": "Pipa HDPE dia. 1000 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6313,7 +6402,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6353,7 +6443,7 @@
       {
         "nama": "Pipa HDPE dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6387,7 +6477,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6427,7 +6518,7 @@
       {
         "nama": "Pipa HDPE dia. 1200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 0
       }
     ],
@@ -6461,7 +6552,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6501,7 +6593,7 @@
       {
         "nama": "Pipa HDPE dia. 15 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 12500
       }
     ],
@@ -6528,7 +6620,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6568,7 +6661,7 @@
       {
         "nama": "Pipa HDPE dia. 20 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 17900
       }
     ],
@@ -6595,7 +6688,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6635,7 +6729,7 @@
       {
         "nama": "Pipa HDPE dia. 25 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 20700
       }
     ],
@@ -6662,7 +6756,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6702,7 +6797,7 @@
       {
         "nama": "Pipa HDPE dia. 32 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 21300
       }
     ],
@@ -6729,7 +6824,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6769,7 +6865,7 @@
       {
         "nama": "Pipa HDPE dia. 40 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 22500
       }
     ],
@@ -6796,7 +6892,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6836,7 +6933,7 @@
       {
         "nama": "Pipa HDPE dia. 50 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 23100
       }
     ],
@@ -6863,7 +6960,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6930,7 +7028,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -6997,7 +7096,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7064,7 +7164,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7131,7 +7232,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7198,7 +7300,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7265,7 +7368,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7332,7 +7436,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7399,7 +7504,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7466,7 +7572,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7533,7 +7640,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7600,7 +7708,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7667,7 +7776,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7734,7 +7844,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7801,7 +7912,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7868,7 +7980,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7935,7 +8048,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -7975,7 +8089,7 @@
       {
         "nama": "Pipa DCI dia. 100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1083333
       }
     ],
@@ -8009,7 +8123,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8049,7 +8164,7 @@
       {
         "nama": "Pipa DCI dia. 125 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1100000
       }
     ],
@@ -8083,7 +8198,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8123,7 +8239,7 @@
       {
         "nama": "Pipa DCI dia. 150 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1300000
       }
     ],
@@ -8157,7 +8273,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8197,7 +8314,7 @@
       {
         "nama": "Pipa DCI dia. 200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1450000
       }
     ],
@@ -8231,7 +8348,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8271,7 +8389,7 @@
       {
         "nama": "Pipa DCI dia. 250 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1570000
       }
     ],
@@ -8305,7 +8423,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8345,7 +8464,7 @@
       {
         "nama": "Pipa DCI dia. 300 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1630000
       }
     ],
@@ -8379,7 +8498,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8419,7 +8539,7 @@
       {
         "nama": "Pipa DCI dia. 400 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1780000
       }
     ],
@@ -8459,7 +8579,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8499,7 +8620,7 @@
       {
         "nama": "Pipa DCI dia. 450 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1840000
       }
     ],
@@ -8539,7 +8660,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8579,7 +8701,7 @@
       {
         "nama": "Pipa DCI dia. 500 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1950000
       }
     ],
@@ -8619,7 +8741,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8659,7 +8782,7 @@
       {
         "nama": "Pipa DCI dia. 600 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2100000
       }
     ],
@@ -8699,7 +8822,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8739,7 +8863,7 @@
       {
         "nama": "Pipa DCI dia. 800 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2350000
       }
     ],
@@ -8779,7 +8903,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8819,7 +8944,7 @@
       {
         "nama": "Pipa DCI dia. 900 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2430000
       }
     ],
@@ -8859,7 +8984,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8899,7 +9025,7 @@
       {
         "nama": "Pipa DCI dia. 1000 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2560000
       }
     ],
@@ -8939,7 +9065,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -8979,7 +9106,7 @@
       {
         "nama": "Pipa DCI dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2720000
       }
     ],
@@ -9019,7 +9146,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9059,7 +9187,7 @@
       {
         "nama": "Pipa DCI dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2720000
       }
     ],
@@ -9099,7 +9227,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9166,7 +9295,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9233,7 +9363,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9300,7 +9431,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9367,7 +9499,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9434,7 +9567,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9501,7 +9635,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9568,7 +9703,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9635,7 +9771,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9702,7 +9839,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9769,7 +9907,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9836,7 +9975,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9903,7 +10043,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -9970,7 +10111,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10037,7 +10179,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10104,7 +10247,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10144,7 +10288,7 @@
       {
         "nama": "Pipa Baja dia. 63 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 520000
       }
     ],
@@ -10178,7 +10322,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10218,7 +10363,7 @@
       {
         "nama": "Pipa Baja dia. 100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 645000
       }
     ],
@@ -10252,7 +10397,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10292,7 +10438,7 @@
       {
         "nama": "Pipa Baja dia. 125 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 766000
       }
     ],
@@ -10326,7 +10472,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10366,7 +10513,7 @@
       {
         "nama": "Pipa Baja dia. 150 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 810000
       }
     ],
@@ -10400,7 +10547,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10440,7 +10588,7 @@
       {
         "nama": "Pipa Baja dia. 200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 890000
       }
     ],
@@ -10474,7 +10622,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10514,7 +10663,7 @@
       {
         "nama": "Pipa Baja dia. 250 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 940000
       }
     ],
@@ -10548,7 +10697,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10588,7 +10738,7 @@
       {
         "nama": "Pipa Baja dia. 300 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1050000
       }
     ],
@@ -10622,7 +10772,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10662,7 +10813,7 @@
       {
         "nama": "Pipa Baja dia. 400 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2300000
       }
     ],
@@ -10702,7 +10853,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10742,7 +10894,7 @@
       {
         "nama": "Pipa Baja dia. 450 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2450000
       }
     ],
@@ -10782,7 +10934,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10822,7 +10975,7 @@
       {
         "nama": "Pipa Baja dia. 500 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2560000
       }
     ],
@@ -10862,7 +11015,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10902,7 +11056,7 @@
       {
         "nama": "Pipa Baja dia. 600 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2650000
       }
     ],
@@ -10942,7 +11096,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -10982,7 +11137,7 @@
       {
         "nama": "Pipa Baja dia. 800 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2790000
       }
     ],
@@ -11022,7 +11177,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11062,7 +11218,7 @@
       {
         "nama": "Pipa Baja dia. 900 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 2950000
       }
     ],
@@ -11102,7 +11258,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11142,7 +11299,7 @@
       {
         "nama": "Pipa Baja dia. 1000 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 3110000
       }
     ],
@@ -11182,7 +11339,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11222,7 +11380,7 @@
       {
         "nama": "Pipa Baja dia. 1100 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 3230000
       }
     ],
@@ -11262,7 +11420,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11302,7 +11461,7 @@
       {
         "nama": "Pipa Baja dia. 1200 mm",
         "satuan": "m",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 3350000
       }
     ],
@@ -11342,7 +11501,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11409,7 +11569,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11476,7 +11637,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11543,7 +11705,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11610,7 +11773,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11677,7 +11841,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11744,7 +11909,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11811,7 +11977,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11878,7 +12045,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -11945,7 +12113,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12012,7 +12181,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12079,7 +12249,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12146,7 +12317,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12213,7 +12385,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12280,7 +12453,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12347,7 +12521,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12414,7 +12589,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12506,7 +12682,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12598,7 +12775,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12690,7 +12868,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12782,7 +12961,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12874,7 +13054,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -12966,7 +13147,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13058,7 +13240,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13150,7 +13333,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13242,7 +13426,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13327,7 +13512,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13412,7 +13598,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13497,7 +13684,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13582,7 +13770,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13667,7 +13856,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13752,7 +13942,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13837,7 +14028,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -13922,7 +14114,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14007,7 +14200,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14092,7 +14286,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14177,7 +14372,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14262,7 +14458,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14329,7 +14526,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14396,7 +14594,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14463,7 +14662,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14530,7 +14730,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14597,7 +14798,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14664,7 +14866,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14731,7 +14934,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14771,7 +14975,7 @@
       {
         "nama": "Valve dia. 150 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 225000
       }
     ],
@@ -14805,7 +15009,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14845,7 +15050,7 @@
       {
         "nama": "Valve dia. 200 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 290000
       }
     ],
@@ -14879,7 +15084,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14919,7 +15125,7 @@
       {
         "nama": "Valve dia. 250 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 350000
       }
     ],
@@ -14953,7 +15159,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -14970,14 +15177,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang pipa",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -14993,7 +15200,7 @@
       {
         "nama": "Valve dia. 300 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 410000
       }
     ],
@@ -15027,7 +15234,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15067,7 +15275,7 @@
       {
         "nama": "Valve dia. 400 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 490000
       }
     ],
@@ -15075,7 +15283,7 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       }
     ],
@@ -15101,7 +15309,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15141,7 +15350,7 @@
       {
         "nama": "Valve dia. 450 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 530000
       }
     ],
@@ -15149,7 +15358,7 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       }
     ],
@@ -15175,7 +15384,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15192,14 +15402,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang pipa",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -15215,7 +15425,7 @@
       {
         "nama": "Valve dia. 500 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 590000
       }
     ],
@@ -15223,7 +15433,7 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       }
     ],
@@ -15249,7 +15459,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15289,7 +15500,7 @@
       {
         "nama": "Valve dia. 600 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 670000
       }
     ],
@@ -15329,7 +15540,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15369,7 +15581,7 @@
       {
         "nama": "Valve dia. 700 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 750000
       }
     ],
@@ -15409,7 +15621,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15449,7 +15662,7 @@
       {
         "nama": "Valve dia. 800 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 810000
       }
     ],
@@ -15489,7 +15702,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15529,7 +15743,7 @@
       {
         "nama": "Valve dia. 900 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 890000
       }
     ],
@@ -15569,7 +15783,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15609,7 +15824,7 @@
       {
         "nama": "Valve dia. 1000 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 950000
       }
     ],
@@ -15617,13 +15832,13 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       },
       {
         "nama": "Sewa mobil crane",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1450000
       }
     ],
@@ -15649,7 +15864,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15666,7 +15882,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -15689,7 +15905,7 @@
       {
         "nama": "Valve dia. 1100 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1050000
       }
     ],
@@ -15697,13 +15913,13 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       },
       {
         "nama": "Sewa mobil crane",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1450000
       }
     ],
@@ -15729,7 +15945,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15769,7 +15986,7 @@
       {
         "nama": "Valve dia. 1200 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1119000
       }
     ],
@@ -15777,13 +15994,13 @@
       {
         "nama": "Sewa Tripot",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 108000
       },
       {
         "nama": "Sewa mobil crane",
         "satuan": "hari",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 1450000
       }
     ],
@@ -15809,7 +16026,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15849,7 +16067,7 @@
       {
         "nama": "Valve dia. 15 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 95000
       }
     ],
@@ -15876,7 +16094,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15916,7 +16135,7 @@
       {
         "nama": "Valve dia. 20 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 105000
       }
     ],
@@ -15943,7 +16162,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -15983,7 +16203,7 @@
       {
         "nama": "Valve dia. 25 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 115000
       }
     ],
@@ -16010,7 +16230,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16050,7 +16271,7 @@
       {
         "nama": "Valve dia. 32 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 129000
       }
     ],
@@ -16077,7 +16298,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16117,7 +16339,7 @@
       {
         "nama": "Valve dia. 40 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 135000
       }
     ],
@@ -16144,7 +16366,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16184,7 +16407,7 @@
       {
         "nama": "Valve dia. 50 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 150000
       }
     ],
@@ -16211,7 +16434,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16251,7 +16475,7 @@
       {
         "nama": "Valve dia. 63 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 170000
       }
     ],
@@ -16278,7 +16502,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16318,7 +16543,7 @@
       {
         "nama": "Valve dia. 80 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 192000
       }
     ],
@@ -16345,7 +16570,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16385,7 +16611,7 @@
       {
         "nama": "Valve dia. 100 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 205000
       }
     ],
@@ -16412,7 +16638,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16452,7 +16679,7 @@
       {
         "nama": "Valve dia. 125 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 215000
       }
     ],
@@ -16479,7 +16706,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16519,7 +16747,7 @@
       {
         "nama": "Tee dia. 125 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 65000
       }
     ],
@@ -16553,7 +16781,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16593,7 +16822,7 @@
       {
         "nama": "Tee dia. 200 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 138000
       }
     ],
@@ -16627,7 +16856,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16667,7 +16897,7 @@
       {
         "nama": "Tee dia. 250 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 215000
       }
     ],
@@ -16701,7 +16931,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16741,7 +16972,7 @@
       {
         "nama": "Tee dia. 450 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 285000
       }
     ],
@@ -16775,7 +17006,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16815,7 +17047,7 @@
       {
         "nama": "Tee dia. 500 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 350000
       }
     ],
@@ -16849,7 +17081,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16889,7 +17122,7 @@
       {
         "nama": "Tee dia. 600 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 435000
       }
     ],
@@ -16929,7 +17162,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -16969,7 +17203,7 @@
       {
         "nama": "Tee dia. 700 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 510000
       }
     ],
@@ -17009,7 +17243,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17049,7 +17284,7 @@
       {
         "nama": "Tee dia. 800 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 599000
       }
     ],
@@ -17089,7 +17324,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17129,7 +17365,7 @@
       {
         "nama": "Tee dia. 900 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 670000
       }
     ],
@@ -17169,7 +17405,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17209,7 +17446,7 @@
       {
         "nama": "Tee dia. 1000 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 750000
       }
     ],
@@ -17249,7 +17486,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17289,7 +17527,7 @@
       {
         "nama": "Tee dia. 1100 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 830000
       }
     ],
@@ -17329,7 +17567,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17369,7 +17608,7 @@
       {
         "nama": "Tee dia. 1200 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 950000
       }
     ],
@@ -17409,7 +17648,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17449,7 +17689,7 @@
       {
         "nama": "Tee dia. 15 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 20000
       }
     ],
@@ -17476,7 +17716,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17516,7 +17757,7 @@
       {
         "nama": "Tee dia. 20 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 27000
       }
     ],
@@ -17543,7 +17784,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17583,7 +17825,7 @@
       {
         "nama": "Tee dia. 25 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 32000
       }
     ],
@@ -17610,7 +17852,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17650,7 +17893,7 @@
       {
         "nama": "Tee dia. 32 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 39000
       }
     ],
@@ -17677,7 +17920,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17717,7 +17961,7 @@
       {
         "nama": "Tee dia. 40 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 42000
       }
     ],
@@ -17744,7 +17988,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17784,7 +18029,7 @@
       {
         "nama": "Tee dia. 50 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 48000
       }
     ],
@@ -17811,7 +18056,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17851,7 +18097,7 @@
       {
         "nama": "Tee dia. 63 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 55000
       }
     ],
@@ -17878,7 +18124,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17918,7 +18165,7 @@
       {
         "nama": "Tee dia. 80 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 59000
       }
     ],
@@ -17945,7 +18192,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -17985,7 +18233,7 @@
       {
         "nama": "Tee dia. 100 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 62000
       }
     ],
@@ -18012,7 +18260,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -18052,7 +18301,7 @@
       {
         "nama": "Tee dia. 125 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 65000
       }
     ],
@@ -18079,7 +18328,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -18119,7 +18369,7 @@
       {
         "nama": "Tee dia. 300 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 235000
       }
     ],
@@ -18146,7 +18396,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -18186,7 +18437,7 @@
       {
         "nama": "Tee dia. 400 mm",
         "satuan": "buah",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 255000
       }
     ],
@@ -18213,7 +18464,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Jaringan Pipa Luar Gedung",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

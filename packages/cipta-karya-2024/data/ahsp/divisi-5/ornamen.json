@@ -43,13 +43,13 @@
       {
         "nama": "Jendela Ornamen GRC",
         "satuan": "m3",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 596000
       },
       {
         "nama": "Paku Fishes",
         "satuan": "",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 580
       }
     ],
@@ -76,7 +76,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Ornamen",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

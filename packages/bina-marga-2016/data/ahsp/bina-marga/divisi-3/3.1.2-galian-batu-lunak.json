@@ -37,7 +37,7 @@
         "asumsi": {
           "V_bucket": 0.93,
           "Fa_excavator": 0.83,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.0028789 Jam/unit (unit output: m3)"
@@ -54,7 +54,7 @@
         "asumsi": {
           "V_bucket": 0.93,
           "Fa_excavator": 0.83,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.03497121 Jam/unit (unit output: m3)"
@@ -71,7 +71,7 @@
         "asumsi": {
           "V_bucket": 0.93,
           "Fa_excavator": 0.83,
-          "L_km": 2.0
+          "L_km": 2
         }
       },
       "catatan": "0.03155479 Jam/unit (unit output: m3)"
@@ -83,7 +83,7 @@
       "satuan": "km",
       "tipe": "number",
       "required": false,
-      "default": 2.0,
+      "default": 2,
       "min": 0.5,
       "max": 100
     }
@@ -109,7 +109,8 @@
     "sumber_regulasi": "Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
     "halaman": "Sheet D3 — Analisa EI-312",
     "diverifikasi_oleh": null,
-    "tanggal_verifikasi": null
+    "tanggal_verifikasi": null,
+    "verification_tier": "auto-extracted"
   },
   "catatan_umum": [
     "Koefisien tenaga kerja dikonversi dari Jam/unit ke OH/unit (÷7 jam efektif/hari)",

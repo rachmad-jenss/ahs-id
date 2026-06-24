@@ -32,7 +32,7 @@
       "nama_override": "Agregat Kelas S (Stabilisasi Semen)",
       "koefisien": 1.03,
       "koef_sumber": "tabel",
-      "faktor_kehilangan_pct": 3.0,
+      "faktor_kehilangan_pct": 3,
       "volume_state": "compacted",
       "catatan": "Koefisien sudah termasuk faktor kehilangan",
       "nama": "Agregat Kelas S (Stabilisasi Semen)"
@@ -85,9 +85,9 @@
         "value": 0.03,
         "asumsi": {
           "fa": 0.83,
-          "lebar_hamparan_m": 3.0,
+          "lebar_hamparan_m": 3,
           "jumlah_lintasan": 8,
-          "kecepatan_km_jam": 3.0
+          "kecepatan_km_jam": 3
         }
       },
       "catatan": "Lebih banyak lintasan untuk pencampuran merata"
@@ -200,9 +200,9 @@
       "label": "Lebar Hamparan",
       "satuan": "m",
       "tipe": "number",
-      "default": 3.0,
-      "min": 1.0,
-      "max": 10.0
+      "default": 3,
+      "min": 1,
+      "max": 10
     },
     "jumlah_lintasan": {
       "label": "Jumlah Lintasan Grader",
@@ -233,7 +233,8 @@
     "sumber_regulasi": "Permen PUPR 8/2023 Lampiran III Bina Marga",
     "halaman": "III-49",
     "diverifikasi_oleh": null,
-    "tanggal_verifikasi": null
+    "tanggal_verifikasi": null,
+    "verification_tier": "auto-extracted"
   },
   "catatan_umum": [
     "AHSP ini bersifat informatif, koefisien dapat disesuaikan kondisi lapangan",

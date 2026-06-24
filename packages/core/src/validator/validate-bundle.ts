@@ -65,6 +65,12 @@ export function validateBundle(
     if (!item.provenance.halaman) {
       errors.push(warn(`${prefix}.provenance`, 'Missing halaman reference', 'PROVENANCE_INCOMPLETE'));
     }
+    if (!item.provenance.verification_tier) {
+      errors.push(warn(`${prefix}.provenance`, 'Missing verification_tier', 'PROVENANCE_INCOMPLETE'));
+    }
+    if (item.provenance.verification_tier && !['auto-extracted', 'spot-checked', 'verified', 'executed'].includes(item.provenance.verification_tier)) {
+      errors.push(err(`${prefix}.provenance.verification_tier`, `Invalid tier "${item.provenance.verification_tier}"`, 'PROVENANCE_INVALID'));
+    }
 
     // Sub-AHSP ref validity
     const ahspCodes = new Set(bundle.ahsp_items.map((a) => a.kode_ahsp));

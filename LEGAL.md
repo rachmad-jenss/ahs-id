@@ -51,6 +51,34 @@ purposes. This data does not constitute official government documents.
 For authoritative regulatory text, always refer to the original
 publications on JDIH (jdih.pu.go.id) or Peraturan BPK (peraturan.bpk.go.id).
 
+### Separation of Official Data from Processing Layer
+
+AHS-ID clearly separates two layers, inspired by the methodology of
+[Pasal.id](https://pasal.id/metodologi):
+
+1. **Official data** — The AHSP coefficients, HSD prices, and equipment
+   specifications are extracted from official government regulations
+   (Permen PUPR, SK Gubernur). These are in the public domain under
+   UU 28/2014 Pasal 42.
+
+2. **Processing layer** — The JSON representation, validation schemas,
+   calculation engine, and tooling are MIT-licensed original work.
+   This layer provides structure and compute but does not modify the
+   underlying coefficients.
+
+Every AHSP item includes a `provenance.verification_tier` field that
+documents the current verification level:
+
+| Tier | Meaning |
+|------|---------|
+| `auto-extracted` | Parsed from PDF/Excel source without manual verification |
+| `spot-checked` | Random sample checked against original source document |
+| `verified` | Every entry has been manually compared against the source |
+| `executed` | Verified + calculation output confirmed against known results |
+
+This tier system lets users assess data confidence at a glance, just as
+Pasal.id distinguishes "automatically parsed" from "verified" content.
+
 Users are responsible for verifying coefficients against the latest
 applicable regulations before using them in official HPS/RAB documents.
 

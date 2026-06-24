@@ -70,7 +70,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -144,7 +145,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -197,7 +199,7 @@
       {
         "nama": "Paku Rivet",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 200
       }
     ],
@@ -224,7 +226,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -277,7 +280,7 @@
       {
         "nama": "Paku Rivet",
         "satuan": "buah",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 200
       }
     ],
@@ -304,7 +307,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -321,14 +325,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang kayu",
         "satuan": "OH",
-        "koefisien": 12.0,
+        "koefisien": 12,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -357,7 +361,7 @@
       {
         "nama": "Besi strip tebal 5 mm",
         "satuan": "kg",
-        "koefisien": 15.0,
+        "koefisien": 15,
         "harga_satuan_ref": 7500
       },
       {
@@ -390,7 +394,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -443,7 +448,7 @@
       {
         "nama": "Besi strip tebal 5 mm",
         "satuan": "kg",
-        "koefisien": 15.0,
+        "koefisien": 15,
         "harga_satuan_ref": 7500
       },
       {
@@ -476,7 +481,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -529,13 +535,13 @@
       {
         "nama": "Besi strip tebal 5 mm",
         "satuan": "kg",
-        "koefisien": 15.0,
+        "koefisien": 15,
         "harga_satuan_ref": 7500
       },
       {
         "nama": "Paku 12 cm",
         "satuan": "kg",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 1500
       }
     ],
@@ -562,7 +568,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -648,7 +655,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -734,7 +742,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -814,7 +823,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Rangka Atap",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

@@ -49,7 +49,7 @@
       {
         "nama": "Skrup fixer",
         "satuan": "buah",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 1600
       }
     ],
@@ -76,7 +76,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -170,7 +171,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -251,7 +253,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -343,7 +346,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -390,19 +394,19 @@
       {
         "nama": "Pipa besi hitam 3 inch",
         "satuan": "m'",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 42000
       },
       {
         "nama": "Pipa besi hitam 2 inch",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 31000
       },
       {
         "nama": "Pipa besi hitam 1,5 inch",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 22000
       },
       {
@@ -441,7 +445,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -458,7 +463,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -488,13 +493,13 @@
       {
         "nama": "Tangga service",
         "satuan": "buah",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 1144000
       },
       {
         "nama": "Dynabolt M12",
         "satuan": "m'",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 30500
       }
     ],
@@ -521,7 +526,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Besi dan Aluminium",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

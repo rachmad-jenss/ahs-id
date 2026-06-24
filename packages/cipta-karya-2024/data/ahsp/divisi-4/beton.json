@@ -76,7 +76,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -107,14 +108,14 @@
       {
         "nama": "Kepala tukang",
         "satuan": "OH",
-        "koefisien": 4e-05,
+        "koefisien": 0.00004,
         "harga_satuan_ref": 175000,
         "ref": "L.03"
       },
       {
         "nama": "Mandor",
         "satuan": "OH",
-        "koefisien": 8e-05,
+        "koefisien": 0.00008,
         "harga_satuan_ref": 200000,
         "ref": "L.04"
       }
@@ -169,7 +170,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -249,7 +251,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -342,7 +345,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -422,7 +426,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -453,14 +458,14 @@
       {
         "nama": "Kepala tukang",
         "satuan": "OH",
-        "koefisien": 2e-05,
+        "koefisien": 0.00002,
         "harga_satuan_ref": 175000,
         "ref": "L.03"
       },
       {
         "nama": "Mandor",
         "satuan": "OH",
-        "koefisien": 4e-05,
+        "koefisien": 0.00004,
         "harga_satuan_ref": 200000,
         "ref": "L.04"
       }
@@ -509,7 +514,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -533,7 +539,7 @@
       {
         "nama": "Mandor",
         "satuan": "OH",
-        "koefisien": 4.5e-05,
+        "koefisien": 0.000045,
         "harga_satuan_ref": 200000,
         "ref": "L.04"
       }
@@ -562,7 +568,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -586,7 +593,7 @@
       {
         "nama": "Mandor",
         "satuan": "OH",
-        "koefisien": 2.1e-05,
+        "koefisien": 0.000021,
         "harga_satuan_ref": 200000,
         "ref": "L.04"
       }
@@ -615,7 +622,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -682,7 +690,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -756,7 +765,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -830,7 +840,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -910,7 +921,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -996,7 +1008,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1082,7 +1095,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1180,7 +1194,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1278,7 +1293,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1376,7 +1392,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1453,7 +1470,7 @@
       {
         "nama": "Formtie/penjaga jarak bekesting/spacer",
         "satuan": "buah",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 7000
       }
     ],
@@ -1480,7 +1497,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1578,7 +1596,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1664,7 +1683,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1717,7 +1737,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1770,7 +1791,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1817,13 +1839,13 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 250.0,
+        "koefisien": 250,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 888.0,
+        "koefisien": 888,
         "harga_satuan_ref": 300
       },
       {
@@ -1835,7 +1857,7 @@
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -1862,7 +1884,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -1909,25 +1932,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 267.0,
+        "koefisien": 267,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 871.0,
+        "koefisien": 871,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -1954,7 +1977,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2001,25 +2025,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 306.0,
+        "koefisien": 306,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 832.0,
+        "koefisien": 832,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2046,7 +2070,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2093,25 +2118,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 322.0,
+        "koefisien": 322,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 817.0,
+        "koefisien": 817,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2138,7 +2163,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2185,25 +2211,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 348.0,
+        "koefisien": 348,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 790.0,
+        "koefisien": 790,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2230,7 +2256,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2277,25 +2304,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 368.0,
+        "koefisien": 368,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 770.0,
+        "koefisien": 770,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2322,7 +2349,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2339,7 +2367,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2369,25 +2397,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 267.0,
+        "koefisien": 267,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 871.0,
+        "koefisien": 871,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2421,7 +2449,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2438,7 +2467,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2468,25 +2497,25 @@
       {
         "nama": "Semen Portland (pc)",
         "satuan": "kg",
-        "koefisien": 306.0,
+        "koefisien": 306,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 832.0,
+        "koefisien": 832,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2520,7 +2549,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2537,7 +2567,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2567,25 +2597,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 322.0,
+        "koefisien": 322,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 817.0,
+        "koefisien": 817,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2619,7 +2649,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2636,7 +2667,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2666,25 +2697,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 348.0,
+        "koefisien": 348,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 790.0,
+        "koefisien": 790,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2718,7 +2749,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2735,7 +2767,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2765,25 +2797,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 368.0,
+        "koefisien": 368,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 770.0,
+        "koefisien": 770,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2817,7 +2849,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2834,7 +2867,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2864,25 +2897,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 407.0,
+        "koefisien": 407,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 731.0,
+        "koefisien": 731,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -2916,7 +2949,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -2933,7 +2967,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -2963,25 +2997,25 @@
       {
         "nama": "Semen Portland (pc)",
         "satuan": "kg",
-        "koefisien": 437.0,
+        "koefisien": 437,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 701.0,
+        "koefisien": 701,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -3015,7 +3049,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3032,7 +3067,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -3062,25 +3097,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 457.0,
+        "koefisien": 457,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 681.0,
+        "koefisien": 681,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -3114,7 +3149,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3131,7 +3167,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -3161,25 +3197,25 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 468.0,
+        "koefisien": 468,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 671.0,
+        "koefisien": 671,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       }
     ],
@@ -3213,7 +3249,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3230,7 +3267,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -3260,31 +3297,31 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 408.0,
+        "koefisien": 408,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 629.0,
+        "koefisien": 629,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1009.0,
+        "koefisien": 1009,
         "harga_satuan_ref": 261
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 202.0,
+        "koefisien": 202,
         "harga_satuan_ref": 200
       },
       {
         "nama": "Fly ash",
         "satuan": "kg",
-        "koefisien": 102.0,
+        "koefisien": 102,
         "harga_satuan_ref": 600
       }
     ],
@@ -3318,7 +3355,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3335,7 +3373,7 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
@@ -3365,19 +3403,19 @@
       {
         "nama": "Semen Portland (PC)",
         "satuan": "kg",
-        "koefisien": 400.0,
+        "koefisien": 400,
         "harga_satuan_ref": 1300
       },
       {
         "nama": "Pasir beton",
         "satuan": "kg",
-        "koefisien": 672.0,
+        "koefisien": 672,
         "harga_satuan_ref": 300
       },
       {
         "nama": "Batu split 2/3",
         "satuan": "kg",
-        "koefisien": 1440.0,
+        "koefisien": 1440,
         "harga_satuan_ref": 243
       },
       {
@@ -3389,7 +3427,7 @@
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 210.0,
+        "koefisien": 210,
         "harga_satuan_ref": 200
       }
     ],
@@ -3423,7 +3461,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3497,7 +3536,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3550,7 +3590,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3603,7 +3644,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3663,7 +3705,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3723,7 +3766,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3783,7 +3827,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3843,7 +3888,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3896,7 +3942,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -3956,7 +4003,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4022,7 +4070,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4082,7 +4131,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4142,7 +4192,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4215,7 +4266,7 @@
       {
         "nama": "BjTP",
         "satuan": "kg",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 14250
       },
       {
@@ -4227,7 +4278,7 @@
       {
         "nama": "Semen portland (PC)",
         "satuan": "kg",
-        "koefisien": 4.0,
+        "koefisien": 4,
         "harga_satuan_ref": 1300
       },
       {
@@ -4266,7 +4317,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4396,7 +4448,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4443,13 +4496,13 @@
       {
         "nama": "Semen grout",
         "satuan": "kg",
-        "koefisien": 1920.0,
+        "koefisien": 1920,
         "harga_satuan_ref": 6000
       },
       {
         "nama": "Air",
         "satuan": "liter",
-        "koefisien": 963.0,
+        "koefisien": 963,
         "harga_satuan_ref": 200
       }
     ],
@@ -4476,7 +4529,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -4534,7 +4588,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Beton",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

@@ -83,7 +83,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -170,7 +171,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -257,7 +259,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -324,7 +327,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -391,7 +395,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -458,7 +463,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -494,7 +500,7 @@
       {
         "nama": "Pemasangan dan membuat cetakan 1 buah komponen P1 RISHA",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 14069
       },
       {
@@ -533,7 +539,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -569,7 +576,7 @@
       {
         "nama": "Pemasangan dan membuat cetakan 1 buah komponen P1 RISHA",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 13625
       },
       {
@@ -608,7 +615,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -638,7 +646,7 @@
       {
         "nama": "Pemasangan dan membuat cetakan 1 buah komponen P3 RISHA",
         "satuan": "unit",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 13292
       },
       {
@@ -677,7 +685,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -716,7 +725,7 @@
       {
         "nama": "Palet Kayu uk. 120x120x10 cm",
         "satuan": "buah",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 123000
       },
       {
@@ -761,7 +770,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -785,7 +795,7 @@
       {
         "nama": "Panel P2",
         "satuan": "buah",
-        "koefisien": 3.0,
+        "koefisien": 3,
         "harga_satuan_ref": 1644397
       },
       {
@@ -818,7 +828,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -835,14 +846,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang batu",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -865,61 +876,61 @@
       {
         "nama": "Baut dan Mur f12 L=4\"",
         "satuan": "buah",
-        "koefisien": 104.0,
+        "koefisien": 104,
         "harga_satuan_ref": 20000
       },
       {
         "nama": "Baut dan Mur f12, L=6\"",
         "satuan": "buah",
-        "koefisien": 133.0,
+        "koefisien": 133,
         "harga_satuan_ref": 22000
       },
       {
         "nama": "Baut dan Mur f12, L=7\"",
         "satuan": "buah",
-        "koefisien": 156.0,
+        "koefisien": 156,
         "harga_satuan_ref": 23000
       },
       {
         "nama": "Ring Plat",
         "satuan": "buah",
-        "koefisien": 786.0,
+        "koefisien": 786,
         "harga_satuan_ref": 2500
       },
       {
         "nama": "Pelat Strip t=2,6 mm, L=12 cm",
         "satuan": "buah",
-        "koefisien": 80.0,
+        "koefisien": 80,
         "harga_satuan_ref": 21000
       },
       {
         "nama": "Pelat Strip t=2,6 mm, L=14 cm",
         "satuan": "buah",
-        "koefisien": 24.0,
+        "koefisien": 24,
         "harga_satuan_ref": 29000
       },
       {
         "nama": "Pelat Strip t=2,6 mm, L=17 cm",
         "satuan": "buah",
-        "koefisien": 174.0,
+        "koefisien": 174,
         "harga_satuan_ref": 39000
       },
       {
         "nama": "Pelat Strip t=2,6 mm, L=34 cm",
         "satuan": "buah",
-        "koefisien": 12.0,
+        "koefisien": 12,
         "harga_satuan_ref": 58000
       },
       {
         "nama": "Angkur Baja Full Drat ASTM 307 dia. 10 mm Panjang 35 cm",
         "satuan": "buah",
-        "koefisien": 30.0,
+        "koefisien": 30,
         "harga_satuan_ref": 9200
       },
       {
         "nama": "Angkur Baja Full Drat ASTM 307 dia 10 mm Panjang 65 cm",
         "satuan": "buah",
-        "koefisien": 15.0,
+        "koefisien": 15,
         "harga_satuan_ref": 18000
       }
     ],
@@ -946,7 +957,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -963,14 +975,14 @@
       {
         "nama": "Pekerja",
         "satuan": "OH",
-        "koefisien": 8.0,
+        "koefisien": 8,
         "harga_satuan_ref": 100000,
         "ref": "L.01"
       },
       {
         "nama": "Tukang batu",
         "satuan": "OH",
-        "koefisien": 2.0,
+        "koefisien": 2,
         "harga_satuan_ref": 145000,
         "ref": "L.02"
       },
@@ -1013,7 +1025,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Strutur Risha ",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]

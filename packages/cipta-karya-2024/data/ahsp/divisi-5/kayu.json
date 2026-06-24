@@ -61,7 +61,7 @@
       {
         "nama": "Plywood 4 mm",
         "satuan": "lembar",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 75000
       }
     ],
@@ -88,7 +88,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Kayu",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   },
   {
@@ -153,7 +154,7 @@
       {
         "nama": "Plywood 4 mm",
         "satuan": "lembar",
-        "koefisien": 1.0,
+        "koefisien": 1,
         "harga_satuan_ref": 75000
       },
       {
@@ -186,7 +187,8 @@
       "sumber_regulasi": "SE Bina Konstruksi No. 68/SE/Dk/2024",
       "halaman": "Kayu",
       "diverifikasi_oleh": null,
-      "tanggal_verifikasi": null
+      "tanggal_verifikasi": null,
+      "verification_tier": "auto-extracted"
     }
   }
 ]
