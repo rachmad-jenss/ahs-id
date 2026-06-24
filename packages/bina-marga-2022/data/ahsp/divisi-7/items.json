@@ -8319,14 +8319,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-734",
-        "koefisien": 61.5249505279,
-        "satuan": "Kg",
-        "catatan": "Baja Tulangan"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.03",

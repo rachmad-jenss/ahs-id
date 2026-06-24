@@ -1,0 +1,19 @@
+{
+  "name": "@ahs-id/hsd-bm-2022",
+  "version": "0.0.1",
+  "description": "Regional HSD prices for Bina Marga 2022 regulation bundle",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ahs-id/core": "workspace:*"
+  },
+  "license": "MIT"
+}

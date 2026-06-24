@@ -15,13 +15,13 @@
         "ref": "L.01",
         "koefisien": 0.0002092608,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001465 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001465 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0001046304,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.000732 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.000732 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -113,13 +113,13 @@
         "ref": "L.01",
         "koefisien": 0.0002980382,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.002086 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.002086 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0001490191,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001043 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001043 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -228,13 +228,13 @@
         "ref": "L.01",
         "koefisien": 0.0002980382,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.002086 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.002086 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0001490191,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001043 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001043 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -343,13 +343,13 @@
         "ref": "L.01",
         "koefisien": 0.0018862141,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.013203 Jam/m2 ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.013203 Jam/m2 \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.02",
         "koefisien": 0.0001886214,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.00132 Jam/m2 ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.00132 Jam/m2 \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -387,7 +387,7 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 0.0000765366,
+          "value": 7.65366e-05,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
@@ -458,13 +458,13 @@
         "ref": "L.01",
         "koefisien": 0.0037724283,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.026407 Jam/m2 ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.026407 Jam/m2 \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0003772428,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.002641 Jam/m2 ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.002641 Jam/m2 \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [],
@@ -579,7 +579,7 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 0.0000622646,
+          "value": 6.22646e-05,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
@@ -596,7 +596,7 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 0.0000800544,
+          "value": 8.00544e-05,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
@@ -681,7 +681,7 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 0.0000622646,
+          "value": 6.22646e-05,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
@@ -698,7 +698,7 @@
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
-          "value": 0.0000800544,
+          "value": 8.00544e-05,
           "asumsi": {
             "fa": 0.83,
             "jarak_km": 8.725,
@@ -769,13 +769,13 @@
         "ref": "L.01",
         "koefisien": 0.0002294894,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001606 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001606 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
-        "koefisien": 0.0000573723,
+        "koefisien": 5.73723e-05,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.000402 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.000402 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -857,13 +857,13 @@
         "ref": "L.01",
         "koefisien": 0.0002294894,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001606 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001606 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
-        "koefisien": 0.0000573723,
+        "koefisien": 5.73723e-05,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.000402 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.000402 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [],
@@ -930,13 +930,13 @@
         "ref": "L.01",
         "koefisien": 0.0002294894,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.001606 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.001606 Jam/liter \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
-        "koefisien": 0.0000573723,
+        "koefisien": 5.73723e-05,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.000402 Jam/liter ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.000402 Jam/liter \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [],
@@ -1003,13 +1003,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -1197,13 +1197,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -1391,13 +1391,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -1585,13 +1585,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -1779,13 +1779,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -1990,13 +1990,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -2201,13 +2201,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -2405,13 +2405,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -2609,13 +2609,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -2813,13 +2813,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -3017,13 +3017,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -3228,13 +3228,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -3481,13 +3481,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -3692,13 +3692,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -3903,13 +3903,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4114,13 +4114,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4325,13 +4325,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4543,13 +4543,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4761,13 +4761,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4787,10 +4787,10 @@
       },
       {
         "ref": "M.12",
-        "koefisien": 0,
+        "koefisien": 1.0,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
-        "catatan": "Satuan: Kg"
+        "catatan": "Fixed: koef was 0, set to 1.0"
       },
       {
         "ref": "M.161",
@@ -4972,13 +4972,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -4998,10 +4998,10 @@
       },
       {
         "ref": "M.12",
-        "koefisien": 0,
+        "koefisien": 1.0,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
-        "catatan": "Satuan: Kg"
+        "catatan": "Fixed: koef was 0, set to 1.0"
       },
       {
         "ref": "M.161",
@@ -5183,13 +5183,13 @@
         "ref": "L.01",
         "koefisien": 0.0286861733,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.200803 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.200803 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0028686173,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.02008 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.02008 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -5216,10 +5216,10 @@
       },
       {
         "ref": "M.12",
-        "koefisien": 0,
+        "koefisien": 1.0,
         "koef_sumber": "kalkulasi",
         "volume_state": null,
-        "catatan": "Satuan: Kg"
+        "catatan": "Fixed: koef was 0, set to 1.0 (material reference)"
       },
       {
         "ref": "M.10",
@@ -5401,13 +5401,13 @@
         "ref": "L.01",
         "koefisien": 0.0258796671,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.181158 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.181158 Jam/ton \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0025879667,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.018116 Jam/ton ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.018116 Jam/ton \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -5516,13 +5516,13 @@
         "ref": "L.01",
         "koefisien": 0.1335390824,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.934774 Jam/meter kubik ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.934774 Jam/meter kubik \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0133539082,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.093477 Jam/meter kubik ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.093477 Jam/meter kubik \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [
@@ -5655,13 +5655,13 @@
         "ref": "L.01",
         "koefisien": 0.1335390824,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.934774 Jam/meter kubik ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.934774 Jam/meter kubik \u00f7 7.0 jam/OH"
       },
       {
         "ref": "L.03",
         "koefisien": 0.0133539082,
         "koef_sumber": "kalkulasi",
-        "catatan": "Sumber: 0.093477 Jam/meter kubik ÷ 7.0 jam/OH"
+        "catatan": "Sumber: 0.093477 Jam/meter kubik \u00f7 7.0 jam/OH"
       }
     ],
     "bahan": [

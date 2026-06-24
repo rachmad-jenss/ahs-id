@@ -200,20 +200,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-716",
-        "koefisien": 0.0212805831,
-        "satuan": "M3/M'",
-        "catatan": "- Beton f'c 15 MPa = (22/7*((2*tg/100+d)/2)^2)-(22/7*(d/2)^2))*1*1.03"
-      },
-      {
-        "ref": "EI-241",
-        "koefisien": 0.05859,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp*(0.15+2*tg/100+d+0.15)*1)*1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -337,20 +324,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-716",
-        "koefisien": 0.0289167267,
-        "satuan": "M3/M'",
-        "catatan": "- Beton 15 MPa = (22/7*((2*tg/100+d)/2)^2)-(22/7*(d/2)^2))*1*1.03"
-      },
-      {
-        "ref": "EI-241",
-        "koefisien": 0.06447,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp*(0.15+2*tg/100+d+0.15)*1)*1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -474,20 +448,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-716",
-        "koefisien": 0.07224,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp*(0.15+2*tg/100+d+0.15)*1)*1.05}"
-      },
-      {
-        "ref": "EI-241",
-        "koefisien": 0.2644524,
-        "satuan": "M3/M'",
-        "catatan": "- Material Pilihan  = ((2*tg/100+d+0.15)*(0.15+2*tg/100+d+0.15)"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -603,14 +564,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.115668,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp*(0.3+2*tg/100+d+0.3)*1)*1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -1273,14 +1227,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.6024375,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp*(0.4+2*tg/100+d+0.4)*1)*1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -1417,14 +1364,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 2.5373841413,
-        "satuan": "M3/T",
-        "catatan": "- Urugan Porus = {(tp*(0.5+2*tg/100+d+0.5)*1)*1.05} x Pbb"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2144,14 +2084,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.3864,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2271,14 +2204,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.4956,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2398,14 +2324,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.5565,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2525,14 +2444,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.6216,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2652,14 +2564,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.7644,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",
@@ -2779,14 +2684,7 @@
     "volume_state_bayar": "bank",
     "jenis_pekerjaan": "mekanis",
     "is_lump_sum": false,
-    "sub_ahsp": [
-      {
-        "ref": "EI-241",
-        "koefisien": 0.924,
-        "satuan": "M3/M'",
-        "catatan": "- Timbunan Porus      = {(tp x (0.4+2 x B x T+0.4) x 1) x 1.05}"
-      }
-    ],
+    "sub_ahsp": [],
     "tenaga_kerja": [
       {
         "ref": "L.01",

@@ -50,6 +50,9 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@ahs-id/hsd-bm-2022':
+        specifier: workspace:^
+        version: link:../../packages/hsd-bm-2022
       '@ahs-id/hsd-jabar-2025':
         specifier: workspace:*
         version: link:../../packages/hsd-jabar-2025
@@ -124,6 +127,12 @@ importers:
       vitest:
         specifier: ^2.0.0
         version: 2.1.9(@types/node@22.19.19)
+
+  packages/hsd-bm-2022:
+    dependencies:
+      '@ahs-id/core':
+        specifier: workspace:*
+        version: link:../core
 
   packages/hsd-jabar-2025:
     dependencies:

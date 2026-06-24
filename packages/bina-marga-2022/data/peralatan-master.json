@@ -3914,6 +3914,479 @@
       "produktivitas_params": {
         "volume_state_output": "loose"
       }
+    },
+    {
+      "kode": "E.17b",
+      "nama": "Alat E.17b",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.56",
+      "nama": "Alat E.56",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.62",
+      "nama": "Alat E.62",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.12e",
+      "nama": "Alat E.12e",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.98d",
+      "nama": "Alat E.98d",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.63",
+      "nama": "Alat E.63",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.07b",
+      "nama": "Alat E.07b",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.32b",
+      "nama": "Alat E.32b",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.61",
+      "nama": "Alat E.61",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.68",
+      "nama": "Alat E.68",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
+    },
+    {
+      "kode": "E.69",
+      "nama": "Alat E.69",
+      "tipe_default": "standard",
+      "daya_hp": 100,
+      "berat_operasi_ton": 10,
+      "tipe_produksi": "siklus",
+      "kapasitas_bucket_m3": 1.0,
+      "hsd_params": {
+        "harga_pokok_rp": 500000000,
+        "umur_ekonomis_tahun": 5,
+        "jam_kerja_per_tahun": 2000,
+        "nilai_sisa_pct": 10,
+        "faktor_angsuran": 0.2005,
+        "asuransi_pajak_pct": 0.5,
+        "bahan_bakar_ch": 12,
+        "pelumas": {
+          "mesin": {
+            "cp": 0.4,
+            "satuan": "liter/jam"
+          },
+          "hidrolik": {
+            "cp": 0.2,
+            "satuan": "liter/jam"
+          },
+          "grease": {
+            "cp": 0.05,
+            "satuan": "liter/jam"
+          }
+        },
+        "perawatan_pct": 5,
+        "perbaikan_pct": 3,
+        "fpr": {
+          "normal": 1.0,
+          "berat": 1.2,
+          "sangat_berat": 1.5,
+          "default": "normal"
+        }
+      },
+      "produktivitas_params": {
+        "volume_state_output": "loose"
+      }
     }
   ]
 }

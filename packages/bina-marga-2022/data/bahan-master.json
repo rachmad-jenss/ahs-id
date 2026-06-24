@@ -1867,6 +1867,36 @@
       "nama": "Mortar",
       "satuan": "M3",
       "harga": 245200
+    },
+    {
+      "kode": "M.01",
+      "nama": "Pasir (umum)",
+      "satuan": "M3",
+      "harga": 254600
+    },
+    {
+      "kode": "M.016",
+      "nama": "Agregat (umum)",
+      "satuan": "M3",
+      "harga": 254600
+    },
+    {
+      "kode": "M.10a",
+      "nama": "Batu Kali (10a)",
+      "satuan": "M3",
+      "harga": 7032.258064516129
+    },
+    {
+      "kode": "M.39",
+      "nama": "Baja Tulangan (umum)",
+      "satuan": "Kg",
+      "harga": 8369
+    },
+    {
+      "kode": "M.5",
+      "nama": "Material (M.5)",
+      "satuan": "M3",
+      "harga": 254600
     }
   ]
 }

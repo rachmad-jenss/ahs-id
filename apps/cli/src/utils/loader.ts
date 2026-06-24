@@ -27,7 +27,7 @@ const BUNDLE_REGISTRY: Record<string, () => Promise<CalculatorBundle>> = {
   'bina-marga-2022': async () => {
     const [bmMod, hsdMod] = await Promise.all([
       import('@ahs-id/bina-marga-2022'),
-      import('@ahs-id/hsd-kaltim-2025'),
+      import('@ahs-id/hsd-bm-2022'),
     ]);
     return { bundle: bmMod.bundle as DataBundle, hsd: hsdMod.hsd as HsdRegional, note: 'pre-calculated (calcHspFromBundle)' };
   },

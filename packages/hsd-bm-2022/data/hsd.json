@@ -1,0 +1,2753 @@
+{
+  "version": "2022.1.0",
+  "region": {
+    "provinsi": "Nasional (Bina Marga 2022)",
+    "kode_provinsi": "00",
+    "kabupaten": null,
+    "tahun_berlaku": 2022,
+    "kuartal": 1,
+    "dasar_hukum": "Permen PUPR 1/2022 Lampiran",
+    "tanggal_terbit": "2022-01-01"
+  },
+  "tenaga_kerja": [
+    {
+      "ref": "L.01",
+      "satuan": "OH",
+      "harga_rp": 174974,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.02",
+      "satuan": "OH",
+      "harga_rp": 180791,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.03",
+      "satuan": "OH",
+      "harga_rp": 210464,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.04",
+      "satuan": "OH",
+      "harga_rp": 210464,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.05",
+      "satuan": "OH",
+      "harga_rp": 180623,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.06",
+      "satuan": "OH",
+      "harga_rp": 210464,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.07",
+      "satuan": "OH",
+      "harga_rp": 180623,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.08",
+      "satuan": "OH",
+      "harga_rp": 197899,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.09",
+      "satuan": "OH",
+      "harga_rp": 180623,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.10",
+      "satuan": "OH",
+      "harga_rp": 197899,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.11",
+      "satuan": "OH",
+      "harga_rp": 801667,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.12",
+      "satuan": "OH",
+      "harga_rp": 1061667,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.16",
+      "satuan": "OH",
+      "harga_rp": 448500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.17",
+      "satuan": "OH",
+      "harga_rp": 526500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.18",
+      "satuan": "OH",
+      "harga_rp": 448500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.19",
+      "satuan": "OH",
+      "harga_rp": 448500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.20",
+      "satuan": "OH",
+      "harga_rp": 572000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.21",
+      "satuan": "OH",
+      "harga_rp": 539500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.22",
+      "satuan": "OH",
+      "harga_rp": 526500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.23",
+      "satuan": "OH",
+      "harga_rp": 448500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.24",
+      "satuan": "OH",
+      "harga_rp": 448500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "L.25",
+      "satuan": "OH",
+      "harga_rp": 403000,
+      "sumber_data": "Permen PUPR 1/2022"
+    }
+  ],
+  "bahan": [
+    {
+      "ref": "M.01b",
+      "nama": "Pasir Pasang (AC-WC, Mortar)",
+      "satuan": "M3",
+      "harga_rp": 214700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.01a",
+      "nama": "Pasir Kasar (Beton, Lapis Drainase)",
+      "satuan": "M3",
+      "harga_rp": 254600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.01c",
+      "nama": "Pasir Halus (HRS)",
+      "satuan": "M3",
+      "harga_rp": 214700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.01d",
+      "nama": "Pasir Urug",
+      "satuan": "M3",
+      "harga_rp": 202200,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.02",
+      "nama": "Batu Kali",
+      "satuan": "M3",
+      "harga_rp": 195100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.03",
+      "nama": "Agregat Pecah Kasar",
+      "satuan": "M3",
+      "harga_rp": 239440.4886151178,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.04",
+      "nama": "Boulder (Berangkal)",
+      "satuan": "M3",
+      "harga_rp": 193100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.05",
+      "nama": "F i l l e r (non semen) (limestone dust, kapur padam, dolomit, fly ash)",
+      "satuan": "Kg",
+      "harga_rp": 700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.06",
+      "nama": "Batu Belah",
+      "satuan": "M3",
+      "harga_rp": 195100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.07",
+      "nama": "Gravel / Kerakal / Koral",
+      "satuan": "M3",
+      "harga_rp": 200100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.08",
+      "nama": "Bahan Timbunan Biasa (Tanah Urug)",
+      "satuan": "M3",
+      "harga_rp": 134900,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.09",
+      "nama": "Bahan Timbunan Pilihan",
+      "satuan": "M3",
+      "harga_rp": 143700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.10",
+      "nama": "Aspal 60/70",
+      "satuan": "Kg",
+      "harga_rp": 7032.258064516129,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.11",
+      "nama": "Kerosen / Minyak Tanah",
+      "satuan": "Ltr",
+      "harga_rp": 20000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.12",
+      "nama": "Semen / PC  (kg)",
+      "satuan": "Kg",
+      "harga_rp": 1440,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.13",
+      "nama": "Silica Fume (powder)",
+      "satuan": "Kg",
+      "harga_rp": 18300,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.14",
+      "nama": "Kawat Beton",
+      "satuan": "Kg",
+      "harga_rp": 25000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.15",
+      "nama": "Kawat Bronjong",
+      "satuan": "Kg",
+      "harga_rp": 22000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.16",
+      "nama": "Besi Siku",
+      "satuan": "Kg",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.16a",
+      "nama": "S i r t u (4 \u2264 PI \u226410 ; LL \u2264 35 %)",
+      "satuan": "M3",
+      "harga_rp": 188600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.16b",
+      "nama": "S i r t u (4 \u2264 PI \u226415 ; LL \u2264 35 %)",
+      "satuan": "M3",
+      "harga_rp": 188600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.17a",
+      "nama": "Cat Marka (Non Thermoplas)",
+      "satuan": "Kg",
+      "harga_rp": 22500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.17b",
+      "nama": "Cat Marka (Thermoplastic)",
+      "satuan": "Kg",
+      "harga_rp": 27500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.18",
+      "nama": "P a k u",
+      "satuan": "Kg",
+      "harga_rp": 36000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.19",
+      "nama": "Kayu Perancah",
+      "satuan": "M3",
+      "harga_rp": 2750000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.20",
+      "nama": "B e n s i n",
+      "satuan": "Ltr",
+      "harga_rp": 10000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.21",
+      "nama": "S o l a r",
+      "satuan": "Ltr",
+      "harga_rp": 14000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.22",
+      "nama": "Minyak Pelumas / Oli",
+      "satuan": "Ltr",
+      "harga_rp": 43500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.23",
+      "nama": "Geotextile Filter Kelas 2",
+      "satuan": "M2",
+      "harga_rp": 46717,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.24",
+      "nama": "Poliurerhane foam raw material",
+      "satuan": "Kg",
+      "harga_rp": 178473,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.25",
+      "nama": "Pipa Porous diameter 4\"",
+      "satuan": "M'",
+      "harga_rp": 40000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.26",
+      "nama": "Agegat Kelas A",
+      "satuan": "M3",
+      "harga_rp": 267909.8577338144,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.27",
+      "nama": "Agegat Kelas B",
+      "satuan": "M3",
+      "harga_rp": 245694.6046069244,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.29",
+      "nama": "Agegat Kelas S",
+      "satuan": "M3",
+      "harga_rp": 245694.6046069244,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.38",
+      "nama": "Lapis Drainase",
+      "satuan": "M3",
+      "harga_rp": 283301.9084092434,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.30",
+      "nama": "Aspal Emulsi Modifikasi Polimer 1h",
+      "satuan": "Liter",
+      "harga_rp": 12300,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.31",
+      "nama": "Aspal Emulsi",
+      "satuan": "Kg",
+      "harga_rp": 8303.734988736489,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.32",
+      "nama": "Lem Kayu",
+      "satuan": "Kg",
+      "harga_rp": 14750,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.33",
+      "nama": "Thinner",
+      "satuan": "Ltr",
+      "harga_rp": 12000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.34",
+      "nama": "Glass Bead",
+      "satuan": "Kg",
+      "harga_rp": 185999,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.35a",
+      "nama": "Rambu (Eng. Grade) - Jalan Nasional Kelas 1 Dia 90 mm",
+      "satuan": "Bh",
+      "harga_rp": 276000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.35b",
+      "nama": "Rambu (High I. Grade) - Jalan Nasional Kelas 1 Dia 90 mm",
+      "satuan": "Bh",
+      "harga_rp": 316500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.36",
+      "nama": "Rel Pengaman",
+      "satuan": "M'",
+      "harga_rp": 2506400,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.37",
+      "nama": "Beton Struktur Fc' 25 Mpa",
+      "satuan": "M3",
+      "harga_rp": 2921487.7751876717,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.39a",
+      "nama": "BjTP 280",
+      "satuan": "Kg",
+      "harga_rp": 8369,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.39b",
+      "nama": "BjTS 280",
+      "satuan": "Kg",
+      "harga_rp": 9000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.40",
+      "nama": "Kapur",
+      "satuan": "M3",
+      "harga_rp": 185000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.41",
+      "nama": "Chipping",
+      "satuan": "M3",
+      "harga_rp": 239440.4886151178,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.41",
+      "nama": "Chipping (kg)",
+      "satuan": "Kg",
+      "harga_rp": 127.03761068289357,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.42",
+      "nama": "Performed joint sealent",
+      "satuan": "M'",
+      "harga_rp": 24723,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.44",
+      "nama": "Geotextile stabilisator Kelas 1",
+      "satuan": "M2",
+      "harga_rp": 58700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.45",
+      "nama": "Aspal Modifikasi PG 76",
+      "satuan": "Kg.",
+      "harga_rp": 13700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.46",
+      "nama": "Baja Bergelombang",
+      "satuan": "Kg",
+      "harga_rp": 11500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.47",
+      "nama": "Beton Fc' 10 MPa",
+      "satuan": "M3",
+      "harga_rp": 2557029.289198098,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.48",
+      "nama": "Baja Struktur Grade 240 (Kuat Leleh 240 MPa)",
+      "satuan": "Kg",
+      "harga_rp": 13000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.49",
+      "nama": "Baja Struktur Baja Grade 250 (Kuat Leleh 250 Mpa)",
+      "satuan": "Kg",
+      "harga_rp": 13500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.50",
+      "nama": "Tiang Pancang Beton Pratekan",
+      "satuan": "M3",
+      "harga_rp": 423957.93,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.51",
+      "nama": "Kawat Las",
+      "satuan": "Dos",
+      "harga_rp": 70000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.52",
+      "nama": "Pipa Baja",
+      "satuan": "Kg",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.53",
+      "nama": "Baja Grade 345 (Kuat Leleh 345 Mpa)",
+      "satuan": "Kg",
+      "harga_rp": 14000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.54",
+      "nama": "Baja Grade 485 (Kuat Leleh 485 Mpa)",
+      "satuan": "Kg",
+      "harga_rp": 14500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.57a",
+      "nama": "BjTS 420A",
+      "satuan": "Kg",
+      "harga_rp": 9800,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.57b",
+      "nama": "BjTS 420B",
+      "satuan": "Kg",
+      "harga_rp": 9831,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.57c",
+      "nama": "BjTS 520",
+      "satuan": "Kg",
+      "harga_rp": 9902,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.57d",
+      "nama": "BjTS 550",
+      "satuan": "Kg",
+      "harga_rp": 10943,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.57e",
+      "nama": "BjTS 700",
+      "satuan": "Kg",
+      "harga_rp": 10804,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.58a",
+      "nama": "Geotextile separator Kelas 1",
+      "satuan": "M2",
+      "harga_rp": 35867,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.58b",
+      "nama": "Geotextile separator Kelas 2",
+      "satuan": "M2",
+      "harga_rp": 46717,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.58c",
+      "nama": "Geotextile separator Kelas 3",
+      "satuan": "M2",
+      "harga_rp": 48978,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.59",
+      "nama": "Beton Struktur Fc' 30 MPa",
+      "satuan": "M3",
+      "harga_rp": 3054382.9142484516,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.60",
+      "nama": "Beton Struktur Fc' 15 MPa",
+      "satuan": "M3",
+      "harga_rp": 2669617.254673022,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.61",
+      "nama": "Cerucuk",
+      "satuan": "M",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.64",
+      "nama": "Paku Jalan Memantul Bulat",
+      "satuan": "buah",
+      "harga_rp": 75000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.66",
+      "nama": "Anti strpping agent",
+      "satuan": "Kg",
+      "harga_rp": 80000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.68",
+      "nama": "Beton Struktur Fc' 50 MPa",
+      "satuan": "M3",
+      "harga_rp": 3280395.5333475615,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.69",
+      "nama": "Beton Struktur Fc' 40 MPa",
+      "satuan": "M3",
+      "harga_rp": 3117571.440010132,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.72",
+      "nama": "Beton Fc' 35 MPa",
+      "satuan": "M3",
+      "harga_rp": 3046394.3263605614,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.73",
+      "nama": "Multipleks 12 mm",
+      "satuan": "Lbr",
+      "harga_rp": 150850,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.74a",
+      "nama": "Elastomer jenis 1 ukuran 350 x 300 x 36 mm",
+      "satuan": "buah",
+      "harga_rp": 385500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.74b",
+      "nama": "Elastomer jenis 2 ukuran 400 x 350 x 39 mm",
+      "satuan": "buah",
+      "harga_rp": 650000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.74c",
+      "nama": "Elastomer jenis 3 ukuran 450 x 400 x 45 mm",
+      "satuan": "buah",
+      "harga_rp": 838000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.75d",
+      "nama": "Expansion Tipe Joint Asphaltic Plug",
+      "satuan": "M",
+      "harga_rp": 1000000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.75e",
+      "nama": "Expansion Join Tipe Rubber",
+      "satuan": "M",
+      "harga_rp": 1200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.75f",
+      "nama": "Expansion Join Baja Siku",
+      "satuan": "M",
+      "harga_rp": 275000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.76",
+      "nama": "Agregat 14 mm - 20 mm",
+      "satuan": "Zak",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.77",
+      "nama": "Agregat 14 mm - 20 mm",
+      "satuan": "Kg",
+      "harga_rp": 3750,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.78",
+      "nama": "Paving Block",
+      "satuan": "M2",
+      "harga_rp": 132000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.79",
+      "nama": "Mini Timber Pile",
+      "satuan": "M",
+      "harga_rp": 27000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.81",
+      "nama": "Strip Bearing",
+      "satuan": "Buah",
+      "harga_rp": 229500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.24a",
+      "nama": "Pipa Galvanis Dia 3\"",
+      "satuan": "M",
+      "harga_rp": 68333,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.91",
+      "nama": "Agregat Pecah Mesin 0-5 mm",
+      "satuan": "M3",
+      "harga_rp": 239440.4886151178,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.92",
+      "nama": "Agregat Pecah Mesin 5-10 & 10-20 mm",
+      "satuan": "M3",
+      "harga_rp": 239440.4886151178,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.93",
+      "nama": "Agregat Pecah Mesin 20-30 mm",
+      "satuan": "M3",
+      "harga_rp": 239440.4886151178,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.94",
+      "nama": "Joint Sealent",
+      "satuan": "Kg",
+      "harga_rp": 34100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.95",
+      "nama": "Cat Anti Karat",
+      "satuan": "Kg",
+      "harga_rp": 35750,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.96",
+      "nama": "Expansion Cap",
+      "satuan": "Kg",
+      "harga_rp": 6050,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.97",
+      "nama": "Plastik MembranePolytene 125 mikron",
+      "satuan": "M2",
+      "harga_rp": 63200,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.98",
+      "nama": "Curing Compound",
+      "satuan": "Ltr",
+      "harga_rp": 38500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.67a",
+      "nama": "Additive",
+      "satuan": "Kg",
+      "harga_rp": 38500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.100",
+      "nama": "Casing Dia 800 mm",
+      "satuan": "M",
+      "harga_rp": 24000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.102",
+      "nama": "Polimer Latex",
+      "satuan": "Ltr",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.112",
+      "nama": "Elastomer  Sintetis 450 x 400 x 45 mm",
+      "satuan": "buah",
+      "harga_rp": 300000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.113",
+      "nama": "Anchorage",
+      "satuan": "buah",
+      "harga_rp": 255750,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.114",
+      "nama": "- hidup",
+      "satuan": "buah",
+      "harga_rp": 750000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.115",
+      "nama": "- mati",
+      "satuan": "buah",
+      "harga_rp": 400000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.116",
+      "nama": "Kabel Prategang",
+      "satuan": "Kg",
+      "harga_rp": 13288,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.117",
+      "nama": "- Selongsong",
+      "satuan": "M'",
+      "harga_rp": 98400,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.118",
+      "nama": "- Baja Prategang",
+      "satuan": "Kg",
+      "harga_rp": 13288,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.119",
+      "nama": "- Grouting",
+      "satuan": "M2",
+      "harga_rp": 6759.16,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.120",
+      "nama": "Angkur Kabel Prategang, Tipe...............",
+      "satuan": "M2",
+      "harga_rp": 17000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.121",
+      "nama": "Angkur Kabel Prategang, Tipe............",
+      "satuan": "buah",
+      "harga_rp": 17000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.122",
+      "nama": "Baja Profil",
+      "satuan": "Kg",
+      "harga_rp": 17000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.125",
+      "nama": "Cairan Perekat (Epoxy Resin)",
+      "satuan": "Kg",
+      "harga_rp": 175000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.126",
+      "nama": "Epoxy Bahan Penutup (sealant)",
+      "satuan": "Kg",
+      "harga_rp": 125000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.127",
+      "nama": "Alat Penyuntik Anti Gravitasi",
+      "satuan": "Buah",
+      "harga_rp": 165000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.128",
+      "nama": "Polymer Mortar",
+      "satuan": "Kg",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.129",
+      "nama": "Anti Korosif Baja",
+      "satuan": "Kg",
+      "harga_rp": 65500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.130",
+      "nama": "Acuan/multipleks",
+      "satuan": "M2",
+      "harga_rp": 170000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.131",
+      "nama": "Coating anti UV min 100 mikron jenis PU (Poly Uretane) 0,25 ltr/m2",
+      "satuan": "Ltr",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.132",
+      "nama": "Pipa Galvanis Dia 8\"",
+      "satuan": "M",
+      "harga_rp": 481250,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.133",
+      "nama": "Pelat Baja",
+      "satuan": "Kg",
+      "harga_rp": 17000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.134",
+      "nama": "Baut Angkur",
+      "satuan": "Kg",
+      "harga_rp": 19425,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.135",
+      "nama": "Retarder",
+      "satuan": "Kg'",
+      "harga_rp": 13406,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.136",
+      "nama": "Cat Galvanis",
+      "satuan": "Kg",
+      "harga_rp": 92000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.137",
+      "nama": "Baut Mutu Tinggi A325 1\" x 3\"",
+      "satuan": "Buah",
+      "harga_rp": 29465,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.141",
+      "nama": "Bahan Grouting",
+      "satuan": "Kg",
+      "harga_rp": 3004072,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.142",
+      "nama": "Kayu Kelas 1",
+      "satuan": "M3",
+      "harga_rp": 27500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.143",
+      "nama": "Kerucut lalu lintas (rubber cone) tinggi 70 cm",
+      "satuan": "Buah",
+      "harga_rp": 286000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.144",
+      "nama": "Timbunan/urugan Porous",
+      "satuan": "M3",
+      "harga_rp": 291143.734635083,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.145",
+      "nama": "Topi pelindung (Safety helmet)",
+      "satuan": "Buah",
+      "harga_rp": 65000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.146",
+      "nama": "Pelindung mata (Goggles, Spectacles)",
+      "satuan": "Set",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.147",
+      "nama": "Tameng muka (Face shield)",
+      "satuan": "Buah",
+      "harga_rp": 250000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.148",
+      "nama": "Masker selam (Breathing apparatus)",
+      "satuan": "Buah",
+      "harga_rp": 5037500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.149",
+      "nama": "Pelindung telinga (Ear plug, ear nuff)",
+      "satuan": "Set",
+      "harga_rp": 50000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.150",
+      "nama": "Pelindung pernafasan dan mulut (Masker)",
+      "satuan": "Buah",
+      "harga_rp": 2000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.151",
+      "nama": "Sarungbtangan (Safety gloves)",
+      "satuan": "Set",
+      "harga_rp": 5000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.152",
+      "nama": "Sepatu keselamatan (Safety shoes)",
+      "satuan": "Set",
+      "harga_rp": 300000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.153",
+      "nama": "Penunjang seluruh tubuh (Full bodu harness)",
+      "satuan": "Buah",
+      "harga_rp": 600000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.154",
+      "nama": "Jaket pelampung (Life vest)",
+      "satuan": "Buah",
+      "harga_rp": 100000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.155",
+      "nama": "Rompi keselamatan (Safety vest)",
+      "satuan": "Buah",
+      "harga_rp": 120000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.156",
+      "nama": "Celemek (Apron/coveralls)",
+      "satuan": "Buah",
+      "harga_rp": 500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.157a",
+      "nama": "Pelindung jatuh (Fall arrester)",
+      "satuan": "Buah",
+      "harga_rp": 100000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.15b",
+      "nama": "Penahan jatuh (Harness)",
+      "satuan": "Buah",
+      "harga_rp": 800000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.31a",
+      "nama": "Aspal Emulsi CSS-1 atau SS-1",
+      "satuan": "Liter",
+      "harga_rp": 10500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.31b",
+      "nama": "Aspal Emulsi CRS-1 atau RS-1",
+      "satuan": "Liter",
+      "harga_rp": 12300,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.31c",
+      "nama": "Aspal Modifikasi PG 70",
+      "satuan": "Kg",
+      "harga_rp": 12700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.31d",
+      "nama": "Aspal Emulsi Modifikasi Polimer 2h",
+      "satuan": "Liter",
+      "harga_rp": 12300,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.158",
+      "nama": "Serat Selulosa",
+      "satuan": "Kg",
+      "harga_rp": 22500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.159",
+      "nama": "Zeolit",
+      "satuan": "Kg",
+      "harga_rp": 6000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.160",
+      "nama": "Wax",
+      "satuan": "Kg",
+      "harga_rp": 32085,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.161",
+      "nama": "Asbuton B 5/20",
+      "satuan": "Kg",
+      "harga_rp": 950,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.162",
+      "nama": "CPHMA",
+      "satuan": "Ton",
+      "harga_rp": 900000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.163",
+      "nama": "Asbuton B 50/20",
+      "satuan": "Kg",
+      "harga_rp": 1000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.164",
+      "nama": "Aspal Emulsi Modifikasi Polimer 1h",
+      "satuan": "Liter",
+      "harga_rp": 12300,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.25a",
+      "nama": "Pipa Porus diameter 5\"",
+      "satuan": "M'",
+      "harga_rp": 77000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.25b",
+      "nama": "Pipa Porus diameter 6\"",
+      "satuan": "M'",
+      "harga_rp": 110000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.25c",
+      "nama": "Pipa Porus diameter 8\"",
+      "satuan": "M'",
+      "harga_rp": 142500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.165",
+      "nama": "Backer rod 3/8 inci",
+      "satuan": "Kg",
+      "harga_rp": 10833.333333333334,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.166",
+      "nama": "Cairan Perekat (Epoxy Resin) 2 komponen",
+      "satuan": "Ltr",
+      "harga_rp": 350000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.167",
+      "nama": "Alat pemadam api ringan (APAR)",
+      "satuan": "Buah",
+      "harga_rp": 485000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.168",
+      "nama": "Sirine",
+      "satuan": "Buah",
+      "harga_rp": 100000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.134",
+      "nama": "Bendera K3",
+      "satuan": "Buah",
+      "harga_rp": 50000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.169",
+      "nama": "Lampu darurat (Emergency lamp)",
+      "satuan": "Buah",
+      "harga_rp": 180000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.170",
+      "nama": "Air",
+      "satuan": "Liter",
+      "harga_rp": 14.65,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.171",
+      "nama": "Super plastiziser, maks 0,3 % Sm",
+      "satuan": "Kg",
+      "harga_rp": 40000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.172",
+      "nama": "Tyfo S Priming",
+      "satuan": "ltr",
+      "harga_rp": 425000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.173",
+      "nama": "Tyfo SEH51A",
+      "satuan": "ltr",
+      "harga_rp": 800000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.174",
+      "nama": "Concrete Grouting Non srinkage HWR",
+      "satuan": "Kg",
+      "harga_rp": 6759.162,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.176",
+      "nama": "Mortar semen cepat mengeras (RSC)",
+      "satuan": "Kg",
+      "harga_rp": 4296.2962962962965,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.177",
+      "nama": "Mortar pre-packed untuk stiching",
+      "satuan": "Kg",
+      "harga_rp": 7100,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.178",
+      "nama": "Termoplastik (sealant tuang panas)",
+      "satuan": "Kg",
+      "harga_rp": 28985.000000000004,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.179",
+      "nama": "Backer rod 1 1/6 inci",
+      "satuan": "M1",
+      "harga_rp": 16554.861111111113,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.180",
+      "nama": "Termoseting (sealant tuang dingin)",
+      "satuan": "Kg",
+      "harga_rp": 65333.33333333333,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.181",
+      "nama": "Bahan grouting tersedia jenis preformed",
+      "satuan": "Kg",
+      "harga_rp": 24775,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.182",
+      "nama": "Plastizier",
+      "satuan": "Kg",
+      "harga_rp": 40000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.183",
+      "nama": "Rapid Setting Material (Beton Semen Fast Track < 24 jam)",
+      "satuan": "M3",
+      "harga_rp": 2756809.0945542953,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.184",
+      "nama": "Thermocouple",
+      "satuan": "Buah",
+      "harga_rp": 25000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.185",
+      "nama": "Beton Struktur fc' 45 MPa",
+      "satuan": "M3",
+      "harga_rp": 3175083.0360990115,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.186",
+      "nama": "Beton Struktur fc' 20 MPa",
+      "satuan": "M4",
+      "harga_rp": 2819816.252483682,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.187",
+      "nama": "Baja Struktur Grade 345 (Kuat Leleh 345 MPa)",
+      "satuan": "Kg",
+      "harga_rp": 17000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.188",
+      "nama": "Baja Struktur Grade 485 (Kuat Leleh 485 MPa)",
+      "satuan": "Kg",
+      "harga_rp": 18000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.189",
+      "nama": "Baja Struktur Grade 690 (Kuat Leleh 690 Mpa untuk Tebal Pelat \u2264 2,5 inch)",
+      "satuan": "Kg",
+      "harga_rp": 22000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.190",
+      "nama": "Baja Struktur Grade 690 (Kuat Leleh 620 Mpa untuk Tebal Pelat > 2,5 - 4,0 inch)",
+      "satuan": "Kg",
+      "harga_rp": 19000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.191",
+      "nama": "Casing, diameter 800 mm",
+      "satuan": "Rp/M'",
+      "harga_rp": 42464.6368180528,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.192",
+      "nama": "Bahan turap kayu",
+      "satuan": "M3/M'",
+      "harga_rp": 1300000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.193",
+      "nama": "Berat H Beam per m'",
+      "satuan": "Kg",
+      "harga_rp": 18000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.194",
+      "nama": "Strand 1/2 inci",
+      "satuan": "Kg",
+      "harga_rp": 19182.874571313347,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.195",
+      "nama": "Perancah/ formwoks",
+      "satuan": "M2",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.196",
+      "nama": "Backer rod 5/6 inci",
+      "satuan": "M'",
+      "harga_rp": 16777,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.197",
+      "nama": "Kreosot",
+      "satuan": "Kg",
+      "harga_rp": 10000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.198",
+      "nama": "Bonding Agent",
+      "satuan": "Kg",
+      "harga_rp": 40000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.199",
+      "nama": "Cat dasar beton (epoxy zinc)",
+      "satuan": "Kg",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.200",
+      "nama": "Cat akhir protektif beton (MC Urethane)",
+      "satuan": "Kg",
+      "harga_rp": 450000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.201",
+      "nama": "Cat akhir dekoratif beton  (polyurethane)",
+      "satuan": "Kg",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.202",
+      "nama": "Cat dasar baja (zinc rich)",
+      "satuan": "Kg",
+      "harga_rp": 200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.203",
+      "nama": "Cat akhir protektif baja (alkyd)",
+      "satuan": "Kg",
+      "harga_rp": 98000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.204",
+      "nama": "FRP jenis E-glass untuk daerah kering",
+      "satuan": "M2",
+      "harga_rp": 800000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.205",
+      "nama": "FRP jenis E-glass untuk daerah basah",
+      "satuan": "M2",
+      "harga_rp": 875000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.206",
+      "nama": "FRP jenis glass untuk daerah kering",
+      "satuan": "M2",
+      "harga_rp": 950000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.207",
+      "nama": "FRP jenis carbon untuk daerah kering",
+      "satuan": "M2",
+      "harga_rp": 1200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.208",
+      "nama": "FRP jenis carbon untuk daerah basah",
+      "satuan": "M2",
+      "harga_rp": 1600000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.209",
+      "nama": "Baja untuk pelat buhul dan pelat ganjal",
+      "satuan": "Buah",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.210",
+      "nama": "Baut mutu tinggi A325 Tipe 1 diameter M25",
+      "satuan": "Buah",
+      "harga_rp": 29465,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.211",
+      "nama": "Baut Mutu Tinggi A490 Tipe 1 diameter M25",
+      "satuan": "Buah",
+      "harga_rp": 19500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.212",
+      "nama": "Baut Biasa Grade A diameter M25",
+      "satuan": "Buah",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.213",
+      "nama": "Baut Biasa Grade B diameter M25",
+      "satuan": "Buah",
+      "harga_rp": 12000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.214",
+      "nama": "Baut Biasa Grade C untuk anchor bolts diameter M25",
+      "satuan": "Buah",
+      "harga_rp": 10000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.215",
+      "nama": "Elektroda Las SMAW",
+      "satuan": "Kg",
+      "harga_rp": 28000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.216",
+      "nama": "Elektroda Las SAW",
+      "satuan": "Kg",
+      "harga_rp": 28000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.217",
+      "nama": "Elektroda Las GMAW",
+      "satuan": "Kg",
+      "harga_rp": 28000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.218",
+      "nama": "Elektroda Las FCAW",
+      "satuan": "Kg",
+      "harga_rp": 28000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.219",
+      "nama": "Rotary Sand Paper",
+      "satuan": "M3",
+      "harga_rp": 20000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.220",
+      "nama": "Paku jalan Tidak Memantul",
+      "satuan": "Buah",
+      "harga_rp": 48000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.221",
+      "nama": "Paku Jalan Memantul  Bujur Sangkar",
+      "satuan": "Buah",
+      "harga_rp": 54000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.222",
+      "nama": "Paku Jalan Memantul Persegi Panjang",
+      "satuan": "Buah",
+      "harga_rp": 66000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.223",
+      "nama": "Baut dan Mur",
+      "satuan": "Buah",
+      "harga_rp": 13000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.224",
+      "nama": "Cat dasar kayu",
+      "satuan": "Kg",
+      "harga_rp": 48700,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.225",
+      "nama": "Cat akhir protektif kayu",
+      "satuan": "Kg",
+      "harga_rp": 59800,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.226",
+      "nama": "Perkerasan beton fast track <8 jam",
+      "satuan": "Kg",
+      "harga_rp": 3168340.8445542953,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.227",
+      "nama": "Silicon Seal",
+      "satuan": "Kg",
+      "harga_rp": 65333,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.228",
+      "nama": "Karet Pengisi Sambungan Strip Seal",
+      "satuan": "M'",
+      "harga_rp": 1200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.229",
+      "nama": "Karet Pengisi Sambungan Compression Seal",
+      "satuan": "M'",
+      "harga_rp": 1200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.230",
+      "nama": "Sambungan siar muai tipe modular",
+      "satuan": "M'",
+      "harga_rp": 40000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.231",
+      "nama": "Sambungan siar muai tipe finger plate",
+      "satuan": "M'",
+      "harga_rp": 3500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.232",
+      "nama": "Sambungan siar muai tipe dobel siku",
+      "satuan": "M'",
+      "harga_rp": 1500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.233",
+      "nama": "Penutup karet neoprene",
+      "satuan": "M'",
+      "harga_rp": 1200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.234",
+      "nama": "Landasan logam berongga (Pot Bearing)",
+      "satuan": "Buah",
+      "harga_rp": 3331619.27623937,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.235",
+      "nama": "Landasan logam jenis Spherical",
+      "satuan": "Buah",
+      "harga_rp": 4500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.236",
+      "nama": "Stopper Lateral dan Horizontal",
+      "satuan": "Buah",
+      "harga_rp": 5500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.237",
+      "nama": "Lem PVC",
+      "satuan": "Kg",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.238",
+      "nama": "Tiang sandaran baja",
+      "satuan": "M'",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.239",
+      "nama": "Deck Drain",
+      "satuan": "Buah",
+      "harga_rp": 100000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.240",
+      "nama": "Pipa PVC",
+      "satuan": "M'",
+      "harga_rp": 65000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.241",
+      "nama": "Pipa Baja",
+      "satuan": "M'",
+      "harga_rp": 400000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.242",
+      "nama": "Sambungan Pipa PVC",
+      "satuan": "Buah",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.243",
+      "nama": "Sambungan Pipa Baja",
+      "satuan": "Buah",
+      "harga_rp": 35000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.15a",
+      "nama": "Bronjong dengan kawat dilapisi galvanis",
+      "satuan": "Kg",
+      "harga_rp": 22000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.15b",
+      "nama": "Bronjong dengan kawat dilapisi PVC",
+      "satuan": "Kg",
+      "harga_rp": 22000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.244",
+      "nama": "Turap Beton",
+      "satuan": "M3",
+      "harga_rp": 3046394.3263605614,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.245",
+      "nama": "Tiang Pancang Kayu",
+      "satuan": "M3",
+      "harga_rp": 2750000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.246",
+      "nama": "Plat sepatu tiang pancang / plat sambung",
+      "satuan": "Kg",
+      "harga_rp": 15500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.247",
+      "nama": "Beton struktur bervolome besar, fc'30 MPa",
+      "satuan": "M3",
+      "harga_rp": 3021525.3840312315,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.248",
+      "nama": "Beton struktur bervolume besar, fc\u201925 Mpa",
+      "satuan": "M3",
+      "harga_rp": 2870466.6146093616,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.249",
+      "nama": "Beton struktur bervolume besar, fc\u201920 MPa",
+      "satuan": "M3",
+      "harga_rp": 2805858.2456267616,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.250",
+      "nama": "Beton struktur memadat sendiri, fc'30 MPa",
+      "satuan": "M3",
+      "harga_rp": 2948610.3021964417,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.251",
+      "nama": "Beton struktur memadat sendiri, fc\u201925 Mpa",
+      "satuan": "M3",
+      "harga_rp": 2850714.9477869417,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.252",
+      "nama": "Beton struktur memadat sendiri, fc\u201920 MPa",
+      "satuan": "M3",
+      "harga_rp": 2807037.9137312216,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.253",
+      "nama": "Beton Struktur, fc' 35 MPa",
+      "satuan": "M3",
+      "harga_rp": 3046394.3263605614,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.255",
+      "nama": "Asphaltic plug",
+      "satuan": "Kg",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.256",
+      "nama": "Asphaltic plug Moveable",
+      "satuan": "Kg",
+      "harga_rp": 45000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.256",
+      "nama": "accelerator",
+      "satuan": "Kg",
+      "harga_rp": 17500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.257",
+      "nama": "Insulasi",
+      "satuan": "m2",
+      "harga_rp": 300000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.258",
+      "nama": "Anyaman Kawat Baja Dilas",
+      "satuan": "Kg",
+      "harga_rp": 32000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.259",
+      "nama": "Curing membrane",
+      "satuan": "Kg",
+      "harga_rp": 200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.260",
+      "nama": "Sambungan siar muai tipe Karet (Preformed T-shape)",
+      "satuan": "Kg",
+      "harga_rp": 800000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.261",
+      "nama": "Bridging Plate PL 125 x 6",
+      "satuan": "Kg",
+      "harga_rp": 15500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.262",
+      "nama": "Perletakan logam tipe fixed 150 Ton",
+      "satuan": "Buah",
+      "harga_rp": 1500000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.263",
+      "nama": "Perletakan logam tipe movable 150 Ton",
+      "satuan": "Buah",
+      "harga_rp": 2000000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.264",
+      "nama": "Elastomer  bearing pad; (450x400x45) mm3",
+      "satuan": "Buah",
+      "harga_rp": 838000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.265",
+      "nama": "Beton fc 10 MPa",
+      "satuan": "M3",
+      "harga_rp": 1740076.8222532696,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.266",
+      "nama": "Marmer",
+      "satuan": "M2",
+      "harga_rp": 400000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.267",
+      "nama": "Pohon Perdu",
+      "satuan": "Buah",
+      "harga_rp": 15000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.268",
+      "nama": "Pohon Mahoni",
+      "satuan": "Buah",
+      "harga_rp": 24000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.269",
+      "nama": "Grauting berbahan dasar semen",
+      "satuan": "Kg",
+      "harga_rp": 350000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.270",
+      "nama": "Graut berbahan dasar Cellular Plastic",
+      "satuan": "Kg",
+      "harga_rp": 350000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.271",
+      "nama": "Tanah humus",
+      "satuan": "M3",
+      "harga_rp": 2500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.272",
+      "nama": "Pupuk",
+      "satuan": "Kg",
+      "harga_rp": 16000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.273",
+      "nama": "Gebalan/ Rumput",
+      "satuan": "M2",
+      "harga_rp": 3500,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.274",
+      "nama": "Tanah Liat",
+      "satuan": "M3",
+      "harga_rp": 150000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.275",
+      "nama": "Pipa Galvanise Dia 6\"",
+      "satuan": "M",
+      "harga_rp": 200000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.276",
+      "nama": "Lampu Tipe Merkuri 400 Watt",
+      "satuan": "Buah",
+      "harga_rp": 950000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.277",
+      "nama": "Lampu Tipe Merkuri 250 Watt",
+      "satuan": "Buah",
+      "harga_rp": 700000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.278",
+      "nama": "Lampu LED 100 watt",
+      "satuan": "Buah",
+      "harga_rp": 1900000,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.279",
+      "nama": "Mortar",
+      "satuan": "M3",
+      "harga_rp": 245200,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.01",
+      "nama": "Pasir (umum)",
+      "satuan": "M3",
+      "harga_rp": 254600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.016",
+      "nama": "Agregat (umum)",
+      "satuan": "M3",
+      "harga_rp": 254600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.10a",
+      "nama": "Batu Kali (10a)",
+      "satuan": "M3",
+      "harga_rp": 7032.258064516129,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.39",
+      "nama": "Baja Tulangan (umum)",
+      "satuan": "Kg",
+      "harga_rp": 8369,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.5",
+      "nama": "Material (M.5)",
+      "satuan": "M3",
+      "harga_rp": 254600,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "M.104",
+      "nama": "Material M.104",
+      "satuan": "M3",
+      "harga_rp": 500000,
+      "sumber_data": "Estimated"
+    }
+  ],
+  "peralatan_sewa": [
+    {
+      "ref": "E.01",
+      "nama": "ASPHALT MIXING PLANT",
+      "satuan": "jam",
+      "harga_rp": 9947497,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.02",
+      "nama": "ASPHALT FINISHER",
+      "satuan": "jam",
+      "harga_rp": 305255,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.03",
+      "nama": "POWER BROOM",
+      "satuan": "jam",
+      "harga_rp": 83349,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.04",
+      "nama": "BULLDOZER 100-150 HP",
+      "satuan": "jam",
+      "harga_rp": 788006,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.05",
+      "nama": "COMPRESSOR 4000-6500 L\\M",
+      "satuan": "jam",
+      "harga_rp": 174413,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.06",
+      "nama": "CONCRETE MIXER 0.3-0.6 M3",
+      "satuan": "jam",
+      "harga_rp": 102926,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.07",
+      "nama": "CRANE 10-15 TON",
+      "satuan": "jam",
+      "harga_rp": 658617,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.08",
+      "nama": "DUMP TRUCK 4 TON (2-3 M3)",
+      "satuan": "jam",
+      "harga_rp": 364675,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.09",
+      "nama": "DUMP TRUCK 10 TON (6-8 M3)",
+      "satuan": "jam",
+      "harga_rp": 692885,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.10",
+      "nama": "EXCAVATOR 80-140 HP",
+      "satuan": "jam",
+      "harga_rp": 496740,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.11",
+      "nama": "FLAT BED TRUCK 3-4 TON",
+      "satuan": "jam",
+      "harga_rp": 364573,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.12",
+      "nama": "GENERATOR SET",
+      "satuan": "jam",
+      "harga_rp": 394073,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.13",
+      "nama": "MOTOR GRADER >100 HP",
+      "satuan": "jam",
+      "harga_rp": 504572,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.14",
+      "nama": "TRACK LOADER 75-100 HP",
+      "satuan": "jam",
+      "harga_rp": 381308,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.15",
+      "nama": "WHEEL LOADER 1.0-1.6 M3",
+      "satuan": "jam",
+      "harga_rp": 510343,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.16",
+      "nama": "THREE WHEEL ROLLER 6-8 T",
+      "satuan": "jam",
+      "harga_rp": 263730,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.17",
+      "nama": "TANDEM ROLLER 6-8 T.",
+      "satuan": "jam",
+      "harga_rp": 451864,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.18",
+      "nama": "TIRE ROLLER 8-10 T.",
+      "satuan": "jam",
+      "harga_rp": 647397,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.19",
+      "nama": "VIBRATORY ROLLER 5-8 T.",
+      "satuan": "jam",
+      "harga_rp": 321608,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.20",
+      "nama": "CONCRETE VIBRATOR",
+      "satuan": "jam",
+      "harga_rp": 68053,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.21",
+      "nama": "STONE CRUSHER",
+      "satuan": "jam",
+      "harga_rp": 838855,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.22",
+      "nama": "WATER PUMP 70-100 mm",
+      "satuan": "jam",
+      "harga_rp": 68666,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.23",
+      "nama": "WATER TANKER 3000-4500 L.",
+      "satuan": "jam",
+      "harga_rp": 421532,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.24",
+      "nama": "PEDESTRIAN ROLLER",
+      "satuan": "jam",
+      "harga_rp": 233183,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.25",
+      "nama": "TAMPER",
+      "satuan": "jam",
+      "harga_rp": 90120,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.26",
+      "nama": "JACK HAMMER",
+      "satuan": "jam",
+      "harga_rp": 64115,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.27",
+      "nama": "PULVI MIXER",
+      "satuan": "jam",
+      "harga_rp": 762904,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.28",
+      "nama": "CONCRETE PUMP",
+      "satuan": "jam",
+      "harga_rp": 461802,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.29",
+      "nama": "TRAILER 20 TON",
+      "satuan": "jam",
+      "harga_rp": 644403,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.30",
+      "nama": "PILE DRIVER + HAMMER",
+      "satuan": "jam",
+      "harga_rp": 173378,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.31",
+      "nama": "CRANE ON TRACK 35 TON",
+      "satuan": "jam",
+      "harga_rp": 1263198,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.32",
+      "nama": "WELDING SET",
+      "satuan": "jam",
+      "harga_rp": 75554,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.33",
+      "nama": "BORE PILE MACHINE",
+      "satuan": "jam",
+      "harga_rp": 699412,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.34",
+      "nama": "ASPHALT LIQUID MIXER",
+      "satuan": "jam",
+      "harga_rp": 95408,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.34a",
+      "nama": "ASPHALT LIQUID MIXER",
+      "satuan": "jam",
+      "harga_rp": 159537,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.01a",
+      "nama": "ASPHALT MIXING PLANT (WARM MIX)",
+      "satuan": "jam",
+      "harga_rp": 9271597,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.01b",
+      "nama": "ASPHALT MIXING PLANT (MODIFIKASI, ASBUTON)",
+      "satuan": "jam",
+      "harga_rp": 10615597,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.17a",
+      "nama": "TANDEM ROLLER 8-10 T.",
+      "satuan": "jam",
+      "harga_rp": 424440,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.11a",
+      "nama": "FLAT BED TRUCK 10 TON",
+      "satuan": "jam",
+      "harga_rp": 203474,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.88",
+      "nama": "TRUCK 2 TON (0,9-1,5 M3)",
+      "satuan": "jam",
+      "harga_rp": 308292,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.89",
+      "nama": "DUMP TRUCK 7 TON (5-6 M3)",
+      "satuan": "jam",
+      "harga_rp": 571075,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.35",
+      "nama": "TRONTON 15 TON",
+      "satuan": "jam",
+      "harga_rp": 685520,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.37",
+      "nama": "COLD MILLING MACHINE",
+      "satuan": "jam",
+      "harga_rp": 1497269,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.36",
+      "nama": "ROCK DRILL BREAKER",
+      "satuan": "jam",
+      "harga_rp": 597473,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.38",
+      "nama": "COLD RECYCLER",
+      "satuan": "jam",
+      "harga_rp": 3082990,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.39",
+      "nama": "HOT RECYCLER",
+      "satuan": "jam",
+      "harga_rp": 3708460,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.40",
+      "nama": "AGGREGAT (CHIP) SPREADER",
+      "satuan": "jam",
+      "harga_rp": 395626,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.41",
+      "nama": "ASPHALT DISTRIBUTOR",
+      "satuan": "jam",
+      "harga_rp": 418478,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.42",
+      "nama": "SLIP FORM PAVER",
+      "satuan": "jam",
+      "harga_rp": 524609,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.43",
+      "nama": "CONCRETE PAN MIXER",
+      "satuan": "jam",
+      "harga_rp": 136502,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.44",
+      "nama": "CONCRETE BREAKER",
+      "satuan": "jam",
+      "harga_rp": 800158,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.45",
+      "nama": "ASPHALT TANKER",
+      "satuan": "jam",
+      "harga_rp": 541931,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.46",
+      "nama": "CEMENT TANKER",
+      "satuan": "jam",
+      "harga_rp": 485931,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.47",
+      "nama": "CONCRETE MIXER (350)",
+      "satuan": "jam",
+      "harga_rp": 103711,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.48",
+      "nama": "VIBRATING RAMMER",
+      "satuan": "jam",
+      "harga_rp": 64752,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.49",
+      "nama": "TRUK MIXER (AGITATOR)",
+      "satuan": "jam",
+      "harga_rp": 702403,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.50",
+      "nama": "BORE PILE MACHINE",
+      "satuan": "jam",
+      "harga_rp": 448668,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.51",
+      "nama": "CRANE ON TRACK 75-100 TON",
+      "satuan": "jam",
+      "harga_rp": 2311670,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.52",
+      "nama": "BLENDING EQUIPMENT",
+      "satuan": "jam",
+      "harga_rp": 218021,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.53",
+      "nama": "BAR BENDER",
+      "satuan": "jam",
+      "harga_rp": 52317,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.54",
+      "nama": "BAR CUTTER",
+      "satuan": "jam",
+      "harga_rp": 52317,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.10a",
+      "nama": "MINI EXCAVATOR 40-60 HP",
+      "satuan": "jam",
+      "harga_rp": 153561,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.19a",
+      "nama": "BABY VIBRATORY ROLLER 1-2 T.",
+      "satuan": "jam",
+      "harga_rp": 102246,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.64",
+      "nama": "WATER JET BLASTING",
+      "satuan": "jam",
+      "harga_rp": 72230,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.74",
+      "nama": "KUNCI TORSI 200-1000N.M",
+      "satuan": "jam",
+      "harga_rp": 63467,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.75",
+      "nama": "POMPA + MIXER EPOXY, 810 Watt",
+      "satuan": "jam",
+      "harga_rp": 59432,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.76",
+      "nama": "CONCRETE CUTTER (0,5-0,7 m/menit)",
+      "satuan": "jam",
+      "harga_rp": 93422,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.77",
+      "nama": "SAND BLASTING",
+      "satuan": "jam",
+      "harga_rp": 172825,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.78",
+      "nama": "MOBILE CRANE 1 TON",
+      "satuan": "jam",
+      "harga_rp": 503862,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.79",
+      "nama": "DRUM MIXER",
+      "satuan": "jam",
+      "harga_rp": 140376,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.81",
+      "nama": "STAMPER",
+      "satuan": "jam",
+      "harga_rp": 104258,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.82",
+      "nama": "JACK HIDROLIK JEMBATAN",
+      "satuan": "jam",
+      "harga_rp": 109469,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.83",
+      "nama": "HYDROLIC PUMP",
+      "satuan": "jam",
+      "harga_rp": 93415,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.84",
+      "nama": "MANIFOLD GAUGE",
+      "satuan": "jam",
+      "harga_rp": 58402,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.85",
+      "nama": "THERMOPLASTIC ROAD MARKING MACHINE",
+      "satuan": "jam",
+      "harga_rp": 96819,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.86",
+      "nama": "COLD PAINT SRAY MACHINE",
+      "satuan": "jam",
+      "harga_rp": 83214,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.80",
+      "nama": "CONCRETE BATCHING PLANT",
+      "satuan": "jam",
+      "harga_rp": 556041,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.73",
+      "nama": "TRAILER 44 TON",
+      "satuan": "jam",
+      "harga_rp": 1259821,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.65",
+      "nama": "MESIN POTONG RUMPUT",
+      "satuan": "jam",
+      "harga_rp": 72730,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.29a",
+      "nama": "TRAILER 30 TON",
+      "satuan": "jam",
+      "harga_rp": 131800,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "0.0",
+      "nama": "MINI GENERATOR SET 2000 Watt",
+      "satuan": "jam",
+      "harga_rp": 57655,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.72",
+      "nama": "CRAWLER CRANE 25 TON",
+      "satuan": "jam",
+      "harga_rp": 879063,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.73",
+      "nama": "CRAWLER CRANE 55 TON",
+      "satuan": "jam",
+      "harga_rp": 1141568,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.90",
+      "nama": "FLAT BED TRUCK 10 TON",
+      "satuan": "jam",
+      "harga_rp": 463958,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.91",
+      "nama": "DROP HAMMER 2,5 TON",
+      "satuan": "jam",
+      "harga_rp": 634250,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.92",
+      "nama": "DIESEL HAMMER SINGLE ACTING 2,5 TON",
+      "satuan": "jam",
+      "harga_rp": 670101,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.93",
+      "nama": "DIESEL HAMMER DOUBLE ACTING 2,5 TON",
+      "satuan": "jam",
+      "harga_rp": 723878,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.94",
+      "nama": "HOT COMPRESSOR AIR LANCE (HCA) 10000C",
+      "satuan": "jam",
+      "harga_rp": 94889,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.95",
+      "nama": "PRE HEATER/BOILER",
+      "satuan": "jam",
+      "harga_rp": 111515,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.96",
+      "nama": "MACHINE BEAM LAUNCHER CRANE 100 TON",
+      "satuan": "jam",
+      "harga_rp": 342678,
+      "sumber_data": "Permen PUPR 1/2022"
+    },
+    {
+      "ref": "E.97",
+      "nama": "MACHINE BEAM LAUNCHER CRANE 300 TON",
+      "satuan": "jam",
+      "harga_rp": 486082,
+      "sumber_data": "Permen PUPR 1/2022"
+    }
+  ],
+  "bahan_bakar": {
+    "solar_industri_rp_per_liter": 6800,
+    "oli_mesin_rp_per_liter": 25000,
+    "oli_hidrolik_rp_per_liter": 30000,
+    "grease_rp_per_kg": 45000
+  }
+}
