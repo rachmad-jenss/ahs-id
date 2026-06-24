@@ -42,6 +42,7 @@ export function createCalculator(
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
   const mode = config?.mode ?? 'penuh';
+  const stalenessDays = config?.hsd_staleness_warning_days;
 
   function hitungHSPInternal(
     kodeAhsp: string,
@@ -55,6 +56,18 @@ export function createCalculator(
 
     const audit: AuditEntry[] = [];
     const warnings: string[] = [];
+
+    if (stalenessDays !== undefined && stalenessDays > 0) {
+      const stalenessMs = stalenessDays * 24 * 60 * 60 * 1000;
+      const sourceDate = new Date(hsd.region.tanggal_terbit);
+      const ageMs = Date.now() - sourceDate.getTime();
+      if (ageMs > stalenessMs) {
+        const ageDays = Math.floor(ageMs / (24 * 60 * 60 * 1000));
+        warnings.push(
+          `HSD "${hsd.region.provinsi}" (${hsd.region.tahun_berlaku} Q${hsd.region.kuartal}) is ${ageDays} days old — last updated ${hsd.region.tanggal_terbit}`,
+        );
+      }
+    }
 
     const tkComponents = calcTenagaKerja(item, hsd, audit);
     const bahanComponents = calcBahan(item, hsd, audit);

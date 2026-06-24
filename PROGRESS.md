@@ -59,12 +59,13 @@ Run: `pnpm test` (9 packages in scope; 4 run tests today).
 
 | Package | Tests |
 |---------|------:|
-| `@ahs-id/core` | 62 |
+| `@ahs-id/core` | 65 |
 | `@ahs-id/bina-marga-2022` | 24 |
 | `@ahs-id/golden-tests` | 57 (+1 skipped gen helper) |
-| **Total** | **143** |
+| **Total** | **146** |
 
-Completed in this session: DAS-18 (export produktivitas helpers), DAS-17 (createCalculator + hitungHSP unit tests)
+Completed: DAS-18 (export produktivitas helpers), DAS-17 (createCalculator + hitungHSP unit tests),
+DAS-15 (refactor calcProduktivitas), DAS-16 (HSD staleness warnings)
 
 Golden tolerance: ε = 0.01 Rp.
 

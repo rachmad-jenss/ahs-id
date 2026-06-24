@@ -312,3 +312,37 @@ describe('error handling', () => {
     expect(() => calc.hitungHSP('3.2.1', BASE_VARS)).toThrow('HSD bahan');
   });
 });
+
+describe('HSD staleness warnings', () => {
+  it('warns when HSD is older than threshold', () => {
+    const oldHsd: HsdRegional = {
+      ...testHsd, version: '1',
+      region: { ...testHsd.region, tanggal_terbit: '2020-01-01' },
+    };
+    const calc = createCalculator(testBundle, oldHsd, { hsd_staleness_warning_days: 1 });
+    const result = calc.hitungHSP('3.2.1', BASE_VARS);
+    expect(result.warnings.length).toBeGreaterThan(0);
+    expect(result.warnings[0]).toContain('HSD');
+    expect(result.warnings[0]).toContain('days old');
+  });
+
+  it('does not warn when staleness check is disabled', () => {
+    const oldHsd: HsdRegional = {
+      ...testHsd, version: '1',
+      region: { ...testHsd.region, tanggal_terbit: '2020-01-01' },
+    };
+    const calc = createCalculator(testBundle, oldHsd);
+    const result = calc.hitungHSP('3.2.1', BASE_VARS);
+    expect(result.warnings).toHaveLength(0);
+  });
+
+  it('does not warn for recent HSD', () => {
+    const freshHsd: HsdRegional = {
+      ...testHsd, version: '1',
+      region: { ...testHsd.region, tanggal_terbit: new Date().toISOString().split('T')[0] },
+    };
+    const calc = createCalculator(testBundle, freshHsd, { hsd_staleness_warning_days: 365 * 10 });
+    const result = calc.hitungHSP('3.2.1', BASE_VARS);
+    expect(result.warnings).toHaveLength(0);
+  });
+});
