@@ -41,9 +41,9 @@ Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 | Issue | Task | Status |
 |-------|------|--------|
 | DAS-4 | RAB Excel exporter (`packages/core` `exporter/excel.ts`) | ✅ Done |
-| DAS-5 | Scaffold `apps/cli` — `calc-hsp` | ⬜ Open |
-| DAS-6 | CLI `export-rab` | ⬜ Open |
-| DAS-7 | CLI `validate` for bundles | ⬜ Open |
+| DAS-5 | Scaffold `apps/cli` — `calc-hsp` | ✅ Done |
+| DAS-6 | CLI `export-rab` | ✅ Done |
+| DAS-7 | CLI `validate` for bundles | ✅ Done |
 | DAS-8 | npm publish workflow & package metadata | ⬜ Open |
 | DAS-9 | Changesets & CHANGELOG | ⬜ Open |
 

@@ -33,6 +33,46 @@ importers:
         specifier: ^2.0.0
         version: 2.1.9(@types/node@22.19.19)
 
+  apps/cli:
+    dependencies:
+      '@ahs-id/bina-marga-2016':
+        specifier: workspace:*
+        version: link:../../packages/bina-marga-2016
+      '@ahs-id/bina-marga-2022':
+        specifier: workspace:*
+        version: link:../../packages/bina-marga-2022
+      '@ahs-id/cipta-karya-2024':
+        specifier: workspace:*
+        version: link:../../packages/cipta-karya-2024
+      '@ahs-id/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@ahs-id/hsd-jabar-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-jabar-2025
+      '@ahs-id/hsd-kaltim-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-kaltim-2025
+      '@ahs-id/hsd-papua-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-papua-2025
+      '@ahs-id/pupr-2023':
+        specifier: workspace:*
+        version: link:../../packages/pupr-2023
+      commander:
+        specifier: ^13.0.0
+        version: 13.1.0
+    devDependencies:
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.19
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9(@types/node@22.19.19)
+
   packages/bina-marga-2016:
     dependencies:
       '@ahs-id/core':
@@ -735,6 +775,10 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
 
   compress-commons@4.1.2:
     resolution: {integrity: sha512-D3uMHtGc/fcO1Gt1/L7i1e33VOvD4A9hfQLP+6ewd+BvG/gQ84Yh4oftEhAdjSMgBgwGL+jsppT7JYNpo6MHHg==}
@@ -1929,6 +1973,8 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  commander@13.1.0: {}
 
   compress-commons@4.1.2:
     dependencies:
