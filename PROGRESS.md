@@ -55,14 +55,16 @@ Epic: [DAS-3](https://github.com/rachmad-jenss/ahs-id/issues/3) — DAS-15–18 
 
 ## Test suite (Vitest)
 
-Run: `pnpm test` (9 packages in scope; 3 run tests today).
+Run: `pnpm test` (9 packages in scope; 4 run tests today).
 
 | Package | Tests |
 |---------|------:|
-| `@ahs-id/core` | 46 |
+| `@ahs-id/core` | 62 |
 | `@ahs-id/bina-marga-2022` | 24 |
 | `@ahs-id/golden-tests` | 57 (+1 skipped gen helper) |
-| **Total** | **127** |
+| **Total** | **143** |
+
+Completed in this session: DAS-18 (export produktivitas helpers), DAS-17 (createCalculator + hitungHSP unit tests)
 
 Golden tolerance: ε = 0.01 Rp.
 

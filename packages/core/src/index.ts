@@ -83,6 +83,27 @@ export type { ResolvedKoefisien } from './calculator/koefisien.js';
 export { hitungHsdTransportSatuan } from './calculator/produktivitas/transport-satuan.js';
 export type { TransportSatuanParams, TransportSatuanResult } from './calculator/produktivitas/transport-satuan.js';
 
+export {
+  produktivitasExcavator,
+  produktivitasDumpTruck,
+  produktivitasWheelLoader,
+  produktivitasWaterTanker,
+  produktivitasVibroRoller,
+  produktivitasMotorGrader,
+  produktivitasThroughput,
+} from './calculator/produktivitas/index.js';
+export type {
+  SiklusDumpTruckParams,
+  SiklusExcavatorParams,
+  SiklusWheelLoaderParams,
+  SiklusWaterTankerParams,
+  LintasanVibroRollerParams,
+  LintasanMotorGraderParams,
+  ThroughputParams,
+  ThroughputResult,
+} from './calculator/produktivitas/index.js';
+export type { ProduktivitasResult } from './calculator/produktivitas/siklus.js';
+
 export { calcHspFixedCoefficient } from './calculator/fixed-coefficient.js';
 
 export { exportHspToExcelBuffer } from './exporter/excel.js';
