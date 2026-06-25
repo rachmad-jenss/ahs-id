@@ -294,6 +294,75 @@ describe('estimasi-kasar mode', () => {
   });
 });
 
+describe('bahan volume conversion — material key from bahan-master', () => {
+  const soilBundle: DataBundle = {
+    ...testBundle,
+    bahan: {
+      version: '1',
+      items: [
+        { kode: 'M.08', nama: 'Bahan Tanah Timbunan', satuan: 'm3', kategori: 'tanah' },
+      ],
+    },
+    faktor_konversi: {
+      version: '1',
+      derivation_rule: 'permen',
+      items: [
+        { material: 'tanah_biasa', bank_to_loose: 1.25, bank_to_compacted: 0.85, berat_jenis_bank_ton_m3: 1.6 },
+        { material: 'agregat_kelas_a', bank_to_loose: 1.2, bank_to_compacted: 0.95, berat_jenis_bank_ton_m3: 2.1 },
+      ],
+    },
+    ahsp_items: [
+      {
+        kode_ahsp: 'TEST-SOIL',
+        nama: 'Timbunan tanah (test)',
+        bidang: 'bina-marga',
+        divisi: 3,
+        sub_divisi: '3.2',
+        satuan_bayar: 'm3',
+        volume_state_bayar: 'compacted',
+        jenis_pekerjaan: 'mekanis',
+        is_lump_sum: false,
+        sub_ahsp: [],
+        tenaga_kerja: [],
+        bahan: [
+          { ref: 'M.08', koefisien: 1.2, koef_sumber: 'tabel', faktor_kehilangan_pct: 0, volume_state: 'loose', catatan: null },
+        ],
+        peralatan: [],
+        variabel: {},
+        margin: {
+          overhead_pct: { label: 'Overhead', min: 5, max: 12, default: 10 },
+          profit_pct: { label: 'Profit', min: 2, max: 10, default: 5 },
+          constraint: { rule: 'Sum 10-15%' },
+        },
+        provenance: {
+          sumber_regulasi: 'test',
+          halaman: null,
+          verification_tier: 'auto-extracted',
+          diverifikasi_oleh: null,
+          tanggal_verifikasi: null,
+        },
+        catatan_umum: [],
+      },
+    ],
+  };
+
+  const soilHsd: HsdRegional = {
+    ...testHsd,
+    version: '1',
+    tenaga_kerja: [],
+    bahan: [{ ref: 'M.08', satuan: 'm3', harga_rp: 35000, sumber_data: 'test' }],
+    peralatan_sewa: [],
+  };
+
+  it('uses tanah_biasa factor from bahan kategori when item has no jenis_material', () => {
+    const calc = createCalculator(soilBundle, soilHsd);
+    const result = calc.hitungHSP('TEST-SOIL', {});
+    // 1.2 × (0.85/1.25) × 35000 = 28560
+    expect(result.groups[1]!.total).toBeCloseTo(28560, 0);
+    expect(result.audit_trail.some((a) => a.detail.includes('tanah_biasa'))).toBe(true);
+  });
+});
+
 describe('error handling', () => {
   it('throws when HSD tenaga_kerja ref not found', () => {
     const badHsd: HsdRegional = { ...testHsd, version: '1', tenaga_kerja: [], peralatan_sewa: [] };
