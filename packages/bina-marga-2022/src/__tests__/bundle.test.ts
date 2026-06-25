@@ -86,13 +86,13 @@ describe('@ahs-id/bina-marga-2022 bundle structure', () => {
       const item = ahspItems.find(i => i.kode_ahsp === '3.1.(1)');
       expect(item).toBeDefined();
 
-      const e09 = item!.peralatan.find(e => e.ref === 'E09');
-      const e10 = item!.peralatan.find(e => e.ref === 'E10');
+      const e09 = item!.peralatan.find(e => e.ref === 'E.09');
+      const e10 = item!.peralatan.find(e => e.ref === 'E.10');
       expect(e09?.koef_referensi?.value).toBeCloseTo(0.042364825, 6);
       expect(e10?.koef_referensi?.value).toBeCloseTo(0.010076147, 6);
 
-      const l01 = item!.tenaga_kerja.find(t => t.ref === 'L01');
-      const l03 = item!.tenaga_kerja.find(t => t.ref === 'L03');
+      const l01 = item!.tenaga_kerja.find(t => t.ref === 'L.01');
+      const l03 = item!.tenaga_kerja.find(t => t.ref === 'L.03');
       // Original Jam koef = 0.020152 / 7 jam = 0.002879
       expect(l01?.koefisien).toBeCloseTo(0.002879, 4);
       // Original Jam koef = 0.010076 / 7 jam = 0.001439
@@ -112,14 +112,14 @@ describe('@ahs-id/bina-marga-2022 bundle structure', () => {
       const item = ahspItems.find(i => i.kode_ahsp === '8.1.(1)');
       expect(item).toBeDefined();
 
-      // D8 uses code without parens (L01 not (L01)) — verify extraction worked
-      const l01 = item!.tenaga_kerja.find(t => t.ref === 'L01');
-      const l03 = item!.tenaga_kerja.find(t => t.ref === 'L03');
+      // D8 uses code without parens in source sheet — verify extraction worked
+      const l01 = item!.tenaga_kerja.find(t => t.ref === 'L.01');
+      const l03 = item!.tenaga_kerja.find(t => t.ref === 'L.03');
       expect(l01).toBeDefined();
       expect(l03).toBeDefined();
 
-      // M125 = epoxy resin koef = 1.02 (= 1 × Fh 1.02)
-      const m125 = item!.bahan.find(b => b.ref === 'M125');
+      // M.125 = epoxy resin koef = 1.02 (= 1 × Fh 1.02)
+      const m125 = item!.bahan.find(b => b.ref === 'M.125');
       expect(m125?.koefisien).toBeCloseTo(1.02, 3);
     });
 

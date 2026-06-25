@@ -80,16 +80,16 @@ describe('HSP reference data integrity', () => {
     expect(peralatanHsdData.items.length).toBeGreaterThanOrEqual(90);
   });
 
-  it('tenaga-kerja.json has L01-L09 standard labor with correct Jam rates', () => {
-    const l01 = tenagaKerjaData.items.find(i => i.kode === 'L01');
-    const l03 = tenagaKerjaData.items.find(i => i.kode === 'L03');
+  it('tenaga-kerja.json has L.01-L.09 standard labor with correct Jam rates', () => {
+    const l01 = tenagaKerjaData.items.find(i => i.kode === 'L.01');
+    const l03 = tenagaKerjaData.items.find(i => i.kode === 'L.03');
     expect(l01?.harga_jam).toBeCloseTo(24996.34, 0); // Pekerja
     expect(l03?.harga_jam).toBeCloseTo(30066.21, 0); // Mandor
   });
 
-  it('E09 (DT 10T) and E10 (Excavator) HSD values are reasonable', () => {
-    const e09 = hsdMap.get('E09');
-    const e10 = hsdMap.get('E10');
+  it('E.09 (DT 10T) and E.10 (Excavator) HSD values are reasonable', () => {
+    const e09 = hsdMap.get('E.09');
+    const e10 = hsdMap.get('E.10');
     // DT 10T: ~600k-800k Rp/jam
     expect(e09).toBeGreaterThan(500_000);
     expect(e09).toBeLessThan(1_000_000);
@@ -169,11 +169,11 @@ describe('HSP reconstruction — D6 Perkerasan Aspal', () => {
 });
 
 describe('HSP reconstruction — D8 Rehabilitasi Jembatan', () => {
-  it('8.1.(1) Cairan Epoxy: L01/L03/E68 captured from D8 (no-paren format)', () => {
+  it('8.1.(1) Cairan Epoxy: L.01/L.03 captured from D8 (no-paren format)', () => {
     const item = d8Items.find(i => i.kode_ahsp === '8.1.(1)')!;
-    // At minimum L01, L03 should be present (extracted despite no-paren format in D8)
-    expect(item.tenaga_kerja.some(t => t.ref === 'L01')).toBe(true);
-    expect(item.tenaga_kerja.some(t => t.ref === 'L03')).toBe(true);
+    // At minimum L.01, L.03 should be present (extracted despite no-paren format in D8)
+    expect(item.tenaga_kerja.some(t => t.ref === 'L.01')).toBe(true);
+    expect(item.tenaga_kerja.some(t => t.ref === 'L.03')).toBe(true);
     // Labor cost should be non-zero
     const laborCost = item.tenaga_kerja.reduce(
       (acc, tk) => acc + tk.koefisien * (laborJamMap.get(tk.ref) ?? 0) * JAM_PER_OH,
