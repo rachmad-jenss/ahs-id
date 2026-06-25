@@ -9,15 +9,19 @@
  */
 
 import { resolve, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
-const coreDist = resolve(root, 'packages', 'core', 'dist');
+
+/** Dynamic import from absolute path (Windows ESM requires file:// URL). */
+function importDist(...segments) {
+  return import(pathToFileURL(resolve(...segments)).href);
+}
 
 let validateBundle;
 try {
-  ({ validateBundle } = await import(resolve(coreDist, 'index.js')));
+  ({ validateBundle } = await importDist(root, 'packages', 'core', 'dist', 'index.js'));
 } catch {
   console.error('FATAL: @ahs-id/core not built. Run `pnpm build` first.');
   process.exit(1);
@@ -27,18 +31,18 @@ try {
 const PAIRS = [
   {
     bundleLabel: 'pupr-2023',
-    bundleLoad: () => import(resolve(root, 'packages', 'pupr-2023', 'dist', 'index.js')),
+    bundleLoad: () => importDist(root, 'packages', 'pupr-2023', 'dist', 'index.js'),
     getBundle: (m) => m.bundle,
     hsdLabels: ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025'],
-    hsdLoad: (label) => import(resolve(root, 'packages', label, 'dist', 'index.js')),
+    hsdLoad: (label) => importDist(root, 'packages', label, 'dist', 'index.js'),
     getHsd: (m) => m.hsd,
   },
   {
     bundleLabel: 'bina-marga-2022',
-    bundleLoad: () => import(resolve(root, 'packages', 'bina-marga-2022', 'dist', 'index.js')),
+    bundleLoad: () => importDist(root, 'packages', 'bina-marga-2022', 'dist', 'index.js'),
     getBundle: (m) => m.bundle,
     hsdLabels: ['hsd-bm-2022'],
-    hsdLoad: () => import(resolve(root, 'packages', 'hsd-bm-2022', 'dist', 'index.js')),
+    hsdLoad: () => importDist(root, 'packages', 'hsd-bm-2022', 'dist', 'index.js'),
     getHsd: (m) => m.hsd,
   },
 ];

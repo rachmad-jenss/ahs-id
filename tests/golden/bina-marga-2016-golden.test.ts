@@ -102,8 +102,8 @@ describe('bina-marga-2016 golden HSP — Kaltim Q1 2025', () => {
       const r = calc.hitungHSP('3.2.1a', {});
 
       expect(r.kode_ahsp).toBe('3.2.1a');
-      // Bahan: M.08 × 1.2 × 35000 = 42000
-      expect(r.groups[1]!.total).toBeCloseTo(42000, 0);
+      // Bahan: M.08 tanah loose→compacted (tanah_biasa 0.85/1.25) × 1.2 × 35000 = 28560
+      expect(r.groups[1]!.total).toBeCloseTo(28560, 0);
 
       const eRefs = r.groups[2]!.components.map((c) => c.ref);
       expect(eRefs).toContain('E.10');
@@ -111,7 +111,7 @@ describe('bina-marga-2016 golden HSP — Kaltim Q1 2025', () => {
       expect(eRefs).toContain('E.13');
       expect(eRefs).toContain('E.19');
 
-      expect(r.grandTotal).toBeCloseTo(175384.98, 2);
+      expect(r.grandTotal).toBeCloseTo(159928.98, 2);
     });
   });
 
@@ -119,14 +119,14 @@ describe('bina-marga-2016 golden HSP — Kaltim Q1 2025', () => {
     it('includes M.09 bahan + Water Tanker (E.17) + Pedestrian Roller (E.23)', () => {
       const r = calc.hitungHSP('3.2.2a', {});
 
-      // Bahan: M.09 × 1.2 × 55000 = 66000
-      expect(r.groups[1]!.total).toBeCloseTo(66000, 0);
+      // Bahan: M.09 tanah loose→compacted × 1.2 × 55000 = 44880
+      expect(r.groups[1]!.total).toBeCloseTo(44880, 0);
 
       const eRefs = r.groups[2]!.components.map((c) => c.ref);
       expect(eRefs).toContain('E.17');
       expect(eRefs).toContain('E.23');
 
-      expect(r.grandTotal).toBeCloseTo(216001.28, 2);
+      expect(r.grandTotal).toBeCloseTo(191713.28, 2);
     });
   });
 

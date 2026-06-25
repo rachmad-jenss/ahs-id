@@ -40,6 +40,7 @@ export function createCalculator(
   config?: CalculatorConfig,
 ): Calculator {
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
+  const bahanMasterMap = new Map(bundle.bahan.items.map((b) => [b.kode, b]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
   const mode = config?.mode ?? 'penuh';
   const stalenessDays = config?.hsd_staleness_warning_days;
@@ -70,7 +71,7 @@ export function createCalculator(
     }
 
     const tkComponents = calcTenagaKerja(item, hsd, audit);
-    const bahanComponents = calcBahan(item, hsd, fkMap, item.volume_state_bayar, variabel, audit);
+    const bahanComponents = calcBahan(item, hsd, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
     const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
 
     const tkGroup: AhspGroup = {
@@ -167,6 +168,7 @@ function calcBahan(
   item: AhspItem,
   hsd: HsdRegional,
   fkMap: Map<string, FaktorKonversiEntry>,
+  bahanMasterMap: Map<string, DataBundle['bahan']['items'][number]>,
   itemVolumeState: VolumeState,
   variabel: VariabelInput,
   audit: AuditEntry[],
@@ -180,15 +182,14 @@ function calcBahan(
     // Apply volume conversion if bahan has a volume_state different from item's bayar state
     let coefficient = bahan.koefisien;
     if (bahan.volume_state !== null && bahan.volume_state !== itemVolumeState) {
-      // Find fk entry for this material type (from variabel.jenis_material)
-      const materialKey = (variabel['jenis_material'] as string | undefined) ?? 'agregat_kelas_a';
+      const materialKey = resolveBahanMaterialKey(bahan.ref, item, variabel, bahanMasterMap, fkMap);
       const fk = fkMap.get(materialKey);
       if (fk) {
         const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
         coefficient = bahan.koefisien * result.factor;
         audit.push({
           step: 'volume_conversion_bahan',
-          detail: `${bahan.ref}: koef ${bahan.koefisien} × ${result.factor} (${bahan.volume_state}→${itemVolumeState}) = ${coefficient.toFixed(6)}`,
+          detail: `${bahan.ref}: koef ${bahan.koefisien} × ${result.factor} (${bahan.volume_state}→${itemVolumeState}, ${materialKey}) = ${coefficient.toFixed(6)}`,
           value: coefficient,
         });
       }
@@ -432,6 +433,42 @@ function calcProduktivitas(
 // ============================================================
 // Volume conversion
 // ============================================================
+
+/** Map bahan-master kategori to faktor-konversi material key. */
+const BAHAN_KATEGORI_TO_FK_MATERIAL: Readonly<Record<string, string>> = {
+  tanah: 'tanah_biasa',
+  agregat: 'agregat_kelas_a',
+  pasir: 'agregat_kelas_a',
+  batu: 'batu',
+};
+
+function resolveItemJenisMaterial(item: AhspItem, variabel: VariabelInput): string | undefined {
+  if (!('jenis_material' in item.variabel)) return undefined;
+  const fromInput = variabel['jenis_material'] as string | undefined;
+  if (fromInput !== undefined) return fromInput;
+  const def = item.variabel['jenis_material'];
+  if (def?.tipe === 'enum' && typeof def.default === 'string') {
+    return def.default;
+  }
+  return undefined;
+}
+
+function resolveBahanMaterialKey(
+  bahanRef: string,
+  item: AhspItem,
+  variabel: VariabelInput,
+  bahanMasterMap: Map<string, DataBundle['bahan']['items'][number]>,
+  fkMap: Map<string, FaktorKonversiEntry>,
+): string {
+  const itemMaterial = resolveItemJenisMaterial(item, variabel);
+  if (itemMaterial !== undefined) return itemMaterial;
+
+  const master = bahanMasterMap.get(bahanRef);
+  const fromKategori = master?.kategori ? BAHAN_KATEGORI_TO_FK_MATERIAL[master.kategori] : undefined;
+  if (fromKategori !== undefined && fkMap.has(fromKategori)) return fromKategori;
+
+  return 'agregat_kelas_a';
+}
 
 function applyVolumeConversion(
   koef: number,
