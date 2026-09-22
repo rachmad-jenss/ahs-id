@@ -414,3 +414,114 @@ describe('HSD staleness warnings', () => {
     expect(result.warnings).toHaveLength(0);
   });
 });
+
+describe('resolveMapParam via productivity', () => {
+  it('uses the fallback bucket factor when jenis_material is not in the map', () => {
+    const excavator = testBundle.peralatan.items.find((item) => item.kode === 'E.01');
+    if (!excavator) throw new Error('fixture missing E.01');
+    const bundle: DataBundle = {
+      ...testBundle,
+      peralatan: {
+        ...testBundle.peralatan,
+        items: [
+          {
+            ...excavator,
+            produktivitas_params: {
+              ...excavator.produktivitas_params,
+              faktor_bucket: { batu_pecah: 0.4 },
+            },
+          },
+        ],
+      },
+      ahsp_items: [
+        {
+          ...testBundle.ahsp_items[0]!,
+          kode_ahsp: 'MAP',
+          tenaga_kerja: [],
+          bahan: [],
+          peralatan: [
+            {
+              ref: 'E.01',
+              nama: 'Excavator',
+              koef_sumber: 'kalkulasi',
+              mode_biaya: 'ownership',
+              volume_state: null,
+              variabel_input: ['jenis_material', 'faktor_efisiensi'],
+              koef_referensi: null,
+              catatan: null,
+            },
+          ],
+        },
+      ],
+    };
+    const calc = createCalculator(bundle, testHsd);
+    const unknown = calc.hitungHSP('MAP', { jenis_material: 'tidak_ada', faktor_efisiensi: 0.83 });
+    const known = calc.hitungHSP('MAP', { jenis_material: 'batu_pecah', faktor_efisiensi: 0.83 });
+    const unknownKoef = unknown.groups[2]!.components[0]!.coefficient;
+    const knownKoef = known.groups[2]!.components[0]!.coefficient;
+    expect(unknownKoef).not.toBeCloseTo(knownKoef, 6);
+    expect(unknownKoef).toBeLessThan(knownKoef);
+  });
+});
+
+describe('bahan volume conversion fail-closed', () => {
+  it('throws when the faktor konversi row is missing', () => {
+    const bundle: DataBundle = {
+      ...testBundle,
+      faktor_konversi: { ...testBundle.faktor_konversi, items: [] },
+      ahsp_items: [
+        {
+          ...testBundle.ahsp_items[0]!,
+          tenaga_kerja: [],
+          peralatan: [],
+        },
+      ],
+    };
+    const calc = createCalculator(bundle, testHsd);
+    expect(() => calc.hitungHSP('3.2.1', {})).toThrow('Faktor konversi for material "agregat_kelas_a" not found');
+  });
+});
+
+describe('sub-AHSP cycle through createCalculator', () => {
+  it('throws when A references B and B references A', () => {
+    const bare = {
+      ...testBundle.ahsp_items[0]!,
+      tenaga_kerja: [],
+      bahan: [],
+      peralatan: [],
+      variabel: {},
+    };
+    const itemA = {
+      ...bare,
+      kode_ahsp: 'A',
+      nama: 'A',
+      sub_ahsp: [
+        {
+          ref_ahsp: 'B',
+          nama: 'B',
+          koefisien: 1,
+          satuan_koefisien: 'm3',
+          satuan_konteks: 'parent' as const,
+          volume_state: null,
+        },
+      ],
+    };
+    const itemB = {
+      ...bare,
+      kode_ahsp: 'B',
+      nama: 'B',
+      sub_ahsp: [
+        {
+          ref_ahsp: 'A',
+          nama: 'A',
+          koefisien: 1,
+          satuan_koefisien: 'm3',
+          satuan_konteks: 'parent' as const,
+          volume_state: null,
+        },
+      ],
+    };
+    const calc = createCalculator({ ...testBundle, ahsp_items: [itemA, itemB] }, testHsd);
+    expect(() => calc.hitungHSP('A', {})).toThrow(/Circular sub-AHSP dependency detected: A → B → A/);
+  });
+});

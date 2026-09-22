@@ -133,6 +133,10 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../core
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
 
   packages/hsd-jabar-2025:
     dependencies:

@@ -46,13 +46,15 @@ const hsd = {
     harga_rp: b.harga ?? 0,
     sumber_data: 'Permen PUPR 1/2022 Lampiran HSD',
   })),
-  peralatan_sewa: alatHsd.items.map(a => ({
-    ref: a.kode,
-    nama: a.nama,
-    satuan: 'jam',
-    harga_rp: Math.round(a.hsd_rp_per_jam),
-    sumber_data: 'Permen PUPR 1/2022 — HSD Alat',
-  })),
+  peralatan_sewa: alatHsd.items
+    .filter(a => typeof a.kode === 'string' && a.kode.startsWith('E.'))
+    .map(a => ({
+      ref: a.kode,
+      nama: a.nama,
+      satuan: 'jam',
+      harga_rp: Math.round(a.hsd_rp_per_jam),
+      sumber_data: 'Permen PUPR 1/2022 — HSD Alat',
+    })),
   bahan_bakar: {
     solar_industri_rp_per_liter: 6800,
     oli_mesin_rp_per_liter: 25000,
@@ -72,13 +74,20 @@ writeFileSync(resolve(dataDir, 'hsd.json'), JSON.stringify(hsd, null, 2) + '\n')
 writeFileSync(resolve(outDir, 'package.json'), JSON.stringify({
   name: '@ahs-id/hsd-bm-2022',
   version: '0.0.1',
-  description: 'Regional HSD prices for Bina Marga 2022 regulation bundle',
+  description: 'Permen PUPR 1/2022 embedded HSD for the bina-marga-2022 bundle',
   type: 'module',
   main: 'dist/index.js',
   types: 'dist/index.d.ts',
-  files: ['dist'],
-  scripts: { build: 'tsc --project tsconfig.json', clean: 'rm -rf dist' },
+  exports: { '.': { types: './dist/index.d.ts', import: './dist/index.js' } },
+  files: ['dist', 'data'],
+  scripts: {
+    build: 'tsc --project tsconfig.json',
+    typecheck: 'tsc --noEmit',
+    lint: 'eslint src/',
+    clean: 'rm -rf dist .turbo *.tsbuildinfo',
+  },
   dependencies: { '@ahs-id/core': 'workspace:*' },
+  devDependencies: { typescript: '^5.5.0' },
   license: 'MIT',
 }, null, 2) + '\n');
 

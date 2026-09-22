@@ -71,6 +71,7 @@ writeFileSync('hsp-3.2.1.xlsx', buffer);
 | `@ahs-id/hsd-jabar-2025` | Jawa Barat Q1 2025 | Terendah |
 | `@ahs-id/hsd-kaltim-2025` | Kalimantan Timur Q1 2025 | Menengah |
 | `@ahs-id/hsd-papua-2025` | Papua Q1 2025 | Tertinggi |
+| `@ahs-id/hsd-bm-2022` | Permen PUPR 1/2022 (acuan nasional) | Embedded with Bina Marga 2022 |
 
 ## Key Concepts
 
@@ -94,6 +95,9 @@ writeFileSync('hsp-3.2.1.xlsx', buffer);
 ## Repository Structure
 
 ```
+apps/
+└── cli/                   ← ahs-id calc-hsp, export-rab, validate
+
 packages/
 ├── core/                  ← Engine: calculator, validator, types
 ├── pupr-2023/             ← Permen PUPR 8/2023
@@ -102,11 +106,23 @@ packages/
 ├── cipta-karya-2024/      ← SE Bina Konstruksi 68/2024 (Cipta Karya)
 ├── hsd-jabar-2025/        ← HSD Jawa Barat Q1 2025
 ├── hsd-kaltim-2025/       ← HSD Kalimantan Timur Q1 2025
-└── hsd-papua-2025/        ← HSD Papua Q1 2025
+├── hsd-papua-2025/        ← HSD Papua Q1 2025
+└── hsd-bm-2022/           ← Permen PUPR 1/2022 embedded HSD
 
 tests/golden/              ← Cross-bundle regression fixtures
 docs/                      ← Architecture spec, legal notes
 ```
+
+## CLI
+
+From a checkout, after `pnpm install` and `pnpm --filter @ahs-id/cli build`:
+
+```bash
+pnpm --filter @ahs-id/cli exec ahs-id calc-hsp 3.2.1 --bundle pupr-2023 --hsd hsd-jabar-2025 --variable jarak_quarry_km=25 --variable kondisi_jalan=sedang --variable faktor_efisiensi=0.83
+pnpm --filter @ahs-id/cli exec ahs-id calc-hsp "3.1.(1)" --bundle bina-marga-2022
+```
+
+`pupr-2023` defaults to `hsd-kaltim-2025`. `bina-marga-2022` defaults to `hsd-bm-2022` and prices equipment from those Permen hourly rates. `@ahs-id/cli` is not published to npm yet.
 
 ## Documentation
 

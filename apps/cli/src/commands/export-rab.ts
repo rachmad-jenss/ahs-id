@@ -6,12 +6,12 @@ export function exportRabCommand(): Command {
     .description('Export HSP calculation to an Excel RAB file')
     .argument('<kode-ahsp>', 'AHSP item code (e.g. 3.2.1)')
     .option('-b, --bundle <name>', 'AHSP regulation bundle (default: pupr-2023)', 'pupr-2023')
-    .option('--hsd <name>', 'HSD regional price bundle (default: hsd-kaltim-2025)', 'hsd-kaltim-2025')
+    .option('--hsd <name>', 'HSD price bundle (default: hsd-kaltim-2025 for pupr-2023, hsd-bm-2022 for bina-marga-2022)')
     .option('-o, --output <path>', 'Output Excel file path (default: <kode-ahsp>.xlsx)')
     .option('-v, --variable <key=value...>', 'Input variables (e.g. jarak_quarry_km=25)')
-    .action(async (kodeAhsp: string, options: { bundle: string; hsd: string; output?: string; variable?: string[] }) => {
+    .action(async (kodeAhsp: string, options: { bundle: string; hsd?: string; output?: string; variable?: string[] }) => {
       try {
-        const { bundle, hsd } = await resolveBundle(options.bundle);
+        const { bundle, hsd } = await resolveBundle(options.bundle, options.hsd);
         const variables: Record<string, string | number> = {};
 
         if (options.variable) {
@@ -27,7 +27,7 @@ export function exportRabCommand(): Command {
         const result = calc.hitungHSP(kodeAhsp, variables);
         const buffer = await exportHspToExcelBuffer(result);
 
-        const outputPath = options.output ?? `${kodeAhsp}.xlsx`;
+        const outputPath = options.output ?? defaultExcelName(kodeAhsp);
         writeFileSync(outputPath, buffer);
         console.log(`RAB exported to ${outputPath}`);
       } catch (err) {
@@ -37,4 +37,11 @@ export function exportRabCommand(): Command {
     });
 
   return cmd;
+}
+
+function defaultExcelName(kodeAhsp: string): string {
+  if (kodeAhsp.includes('/') || kodeAhsp.includes('\\') || kodeAhsp.includes('..')) {
+    throw new Error('kode-ahsp cannot contain a path. Pass --output to choose a file path.');
+  }
+  return `${kodeAhsp}.xlsx`;
 }

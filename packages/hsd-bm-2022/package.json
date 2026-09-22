@@ -1,19 +1,31 @@
 {
   "name": "@ahs-id/hsd-bm-2022",
   "version": "0.0.1",
-  "description": "Regional HSD prices for Bina Marga 2022 regulation bundle",
+  "description": "Permen PUPR 1/2022 embedded HSD for the bina-marga-2022 bundle",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
-    "dist"
+    "dist",
+    "data"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "clean": "rm -rf dist"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
     "@ahs-id/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
   },
   "license": "MIT"
 }

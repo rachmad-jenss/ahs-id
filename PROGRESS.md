@@ -1,7 +1,7 @@
 # AHS-ID — Phase 2 Progress
 
 > Public checklist for **Phase 2: Functional Library — "Usable by Others"**.  
-> Last updated: 2026-05-29 (Wave 1 merged).
+> Last updated: 2026-09-22 (DAS-27: Bina Marga 2022 sewa rates, CLI `--hsd`).
 
 **Exit criteria:** External developer can `npm install`, calculate HSP for any Bina Marga item (PUPR path), and export to Excel.
 
@@ -45,7 +45,7 @@ Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 | DAS-6 | CLI `export-rab` | ✅ Done |
 | DAS-7 | CLI `validate` for bundles | ✅ Done |
 | DAS-8 | npm publish workflow & package metadata | ⬜ Open |
-| DAS-9 | Changesets & CHANGELOG | ⬜ Open |
+| DAS-9 | Changesets & CHANGELOG | ✅ Done |
 
 **Optional (post-exit):** Bina Marga divisi 1–7+ expansion; unify `bina-marga-2022` calculation path with regional HSD bundles.
 
@@ -82,4 +82,4 @@ Golden tolerance: ε = 0.01 Rp.
 | `@ahs-id/hsd-kaltim-2025` | HSD Kalimantan Timur Q1 2025 |
 | `@ahs-id/hsd-papua-2025` | HSD Papua Q1 2025 |
 
-`apps/cli/` — not scaffolded yet (Phase 2 exit).
+`apps/cli/` — `calc-hsp`, `export-rab`, `validate`. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates. npm publish is still DAS-8.

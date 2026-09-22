@@ -30,7 +30,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -46,7 +46,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -126,7 +126,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -143,7 +143,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -160,7 +160,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -177,7 +177,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -278,7 +278,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -295,7 +295,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -376,7 +376,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -393,7 +393,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -410,7 +410,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -491,7 +491,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -508,7 +508,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -525,7 +525,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -598,7 +598,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -615,7 +615,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -632,7 +632,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -705,7 +705,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -721,7 +721,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -793,7 +793,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -809,7 +809,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -917,7 +917,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -934,7 +934,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -951,7 +951,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -968,7 +968,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -985,7 +985,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1002,7 +1002,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1118,7 +1118,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1135,7 +1135,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1152,7 +1152,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1169,7 +1169,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1186,7 +1186,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1203,7 +1203,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1284,7 +1284,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1301,7 +1301,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1318,7 +1318,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1413,7 +1413,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1430,7 +1430,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1447,7 +1447,7 @@
         "ref": "E.19a",
         "nama": "Peralatan E19a",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1464,7 +1464,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1481,7 +1481,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1562,7 +1562,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1579,7 +1579,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1596,7 +1596,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1824,7 +1824,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1841,7 +1841,7 @@
         "ref": "E.43",
         "nama": "Dowel Bar Inserter",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1858,7 +1858,7 @@
         "ref": "E.49",
         "nama": "Peralatan E49",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1875,7 +1875,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1976,7 +1976,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1993,7 +1993,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2088,7 +2088,7 @@
         "ref": "E.64",
         "nama": "Peralatan E64",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2162,7 +2162,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2179,7 +2179,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2260,7 +2260,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2340,7 +2340,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2412,7 +2412,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2429,7 +2429,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2502,7 +2502,7 @@
         "ref": "E.65",
         "nama": "Peralatan E65",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {

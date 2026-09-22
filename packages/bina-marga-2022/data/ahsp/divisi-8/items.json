@@ -38,7 +38,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -134,7 +134,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -348,7 +348,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -365,7 +365,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -446,7 +446,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -519,7 +519,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -535,7 +535,7 @@
         "ref": "E.64",
         "nama": "Peralatan E64",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -607,7 +607,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -623,7 +623,7 @@
         "ref": "E.64",
         "nama": "Peralatan E64",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -701,7 +701,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -797,7 +797,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -893,7 +893,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -989,7 +989,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1085,7 +1085,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1181,7 +1181,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1352,7 +1352,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1368,7 +1368,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1448,7 +1448,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1464,7 +1464,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1544,7 +1544,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1560,7 +1560,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1640,7 +1640,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1656,7 +1656,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1736,7 +1736,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1752,7 +1752,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1824,7 +1824,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1840,7 +1840,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1912,7 +1912,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1928,7 +1928,7 @@
         "ref": "E.78",
         "nama": "Peralatan E78",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2006,7 +2006,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2022,7 +2022,7 @@
         "ref": "E.32",
         "nama": "Crane On Truck 25 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2116,7 +2116,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2132,7 +2132,7 @@
         "ref": "E.32",
         "nama": "Crane On Truck 25 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2226,7 +2226,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2242,7 +2242,7 @@
         "ref": "E.32",
         "nama": "Crane On Truck 25 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2336,7 +2336,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2352,7 +2352,7 @@
         "ref": "E.32",
         "nama": "Crane On Truck 25 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2446,7 +2446,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2462,7 +2462,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2540,7 +2540,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2556,7 +2556,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2634,7 +2634,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2650,7 +2650,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2728,7 +2728,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2744,7 +2744,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2822,7 +2822,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2838,7 +2838,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2916,7 +2916,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2932,7 +2932,7 @@
         "ref": "E.77",
         "nama": "Peralatan E77",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3018,7 +3018,7 @@
         "ref": "E.07",
         "nama": "Concrete Vibrator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3096,7 +3096,7 @@
         "ref": "E.07",
         "nama": "Concrete Vibrator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3112,7 +3112,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3190,7 +3190,7 @@
         "ref": "E.07",
         "nama": "Concrete Vibrator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3206,7 +3206,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3222,7 +3222,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3300,7 +3300,7 @@
         "ref": "E.07",
         "nama": "Concrete Vibrator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3316,7 +3316,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3332,7 +3332,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3421,7 +3421,7 @@
         "ref": "E.74",
         "nama": "Peralatan E74",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3796,7 +3796,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3889,7 +3889,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4082,7 +4082,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4175,7 +4175,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4353,7 +4353,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4369,7 +4369,7 @@
         "ref": "E.73",
         "nama": "Peralatan E73",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4563,7 +4563,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4579,7 +4579,7 @@
         "ref": "E.73",
         "nama": "Peralatan E73",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4679,7 +4679,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4695,7 +4695,7 @@
         "ref": "E.73",
         "nama": "Peralatan E73",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4795,7 +4795,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4811,7 +4811,7 @@
         "ref": "E.73",
         "nama": "Peralatan E73",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4918,7 +4918,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4935,7 +4935,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4952,7 +4952,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4969,7 +4969,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4986,7 +4986,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5003,7 +5003,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5020,7 +5020,7 @@
         "ref": "E.79",
         "nama": "Peralatan E79",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5121,7 +5121,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5137,7 +5137,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5337,7 +5337,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5353,7 +5353,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5369,7 +5369,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5385,7 +5385,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5463,7 +5463,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5479,7 +5479,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5495,7 +5495,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5573,7 +5573,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5589,7 +5589,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5605,7 +5605,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5691,7 +5691,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5770,7 +5770,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5787,7 +5787,7 @@
         "ref": "E.83",
         "nama": "Peralatan E83",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5874,7 +5874,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5961,7 +5961,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6048,7 +6048,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6065,7 +6065,7 @@
         "ref": "E.83",
         "nama": "Peralatan E83",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6082,7 +6082,7 @@
         "ref": "E.84",
         "nama": "Peralatan E84",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6169,7 +6169,7 @@
         "ref": "E.82",
         "nama": "Peralatan E82",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6185,7 +6185,7 @@
         "ref": "E.83",
         "nama": "Peralatan E83",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6201,7 +6201,7 @@
         "ref": "E.84",
         "nama": "Peralatan E84",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6722,7 +6722,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6738,7 +6738,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6845,7 +6845,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6861,7 +6861,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6975,7 +6975,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -6991,7 +6991,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {

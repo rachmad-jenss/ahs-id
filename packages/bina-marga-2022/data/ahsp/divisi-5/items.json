@@ -38,7 +38,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -55,7 +55,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -72,7 +72,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -89,7 +89,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -157,7 +157,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -174,7 +174,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -191,7 +191,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -251,7 +251,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -268,7 +268,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -285,7 +285,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -353,7 +353,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -370,7 +370,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -387,7 +387,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -468,7 +468,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -485,7 +485,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -502,7 +502,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -519,7 +519,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -536,7 +536,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -617,7 +617,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -634,7 +634,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -651,7 +651,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -668,7 +668,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -685,7 +685,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -850,7 +850,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1029,7 +1029,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1208,7 +1208,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1373,7 +1373,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1559,7 +1559,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1745,7 +1745,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1840,7 +1840,7 @@
         "ref": "E.80",
         "nama": "Peralatan E80",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1928,7 +1928,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1945,7 +1945,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1962,7 +1962,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1979,7 +1979,7 @@
         "ref": "E.27",
         "nama": "Track Loader",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2074,7 +2074,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2091,7 +2091,7 @@
         "ref": "E.13",
         "nama": "Tandem Roller 6-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2108,7 +2108,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2125,7 +2125,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2142,7 +2142,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2159,7 +2159,7 @@
         "ref": "E.27",
         "nama": "Track Loader",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2247,7 +2247,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2264,7 +2264,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2281,7 +2281,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2298,7 +2298,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2386,7 +2386,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2403,7 +2403,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2420,7 +2420,7 @@
         "ref": "E.19",
         "nama": "Compressor 4000-6500 L/M",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2437,7 +2437,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {

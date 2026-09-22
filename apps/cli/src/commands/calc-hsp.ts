@@ -1,26 +1,30 @@
 import { Command } from 'commander';
-import { resolveBundle, parseKeyValue, formatIdr, listAvailableBundles } from '../utils/loader.js';
+import { resolveBundle, parseKeyValue, formatIdr, listAvailableBundles, listAvailableHsd } from '../utils/loader.js';
 
 export function calcHspCommand(): Command {
   const cmd = new Command('calc-hsp')
     .description('Calculate HSP (Harga Satuan Pekerjaan) for an AHSP item')
     .argument('<kode-ahsp>', 'AHSP item code (e.g. 3.2.1)')
     .option('-b, --bundle <name>', 'AHSP regulation bundle (default: pupr-2023)', 'pupr-2023')
-    .option('--hsd <name>', 'HSD regional price bundle (default: hsd-kaltim-2025)', 'hsd-kaltim-2025')
+    .option('--hsd <name>', 'HSD price bundle (default: hsd-kaltim-2025 for pupr-2023, hsd-bm-2022 for bina-marga-2022)')
     .option('--json', 'Output as JSON instead of formatted table')
     .option('-v, --variable <key=value...>', 'Input variables (e.g. jarak_quarry_km=25 kondisi_jalan=sedang)')
     .option('--list-bundles', 'List available regulation bundles')
-    .action(async (kodeAhsp: string, options: { bundle: string; hsd: string; json: boolean; variable?: string[]; listBundles?: boolean }) => {
+    .action(async (kodeAhsp: string, options: { bundle: string; hsd?: string; json: boolean; variable?: string[]; listBundles?: boolean }) => {
       if (options.listBundles) {
         console.log('Available bundles:');
         for (const name of listAvailableBundles()) {
+          console.log(`  ${name}`);
+        }
+        console.log('Available HSD:');
+        for (const name of listAvailableHsd()) {
           console.log(`  ${name}`);
         }
         return;
       }
 
       try {
-        const { bundle, hsd } = await resolveBundle(options.bundle);
+        const { bundle, hsd, hsdName } = await resolveBundle(options.bundle, options.hsd);
         const variables: Record<string, string | number> = {};
 
         if (options.variable) {
@@ -42,6 +46,7 @@ export function calcHspCommand(): Command {
         const sep = '─'.repeat(72);
         console.log(`\n${result.kode_ahsp} — ${result.nama}`);
         console.log(`Satuan: ${result.satuan_bayar}`);
+        console.log(`HSD: ${hsdName}`);
         console.log(sep);
 
         for (const group of result.groups) {

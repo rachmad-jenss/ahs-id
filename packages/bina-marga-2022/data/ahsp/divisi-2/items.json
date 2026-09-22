@@ -30,7 +30,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -47,7 +47,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -148,7 +148,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -235,7 +235,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -252,7 +252,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -269,7 +269,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -359,7 +359,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -376,7 +376,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -393,7 +393,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -475,7 +475,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -492,7 +492,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -509,7 +509,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -613,7 +613,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -630,7 +630,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -647,7 +647,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -750,7 +750,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -767,7 +767,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -784,7 +784,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -878,7 +878,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -895,7 +895,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -912,7 +912,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1006,7 +1006,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1023,7 +1023,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1040,7 +1040,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1141,7 +1141,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1158,7 +1158,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1175,7 +1175,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1276,7 +1276,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1293,7 +1293,7 @@
         "ref": "E.10a",
         "nama": "Mini Excavator",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1310,7 +1310,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1406,7 +1406,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1423,7 +1423,7 @@
         "ref": "E.10",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1440,7 +1440,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1543,7 +1543,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1560,7 +1560,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1661,7 +1661,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1678,7 +1678,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1779,7 +1779,7 @@
         "ref": "E.11",
         "nama": "Flat Bed Truck 3-4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1796,7 +1796,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1897,7 +1897,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1914,7 +1914,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2015,7 +2015,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2032,7 +2032,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2133,7 +2133,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2150,7 +2150,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2253,7 +2253,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2270,7 +2270,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2373,7 +2373,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2390,7 +2390,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2493,7 +2493,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2510,7 +2510,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2613,7 +2613,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2630,7 +2630,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2733,7 +2733,7 @@
         "ref": "E.08",
         "nama": "Dump Truck 4 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2750,7 +2750,7 @@
         "ref": "E.25",
         "nama": "Tamper (Compactor)",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2881,7 +2881,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2898,7 +2898,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2915,7 +2915,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3043,7 +3043,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3060,7 +3060,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3077,7 +3077,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3205,7 +3205,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3222,7 +3222,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3239,7 +3239,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3367,7 +3367,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3384,7 +3384,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3401,7 +3401,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3529,7 +3529,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3546,7 +3546,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3563,7 +3563,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3691,7 +3691,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3708,7 +3708,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3725,7 +3725,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3853,7 +3853,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3870,7 +3870,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3887,7 +3887,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4015,7 +4015,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4032,7 +4032,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4049,7 +4049,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4177,7 +4177,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4194,7 +4194,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4211,7 +4211,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4339,7 +4339,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4356,7 +4356,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4373,7 +4373,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4501,7 +4501,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4518,7 +4518,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4535,7 +4535,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4663,7 +4663,7 @@
         "ref": "E.06",
         "nama": "Concrete Mixer 0.3-0.6 M3",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4680,7 +4680,7 @@
         "ref": "E.20",
         "nama": "Concrete Pump",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4697,7 +4697,7 @@
         "ref": "E.23",
         "nama": "Truck Crane 25 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {

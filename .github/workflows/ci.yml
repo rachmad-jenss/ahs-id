@@ -37,10 +37,56 @@ defaults:
 jobs:
   ci:
     name: Lint + Typecheck + Validate + Test
-    # Draft PRs skip CI (hemat Actions minutes); CI runs once after gh pr ready
-    if: github.event_name != 'pull_request' || !github.event.pull_request.draft
+    # Draft PRs skip CI. Same-repo work stays on the self-hosted runner.
+    # Fork PRs use ci-fork so untrusted code never executes on that machine.
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.draft == false && github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: [self-hosted, Windows, X64, ahs-id]
     timeout-minutes: 15
+    defaults:
+      run:
+        # The runner's machine policy is Restricted, which blocks the default
+        # powershell -command ". '{0}'" wrapper.
+        shell: powershell -NoProfile -ExecutionPolicy Bypass -Command ". '{0}'"
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa # v4.1.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Validate JSON data
+        run: pnpm validate-data
+
+      - name: Validate cross-bundle references
+        run: pnpm validate-bundles
+
+      - name: Test
+        run: pnpm test
+
+  ci-fork:
+    name: Lint + Typecheck + Validate + Test (fork)
+    if: github.event_name == 'pull_request' && github.event.pull_request.draft == false && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.2.2
         with:

@@ -38,7 +38,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -55,7 +55,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -72,7 +72,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -153,7 +153,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -170,7 +170,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -187,7 +187,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -268,7 +268,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -285,7 +285,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -302,7 +302,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -383,7 +383,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -400,7 +400,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -417,7 +417,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -434,7 +434,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -451,7 +451,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -468,7 +468,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -570,7 +570,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -587,7 +587,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -604,7 +604,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -621,7 +621,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -638,7 +638,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -655,7 +655,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -757,7 +757,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -774,7 +774,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -791,7 +791,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -808,7 +808,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -825,7 +825,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -842,7 +842,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -944,7 +944,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -961,7 +961,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -978,7 +978,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -995,7 +995,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1012,7 +1012,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1114,7 +1114,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1131,7 +1131,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1148,7 +1148,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1165,7 +1165,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1182,7 +1182,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1284,7 +1284,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1301,7 +1301,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1318,7 +1318,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1335,7 +1335,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1352,7 +1352,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1454,7 +1454,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1471,7 +1471,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1488,7 +1488,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1505,7 +1505,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1522,7 +1522,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1624,7 +1624,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1641,7 +1641,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1658,7 +1658,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1675,7 +1675,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1692,7 +1692,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1709,7 +1709,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1782,7 +1782,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1799,7 +1799,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1816,7 +1816,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1833,7 +1833,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1850,7 +1850,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1867,7 +1867,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1940,7 +1940,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1957,7 +1957,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1974,7 +1974,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -1991,7 +1991,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2008,7 +2008,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2025,7 +2025,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2098,7 +2098,7 @@
         "ref": "E.03",
         "nama": "Excavator PC-300",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2115,7 +2115,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2132,7 +2132,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2149,7 +2149,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2166,7 +2166,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2183,7 +2183,7 @@
         "ref": "E.41",
         "nama": "Texture & Curing Machine",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2285,7 +2285,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2302,7 +2302,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2319,7 +2319,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2336,7 +2336,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2353,7 +2353,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2370,7 +2370,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2387,7 +2387,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2489,7 +2489,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2506,7 +2506,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2523,7 +2523,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2540,7 +2540,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2557,7 +2557,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2574,7 +2574,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2591,7 +2591,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2693,7 +2693,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2710,7 +2710,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2727,7 +2727,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2744,7 +2744,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2761,7 +2761,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2778,7 +2778,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2795,7 +2795,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2897,7 +2897,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2914,7 +2914,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2931,7 +2931,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2948,7 +2948,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2965,7 +2965,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2982,7 +2982,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -2999,7 +2999,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3101,7 +3101,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3118,7 +3118,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3135,7 +3135,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3152,7 +3152,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3169,7 +3169,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3186,7 +3186,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3203,7 +3203,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3305,7 +3305,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3322,7 +3322,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3339,7 +3339,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3356,7 +3356,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3373,7 +3373,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3390,7 +3390,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3407,7 +3407,7 @@
         "ref": "E.18",
         "nama": "Asphalt Distributor 4000 L",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3509,7 +3509,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3526,7 +3526,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3543,7 +3543,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3560,7 +3560,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3577,7 +3577,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3594,7 +3594,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3696,7 +3696,7 @@
         "ref": "E.01",
         "nama": "Excavator PC-200",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3713,7 +3713,7 @@
         "ref": "E.02",
         "nama": "Excavator PC-100",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3730,7 +3730,7 @@
         "ref": "E.09",
         "nama": "Dump Truck 10 Ton",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3747,7 +3747,7 @@
         "ref": "E.12",
         "nama": "Motor Grader > 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3764,7 +3764,7 @@
         "ref": "E.15",
         "nama": "Vibratory Roller 5-8 T",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3781,7 +3781,7 @@
         "ref": "E.17",
         "nama": "Asphalt Mixing Plant",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3890,7 +3890,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3907,7 +3907,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -3924,7 +3924,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4033,7 +4033,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4050,7 +4050,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4067,7 +4067,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4176,7 +4176,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4193,7 +4193,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4210,7 +4210,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4319,7 +4319,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4336,7 +4336,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4445,7 +4445,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4554,7 +4554,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4781,7 +4781,7 @@
         "ref": "E.05",
         "nama": "Bulldozer 100 HP",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4798,7 +4798,7 @@
         "ref": "E.26",
         "nama": "Generator Set",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -4956,7 +4956,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5044,7 +5044,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
@@ -5132,7 +5132,7 @@
         "ref": "E.76",
         "nama": "Peralatan E76",
         "koef_sumber": "kalkulasi",
-        "mode_biaya": "ownership",
+        "mode_biaya": "sewa",
         "volume_state": null,
         "variabel_input": [],
         "koef_referensi": {
