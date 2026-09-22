@@ -2168,11 +2168,19 @@ CI pipeline:
 ├── 3. Run all golden tests (TS)
 ├── 4. Run validateBundle() on all data packages
 ├── 5. Build (tsc → dist/)
-├── 6. npm publish --access public
+├── 6. Pack/install smoke (`pnpm pack-smoke`) on tarballs < 10 MB
+├── 7. npm publish --access public (operator-gated via GitHub `npm` environment)
 │   ├── @ahs-id/core
 │   ├── @ahs-id/pupr-2023
-│   └── @ahs-id/hsd-*
-└── 7. Auto-generate changelog from conventional commits
+│   ├── @ahs-id/bina-marga-2016
+│   ├── @ahs-id/bina-marga-2022
+│   ├── @ahs-id/cipta-karya-2024
+│   ├── @ahs-id/hsd-* (regional + bm-2022)
+│   └── @ahs-id/cli
+└── 8. Auto-generate changelog from Changesets
+
+First public release scope is recorded in `scripts/release-packages.json`.
+Versions remain at current 0.0.x/0.1.x until maintainer approves `1.0.0`.
 
 Pre-publish gate (MUST pass):
   ✅ All golden tests pass

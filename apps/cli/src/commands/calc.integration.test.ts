@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { mkdtempSync, statSync } from 'node:fs';
+import { mkdtempSync, readFileSync, statSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,6 +13,11 @@ function run(args: string[], cwd = mkdtempSync(join(tmpdir(), 'ahs-cli-'))): { s
 }
 
 describe('calc-hsp from another directory', () => {
+  it('compiled CLI entry keeps the Node shebang', () => {
+    const firstLine = readFileSync(cli, 'utf8').split(/\r?\n/, 1)[0];
+    expect(firstLine).toBe('#!/usr/bin/env node');
+  });
+
   it('prices Bina Marga 2016 item 3.1.1 from the Kaltim HSD', () => {
     const result = run(['calc-hsp', '3.1.1', '--bundle', 'bina-marga-2016', '--json']);
     expect(result.status, result.stderr).toBe(0);

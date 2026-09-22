@@ -19,7 +19,7 @@
     "build": "tsc --project tsconfig.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
-    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+    "clean": "node ../../scripts/clean.mjs dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
     "@ahs-id/core": "workspace:*"
@@ -27,5 +27,14 @@
   "devDependencies": {
     "typescript": "^5.5.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachmad-jenss/ahs-id.git",
+    "directory": "packages/hsd-jabar-2025"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }
