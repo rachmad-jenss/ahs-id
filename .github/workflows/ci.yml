@@ -77,7 +77,7 @@ jobs:
         run: pnpm validate-bundles
 
       - name: Test
-        run: pnpm test
+        run: pnpm exec turbo run test --concurrency=1
 
   ci-fork:
     name: Lint + Typecheck + Validate + Test (fork)
@@ -117,4 +117,4 @@ jobs:
         run: pnpm validate-bundles
 
       - name: Test
-        run: pnpm test
+        run: pnpm exec turbo run test --concurrency=1
