@@ -177,6 +177,10 @@ function getFpr(
         throw new Error('Equipment does not define sangat_berat Fpr');
       }
       return fpr.sangat_berat;
+    default: {
+      const unreachable: never = kondisi;
+      throw new Error(`Unsupported kondisi_operasi: ${String(unreachable)}`);
+    }
   }
 }
 

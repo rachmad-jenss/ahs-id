@@ -60,22 +60,25 @@ function fmt(d) {
 
 const useJson = process.argv.includes('--json');
 const results = [];
+const log = useJson ? console.error : console.log;
 
-console.log('\n── Cross-bundle validation ──\n');
+log('\n── Cross-bundle validation ──\n');
 
 for (const pair of PAIRS) {
   let bMod;
   try {
     bMod = await pair.bundleLoad();
   } catch (e) {
-    console.log(`  [FAIL] ${pair.bundleLabel} — load error: ${e.message}\n`);
+    console.error(`  [FAIL] ${pair.bundleLabel} — load error: ${e.message}\n`);
     results.push({ bundle: pair.bundleLabel, status: 'fail', error: e.message });
     continue;
   }
 
   const bundle = pair.getBundle(bMod);
   if (!bundle) {
-    console.log(`  [FAIL] ${pair.bundleLabel} — bundle export not found\n`);
+    const message = 'bundle export not found';
+    console.error(`  [FAIL] ${pair.bundleLabel} — ${message}`);
+    results.push({ bundle: pair.bundleLabel, status: 'fail', error: message });
     continue;
   }
 
@@ -84,31 +87,31 @@ for (const pair of PAIRS) {
     try {
       hMod = await pair.hsdLoad(hsdLabel);
     } catch (e) {
-      console.log(`  [FAIL] ${pair.bundleLabel} × ${hsdLabel} — HSD load error: ${e.message}\n`);
+      console.error(`  [FAIL] ${pair.bundleLabel} × ${hsdLabel} — HSD load error: ${e.message}\n`);
       results.push({ bundle: pair.bundleLabel, hsd: hsdLabel, status: 'fail', error: e.message });
       continue;
     }
 
     const hsd = pair.getHsd(hMod);
     const report = validateBundle(bundle, hsd);
-    console.log(`  ${fmt(report)}  ${pair.bundleLabel} × ${hsdLabel}`);
+    log(`  ${fmt(report)}  ${pair.bundleLabel} × ${hsdLabel}`);
     if (report.warnings.length > 0) {
       for (const w of report.warnings) {
-        console.log(`         ⚠ [${w.code}] ${w.path}: ${w.message}`);
+        log(`         ⚠ [${w.code}] ${w.path}: ${w.message}`);
       }
     }
     if (!report.valid) {
       for (const e of report.errors) {
-        console.log(`         ✗ [${e.code}] ${e.path}: ${e.message}`);
+        console.error(`         ✗ [${e.code}] ${e.path}: ${e.message}`);
       }
     }
     results.push({ bundle: pair.bundleLabel, hsd: hsdLabel, valid: report.valid, errors: report.errors.length, warnings: report.warnings.length });
   }
-  console.log('');
+  log('');
 }
 
 for (const s of SKIPPED) {
-  console.log(`  [SKIP] ${s.label} — ${s.note}\n`);
+  log(`  [SKIP] ${s.label} — ${s.note}\n`);
   results.push({ bundle: s.label, status: 'skip', note: s.note });
 }
 
@@ -117,7 +120,7 @@ const invalid = results.filter(r => r.valid === false);
 const skipped = results.filter(r => r.status === 'skip');
 
 if (useJson) {
-  console.log(JSON.stringify({ results, summary: { total: results.length, failed: failed.length, invalid: invalid.length, skipped: skipped.length } }, null, 2));
+  console.log(JSON.stringify({ results, summary: { total: results.length, failed: failed.length, invalid: invalid.length, skipped: skipped.length } }));
 } else {
   const total = results.length;
   console.log(`── Summary ──`);
