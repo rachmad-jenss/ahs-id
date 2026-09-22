@@ -395,6 +395,7 @@ export interface AhspGroup {
 
 export interface AhspCalculation {
   readonly groups: readonly AhspGroup[];
+  readonly subAhsp: readonly SubAhspLine[];
   readonly baseTotal: number;
   readonly overheadPct: number;
   readonly profitPct: number;
@@ -402,6 +403,14 @@ export interface AhspCalculation {
   readonly grandTotal: number;
   readonly warnings: readonly string[];
   readonly audit_trail: readonly AuditEntry[];
+}
+
+export interface SubAhspLine {
+  readonly ref_ahsp: string;
+  readonly nama: string;
+  readonly koefisien: number;
+  readonly unit_price: number;
+  readonly total_price: number;
 }
 
 export interface HSPResult extends AhspCalculation {

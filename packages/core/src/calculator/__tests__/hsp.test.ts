@@ -218,6 +218,10 @@ describe('hitungHSP', () => {
     expect(result.kode_ahsp).toBe('3.2.1');
     expect(result.nama).toContain('Lapis Pondasi Agregat');
     expect(result.groups).toHaveLength(3);
+    expect(result.subAhsp).toEqual([]);
+    const visible = result.groups.reduce((sum, group) => sum + group.total, 0)
+      + result.subAhsp.reduce((sum, line) => sum + line.total_price, 0);
+    expect(visible).toBeCloseTo(result.baseTotal, 6);
     expect(result.grandTotal).toBeGreaterThan(0);
     expect(result.baseTotal).toBeGreaterThan(0);
   });
