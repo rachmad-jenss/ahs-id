@@ -33,6 +33,20 @@ describe('calc-hsp from another directory', () => {
     expect(result.stderr).toContain('not unique');
   });
 
+  it('rejects a non-numeric Cipta Karya margin override', () => {
+    const result = run([
+      'calc-hsp',
+      '1.2.1.1.1',
+      '--bundle',
+      'cipta-karya-2024',
+      '--variable',
+      'overhead_pct=abc',
+      '--json',
+    ]);
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain('overhead_pct must be a finite number');
+  });
+
   it('rejects --hsd for Cipta Karya', () => {
     const result = run(['calc-hsp', '1.2.1.1.1', '--bundle', 'cipta-karya-2024', '--hsd', 'hsd-kaltim-2025']);
     expect(result.status).toBe(1);

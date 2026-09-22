@@ -27,6 +27,21 @@ export function listAvailableHsd(): string[] {
   return PACKAGES.filter((pkg) => pkg.strategy === 'hsd-only').map((pkg) => pkg.name);
 }
 
+function readFixedMarginOverride(
+  variables: Record<string, string | number>,
+  key: 'overhead_pct' | 'profit_pct',
+  bundleName: string,
+): number | undefined {
+  if (!Object.prototype.hasOwnProperty.call(variables, key)) {
+    return undefined;
+  }
+  const value = variables[key];
+  if (typeof value !== 'number' || !Number.isFinite(value)) {
+    throw new Error(`${bundleName}: ${key} must be a finite number`);
+  }
+  return value;
+}
+
 export function parseKeyValue(value: string): Record<string, string | number> {
   const eqIndex = value.indexOf('=');
   if (eqIndex === -1) {
@@ -124,11 +139,11 @@ export async function calculateHsp(
       if (unknown.length > 0) {
         throw new Error(`Unsupported variable for ${bundleName}: ${unknown.join(', ')}`);
       }
-      const overhead = variables['overhead_pct'];
-      const profit = variables['profit_pct'];
       const opts: { overhead_pct?: number; profit_pct?: number } = {};
-      if (typeof overhead === 'number') opts.overhead_pct = overhead;
-      if (typeof profit === 'number') opts.profit_pct = profit;
+      const overhead = readFixedMarginOverride(variables, 'overhead_pct', bundleName);
+      const profit = readFixedMarginOverride(variables, 'profit_pct', bundleName);
+      if (overhead !== undefined) opts.overhead_pct = overhead;
+      if (profit !== undefined) opts.profit_pct = profit;
       return {
         result: calcHspFixedCoefficient(findFixedItem(resolved.items, kode), opts),
         hsdName: null,
