@@ -103,11 +103,11 @@ numbers require explicit construction at public boundaries.
 
 ## Done criteria
 
-- [ ] Public monetary results use `IDR`.
-- [ ] Percentage convention is unambiguous and enforced.
-- [ ] JSON remains plain numeric data.
-- [ ] Full gates pass with no numeric changes.
-- [ ] `plans/README.md` status row is updated.
+- [x] Public monetary results use `IDR`.
+- [x] Percentage convention is unambiguous and enforced.
+- [x] JSON remains plain numeric data.
+- [x] Full gates pass with no numeric changes.
+- [x] `plans/README.md` status row is updated.
 
 ## STOP conditions
 

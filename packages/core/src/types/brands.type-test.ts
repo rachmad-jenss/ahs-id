@@ -4,6 +4,7 @@ import {
   percentagePoints,
   volume,
   type HSPResult,
+  type HsdTenagaKerjaEntry,
   type IDR,
   type Percentage,
   type PercentagePoints,
@@ -45,8 +46,12 @@ const fractionAsPoints: PercentagePoints = overheadFraction;
 // @ts-expect-error volume is not money
 const volumeAsMoney: IDR = compacted;
 
+// @ts-expect-error HSD unit prices must be constructed as IDR
+const rawHsdPrice: HsdTenagaKerjaEntry['harga_rp'] = 135_000;
+
 void rawMoney;
 void moneyAsVolume;
 void pointsAsFraction;
 void fractionAsPoints;
 void volumeAsMoney;
+void rawHsdPrice;

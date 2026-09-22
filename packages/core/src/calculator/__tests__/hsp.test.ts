@@ -369,7 +369,7 @@ describe('bahan volume conversion — material key from bahan-master', () => {
     ...testHsd,
     version: '1',
     tenaga_kerja: [],
-    bahan: [{ ref: 'M.08', satuan: 'm3', harga_rp: 35000, sumber_data: 'test' }],
+    bahan: [{ ref: 'M.08', nama: 'Bahan Tanah Timbunan', satuan: 'm3', harga_rp: 35000, sumber_data: 'test' }],
     peralatan_sewa: [],
   };
 

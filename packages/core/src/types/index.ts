@@ -346,7 +346,7 @@ export interface HsdRegionInfo {
 
 export interface HsdTenagaKerjaEntry {
   readonly ref: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: 'OH';
   readonly sumber_data: string;
 }
@@ -354,7 +354,7 @@ export interface HsdTenagaKerjaEntry {
 export interface HsdBahanEntry {
   readonly ref: string;
   readonly nama: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: string;
   readonly sumber_data: string;
 }
@@ -362,16 +362,16 @@ export interface HsdBahanEntry {
 export interface HsdPeralatanSewaEntry {
   readonly ref: string;
   readonly nama: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: 'jam';
   readonly sumber_data: string;
 }
 
 export interface HsdBahanBakar {
-  readonly solar_industri_rp_per_liter: number;
-  readonly oli_mesin_rp_per_liter: number;
-  readonly oli_hidrolik_rp_per_liter: number;
-  readonly grease_rp_per_kg: number;
+  readonly solar_industri_rp_per_liter: IDR;
+  readonly oli_mesin_rp_per_liter: IDR;
+  readonly oli_hidrolik_rp_per_liter: IDR;
+  readonly grease_rp_per_kg: IDR;
 }
 
 export interface HsdRegional {

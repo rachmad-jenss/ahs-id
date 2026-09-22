@@ -10,6 +10,8 @@ import type {
   FaktorKonversiEntry,
   VolumeState,
 } from '../types/index.js';
+import { volume as cubicMetres } from '../types/domain.js';
+import { brandHsdRegional } from './brand-hsd.js';
 import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
 import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
 import { convertVolume } from './konversi-volume.js';
@@ -39,9 +41,10 @@ export interface Calculator {
 
 export function createCalculator(
   bundle: DataBundle,
-  hsd: HsdRegional,
+  hsdInput: HsdRegional,
   config?: CalculatorConfig,
 ): Calculator {
+  const hsd = brandHsdRegional(hsdInput);
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const bahanMasterMap = new Map(bundle.bahan.items.map((b) => [b.kode, b]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
@@ -207,7 +210,7 @@ function calcBahan(
       if (!fk) {
         throw new Error(`Faktor konversi for material "${materialKey}" not found`);
       }
-      const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
+      const result = convertVolume(cubicMetres(1), fk, bahan.volume_state, itemVolumeState);
       coefficient = bahan.koefisien * result.factor;
       audit.push({
         step: 'volume_conversion_bahan',
@@ -527,7 +530,7 @@ function applyVolumeConversion(
     throw new Error(`Faktor konversi for material "${materialKey}" not found`);
   }
 
-  const result = convertVolume(1.0, fk, entry.volume_state as VolumeState, item.volume_state_bayar);
+  const result = convertVolume(cubicMetres(1), fk, entry.volume_state as VolumeState, item.volume_state_bayar);
   const converted = koef * result.factor;
   audit.push({
     step: 'volume_conversion',

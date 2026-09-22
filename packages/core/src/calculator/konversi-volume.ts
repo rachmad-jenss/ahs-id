@@ -1,7 +1,8 @@
+import { volume as cubicMetres, type Volume } from '../types/domain.js';
 import type { FaktorKonversiEntry, VolumeState } from '../types/index.js';
 
 export interface ConvertVolumeResult {
-  readonly converted: number;
+  readonly converted: Volume;
   readonly factor: number;
   readonly from: VolumeState;
   readonly to: VolumeState;
@@ -15,18 +16,19 @@ export interface ConvertVolumeResult {
  * rather than storing it, to avoid rounding inconsistencies.
  */
 export function convertVolume(
-  volume: number,
+  amount: Volume,
   material: FaktorKonversiEntry,
   from: VolumeState,
   to: VolumeState,
 ): ConvertVolumeResult {
+  const checked = cubicMetres(amount);
   if (from === to) {
-    return { converted: volume, factor: 1.0, from, to, material: material.material };
+    return { converted: checked, factor: 1.0, from, to, material: material.material };
   }
 
   const factor = getConversionFactor(material, from, to);
   return {
-    converted: volume * factor,
+    converted: cubicMetres(checked * factor),
     factor,
     from,
     to,

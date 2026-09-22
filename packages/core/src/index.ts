@@ -57,6 +57,9 @@ export type {
 
 export { idr, percentage, percentagePoints, volume } from './types/index.js';
 
+export { brandHsdRegional } from './calculator/brand-hsd.js';
+export type { HsdPriceInput } from './calculator/brand-hsd.js';
+
 export { createCalculator } from './calculator/hsp.js';
 export type { Calculator } from './calculator/hsp.js';
 

@@ -5,6 +5,7 @@ import type {
   HsdRegional,
 } from '../types/index.js';
 import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
+import { brandHsdRegional } from './brand-hsd.js';
 
 /**
  * Calculate HSP for items that carry pre-computed koef_referensi
@@ -28,11 +29,12 @@ export function calcHspFromBundle(
   alatPrices: Map<string, number>,
   opts?: { overhead_pct?: number; profit_pct?: number },
 ): HSPResult {
+  const pricedHsd = brandHsdRegional(hsd);
   const audit: AuditEntry[] = [];
   const warnings: string[] = [];
 
-  const tkComponents = calcTk(item, hsd, audit);
-  const bahanComponents = calcBahan(item, hsd, audit);
+  const tkComponents = calcTk(item, pricedHsd, audit);
+  const bahanComponents = calcBahan(item, pricedHsd, audit);
   const alatComponents = calcAlat(item, alatPrices, audit);
 
   const tkGroup: PricedGroup = {
