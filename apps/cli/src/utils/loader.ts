@@ -1,4 +1,5 @@
-import type { DataBundle, HsdRegional } from '@ahs-id/core';
+import { calcHspFixedCoefficient, createCalculator, type DataBundle, type FixedCoefficientItem, type HsdRegional, type HSPResult } from '@ahs-id/core';
+import { findPackage, PACKAGES, type PackageRecord } from './registry.js';
 
 export interface CalculatorBundle {
   bundle: DataBundle;
@@ -6,28 +7,25 @@ export interface CalculatorBundle {
   hsdName: string;
 }
 
-export const BUNDLE_NAMES = ['pupr-2023', 'bina-marga-2022'] as const;
-export const HSD_NAMES = ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025', 'hsd-bm-2022'] as const;
+export interface FixedBundle {
+  items: readonly FixedCoefficientItem[];
+}
 
-const DEFAULT_HSD: Record<(typeof BUNDLE_NAMES)[number], (typeof HSD_NAMES)[number]> = {
-  'pupr-2023': 'hsd-kaltim-2025',
-  'bina-marga-2022': 'hsd-bm-2022',
-};
+export type ResolvedCalculation =
+  | ({ kind: 'dynamic-bundle' } & CalculatorBundle)
+  | ({ kind: 'fixed-coefficient' } & FixedBundle);
 
-type BundleModule = { bundle: DataBundle };
-type HsdModule = { hsd: HsdRegional };
+function calculationPackages(): readonly PackageRecord[] {
+  return PACKAGES.filter((pkg) => pkg.strategy !== 'hsd-only');
+}
 
-const BUNDLE_LOADERS: Record<(typeof BUNDLE_NAMES)[number], () => Promise<BundleModule>> = {
-  'pupr-2023': () => import('@ahs-id/pupr-2023'),
-  'bina-marga-2022': () => import('@ahs-id/bina-marga-2022'),
-};
+export function listAvailableBundles(): string[] {
+  return calculationPackages().map((pkg) => pkg.name);
+}
 
-const HSD_LOADERS: Record<(typeof HSD_NAMES)[number], () => Promise<HsdModule>> = {
-  'hsd-kaltim-2025': () => import('@ahs-id/hsd-kaltim-2025'),
-  'hsd-jabar-2025': () => import('@ahs-id/hsd-jabar-2025'),
-  'hsd-papua-2025': () => import('@ahs-id/hsd-papua-2025'),
-  'hsd-bm-2022': () => import('@ahs-id/hsd-bm-2022'),
-};
+export function listAvailableHsd(): string[] {
+  return PACKAGES.filter((pkg) => pkg.strategy === 'hsd-only').map((pkg) => pkg.name);
+}
 
 export function parseKeyValue(value: string): Record<string, string | number> {
   const eqIndex = value.indexOf('=');
@@ -44,28 +42,103 @@ export function parseKeyValue(value: string): Record<string, string | number> {
 }
 
 export function resolveHsdName(bundleName: string, hsdName: string | undefined): string {
-  if (!(BUNDLE_NAMES as readonly string[]).includes(bundleName)) {
-    throw new Error(`Unknown bundle "${bundleName}". Available: ${BUNDLE_NAMES.join(', ')}`);
+  const pkg = findPackage(bundleName);
+  if (!pkg || pkg.strategy === 'hsd-only') {
+    throw new Error(`Unknown bundle "${bundleName}". Available: ${listAvailableBundles().join(', ')}`);
   }
-  if (hsdName === undefined) {
-    return DEFAULT_HSD[bundleName as (typeof BUNDLE_NAMES)[number]];
+  if (pkg.strategy === 'fixed-coefficient') {
+    throw new Error(`${bundleName} does not use an HSD bundle`);
   }
-  if (!(HSD_NAMES as readonly string[]).includes(hsdName)) {
-    throw new Error(`Unknown HSD "${hsdName}". Available: ${HSD_NAMES.join(', ')}`);
+  if (hsdName === undefined) return pkg.defaultHsd;
+  const hsd = findPackage(hsdName);
+  if (!hsd || hsd.strategy !== 'hsd-only') {
+    throw new Error(`Unknown HSD "${hsdName}". Available: ${listAvailableHsd().join(', ')}`);
+  }
+  if (!pkg.compatibleHsd.includes(hsdName)) {
+    throw new Error(`HSD "${hsdName}" is not compatible with ${bundleName}. Available: ${pkg.compatibleHsd.join(', ')}`);
   }
   return hsdName;
 }
 
 export async function resolveBundle(bundleName: string, hsdName?: string): Promise<CalculatorBundle> {
-  const resolvedHsd = resolveHsdName(bundleName, hsdName);
-  const bundleLoader = BUNDLE_LOADERS[bundleName as (typeof BUNDLE_NAMES)[number]];
-  const hsdLoader = HSD_LOADERS[resolvedHsd as (typeof HSD_NAMES)[number]];
-  const [bundleMod, hsdMod] = await Promise.all([bundleLoader(), hsdLoader()]);
-  return {
-    bundle: bundleMod.bundle,
-    hsd: hsdMod.hsd,
-    hsdName: resolvedHsd,
-  };
+  const resolved = await resolveCalculation(bundleName, hsdName);
+  if (resolved.kind !== 'dynamic-bundle') {
+    throw new Error(`${bundleName} does not use an HSD bundle`);
+  }
+  return resolved;
+}
+
+export async function resolveCalculation(bundleName: string, hsdName?: string): Promise<ResolvedCalculation> {
+  const pkg = findPackage(bundleName);
+  if (!pkg || pkg.strategy === 'hsd-only') {
+    throw new Error(`Unknown bundle "${bundleName}". Available: ${listAvailableBundles().join(', ')}`);
+  }
+  switch (pkg.strategy) {
+    case 'dynamic-bundle': {
+      const resolvedHsd = resolveHsdName(bundleName, hsdName);
+      const hsdPkg = findPackage(resolvedHsd);
+      if (!hsdPkg || hsdPkg.strategy !== 'hsd-only') {
+        throw new Error(`Unknown HSD "${resolvedHsd}"`);
+      }
+      const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
+      return { kind: 'dynamic-bundle', bundle: bundleMod.bundle, hsd: hsdMod.hsd, hsdName: resolvedHsd };
+    }
+    case 'fixed-coefficient': {
+      if (hsdName !== undefined) {
+        throw new Error(`${bundleName} does not use an HSD bundle`);
+      }
+      const loaded = await pkg.loadItems();
+      return { kind: 'fixed-coefficient', items: loaded.ahspItems };
+    }
+    default: {
+      const unreachable: never = pkg;
+      throw new Error(`Unhandled bundle strategy: ${String(unreachable)}`);
+    }
+  }
+}
+
+export function findFixedItem(items: readonly FixedCoefficientItem[], kode: string): FixedCoefficientItem {
+  const matches = items.filter((item) => item.kode_ahsp === kode);
+  const found = matches[0];
+  if (!found) throw new Error(`AHSP "${kode}" not found`);
+  if (matches.length > 1) {
+    throw new Error(`AHSP "${kode}" matches ${matches.length} items. Item codes in this bundle are not unique.`);
+  }
+  return found;
+}
+
+export async function calculateHsp(
+  bundleName: string,
+  kode: string,
+  hsdName: string | undefined,
+  variables: Record<string, string | number>,
+): Promise<{ result: HSPResult; hsdName: string | null }> {
+  const resolved = await resolveCalculation(bundleName, hsdName);
+  switch (resolved.kind) {
+    case 'dynamic-bundle': {
+      const calc = createCalculator(resolved.bundle, resolved.hsd);
+      return { result: calc.hitungHSP(kode, variables), hsdName: resolved.hsdName };
+    }
+    case 'fixed-coefficient': {
+      const unknown = Object.keys(variables).filter((key) => key !== 'overhead_pct' && key !== 'profit_pct');
+      if (unknown.length > 0) {
+        throw new Error(`Unsupported variable for ${bundleName}: ${unknown.join(', ')}`);
+      }
+      const overhead = variables['overhead_pct'];
+      const profit = variables['profit_pct'];
+      const opts: { overhead_pct?: number; profit_pct?: number } = {};
+      if (typeof overhead === 'number') opts.overhead_pct = overhead;
+      if (typeof profit === 'number') opts.profit_pct = profit;
+      return {
+        result: calcHspFixedCoefficient(findFixedItem(resolved.items, kode), opts),
+        hsdName: null,
+      };
+    }
+    default: {
+      const unreachable: never = resolved;
+      throw new Error(`Unhandled calculation: ${String(unreachable)}`);
+    }
+  }
 }
 
 export function formatIdr(value: number): string {
@@ -74,12 +147,4 @@ export function formatIdr(value: number): string {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(Math.round(value));
-}
-
-export function listAvailableBundles(): string[] {
-  return [...BUNDLE_NAMES];
-}
-
-export function listAvailableHsd(): string[] {
-  return [...HSD_NAMES];
 }

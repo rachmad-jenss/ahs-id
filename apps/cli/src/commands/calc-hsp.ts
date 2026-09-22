@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { resolveBundle, parseKeyValue, formatIdr, listAvailableBundles, listAvailableHsd } from '../utils/loader.js';
+import { calculateHsp, formatIdr, listAvailableBundles, listAvailableHsd, parseKeyValue } from '../utils/loader.js';
 
 export function calcHspCommand(): Command {
   const cmd = new Command('calc-hsp')
@@ -24,18 +24,13 @@ export function calcHspCommand(): Command {
       }
 
       try {
-        const { bundle, hsd, hsdName } = await resolveBundle(options.bundle, options.hsd);
         const variables: Record<string, string | number> = {};
-
         if (options.variable) {
           for (const kv of options.variable) {
             Object.assign(variables, parseKeyValue(kv));
           }
         }
-
-        const { createCalculator } = await import('@ahs-id/core');
-        const calc = createCalculator(bundle, hsd);
-        const result = calc.hitungHSP(kodeAhsp, variables);
+        const { result, hsdName } = await calculateHsp(options.bundle, kodeAhsp, options.hsd, variables);
 
         if (options.json) {
           console.log(JSON.stringify(result, null, 2));
@@ -46,7 +41,7 @@ export function calcHspCommand(): Command {
         const sep = '─'.repeat(72);
         console.log(`\n${result.kode_ahsp} — ${result.nama}`);
         console.log(`Satuan: ${result.satuan_bayar}`);
-        console.log(`HSD: ${hsdName}`);
+        console.log(hsdName ? `HSD: ${hsdName}` : 'HSD: embedded in the bundle');
         console.log(sep);
 
         for (const group of result.groups) {

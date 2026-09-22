@@ -1,5 +1,7 @@
 import { Command } from 'commander';
-import { resolveBundle, parseKeyValue } from '../utils/loader.js';
+import { writeFileSync } from 'node:fs';
+import { exportHspToExcelBuffer } from '@ahs-id/core';
+import { calculateHsp, parseKeyValue } from '../utils/loader.js';
 
 export function exportRabCommand(): Command {
   const cmd = new Command('export-rab')
@@ -11,20 +13,14 @@ export function exportRabCommand(): Command {
     .option('-v, --variable <key=value...>', 'Input variables (e.g. jarak_quarry_km=25)')
     .action(async (kodeAhsp: string, options: { bundle: string; hsd?: string; output?: string; variable?: string[] }) => {
       try {
-        const { bundle, hsd } = await resolveBundle(options.bundle, options.hsd);
         const variables: Record<string, string | number> = {};
-
         if (options.variable) {
           for (const kv of options.variable) {
             Object.assign(variables, parseKeyValue(kv));
           }
         }
 
-        const { createCalculator, exportHspToExcelBuffer } = await import('@ahs-id/core');
-        const { writeFileSync } = await import('node:fs');
-
-        const calc = createCalculator(bundle, hsd);
-        const result = calc.hitungHSP(kodeAhsp, variables);
+        const { result } = await calculateHsp(options.bundle, kodeAhsp, options.hsd, variables);
         const buffer = await exportHspToExcelBuffer(result);
 
         const outputPath = options.output ?? defaultExcelName(kodeAhsp);
