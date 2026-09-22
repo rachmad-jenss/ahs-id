@@ -1,11 +1,9 @@
 import type {
   FixedCoefficientItem,
-  AhspComponent,
-  AhspGroup,
   HSPResult,
   AuditEntry,
 } from '../types/index.js';
-import { assembleHspResult } from './assemble-result.js';
+import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
 
 /**
  * Menghitung HSP untuk item AHSP bertipe fixed_coefficient.
@@ -22,7 +20,7 @@ export function calcHspFixedCoefficient(
 ): HSPResult {
   const audit: AuditEntry[] = [];
 
-  const tkComponents: AhspComponent[] = item.tenaga_kerja.map((tk) => {
+  const tkComponents: PricedComponent[] = item.tenaga_kerja.map((tk) => {
     const total = tk.koefisien * tk.harga_satuan_ref;
     audit.push({
       step: 'hsp_tk',
@@ -41,7 +39,7 @@ export function calcHspFixedCoefficient(
     };
   });
 
-  const bahanComponents: AhspComponent[] = item.bahan.map((b) => {
+  const bahanComponents: PricedComponent[] = item.bahan.map((b) => {
     const total = b.koefisien * b.harga_satuan_ref;
     audit.push({
       step: 'hsp_bahan',
@@ -60,7 +58,7 @@ export function calcHspFixedCoefficient(
     };
   });
 
-  const alatComponents: AhspComponent[] = item.peralatan.map((e) => {
+  const alatComponents: PricedComponent[] = item.peralatan.map((e) => {
     const total = e.koefisien * e.harga_satuan_ref;
     audit.push({
       step: 'hsp_alat',
@@ -79,19 +77,19 @@ export function calcHspFixedCoefficient(
     };
   });
 
-  const tkGroup: AhspGroup = {
+  const tkGroup: PricedGroup = {
     type: 'L',
     title: 'Tenaga Kerja',
     components: tkComponents,
     total: tkComponents.reduce((s, c) => s + c.total_price, 0),
   };
-  const bahanGroup: AhspGroup = {
+  const bahanGroup: PricedGroup = {
     type: 'M',
     title: 'Bahan',
     components: bahanComponents,
     total: bahanComponents.reduce((s, c) => s + c.total_price, 0),
   };
-  const alatGroup: AhspGroup = {
+  const alatGroup: PricedGroup = {
     type: 'E',
     title: 'Peralatan',
     components: alatComponents,

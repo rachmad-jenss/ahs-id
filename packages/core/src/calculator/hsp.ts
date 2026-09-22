@@ -1,7 +1,5 @@
 import type {
   AhspItem,
-  AhspComponent,
-  AhspGroup,
   HSPResult,
   DataBundle,
   HsdRegional,
@@ -13,7 +11,7 @@ import type {
   VolumeState,
 } from '../types/index.js';
 import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
-import { assembleHspResult } from './assemble-result.js';
+import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
 import { convertVolume } from './konversi-volume.js';
 import { resolveSubAhsp } from './sub-ahsp.js';
 import {
@@ -86,21 +84,21 @@ export function createCalculator(
     const bahanComponents = calcBahan(item, hsd, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
     const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
 
-    const tkGroup: AhspGroup = {
+    const tkGroup: PricedGroup = {
       type: 'L',
       title: 'Tenaga Kerja',
       components: tkComponents,
       total: tkComponents.reduce((s, c) => s + c.total_price, 0),
     };
 
-    const bahanGroup: AhspGroup = {
+    const bahanGroup: PricedGroup = {
       type: 'M',
       title: 'Bahan',
       components: bahanComponents,
       total: bahanComponents.reduce((s, c) => s + c.total_price, 0),
     };
 
-    const alatGroup: AhspGroup = {
+    const alatGroup: PricedGroup = {
       type: 'E',
       title: 'Peralatan',
       components: alatComponents,
@@ -161,7 +159,7 @@ function calcTenagaKerja(
   item: AhspItem,
   hsd: HsdRegional,
   audit: AuditEntry[],
-): AhspComponent[] {
+): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
     const hsdEntry = hsd.tenaga_kerja.find((h) => h.ref === tk.ref);
     if (!hsdEntry) {
@@ -194,7 +192,7 @@ function calcBahan(
   itemVolumeState: VolumeState,
   variabel: VariabelInput,
   audit: AuditEntry[],
-): AhspComponent[] {
+): PricedComponent[] {
   return item.bahan.map((bahan) => {
     const hsdEntry = hsd.bahan.find((h) => h.ref === bahan.ref);
     if (!hsdEntry) {
@@ -246,7 +244,7 @@ function calcPeralatan(
   audit: AuditEntry[],
   warnings: string[],
   mode: 'penuh' | 'estimasi-kasar',
-): AhspComponent[] {
+): PricedComponent[] {
   return item.peralatan.map((entry) => {
     const alat = alatMap.get(entry.ref);
     if (!alat) {

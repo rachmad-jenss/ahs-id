@@ -1,8 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { assembleHspResult } from '../assemble-result.js';
-import type { AhspGroup } from '../../types/index.js';
+import { assembleHspResult, type PricedGroup } from '../assemble-result.js';
 
-function group(type: AhspGroup['type'], total: number): AhspGroup {
+function group(type: PricedGroup['type'], total: number): PricedGroup {
   return { type, title: type, components: [], total };
 }
 

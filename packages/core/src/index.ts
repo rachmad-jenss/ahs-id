@@ -1,6 +1,7 @@
 export type {
   IDR,
   Percentage,
+  PercentagePoints,
   Volume,
   VolumeState,
   AhsMeta,
@@ -54,7 +55,7 @@ export type {
   ValidationReport,
 } from './types/index.js';
 
-export { idr, percentage, volume } from './types/index.js';
+export { idr, percentage, percentagePoints, volume } from './types/index.js';
 
 export { createCalculator } from './calculator/hsp.js';
 export type { Calculator } from './calculator/hsp.js';

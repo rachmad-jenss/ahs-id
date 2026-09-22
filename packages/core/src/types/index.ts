@@ -1,5 +1,7 @@
-export type { IDR, Percentage, Volume } from './domain.js';
-export { idr, percentage, volume } from './domain.js';
+import type { IDR, PercentagePoints } from './domain.js';
+
+export type { IDR, Percentage, PercentagePoints, Volume } from './domain.js';
+export { idr, percentage, percentagePoints, volume } from './domain.js';
 
 // ============================================================
 // Volume State
@@ -391,8 +393,8 @@ export interface AhspComponent {
   readonly nama: string;
   readonly satuan: string;
   readonly coefficient: number;
-  readonly unit_price: number;
-  readonly total_price: number;
+  readonly unit_price: IDR;
+  readonly total_price: IDR;
   readonly fallback_level?: number;
 }
 
@@ -400,17 +402,17 @@ export interface AhspGroup {
   readonly type: 'M' | 'L' | 'E';
   readonly title: string;
   readonly components: readonly AhspComponent[];
-  readonly total: number;
+  readonly total: IDR;
 }
 
 export interface AhspCalculation {
   readonly groups: readonly AhspGroup[];
   readonly subAhsp: readonly SubAhspLine[];
-  readonly baseTotal: number;
-  readonly overheadPct: number;
-  readonly profitPct: number;
-  readonly overheadProfitValue: number;
-  readonly grandTotal: number;
+  readonly baseTotal: IDR;
+  readonly overheadPct: PercentagePoints;
+  readonly profitPct: PercentagePoints;
+  readonly overheadProfitValue: IDR;
+  readonly grandTotal: IDR;
   readonly warnings: readonly string[];
   readonly audit_trail: readonly AuditEntry[];
 }
@@ -419,8 +421,8 @@ export interface SubAhspLine {
   readonly ref_ahsp: string;
   readonly nama: string;
   readonly koefisien: number;
-  readonly unit_price: number;
-  readonly total_price: number;
+  readonly unit_price: IDR;
+  readonly total_price: IDR;
 }
 
 export interface HSPResult extends AhspCalculation {
