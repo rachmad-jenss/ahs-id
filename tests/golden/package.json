@@ -5,7 +5,9 @@
   "description": "Golden test suite — cross-engine verification fixtures",
   "type": "module",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint *.test.ts"
   },
   "devDependencies": {
     "@ahs-id/core": "workspace:*",

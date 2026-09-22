@@ -6,6 +6,8 @@ export interface LintasanVibroRollerParams {
   readonly tebal_hamparan_m: number;
   readonly faktor_efisiensi: number;
   readonly jumlah_passing: number;
+  /** Volume includes thickness. Area omits it and returns m2/jam. */
+  readonly mode?: 'volume' | 'area';
 }
 
 export interface LintasanMotorGraderParams {
@@ -40,18 +42,22 @@ export function produktivitasVibroRoller(params: LintasanVibroRollerParams): Pro
     unit: 'm/jam',
   });
 
-  const Q =
-    (v_m * params.lebar_efektif_m * params.tebal_hamparan_m * params.faktor_efisiensi) /
-    params.jumlah_passing;
+  const area = params.mode === 'area';
+  const Q = area
+    ? (v_m * params.lebar_efektif_m * params.faktor_efisiensi) / params.jumlah_passing
+    : (v_m * params.lebar_efektif_m * params.tebal_hamparan_m * params.faktor_efisiensi) /
+      params.jumlah_passing;
 
   audit.push({
     step: 'produktivitas_vr',
-    detail: `(${v_m} × ${params.lebar_efektif_m} × ${params.tebal_hamparan_m} × ${params.faktor_efisiensi}) / ${params.jumlah_passing}`,
+    detail: area
+      ? `(${v_m} × ${params.lebar_efektif_m} × ${params.faktor_efisiensi}) / ${params.jumlah_passing}`
+      : `(${v_m} × ${params.lebar_efektif_m} × ${params.tebal_hamparan_m} × ${params.faktor_efisiensi}) / ${params.jumlah_passing}`,
     value: Q,
-    unit: 'm3/jam',
+    unit: area ? 'm2/jam' : 'm3/jam',
   });
 
-  return { produktivitas: Q, satuan: 'm3/jam', audit };
+  return { produktivitas: Q, satuan: area ? 'm2/jam' : 'm3/jam', audit };
 }
 
 /**

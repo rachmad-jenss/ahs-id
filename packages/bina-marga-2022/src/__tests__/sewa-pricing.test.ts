@@ -17,6 +17,23 @@ describe('bina-marga-2022 createCalculator uses Permen sewa rates', () => {
     expect(result.baseTotal).toBeLessThan(80_000);
   });
 
+  it('prices a daywork hour from the Permen labor HSD', () => {
+    const result = calc.hitungHSP('9.1.(1)', {});
+    expect(result.baseTotal).toBeCloseTo(210464 / 7, 4);
+    expect(result.grandTotal).toBeGreaterThan(result.baseTotal);
+  });
+
+  it('prices a daywork equipment hour at the Permen sewa rate', () => {
+    const result = calc.hitungHSP('9.1.(7)', {});
+    const alat = result.groups.find((group) => group.type === 'E');
+    expect(alat?.components[0]?.unit_price).toBe(788006);
+    expect(alat?.components[0]?.coefficient).toBe(1);
+  });
+
+  it('fails closed when a priced item has no components', () => {
+    expect(() => calc.hitungHSP('6.3.(8)', {})).toThrow('no components');
+  });
+
   it('fails closed when an alat ref has no Permen rate', () => {
     const item = bundle.ahsp_items.find((entry) => entry.peralatan.some((alat) => alat.ref === 'E.17b'));
     expect(item).toBeDefined();

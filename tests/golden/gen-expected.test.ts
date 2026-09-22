@@ -1,9 +1,10 @@
 /**
- * Regenerate expected/*.json from fixtures/*.json via the TS engine.
- * Run: $env:GEN_GOLDEN='1'; pnpm test gen-expected
+ * Draft a candidate expected file beside the fixture. This never writes
+ * tests/golden/expected, which stays the reviewed numeric lock.
+ * Run: $env:GEN_GOLDEN='1'; pnpm --filter @ahs-id/golden-tests exec vitest run gen-expected.test.ts
  */
-import { describe, it } from 'vitest';
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { describe, it, expect } from 'vitest';
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createCalculator, type HsdRegional } from '@ahs-id/core';
@@ -14,13 +15,13 @@ import { hsd as hsdPapua } from '@ahs-id/hsd-papua-2025';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FIXTURES_DIR = join(__dirname, 'fixtures');
-const EXPECTED_DIR = join(__dirname, 'expected');
+const DRAFT_DIR = join(__dirname, 'expected-draft');
 
 interface FixtureFile {
   kode_ahsp: string;
   bundle: string;
   hsd_region: string;
-  variabel: Record<string, unknown>;
+  variabel: Record<string, string | number>;
 }
 
 interface ExpectedFile {
@@ -55,6 +56,7 @@ describe.skipIf(process.env.GEN_GOLDEN !== '1')('generate golden expected', () =
     if (files.length === 0) {
       throw new Error(`No fixture JSON files found in: ${FIXTURES_DIR}`);
     }
+    mkdirSync(DRAFT_DIR, { recursive: true });
     for (const file of files) {
       const fixture = JSON.parse(readFileSync(join(FIXTURES_DIR, file), 'utf8')) as FixtureFile;
       if (fixture.bundle !== 'pupr-2023') {
@@ -66,7 +68,9 @@ describe.skipIf(process.env.GEN_GOLDEN !== '1')('generate golden expected', () =
       }
       const calc = createCalculator(puprBundle, hsd);
       const result = calc.hitungHSP(fixture.kode_ahsp, fixture.variabel);
-      writeFileSync(join(EXPECTED_DIR, file), `${JSON.stringify(toExpected(result), null, 2)}\n`, 'utf8');
+      const draftPath = join(DRAFT_DIR, file);
+      writeFileSync(draftPath, `${JSON.stringify(toExpected(result), null, 2)}\n`, 'utf8');
+      expect(draftPath.includes(`${join('expected-draft')}`)).toBe(true);
     }
   });
 });

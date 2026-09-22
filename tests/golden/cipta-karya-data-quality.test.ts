@@ -120,16 +120,8 @@ describe('data quality: engine arithmetic for non-lansekap items', () => {
     // 99% threshold — remaining mismatches are small-value items (<1500 Rp)
     // where Excel rounds ref to nearest 100 (e.g., 9.1.2.1: 1086 vs ref 1000).
     expect(matchRate).toBeGreaterThanOrEqual(0.99);
-
-    if (mismatches.length > 0) {
-      const extreme = mismatches.filter((m) => m.pct > 20);
-      if (extreme.length > 0) {
-        console.warn(
-          `${extreme.length} items with >20% mismatch (extraction errors):`,
-          extreme.map((m) => `${m.kode} (${m.pct.toFixed(0)}%)`).slice(0, 10).join(', '),
-        );
-      }
-    }
+    const extreme = mismatches.filter((m) => m.pct > 20);
+    expect(extreme, extreme.map((m) => m.kode).join(', ')).toHaveLength(0);
   });
 });
 

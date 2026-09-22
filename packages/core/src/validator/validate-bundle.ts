@@ -17,6 +17,7 @@ export function validateBundle(
   const hsdTkRefs = new Set(hsd.tenaga_kerja.map((tk) => tk.ref));
   const hsdBahanRefs = new Set(hsd.bahan.map((b) => b.ref));
   const hsdAlatRefs = new Set(hsd.peralatan_sewa.map((e) => e.ref));
+  const ahspCodes = new Set(bundle.ahsp_items.map((a) => a.kode_ahsp));
 
   for (const item of bundle.ahsp_items) {
     const prefix = `ahsp[${item.kode_ahsp}]`;
@@ -73,7 +74,6 @@ export function validateBundle(
     }
 
     // Sub-AHSP ref validity
-    const ahspCodes = new Set(bundle.ahsp_items.map((a) => a.kode_ahsp));
     for (const sub of item.sub_ahsp) {
       if (!ahspCodes.has(sub.ref_ahsp)) {
         errors.push(err(`${prefix}.sub_ahsp`, `Ref AHSP "${sub.ref_ahsp}" not found in bundle`, 'SUB_AHSP_REF_MISSING'));
@@ -112,6 +112,21 @@ export function validateBundle(
         `ahsp[${item.kode_ahsp}]`,
         'Item requires volume conversion but no faktor_konversi entries exist',
         'FK_COVERAGE_MISSING',
+      ));
+    }
+  }
+
+  for (const item of bundle.ahsp_items) {
+    const componentCount = item.tenaga_kerja.length
+      + item.bahan.length
+      + item.peralatan.length
+      + item.sub_ahsp.length;
+    const priced = (item as { hsp_referensi?: unknown }).hsp_referensi;
+    if (componentCount === 0 && typeof priced === 'number' && priced > 0) {
+      errors.push(warn(
+        `ahsp[${item.kode_ahsp}]`,
+        `Reference price ${priced} has no tenaga, bahan, peralatan, or sub-AHSP`,
+        'EMPTY_PRICED_ITEM',
       ));
     }
   }

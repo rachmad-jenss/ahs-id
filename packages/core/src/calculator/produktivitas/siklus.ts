@@ -36,6 +36,7 @@ export interface SiklusWaterTankerParams {
   readonly waktu_tunggu_menit: number;
   readonly faktor_efisiensi: number;
   readonly kebutuhan_air_liter_per_m3: number;
+  readonly kebutuhan_air_liter_per_m2?: number;
 }
 
 export interface ProduktivitasResult {
@@ -132,6 +133,21 @@ export function produktivitasWaterTanker(params: SiklusWaterTankerParams): Produ
     params.waktu_muat_menit + T_angkut + T_kembali + params.waktu_bongkar_menit + params.waktu_tunggu_menit;
 
   const Q_liter = (params.kapasitas_liter * params.faktor_efisiensi * 60) / Ts;
+  const perArea = params.kebutuhan_air_liter_per_m2;
+  if (perArea !== undefined) {
+    if (!Number.isFinite(perArea) || perArea <= 0) {
+      throw new Error('kebutuhan_air_liter_per_m2 must be a positive finite number');
+    }
+    const Q_m2 = Q_liter / perArea;
+    audit.push({
+      step: 'produktivitas_water_tanker',
+      detail: `Q_liter=${Q_liter.toFixed(1)} / ${perArea} liter/m2`,
+      value: Q_m2,
+      unit: 'm2/jam',
+    });
+    return { produktivitas: Q_m2, satuan: 'm2/jam', audit };
+  }
+
   const Q_m3 = Q_liter / params.kebutuhan_air_liter_per_m3;
 
   audit.push({

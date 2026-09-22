@@ -77,6 +77,31 @@ function writeSummaryRow(
   }
 }
 
+function writeSubAhspSection(sheet: ExcelJS.Worksheet, startRow: number, result: HSPResult): number {
+  let row = startRow;
+  const title = sheet.getRow(row);
+  title.getCell(1).value = 'D. Sub AHSP';
+  title.getCell(1).font = { bold: true };
+  row += 1;
+  writeHeaderRow(sheet, row);
+  row += 1;
+  let total = 0;
+  for (const line of result.subAhsp) {
+    const data = sheet.getRow(row);
+    data.getCell(1).value = `${line.ref_ahsp} — ${line.nama}`;
+    data.getCell(3).value = line.koefisien;
+    data.getCell(3).numFmt = COEF_FMT;
+    data.getCell(4).value = line.unit_price;
+    data.getCell(4).numFmt = IDR_FMT;
+    data.getCell(5).value = line.total_price;
+    data.getCell(5).numFmt = IDR_FMT;
+    total += line.total_price;
+    row += 1;
+  }
+  writeSubtotalRow(sheet, row, 'D. Sub AHSP', total);
+  return row + 2;
+}
+
 function writeGroupSection(sheet: ExcelJS.Worksheet, startRow: number, group: AhspGroup): number {
   let row = startRow;
   const sectionLabel = GROUP_SECTION_LABEL[group.type];
@@ -127,6 +152,9 @@ function buildRabWorksheet(workbook: ExcelJS.Workbook, result: HSPResult): Excel
   for (const group of result.groups) {
     row = writeGroupSection(sheet, row, group);
   }
+  if (result.subAhsp.length > 0) {
+    row = writeSubAhspSection(sheet, row, result);
+  }
 
   const { overheadValue, profitValue } = splitMargin(result);
 
@@ -135,7 +163,10 @@ function buildRabWorksheet(workbook: ExcelJS.Workbook, result: HSPResult): Excel
   recapTitle.getCell(1).font = { bold: true };
   row += 1;
 
-  writeSummaryRow(sheet, row, 'Biaya Langsung (A+B+C)', result.baseTotal);
+  const directLabel = result.subAhsp.length > 0
+    ? 'Biaya Langsung (A+B+C+D)'
+    : 'Biaya Langsung (A+B+C)';
+  writeSummaryRow(sheet, row, directLabel, result.baseTotal);
   row += 1;
   writeSummaryRow(
     sheet,

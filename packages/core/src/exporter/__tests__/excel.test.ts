@@ -18,6 +18,7 @@ function mockHspResult(): HSPResult {
     kode_ahsp: '3.2.1',
     nama: 'Lapis Pondasi Agregat Kelas A (CBR Min 90%)',
     satuan_bayar: 'm3',
+    subAhsp: [],
     groups: [
       {
         type: 'L',
@@ -128,5 +129,28 @@ describe('exportHspToExcelBuffer', () => {
     const hspRow = findRowWithLabel(sheet, 'Harga Satuan Pekerjaan');
     expect(hspRow?.getCell(5).value).toBeCloseTo(result.grandTotal, 0);
     expect(result.grandTotal).toBeCloseTo(result.baseTotal * 1.15, 0);
+  });
+
+  it('lists nested sub-AHSP in section D', async () => {
+    const base = mockHspResult();
+    const nested = 500;
+    const baseTotal = base.baseTotal + nested;
+    const result = {
+      ...base,
+      subAhsp: [{
+        ref_ahsp: '1.1.1',
+        nama: 'Pekerjaan pendukung',
+        koefisien: 0.5,
+        unit_price: 1000,
+        total_price: nested,
+      }],
+      baseTotal,
+      grandTotal: baseTotal * 1.15,
+      overheadProfitValue: baseTotal * 0.15,
+    };
+    const buffer = await exportHspToExcelBuffer(result);
+    const sheet = await loadWorksheet(buffer);
+    expect(findRowWithLabel(sheet, 'D. Sub AHSP')).toBeDefined();
+    expect(findRowWithLabel(sheet, 'Biaya Langsung (A+B+C+D)')).toBeDefined();
   });
 });

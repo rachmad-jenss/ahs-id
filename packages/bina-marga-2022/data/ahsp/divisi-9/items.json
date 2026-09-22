@@ -3672,7 +3672,14 @@
     "jenis_pekerjaan": "manual",
     "is_lump_sum": false,
     "sub_ahsp": [],
-    "tenaga_kerja": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L.03",
+        "koefisien": 0.14285714285714285,
+        "koef_sumber": "tabel",
+        "catatan": "1 jam = 1/7 OH dari HSD Permen"
+      }
+    ],
     "bahan": [],
     "peralatan": [],
     "variabel": {},
@@ -3716,7 +3723,14 @@
     "jenis_pekerjaan": "manual",
     "is_lump_sum": false,
     "sub_ahsp": [],
-    "tenaga_kerja": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "koefisien": 0.14285714285714285,
+        "koef_sumber": "tabel",
+        "catatan": "1 jam = 1/7 OH dari HSD Permen"
+      }
+    ],
     "bahan": [],
     "peralatan": [],
     "variabel": {},
@@ -3760,7 +3774,14 @@
     "jenis_pekerjaan": "manual",
     "is_lump_sum": false,
     "sub_ahsp": [],
-    "tenaga_kerja": [],
+    "tenaga_kerja": [
+      {
+        "ref": "L.02",
+        "koefisien": 0.14285714285714285,
+        "koef_sumber": "tabel",
+        "catatan": "1 jam = 1/7 OH dari HSD Permen"
+      }
+    ],
     "bahan": [],
     "peralatan": [],
     "variabel": {},
@@ -3850,7 +3871,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.09",
+        "nama": "Dump Truck 10 Ton (6-8 m3)",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -3894,7 +3931,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.11",
+        "nama": "Flat Bed Truck 3-4 Ton",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -3982,7 +4035,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.23",
+        "nama": "Water Tanker 3000-4500 L",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4026,7 +4095,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.04",
+        "nama": "Bulldozer 100-150 HP",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4070,7 +4155,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.13",
+        "nama": "Motor Grader >100 HP",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4114,7 +4215,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.15",
+        "nama": "Wheel Loader 1.0-1.6 m3",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4158,7 +4275,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.14",
+        "nama": "Track Loader 75-100 HP",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4202,7 +4335,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.10",
+        "nama": "Excavator 80-140 HP",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4246,7 +4395,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.07",
+        "nama": "Crane 10-15 Ton",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4334,7 +4499,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.19",
+        "nama": "Vibratory Roller 5-8 Ton",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4422,7 +4603,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.18",
+        "nama": "Tire Roller 8-10 Ton",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4466,7 +4663,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.05",
+        "nama": "Compressor 4000-6500 L/m",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4510,7 +4723,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.06",
+        "nama": "Concrete Mixer 0.3-0.6 m3",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4554,7 +4783,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.22",
+        "nama": "Water Pump 70-100 mm",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {
@@ -4598,7 +4843,23 @@
     "sub_ahsp": [],
     "tenaga_kerja": [],
     "bahan": [],
-    "peralatan": [],
+    "peralatan": [
+      {
+        "ref": "E.26",
+        "nama": "Jack Hammer",
+        "koef_sumber": "tabel",
+        "mode_biaya": "sewa",
+        "volume_state": null,
+        "variabel_input": [],
+        "koef_referensi": {
+          "value": 1,
+          "asumsi": {
+            "jam": 1
+          }
+        },
+        "catatan": "1 jam sewa dari HSD Permen"
+      }
+    ],
     "variabel": {},
     "margin": {
       "overhead_pct": {

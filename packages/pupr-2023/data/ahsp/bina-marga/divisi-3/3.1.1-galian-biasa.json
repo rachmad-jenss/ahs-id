@@ -77,8 +77,7 @@
       "tipe": "enum",
       "options": [
         "baik",
-        "sedang",
-        "rusak"
+        "sedang"
       ],
       "default": "sedang"
     },

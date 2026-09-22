@@ -12,6 +12,7 @@ describe('parseKeyValue', () => {
 
   it('throws on invalid format', () => {
     expect(() => parseKeyValue('noequalsign')).toThrow('Invalid key=value pair');
+    expect(() => parseKeyValue('faktor_efisiensi=')).toThrow('Invalid key=value pair');
   });
 });
 

@@ -111,6 +111,7 @@ export function calcHspFixedCoefficient(
     nama: item.nama,
     satuan_bayar: item.satuan_bayar,
     groups: [tkGroup, bahanGroup, alatGroup],
+    subAhsp: [],
     baseTotal,
     overheadPct,
     profitPct,
