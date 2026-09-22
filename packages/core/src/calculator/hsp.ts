@@ -17,6 +17,11 @@ import { hitungMargin } from './margin.js';
 import { convertVolume } from './konversi-volume.js';
 import { resolveSubAhsp } from './sub-ahsp.js';
 import {
+  assertFiniteMoney,
+  validateDeclaredVariabel,
+  validateRootVariabel,
+} from './validate-runtime.js';
+import {
   produktivitasDumpTruck,
   produktivitasExcavator,
   produktivitasWheelLoader,
@@ -53,6 +58,12 @@ export function createCalculator(
     const item = bundle.ahsp_items.find((a) => a.kode_ahsp === kodeAhsp);
     if (!item) {
       throw new Error(`AHSP item "${kodeAhsp}" not found in bundle`);
+    }
+
+    if (resolveStack.length === 0) {
+      validateRootVariabel(item, variabel);
+    } else {
+      validateDeclaredVariabel(item, variabel);
     }
 
     const audit: AuditEntry[] = [];
@@ -112,6 +123,7 @@ export function createCalculator(
 
     const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
     audit.push(...marginResult.audit);
+    assertFiniteMoney(item.kode_ahsp, 'grandTotal', marginResult.grand_total);
 
     return {
       kode_ahsp: item.kode_ahsp,
@@ -315,6 +327,9 @@ function resolveKalkulasiKoef(
   }
 
   const prodResult = calcProduktivitas(alat, variabel, fa);
+  if (!Number.isFinite(prodResult.produktivitas) || prodResult.produktivitas <= 0) {
+    throw new Error(`${entry.ref}: productivity must be a positive finite number`);
+  }
   const rawKoef = 1 / prodResult.produktivitas;
   audit.push(...prodResult.audit);
   audit.push({

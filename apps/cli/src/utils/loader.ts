@@ -34,8 +34,11 @@ export function parseKeyValue(value: string): Record<string, string | number> {
   if (eqIndex === -1) {
     throw new Error(`Invalid key=value pair: "${value}". Use format key=value`);
   }
-  const k = value.slice(0, eqIndex);
-  const v = value.slice(eqIndex + 1);
+  const k = value.slice(0, eqIndex).trim();
+  const v = value.slice(eqIndex + 1).trim();
+  if (k.length === 0 || v.length === 0) {
+    throw new Error(`Invalid key=value pair: "${value}". Use format key=value`);
+  }
   const num = Number(v);
   return { [k]: Number.isNaN(num) ? v : num };
 }

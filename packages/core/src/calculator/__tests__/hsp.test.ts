@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { createCalculator } from '../hsp.js';
+import { validateDeclaredVariabel, validateRootVariabel } from '../validate-runtime.js';
 import type { VariabelInput, DataBundle, HsdRegional } from '../../types/index.js';
 
 const testBundle: DataBundle = {
@@ -192,6 +193,20 @@ describe('createCalculator', () => {
   it('throws on missing required variables', () => {
     const calc = createCalculator(testBundle, testHsd);
     expect(() => calc.hitungHSP('3.2.1', {})).toThrow('missing required variabel_input');
+  });
+
+  it('rejects out-of-range, unknown, and invalid enum input', () => {
+    const calc = createCalculator(testBundle, testHsd);
+    expect(() => calc.hitungHSP('3.2.1', { ...BASE_VARS, jarak_quarry_km: -5 })).toThrow('below min');
+    expect(() => calc.hitungHSP('3.2.1', { ...BASE_VARS, faktor_efisiensi: 0 })).toThrow('below min');
+    expect(() => calc.hitungHSP('3.2.1', { ...BASE_VARS, kondisi_jalan: 'invalid' })).toThrow('must be one of');
+    expect(() => calc.hitungHSP('3.2.1', { ...BASE_VARS, kondisi_operasi: 'invalid' })).toThrow('unknown variabel');
+  });
+
+  it('checks a nested item only against variables it declares', () => {
+    const item = testBundle.ahsp_items[0]!;
+    expect(() => validateDeclaredVariabel(item, { ...BASE_VARS, parent_only: 1 })).not.toThrow();
+    expect(() => validateRootVariabel(item, { ...BASE_VARS, parent_only: 1 })).toThrow('unknown variabel');
   });
 });
 
@@ -437,6 +452,13 @@ describe('resolveMapParam via productivity', () => {
         {
           ...testBundle.ahsp_items[0]!,
           kode_ahsp: 'MAP',
+          variabel: {
+            ...testBundle.ahsp_items[0]!.variabel,
+            jenis_material: {
+              ...testBundle.ahsp_items[0]!.variabel['jenis_material']!,
+              options: ['tanah_biasa', 'agregat_kelas_a', 'batu_pecah', 'tidak_ada'],
+            },
+          },
           tenaga_kerja: [],
           bahan: [],
           peralatan: [
