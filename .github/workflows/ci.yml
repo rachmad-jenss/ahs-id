@@ -42,6 +42,11 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.draft == false && github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: [self-hosted, Windows, X64, ahs-id]
     timeout-minutes: 15
+    defaults:
+      run:
+        # The runner's machine policy is Restricted, which blocks the default
+        # powershell -command ". '{0}'" wrapper.
+        shell: powershell -NoProfile -ExecutionPolicy Bypass -Command ". '{0}'"
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.2.2
         with:
