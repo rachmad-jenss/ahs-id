@@ -6,7 +6,7 @@ import type {
   AuditEntry,
   HsdRegional,
 } from '../types/index.js';
-import { hitungMargin } from './margin.js';
+import { assembleHspResult } from './assemble-result.js';
 
 /**
  * Calculate HSP for items that carry pre-computed koef_referensi
@@ -20,6 +20,9 @@ import { hitungMargin } from './margin.js';
  *
  * Best for regulation bundles where coefficients are pre-calculated
  * and stored in koef_referensi (e.g. Permen PUPR 1/2022).
+ *
+ * @deprecated Prefer `createCalculator` for bundles that expose a `DataBundle`.
+ * This entry point remains for callers that already hold a precomputed item.
  */
 export function calcHspFromBundle(
   item: AhspItem,
@@ -50,28 +53,21 @@ export function calcHspFromBundle(
     total: alatComponents.reduce((s, c) => s + c.total_price, 0),
   };
 
-  const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total;
-
   const overheadPct = opts?.overhead_pct ?? item.margin.overhead_pct.default;
   const profitPct = opts?.profit_pct ?? item.margin.profit_pct.default;
-
-  const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
-  audit.push(...marginResult.audit);
-
-  return {
+  return assembleHspResult({
     kode_ahsp: item.kode_ahsp,
     nama: item.nama,
     satuan_bayar: item.satuan_bayar,
     groups: [tkGroup, bahanGroup, alatGroup],
     subAhsp: [],
-    baseTotal,
+    nestedTotal: 0,
     overheadPct,
     profitPct,
-    overheadProfitValue: marginResult.overhead_profit_total,
-    grandTotal: marginResult.grand_total,
+    isLumpSum: item.is_lump_sum,
     warnings,
-    audit_trail: audit,
-  };
+    audit,
+  });
 }
 
 function calcTk(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): AhspComponent[] {

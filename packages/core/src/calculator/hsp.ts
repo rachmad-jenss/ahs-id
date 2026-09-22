@@ -13,7 +13,7 @@ import type {
   VolumeState,
 } from '../types/index.js';
 import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
-import { hitungMargin } from './margin.js';
+import { assembleHspResult } from './assemble-result.js';
 import { convertVolume } from './konversi-volume.js';
 import { resolveSubAhsp } from './sub-ahsp.js';
 import {
@@ -117,29 +117,23 @@ export function createCalculator(
     );
     audit.push(...subAhspResult.audit);
 
-    const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total + subAhspResult.total;
-
     const overheadPct = variabel['overhead_pct'] as number | undefined ?? item.margin.overhead_pct.default;
     const profitPct = variabel['profit_pct'] as number | undefined ?? item.margin.profit_pct.default;
-
-    const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
-    audit.push(...marginResult.audit);
-    assertFiniteMoney(item.kode_ahsp, 'grandTotal', marginResult.grand_total);
-
-    return {
+    const result = assembleHspResult({
       kode_ahsp: item.kode_ahsp,
       nama: item.nama,
       satuan_bayar: item.satuan_bayar,
       groups: [tkGroup, bahanGroup, alatGroup],
       subAhsp: subAhspResult.components,
-      baseTotal,
+      nestedTotal: subAhspResult.total,
       overheadPct,
       profitPct,
-      overheadProfitValue: marginResult.overhead_profit_total,
-      grandTotal: marginResult.grand_total,
+      isLumpSum: item.is_lump_sum,
       warnings,
-      audit_trail: audit,
-    };
+      audit,
+    });
+    assertFiniteMoney(item.kode_ahsp, 'grandTotal', result.grandTotal);
+    return result;
   }
 
   function hitungHSP(kodeAhsp: string, variabel: VariabelInput): HSPResult {

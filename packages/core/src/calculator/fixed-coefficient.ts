@@ -5,7 +5,7 @@ import type {
   HSPResult,
   AuditEntry,
 } from '../types/index.js';
-import { hitungMargin } from './margin.js';
+import { assembleHspResult } from './assemble-result.js';
 
 /**
  * Menghitung HSP untuk item AHSP bertipe fixed_coefficient.
@@ -98,26 +98,19 @@ export function calcHspFixedCoefficient(
     total: alatComponents.reduce((s, c) => s + c.total_price, 0),
   };
 
-  const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total;
-
   const overheadPct = opts?.overhead_pct ?? item.margin.overhead_pct.default;
   const profitPct = opts?.profit_pct ?? item.margin.profit_pct.default;
-
-  const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
-  audit.push(...marginResult.audit);
-
-  return {
+  return assembleHspResult({
     kode_ahsp: item.kode_ahsp,
     nama: item.nama,
     satuan_bayar: item.satuan_bayar,
     groups: [tkGroup, bahanGroup, alatGroup],
     subAhsp: [],
-    baseTotal,
+    nestedTotal: 0,
     overheadPct,
     profitPct,
-    overheadProfitValue: marginResult.overhead_profit_total,
-    grandTotal: marginResult.grand_total,
+    isLumpSum: item.is_lump_sum,
     warnings: [],
-    audit_trail: audit,
-  };
+    audit,
+  });
 }
