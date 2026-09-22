@@ -427,7 +427,11 @@ function calcProduktivitas(
     if (alat.kode === 'E.19') {
       const params: LintasanMotorGraderParams = {
         kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 3.0),
-        lebar_efektif_m: (pp['lebar_efektif_m'] as number) ?? 2.4,
+        lebar_efektif_m: typeof variabel['lebar_hamparan_m'] === 'number'
+          && Number.isFinite(variabel['lebar_hamparan_m'])
+          && variabel['lebar_hamparan_m'] > 0
+          ? variabel['lebar_hamparan_m']
+          : ((pp['lebar_efektif_m'] as number) ?? 2.4),
         jumlah_lintasan: (variabel['jumlah_lintasan'] as number | undefined) ?? 6,
         faktor_efisiensi: fa,
       };
@@ -554,5 +558,10 @@ function resolveSpeedParam(
 ): number {
   const key = Object.keys(map).find((k) => k.includes(kondisi));
   if (key) return map[key]!;
+  if (kondisi !== '') {
+    throw new Error(
+      `kondisi_jalan "${kondisi}" has no operating speed. Known keys: ${Object.keys(map).join(', ')}`,
+    );
+  }
   return fallback;
 }

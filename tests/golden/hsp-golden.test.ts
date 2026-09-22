@@ -257,6 +257,37 @@ describe('HSP golden tests', () => {
     });
   });
 
+  describe('declared productivity inputs', () => {
+    const vars = {
+      jarak_quarry_km: 25,
+      jarak_sumber_air_km: 8,
+      kondisi_jalan: 'sedang' as const,
+      jenis_material: 'agregat_kelas_a' as const,
+      faktor_efisiensi: 0.83,
+      kondisi_operasi: 'normal' as const,
+      tebal_hamparan_m: 0.20,
+      jumlah_passing: 6,
+      jumlah_lintasan: 6,
+    };
+
+    it('lowers HSP when the declared grader width increases', () => {
+      const narrow = calc.hitungHSP('3.2.1', { ...vars, lebar_hamparan_m: 2.5 });
+      const wide = calc.hitungHSP('3.2.1', { ...vars, lebar_hamparan_m: 3 });
+      const narrowGrader = narrow.groups[2]!.components.find((c) => c.ref === 'E.19');
+      const wideGrader = wide.groups[2]!.components.find((c) => c.ref === 'E.19');
+      expect(wideGrader!.coefficient).toBeCloseTo(narrowGrader!.coefficient * (2.5 / 3), 8);
+      expect(wide.grandTotal).toBeLessThan(narrow.grandTotal);
+    });
+
+    it('rejects kondisi_jalan rusak because no speed row exists', () => {
+      expect(() => calc.hitungHSP('3.2.1', {
+        ...vars,
+        kondisi_jalan: 'rusak',
+        lebar_hamparan_m: 3,
+      })).toThrow('must be one of');
+    });
+  });
+
   describe('cross-region HSD price comparison', () => {
     it('Papua HSP > Kaltim HSP > Jabar HSP for same AHSP item', () => {
       const vars = {
