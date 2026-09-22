@@ -10,10 +10,12 @@ export function validateBundle(
   hsd: HsdRegional,
 ): ValidationReport {
   const errors: ValidationError[] = [];
-  pushDuplicateKeys(errors, bundle.ahsp_items.map((item) => item.kode_ahsp), 'ahsp', 'DUPLICATE_AHSP');
-  pushDuplicateKeys(errors, hsd.tenaga_kerja.map((entry) => entry.ref), 'hsd.tenaga_kerja', 'DUPLICATE_HSD_REF');
-  pushDuplicateKeys(errors, hsd.bahan.map((entry) => entry.ref), 'hsd.bahan', 'DUPLICATE_HSD_REF');
-  pushDuplicateKeys(errors, hsd.peralatan_sewa.map((entry) => entry.ref), 'hsd.peralatan_sewa', 'DUPLICATE_HSD_REF');
+  pushDuplicateKeys(errors, bundle.ahsp_items.map((item) => item.kode_ahsp), 'ahsp', 'DUPLICATE_AHSP', 'error');
+  // Published HSD rows can share a code while naming different prices. Calculation
+  // keeps the first row. Warn instead of rejecting the bundle.
+  pushDuplicateKeys(errors, hsd.tenaga_kerja.map((entry) => entry.ref), 'hsd.tenaga_kerja', 'DUPLICATE_HSD_REF', 'warning');
+  pushDuplicateKeys(errors, hsd.bahan.map((entry) => entry.ref), 'hsd.bahan', 'DUPLICATE_HSD_REF', 'warning');
+  pushDuplicateKeys(errors, hsd.peralatan_sewa.map((entry) => entry.ref), 'hsd.peralatan_sewa', 'DUPLICATE_HSD_REF', 'warning');
 
   const tkCodes = new Set(bundle.tenaga_kerja.items.map((tk) => tk.kode));
   const bahanCodes = new Set(bundle.bahan.items.map((b) => b.kode));
@@ -160,11 +162,13 @@ function pushDuplicateKeys(
   keys: readonly string[],
   path: string,
   code: string,
+  severity: 'error' | 'warning',
 ): void {
   const seen = new Set<string>();
+  const report = severity === 'error' ? err : warn;
   for (const key of keys) {
     if (seen.has(key)) {
-      errors.push(err(path, `Duplicate key "${key}"`, code));
+      errors.push(report(path, `Duplicate key "${key}"`, code));
     } else {
       seen.add(key);
     }

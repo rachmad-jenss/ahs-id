@@ -48,14 +48,19 @@ describe('validateBundle duplicate keys', () => {
     expect(report.errors.map((error) => error.code)).not.toContain('DUPLICATE_HSD_REF');
   });
 
-  it('reports a repeated AHSP code and repeated HSD refs', () => {
-    const report = validateBundle(
-      bundle([item('1.1'), item('1.1')]),
-      hsd({ tenaga: ['L.01', 'L.01'], bahan: ['M.01', 'M.01'], sewa: ['E.01', 'E.01'] }),
-    );
+  it('rejects a repeated AHSP code', () => {
+    const report = validateBundle(bundle([item('1.1'), item('1.1')]), hsd());
     expect(report.valid).toBe(false);
     expect(report.errors.filter((error) => error.code === 'DUPLICATE_AHSP')).toHaveLength(1);
-    expect(report.errors.filter((error) => error.code === 'DUPLICATE_HSD_REF')).toHaveLength(3);
     expect(report.errors.some((error) => error.message.includes('Duplicate key "1.1"'))).toBe(true);
+  });
+
+  it('warns when HSD rows share a code and still accepts the bundle', () => {
+    const report = validateBundle(
+      bundle([item('1.1')]),
+      hsd({ tenaga: ['L.01', 'L.01'], bahan: ['M.01', 'M.01'], sewa: ['E.01', 'E.01'] }),
+    );
+    expect(report.valid).toBe(true);
+    expect(report.warnings.filter((error) => error.code === 'DUPLICATE_HSD_REF')).toHaveLength(3);
   });
 });
