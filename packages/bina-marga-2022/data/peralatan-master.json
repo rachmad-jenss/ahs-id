@@ -4,7 +4,6 @@
   "items": [
     {
       "kode": "E.01",
-      "model_produktivitas": "excavator-cycle",
       "nama": "ASPHALT MIXING PLANT",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -306,7 +305,6 @@
     },
     {
       "kode": "E.08",
-      "model_produktivitas": "dump-truck-cycle",
       "nama": "DUMP TRUCK 4 TON (2-3 M3)",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -436,7 +434,6 @@
     },
     {
       "kode": "E.11",
-      "model_produktivitas": "wheel-loader-cycle",
       "nama": "FLAT BED TRUCK 3-4 TON",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -781,7 +778,6 @@
     },
     {
       "kode": "E.19",
-      "model_produktivitas": "motor-grader-pass",
       "nama": "VIBRATORY ROLLER 5-8 T.",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -911,7 +907,6 @@
     },
     {
       "kode": "E.22",
-      "model_produktivitas": "vibro-roller-pass",
       "nama": "WATER PUMP 70-100 mm",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -1041,7 +1036,6 @@
     },
     {
       "kode": "E.25",
-      "model_produktivitas": "water-tanker-cycle",
       "nama": "TAMPER",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -4057,7 +4051,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4083,7 +4077,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4100,7 +4094,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4126,7 +4120,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4143,7 +4137,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4169,7 +4163,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4186,7 +4180,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4212,7 +4206,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4229,7 +4223,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4255,7 +4249,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4272,7 +4266,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4298,7 +4292,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4315,7 +4309,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4341,7 +4335,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
@@ -4358,7 +4352,7 @@
       "daya_hp": 100,
       "berat_operasi_ton": 10,
       "tipe_produksi": "siklus",
-      "kapasitas_bucket_m3": 1.0,
+      "kapasitas_bucket_m3": 1,
       "hsd_params": {
         "harga_pokok_rp": 500000000,
         "umur_ekonomis_tahun": 5,
@@ -4384,7 +4378,7 @@
         "perawatan_pct": 5,
         "perbaikan_pct": 3,
         "fpr": {
-          "normal": 1.0,
+          "normal": 1,
           "berat": 1.2,
           "sangat_berat": 1.5,
           "default": "normal"
