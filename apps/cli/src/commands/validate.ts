@@ -18,10 +18,14 @@ export function validateCommand(): Command {
         const results: ValidationResult[] = [];
         const root = resolve(process.cwd());
 
-        const packagesToValidate = options.bundle
-          ? [options.bundle]
-          : ['pupr-2023', 'bina-marga-2016', 'bina-marga-2022', 'cipta-karya-2024',
-             'hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025'];
+        const knownPackages = [
+          'pupr-2023', 'bina-marga-2016', 'bina-marga-2022', 'cipta-karya-2024',
+          'hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025', 'hsd-bm-2022',
+        ];
+        if (options.bundle && !knownPackages.includes(options.bundle)) {
+          throw new Error(`Unknown bundle "${options.bundle}". Available: ${knownPackages.join(', ')}`);
+        }
+        const packagesToValidate = options.bundle ? [options.bundle] : knownPackages;
 
         for (const pkgName of packagesToValidate) {
           const pkgDir = resolve(root, 'packages', pkgName);

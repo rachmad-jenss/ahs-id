@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { parseKeyValue, formatIdr } from './loader.js';
+import { parseKeyValue, formatIdr, resolveHsdName } from './loader.js';
 
 describe('parseKeyValue', () => {
   it('parses numeric value', () => {
@@ -12,6 +12,28 @@ describe('parseKeyValue', () => {
 
   it('throws on invalid format', () => {
     expect(() => parseKeyValue('noequalsign')).toThrow('Invalid key=value pair');
+  });
+});
+
+describe('resolveHsdName', () => {
+  it('defaults pupr-2023 to Kalimantan Timur', () => {
+    expect(resolveHsdName('pupr-2023', undefined)).toBe('hsd-kaltim-2025');
+  });
+
+  it('defaults bina-marga-2022 to the Permen HSD bundle', () => {
+    expect(resolveHsdName('bina-marga-2022', undefined)).toBe('hsd-bm-2022');
+  });
+
+  it('honors an explicit HSD name', () => {
+    expect(resolveHsdName('pupr-2023', 'hsd-jabar-2025')).toBe('hsd-jabar-2025');
+  });
+
+  it('rejects an unknown HSD name', () => {
+    expect(() => resolveHsdName('pupr-2023', 'hsd-unknown')).toThrow('Unknown HSD');
+  });
+
+  it('rejects an unknown bundle', () => {
+    expect(() => resolveHsdName('not-a-bundle', undefined)).toThrow('Unknown bundle');
   });
 });
 
