@@ -31,6 +31,7 @@ const SCHEMA_PACKAGES = [
   'hsd-kaltim-2025',
   'hsd-jabar-2025',
   'hsd-papua-2025',
+  'hsd-bm-2022',
 ];
 
 /**
