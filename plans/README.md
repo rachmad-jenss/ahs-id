@@ -18,7 +18,7 @@ this execution queue.
 | [003](003-enforce-productivity-unit-compatibility.md) | Enforce productivity/payment-unit compatibility | P1 | M | 001 | TODO |
 | [004](004-model-empty-priced-bm-items.md) | Model 28 empty priced BM-2022 items | P1 | M | 001 | TODO |
 | [005](005-make-bundle-validation-fail-closed.md) | Make cross-bundle validation fail closed | P1 | S | — | TODO |
-| [006](006-fix-cli-validation-boundary.md) | Perform real installed-package CLI validation | P1 | M | 005 | TODO |
+| [006](006-fix-cli-validation-boundary.md) | Perform real installed-package CLI validation | P1 | M | 005 | DONE |
 | [007](007-establish-independent-golden-oracles.md) | Establish independent golden oracles | P1 | M | — | TODO |
 | [009](009-cover-all-workspaces-with-static-checks.md) | Cover every TS workspace with static checks | P2 | S | — | TODO |
 | [010](010-expose-sub-ahsp-costs.md) | Expose and reconcile sub-AHSP costs | P2 | M | 007 | TODO |

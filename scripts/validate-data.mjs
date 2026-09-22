@@ -1,30 +1,10 @@
-import { readFileSync, readdirSync, statSync } from 'node:fs';
-import { resolve, join, basename, relative } from 'node:path';
+import { validatePackageData } from '../packages/core/dist/validator/validate-package-data.js';
+import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import Ajv from 'ajv';
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-const root = resolve(__dirname, '..');
-const schemasDir = resolve(root, 'packages', 'core', 'schemas');
+const root = fileURLToPath(new URL('..', import.meta.url));
 
-const ajv = new Ajv({ allErrors: true, strict: false, validateSchema: false });
-
-function loadSchema(name) {
-  const path = resolve(schemasDir, name);
-  return JSON.parse(readFileSync(path, 'utf-8'));
-}
-
-const schemas = {
-  'tenaga-kerja': ajv.compile(loadSchema('tenaga-kerja.schema.json')),
-  'bahan-master': ajv.compile(loadSchema('bahan-master.schema.json')),
-  'peralatan-master': ajv.compile(loadSchema('peralatan-master.schema.json')),
-  'faktor-konversi': ajv.compile(loadSchema('faktor-konversi.schema.json')),
-  'ahsp-item': ajv.compile(loadSchema('ahsp-item.schema.json')),
-  'hsd-regional': ajv.compile(loadSchema('hsd-regional.schema.json')),
-  'hsd-acuan': ajv.compile(loadSchema('hsd-acuan.schema.json')),
-};
-
-/** JSON Schema validation (Permen / cipta-karya / HSD layout). */
+/** Permen / Cipta Karya / HSD layouts. */
 const SCHEMA_PACKAGES = [
   'pupr-2023',
   'cipta-karya-2024',
@@ -34,150 +14,39 @@ const SCHEMA_PACKAGES = [
   'hsd-bm-2022',
 ];
 
-/**
- * Legacy bundle layouts (bina-marga 2016/2022) — syntax + presence only until
- * data is aligned with core JSON schemas (see DAS-12 validateBundle in CI).
- */
+/** Legacy layouts stay syntax-only until their data matches the core schemas. */
 const SYNTAX_ONLY_PACKAGES = ['bina-marga-2016', 'bina-marga-2022'];
 
-/**
- * @returns {string | null} schema key, or null to skip (no schema yet)
- */
-function detectSchema(filePath) {
-  const name = basename(filePath, '.json');
-  if (name === 'tenaga-kerja') return 'tenaga-kerja';
-  if (name === 'bahan-master') return 'bahan-master';
-  if (name === 'peralatan-master') return 'peralatan-master';
-  if (name === 'faktor-konversi') return 'faktor-konversi';
-  if (name === 'hsd') return 'hsd-regional';
-  if (name === 'hsd-acuan') return 'hsd-acuan';
-  if (name === 'items') return 'ahsp-item';
-  if (name === 'peralatan-hsd') return null;
-  return 'ahsp-item';
-}
-
-function collectJsonFiles(dir) {
-  const files = [];
-  for (const entry of readdirSync(dir)) {
-    const full = join(dir, entry);
-    if (statSync(full).isDirectory()) {
-      files.push(...collectJsonFiles(full));
-    } else if (entry.endsWith('.json')) {
-      files.push(full);
-    }
+function reportPackage(pkgName, mode) {
+  const dataDir = resolve(root, 'packages', pkgName, 'data');
+  console.log(`@ahs-id/${pkgName}:`);
+  const report = validatePackageData(dataDir, mode);
+  for (const file of report.files) {
+    const tag = file.status === 'ok' ? '[OK]  ' : file.status === 'skip' ? '[SKIP]' : '[FAIL]';
+    const line = `  ${tag} ${file.file} — ${file.message}`;
+    if (file.status === 'fail') console.error(line);
+    else console.log(line);
   }
-  return files;
-}
-
-function validatePackage(pkgDir, pkgName) {
-  const dataDir = resolve(pkgDir, 'data');
-  if (!statSync(dataDir, { throwIfNoEntry: false })?.isDirectory()) {
-    console.error(`  [FAIL] ${pkgName}: missing data/ directory`);
-    return 1;
+  if (mode === 'syntax') {
+    console.log('  (syntax-only — full schema validation pending data normalization)');
   }
-
-  const files = collectJsonFiles(dataDir);
-  let errors = 0;
-  let skipped = 0;
-
-  for (const file of files) {
-    const schemaKey = detectSchema(file);
-    const rel = relative(root, file);
-
-    if (schemaKey === null) {
-      console.log(`  [SKIP] ${rel} — no JSON schema (bundle-specific)`);
-      skipped++;
-      continue;
-    }
-
-    const validate = schemas[schemaKey];
-    if (!validate) {
-      console.error(`  [SKIP] ${rel} — unknown schema key "${schemaKey}"`);
-      continue;
-    }
-
-    const data = JSON.parse(readFileSync(file, 'utf-8'));
-    const itemsToValidate = Array.isArray(data) && schemaKey === 'ahsp-item' ? data : [data];
-    let fileErrors = 0;
-    for (let idx = 0; idx < itemsToValidate.length; idx++) {
-      const valid = validate(itemsToValidate[idx]);
-      if (!valid) {
-        fileErrors++;
-        if (fileErrors === 1) {
-          console.error(`  [FAIL] ${rel} (${schemaKey})`);
-        }
-        const prefix = Array.isArray(data) ? `[${idx}] ` : '';
-        for (const err of validate.errors ?? []) {
-          console.error(`         ${prefix}${err.instancePath || '/'} ${err.message}`);
-        }
-        if (fileErrors >= 3) {
-          console.error(`         ... (more errors omitted)`);
-          break;
-        }
-      }
-    }
-    if (fileErrors === 0) {
-      const count = Array.isArray(data) ? ` (${data.length} items)` : '';
-      console.log(`  [OK]   ${rel} (${schemaKey})${count}`);
-    } else {
-      errors++;
-    }
-  }
-
-  if (skipped > 0) {
-    console.log(`  (${skipped} file(s) skipped — no schema)`);
-  }
-
-  return errors;
-}
-
-function validatePackageSyntaxOnly(pkgDir, pkgName) {
-  const dataDir = resolve(pkgDir, 'data');
-  if (!statSync(dataDir, { throwIfNoEntry: false })?.isDirectory()) {
-    console.error(`  [FAIL] ${pkgName}: missing data/ directory`);
-    return 1;
-  }
-
-  const files = collectJsonFiles(dataDir);
-  let errors = 0;
-
-  for (const file of files) {
-    const rel = relative(root, file);
-    try {
-      const data = JSON.parse(readFileSync(file, 'utf-8'));
-      const count = Array.isArray(data) ? ` (${data.length} items)` : '';
-      console.log(`  [OK]   ${rel} (json syntax)${count}`);
-    } catch (e) {
-      errors++;
-      console.error(`  [FAIL] ${rel} — invalid JSON: ${e.message}`);
-    }
-  }
-
-  console.log('  (syntax-only — full schema validation pending data normalization)');
-  return errors;
+  console.log('');
+  return report.valid;
 }
 
 console.log('Validating data files against JSON schemas...\n');
 
-let totalErrors = 0;
-
+let ok = true;
 for (const pkgName of SCHEMA_PACKAGES) {
-  const pkgDir = resolve(root, 'packages', pkgName);
-  console.log(`@ahs-id/${pkgName}:`);
-  totalErrors += validatePackage(pkgDir, pkgName);
-  console.log('');
+  ok = reportPackage(pkgName, 'schema') && ok;
 }
-
 for (const pkgName of SYNTAX_ONLY_PACKAGES) {
-  const pkgDir = resolve(root, 'packages', pkgName);
-  console.log(`@ahs-id/${pkgName}:`);
-  totalErrors += validatePackageSyntaxOnly(pkgDir, pkgName);
-  console.log('');
+  ok = reportPackage(pkgName, 'syntax') && ok;
 }
 
-if (totalErrors > 0) {
-  console.error(`Schema validation failed: ${totalErrors} file(s) with errors`);
+if (!ok) {
+  console.error('Schema validation failed');
   process.exit(1);
-} else {
-  console.log('All data files passed schema validation.');
 }
+
+console.log('All data files passed schema validation.');

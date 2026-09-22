@@ -1,107 +1,95 @@
 import { Command } from 'commander';
-import { readFileSync, readdirSync, statSync } from 'node:fs';
-import { resolve, relative } from 'node:path';
+import { validatePackageData } from '@ahs-id/core';
+import { assertKnownStrategy, findPackage, installedDataDir, PACKAGES, packageNames, type PackageRecord } from '../utils/registry.js';
 
-interface ValidationResult {
+export interface ValidationResult {
   packageName: string;
-  status: 'ok' | 'fail' | 'skip';
+  status: 'ok' | 'fail';
   message: string;
+}
+
+export function validateInstalledPackages(bundleName: string | undefined): ValidationResult[] {
+  if (bundleName !== undefined && !findPackage(bundleName)) {
+    return [{
+      packageName: bundleName,
+      status: 'fail',
+      message: `Unknown bundle "${bundleName}". Available: ${packageNames().join(', ')}`,
+    }];
+  }
+
+  const selected = bundleName ? PACKAGES.filter((pkg) => pkg.name === bundleName) : PACKAGES;
+  return selected.map(validateOne);
+}
+
+function validateOne(pkg: PackageRecord): ValidationResult {
+  assertKnownStrategy(pkg.strategy);
+  let dataDir: string;
+  try {
+    dataDir = installedDataDir(pkg.specifier);
+  } catch (err) {
+    return {
+      packageName: pkg.name,
+      status: 'fail',
+      message: err instanceof Error ? err.message : 'package could not be resolved',
+    };
+  }
+
+  const report = validatePackageData(dataDir, pkg.validation);
+  const failed = report.files.filter((file) => file.status === 'fail');
+  if (!report.valid) {
+    const detail = failed.map((file) => `${file.file}: ${file.message}`).join('; ');
+    return { packageName: pkg.name, status: 'fail', message: detail || 'validation failed' };
+  }
+  const checked = report.files.filter((file) => file.status !== 'skip').length;
+  return {
+    packageName: pkg.name,
+    status: 'ok',
+    message: `${checked} JSON file(s) — ${pkg.validation === 'schema' ? 'schema OK' : 'syntax OK'}`,
+  };
 }
 
 export function validateCommand(): Command {
   const cmd = new Command('validate')
-    .description('Validate AHSP data bundles against JSON schemas')
+    .description('Validate installed AHSP data bundles against JSON schemas')
     .option('-b, --bundle <name>', 'Validate a specific bundle package')
     .option('--json', 'Output as JSON')
-    .action(async (options: { bundle?: string; json: boolean }) => {
+    .action((options: { bundle?: string; json?: boolean }) => {
+      const json = options.json === true;
       try {
-        const results: ValidationResult[] = [];
-        const root = resolve(process.cwd());
-
-        const knownPackages = [
-          'pupr-2023', 'bina-marga-2016', 'bina-marga-2022', 'cipta-karya-2024',
-          'hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025', 'hsd-bm-2022',
-        ];
-        if (options.bundle && !knownPackages.includes(options.bundle)) {
-          throw new Error(`Unknown bundle "${options.bundle}". Available: ${knownPackages.join(', ')}`);
-        }
-        const packagesToValidate = options.bundle ? [options.bundle] : knownPackages;
-
-        for (const pkgName of packagesToValidate) {
-          const pkgDir = resolve(root, 'packages', pkgName);
-          if (!statSync(pkgDir, { throwIfNoEntry: false })?.isDirectory()) {
-            results.push({ packageName: pkgName, status: 'fail', message: `package directory not found at packages/${pkgName}` });
-            continue;
-          }
-
-          const dataDir = resolve(pkgDir, 'data');
-          if (!statSync(dataDir, { throwIfNoEntry: false })?.isDirectory()) {
-            results.push({ packageName: pkgName, status: 'fail', message: 'missing data/ directory' });
-            continue;
-          }
-
-          const jsonFiles = collectJsonFiles(dataDir);
-          if (jsonFiles.length === 0) {
-            results.push({ packageName: pkgName, status: 'skip', message: 'no JSON files found in data/' });
-            continue;
-          }
-
-          let fileErrors = 0;
-          for (const file of jsonFiles) {
-            try {
-              const content = readFileSync(file, 'utf-8');
-              JSON.parse(content);
-            } catch (e) {
-              fileErrors++;
-              results.push({ packageName: pkgName, status: 'fail', message: `invalid JSON: ${relative(root, file)} — ${(e as Error).message}` });
-            }
-          }
-
-          if (fileErrors === 0) {
-            results.push({
-              packageName: pkgName,
-              status: 'ok',
-              message: `${jsonFiles.length} JSON file(s) — syntax OK. Run \`pnpm validate-data\` for full schema validation.`,
-            });
-          }
-        }
-
-        if (options.json) {
-          console.log(JSON.stringify(results, null, 2));
-          return;
-        }
-
-        console.log('\nBundle Validation Results:\n');
-        for (const r of results) {
-          const icon = r.status === 'ok' ? '✓' : r.status === 'skip' ? '–' : '✗';
-          console.log(`  ${icon} ${r.packageName}: ${r.message}`);
-        }
-
-        const failed = results.filter(r => r.status === 'fail');
-        if (failed.length > 0) {
-          console.log(`\n${failed.length} package(s) failed validation.`);
-          process.exit(1);
-        } else {
-          console.log('\nAll packages passed syntax validation.');
+        const results = validateInstalledPackages(options.bundle);
+        emit(results, json);
+        if (results.some((result) => result.status === 'fail')) {
+          process.exitCode = 1;
         }
       } catch (err) {
-        console.error(`Error: ${(err as Error).message}`);
-        process.exit(1);
+        const message = err instanceof Error ? err.message : 'validation failed';
+        if (json) {
+          console.log(JSON.stringify({ error: message }));
+        } else {
+          console.error(`Error: ${message}`);
+        }
+        process.exitCode = 1;
       }
     });
 
   return cmd;
 }
 
-function collectJsonFiles(dir: string): string[] {
-  const files: string[] = [];
-  for (const entry of readdirSync(dir)) {
-    const full = resolve(dir, entry);
-    if (statSync(full).isDirectory()) {
-      files.push(...collectJsonFiles(full));
-    } else if (entry.endsWith('.json')) {
-      files.push(full);
-    }
+function emit(results: readonly ValidationResult[], json: boolean): void {
+  if (json) {
+    console.log(JSON.stringify(results));
+    return;
   }
-  return files;
+
+  console.log('\nBundle Validation Results:\n');
+  for (const result of results) {
+    const icon = result.status === 'ok' ? '✓' : '✗';
+    console.log(`  ${icon} ${result.packageName}: ${result.message}`);
+  }
+  const failed = results.filter((result) => result.status === 'fail');
+  if (failed.length > 0) {
+    console.log(`\n${failed.length} package(s) failed validation.`);
+  } else {
+    console.log('\nAll packages passed validation.');
+  }
 }
