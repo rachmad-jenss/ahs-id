@@ -286,6 +286,17 @@ describe('HSP golden tests', () => {
         lebar_hamparan_m: 3,
       })).toThrow('must be one of');
     });
+
+    it('refuses to price m2 work with a volumetric water rate', () => {
+      expect(() => calc.hitungHSP('3.3.3', {
+        jarak_sumber_air_km: 5,
+        faktor_efisiensi: 0.83,
+        kondisi_operasi: 'normal',
+        jumlah_passing: 6,
+        lebar_hamparan_m: 2.4,
+        jumlah_lintasan: 6,
+      })).toThrow('kebutuhan_air_liter_per_m2');
+    });
   });
 
   describe('cross-region HSD price comparison', () => {
