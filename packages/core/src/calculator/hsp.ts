@@ -12,6 +12,7 @@ import type {
 } from '../types/index.js';
 import { volume as cubicMetres } from '../types/domain.js';
 import { brandHsdRegional } from './brand-hsd.js';
+import { firstByKey } from './lookup-index.js';
 import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
 import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
 import { convertVolume } from './konversi-volume.js';
@@ -45,6 +46,10 @@ export function createCalculator(
   config?: CalculatorConfig,
 ): Calculator {
   const hsd = brandHsdRegional(hsdInput);
+  const ahspByCode = firstByKey(bundle.ahsp_items, (item) => item.kode_ahsp);
+  const hsdTenaga = firstByKey(hsd.tenaga_kerja, (entry) => entry.ref);
+  const hsdBahan = firstByKey(hsd.bahan, (entry) => entry.ref);
+  const hsdSewa = firstByKey(hsd.peralatan_sewa, (entry) => entry.ref);
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const bahanMasterMap = new Map(bundle.bahan.items.map((b) => [b.kode, b]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
@@ -56,7 +61,7 @@ export function createCalculator(
     variabel: VariabelInput,
     resolveStack: readonly string[],
   ): HSPResult {
-    const item = bundle.ahsp_items.find((a) => a.kode_ahsp === kodeAhsp);
+    const item = ahspByCode.get(kodeAhsp);
     if (!item) {
       throw new Error(`AHSP item "${kodeAhsp}" not found in bundle`);
     }
@@ -83,9 +88,9 @@ export function createCalculator(
       }
     }
 
-    const tkComponents = calcTenagaKerja(item, hsd, audit);
-    const bahanComponents = calcBahan(item, hsd, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
-    const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
+    const tkComponents = calcTenagaKerja(item, hsdTenaga, audit);
+    const bahanComponents = calcBahan(item, hsdBahan, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
+    const alatComponents = calcPeralatan(item, hsd, hsdTenaga, hsdSewa, variabel, alatMap, fkMap, audit, warnings, mode);
 
     const tkGroup: PricedGroup = {
       type: 'L',
@@ -160,11 +165,11 @@ function assertModelledItem(item: AhspItem): void {
 
 function calcTenagaKerja(
   item: AhspItem,
-  hsd: HsdRegional,
+  hsdTenaga: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
   audit: AuditEntry[],
 ): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
-    const hsdEntry = hsd.tenaga_kerja.find((h) => h.ref === tk.ref);
+    const hsdEntry = hsdTenaga.get(tk.ref);
     if (!hsdEntry) {
       throw new Error(`HSD tenaga kerja "${tk.ref}" not found`);
     }
@@ -189,7 +194,7 @@ function calcTenagaKerja(
 
 function calcBahan(
   item: AhspItem,
-  hsd: HsdRegional,
+  hsdBahan: ReadonlyMap<string, HsdRegional['bahan'][number]>,
   fkMap: Map<string, FaktorKonversiEntry>,
   bahanMasterMap: Map<string, DataBundle['bahan']['items'][number]>,
   itemVolumeState: VolumeState,
@@ -197,7 +202,7 @@ function calcBahan(
   audit: AuditEntry[],
 ): PricedComponent[] {
   return item.bahan.map((bahan) => {
-    const hsdEntry = hsd.bahan.find((h) => h.ref === bahan.ref);
+    const hsdEntry = hsdBahan.get(bahan.ref);
     if (!hsdEntry) {
       throw new Error(`HSD bahan "${bahan.ref}" not found`);
     }
@@ -241,6 +246,8 @@ function calcBahan(
 function calcPeralatan(
   item: AhspItem,
   hsd: HsdRegional,
+  hsdTenaga: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
+  hsdSewa: ReadonlyMap<string, HsdRegional['peralatan_sewa'][number]>,
   variabel: VariabelInput,
   alatMap: Map<string, DataBundle['peralatan']['items'][number]>,
   fkMap: Map<string, FaktorKonversiEntry>,
@@ -263,7 +270,7 @@ function calcPeralatan(
     const hsdResult = hitungHsdPeralatanAny(entry.ref, alat, hsd, {
       mode_biaya: entry.mode_biaya,
       kondisi_operasi: kondisi,
-    });
+    }, { tenagaKerja: hsdTenaga, peralatanSewa: hsdSewa });
     const unitPrice = hsdResult.hsd_rp_per_jam;
     audit.push(...hsdResult.audit);
 

@@ -10,6 +10,10 @@ export function validateBundle(
   hsd: HsdRegional,
 ): ValidationReport {
   const errors: ValidationError[] = [];
+  pushDuplicateKeys(errors, bundle.ahsp_items.map((item) => item.kode_ahsp), 'ahsp', 'DUPLICATE_AHSP');
+  pushDuplicateKeys(errors, hsd.tenaga_kerja.map((entry) => entry.ref), 'hsd.tenaga_kerja', 'DUPLICATE_HSD_REF');
+  pushDuplicateKeys(errors, hsd.bahan.map((entry) => entry.ref), 'hsd.bahan', 'DUPLICATE_HSD_REF');
+  pushDuplicateKeys(errors, hsd.peralatan_sewa.map((entry) => entry.ref), 'hsd.peralatan_sewa', 'DUPLICATE_HSD_REF');
 
   const tkCodes = new Set(bundle.tenaga_kerja.items.map((tk) => tk.kode));
   const bahanCodes = new Set(bundle.bahan.items.map((b) => b.kode));
@@ -149,6 +153,22 @@ export function validateBundle(
     warnings,
     checked_at: new Date().toISOString(),
   };
+}
+
+function pushDuplicateKeys(
+  errors: ValidationError[],
+  keys: readonly string[],
+  path: string,
+  code: string,
+): void {
+  const seen = new Set<string>();
+  for (const key of keys) {
+    if (seen.has(key)) {
+      errors.push(err(path, `Duplicate key "${key}"`, code));
+    } else {
+      seen.add(key);
+    }
+  }
 }
 
 function err(path: string, message: string, code: string): ValidationError {

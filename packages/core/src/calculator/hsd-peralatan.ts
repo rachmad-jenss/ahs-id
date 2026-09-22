@@ -35,6 +35,11 @@ export interface HsdPeralatanConfig {
   readonly kondisi_operasi?: KondisiOperasi;
 }
 
+export interface HsdPriceIndex {
+  readonly tenagaKerja: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>;
+  readonly peralatanSewa: ReadonlyMap<string, HsdRegional['peralatan_sewa'][number]>;
+}
+
 /**
  * Calculate HSD Peralatan using ownership mode.
  *
@@ -45,6 +50,7 @@ export function hitungHsdPeralatan(
   alat: PeralatanMaster,
   hsd: HsdRegional,
   config?: HsdPeralatanConfig,
+  index?: HsdPriceIndex,
 ): HsdPeralatanResult {
   const p = alat.hsd_params;
   const audit: AuditEntry[] = [];
@@ -110,8 +116,8 @@ export function hitungHsdPeralatan(
 
   // Operator and pembantu: HSD_TK / jam_efektif (7, not 8)
   const JAM_EFEKTIF = 7;
-  const operatorHsd = findTenagaKerja(hsd, 'L.05');
-  const pembantuHsd = findTenagaKerja(hsd, 'L.06');
+  const operatorHsd = findTenagaKerja(hsd, 'L.05', index?.tenagaKerja);
+  const pembantuHsd = findTenagaKerja(hsd, 'L.06', index?.tenagaKerja);
   const operator = operatorHsd / JAM_EFEKTIF;
   const pembantu_operator = pembantuHsd / JAM_EFEKTIF;
   audit.push({
@@ -196,8 +202,11 @@ export interface HsdPeralatanSewaResult {
 export function hitungHsdPeralatanSewa(
   ref: string,
   hsd: HsdRegional,
+  index?: HsdPriceIndex,
 ): HsdPeralatanSewaResult {
-  const entry = hsd.peralatan_sewa.find((s) => s.ref === ref);
+  const entry = index
+    ? index.peralatanSewa.get(ref)
+    : hsd.peralatan_sewa.find((s) => s.ref === ref);
   if (!entry) {
     throw new Error(`HSD peralatan sewa "${ref}" not found in regional data`);
   }
@@ -234,17 +243,24 @@ export function hitungHsdPeralatanAny(
   alat: PeralatanMaster,
   hsd: HsdRegional,
   config: HsdPeralatanDispatchConfig,
+  index?: HsdPriceIndex,
 ): HsdPeralatanAnyResult {
   if (config.mode_biaya === 'sewa') {
-    return hitungHsdPeralatanSewa(ref, hsd);
+    return hitungHsdPeralatanSewa(ref, hsd, index);
   }
 
-  const result = hitungHsdPeralatan(alat, hsd, config);
+  const result = hitungHsdPeralatan(alat, hsd, config, index);
   return { ...result, mode: 'ownership' };
 }
 
-function findTenagaKerja(hsd: HsdRegional, ref: string): number {
-  const entry = hsd.tenaga_kerja.find((tk) => tk.ref === ref);
+function findTenagaKerja(
+  hsd: HsdRegional,
+  ref: string,
+  tenagaKerja?: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
+): number {
+  const entry = tenagaKerja
+    ? tenagaKerja.get(ref)
+    : hsd.tenaga_kerja.find((tk) => tk.ref === ref);
   if (!entry) {
     throw new Error(`HSD tenaga kerja "${ref}" not found in regional data`);
   }
