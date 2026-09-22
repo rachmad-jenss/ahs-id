@@ -34,7 +34,6 @@
     "directory": "packages/bina-marga-2016"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }

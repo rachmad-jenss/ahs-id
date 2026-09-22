@@ -42,7 +42,6 @@
     "directory": "apps/cli"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }

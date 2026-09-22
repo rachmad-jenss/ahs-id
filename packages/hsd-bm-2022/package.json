@@ -34,7 +34,6 @@
     "directory": "packages/hsd-bm-2022"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }

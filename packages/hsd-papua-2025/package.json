@@ -34,7 +34,6 @@
     "directory": "packages/hsd-papua-2025"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }

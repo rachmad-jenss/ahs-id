@@ -34,7 +34,6 @@
     "directory": "packages/pupr-2023"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   }
 }
