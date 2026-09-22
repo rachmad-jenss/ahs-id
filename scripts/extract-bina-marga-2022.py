@@ -24,7 +24,7 @@ except ImportError:
     print("ERROR: xlrd not installed. Run: pip install xlrd", file=sys.stderr)
     sys.exit(1)
 
-XLS_PATH = "/root/.claude/uploads/dedfdd4f-fb4f-455d-a905-c103a26114d8/df3473c7-AHSP_BINA_MARGA__PERMEN_PUPR_NOMOR_1_TAHUN_2022.xls"
+XLS_PATH = ""
 OUTPUT_BASE = Path(__file__).parent.parent / "packages" / "bina-marga-2022" / "data"
 
 SUMBER_REGULASI = "Permen PUPR 1/2022"
@@ -558,6 +558,12 @@ def extract_pekerjaan_harian(boq: dict) -> list:
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
+    global XLS_PATH, OUTPUT_BASE
+    from extract_io import display_path, parse_workbook_args
+
+    args = parse_workbook_args({".xls"}, OUTPUT_BASE)
+    XLS_PATH = str(Path(args.input))
+    OUTPUT_BASE = Path(args.output)
     print(f"Reading: {XLS_PATH}")
     wb = xlrd.open_workbook(XLS_PATH)
 
@@ -657,7 +663,7 @@ def main():
     print("\n=== Summary ===")
     print(f"Total AHSP items: {len(all_items)}")
     for divisi_num, path, count in written_files:
-        print(f"  Divisi {divisi_num}: {count} items → {path.relative_to(Path(__file__).parent.parent)}")
+        print(f"  Divisi {divisi_num}: {count} items → {display_path(path)}")
     print("\nExtraction complete!")
 
     return written_files

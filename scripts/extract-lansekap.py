@@ -35,7 +35,7 @@ try:
 except ImportError:
     sys.exit("pip install openpyxl")
 
-XLSX = "/root/.claude/uploads/64129fc8-b021-484f-b751-749ea0ddfb00/ed24cada-AHSP_CIPTA_KARYA_SE_BINA_KONSTRUKSI_NO_68_TAHUN_2024.xlsx"
+XLSX = ""
 ROOT = Path(__file__).parent.parent
 OUT_AHSP = ROOT / "packages" / "cipta-karya-2024" / "data" / "ahsp" / "divisi-6" / "lansekap.json"
 OUT_HSD = ROOT / "packages" / "cipta-karya-2024" / "data" / "hsd-acuan.json"
@@ -292,6 +292,13 @@ def extract_ahsp_items(rows: list) -> list:
 
 
 def main():
+    global XLSX, OUT_AHSP, OUT_HSD
+    from extract_io import display_path, parse_workbook_args
+
+    args = parse_workbook_args({".xlsx"}, OUT_AHSP, hsd_output=OUT_HSD)
+    XLSX = str(Path(args.input))
+    OUT_AHSP = Path(args.output)
+    OUT_HSD = Path(args.hsd_output)
     print(f"Loading {XLSX}")
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
     ws = wb["Lansekap"]
@@ -314,7 +321,7 @@ def main():
 
     with open(OUT_HSD, "w", encoding="utf-8") as f:
         json.dump(hsd_acuan, f, ensure_ascii=False, indent=2)
-    print(f"\nUpdated: {OUT_HSD.relative_to(ROOT)}")
+    print(f"\nUpdated: {display_path(OUT_HSD)}")
     print(f"  Total bahan in hsd-acuan: {len(hsd_acuan['bahan'])}")
 
     # --- 2. Extract AHSP items ---
@@ -328,7 +335,7 @@ def main():
     OUT_AHSP.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT_AHSP, "w", encoding="utf-8") as f:
         json.dump(ahsp_items, f, ensure_ascii=False, indent=2)
-    print(f"\nWritten: {OUT_AHSP.relative_to(ROOT)}")
+    print(f"\nWritten: {display_path(OUT_AHSP)}")
 
 
 if __name__ == "__main__":
