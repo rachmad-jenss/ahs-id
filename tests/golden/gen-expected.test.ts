@@ -21,7 +21,7 @@ interface FixtureFile {
   kode_ahsp: string;
   bundle: string;
   hsd_region: string;
-  variabel: Record<string, unknown>;
+  variabel: Record<string, string | number>;
 }
 
 interface ExpectedFile {

@@ -5,9 +5,6 @@ import { hsd } from '@ahs-id/hsd-kaltim-2025';
 import { hsd as hsdJabar } from '@ahs-id/hsd-jabar-2025';
 import { hsd as hsdPapua } from '@ahs-id/hsd-papua-2025';
 
-// Tolerance: Rp 1 (rounding dari floating point konversi OH)
-const RP_TOLERANCE = 1;
-
 describe('bina-marga-2016 bundle', () => {
   it('loads 23 AHSP items and validates structure', () => {
     expect(bundle.meta.name).toBe('@ahs-id/bina-marga-2016');
