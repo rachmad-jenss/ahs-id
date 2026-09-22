@@ -98,7 +98,7 @@ export function createCalculator(
     const materialKey = (variabel['jenis_material'] as string | undefined) ?? 'agregat_kelas_a';
     const subAhspResult = resolveSubAhsp(
       item,
-      (childKode) => hitungHSPInternal(childKode, variabel, resolveStack),
+      (childKode) => hitungHSPInternal(childKode, variabel, [...resolveStack, item.kode_ahsp]),
       fkMap,
       materialKey,
       resolveStack,
@@ -184,15 +184,16 @@ function calcBahan(
     if (bahan.volume_state !== null && bahan.volume_state !== itemVolumeState) {
       const materialKey = resolveBahanMaterialKey(bahan.ref, item, variabel, bahanMasterMap, fkMap);
       const fk = fkMap.get(materialKey);
-      if (fk) {
-        const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
-        coefficient = bahan.koefisien * result.factor;
-        audit.push({
-          step: 'volume_conversion_bahan',
-          detail: `${bahan.ref}: koef ${bahan.koefisien} × ${result.factor} (${bahan.volume_state}→${itemVolumeState}, ${materialKey}) = ${coefficient.toFixed(6)}`,
-          value: coefficient,
-        });
+      if (!fk) {
+        throw new Error(`Faktor konversi for material "${materialKey}" not found`);
       }
+      const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
+      coefficient = bahan.koefisien * result.factor;
+      audit.push({
+        step: 'volume_conversion_bahan',
+        detail: `${bahan.ref}: koef ${bahan.koefisien} × ${result.factor} (${bahan.volume_state}→${itemVolumeState}, ${materialKey}) = ${coefficient.toFixed(6)}`,
+        value: coefficient,
+      });
     }
 
     const total = coefficient * hsdEntry.harga_rp;
@@ -231,6 +232,11 @@ function calcPeralatan(
     }
 
     const kondisi = (variabel['kondisi_operasi'] as KondisiOperasi | undefined) ?? 'normal';
+    if (entry.mode_biaya === 'ownership' && isPlaceholderOwnership(alat)) {
+      throw new Error(
+        `Peralatan "${entry.ref}" has placeholder ownership parameters and no Permen sewa rate`,
+      );
+    }
     const hsdResult = hitungHsdPeralatanAny(entry.ref, alat, hsd, {
       mode_biaya: entry.mode_biaya,
       kondisi_operasi: kondisi,
@@ -501,13 +507,26 @@ function applyVolumeConversion(
 // Helpers
 // ============================================================
 
+/** Values stamped by scripts/normalize-bina-marga.mjs when no real ownership sheet exists. */
+function isPlaceholderOwnership(alat: DataBundle['peralatan']['items'][number]): boolean {
+  const params = alat.hsd_params;
+  return params.harga_pokok_rp === 500_000_000
+    && params.bahan_bakar_ch === 12
+    && alat.daya_hp === 100;
+}
+
 function resolveMapParam(
   map: Record<string, number> | undefined,
   key: string | null | undefined,
   fallback: number,
 ): number {
   if (!map) return fallback;
-  if (key && key in map) return map[key]!;
+  if (key != null && key !== '') {
+    if (Object.prototype.hasOwnProperty.call(map, key)) return map[key]!;
+    return fallback;
+  }
+  // No key selected: the first row is the map default. Callers rely on this
+  // when jenis_material is omitted (golden fixtures).
   const values = Object.values(map);
   if (values.length > 0) return values[0]!;
   return fallback;

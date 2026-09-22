@@ -32,7 +32,7 @@ export function calcHspFromBundle(
 
   const tkComponents = calcTk(item, hsd, audit);
   const bahanComponents = calcBahan(item, hsd, audit);
-  const alatComponents = calcAlat(item, alatPrices, audit, warnings);
+  const alatComponents = calcAlat(item, alatPrices, audit);
 
   const tkGroup: AhspGroup = {
     type: 'L', title: 'Tenaga Kerja',
@@ -118,15 +118,16 @@ function calcAlat(
   item: AhspItem,
   alatPrices: Map<string, number>,
   audit: AuditEntry[],
-  warnings: string[],
 ): AhspComponent[] {
   return item.peralatan.map((entry) => {
-    const koef = entry.koef_referensi?.value ?? 0;
-    const hsdRp = alatPrices.get(entry.ref) ?? 0;
-
-    if (hsdRp === 0) {
-      warnings.push(`${entry.ref}: alat HSD price not found, using 0`);
+    if (entry.koef_referensi == null) {
+      throw new Error(`${entry.ref}: koef_referensi is required for precomputed peralatan`);
     }
+    const hsdRp = alatPrices.get(entry.ref);
+    if (hsdRp === undefined) {
+      throw new Error(`HSD peralatan "${entry.ref}" not found`);
+    }
+    const koef = entry.koef_referensi.value;
 
     const total = koef * hsdRp;
     audit.push({

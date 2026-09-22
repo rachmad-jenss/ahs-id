@@ -140,7 +140,8 @@
         "faktor_bucket": {
           "tanah_biasa": 1.00,
           "tanah_lempung_keras": 0.80,
-          "batu_pecah": 0.75
+          "batu_pecah": 0.75,
+          "agregat_kelas_a": 1.00
         },
         "waktu_siklus_menit": {
           "kedalaman_0_2m": 0.45,
@@ -206,7 +207,9 @@
         "faktor_muatan": {
           "tanah_gembur": 1.00,
           "kerikil": 0.95,
-          "batu_pecah": 0.85
+          "batu_pecah": 0.85,
+          "agregat_kelas_a": 1.00,
+          "tanah_biasa": 1.00
         },
         "volume_state_output": "loose"
       }
@@ -245,7 +248,8 @@
         "faktor_bucket": {
           "agregat": 0.85,
           "tanah_biasa": 1.00,
-          "batu_pecah": 0.75
+          "batu_pecah": 0.75,
+          "agregat_kelas_a": 0.85
         },
         "waktu_siklus_menit": 0.50,
         "volume_state_output": "loose"
@@ -283,7 +287,8 @@
       "produktivitas_params": {
         "kecepatan_operasi_km_jam": {
           "agregat": 3.0,
-          "tanah": 2.5
+          "tanah": 2.5,
+          "agregat_kelas_a": 3.0
         },
         "lebar_efektif_m": 2.5,
         "volume_state_output": null
@@ -323,7 +328,9 @@
         "kecepatan_operasi_km_jam": {
           "tanah": 2.0,
           "agregat": 2.5,
-          "aspal": 3.0
+          "aspal": 3.0,
+          "agregat_kelas_a": 2.0,
+          "tanah_biasa": 2.0
         },
         "lebar_efektif_m": 2.00,
         "overlap_m": 0.13,
