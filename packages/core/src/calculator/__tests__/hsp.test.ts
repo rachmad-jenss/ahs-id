@@ -32,7 +32,7 @@ const testBundle: DataBundle = {
     version: '1',
     items: [
       {
-        kode: 'E.01', nama: 'Excavator 100 HP', tipe_default: 'tracked',
+        kode: 'E.01', model_produktivitas: 'excavator-cycle', nama: 'Excavator 100 HP', tipe_default: 'tracked',
         daya_hp: 100, berat_operasi_ton: 12, tipe_produksi: 'siklus' as const,
         kapasitas_bucket_m3: 0.8,
         hsd_params: {
@@ -54,7 +54,7 @@ const testBundle: DataBundle = {
         },
       },
       {
-        kode: 'E.08', nama: 'Dump Truck 12 Ton', tipe_default: 'standard',
+        kode: 'E.08', model_produktivitas: 'dump-truck-cycle', nama: 'Dump Truck 12 Ton', tipe_default: 'standard',
         daya_hp: 180, berat_operasi_ton: 8, tipe_produksi: 'siklus' as const,
         kapasitas_m3: 8,
         hsd_params: {
@@ -78,7 +78,7 @@ const testBundle: DataBundle = {
         },
       },
       {
-        kode: 'E.11', nama: 'Wheel Loader 1.5 m3', tipe_default: 'standard',
+        kode: 'E.11', model_produktivitas: 'wheel-loader-cycle', nama: 'Wheel Loader 1.5 m3', tipe_default: 'standard',
         daya_hp: 120, berat_operasi_ton: 8, tipe_produksi: 'siklus' as const,
         kapasitas_bucket_m3: 1.5,
         hsd_params: {

@@ -77,6 +77,15 @@ export interface BahanMasterBundle {
 // ============================================================
 
 export type TipeProduksi = 'siklus' | 'lintasan' | 'throughput';
+
+export type ProductivityModel =
+  | 'excavator-cycle'
+  | 'dump-truck-cycle'
+  | 'wheel-loader-cycle'
+  | 'water-tanker-cycle'
+  | 'vibro-roller-pass'
+  | 'motor-grader-pass'
+  | 'throughput';
 export type KondisiOperasi = 'normal' | 'berat' | 'sangat_berat';
 
 export interface PelumasEntry {
@@ -125,6 +134,7 @@ export interface PeralatanMaster {
   readonly daya_hp: number;
   readonly berat_operasi_ton: number;
   readonly tipe_produksi: TipeProduksi;
+  readonly model_produktivitas?: ProductivityModel;
   readonly kapasitas_bucket_m3?: number;
   readonly kapasitas_ton?: number;
   readonly kapasitas_m3?: number;

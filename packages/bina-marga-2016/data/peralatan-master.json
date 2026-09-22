@@ -3,6 +3,7 @@
   "items": [
     {
       "kode": "E.01",
+      "model_produktivitas": "excavator-cycle",
       "nama": "Asphalt Mixing Plant",
       "tipe_default": "60 T/Jam",
       "daya_hp": 294,
@@ -192,6 +193,7 @@
     },
     {
       "kode": "E.08",
+      "model_produktivitas": "dump-truck-cycle",
       "nama": "Motor Grader",
       "tipe_default": "130 HP",
       "daya_hp": 130,
@@ -280,6 +282,7 @@
     },
     {
       "kode": "E.11",
+      "model_produktivitas": "wheel-loader-cycle",
       "nama": "Crane on Truck",
       "tipe_default": "10 Ton",
       "daya_hp": 200,
@@ -421,6 +424,7 @@
     },
     {
       "kode": "E.19",
+      "model_produktivitas": "motor-grader-pass",
       "nama": "Plate Tamper / Jumping Jack",
       "tipe_default": "5.5 HP",
       "daya_hp": 5,

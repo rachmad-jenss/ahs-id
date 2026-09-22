@@ -11,6 +11,7 @@ export type {
   BahanMaster,
   BahanMasterBundle,
   TipeProduksi,
+  ProductivityModel,
   KondisiOperasi,
   PelumasEntry,
   PelumasParams,

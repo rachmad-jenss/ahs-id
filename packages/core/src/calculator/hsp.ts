@@ -373,9 +373,10 @@ function calcProduktivitas(
   satuanBayar: string,
 ): ProduktivitasResult {
   const pp = alat.produktivitas_params;
+  const model = alat.model_produktivitas ?? (alat.tipe_produksi === 'throughput' ? 'throughput' : undefined);
 
-  if (alat.tipe_produksi === 'siklus') {
-    if (alat.kode === 'E.01') {
+  switch (model) {
+    case 'excavator-cycle': {
       const params: SiklusExcavatorParams = {
         kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 0,
         faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number>, variabel['jenis_material'] as string, 1.0),
@@ -384,8 +385,7 @@ function calcProduktivitas(
       };
       return produktivitasExcavator(params);
     }
-
-    if (alat.kode === 'E.08') {
+    case 'dump-truck-cycle': {
       const params: SiklusDumpTruckParams = {
         kapasitas_m3: alat.kapasitas_m3 ?? 8,
         faktor_muatan: resolveMapParam(pp['faktor_muatan'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.95),
@@ -399,8 +399,7 @@ function calcProduktivitas(
       };
       return produktivitasDumpTruck(params);
     }
-
-    if (alat.kode === 'E.11') {
+    case 'wheel-loader-cycle': {
       const params: SiklusWheelLoaderParams = {
         kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 1.5,
         faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.85),
@@ -409,8 +408,7 @@ function calcProduktivitas(
       };
       return produktivitasWheelLoader(params);
     }
-
-    if (alat.kode === 'E.25') {
+    case 'water-tanker-cycle': {
       const perM2 = pp['kebutuhan_air_liter_per_m2'];
       if (satuanBayar === 'm2' && (typeof perM2 !== 'number' || !Number.isFinite(perM2) || perM2 <= 0)) {
         throw new Error(`${alat.kode}: payment unit m2 requires kebutuhan_air_liter_per_m2`);
@@ -429,10 +427,7 @@ function calcProduktivitas(
       };
       return produktivitasWaterTanker(params);
     }
-  }
-
-  if (alat.tipe_produksi === 'lintasan') {
-    if (alat.kode === 'E.22') {
+    case 'vibro-roller-pass': {
       const params: LintasanVibroRollerParams = {
         kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 2.5),
         lebar_efektif_m: (pp['lebar_efektif_m'] as number) ?? 2.0,
@@ -443,8 +438,7 @@ function calcProduktivitas(
       };
       return produktivitasVibroRoller(params);
     }
-
-    if (alat.kode === 'E.19') {
+    case 'motor-grader-pass': {
       const params: LintasanMotorGraderParams = {
         kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 3.0),
         lebar_efektif_m: typeof variabel['lebar_hamparan_m'] === 'number'
@@ -457,22 +451,25 @@ function calcProduktivitas(
       };
       return produktivitasMotorGrader(params);
     }
+    case 'throughput': {
+      const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
+        ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
+        ?? (pp['kapasitas_rated'] as number | undefined)
+        ?? 0;
+      const params: ThroughputParams = {
+        kapasitas_rated: kapasitas,
+        satuan_kapasitas: pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam',
+        faktor_efisiensi: fa,
+      };
+      return produktivitasThroughput(params);
+    }
+    case undefined:
+      throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);
+    default: {
+      const unreachable: never = model;
+      throw new Error(`Unsupported productivity model ${String(unreachable)} for ${alat.kode}`);
+    }
   }
-
-  if (alat.tipe_produksi === 'throughput') {
-    const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
-      ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
-      ?? (pp['kapasitas_rated'] as number | undefined)
-      ?? 0;
-    const params: ThroughputParams = {
-      kapasitas_rated: kapasitas,
-      satuan_kapasitas: pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam',
-      faktor_efisiensi: fa,
-    };
-    return produktivitasThroughput(params);
-  }
-
-  throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);
 }
 
 // ============================================================

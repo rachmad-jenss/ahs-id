@@ -20,6 +20,18 @@
           "daya_hp": { "type": "number", "minimum": 0, "maximum": 2000 },
           "berat_operasi_ton": { "type": "number", "exclusiveMinimum": 0, "maximum": 200 },
           "tipe_produksi": { "type": "string", "enum": ["siklus", "lintasan", "throughput"] },
+          "model_produktivitas": {
+            "type": "string",
+            "enum": [
+              "excavator-cycle",
+              "dump-truck-cycle",
+              "wheel-loader-cycle",
+              "water-tanker-cycle",
+              "vibro-roller-pass",
+              "motor-grader-pass",
+              "throughput"
+            ]
+          },
           "kapasitas_bucket_m3": { "type": "number", "exclusiveMinimum": 0 },
           "kapasitas_ton": { "type": "number", "exclusiveMinimum": 0 },
           "kapasitas_m3": { "type": "number", "exclusiveMinimum": 0 },

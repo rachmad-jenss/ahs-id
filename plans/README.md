@@ -26,7 +26,7 @@ this execution queue.
 | [008](008-close-cipta-karya-data-discrepancies.md) | Close Cipta Karya discrepancy allowances | P2 | L | 007 | BLOCKED: SE Bina Konstruksi 68/2024 workbook is not in the repo |
 | [013](013-make-extraction-reproducible.md) | Make extraction reproducible | P2 | M | — | DONE |
 | [014](014-consolidate-calculator-pipelines.md) | Consolidate result assembly | P3 | M | 007, 010 | DONE |
-| [015](015-decouple-productivity-dispatch.md) | Decouple productivity dispatch from equipment codes | P3 | M | 003, 014 | TODO |
+| [015](015-decouple-productivity-dispatch.md) | Decouple productivity dispatch from equipment codes | P3 | M | 003, 014 | DONE |
 | [016](016-apply-branded-units.md) | Apply branded units at public boundaries | P3 | L | 014 | TODO |
 | [017](017-preindex-calculation-lookups.md) | Pre-index stable lookups | P3 | S | 014, 015, 016 | TODO |
 | [012](012-add-safe-npm-release-gate.md) | Add a safe npm release gate | P1 | M | 001–011, 014, 016 | TODO |
