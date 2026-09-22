@@ -116,6 +116,21 @@ export function validateBundle(
     }
   }
 
+  for (const item of bundle.ahsp_items) {
+    const componentCount = item.tenaga_kerja.length
+      + item.bahan.length
+      + item.peralatan.length
+      + item.sub_ahsp.length;
+    const priced = (item as { hsp_referensi?: unknown }).hsp_referensi;
+    if (componentCount === 0 && typeof priced === 'number' && priced > 0) {
+      errors.push(warn(
+        `ahsp[${item.kode_ahsp}]`,
+        `Reference price ${priced} has no tenaga, bahan, peralatan, or sub-AHSP`,
+        'EMPTY_PRICED_ITEM',
+      ));
+    }
+  }
+
   for (const fk of bundle.faktor_konversi.items) {
     if (fk.bank_to_loose <= 0) {
       errors.push(err(`faktor_konversi[${fk.material}].bank_to_loose`, `Must be > 0, got ${fk.bank_to_loose}`, 'RANGE_FK'));

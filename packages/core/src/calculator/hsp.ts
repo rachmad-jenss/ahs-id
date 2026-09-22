@@ -65,6 +65,7 @@ export function createCalculator(
     } else {
       validateDeclaredVariabel(item, variabel);
     }
+    assertModelledItem(item);
 
     const audit: AuditEntry[] = [];
     const warnings: string[] = [];
@@ -145,6 +146,20 @@ export function createCalculator(
   }
 
   return { hitungHSP };
+}
+
+function assertModelledItem(item: AhspItem): void {
+  const componentCount = item.tenaga_kerja.length
+    + item.bahan.length
+    + item.peralatan.length
+    + item.sub_ahsp.length;
+  if (componentCount > 0) return;
+  const priced = (item as AhspItem & { hsp_referensi?: number }).hsp_referensi;
+  if (typeof priced === 'number' && priced > 0) {
+    throw new Error(
+      `AHSP "${item.kode_ahsp}" has reference price ${priced} but no components`,
+    );
+  }
 }
 
 function calcTenagaKerja(
@@ -326,7 +341,10 @@ function resolveKalkulasiKoef(
     throw new Error(`${entry.ref}: missing required variabel_input: ${missing.join(', ')}`);
   }
 
-  const prodResult = calcProduktivitas(alat, variabel, fa);
+  const prodResult = calcProduktivitas(alat, variabel, fa, item.satuan_bayar);
+  if (item.satuan_bayar === 'm2' && prodResult.satuan.startsWith('m3')) {
+    throw new Error(`${entry.ref}: productivity ${prodResult.satuan} cannot price payment unit m2`);
+  }
   if (!Number.isFinite(prodResult.produktivitas) || prodResult.produktivitas <= 0) {
     throw new Error(`${entry.ref}: productivity must be a positive finite number`);
   }
@@ -357,6 +375,7 @@ function calcProduktivitas(
   alat: DataBundle['peralatan']['items'][number],
   variabel: VariabelInput,
   fa: number,
+  satuanBayar: string,
 ): ProduktivitasResult {
   const pp = alat.produktivitas_params;
 
@@ -397,6 +416,10 @@ function calcProduktivitas(
     }
 
     if (alat.kode === 'E.25') {
+      const perM2 = pp['kebutuhan_air_liter_per_m2'];
+      if (satuanBayar === 'm2' && (typeof perM2 !== 'number' || !Number.isFinite(perM2) || perM2 <= 0)) {
+        throw new Error(`${alat.kode}: payment unit m2 requires kebutuhan_air_liter_per_m2`);
+      }
       const params: SiklusWaterTankerParams = {
         kapasitas_liter: (pp['kapasitas_liter'] as number) ?? 4000,
         jarak_km: (variabel['jarak_sumber_air_km'] as number) ?? 5,
@@ -407,6 +430,7 @@ function calcProduktivitas(
         waktu_tunggu_menit: 1.0,
         faktor_efisiensi: fa,
         kebutuhan_air_liter_per_m3: (pp['kebutuhan_air_liter_per_m3'] as number) ?? 70,
+        ...(satuanBayar === 'm2' ? { kebutuhan_air_liter_per_m2: perM2 as number } : {}),
       };
       return produktivitasWaterTanker(params);
     }
@@ -420,6 +444,7 @@ function calcProduktivitas(
         tebal_hamparan_m: (variabel['tebal_hamparan_m'] as number | undefined) ?? 0.20,
         jumlah_passing: (variabel['jumlah_passing'] as number | undefined) ?? 6,
         faktor_efisiensi: fa,
+        ...(satuanBayar === 'm2' ? { mode: 'area' as const } : {}),
       };
       return produktivitasVibroRoller(params);
     }
