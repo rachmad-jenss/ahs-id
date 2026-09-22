@@ -29,7 +29,7 @@ this execution queue.
 | [015](015-decouple-productivity-dispatch.md) | Decouple productivity dispatch from equipment codes | P3 | M | 003, 014 | DONE |
 | [016](016-apply-branded-units.md) | Apply branded units at public boundaries | P3 | L | 014 | DONE |
 | [017](017-preindex-calculation-lookups.md) | Pre-index stable lookups | P3 | S | 014, 015, 016 | DONE |
-| [012](012-add-safe-npm-release-gate.md) | Add a safe npm release gate | P1 | M | 001–011, 014, 016 | TODO |
+| [012](012-add-safe-npm-release-gate.md) | Add a safe npm release gate | P1 | M | 001–011, 014, 016 | BLOCKED: 008 workbook is missing and the first-release version/package list is not approved |
 
 Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 `REJECTED: <reason>`.
