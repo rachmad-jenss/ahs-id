@@ -44,7 +44,7 @@ Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 | DAS-5 | Scaffold `apps/cli` — `calc-hsp` | ✅ Done |
 | DAS-6 | CLI `export-rab` | ✅ Done |
 | DAS-7 | CLI `validate` for bundles | ✅ Done |
-| DAS-8 | npm publish workflow & package metadata | ⬜ Open |
+| DAS-8 | npm publish workflow & package metadata | 🔨 Release gate ready (`verify`, `pack-smoke`, workflow); publish pending operator approval |
 | DAS-9 | Changesets & CHANGELOG | ✅ Done |
 
 **Optional (post-exit):** Bina Marga divisi 1–7+ expansion; unify `bina-marga-2022` calculation path with regional HSD bundles.

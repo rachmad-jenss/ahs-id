@@ -1,0 +1,16 @@
+{
+  "$comment": "First public release scope. Versions stay at current 0.0.x/0.1.x until maintainer approves 1.0.0. See docs/architecture.md section 15.",
+  "maxTarballBytes": 10485760,
+  "packages": [
+    { "name": "@ahs-id/core", "dir": "packages/core" },
+    { "name": "@ahs-id/pupr-2023", "dir": "packages/pupr-2023" },
+    { "name": "@ahs-id/bina-marga-2016", "dir": "packages/bina-marga-2016" },
+    { "name": "@ahs-id/bina-marga-2022", "dir": "packages/bina-marga-2022" },
+    { "name": "@ahs-id/cipta-karya-2024", "dir": "packages/cipta-karya-2024" },
+    { "name": "@ahs-id/hsd-kaltim-2025", "dir": "packages/hsd-kaltim-2025" },
+    { "name": "@ahs-id/hsd-jabar-2025", "dir": "packages/hsd-jabar-2025" },
+    { "name": "@ahs-id/hsd-papua-2025", "dir": "packages/hsd-papua-2025" },
+    { "name": "@ahs-id/hsd-bm-2022", "dir": "packages/hsd-bm-2022" },
+    { "name": "@ahs-id/cli", "dir": "apps/cli" }
+  ]
+}

@@ -8,12 +8,15 @@
     "validate-bundles": "node scripts/validate-bundles.mjs",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish",
+    "verify": "node scripts/verify.mjs",
+    "release:prepare": "node scripts/release-prepare.mjs",
+    "pack-smoke": "node scripts/pack-smoke.mjs",
+    "release": "node scripts/release.mjs",
     "build": "node scripts/validate-data.mjs && turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
-    "clean": "turbo run clean",
+    "clean": "node scripts/clean.mjs --all-workspaces",
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
   },
   "devDependencies": {
