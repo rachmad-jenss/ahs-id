@@ -1,4 +1,5 @@
 import type { AuditEntry } from '../types/index.js';
+import { idr, type IDR } from '../types/domain.js';
 
 export interface MarginParams {
   readonly overhead_pct: number;
@@ -6,11 +7,11 @@ export interface MarginParams {
 }
 
 export interface MarginResult {
-  readonly biaya_langsung: number;
-  readonly overhead_value: number;
-  readonly profit_value: number;
-  readonly overhead_profit_total: number;
-  readonly grand_total: number;
+  readonly biaya_langsung: IDR;
+  readonly overhead_value: IDR;
+  readonly profit_value: IDR;
+  readonly overhead_profit_total: IDR;
+  readonly grand_total: IDR;
   readonly audit: readonly AuditEntry[];
 }
 
@@ -34,11 +35,11 @@ export function hitungMargin(
       value: 0,
     });
     return {
-      biaya_langsung: biayaLangsung,
-      overhead_value: 0,
-      profit_value: 0,
-      overhead_profit_total: 0,
-      grand_total: biayaLangsung,
+      biaya_langsung: idr(biayaLangsung),
+      overhead_value: idr(0),
+      profit_value: idr(0),
+      overhead_profit_total: idr(0),
+      grand_total: idr(biayaLangsung),
       audit,
     };
   }
@@ -63,11 +64,11 @@ export function hitungMargin(
   });
 
   return {
-    biaya_langsung: biayaLangsung,
-    overhead_value,
-    profit_value,
-    overhead_profit_total,
-    grand_total,
+    biaya_langsung: idr(biayaLangsung),
+    overhead_value: idr(overhead_value),
+    profit_value: idr(profit_value),
+    overhead_profit_total: idr(overhead_profit_total),
+    grand_total: idr(grand_total),
     audit,
   };
 }

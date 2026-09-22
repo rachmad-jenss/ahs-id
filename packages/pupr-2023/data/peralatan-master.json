@@ -108,6 +108,7 @@
     },
     {
       "kode": "E.01",
+      "model_produktivitas": "excavator-cycle",
       "nama": "Excavator",
       "tipe_default": "PC-200",
       "kapasitas_bucket_m3": 0.93,
@@ -159,6 +160,7 @@
     },
     {
       "kode": "E.08",
+      "model_produktivitas": "dump-truck-cycle",
       "nama": "Dump Truck",
       "tipe_default": "DT-12T",
       "kapasitas_ton": 12,
@@ -216,6 +218,7 @@
     },
     {
       "kode": "E.11",
+      "model_produktivitas": "wheel-loader-cycle",
       "nama": "Wheel Loader",
       "tipe_default": "WL 1.5 m3",
       "kapasitas_bucket_m3": 1.5,
@@ -257,6 +260,7 @@
     },
     {
       "kode": "E.19",
+      "model_produktivitas": "motor-grader-pass",
       "nama": "Motor Grader",
       "tipe_default": "MG >100 HP",
       "daya_hp": 135,
@@ -296,6 +300,7 @@
     },
     {
       "kode": "E.22",
+      "model_produktivitas": "vibro-roller-pass",
       "nama": "Vibratory Roller",
       "tipe_default": "8-10 Ton",
       "lebar_drum_m": 2.13,
@@ -344,6 +349,7 @@
     },
     {
       "kode": "E.25",
+      "model_produktivitas": "water-tanker-cycle",
       "nama": "Water Tank Truck",
       "tipe_default": "WT 4000L",
       "daya_hp": 133,

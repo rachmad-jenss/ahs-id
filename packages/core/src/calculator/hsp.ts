@@ -1,7 +1,5 @@
 import type {
   AhspItem,
-  AhspComponent,
-  AhspGroup,
   HSPResult,
   DataBundle,
   HsdRegional,
@@ -12,8 +10,11 @@ import type {
   FaktorKonversiEntry,
   VolumeState,
 } from '../types/index.js';
+import { volume as cubicMetres } from '../types/domain.js';
+import { brandHsdRegional } from './brand-hsd.js';
+import { firstByKey } from './lookup-index.js';
 import { hitungHsdPeralatanAny } from './hsd-peralatan.js';
-import { hitungMargin } from './margin.js';
+import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
 import { convertVolume } from './konversi-volume.js';
 import { resolveSubAhsp } from './sub-ahsp.js';
 import {
@@ -41,9 +42,14 @@ export interface Calculator {
 
 export function createCalculator(
   bundle: DataBundle,
-  hsd: HsdRegional,
+  hsdInput: HsdRegional,
   config?: CalculatorConfig,
 ): Calculator {
+  const hsd = brandHsdRegional(hsdInput);
+  const ahspByCode = firstByKey(bundle.ahsp_items, (item) => item.kode_ahsp);
+  const hsdTenaga = firstByKey(hsd.tenaga_kerja, (entry) => entry.ref);
+  const hsdBahan = firstByKey(hsd.bahan, (entry) => entry.ref);
+  const hsdSewa = firstByKey(hsd.peralatan_sewa, (entry) => entry.ref);
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const bahanMasterMap = new Map(bundle.bahan.items.map((b) => [b.kode, b]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
@@ -55,7 +61,7 @@ export function createCalculator(
     variabel: VariabelInput,
     resolveStack: readonly string[],
   ): HSPResult {
-    const item = bundle.ahsp_items.find((a) => a.kode_ahsp === kodeAhsp);
+    const item = ahspByCode.get(kodeAhsp);
     if (!item) {
       throw new Error(`AHSP item "${kodeAhsp}" not found in bundle`);
     }
@@ -82,25 +88,25 @@ export function createCalculator(
       }
     }
 
-    const tkComponents = calcTenagaKerja(item, hsd, audit);
-    const bahanComponents = calcBahan(item, hsd, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
-    const alatComponents = calcPeralatan(item, hsd, variabel, alatMap, fkMap, audit, warnings, mode);
+    const tkComponents = calcTenagaKerja(item, hsdTenaga, audit);
+    const bahanComponents = calcBahan(item, hsdBahan, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
+    const alatComponents = calcPeralatan(item, hsd, hsdTenaga, hsdSewa, variabel, alatMap, fkMap, audit, warnings, mode);
 
-    const tkGroup: AhspGroup = {
+    const tkGroup: PricedGroup = {
       type: 'L',
       title: 'Tenaga Kerja',
       components: tkComponents,
       total: tkComponents.reduce((s, c) => s + c.total_price, 0),
     };
 
-    const bahanGroup: AhspGroup = {
+    const bahanGroup: PricedGroup = {
       type: 'M',
       title: 'Bahan',
       components: bahanComponents,
       total: bahanComponents.reduce((s, c) => s + c.total_price, 0),
     };
 
-    const alatGroup: AhspGroup = {
+    const alatGroup: PricedGroup = {
       type: 'E',
       title: 'Peralatan',
       components: alatComponents,
@@ -117,29 +123,23 @@ export function createCalculator(
     );
     audit.push(...subAhspResult.audit);
 
-    const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total + subAhspResult.total;
-
     const overheadPct = variabel['overhead_pct'] as number | undefined ?? item.margin.overhead_pct.default;
     const profitPct = variabel['profit_pct'] as number | undefined ?? item.margin.profit_pct.default;
-
-    const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
-    audit.push(...marginResult.audit);
-    assertFiniteMoney(item.kode_ahsp, 'grandTotal', marginResult.grand_total);
-
-    return {
+    const result = assembleHspResult({
       kode_ahsp: item.kode_ahsp,
       nama: item.nama,
       satuan_bayar: item.satuan_bayar,
       groups: [tkGroup, bahanGroup, alatGroup],
       subAhsp: subAhspResult.components,
-      baseTotal,
+      nestedTotal: subAhspResult.total,
       overheadPct,
       profitPct,
-      overheadProfitValue: marginResult.overhead_profit_total,
-      grandTotal: marginResult.grand_total,
+      isLumpSum: item.is_lump_sum,
       warnings,
-      audit_trail: audit,
-    };
+      audit,
+    });
+    assertFiniteMoney(item.kode_ahsp, 'grandTotal', result.grandTotal);
+    return result;
   }
 
   function hitungHSP(kodeAhsp: string, variabel: VariabelInput): HSPResult {
@@ -165,11 +165,11 @@ function assertModelledItem(item: AhspItem): void {
 
 function calcTenagaKerja(
   item: AhspItem,
-  hsd: HsdRegional,
+  hsdTenaga: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
   audit: AuditEntry[],
-): AhspComponent[] {
+): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
-    const hsdEntry = hsd.tenaga_kerja.find((h) => h.ref === tk.ref);
+    const hsdEntry = hsdTenaga.get(tk.ref);
     if (!hsdEntry) {
       throw new Error(`HSD tenaga kerja "${tk.ref}" not found`);
     }
@@ -194,15 +194,15 @@ function calcTenagaKerja(
 
 function calcBahan(
   item: AhspItem,
-  hsd: HsdRegional,
+  hsdBahan: ReadonlyMap<string, HsdRegional['bahan'][number]>,
   fkMap: Map<string, FaktorKonversiEntry>,
   bahanMasterMap: Map<string, DataBundle['bahan']['items'][number]>,
   itemVolumeState: VolumeState,
   variabel: VariabelInput,
   audit: AuditEntry[],
-): AhspComponent[] {
+): PricedComponent[] {
   return item.bahan.map((bahan) => {
-    const hsdEntry = hsd.bahan.find((h) => h.ref === bahan.ref);
+    const hsdEntry = hsdBahan.get(bahan.ref);
     if (!hsdEntry) {
       throw new Error(`HSD bahan "${bahan.ref}" not found`);
     }
@@ -215,7 +215,7 @@ function calcBahan(
       if (!fk) {
         throw new Error(`Faktor konversi for material "${materialKey}" not found`);
       }
-      const result = convertVolume(1.0, fk, bahan.volume_state, itemVolumeState);
+      const result = convertVolume(cubicMetres(1), fk, bahan.volume_state, itemVolumeState);
       coefficient = bahan.koefisien * result.factor;
       audit.push({
         step: 'volume_conversion_bahan',
@@ -246,13 +246,15 @@ function calcBahan(
 function calcPeralatan(
   item: AhspItem,
   hsd: HsdRegional,
+  hsdTenaga: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
+  hsdSewa: ReadonlyMap<string, HsdRegional['peralatan_sewa'][number]>,
   variabel: VariabelInput,
   alatMap: Map<string, DataBundle['peralatan']['items'][number]>,
   fkMap: Map<string, FaktorKonversiEntry>,
   audit: AuditEntry[],
   warnings: string[],
   mode: 'penuh' | 'estimasi-kasar',
-): AhspComponent[] {
+): PricedComponent[] {
   return item.peralatan.map((entry) => {
     const alat = alatMap.get(entry.ref);
     if (!alat) {
@@ -268,7 +270,7 @@ function calcPeralatan(
     const hsdResult = hitungHsdPeralatanAny(entry.ref, alat, hsd, {
       mode_biaya: entry.mode_biaya,
       kondisi_operasi: kondisi,
-    });
+    }, { tenagaKerja: hsdTenaga, peralatanSewa: hsdSewa });
     const unitPrice = hsdResult.hsd_rp_per_jam;
     audit.push(...hsdResult.audit);
 
@@ -379,9 +381,10 @@ function calcProduktivitas(
   satuanBayar: string,
 ): ProduktivitasResult {
   const pp = alat.produktivitas_params;
+  const model = alat.model_produktivitas ?? (alat.tipe_produksi === 'throughput' ? 'throughput' : undefined);
 
-  if (alat.tipe_produksi === 'siklus') {
-    if (alat.kode === 'E.01') {
+  switch (model) {
+    case 'excavator-cycle': {
       const params: SiklusExcavatorParams = {
         kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 0,
         faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number>, variabel['jenis_material'] as string, 1.0),
@@ -390,8 +393,7 @@ function calcProduktivitas(
       };
       return produktivitasExcavator(params);
     }
-
-    if (alat.kode === 'E.08') {
+    case 'dump-truck-cycle': {
       const params: SiklusDumpTruckParams = {
         kapasitas_m3: alat.kapasitas_m3 ?? 8,
         faktor_muatan: resolveMapParam(pp['faktor_muatan'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.95),
@@ -405,8 +407,7 @@ function calcProduktivitas(
       };
       return produktivitasDumpTruck(params);
     }
-
-    if (alat.kode === 'E.11') {
+    case 'wheel-loader-cycle': {
       const params: SiklusWheelLoaderParams = {
         kapasitas_bucket_m3: alat.kapasitas_bucket_m3 ?? 1.5,
         faktor_bucket: resolveMapParam(pp['faktor_bucket'] as Record<string, number> | undefined, variabel['jenis_material'] as string | undefined, 0.85),
@@ -415,8 +416,7 @@ function calcProduktivitas(
       };
       return produktivitasWheelLoader(params);
     }
-
-    if (alat.kode === 'E.25') {
+    case 'water-tanker-cycle': {
       const perM2 = pp['kebutuhan_air_liter_per_m2'];
       if (satuanBayar === 'm2' && (typeof perM2 !== 'number' || !Number.isFinite(perM2) || perM2 <= 0)) {
         throw new Error(`${alat.kode}: payment unit m2 requires kebutuhan_air_liter_per_m2`);
@@ -435,10 +435,7 @@ function calcProduktivitas(
       };
       return produktivitasWaterTanker(params);
     }
-  }
-
-  if (alat.tipe_produksi === 'lintasan') {
-    if (alat.kode === 'E.22') {
+    case 'vibro-roller-pass': {
       const params: LintasanVibroRollerParams = {
         kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 2.5),
         lebar_efektif_m: (pp['lebar_efektif_m'] as number) ?? 2.0,
@@ -449,8 +446,7 @@ function calcProduktivitas(
       };
       return produktivitasVibroRoller(params);
     }
-
-    if (alat.kode === 'E.19') {
+    case 'motor-grader-pass': {
       const params: LintasanMotorGraderParams = {
         kecepatan_operasi_km_jam: resolveMapParam(pp['kecepatan_operasi_km_jam'] as Record<string, number>, variabel['jenis_material'] as string | undefined, 3.0),
         lebar_efektif_m: typeof variabel['lebar_hamparan_m'] === 'number'
@@ -463,22 +459,25 @@ function calcProduktivitas(
       };
       return produktivitasMotorGrader(params);
     }
+    case 'throughput': {
+      const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
+        ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
+        ?? (pp['kapasitas_rated'] as number | undefined)
+        ?? 0;
+      const params: ThroughputParams = {
+        kapasitas_rated: kapasitas,
+        satuan_kapasitas: pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam',
+        faktor_efisiensi: fa,
+      };
+      return produktivitasThroughput(params);
+    }
+    case undefined:
+      throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);
+    default: {
+      const unreachable: never = model;
+      throw new Error(`Unsupported productivity model ${String(unreachable)} for ${alat.kode}`);
+    }
   }
-
-  if (alat.tipe_produksi === 'throughput') {
-    const kapasitas = (pp['kapasitas_rated_ton_jam'] as number | undefined)
-      ?? (pp['kapasitas_rated_m3_jam'] as number | undefined)
-      ?? (pp['kapasitas_rated'] as number | undefined)
-      ?? 0;
-    const params: ThroughputParams = {
-      kapasitas_rated: kapasitas,
-      satuan_kapasitas: pp['kapasitas_rated_ton_jam'] !== undefined ? 'ton/jam' : 'm3/jam',
-      faktor_efisiensi: fa,
-    };
-    return produktivitasThroughput(params);
-  }
-
-  throw new Error(`Unsupported equipment productivity calculation for ${alat.kode} (${alat.tipe_produksi})`);
 }
 
 // ============================================================
@@ -538,7 +537,7 @@ function applyVolumeConversion(
     throw new Error(`Faktor konversi for material "${materialKey}" not found`);
   }
 
-  const result = convertVolume(1.0, fk, entry.volume_state as VolumeState, item.volume_state_bayar);
+  const result = convertVolume(cubicMetres(1), fk, entry.volume_state as VolumeState, item.volume_state_bayar);
   const converted = koef * result.factor;
   audit.push({
     step: 'volume_conversion',

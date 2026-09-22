@@ -24,7 +24,7 @@ try:
 except ImportError:
     sys.exit("pip install openpyxl")
 
-XLSX = "/root/.claude/uploads/64129fc8-b021-484f-b751-749ea0ddfb00/ed24cada-AHSP_CIPTA_KARYA_SE_BINA_KONSTRUKSI_NO_68_TAHUN_2024.xlsx"
+XLSX = ""
 OUT_ROOT = Path(__file__).parent.parent / "packages" / "cipta-karya-2024" / "data" / "ahsp"
 SUMBER = "SE Bina Konstruksi No. 68/SE/Dk/2024"
 
@@ -414,6 +414,12 @@ def parse_sheet(ws, sheet_name, layout_info, divisi, divisi_dir):
 
 
 def main():
+    global XLSX, OUT_ROOT
+    from extract_io import display_path, parse_workbook_args
+
+    args = parse_workbook_args({".xlsx"}, OUT_ROOT)
+    XLSX = str(Path(args.input))
+    OUT_ROOT = Path(args.output)
     print(f"Loading {XLSX}")
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
 
@@ -454,7 +460,7 @@ def main():
 
         total_items += len(items)
         total_files += 1
-        print(f"  → {len(items)} items → {out_file.relative_to(Path(__file__).parent.parent)}")
+        print(f"  → {len(items)} items → {display_path(out_file)}")
 
     print(f"\nDone: {total_items} items across {total_files} files.")
 

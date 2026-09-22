@@ -5,6 +5,7 @@ import type {
   VolumeState,
   FaktorKonversiEntry,
 } from '../types/index.js';
+import { volume as cubicMetres } from '../types/domain.js';
 import { convertVolume } from './konversi-volume.js';
 
 export interface SubAhspResolvedComponent {
@@ -100,7 +101,7 @@ function applySubVolumeConversion(
   }
 
   const result = convertVolume(
-    1.0,
+    cubicMetres(1),
     fk,
     sub.volume_state as VolumeState,
     parentItem.volume_state_bayar,

@@ -13,23 +13,23 @@ this execution queue.
 
 | Plan | Title | Priority | Effort | Depends on | Status |
 |---|---|---:|---:|---|---|
-| [001](001-validate-runtime-variables.md) | Reject invalid runtime variables | P1 | M | — | TODO |
-| [002](002-honor-declared-productivity-inputs.md) | Honor declared productivity inputs | P1 | S | 001 | TODO |
-| [003](003-enforce-productivity-unit-compatibility.md) | Enforce productivity/payment-unit compatibility | P1 | M | 001 | TODO |
-| [004](004-model-empty-priced-bm-items.md) | Model 28 empty priced BM-2022 items | P1 | M | 001 | TODO |
-| [005](005-make-bundle-validation-fail-closed.md) | Make cross-bundle validation fail closed | P1 | S | — | TODO |
-| [006](006-fix-cli-validation-boundary.md) | Perform real installed-package CLI validation | P1 | M | 005 | TODO |
-| [007](007-establish-independent-golden-oracles.md) | Establish independent golden oracles | P1 | M | — | TODO |
-| [009](009-cover-all-workspaces-with-static-checks.md) | Cover every TS workspace with static checks | P2 | S | — | TODO |
-| [010](010-expose-sub-ahsp-costs.md) | Expose and reconcile sub-AHSP costs | P2 | M | 007 | TODO |
-| [011](011-unify-cli-bundle-registry.md) | Unify CLI bundle strategies | P2 | M | 006, 010 | TODO |
-| [008](008-close-cipta-karya-data-discrepancies.md) | Close Cipta Karya discrepancy allowances | P2 | L | 007 | TODO |
-| [013](013-make-extraction-reproducible.md) | Make extraction reproducible | P2 | M | — | TODO |
-| [014](014-consolidate-calculator-pipelines.md) | Consolidate result assembly | P3 | M | 007, 010 | TODO |
-| [015](015-decouple-productivity-dispatch.md) | Decouple productivity dispatch from equipment codes | P3 | M | 003, 014 | TODO |
-| [016](016-apply-branded-units.md) | Apply branded units at public boundaries | P3 | L | 014 | TODO |
-| [017](017-preindex-calculation-lookups.md) | Pre-index stable lookups | P3 | S | 014, 015, 016 | TODO |
-| [012](012-add-safe-npm-release-gate.md) | Add a safe npm release gate | P1 | M | 001–011, 014, 016 | TODO |
+| [001](001-validate-runtime-variables.md) | Reject invalid runtime variables | P1 | M | — | DONE |
+| [002](002-honor-declared-productivity-inputs.md) | Honor declared productivity inputs | P1 | S | 001 | DONE |
+| [003](003-enforce-productivity-unit-compatibility.md) | Enforce productivity/payment-unit compatibility | P1 | M | 001 | DONE |
+| [004](004-model-empty-priced-bm-items.md) | Model 28 empty priced BM-2022 items | P1 | M | 001 | DONE |
+| [005](005-make-bundle-validation-fail-closed.md) | Make cross-bundle validation fail closed | P1 | S | — | DONE |
+| [006](006-fix-cli-validation-boundary.md) | Perform real installed-package CLI validation | P1 | M | 005 | DONE |
+| [007](007-establish-independent-golden-oracles.md) | Establish independent golden oracles | P1 | M | — | DONE |
+| [009](009-cover-all-workspaces-with-static-checks.md) | Cover every TS workspace with static checks | P2 | S | — | DONE |
+| [010](010-expose-sub-ahsp-costs.md) | Expose and reconcile sub-AHSP costs | P2 | M | 007 | DONE |
+| [011](011-unify-cli-bundle-registry.md) | Unify CLI bundle strategies | P2 | M | 006, 010 | DONE |
+| [008](008-close-cipta-karya-data-discrepancies.md) | Close Cipta Karya discrepancy allowances | P2 | L | 007 | BLOCKED: SE Bina Konstruksi 68/2024 workbook is not in the repo |
+| [013](013-make-extraction-reproducible.md) | Make extraction reproducible | P2 | M | — | DONE |
+| [014](014-consolidate-calculator-pipelines.md) | Consolidate result assembly | P3 | M | 007, 010 | DONE |
+| [015](015-decouple-productivity-dispatch.md) | Decouple productivity dispatch from equipment codes | P3 | M | 003, 014 | DONE |
+| [016](016-apply-branded-units.md) | Apply branded units at public boundaries | P3 | L | 014 | DONE |
+| [017](017-preindex-calculation-lookups.md) | Pre-index stable lookups | P3 | S | 014, 015, 016 | DONE |
+| [012](012-add-safe-npm-release-gate.md) | Add a safe npm release gate | P1 | M | 001–011, 014, 016 | BLOCKED: 008 workbook is missing and the first-release version/package list is not approved |
 
 Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 `REJECTED: <reason>`.

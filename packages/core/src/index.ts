@@ -1,6 +1,7 @@
 export type {
   IDR,
   Percentage,
+  PercentagePoints,
   Volume,
   VolumeState,
   AhsMeta,
@@ -11,6 +12,7 @@ export type {
   BahanMaster,
   BahanMasterBundle,
   TipeProduksi,
+  ProductivityModel,
   KondisiOperasi,
   PelumasEntry,
   PelumasParams,
@@ -53,12 +55,17 @@ export type {
   ValidationReport,
 } from './types/index.js';
 
-export { idr, percentage, volume } from './types/index.js';
+export { idr, percentage, percentagePoints, volume } from './types/index.js';
+
+export { brandHsdRegional } from './calculator/brand-hsd.js';
+export type { HsdPriceInput } from './calculator/brand-hsd.js';
 
 export { createCalculator } from './calculator/hsp.js';
 export type { Calculator } from './calculator/hsp.js';
 
 export { validateBundle } from './validator/validate-bundle.js';
+export { validatePackageData } from './validator/validate-package-data.js';
+export type { PackageDataMode, PackageDataFileResult, PackageDataReport } from './validator/validate-package-data.js';
 
 export { hitungHsdPeralatan, hitungHsdPeralatanSewa, hitungHsdPeralatanAny } from './calculator/hsd-peralatan.js';
 export type {

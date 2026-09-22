@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { createCalculator, type HsdRegional } from '@ahs-id/core';
+import { brandHsdRegional, createCalculator } from '@ahs-id/core';
 import { bundle } from '../index.js';
 import hsdData from '../../../hsd-bm-2022/data/hsd.json' with { type: 'json' };
 
-const hsd = hsdData as unknown as HsdRegional;
+const hsd = brandHsdRegional(hsdData);
 
 describe('bina-marga-2022 createCalculator uses Permen sewa rates', () => {
   const calc = createCalculator(bundle, hsd);

@@ -22,7 +22,7 @@ try:
 except ImportError:
     sys.exit("pip install openpyxl")
 
-XLSX = "/root/.claude/uploads/64129fc8-b021-484f-b751-749ea0ddfb00/ed24cada-AHSP_CIPTA_KARYA_SE_BINA_KONSTRUKSI_NO_68_TAHUN_2024.xlsx"
+XLSX = ""
 OUT = Path(__file__).parent.parent / "packages" / "cipta-karya-2024" / "data" / "hsd-acuan.json"
 
 SUMBER = "SE Bina Konstruksi No. 68/SE/Dk/2024"
@@ -143,6 +143,12 @@ def extract(ws):
 
 
 def main():
+    global XLSX, OUT
+    from extract_io import display_path, parse_workbook_args
+
+    args = parse_workbook_args({".xlsx"}, OUT)
+    XLSX = str(Path(args.input))
+    OUT = Path(args.output)
     print(f"Loading {XLSX}")
     import openpyxl
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
@@ -167,7 +173,7 @@ def main():
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"\nWritten: {OUT.relative_to(Path(__file__).parent.parent)}")
+    print(f"\nWritten: {display_path(OUT)}")
 
 
 if __name__ == "__main__":

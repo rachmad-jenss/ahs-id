@@ -1,12 +1,11 @@
 import type {
   AhspItem,
-  AhspComponent,
-  AhspGroup,
   HSPResult,
   AuditEntry,
   HsdRegional,
 } from '../types/index.js';
-import { hitungMargin } from './margin.js';
+import { assembleHspResult, type PricedComponent, type PricedGroup } from './assemble-result.js';
+import { brandHsdRegional } from './brand-hsd.js';
 
 /**
  * Calculate HSP for items that carry pre-computed koef_referensi
@@ -20,6 +19,9 @@ import { hitungMargin } from './margin.js';
  *
  * Best for regulation bundles where coefficients are pre-calculated
  * and stored in koef_referensi (e.g. Permen PUPR 1/2022).
+ *
+ * @deprecated Prefer `createCalculator` for bundles that expose a `DataBundle`.
+ * This entry point remains for callers that already hold a precomputed item.
  */
 export function calcHspFromBundle(
   item: AhspItem,
@@ -27,54 +29,48 @@ export function calcHspFromBundle(
   alatPrices: Map<string, number>,
   opts?: { overhead_pct?: number; profit_pct?: number },
 ): HSPResult {
+  const pricedHsd = brandHsdRegional(hsd);
   const audit: AuditEntry[] = [];
   const warnings: string[] = [];
 
-  const tkComponents = calcTk(item, hsd, audit);
-  const bahanComponents = calcBahan(item, hsd, audit);
+  const tkComponents = calcTk(item, pricedHsd, audit);
+  const bahanComponents = calcBahan(item, pricedHsd, audit);
   const alatComponents = calcAlat(item, alatPrices, audit);
 
-  const tkGroup: AhspGroup = {
+  const tkGroup: PricedGroup = {
     type: 'L', title: 'Tenaga Kerja',
     components: tkComponents,
     total: tkComponents.reduce((s, c) => s + c.total_price, 0),
   };
-  const bahanGroup: AhspGroup = {
+  const bahanGroup: PricedGroup = {
     type: 'M', title: 'Bahan',
     components: bahanComponents,
     total: bahanComponents.reduce((s, c) => s + c.total_price, 0),
   };
-  const alatGroup: AhspGroup = {
+  const alatGroup: PricedGroup = {
     type: 'E', title: 'Peralatan',
     components: alatComponents,
     total: alatComponents.reduce((s, c) => s + c.total_price, 0),
   };
 
-  const baseTotal = tkGroup.total + bahanGroup.total + alatGroup.total;
-
   const overheadPct = opts?.overhead_pct ?? item.margin.overhead_pct.default;
   const profitPct = opts?.profit_pct ?? item.margin.profit_pct.default;
-
-  const marginResult = hitungMargin(baseTotal, { overhead_pct: overheadPct, profit_pct: profitPct }, item.is_lump_sum);
-  audit.push(...marginResult.audit);
-
-  return {
+  return assembleHspResult({
     kode_ahsp: item.kode_ahsp,
     nama: item.nama,
     satuan_bayar: item.satuan_bayar,
     groups: [tkGroup, bahanGroup, alatGroup],
     subAhsp: [],
-    baseTotal,
+    nestedTotal: 0,
     overheadPct,
     profitPct,
-    overheadProfitValue: marginResult.overhead_profit_total,
-    grandTotal: marginResult.grand_total,
+    isLumpSum: item.is_lump_sum,
     warnings,
-    audit_trail: audit,
-  };
+    audit,
+  });
 }
 
-function calcTk(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): AhspComponent[] {
+function calcTk(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
     const hsdEntry = hsd.tenaga_kerja.find((h) => h.ref === tk.ref);
     if (!hsdEntry) {
@@ -94,7 +90,7 @@ function calcTk(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): AhspComp
   });
 }
 
-function calcBahan(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): AhspComponent[] {
+function calcBahan(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): PricedComponent[] {
   return item.bahan.map((bahan) => {
     const hsdEntry = hsd.bahan.find((h) => h.ref === bahan.ref);
     if (!hsdEntry) {
@@ -119,7 +115,7 @@ function calcAlat(
   item: AhspItem,
   alatPrices: Map<string, number>,
   audit: AuditEntry[],
-): AhspComponent[] {
+): PricedComponent[] {
   return item.peralatan.map((entry) => {
     if (entry.koef_referensi == null) {
       throw new Error(`${entry.ref}: koef_referensi is required for precomputed peralatan`);

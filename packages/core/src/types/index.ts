@@ -1,5 +1,7 @@
-export type { IDR, Percentage, Volume } from './domain.js';
-export { idr, percentage, volume } from './domain.js';
+import type { IDR, PercentagePoints } from './domain.js';
+
+export type { IDR, Percentage, PercentagePoints, Volume } from './domain.js';
+export { idr, percentage, percentagePoints, volume } from './domain.js';
 
 // ============================================================
 // Volume State
@@ -77,6 +79,15 @@ export interface BahanMasterBundle {
 // ============================================================
 
 export type TipeProduksi = 'siklus' | 'lintasan' | 'throughput';
+
+export type ProductivityModel =
+  | 'excavator-cycle'
+  | 'dump-truck-cycle'
+  | 'wheel-loader-cycle'
+  | 'water-tanker-cycle'
+  | 'vibro-roller-pass'
+  | 'motor-grader-pass'
+  | 'throughput';
 export type KondisiOperasi = 'normal' | 'berat' | 'sangat_berat';
 
 export interface PelumasEntry {
@@ -125,6 +136,7 @@ export interface PeralatanMaster {
   readonly daya_hp: number;
   readonly berat_operasi_ton: number;
   readonly tipe_produksi: TipeProduksi;
+  readonly model_produktivitas?: ProductivityModel;
   readonly kapasitas_bucket_m3?: number;
   readonly kapasitas_ton?: number;
   readonly kapasitas_m3?: number;
@@ -334,7 +346,7 @@ export interface HsdRegionInfo {
 
 export interface HsdTenagaKerjaEntry {
   readonly ref: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: 'OH';
   readonly sumber_data: string;
 }
@@ -342,7 +354,7 @@ export interface HsdTenagaKerjaEntry {
 export interface HsdBahanEntry {
   readonly ref: string;
   readonly nama: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: string;
   readonly sumber_data: string;
 }
@@ -350,16 +362,16 @@ export interface HsdBahanEntry {
 export interface HsdPeralatanSewaEntry {
   readonly ref: string;
   readonly nama: string;
-  readonly harga_rp: number;
+  readonly harga_rp: IDR;
   readonly satuan: 'jam';
   readonly sumber_data: string;
 }
 
 export interface HsdBahanBakar {
-  readonly solar_industri_rp_per_liter: number;
-  readonly oli_mesin_rp_per_liter: number;
-  readonly oli_hidrolik_rp_per_liter: number;
-  readonly grease_rp_per_kg: number;
+  readonly solar_industri_rp_per_liter: IDR;
+  readonly oli_mesin_rp_per_liter: IDR;
+  readonly oli_hidrolik_rp_per_liter: IDR;
+  readonly grease_rp_per_kg: IDR;
 }
 
 export interface HsdRegional {
@@ -381,8 +393,8 @@ export interface AhspComponent {
   readonly nama: string;
   readonly satuan: string;
   readonly coefficient: number;
-  readonly unit_price: number;
-  readonly total_price: number;
+  readonly unit_price: IDR;
+  readonly total_price: IDR;
   readonly fallback_level?: number;
 }
 
@@ -390,17 +402,17 @@ export interface AhspGroup {
   readonly type: 'M' | 'L' | 'E';
   readonly title: string;
   readonly components: readonly AhspComponent[];
-  readonly total: number;
+  readonly total: IDR;
 }
 
 export interface AhspCalculation {
   readonly groups: readonly AhspGroup[];
   readonly subAhsp: readonly SubAhspLine[];
-  readonly baseTotal: number;
-  readonly overheadPct: number;
-  readonly profitPct: number;
-  readonly overheadProfitValue: number;
-  readonly grandTotal: number;
+  readonly baseTotal: IDR;
+  readonly overheadPct: PercentagePoints;
+  readonly profitPct: PercentagePoints;
+  readonly overheadProfitValue: IDR;
+  readonly grandTotal: IDR;
   readonly warnings: readonly string[];
   readonly audit_trail: readonly AuditEntry[];
 }
@@ -409,8 +421,8 @@ export interface SubAhspLine {
   readonly ref_ahsp: string;
   readonly nama: string;
   readonly koefisien: number;
-  readonly unit_price: number;
-  readonly total_price: number;
+  readonly unit_price: IDR;
+  readonly total_price: IDR;
 }
 
 export interface HSPResult extends AhspCalculation {

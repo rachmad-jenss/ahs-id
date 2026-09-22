@@ -99,11 +99,11 @@ mark this plan `REJECTED: measured gain below 20%` and revert its code changes.
 
 ## Done criteria
 
-- [ ] Repeated target `.find()` calls and per-item set construction are removed.
-- [ ] Duplicate behavior is explicit.
-- [ ] Numeric outputs are unchanged.
-- [ ] Measured batch improvement is recorded; full gates pass.
-- [ ] `plans/README.md` status row is updated.
+- [x] Repeated target `.find()` calls and per-item set construction are removed.
+- [x] Duplicate behavior is explicit.
+- [x] Numeric outputs are unchanged.
+- [x] Measured batch improvement is recorded; full gates pass.
+- [x] `plans/README.md` status row is updated.
 
 ## STOP conditions
 

@@ -36,6 +36,18 @@ describe('resolveHsdName', () => {
   it('rejects an unknown bundle', () => {
     expect(() => resolveHsdName('not-a-bundle', undefined)).toThrow('Unknown bundle');
   });
+
+  it('defaults bina-marga-2016 to Kalimantan Timur', () => {
+    expect(resolveHsdName('bina-marga-2016', undefined)).toBe('hsd-kaltim-2025');
+  });
+
+  it('rejects an HSD that belongs to another bundle', () => {
+    expect(() => resolveHsdName('pupr-2023', 'hsd-bm-2022')).toThrow('not compatible');
+  });
+
+  it('rejects HSD selection for Cipta Karya', () => {
+    expect(() => resolveHsdName('cipta-karya-2024', undefined)).toThrow('does not use an HSD');
+  });
 });
 
 describe('formatIdr', () => {

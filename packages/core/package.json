@@ -12,7 +12,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "schemas"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
@@ -22,6 +23,7 @@
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
+    "ajv": "^8.20.0",
     "exceljs": "^4.4.0"
   },
   "devDependencies": {

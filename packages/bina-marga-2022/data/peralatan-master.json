@@ -4,6 +4,7 @@
   "items": [
     {
       "kode": "E.01",
+      "model_produktivitas": "excavator-cycle",
       "nama": "ASPHALT MIXING PLANT",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -305,6 +306,7 @@
     },
     {
       "kode": "E.08",
+      "model_produktivitas": "dump-truck-cycle",
       "nama": "DUMP TRUCK 4 TON (2-3 M3)",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -434,6 +436,7 @@
     },
     {
       "kode": "E.11",
+      "model_produktivitas": "wheel-loader-cycle",
       "nama": "FLAT BED TRUCK 3-4 TON",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -778,6 +781,7 @@
     },
     {
       "kode": "E.19",
+      "model_produktivitas": "motor-grader-pass",
       "nama": "VIBRATORY ROLLER 5-8 T.",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -907,6 +911,7 @@
     },
     {
       "kode": "E.22",
+      "model_produktivitas": "vibro-roller-pass",
       "nama": "WATER PUMP 70-100 mm",
       "tipe_default": "standard",
       "daya_hp": 100,
@@ -1036,6 +1041,7 @@
     },
     {
       "kode": "E.25",
+      "model_produktivitas": "water-tanker-cycle",
       "nama": "TAMPER",
       "tipe_default": "standard",
       "daya_hp": 100,

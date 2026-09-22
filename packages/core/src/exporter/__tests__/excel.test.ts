@@ -1,6 +1,6 @@
 import ExcelJS from 'exceljs';
 import { describe, it, expect } from 'vitest';
-import type { HSPResult } from '../../types/index.js';
+import { idr, percentagePoints, type HSPResult } from '../../types/index.js';
 import { exportHspToExcelBuffer } from '../excel.js';
 
 /** Representative HSP snapshot (3.2.1-style breakdown) — avoids workspace bundle deps in @ahs-id/core tests. */
@@ -23,7 +23,7 @@ function mockHspResult(): HSPResult {
       {
         type: 'L',
         title: 'Tenaga Kerja',
-        total: tkTotal,
+        total: idr(tkTotal),
         components: [
           {
             ref: 'L.01',
@@ -31,15 +31,15 @@ function mockHspResult(): HSPResult {
             nama: 'Pekerja',
             satuan: 'OH',
             coefficient: 0.065,
-            unit_price: 135_000,
-            total_price: 0.065 * 135_000,
+            unit_price: idr(135_000),
+            total_price: idr(0.065 * 135_000),
           },
         ],
       },
       {
         type: 'M',
         title: 'Bahan',
-        total: bahanTotal,
+        total: idr(bahanTotal),
         components: [
           {
             ref: 'M.09.a',
@@ -47,15 +47,15 @@ function mockHspResult(): HSPResult {
             nama: 'Agregat Kelas A',
             satuan: 'm3',
             coefficient: 1.025,
-            unit_price: 425_000,
-            total_price: bahanTotal,
+            unit_price: idr(425_000),
+            total_price: idr(bahanTotal),
           },
         ],
       },
       {
         type: 'E',
         title: 'Peralatan',
-        total: peralatanTotal,
+        total: idr(peralatanTotal),
         components: [
           {
             ref: 'E.11',
@@ -63,17 +63,17 @@ function mockHspResult(): HSPResult {
             nama: 'Wheel Loader',
             satuan: 'jam',
             coefficient: 0.5,
-            unit_price: 900_000,
-            total_price: peralatanTotal,
+            unit_price: idr(900_000),
+            total_price: idr(peralatanTotal),
           },
         ],
       },
     ],
-    baseTotal,
-    overheadPct,
-    profitPct,
-    overheadProfitValue,
-    grandTotal,
+    baseTotal: idr(baseTotal),
+    overheadPct: percentagePoints(overheadPct),
+    profitPct: percentagePoints(profitPct),
+    overheadProfitValue: idr(overheadProfitValue),
+    grandTotal: idr(grandTotal),
     warnings: [],
     audit_trail: [],
   };
@@ -141,12 +141,12 @@ describe('exportHspToExcelBuffer', () => {
         ref_ahsp: '1.1.1',
         nama: 'Pekerjaan pendukung',
         koefisien: 0.5,
-        unit_price: 1000,
-        total_price: nested,
+        unit_price: idr(1000),
+        total_price: idr(nested),
       }],
-      baseTotal,
-      grandTotal: baseTotal * 1.15,
-      overheadProfitValue: baseTotal * 0.15,
+      baseTotal: idr(baseTotal),
+      grandTotal: idr(baseTotal * 1.15),
+      overheadProfitValue: idr(baseTotal * 0.15),
     };
     const buffer = await exportHspToExcelBuffer(result);
     const sheet = await loadWorksheet(buffer);
