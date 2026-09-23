@@ -49,11 +49,14 @@ writeFileSync('hsp-3.2.1.xlsx', buffer);
 
 ## Available Packages
 
-### Calculation Engine
+### Calculation Engine & CLI
 
 | Package | Description |
 |---------|-------------|
 | `@ahs-id/core` | Calculator engine, validator, TypeScript types |
+| `@ahs-id/cli` | `ahs-id` CLI — `calc-hsp`, `export-rab`, `validate` |
+
+All packages above are published on [npm](https://www.npmjs.com/org/ahs-id) under the `@ahs-id` scope.
 
 ### AHSP Bundles
 
@@ -115,14 +118,24 @@ docs/                      ← Architecture spec, legal notes
 
 ## CLI
 
-From a checkout, after `pnpm install` and `pnpm --filter @ahs-id/cli build`:
+Install globally or run once with `npx`:
 
 ```bash
-pnpm --filter @ahs-id/cli exec ahs-id calc-hsp 3.2.1 --bundle pupr-2023 --hsd hsd-jabar-2025 --variable jarak_quarry_km=25 --variable kondisi_jalan=sedang --variable faktor_efisiensi=0.83
-pnpm --filter @ahs-id/cli exec ahs-id calc-hsp "3.1.(1)" --bundle bina-marga-2022
+npm install -g @ahs-id/cli
+# or: npx @ahs-id/cli --version
 ```
 
-`pupr-2023` defaults to `hsd-kaltim-2025`. `bina-marga-2022` defaults to `hsd-bm-2022` and prices equipment from those Permen hourly rates. `@ahs-id/cli` is not published to npm yet.
+```bash
+ahs-id calc-hsp 3.1.1 --bundle bina-marga-2016 --json
+ahs-id calc-hsp 3.2.1 --bundle pupr-2023 --hsd hsd-jabar-2025 \
+  --variable jarak_quarry_km=25 --variable kondisi_jalan=sedang --variable faktor_efisiensi=0.83
+ahs-id export-rab 3.1.1 --bundle bina-marga-2016 --output rab.xlsx
+ahs-id calc-hsp "3.1.(1)" --bundle bina-marga-2022
+```
+
+`pupr-2023` defaults to `hsd-kaltim-2025`. `bina-marga-2022` defaults to `hsd-bm-2022` and prices equipment from those Permen hourly rates. `cipta-karya-2024` does not take an `--hsd` flag.
+
+**Monorepo contributors:** after `pnpm install`, use `pnpm --filter @ahs-id/cli exec ahs-id …` without publishing.
 
 ## Documentation
 

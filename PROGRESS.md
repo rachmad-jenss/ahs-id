@@ -1,7 +1,7 @@
 # AHS-ID — Phase 2 Progress
 
 > Public checklist for **Phase 2: Functional Library — "Usable by Others"**.  
-> Last updated: 2026-09-22 (DAS-27: Bina Marga 2022 sewa rates, CLI `--hsd`).
+> Last updated: 2026-09-23 (DAS-8: npm publish live on `@ahs-id/*`; README quick start).
 
 **Exit criteria:** External developer can `npm install`, calculate HSP for any Bina Marga item (PUPR path), and export to Excel.
 
@@ -34,7 +34,7 @@ Epic: [DAS-2](https://github.com/rachmad-jenss/ahs-id/issues/2) — CI, validati
 | DAS-13 | File-based golden fixtures with numeric lock | ✅ Done |
 | DAS-14 | `PROGRESS.md` + local `AGENTS.md` sync | ✅ Done |
 
-## Phase 2 exit — CLI, Excel, npm (remaining)
+## Phase 2 exit — CLI, Excel, npm ✅
 
 Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 
@@ -44,7 +44,7 @@ Epic: [DAS-1](https://github.com/rachmad-jenss/ahs-id/issues/1).
 | DAS-5 | Scaffold `apps/cli` — `calc-hsp` | ✅ Done |
 | DAS-6 | CLI `export-rab` | ✅ Done |
 | DAS-7 | CLI `validate` for bundles | ✅ Done |
-| DAS-8 | npm publish workflow & package metadata | 🔨 Release gate ready (`verify`, `pack-smoke`, workflow); publish pending operator approval |
+| DAS-8 | npm publish workflow & package metadata | ✅ Done — release gate #34; first publish [workflow run](https://github.com/rachmad-jenss/ahs-id/actions/runs/35719103687) (10 packages on [npm](https://www.npmjs.com/org/ahs-id)) |
 | DAS-9 | Changesets & CHANGELOG | ✅ Done |
 
 **Optional (post-exit):** Bina Marga divisi 1–7+ expansion; unify `bina-marga-2022` calculation path with regional HSD bundles.
@@ -81,5 +81,7 @@ Golden tolerance: ε = 0.01 Rp.
 | `@ahs-id/hsd-jabar-2025` | HSD Jawa Barat Q1 2025 |
 | `@ahs-id/hsd-kaltim-2025` | HSD Kalimantan Timur Q1 2025 |
 | `@ahs-id/hsd-papua-2025` | HSD Papua Q1 2025 |
+| `@ahs-id/hsd-bm-2022` | Permen PUPR 1/2022 embedded HSD (Bina Marga 2022) |
+| `@ahs-id/cli` | `ahs-id` CLI (`calc-hsp`, `export-rab`, `validate`) |
 
-`apps/cli/` — `calc-hsp`, `export-rab`, `validate`. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates. npm publish is still DAS-8.
+All rows above are published to npm. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates in the CLI default path.
