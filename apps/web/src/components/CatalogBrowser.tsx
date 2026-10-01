@@ -32,8 +32,8 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   }, []);
 
   useEffect(() => {
-    /** Restore applied and draft catalog state after browser history navigation. */
-    function syncFromLocation(): void {
+    /** Restore applied and draft catalog state after browser navigation or island hydration. */
+    function syncFromLocation(shouldFocus = true): void {
       const params = parseCatalogSearchParams(new URLSearchParams(window.location.search));
       setQuery(params.q ?? '');
       setDraftQuery(params.q ?? '');
@@ -41,12 +41,16 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       setBidang(params.bidang ?? '');
       setUnit(params.unit ?? '');
       setPage(params.page ?? 1);
-      focusResults();
+      if (shouldFocus) focusResults();
     }
 
-    window.addEventListener('popstate', syncFromLocation);
-    return () => window.removeEventListener('popstate', syncFromLocation);
-  }, [focusResults]);
+    const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
+    if (catalogUrl(currentParams) !== catalogUrl(initialParams)) syncFromLocation(false);
+    document.querySelector<HTMLElement>('[data-catalog-browser]')?.removeAttribute('data-catalog-url-pending');
+    const handlePopState = (): void => syncFromLocation();
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [focusResults, initialParams]);
 
   const bidangOptions = useMemo(
     () => [...new Set(entries.map((entry) => entry.bidang))].sort(),
@@ -187,7 +191,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   );
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[15rem_1fr]">
+    <div className="grid gap-8 lg:grid-cols-[15rem_1fr]" data-catalog-browser>
       <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold">Saring katalog</p>

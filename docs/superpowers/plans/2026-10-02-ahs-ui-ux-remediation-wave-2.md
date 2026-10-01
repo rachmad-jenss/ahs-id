@@ -10,6 +10,8 @@
 
 **Spec:** GitHub issue [DAS-42](https://github.com/rachmad-jenss/ahs-id/issues/42) and the read-only audit recorded in the task conversation.
 
+> Follow-up F28 is tracked separately in [DAS-44](https://github.com/rachmad-jenss/ahs-id/issues/44) because it was discovered during post-merge public smoke testing.
+
 ## Global Constraints
 
 - Preserve existing calculation, bundle JSON, pricing, route, and deployment contracts.
@@ -53,10 +55,11 @@
 | F25 | Mobile menu disclosure animates `max-height`, causing unnecessary layout work. | Keep the bounded absolute panel at a fixed max height and animate visibility/opacity/transform only; source contract/browser check. |
 | F26 | Reduced-motion CSS globally collapses all transition durations instead of preserving useful non-motion feedback. | Retain animation cancellation but preserve short color/opacity transitions and remove transform movement for reduced-motion users; source contract/browser check. |
 | F27 | Search fields do not expose a stable form name/autocomplete policy. | Add `name="q"` and an intentional autocomplete value to catalog/launcher search fields; source contract/browser check. |
+| F28 | A direct catalog deep link keeps `?q=` in the URL but hydrates the React island with the unfiltered static state. | Cloak only parameterized catalog markup before hydration, reconcile the browser URL with Astro-provided params, then remove the cloak; add source contracts and repeat direct production URL QA. |
 
 ## Review Focus
 
-- A user types without submitting, presses browser Back/Forward, clears a query, or lands on a URL with `q`; the visible result list, URL, status announcement, and focus target must agree.
+- A user types without submitting, presses browser Back/Forward, clears a query, or lands directly on a URL with `q`; the visible result list, URL, status announcement, and focus target must agree.
 - A machine consumer requests JSON for list, missing-code, and calculation errors; stdout/stderr must remain parseable and exit status must remain nonzero on failure.
 - A user exports twice to the same path; the first file must remain intact unless `--force` is explicit.
 - A 320–900px touch viewport opens filters/menu and scrolls a wide table; controls must be reachable, visibly pressed, discoverable, and semantically described.

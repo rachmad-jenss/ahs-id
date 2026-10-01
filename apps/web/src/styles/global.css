@@ -53,6 +53,10 @@ html {
   text-size-adjust: 100%;
 }
 
+[data-catalog-browser][data-catalog-url-pending] {
+  visibility: hidden;
+}
+
 body {
   min-width: 320px;
   background: var(--background);
