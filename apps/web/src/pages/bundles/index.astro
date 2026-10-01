@@ -9,7 +9,7 @@ const catalog = buildCatalog();
 ---
 
 <SiteLayout title="Bundle data — AHS-ID" description="Daftar bundle data AHSP yang menjadi sumber katalog AHS-ID.">
-  <section class="border-b border-border/80 bg-card/45"><div class="mx-auto max-w-7xl px-5 pb-14 pt-16 lg:px-8 lg:pb-20 lg:pt-24"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Data sources</p><h1 class="mt-4 max-w-4xl font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Bundle yang membentuk katalog.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">Setiap bundle membawa metadata regulasi, versi, bidang, dan jumlah item sumber. Buka item di katalog untuk melihat struktur dan provenance per baris.</p></div></section>
+  <section class="border-b border-border/80 bg-card/45"><div class="mx-auto max-w-7xl px-5 pb-14 pt-16 lg:px-8 lg:pb-20 lg:pt-24"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Sumber data</p><h1 class="mt-4 max-w-4xl font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Bundle yang membentuk katalog.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">Setiap bundle membawa metadata regulasi, versi, bidang, dan jumlah item sumber. Buka item di katalog untuk melihat struktur dan provenance per baris.</p></div></section>
   <section class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
     <div class="grid gap-5 lg:grid-cols-2">
       {catalog.bundles.map((bundle, index) => (
@@ -19,7 +19,7 @@ const catalog = buildCatalog();
           <h2 class="mt-5 font-serif text-3xl">{bundle.name}</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">{bundle.source}</p>
           <dl class="mt-8 grid grid-cols-2 gap-4 border-t border-border/80 pt-5 text-sm"><div><dt class="text-muted-foreground">Item publik</dt><dd class="mt-1 font-mono text-xl">{bundle.publicItemCount.toLocaleString('id-ID')}</dd></div><div><dt class="text-muted-foreground">Item sumber</dt><dd class="mt-1 font-mono text-xl">{bundle.sourceItemCount.toLocaleString('id-ID')}</dd></div></dl>
           <div class="mt-6 flex flex-wrap gap-2">{bundle.bidang.map((field) => <Badge variant="muted">{field}</Badge>)}</div>
-          <a class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary" href={catalogUrl({ bundle: bundle.id })}>Jelajahi bundle <ArrowRight aria-hidden="true" className="h-4 w-4 transition-transform group-hover-fine-arrow" /></a>
+          <a class="pressable mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary" href={catalogUrl({ bundle: bundle.id })}>Jelajahi bundle <ArrowRight aria-hidden="true" className="h-4 w-4 transition-[transform,color] duration-200 ease-out group-hover-fine-arrow" /></a>
         </article>
       ))}
     </div>

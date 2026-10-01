@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import { calculateHsp, formatIdr, listAvailableBundles, listAvailableHsd, parseKeyValue } from '../utils/loader.js';
 
+/** Wrap a terminal description into lines no wider than the requested column. */
 export function wrapTerminalText(value: string, width: number): string[] {
   const words = value.trim().split(/\s+/).filter(Boolean);
   if (words.length === 0) return [''];
@@ -33,10 +34,63 @@ export function wrapTerminalText(value: string, width: number): string[] {
   return lines;
 }
 
+/** Mark a wrapped terminal line as a continuation of the previous component. */
 export function formatTerminalContinuation(value: string): string {
   return `  ↳ ${value}`;
 }
 
+export interface TerminalLayout {
+  readonly descriptionWidth: number;
+  readonly separatorWidth: number;
+  readonly compact: boolean;
+}
+
+/** Select readable table or stacked output dimensions for the current terminal. */
+export function getTerminalLayout(terminalWidth = process.stdout.columns ?? 80): TerminalLayout {
+  const width = Number.isFinite(terminalWidth) ? Math.max(40, Math.floor(terminalWidth)) : 80;
+  return {
+    descriptionWidth: Math.max(20, Math.min(38, width - 52)),
+    separatorWidth: Math.max(48, Math.min(72, width)),
+    compact: width < 76,
+  };
+}
+
+export interface TerminalComponentRow {
+  readonly nama?: string;
+  readonly ref: string;
+  readonly satuan: string;
+  readonly coefficient: number;
+  readonly unit_price: number;
+  readonly total_price: number;
+}
+
+/** Format one calculation component for either table or compact terminal output. */
+export function formatTerminalComponentLines(component: TerminalComponentRow, layout: TerminalLayout): string[] {
+  const wrappedLines = wrapTerminalText(component.nama || component.ref, layout.descriptionWidth);
+  if (layout.compact) {
+    return [
+      ...wrappedLines.map((line, index) => index === 0 ? `  ${line}` : formatTerminalContinuation(line)),
+      `    Satuan: ${component.satuan}`,
+      `    Koefisien: ${component.coefficient}`,
+      `    Harga satuan: ${formatIdr(component.unit_price)}`,
+      `    Jumlah: ${formatIdr(component.total_price)}`,
+    ];
+  }
+
+  const firstLine = wrappedLines[0] ?? '';
+  return [
+    `  ${firstLine.padEnd(layout.descriptionWidth)} ${component.satuan.padEnd(8)} ${String(component.coefficient).padEnd(12)} ${formatIdr(component.unit_price).padStart(12)} ${formatIdr(component.total_price).padStart(14)}`,
+    ...wrappedLines.slice(1).map(formatTerminalContinuation),
+  ];
+}
+
+/** Emit a user-facing calculation error while preserving the selected output contract. */
+function emitCommandError(message: string, json: boolean): void {
+  console.error(json ? JSON.stringify({ error: message }) : `Error: ${message}`);
+  process.exitCode = 1;
+}
+
+/** Build the Commander command for AHSP calculation and bundle discovery. */
 export function calcHspCommand(): Command {
   const cmd = new Command('calc-hsp')
     .description('Calculate HSP (Harga Satuan Pekerjaan) for an AHSP item')
@@ -48,20 +102,25 @@ export function calcHspCommand(): Command {
     .option('--list-bundles', 'List available regulation bundles')
     .action(async (kodeAhsp: string | undefined, options: { bundle: string; hsd?: string; json: boolean; variable?: string[]; listBundles?: boolean }) => {
       if (options.listBundles) {
-        console.log('Available bundles:');
-        for (const name of listAvailableBundles()) {
+        const bundles = listAvailableBundles();
+        const hsd = listAvailableHsd();
+        if (options.json) {
+          console.log(JSON.stringify({ bundles, hsd }, null, 2));
+          return;
+        }
+        console.log('Bundle tersedia:');
+        for (const name of bundles) {
           console.log(`  ${name}`);
         }
-        console.log('Available HSD:');
-        for (const name of listAvailableHsd()) {
+        console.log('HSD tersedia:');
+        for (const name of hsd) {
           console.log(`  ${name}`);
         }
         return;
       }
 
       if (!kodeAhsp) {
-        console.error('Error: kode-ahsp is required unless --list-bundles is used.');
-        process.exitCode = 1;
+        emitCommandError('kode-ahsp wajib diisi kecuali saat memakai --list-bundles.', options.json);
         return;
       }
 
@@ -80,10 +139,12 @@ export function calcHspCommand(): Command {
         }
 
         // Formatted table output
-        const sep = '─'.repeat(72);
+        const layout = getTerminalLayout();
+        const sep = '─'.repeat(layout.separatorWidth);
+        const totalLabelWidth = Math.max(24, layout.separatorWidth - 17);
         console.log(`\n${result.kode_ahsp} — ${result.nama}`);
         console.log(`Satuan: ${result.satuan_bayar}`);
-        console.log(hsdName ? `HSD: ${hsdName}` : 'HSD: embedded in the bundle');
+        console.log(hsdName ? `HSD: ${hsdName}` : 'HSD: tertanam dalam bundle');
         console.log(sep);
 
         for (const group of result.groups) {
@@ -91,28 +152,27 @@ export function calcHspCommand(): Command {
             : group.type === 'M' ? 'B. Bahan'
             : 'C. Peralatan';
           console.log(`\n${label}`);
-          console.log(`  ${'Uraian'.padEnd(38)} ${'Satuan'.padEnd(8)} ${'Koefisien'.padEnd(12)} ${'Harga Satuan'.padEnd(14)} ${'Jumlah'}`);
-          for (const comp of group.components) {
-            const wrappedLines = wrapTerminalText(comp.nama || comp.ref, 38);
-            const firstLine = wrappedLines[0] ?? '';
-            const continuationLines = wrappedLines.slice(1);
-            console.log(`  ${firstLine.padEnd(38)} ${comp.satuan.padEnd(8)} ${String(comp.coefficient).padEnd(12)} ${formatIdr(comp.unit_price).padStart(12)} ${formatIdr(comp.total_price).padStart(14)}`);
-            for (const line of continuationLines) {
-              console.log(formatTerminalContinuation(line));
-            }
+          if (!layout.compact) {
+            console.log(`  ${'Uraian'.padEnd(layout.descriptionWidth)} ${'Satuan'.padEnd(8)} ${'Koefisien'.padEnd(12)} ${'Harga Satuan'.padEnd(14)} ${'Jumlah'}`);
           }
-          console.log(`  ${'Subtotal'.padEnd(74)} ${formatIdr(group.total).padStart(14)}`);
+          for (const comp of group.components) {
+            for (const line of formatTerminalComponentLines(comp, layout)) console.log(line);
+          }
+          console.log(layout.compact ? `  Subtotal: ${formatIdr(group.total)}` : `  ${'Subtotal'.padEnd(totalLabelWidth)} ${formatIdr(group.total).padStart(14)}`);
         }
 
         console.log(`\n${sep}`);
-        console.log(`  Biaya Langsung (A+B+C)${' '.repeat(44)} ${formatIdr(result.baseTotal).padStart(14)}`);
-        console.log(`  Overhead (${result.overheadPct}%)${' '.repeat(49)} ${formatIdr(result.baseTotal * (result.overheadPct / 100)).padStart(14)}`);
-        console.log(`  Profit (${result.profitPct}%)${' '.repeat(51)} ${formatIdr(result.baseTotal * (result.profitPct / 100)).padStart(14)}`);
-        console.log(`  ${'Harga Satuan Pekerjaan'.padEnd(58)} ${formatIdr(result.grandTotal).padStart(14)}`);
+        const printTotal = (label: string, value: number): void => {
+          console.log(layout.compact ? `  ${label}: ${formatIdr(value)}` : `  ${label.padEnd(totalLabelWidth)} ${formatIdr(value).padStart(14)}`);
+        };
+        printTotal('Biaya Langsung (A+B+C)', result.baseTotal);
+        printTotal(`Overhead (${result.overheadPct}%)`, result.baseTotal * (result.overheadPct / 100));
+        printTotal(`Profit (${result.profitPct}%)`, result.baseTotal * (result.profitPct / 100));
+        printTotal('Harga Satuan Pekerjaan', result.grandTotal);
         console.log(sep);
       } catch (err) {
-        console.error(`Error: ${(err as Error).message}`);
-        process.exit(1);
+        const message = err instanceof Error ? err.message : String(err);
+        emitCommandError(message, options.json);
       }
     });
 

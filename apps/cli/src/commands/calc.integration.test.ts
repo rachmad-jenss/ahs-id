@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, statSync } from 'node:fs';
+import { mkdtempSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -29,9 +29,64 @@ describe('calc-hsp from another directory', () => {
     const result = run(['calc-hsp', '--list-bundles']);
 
     expect(result.status, result.stderr).toBe(0);
-    expect(result.stdout).toContain('Available bundles:');
+    expect(result.stdout).toContain('Bundle tersedia:');
     expect(result.stdout).toContain('pupr-2023');
-    expect(result.stdout).toContain('Available HSD:');
+    expect(result.stdout).toContain('HSD tersedia:');
+  });
+
+  it('emits parseable JSON for bundle discovery', () => {
+    const result = run(['calc-hsp', '--list-bundles', '--json']);
+
+    expect(result.status, result.stderr).toBe(0);
+    const parsed = JSON.parse(result.stdout) as { bundles: string[]; hsd: string[] };
+    expect(parsed.bundles).toContain('pupr-2023');
+    expect(parsed.hsd).toContain('hsd-kaltim-2025');
+  });
+
+  it('emits parseable JSON for calculation errors', () => {
+    const result = run(['calc-hsp', 'missing', '--bundle', 'not-a-bundle', '--json']);
+
+    expect(result.status).toBe(1);
+    expect(result.stdout).toBe('');
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('Unknown bundle') });
+  });
+
+  it('emits parseable JSON when an item code is missing', () => {
+    const result = run(['calc-hsp', '--json']);
+
+    expect(result.status).toBe(1);
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('kode-ahsp') });
+  });
+
+  it('emits parseable JSON for Commander parse errors', () => {
+    const result = run(['calc-hsp', '--json', '--unknown-option']);
+
+    expect(result.status).toBe(1);
+    expect(result.stdout).toBe('');
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('unknown option') });
+  });
+
+  it('does not append a help screen to human-readable parse errors', () => {
+    const result = run(['calc-hsp', '--unknown-option']);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain('unknown option');
+    expect(result.stderr).not.toContain('Usage:');
+  });
+
+  it('does not append an output marker after Commander prints root help', () => {
+    const result = run([]);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain('Usage: ahs-id');
+    expect(result.stderr).not.toContain('(outputHelp)');
+  });
+
+  it('emits parseable JSON when an option value is missing', () => {
+    const result = run(['calc-hsp', '--json', '--bundle']);
+
+    expect(result.status).toBe(1);
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('argument missing') });
   });
 
   it('labels human-readable money values as Rupiah', () => {
@@ -79,6 +134,21 @@ describe('calc-hsp from another directory', () => {
     const output = join(cwd, 'rab.xlsx');
     const result = run(['export-rab', '3.1.1', '--bundle', 'bina-marga-2016', '--output', output], cwd);
     expect(result.status, result.stderr).toBe(0);
+    expect(statSync(output).size).toBeGreaterThan(1000);
+  });
+
+  it('refuses to overwrite an existing workbook without --force', () => {
+    const cwd = mkdtempSync(join(tmpdir(), 'ahs-cli-'));
+    const output = join(cwd, 'rab.xlsx');
+    writeFileSync(output, 'keep this file');
+
+    const refused = run(['export-rab', '3.1.1', '--bundle', 'bina-marga-2016', '--output', output], cwd);
+    expect(refused.status).toBe(1);
+    expect(refused.stderr).toContain('--force');
+    expect(readFileSync(output, 'utf8')).toBe('keep this file');
+
+    const forced = run(['export-rab', '3.1.1', '--bundle', 'bina-marga-2016', '--output', output, '--force'], cwd);
+    expect(forced.status, forced.stderr).toBe(0);
     expect(statSync(output).size).toBeGreaterThan(1000);
   });
 });

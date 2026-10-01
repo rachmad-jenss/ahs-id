@@ -35,8 +35,12 @@ describe('web UI contracts', () => {
     expect(layout).toContain('mobile-menu-panel');
     expect(styles).toContain('@media (hover: hover) and (pointer: fine)');
     expect(styles).toContain('@media (prefers-reduced-motion: reduce)');
-    expect(styles).toContain('display: block;');
-    expect(styles).toContain('max-height: 0;');
+    expect(styles).toContain('text-size-adjust: 100%;');
+    expect(styles).toContain('.pressable:active');
+    expect(styles).toContain('--motion-duration-fast');
+    expect(styles).toContain('.disclosure-chevron');
+    expect(styles).toContain('transition: none !important;');
+    expect(styles).not.toContain('max-height: 0;');
   });
 
   it('keeps every hover affordance scoped to fine pointers', () => {
@@ -47,10 +51,13 @@ describe('web UI contracts', () => {
 
   it('marks search controls for mobile and assistive technology', () => {
     const launcher = readSource('src/components/SearchLauncher.tsx');
+    const catalog = readSource('src/components/CatalogBrowser.tsx');
 
     expect(launcher).toContain('type="search"');
     expect(launcher).toContain('inputMode="search"');
     expect(launcher).toContain('enterKeyHint="search"');
+    expect(launcher).toContain('name="q"');
+    expect(catalog).toContain('name="q"');
   });
 
   it('uses real package exports in both quick-start surfaces', () => {
@@ -85,14 +92,20 @@ describe('web UI contracts', () => {
     expect(page).toContain('mx-auto max-w-7xl');
     expect(catalog).toContain('<details');
     expect(catalog).toContain('lg:hidden');
-    expect(catalog.indexOf('<section')).toBeLessThan(catalog.indexOf('<details'));
+    expect(catalog.indexOf('<details')).toBeLessThan(catalog.indexOf('<section aria-labelledby="catalog-results-heading"'));
     expect(catalog).toContain('type="search"');
     expect(catalog).toContain('inputMode="search"');
     expect(catalog).toContain('enterKeyHint="search"');
+    expect(catalog).toContain('draftQuery');
+    expect(catalog).toContain('resultsHeadingRef');
     expect(catalog).toContain('role="status"');
     expect(catalog).toContain('aria-atomic="true"');
+    expect(catalog).toContain('Pencarian aktif');
+    expect(catalog).toContain('aria-label={filterOpen ? \'Tutup filter katalog\' : \'Buka filter katalog\'}');
+    expect(catalog).toContain('onToggle={(event) => setFilterOpen(event.currentTarget.open)}');
     expect(catalog).toContain('break-words font-medium');
     expect(catalog).not.toContain('block truncate font-medium');
+    expect(catalog).toContain('grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]');
   });
 
   it('keeps wide item tables understandable on narrow screens', () => {
@@ -102,10 +115,44 @@ describe('web UI contracts', () => {
     expect(item).toContain('Geser tabel ke samping');
     expect(item).toContain('tabindex="0"');
     expect(item).toContain('role="region"');
+    expect(item).toContain('aria-describedby');
+    expect(item).toContain('xl:sr-only');
+    expect(item).not.toContain('lg:sr-only');
     expect(item).toContain('table-scroll');
     expect(item).toContain('<caption class="sr-only">');
     expect(item).toContain('scope="col"');
+    expect(item).toContain('HSD dinamis');
+    expect(item).toContain('Ekstraksi otomatis');
+    expect(item).not.toContain('Dynamic HSD');
+    expect(item).not.toContain('Fixed coefficient');
     expect(styles).toContain('--font-sans: ui-sans-serif');
     expect(styles).not.toContain("--font-sans: 'Inter'");
+  });
+
+  it('keeps visual tokens, copy, and motion properties semantic', () => {
+    const home = readSource('src/pages/index.astro');
+    const bundles = readSource('src/pages/bundles/index.astro');
+    const docs = readSource('src/pages/docs/index.astro');
+    const methodology = readSource('src/pages/metodologi/index.astro');
+    const styles = readSource('src/styles/global.css');
+    const source = readSourceTree('src');
+
+    expect(home).not.toContain('text-primary-foreground/65');
+    expect(home).toContain('transition-[transform,border-color,box-shadow]');
+    expect(home).toContain('class="pressable inline-flex items-center gap-2 font-semibold');
+    expect(styles).toContain('.pressable:not([class*="transition-"])');
+    expect(bundles).toContain('Sumber data');
+    expect(docs).toContain('Dokumentasi developer');
+    expect(methodology).toContain('bg-warning-surface');
+    expect(methodology).not.toContain('bg-amber-');
+    expect(methodology).toContain('Sumber');
+    expect(methodology).toContain('Normalisasi');
+    expect(methodology).toContain('Verifikasi');
+    expect(styles).toContain('--color-warning-surface');
+    expect(styles).toContain('text-wrap: balance;');
+    expect(styles).toContain('text-wrap: pretty;');
+    expect(styles).toContain('transition: opacity 150ms ease-out');
+    expect(styles).not.toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
+    expect(source).toContain('transition-[transform,color]');
   });
 });

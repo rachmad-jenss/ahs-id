@@ -4,6 +4,7 @@ import { Badge } from '../../../components/ui/badge';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import { buildCatalog, catalogItemKey, catalogItemPath, catalogItemSlug, type CatalogItem } from '../../../lib/catalog';
 
+/** Generate one static item page for every public catalog entry. */
 export function getStaticPaths() {
   return buildCatalog().items.map((item) => ({
     params: { bundle: item.bundleId, code: catalogItemSlug(item.code) },
@@ -17,6 +18,20 @@ const componentGroups = [
   { label: 'Bahan', items: item.components.filter((component) => component.kind === 'bahan') },
   { label: 'Peralatan', items: item.components.filter((component) => component.kind === 'peralatan') },
 ].filter((group) => group.items.length > 0);
+const componentSourceLabels: Record<string, string> = {
+  tabel: 'Tabel',
+  kalkulasi: 'Kalkulasi',
+  fixed: 'Koefisien tetap',
+};
+const calculationTypeLabel = item.calculationType === 'dynamic_hsd' ? 'HSD dinamis' : 'Koefisien tetap';
+const verificationTierLabels: Record<string, string> = {
+  'auto-extracted': 'Ekstraksi otomatis',
+  verified: 'Terverifikasi',
+  manual: 'Verifikasi manual',
+  'spot-checked': 'Diperiksa sampel',
+  executed: 'Teruji',
+};
+const verificationTierLabel = verificationTierLabels[item.provenance.verification_tier] ?? item.provenance.verification_tier;
 const detailUrl = `https://ahs-id.jenss.me${catalogItemPath(item.bundleId, item.code)}`;
 const pageTitle = [item.code, item.name, '— AHS-ID'].join(' ');
 const pageDescription = ['Data AHSP', item.code, item.name, 'dari', item.bundleName, 'dengan komponen, satuan, dan provenance sumber.'].join(' ');
@@ -36,10 +51,10 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
 <SiteLayout canonical={detailUrl} title={pageTitle} description={pageDescription}>
   <script type="application/ld+json" set:html={jsonLdString}></script>
   <article class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-20">
-    <a class="inline-flex items-center gap-2 text-sm text-muted-foreground hover-fine-text-primary" href="/katalog/"><ArrowLeft aria-hidden="true" className="h-4 w-4" /> Kembali ke katalog</a>
+    <a class="pressable inline-flex items-center gap-2 text-sm text-muted-foreground hover-fine-text-primary" href="/katalog/"><ArrowLeft aria-hidden="true" className="h-4 w-4" /> Kembali ke katalog</a>
     <div class="mt-10 grid gap-12 lg:grid-cols-[1fr_20rem]">
       <div>
-        <div class="flex flex-wrap items-center gap-2"><Badge>{item.bundleName}</Badge><Badge variant="outline">{item.calculationType === 'dynamic_hsd' ? 'Dynamic HSD' : 'Fixed coefficient'}</Badge><Badge variant="muted">{item.provenance.verification_tier}</Badge></div>
+        <div class="flex flex-wrap items-center gap-2"><Badge>{item.bundleName}</Badge><Badge variant="outline">{calculationTypeLabel}</Badge><Badge variant="muted">{verificationTierLabel}</Badge></div>
         <p class="mt-7 font-mono text-lg font-semibold text-primary">{item.code}</p>
         <h1 class="mt-3 max-w-4xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-7xl">{item.name}</h1>
         <p class="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">Analisa harga satuan pekerjaan untuk bidang {item.bidang}, divisi {item.divisi}, dengan satuan pembayaran <span class="font-semibold text-foreground">{item.unit}</span>.</p>
@@ -61,13 +76,13 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
         <section aria-labelledby="components-heading">
           <div class="flex items-end justify-between gap-4 border-b border-border pb-4"><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Struktur item</p><h2 class="mt-2 font-serif text-3xl" id="components-heading">Koefisien komponen</h2></div><span class="font-mono text-sm text-muted-foreground">{item.components.length} baris</span></div>
           <div class="mt-5 overflow-hidden rounded-2xl border border-border">
-            {componentGroups.map((group) => (
+            {componentGroups.map((group, groupIndex) => (
               <section class="border-b border-border last:border-b-0">
                 <h3 class="bg-muted/55 px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">{group.label}</h3>
-                <div class="overflow-x-auto table-scroll" tabindex="0" role="region" aria-label={`Tabel ${group.label} pada item ${item.code}`}>
-                  <p class="px-5 py-3 text-xs text-muted-foreground sm:hidden">Geser tabel ke samping untuk melihat semua kolom.</p>
+                <div class="overflow-x-auto table-scroll" tabindex="0" role="region" aria-describedby={`component-table-hint-${groupIndex}`} aria-label={`Tabel ${group.label} pada item ${item.code}`}>
+                   <p class="px-5 py-3 text-xs text-muted-foreground xl:sr-only" id={`component-table-hint-${groupIndex}`}>Geser tabel ke samping untuk melihat semua kolom.</p>
                   <table class="w-full min-w-[38rem] text-left text-sm"><caption class="sr-only">{group.label} pada item {item.code}</caption><thead class="border-b border-border/70 text-xs text-muted-foreground"><tr><th class="px-5 py-3 font-medium" scope="col">Komponen</th><th class="px-5 py-3 font-medium" scope="col">Sumber</th><th class="px-5 py-3 text-right font-medium" scope="col">Koefisien</th><th class="px-5 py-3 text-right font-medium" scope="col">Satuan</th></tr></thead><tbody class="divide-y divide-border/60">
-                    {group.items.map((component) => <tr><td class="px-5 py-4"><div class="font-medium">{component.name}</div>{component.note && <div class="mt-1 max-w-xl text-xs leading-5 text-muted-foreground">{component.note}</div>}</td><td class="px-5 py-4 text-xs text-muted-foreground"><span class="block capitalize">{component.source}</span>{component.ref && <span class="mt-1 block font-mono">{component.ref}</span>}</td><td class="px-5 py-4 text-right font-mono">{component.coefficient === null ? 'dinamis' : component.coefficient.toLocaleString('id-ID', { maximumFractionDigits: 8 })}</td><td class="px-5 py-4 text-right text-muted-foreground">{component.unit ?? '—'}</td></tr>)}
+                    {group.items.map((component) => <tr><td class="px-5 py-4"><div class="font-medium">{component.name}</div>{component.note && <div class="mt-1 max-w-xl text-xs leading-5 text-muted-foreground">{component.note}</div>}</td><td class="px-5 py-4 text-xs text-muted-foreground"><span class="block">{componentSourceLabels[component.source] ?? component.source}</span>{component.ref && <span class="mt-1 block font-mono">{component.ref}</span>}</td><td class="px-5 py-4 text-right font-mono">{component.coefficient === null ? 'dinamis' : component.coefficient.toLocaleString('id-ID', { maximumFractionDigits: 8 })}</td><td class="px-5 py-4 text-right text-muted-foreground">{component.unit ?? '—'}</td></tr>)}
                   </tbody></table>
                 </div>
               </section>
@@ -75,7 +90,7 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
           </div>
         </section>
 
-        {item.subAhsp.length > 0 && <section class="mt-14" aria-labelledby="sub-ahsp-heading"><div class="flex items-center gap-3"><Layers3 aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-3xl" id="sub-ahsp-heading">Sub-AHSP</h2></div><div class="mt-5 overflow-hidden rounded-2xl border border-border"><div class="overflow-x-auto table-scroll" tabindex="0" role="region" aria-label={`Sub-AHSP pada item ${item.code}`}><p class="px-5 py-3 text-xs text-muted-foreground sm:hidden">Geser tabel ke samping untuk melihat semua kolom.</p><table class="w-full min-w-[38rem] text-left text-sm"><caption class="sr-only">Sub-AHSP pada item {item.code}</caption><thead class="border-b border-border bg-muted/55 text-xs text-muted-foreground"><tr><th class="px-5 py-3 font-medium" scope="col">Kode</th><th class="px-5 py-3 font-medium" scope="col">Nama</th><th class="px-5 py-3 text-right font-medium" scope="col">Koefisien</th></tr></thead><tbody class="divide-y divide-border/60">{item.subAhsp.map((sub) => <tr><td class="px-5 py-4 font-mono text-primary">{sub.ref_ahsp}</td><td class="px-5 py-4">{sub.nama}</td><td class="px-5 py-4 text-right font-mono">{sub.koefisien.toLocaleString('id-ID')} {sub.satuan_koefisien}</td></tr>)}</tbody></table></div></div></section>}
+        {item.subAhsp.length > 0 && <section class="mt-14" aria-labelledby="sub-ahsp-heading"><div class="flex items-center gap-3"><Layers3 aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-3xl" id="sub-ahsp-heading">Sub-AHSP</h2></div><div class="mt-5 overflow-hidden rounded-2xl border border-border"><div class="overflow-x-auto table-scroll" tabindex="0" role="region" aria-describedby="sub-ahsp-table-hint" aria-label={`Sub-AHSP pada item ${item.code}`}><p class="px-5 py-3 text-xs text-muted-foreground xl:sr-only" id="sub-ahsp-table-hint">Geser tabel ke samping untuk melihat semua kolom.</p><table class="w-full min-w-[38rem] text-left text-sm"><caption class="sr-only">Sub-AHSP pada item {item.code}</caption><thead class="border-b border-border bg-muted/55 text-xs text-muted-foreground"><tr><th class="px-5 py-3 font-medium" scope="col">Kode</th><th class="px-5 py-3 font-medium" scope="col">Nama</th><th class="px-5 py-3 text-right font-medium" scope="col">Koefisien</th></tr></thead><tbody class="divide-y divide-border/60">{item.subAhsp.map((sub) => <tr><td class="px-5 py-4 font-mono text-primary">{sub.ref_ahsp}</td><td class="px-5 py-4">{sub.nama}</td><td class="px-5 py-4 text-right font-mono">{sub.koefisien.toLocaleString('id-ID')} {sub.satuan_koefisien}</td></tr>)}</tbody></table></div></div></section>}
         {item.notes.length > 0 && <section class="mt-14" aria-labelledby="notes-heading"><div class="flex items-center gap-3"><FileText aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-3xl" id="notes-heading">Catatan</h2></div><ul class="mt-5 grid gap-3 text-sm leading-6 text-muted-foreground">{item.notes.map((note) => <li class="rounded-xl border border-border/70 bg-card/50 px-4 py-3">{note}</li>)}</ul></section>}
       </div>
 
@@ -84,10 +99,10 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
         <dl class="mt-6 grid gap-5 text-sm">
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Sumber regulasi</dt><dd class="mt-2 leading-6">{item.provenance.sumber_regulasi}</dd></div>
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Halaman</dt><dd class="mt-2 font-mono">{item.provenance.halaman}</dd></div>
-          <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Tier verifikasi</dt><dd class="mt-2"><Badge variant="muted">{item.provenance.verification_tier}</Badge></dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Tier verifikasi</dt><dd class="mt-2"><Badge variant="muted">{verificationTierLabel}</Badge></dd></div>
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Kunci katalog</dt><dd class="mt-2 break-all font-mono text-xs text-muted-foreground">{catalogItemKey(item)}</dd></div>
         </dl>
-        <a class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/metodologi/">Baca metodologi <ExternalLink aria-hidden="true" className="h-4 w-4" /></a>
+        <a class="pressable mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/metodologi/">Baca metodologi <ExternalLink aria-hidden="true" className="h-4 w-4" /></a>
       </aside>
     </div>
   </article>

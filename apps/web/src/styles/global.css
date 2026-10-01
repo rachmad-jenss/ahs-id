@@ -14,6 +14,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-warning-surface: var(--warning-surface);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-icon: var(--warning-icon);
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
@@ -31,8 +34,13 @@
   --muted: oklch(0.94 0.018 82);
   --muted-foreground: oklch(0.47 0.035 65);
   --border: oklch(0.86 0.025 78);
-  --input: oklch(0.8 0.035 78);
+  --input: oklch(0.66 0.035 78);
   --ring: oklch(0.42 0.08 166);
+  --warning-surface: oklch(0.96 0.045 85);
+  --warning-foreground: oklch(0.34 0.055 65);
+  --warning-icon: oklch(0.48 0.09 70);
+  --motion-duration-fast: 180ms;
+  --motion-ease-ui: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 * {
@@ -41,6 +49,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -49,6 +59,16 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 ::selection {
@@ -91,6 +111,14 @@ summary:focus-visible,
 
 .skip-link:focus {
   transform: translateY(0);
+}
+
+.pressable:not([class*="transition-"]) {
+  transition: opacity 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out;
+}
+
+.pressable:active {
+  opacity: 0.78;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -147,19 +175,17 @@ summary:focus-visible,
 }
 
 .mobile-menu-panel {
-  display: block;
-  max-height: 0;
+  max-height: 24rem;
   overflow: hidden;
   visibility: hidden;
   transform: scale(0.97) translateY(-0.25rem);
   transform-origin: top right;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 180ms cubic-bezier(0.23, 1, 0.32, 1), transform 180ms cubic-bezier(0.23, 1, 0.32, 1), max-height 180ms cubic-bezier(0.23, 1, 0.32, 1), visibility 0s linear 180ms;
+  transition: opacity var(--motion-duration-fast) var(--motion-ease-ui), transform var(--motion-duration-fast) var(--motion-ease-ui), visibility 0s linear var(--motion-duration-fast);
 }
 
 details[open] > .mobile-menu-panel {
-  max-height: 24rem;
   visibility: visible;
   transform: none;
   opacity: 1;
@@ -178,12 +204,30 @@ details[open] > .mobile-menu-panel {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+  }
+
+  a,
+  button,
+  summary,
+  .pressable {
+    transition-duration: 120ms !important;
+  }
+
+  button:active,
+  .hover-fine-card:hover,
+  .group:hover .group-hover-fine-rotate-6,
+  .group:hover .group-hover-fine-arrow {
+    transform: none !important;
   }
 
   .mobile-menu-panel {
     transform: none;
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-delay: 0s;
+  }
+
+  .disclosure-chevron {
+    transform: none !important;
+    transition: none !important;
   }
 }
