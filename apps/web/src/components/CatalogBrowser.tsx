@@ -15,6 +15,7 @@ interface CatalogBrowserProps {
 
 const PAGE_SIZE = 20;
 
+/** Render the searchable, filterable catalog and synchronize applied state with its URL. */
 export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrowserProps): React.JSX.Element {
   const [query, setQuery] = useState(initialParams.q ?? '');
   const [draftQuery, setDraftQuery] = useState(initialParams.q ?? '');
@@ -25,11 +26,13 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   const [filterOpen, setFilterOpen] = useState(Boolean(initialParams.q || initialParams.bundle || initialParams.bidang || initialParams.unit));
   const resultsHeadingRef = useRef<HTMLHeadingElement>(null);
 
+  /** Move focus to the result summary after a navigation state change. */
   const focusResults = useCallback((): void => {
     window.requestAnimationFrame(() => resultsHeadingRef.current?.focus());
   }, []);
 
   useEffect(() => {
+    /** Restore applied and draft catalog state after browser history navigation. */
     function syncFromLocation(): void {
       const params = parseCatalogSearchParams(new URLSearchParams(window.location.search));
       setQuery(params.q ?? '');
@@ -74,11 +77,13 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   }, [bidang, bundle, entries, query, unit]);
   const paged = paginateCatalogItems(filteredEntries, page, PAGE_SIZE);
 
+  /** Commit a catalog state change to browser history and announce the result context. */
   function pushUrl(next: CatalogSearchParams): void {
     window.history.pushState({}, '', catalogUrl(next));
     focusResults();
   }
 
+  /** Apply the draft query and reset pagination when the search form is submitted. */
   function submit(event: SyntheticEvent<HTMLFormElement>): void {
     event.preventDefault();
     const nextQuery = draftQuery.trim();
@@ -93,6 +98,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     });
   }
 
+  /** Apply one catalog filter while preserving the other committed criteria. */
   function changeFilter(field: 'bundle' | 'bidang' | 'unit', value: string): void {
     const setters = { bundle: setBundle, bidang: setBidang, unit: setUnit };
     setters[field](value);
@@ -106,6 +112,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     });
   }
 
+  /** Clear all search and filter criteria and return to the first result page. */
   function clearFilters(): void {
     setQuery('');
     setDraftQuery('');
@@ -116,6 +123,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     pushUrl({ page: 1 });
   }
 
+  /** Navigate to a catalog page while preserving the committed criteria. */
   function goToPage(nextPage: number): void {
     setPage(nextPage);
     pushUrl({

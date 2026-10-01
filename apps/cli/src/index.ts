@@ -39,6 +39,7 @@ try {
   process.exitCode = exitCode;
 }
 
+/** Extract a Commander exit code without weakening the unknown error type. */
 function getCommanderExitCode(error: unknown): number {
   if (typeof error === 'object' && error !== null && 'exitCode' in error && typeof error.exitCode === 'number') {
     return error.exitCode;

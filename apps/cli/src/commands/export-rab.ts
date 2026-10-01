@@ -3,6 +3,7 @@ import { existsSync, writeFileSync } from 'node:fs';
 import { exportHspToExcelBuffer } from '@ahs-id/core';
 import { calculateHsp, parseKeyValue } from '../utils/loader.js';
 
+/** Build the Commander command for safe RAB workbook export. */
 export function exportRabCommand(): Command {
   const cmd = new Command('export-rab')
     .description('Export HSP calculation to an Excel RAB file')
@@ -47,6 +48,7 @@ export function exportRabCommand(): Command {
   return cmd;
 }
 
+/** Derive a safe default workbook name from an AHSP code. */
 function defaultExcelName(kodeAhsp: string): string {
   if (kodeAhsp.includes('/') || kodeAhsp.includes('\\') || kodeAhsp.includes('..')) {
     throw new Error('kode-ahsp cannot contain a path. Pass --output to choose a file path.');
@@ -54,6 +56,7 @@ function defaultExcelName(kodeAhsp: string): string {
   return `${kodeAhsp}.xlsx`;
 }
 
+/** Narrow an unknown thrown value to Node's filesystem error shape. */
 function isNodeError(error: unknown): error is NodeJS.ErrnoException {
   return error instanceof Error && 'code' in error;
 }

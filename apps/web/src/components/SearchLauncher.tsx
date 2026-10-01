@@ -12,9 +12,11 @@ interface SearchLauncherProps {
   readonly examples: readonly SearchExample[];
 }
 
+/** Render the homepage search control and its example query shortcuts. */
 export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Element {
   const [query, setQuery] = useState('');
 
+  /** Navigate to the catalog with the submitted query. */
   function submit(event: SyntheticEvent<HTMLFormElement>): void {
     event.preventDefault();
     const params = new URLSearchParams();
@@ -23,6 +25,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
     window.location.href = suffix ? `/katalog/?${suffix}` : '/katalog/';
   }
 
+  /** Apply an example query immediately from the homepage shortcut list. */
   function chooseExample(value: string): void {
     setQuery(value);
     window.location.href = `/katalog/?q=${encodeURIComponent(value)}`;

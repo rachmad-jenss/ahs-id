@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import { calculateHsp, formatIdr, listAvailableBundles, listAvailableHsd, parseKeyValue } from '../utils/loader.js';
 
+/** Wrap a terminal description into lines no wider than the requested column. */
 export function wrapTerminalText(value: string, width: number): string[] {
   const words = value.trim().split(/\s+/).filter(Boolean);
   if (words.length === 0) return [''];
@@ -33,6 +34,7 @@ export function wrapTerminalText(value: string, width: number): string[] {
   return lines;
 }
 
+/** Mark a wrapped terminal line as a continuation of the previous component. */
 export function formatTerminalContinuation(value: string): string {
   return `  ↳ ${value}`;
 }
@@ -43,6 +45,7 @@ export interface TerminalLayout {
   readonly compact: boolean;
 }
 
+/** Select readable table or stacked output dimensions for the current terminal. */
 export function getTerminalLayout(terminalWidth = process.stdout.columns ?? 80): TerminalLayout {
   const width = Number.isFinite(terminalWidth) ? Math.max(40, Math.floor(terminalWidth)) : 80;
   return {
@@ -61,6 +64,7 @@ export interface TerminalComponentRow {
   readonly total_price: number;
 }
 
+/** Format one calculation component for either table or compact terminal output. */
 export function formatTerminalComponentLines(component: TerminalComponentRow, layout: TerminalLayout): string[] {
   const wrappedLines = wrapTerminalText(component.nama || component.ref, layout.descriptionWidth);
   if (layout.compact) {
@@ -80,11 +84,13 @@ export function formatTerminalComponentLines(component: TerminalComponentRow, la
   ];
 }
 
+/** Emit a user-facing calculation error while preserving the selected output contract. */
 function emitCommandError(message: string, json: boolean): void {
   console.error(json ? JSON.stringify({ error: message }) : `Error: ${message}`);
   process.exitCode = 1;
 }
 
+/** Build the Commander command for AHSP calculation and bundle discovery. */
 export function calcHspCommand(): Command {
   const cmd = new Command('calc-hsp')
     .description('Calculate HSP (Harga Satuan Pekerjaan) for an AHSP item')

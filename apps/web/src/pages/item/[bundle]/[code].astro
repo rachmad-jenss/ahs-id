@@ -4,6 +4,7 @@ import { Badge } from '../../../components/ui/badge';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import { buildCatalog, catalogItemKey, catalogItemPath, catalogItemSlug, type CatalogItem } from '../../../lib/catalog';
 
+/** Generate one static item page for every public catalog entry. */
 export function getStaticPaths() {
   return buildCatalog().items.map((item) => ({
     params: { bundle: item.bundleId, code: catalogItemSlug(item.code) },
