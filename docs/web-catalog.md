@@ -21,7 +21,13 @@ pnpm --filter @ahs-id/web typecheck
 pnpm --filter @ahs-id/web build
 ```
 
-The production site is configured in `apps/web/wrangler.jsonc`. The `main` branch workflow verifies the build and deploys with Wrangler when the Cloudflare secrets are available in the production environment.
+The production site is configured in `apps/web/wrangler.jsonc`. Cloudflare Workers Git integration is bound to `rachmad-jenss/ahs-id` on the `main` production branch and owns the production build and deploy. Its build gate runs:
+
+```sh
+pnpm lint && pnpm typecheck && pnpm validate-data && pnpm validate-bundles && pnpm exec turbo run test --concurrency=1 && pnpm --filter @ahs-id/web... build
+```
+
+The deploy command is `pnpm --filter @ahs-id/web exec wrangler deploy --env production`. The GitHub workflow verifies the same commit with build, tests, typecheck, and a Wrangler dry-run; it does not require Cloudflare secrets or perform the live deploy.
 
 ## Data boundary
 
