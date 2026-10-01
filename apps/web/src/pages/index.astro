@@ -52,7 +52,7 @@ const featured = featuredCodes
         <div class="relative rounded-[2rem] border border-foreground/15 bg-foreground p-6 text-background shadow-2xl shadow-primary/10 sm:p-8">
           <div class="flex items-start justify-between gap-6 border-b border-background/15 pb-6">
             <div>
-              <p class="font-mono text-xs uppercase tracking-[0.2em] text-background/55">catalog snapshot</p>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-background/70">Ringkasan katalog</p>
               <p class="mt-3 font-serif text-4xl">{catalog.items.length.toLocaleString('id-ID')}</p>
               <p class="mt-1 text-sm text-background/65">item AHSP siap dijelajahi</p>
             </div>
@@ -116,7 +116,7 @@ const featured = featuredCodes
       </div>
       <div class="mt-10 grid gap-4 lg:grid-cols-3">
         {featured.map((item) => (
-          <a class="group hover-fine-card rounded-3xl border border-border bg-background p-6 transition-transform duration-200" href={catalogItemPath(item.bundleId, item.code)}>
+          <a class="group pressable hover-fine-card rounded-3xl border border-border bg-background p-6 transition-[transform,border-color,box-shadow] duration-200 ease-out" href={catalogItemPath(item.bundleId, item.code)}>
             <div class="flex items-start justify-between gap-4">
               <span class="font-mono text-sm font-semibold text-primary">{item.code}</span>
               <Badge variant="muted">{item.unit}</Badge>
@@ -124,7 +124,7 @@ const featured = featuredCodes
             <h3 class="mt-8 min-h-16 font-serif text-2xl leading-tight">{item.name}</h3>
             <div class="mt-8 flex items-center justify-between border-t border-border/80 pt-4 text-xs text-muted-foreground">
               <span>{item.bundleName}</span>
-              <ArrowRight aria-hidden="true" className="h-4 w-4 transition-transform group-hover-fine-arrow" />
+              <ArrowRight aria-hidden="true" className="h-4 w-4 transition-[transform,color] duration-200 ease-out group-hover-fine-arrow" />
             </div>
           </a>
         ))}
@@ -144,8 +144,8 @@ const featured = featuredCodes
           <div class="flex items-center gap-3"><Check aria-hidden="true" className="h-5 w-5 text-primary" /> Data bundle terpisah dari engine</div>
         </div>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a class="inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover-fine-bg-primary-90" href="/docs/">Baca quick start <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
-          <a class="inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Lihat source <GitBranch aria-hidden="true" className="h-4 w-4" /></a>
+          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover-fine-bg-primary-90" href="/docs/">Baca quick start <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
+          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Lihat source <GitBranch aria-hidden="true" className="h-4 w-4" /></a>
         </div>
       </div>
       <div class="rounded-[2rem] bg-foreground p-5 text-background shadow-2xl shadow-primary/10 sm:p-7">
@@ -159,10 +159,10 @@ const featured = featuredCodes
   <section class="bg-primary text-primary-foreground">
     <div class="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-16 sm:flex-row sm:items-center sm:justify-between lg:px-8 lg:py-20">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/65">Langkah berikutnya</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground">Langkah berikutnya</p>
         <h2 class="mt-3 max-w-2xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Temukan item yang sedang Anda kerjakan.</h2>
       </div>
-      <a class="inline-flex min-h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary-foreground px-5 py-3 text-sm font-semibold text-primary shadow-sm transition-colors hover-fine-bg-primary-foreground-90" href="/katalog/">Buka katalog <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
+      <a class="pressable inline-flex min-h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary-foreground px-5 py-3 text-sm font-semibold text-primary shadow-sm transition-colors hover-fine-bg-primary-foreground-90" href="/katalog/">Buka katalog <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
     </div>
   </section>
 </SiteLayout>
