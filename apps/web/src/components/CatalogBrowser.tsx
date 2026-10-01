@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState, type SyntheticEvent } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { catalogUrl, parseCatalogSearchParams, type CatalogSearchParams } from '@/lib/catalog';
-import { paginateCatalogItems, type SearchIndexEntry } from '@/lib/search';
+import { catalogUrl, parseCatalogSearchParams, type CatalogSearchParams } from '@/lib/catalog-url';
+import { paginateCatalogItems, type SearchIndexEntry } from '@/lib/search-client';
 
 interface CatalogBrowserProps {
   readonly entries: readonly SearchIndexEntry[];

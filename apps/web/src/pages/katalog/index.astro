@@ -1,7 +1,8 @@
 ---
 import { CatalogBrowser } from '../../components/CatalogBrowser';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { buildCatalog, parseCatalogSearchParams } from '../../lib/catalog';
+import { buildCatalog } from '../../lib/catalog';
+import { parseCatalogSearchParams } from '../../lib/catalog-url';
 import { toSearchIndex } from '../../lib/search';
 
 const catalog = buildCatalog();

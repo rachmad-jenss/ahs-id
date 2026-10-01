@@ -2,7 +2,8 @@
 import { ArrowRight, Database, FileText } from 'lucide-react';
 import { Badge } from '../../components/ui/badge';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { buildCatalog, catalogUrl } from '../../lib/catalog';
+import { buildCatalog } from '../../lib/catalog';
+import { catalogUrl } from '../../lib/catalog-url';
 
 const catalog = buildCatalog();
 ---

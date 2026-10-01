@@ -1,33 +1,17 @@
 import Fuse from 'fuse.js';
-import { catalogItemKey, catalogItemPath, type CatalogItem, parseCatalogSearchParams } from './catalog.js';
+import { catalogItemKey, catalogItemPath, type CatalogItem } from './catalog.js';
+import { parseCatalogSearchParams } from './catalog-url.js';
+import type { SearchIndexEntry } from './search-client.js';
 
 export { parseCatalogSearchParams };
-
-export interface SearchIndexEntry {
-  readonly key: string;
-  readonly code: string;
-  readonly name: string;
-  readonly bundleId: string;
-  readonly bundleName: string;
-  readonly bidang: string;
-  readonly divisi: number;
-  readonly unit: string;
-  readonly href: string;
-}
+export { paginateCatalogItems } from './search-client.js';
+export type { SearchIndexEntry } from './search-client.js';
 
 export interface CatalogFilterParams {
   readonly q?: string;
   readonly bundle?: string;
   readonly bidang?: string;
   readonly unit?: string;
-}
-
-export interface CatalogPage<T> {
-  readonly items: readonly T[];
-  readonly page: number;
-  readonly pageSize: number;
-  readonly total: number;
-  readonly totalPages: number;
 }
 
 export function toSearchIndex(items: readonly CatalogItem[]): readonly SearchIndexEntry[] {
@@ -71,22 +55,4 @@ export function filterCatalogItems(
   });
 
   return fuse.search(query).map((result) => result.item);
-}
-
-export function paginateCatalogItems<T>(
-  items: readonly T[],
-  page: number,
-  pageSize = 20,
-): CatalogPage<T> {
-  const safePageSize = Math.max(1, pageSize);
-  const totalPages = Math.max(1, Math.ceil(items.length / safePageSize));
-  const safePage = Math.min(Math.max(1, page), totalPages);
-  const start = (safePage - 1) * safePageSize;
-  return {
-    items: items.slice(start, start + safePageSize),
-    page: safePage,
-    pageSize: safePageSize,
-    total: items.length,
-    totalPages,
-  };
 }
