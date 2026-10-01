@@ -46,6 +46,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
     const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
     if (catalogUrl(currentParams) !== catalogUrl(initialParams)) syncFromLocation(false);
+    document.querySelector<HTMLElement>('[data-catalog-browser]')?.removeAttribute('data-catalog-url-pending');
     const handlePopState = (): void => syncFromLocation();
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -190,7 +191,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   );
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[15rem_1fr]">
+    <div className="grid gap-8 lg:grid-cols-[15rem_1fr]" data-catalog-browser>
       <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold">Saring katalog</p>
