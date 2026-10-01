@@ -199,7 +199,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       <details className="group rounded-2xl border border-border/80 bg-card/60 lg:hidden" onToggle={(event) => setFilterOpen(event.currentTarget.open)} open={filterOpen}>
         <summary aria-label={filterOpen ? 'Tutup filter katalog' : 'Buka filter katalog'} className="pressable flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
           <span className="flex items-center gap-2"><SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" /> Filter katalog</span>
-          <span className="flex items-center gap-2 text-xs font-normal text-muted-foreground">{activeSummary}<ChevronDown aria-hidden="true" className="h-4 w-4 transition-transform duration-150 group-open:rotate-180" /></span>
+          <span className="flex items-center gap-2 text-xs font-normal text-muted-foreground">{activeSummary}<ChevronDown aria-hidden="true" className="disclosure-chevron h-4 w-4 transition-transform duration-150 group-open:rotate-180" /></span>
         </summary>
         <div className="border-t border-border/80 p-4">{filterControls}</div>
       </details>

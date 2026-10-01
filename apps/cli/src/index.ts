@@ -21,10 +21,12 @@ const outputConfiguration = { outputError: (): void => undefined };
 const commands = [calcHspCommand(), exportRabCommand(), validateCommand()];
 for (const command of commands) {
   command.configureOutput(outputConfiguration);
+  command.showHelpAfterError(false).showSuggestionAfterError(false);
   command.exitOverride();
   program.addCommand(command);
 }
 program.configureOutput(outputConfiguration);
+program.showHelpAfterError(false).showSuggestionAfterError(false);
 program.exitOverride();
 
 try {

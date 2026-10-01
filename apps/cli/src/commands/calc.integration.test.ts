@@ -66,6 +66,14 @@ describe('calc-hsp from another directory', () => {
     expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('unknown option') });
   });
 
+  it('does not append a help screen to human-readable parse errors', () => {
+    const result = run(['calc-hsp', '--unknown-option']);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain('unknown option');
+    expect(result.stderr).not.toContain('Usage:');
+  });
+
   it('emits parseable JSON when an option value is missing', () => {
     const result = run(['calc-hsp', '--json', '--bundle']);
 

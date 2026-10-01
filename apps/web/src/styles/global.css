@@ -225,4 +225,9 @@ details[open] > .mobile-menu-panel {
     transition-property: opacity, visibility;
     transition-delay: 0s;
   }
+
+  .disclosure-chevron {
+    transform: none !important;
+    transition: none !important;
+  }
 }

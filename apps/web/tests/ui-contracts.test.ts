@@ -38,6 +38,8 @@ describe('web UI contracts', () => {
     expect(styles).toContain('text-size-adjust: 100%;');
     expect(styles).toContain('.pressable:active');
     expect(styles).toContain('--motion-duration-fast');
+    expect(styles).toContain('.disclosure-chevron');
+    expect(styles).toContain('transition: none !important;');
     expect(styles).not.toContain('max-height: 0;');
   });
 
