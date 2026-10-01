@@ -20,6 +20,7 @@ const navItems = [
   { href: '/bundles/', label: 'Bundle' },
   { href: '/docs/', label: 'Dokumentasi' },
   { href: '/metodologi/', label: 'Metodologi' },
+  { href: '/tentang/', label: 'Tentang' },
 ];
 ---
 
@@ -48,7 +49,7 @@ const navItems = [
     <header class="sticky top-0 z-40 border-b border-border/80 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <a class="group inline-flex items-center gap-3" href="/" aria-label="AHS-ID, beranda">
-          <span class="grid h-9 w-9 place-items-center rounded-full border border-foreground/70 font-serif text-lg leading-none transition-transform duration-150 group-hover:rotate-6">A</span>
+          <span class="grid h-9 w-9 place-items-center rounded-full border border-foreground/70 font-serif text-lg leading-none transition-transform duration-150 group-hover-fine-rotate-6">A</span>
           <span class="font-serif text-xl tracking-tight">AHS-ID</span>
         </a>
 
@@ -56,26 +57,34 @@ const navItems = [
           {navItems.map((item) => (
             <a
               class:list={[
-                'text-sm transition-colors hover:text-primary',
+                'inline-flex min-h-11 items-center text-sm transition-colors hover-fine-text-primary',
                 currentPath.startsWith(item.href) ? 'font-semibold text-primary' : 'text-muted-foreground',
               ]}
+              aria-current={currentPath.startsWith(item.href) ? 'page' : undefined}
               href={item.href}
             >
               {item.label}
             </a>
           ))}
-          <a class="text-sm text-muted-foreground transition-colors hover:text-primary" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">GitHub</a>
+          <a class="inline-flex min-h-11 items-center text-sm text-muted-foreground transition-colors hover-fine-text-primary" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">GitHub</a>
         </nav>
 
-        <details class="relative md:hidden">
-          <summary class="flex min-h-10 cursor-pointer list-none items-center rounded-full border border-border px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+        <details class="group relative md:hidden">
+          <summary class="flex min-h-11 cursor-pointer list-none items-center rounded-full border border-border px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
             Menu
           </summary>
-          <nav class="absolute right-0 top-14 w-56 rounded-2xl border border-border bg-card p-2 shadow-xl" aria-label="Navigasi mobile">
+          <nav class="mobile-menu-panel absolute right-0 top-14 w-56 rounded-2xl border border-border bg-card p-2 shadow-xl" aria-label="Navigasi mobile">
             {navItems.map((item) => (
-              <a class="block rounded-xl px-3 py-3 text-sm text-foreground hover:bg-muted" href={item.href}>{item.label}</a>
+              <a
+                class:list={[
+                  'flex min-h-11 items-center rounded-xl px-3 py-2 text-sm text-foreground hover-fine-bg-muted',
+                  currentPath.startsWith(item.href) ? 'bg-muted font-semibold' : '',
+                ]}
+                aria-current={currentPath.startsWith(item.href) ? 'page' : undefined}
+                href={item.href}
+              >{item.label}</a>
             ))}
-            <a class="block rounded-xl px-3 py-3 text-sm text-foreground hover:bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">GitHub</a>
+            <a class="flex min-h-11 items-center rounded-xl px-3 py-2 text-sm text-foreground hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">GitHub</a>
           </nav>
         </details>
       </div>
@@ -94,17 +103,18 @@ const navItems = [
         <div>
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Jelajahi</p>
           <div class="mt-4 grid gap-3 text-sm">
-            <a class="hover:text-primary" href="/katalog/">Katalog AHSP</a>
-            <a class="hover:text-primary" href="/bundles/">Bundle data</a>
-            <a class="hover:text-primary" href="/metodologi/">Sumber dan metodologi</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="/katalog/">Katalog AHSP</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="/bundles/">Bundle data</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="/metodologi/">Sumber dan metodologi</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="/tentang/">Tentang AHS-ID</a>
           </div>
         </div>
         <div>
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Dibuat untuk developer</p>
           <div class="mt-4 grid gap-3 text-sm">
-            <a class="hover:text-primary" href="/docs/">Quick start npm</a>
-            <a class="hover:text-primary" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Source di GitHub</a>
-            <a class="hover:text-primary" href="https://www.npmjs.com/org/ahs-id" rel="noreferrer">Package di npm</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="/docs/">Quick start npm</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Source di GitHub</a>
+            <a class="inline-flex min-h-11 items-center hover-fine-text-primary" href="https://www.npmjs.com/org/ahs-id" rel="noreferrer">Package di npm</a>
           </div>
         </div>
       </div>

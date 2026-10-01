@@ -25,6 +25,22 @@ describe('calc-hsp from another directory', () => {
     expect(parsed.grandTotal).toBeCloseTo(32401.25, 2);
   });
 
+  it('lists bundles without requiring an item code', () => {
+    const result = run(['calc-hsp', '--list-bundles']);
+
+    expect(result.status, result.stderr).toBe(0);
+    expect(result.stdout).toContain('Available bundles:');
+    expect(result.stdout).toContain('pupr-2023');
+    expect(result.stdout).toContain('Available HSD:');
+  });
+
+  it('labels human-readable money values as Rupiah', () => {
+    const result = run(['calc-hsp', '3.1.1', '--bundle', 'bina-marga-2016']);
+
+    expect(result.status, result.stderr).toBe(0);
+    expect(result.stdout).toContain('Rp ');
+  });
+
   it('prices a unique Cipta Karya item without an HSD', () => {
     const result = run(['calc-hsp', '1.2.1.1.1', '--bundle', 'cipta-karya-2024', '--json']);
     expect(result.status, result.stderr).toBe(0);
