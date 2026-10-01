@@ -52,14 +52,14 @@ describe('resolveHsdName', () => {
 
 describe('formatIdr', () => {
   it('formats number with ID locale', () => {
-    expect(formatIdr(740113)).toBe('740.113');
+    expect(formatIdr(740113)).toBe('Rp 740.113');
   });
 
   it('formats zero', () => {
-    expect(formatIdr(0)).toBe('0');
+    expect(formatIdr(0)).toBe('Rp 0');
   });
 
   it('rounds decimals', () => {
-    expect(formatIdr(123456.789)).toBe('123.457');
+    expect(formatIdr(123456.789)).toBe('Rp 123.457');
   });
 });

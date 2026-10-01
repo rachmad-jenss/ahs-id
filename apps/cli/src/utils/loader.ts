@@ -157,9 +157,10 @@ export async function calculateHsp(
 }
 
 export function formatIdr(value: number): string {
-  return new Intl.NumberFormat('id-ID', {
+  const formatted = new Intl.NumberFormat('id-ID', {
     style: 'decimal',
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(Math.round(value));
+  return `Rp ${formatted}`;
 }
