@@ -99,7 +99,8 @@ All packages above are published on [npm](https://www.npmjs.com/org/ahs-id) unde
 
 ```
 apps/
-└── cli/                   ← ahs-id calc-hsp, export-rab, validate
+├── cli/                   ← ahs-id calc-hsp, export-rab, validate
+└── web/                   ← Public catalog at ahs-id.jenss.me
 
 packages/
 ├── core/                  ← Engine: calculator, validator, types
@@ -139,6 +140,7 @@ ahs-id calc-hsp "3.1.(1)" --bundle bina-marga-2022
 
 ## Documentation
 
+- [Public web catalog](docs/web-catalog.md)
 - [Architecture Specification](docs/architecture.md)
 - [Phase 2 Progress Checklist](PROGRESS.md)
 - [Contributing Guide](CONTRIBUTING.md)

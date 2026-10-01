@@ -2494,7 +2494,7 @@ External contributors to @ahs-id **do not need to understand** EstiMara internal
 
 > Standalone public-facing site yang berfungsi sebagai: (1) showcase @ahs-id/core engine capabilities, (2) interactive playground buat engineer Indonesia nyobain AHSP calculation tanpa install, (3) marketing funnel ke EstiMara, dan (4) SEO anchor untuk domain authority di niche cost engineering Indonesia.
 
-> ⚠️ **HARD DEPENDENCY: This site MUST NOT be built before @ahs-id/core Phase 1 proof-of-engine golden test passes.** A demo site has zero value if `hitungHSP()` doesn't produce correct numbers. The temptation to build the shiny Next.js showcase before the engine is proven is real — resist it. Ship Phase 1 → validate with golden tests → then build the showcase. See Risk R2 (maintainer burnout) and Phase 1 exit criteria in Section 13.
+> ⚠️ **HARD DEPENDENCY: This site MUST NOT be built before @ahs-id/core Phase 1 proof-of-engine golden test passes.** A demo site has zero value if `hitungHSP()` doesn't produce correct numbers. The public implementation now uses an Astro static site with a React search island and a build-time catalog projection. See `docs/web-catalog.md` for the shipped Phase 2 scope.
 
 ### 20.1 Positioning & Goals
 
@@ -2773,7 +2773,7 @@ OG image:
 ┌─────────────────────────────────────────────────────────────────┐
 │  Demo Site (Static/SSG)                                          │
 │                                                                  │
-│  Framework:   Next.js 15 (Static Export / ISR)                   │
+│  Framework:   Astro (static output) + React islands              │
 │  Engine:      @ahs-id/core (npm — runs client-side)              │
 │  Bundles:     @ahs-id/pupr-2023 (embedded at build time)         │
 │  HSD data:    Static JSON files (bundled per region)             │
@@ -2782,7 +2782,7 @@ OG image:
 │  Math render: KaTeX (for productivity formulas)                  │
 │  Search:      Client-side fuzzy search (fuse.js)                 │
 │  Analytics:   PostHog (same instance as EstiMara)                │
-│  Deploy:      Vercel (or GitHub Pages via static export)         │
+│  Deploy:      Cloudflare Workers Static Assets                   │
 │                                                                  │
 │  Key constraint:                                                 │
 │    NO backend / NO database / NO auth                            │
@@ -2803,7 +2803,7 @@ OG image:
 Build time:
   @ahs-id/pupr-2023 bundle ─┐
   HSD JSON files ────────────┤
-  AHSP metadata ─────────────┤──→  Next.js static build
+  AHSP metadata ─────────────┤──→  Astro static build
   Item descriptions ──────────┘     ├── /browse pages (SSG)
                                     ├── /item/[slug] pages (SSG)
                                     └── /kalkulator (CSR)
