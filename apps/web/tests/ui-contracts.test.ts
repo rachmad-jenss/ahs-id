@@ -97,6 +97,8 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('inputMode="search"');
     expect(catalog).toContain('enterKeyHint="search"');
     expect(catalog).toContain('draftQuery');
+    expect(catalog).toContain('catalogUrl(currentParams) !== catalogUrl(initialParams)');
+    expect(catalog).toContain('syncFromLocation(false)');
     expect(catalog).toContain('resultsHeadingRef');
     expect(catalog).toContain('role="status"');
     expect(catalog).toContain('aria-atomic="true"');

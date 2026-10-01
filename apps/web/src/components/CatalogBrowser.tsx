@@ -32,8 +32,8 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   }, []);
 
   useEffect(() => {
-    /** Restore applied and draft catalog state after browser history navigation. */
-    function syncFromLocation(): void {
+    /** Restore applied and draft catalog state after browser navigation or island hydration. */
+    function syncFromLocation(shouldFocus = true): void {
       const params = parseCatalogSearchParams(new URLSearchParams(window.location.search));
       setQuery(params.q ?? '');
       setDraftQuery(params.q ?? '');
@@ -41,12 +41,15 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       setBidang(params.bidang ?? '');
       setUnit(params.unit ?? '');
       setPage(params.page ?? 1);
-      focusResults();
+      if (shouldFocus) focusResults();
     }
 
-    window.addEventListener('popstate', syncFromLocation);
-    return () => window.removeEventListener('popstate', syncFromLocation);
-  }, [focusResults]);
+    const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
+    if (catalogUrl(currentParams) !== catalogUrl(initialParams)) syncFromLocation(false);
+    const handlePopState = (): void => syncFromLocation();
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [focusResults, initialParams]);
 
   const bidangOptions = useMemo(
     () => [...new Set(entries.map((entry) => entry.bidang))].sort(),
