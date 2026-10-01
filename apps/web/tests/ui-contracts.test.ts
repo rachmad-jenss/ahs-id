@@ -69,4 +69,23 @@ describe('web UI contracts', () => {
     expect(button).toContain("sm: 'min-h-11");
     expect(button).toContain("icon: 'h-11 w-11");
   });
+
+  it('keeps catalog results contained, filterable, and screen-reader friendly', () => {
+    const page = readSource('src/pages/katalog/index.astro');
+    const catalog = readSource('src/components/CatalogBrowser.tsx');
+
+    expect(page).toContain('mx-auto max-w-7xl');
+    expect(catalog).toContain('<details');
+    expect(catalog).toContain('order-2');
+    expect(catalog).toContain('lg:hidden');
+    expect(catalog).toContain('order-1');
+    expect(catalog).toContain('lg:order-2');
+    expect(catalog).toContain('type="search"');
+    expect(catalog).toContain('inputMode="search"');
+    expect(catalog).toContain('enterKeyHint="search"');
+    expect(catalog).toContain('role="status"');
+    expect(catalog).toContain('aria-atomic="true"');
+    expect(catalog).toContain('break-words font-medium');
+    expect(catalog).not.toContain('block truncate font-medium');
+  });
 });

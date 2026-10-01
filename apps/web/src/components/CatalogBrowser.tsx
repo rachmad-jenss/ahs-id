@@ -104,51 +104,64 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     window.history.pushState({}, '', '/katalog/');
   }
 
+  const activeFilterCount = [bundle, bidang, unit].filter(Boolean).length;
+  const filterControls = (
+    <div className="mt-5 grid gap-5">
+      <label className="grid gap-2 text-sm">
+        <span className="font-medium">Bundle</span>
+        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
+          <option value="">Semua bundle</option>
+          {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
+        </select>
+      </label>
+      <label className="grid gap-2 text-sm">
+        <span className="font-medium">Bidang</span>
+        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bidang', event.target.value)} value={bidang}>
+          <option value="">Semua bidang</option>
+          {bidangOptions.map((option) => <option key={option} value={option}>{option}</option>)}
+        </select>
+      </label>
+      <label className="grid gap-2 text-sm">
+        <span className="font-medium">Satuan</span>
+        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('unit', event.target.value)} value={unit}>
+          <option value="">Semua satuan</option>
+          {unitOptions.map((option) => <option key={option} value={option}>{option}</option>)}
+        </select>
+      </label>
+      {(query || bundle || bidang || unit) && (
+        <Button onClick={clearFilters} size="sm" variant="ghost">
+          <X aria-hidden="true" className="h-4 w-4" />
+          Hapus filter
+        </Button>
+      )}
+    </div>
+  );
+
   return (
     <div className="grid gap-8 lg:grid-cols-[15rem_1fr]">
-      <aside className="h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:sticky lg:top-24">
+      <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:order-1 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold">Saring katalog</p>
           <SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" />
         </div>
-        <div className="mt-5 grid gap-5">
-          <label className="grid gap-2 text-sm">
-            <span className="font-medium">Bundle</span>
-            <select className="h-10 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
-              <option value="">Semua bundle</option>
-              {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
-            </select>
-          </label>
-          <label className="grid gap-2 text-sm">
-            <span className="font-medium">Bidang</span>
-            <select className="h-10 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bidang', event.target.value)} value={bidang}>
-              <option value="">Semua bidang</option>
-              {bidangOptions.map((option) => <option key={option} value={option}>{option}</option>)}
-            </select>
-          </label>
-          <label className="grid gap-2 text-sm">
-            <span className="font-medium">Satuan</span>
-            <select className="h-10 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('unit', event.target.value)} value={unit}>
-              <option value="">Semua satuan</option>
-              {unitOptions.map((option) => <option key={option} value={option}>{option}</option>)}
-            </select>
-          </label>
-          {(query || bundle || bidang || unit) && (
-            <Button onClick={clearFilters} size="sm" variant="ghost">
-              <X aria-hidden="true" className="h-4 w-4" />
-              Hapus filter
-            </Button>
-          )}
-        </div>
+        {filterControls}
       </aside>
 
-      <section aria-labelledby="catalog-results-heading">
+      <details className="order-2 rounded-2xl border border-border/80 bg-card/60 lg:hidden" open={activeFilterCount > 0}>
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+          <span className="flex items-center gap-2"><SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" /> Filter katalog</span>
+          <span className="text-xs font-normal text-muted-foreground">{activeFilterCount > 0 ? `${activeFilterCount} aktif` : 'Opsional'}</span>
+        </summary>
+        <div className="border-t border-border/80 p-4">{filterControls}</div>
+      </details>
+
+      <section className="order-1 lg:order-2" aria-labelledby="catalog-results-heading">
         <form className="flex gap-2" onSubmit={submit} role="search">
           <label className="sr-only" htmlFor="catalog-search">Cari katalog</label>
           <div className="relative flex-1">
             <Search aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <Input className="pl-10" id="catalog-search" onChange={(event) => setQuery(event.target.value)} placeholder="Cari kode atau nama pekerjaan…" value={query} />
-          </div>
+            <Input className="pl-10" enterKeyHint="search" id="catalog-search" inputMode="search" onChange={(event) => setQuery(event.target.value)} placeholder="Cari kode atau nama pekerjaan…" type="search" value={query} />
+            </div>
           <Button type="submit">Cari</Button>
         </form>
         <div className="mt-5 flex flex-wrap items-end justify-between gap-3">
@@ -156,7 +169,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Hasil katalog</p>
             <h2 className="mt-1 font-serif text-2xl" id="catalog-results-heading">{paged.total.toLocaleString('id-ID')} item</h2>
           </div>
-          <p aria-live="polite" className="text-sm text-muted-foreground">Halaman {paged.page} dari {paged.totalPages}</p>
+          <p aria-atomic="true" aria-live="polite" className="text-sm text-muted-foreground" role="status">{paged.total.toLocaleString('id-ID')} hasil · Halaman {paged.page} dari {paged.totalPages}</p>
         </div>
 
         {paged.items.length > 0 ? (
@@ -170,7 +183,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
                   <a className="grid gap-2 px-5 py-4 transition-colors hover-fine-bg-muted-50 sm:grid-cols-[7rem_1fr_12rem_4rem] sm:items-center sm:gap-4" href={entry.href}>
                     <span className="font-mono text-sm font-semibold text-primary">{entry.code}</span>
                     <span className="min-w-0">
-                      <span className="block truncate font-medium">{entry.name}</span>
+                      <span className="block break-words font-medium sm:truncate" title={entry.name}>{entry.name}</span>
                       <span className="mt-1 block text-xs text-muted-foreground">{entry.bidang} · Divisi {entry.divisi}</span>
                     </span>
                     <Badge className="w-fit" variant="muted">{entry.bundleName}</Badge>

@@ -23,10 +23,12 @@ const initialParams = parseCatalogSearchParams(Astro.url.searchParams);
       </div>
     </div>
   </section>
-  <CatalogBrowser
-    bundles={catalog.bundles}
-    entries={entries}
-    initialParams={initialParams}
-    client:load
-  />
+  <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16">
+    <CatalogBrowser
+      bundles={catalog.bundles}
+      entries={entries}
+      initialParams={initialParams}
+      client:load
+    />
+  </div>
 </SiteLayout>
