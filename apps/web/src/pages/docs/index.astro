@@ -5,7 +5,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 const steps = [
   { number: '01', title: 'Pasang package', code: 'pnpm add @ahs-id/core @ahs-id/pupr-2023 @ahs-id/hsd-kaltim-2025' },
   { number: '02', title: 'Pilih bundle dan HSD', code: "import { createCalculator } from '@ahs-id/core'\nimport { bundle } from '@ahs-id/pupr-2023'\nimport { hsd } from '@ahs-id/hsd-kaltim-2025'" },
-  { number: '03', title: 'Hitung dan ekspor', code: 'const calculator = createCalculator(bundle, hsd)\nconst result = calculator.hitungHSP(input)' },
+  { number: '03', title: 'Hitung dan ekspor', code: "const calculator = createCalculator(bundle, hsd)\nconst result = calculator.hitungHSP('3.1.1', {\n  jarak_buang_km: 5,\n  kondisi_jalan: 'sedang',\n  jenis_material: 'tanah_biasa',\n})" },
 ];
 ---
 

@@ -57,9 +57,15 @@ describe('web UI contracts', () => {
 
     expect(home).toContain("{'{ bundle }'}");
     expect(home).toContain("{'{ hsd }'}");
+    expect(home).toContain('calculator.hitungHSP(');
+    expect(home).toContain("'3.1.1'");
+    expect(home).toContain('jarak_buang_km');
     expect(home).not.toContain('pupr2023');
     expect(docs).toContain("{ bundle } from '@ahs-id/pupr-2023'");
     expect(docs).toContain("{ hsd } from '@ahs-id/hsd-kaltim-2025'");
+    expect(docs).toContain("calculator.hitungHSP('3.1.1'");
+    expect(docs).toContain('jarak_buang_km');
+    expect(docs).not.toContain('hitungHSP(input)');
   });
 
   it('keeps shared controls touch-sized', () => {
