@@ -23,11 +23,14 @@ const componentSourceLabels: Record<string, string> = {
   fixed: 'Koefisien tetap',
 };
 const calculationTypeLabel = item.calculationType === 'dynamic_hsd' ? 'HSD dinamis' : 'Koefisien tetap';
-const verificationTierLabel = {
+const verificationTierLabels: Record<string, string> = {
   'auto-extracted': 'Ekstraksi otomatis',
   verified: 'Terverifikasi',
   manual: 'Verifikasi manual',
-}[item.provenance.verification_tier] ?? item.provenance.verification_tier;
+  'spot-checked': 'Diperiksa sampel',
+  executed: 'Teruji',
+};
+const verificationTierLabel = verificationTierLabels[item.provenance.verification_tier] ?? item.provenance.verification_tier;
 const detailUrl = `https://ahs-id.jenss.me${catalogItemPath(item.bundleId, item.code)}`;
 const pageTitle = [item.code, item.name, '— AHS-ID'].join(' ');
 const pageDescription = ['Data AHSP', item.code, item.name, 'dari', item.bundleName, 'dengan komponen, satuan, dan provenance sumber.'].join(' ');

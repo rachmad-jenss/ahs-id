@@ -146,7 +146,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('text-wrap: balance;');
     expect(styles).toContain('text-wrap: pretty;');
     expect(styles).toContain('transition: opacity var(--motion-duration-fast)');
-    expect(styles).toContain('transition-property: opacity, color, background-color, border-color, box-shadow;');
+    expect(styles).toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
     expect(source).toContain('transition-[transform,color]');
   });
 });

@@ -1,3 +1,4 @@
+import Fuse from 'fuse.js';
 import { ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHorizontal, X } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState, type SyntheticEvent } from 'react';
 import { Badge } from '@/components/ui/badge';
