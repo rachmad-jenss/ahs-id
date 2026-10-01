@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ahs-id-web-preview",
+  "main": "./src/worker.ts",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  "env": {
+    "production": {
+      "name": "ahs-id-web",
+      "routes": [
+        { "pattern": "ahs-id.jenss.me", "custom_domain": true }
+      ]
+    }
+  }
+}
