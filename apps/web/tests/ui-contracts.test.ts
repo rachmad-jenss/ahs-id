@@ -88,4 +88,15 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('break-words font-medium');
     expect(catalog).not.toContain('block truncate font-medium');
   });
+
+  it('keeps wide item tables understandable on narrow screens', () => {
+    const item = readSource('src/pages/item/[bundle]/[code].astro');
+    const styles = readSource('src/styles/global.css');
+
+    expect(item).toContain('Geser tabel ke samping');
+    expect(item).toContain('<caption class="sr-only">');
+    expect(item).toContain('scope="col"');
+    expect(styles).toContain('--font-sans: ui-sans-serif');
+    expect(styles).not.toContain("--font-sans: 'Inter'");
+  });
 });
