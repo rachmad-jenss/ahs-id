@@ -99,9 +99,12 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('draftQuery');
     expect(catalog).toContain('catalogUrl(currentParams) !== catalogUrl(initialParams)');
     expect(catalog).toContain('syncFromLocation(false)');
+    expect(catalog).toContain('const appliedParams =');
+    expect(catalog).toContain('catalogUrl(appliedParams)');
     expect(catalog).toContain('data-catalog-url-pending');
     expect(page).toContain('data-catalog-shell');
     expect(page).toContain("['q', 'bundle', 'bidang', 'unit', 'page']");
+    expect(page).toContain('window.setTimeout');
     expect(catalog).toContain('resultsHeadingRef');
     expect(catalog).toContain('role="status"');
     expect(catalog).toContain('aria-atomic="true"');

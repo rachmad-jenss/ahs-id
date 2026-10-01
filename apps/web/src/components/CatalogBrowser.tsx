@@ -46,11 +46,23 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
     const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
     if (catalogUrl(currentParams) !== catalogUrl(initialParams)) syncFromLocation(false);
-    document.querySelector<HTMLElement>('[data-catalog-shell]')?.removeAttribute('data-catalog-url-pending');
     const handlePopState = (): void => syncFromLocation();
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, [focusResults, initialParams]);
+
+  useEffect(() => {
+    const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
+    const appliedParams = {
+      q: query.trim() || undefined,
+      bundle: bundle || undefined,
+      bidang: bidang || undefined,
+      unit: unit || undefined,
+      page,
+    };
+    if (catalogUrl(currentParams) !== catalogUrl(appliedParams)) return;
+    document.querySelector<HTMLElement>('[data-catalog-shell]')?.removeAttribute('data-catalog-url-pending');
+  }, [bidang, bundle, page, query, unit]);
 
   const bidangOptions = useMemo(
     () => [...new Set(entries.map((entry) => entry.bidang))].sort(),
