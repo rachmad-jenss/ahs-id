@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { writeFileSync } from 'node:fs';
+import { existsSync, writeFileSync } from 'node:fs';
 import { exportHspToExcelBuffer } from '@ahs-id/core';
 import { calculateHsp, parseKeyValue } from '../utils/loader.js';
 
@@ -10,9 +10,15 @@ export function exportRabCommand(): Command {
     .option('-b, --bundle <name>', 'AHSP regulation bundle (default: pupr-2023)', 'pupr-2023')
     .option('--hsd <name>', 'HSD price bundle (default: hsd-kaltim-2025 for pupr-2023, hsd-bm-2022 for bina-marga-2022)')
     .option('-o, --output <path>', 'Output Excel file path (default: <kode-ahsp>.xlsx)')
+    .option('--force', 'Replace an existing output file')
     .option('-v, --variable <key=value...>', 'Input variables (e.g. jarak_quarry_km=25)')
-    .action(async (kodeAhsp: string, options: { bundle: string; hsd?: string; output?: string; variable?: string[] }) => {
+    .action(async (kodeAhsp: string, options: { bundle: string; hsd?: string; output?: string; force?: boolean; variable?: string[] }) => {
       try {
+        const outputPath = options.output ?? defaultExcelName(kodeAhsp);
+        if (existsSync(outputPath) && !options.force) {
+          throw new Error(`Output file already exists: ${outputPath}. Pass --force to replace it.`);
+        }
+
         const variables: Record<string, string | number> = {};
         if (options.variable) {
           for (const kv of options.variable) {
@@ -23,9 +29,8 @@ export function exportRabCommand(): Command {
         const { result } = await calculateHsp(options.bundle, kodeAhsp, options.hsd, variables);
         const buffer = await exportHspToExcelBuffer(result);
 
-        const outputPath = options.output ?? defaultExcelName(kodeAhsp);
         writeFileSync(outputPath, buffer);
-        console.log(`RAB exported to ${outputPath}`);
+        console.log(`RAB berhasil diekspor ke ${outputPath}`);
       } catch (err) {
         console.error(`Error: ${(err as Error).message}`);
         process.exit(1);

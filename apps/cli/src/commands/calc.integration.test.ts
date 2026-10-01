@@ -51,6 +51,13 @@ describe('calc-hsp from another directory', () => {
     expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('Unknown bundle') });
   });
 
+  it('emits parseable JSON when an item code is missing', () => {
+    const result = run(['calc-hsp', '--json']);
+
+    expect(result.status).toBe(1);
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('kode-ahsp') });
+  });
+
   it('labels human-readable money values as Rupiah', () => {
     const result = run(['calc-hsp', '3.1.1', '--bundle', 'bina-marga-2016']);
 
