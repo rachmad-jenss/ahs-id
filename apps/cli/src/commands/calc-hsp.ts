@@ -33,6 +33,10 @@ export function wrapTerminalText(value: string, width: number): string[] {
   return lines;
 }
 
+export function formatTerminalContinuation(value: string): string {
+  return `  ↳ ${value}`;
+}
+
 export function calcHspCommand(): Command {
   const cmd = new Command('calc-hsp')
     .description('Calculate HSP (Harga Satuan Pekerjaan) for an AHSP item')
@@ -94,7 +98,7 @@ export function calcHspCommand(): Command {
             const continuationLines = wrappedLines.slice(1);
             console.log(`  ${firstLine.padEnd(38)} ${comp.satuan.padEnd(8)} ${String(comp.coefficient).padEnd(12)} ${formatIdr(comp.unit_price).padStart(12)} ${formatIdr(comp.total_price).padStart(14)}`);
             for (const line of continuationLines) {
-              console.log(`  ${line}`);
+              console.log(formatTerminalContinuation(line));
             }
           }
           console.log(`  ${'Subtotal'.padEnd(74)} ${formatIdr(group.total).padStart(14)}`);

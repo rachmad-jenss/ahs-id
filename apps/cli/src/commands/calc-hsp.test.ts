@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { wrapTerminalText } from './calc-hsp.js';
+import { formatTerminalContinuation, wrapTerminalText } from './calc-hsp.js';
 
 describe('wrapTerminalText', () => {
   it('wraps long component descriptions without exceeding the requested width', () => {
@@ -8,5 +8,9 @@ describe('wrapTerminalText', () => {
       'sangat',
       'panjang',
     ]);
+  });
+
+  it('marks wrapped continuation lines as part of the current component', () => {
+    expect(formatTerminalContinuation('sangat panjang')).toBe('  ↳ sangat panjang');
   });
 });
