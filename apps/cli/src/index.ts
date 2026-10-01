@@ -33,7 +33,7 @@ try {
   await program.parseAsync(process.argv);
 } catch (error) {
   const exitCode = getCommanderExitCode(error);
-  if (exitCode !== 0) {
+  if (exitCode !== 0 && !commanderAlreadyPrintedOutput(error)) {
     const message = error instanceof Error ? error.message : String(error);
     const json = process.argv.includes('--json');
     console.error(json ? JSON.stringify({ error: message }) : message);
@@ -47,4 +47,13 @@ function getCommanderExitCode(error: unknown): number {
     return error.exitCode;
   }
   return 1;
+}
+
+/** Avoid duplicating help or version output that Commander already emitted. */
+function commanderAlreadyPrintedOutput(error: unknown): boolean {
+  if (typeof error !== 'object' || error === null || !('code' in error) || typeof error.code !== 'string') {
+    return false;
+  }
+
+  return ['commander.help', 'commander.helpDisplayed', 'commander.version'].includes(error.code);
 }

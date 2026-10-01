@@ -74,6 +74,14 @@ describe('calc-hsp from another directory', () => {
     expect(result.stderr).not.toContain('Usage:');
   });
 
+  it('does not append an output marker after Commander prints root help', () => {
+    const result = run([]);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain('Usage: ahs-id');
+    expect(result.stderr).not.toContain('(outputHelp)');
+  });
+
   it('emits parseable JSON when an option value is missing', () => {
     const result = run(['calc-hsp', '--json', '--bundle']);
 
