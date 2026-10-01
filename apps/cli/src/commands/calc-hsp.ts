@@ -40,6 +40,7 @@ export function formatTerminalContinuation(value: string): string {
 export interface TerminalLayout {
   readonly descriptionWidth: number;
   readonly separatorWidth: number;
+  readonly compact: boolean;
 }
 
 export function getTerminalLayout(terminalWidth = process.stdout.columns ?? 80): TerminalLayout {
@@ -47,7 +48,36 @@ export function getTerminalLayout(terminalWidth = process.stdout.columns ?? 80):
   return {
     descriptionWidth: Math.max(20, Math.min(38, width - 52)),
     separatorWidth: Math.max(48, Math.min(72, width)),
+    compact: width < 76,
   };
+}
+
+export interface TerminalComponentRow {
+  readonly nama?: string;
+  readonly ref: string;
+  readonly satuan: string;
+  readonly coefficient: number;
+  readonly unit_price: number;
+  readonly total_price: number;
+}
+
+export function formatTerminalComponentLines(component: TerminalComponentRow, layout: TerminalLayout): string[] {
+  const wrappedLines = wrapTerminalText(component.nama || component.ref, layout.descriptionWidth);
+  if (layout.compact) {
+    return [
+      ...wrappedLines.map((line, index) => index === 0 ? `  ${line}` : formatTerminalContinuation(line)),
+      `    Satuan: ${component.satuan}`,
+      `    Koefisien: ${component.coefficient}`,
+      `    Harga satuan: ${formatIdr(component.unit_price)}`,
+      `    Jumlah: ${formatIdr(component.total_price)}`,
+    ];
+  }
+
+  const firstLine = wrappedLines[0] ?? '';
+  return [
+    `  ${firstLine.padEnd(layout.descriptionWidth)} ${component.satuan.padEnd(8)} ${String(component.coefficient).padEnd(12)} ${formatIdr(component.unit_price).padStart(12)} ${formatIdr(component.total_price).padStart(14)}`,
+    ...wrappedLines.slice(1).map(formatTerminalContinuation),
+  ];
 }
 
 function emitCommandError(message: string, json: boolean): void {
@@ -105,7 +135,7 @@ export function calcHspCommand(): Command {
         // Formatted table output
         const layout = getTerminalLayout();
         const sep = '─'.repeat(layout.separatorWidth);
-        const totalLabelWidth = Math.max(24, layout.separatorWidth - 14);
+        const totalLabelWidth = Math.max(24, layout.separatorWidth - 17);
         console.log(`\n${result.kode_ahsp} — ${result.nama}`);
         console.log(`Satuan: ${result.satuan_bayar}`);
         console.log(hsdName ? `HSD: ${hsdName}` : 'HSD: tertanam dalam bundle');
@@ -116,24 +146,23 @@ export function calcHspCommand(): Command {
             : group.type === 'M' ? 'B. Bahan'
             : 'C. Peralatan';
           console.log(`\n${label}`);
-          console.log(`  ${'Uraian'.padEnd(layout.descriptionWidth)} ${'Satuan'.padEnd(8)} ${'Koefisien'.padEnd(12)} ${'Harga Satuan'.padEnd(14)} ${'Jumlah'}`);
-          for (const comp of group.components) {
-            const wrappedLines = wrapTerminalText(comp.nama || comp.ref, layout.descriptionWidth);
-            const firstLine = wrappedLines[0] ?? '';
-            const continuationLines = wrappedLines.slice(1);
-            console.log(`  ${firstLine.padEnd(layout.descriptionWidth)} ${comp.satuan.padEnd(8)} ${String(comp.coefficient).padEnd(12)} ${formatIdr(comp.unit_price).padStart(12)} ${formatIdr(comp.total_price).padStart(14)}`);
-            for (const line of continuationLines) {
-              console.log(formatTerminalContinuation(line));
-            }
+          if (!layout.compact) {
+            console.log(`  ${'Uraian'.padEnd(layout.descriptionWidth)} ${'Satuan'.padEnd(8)} ${'Koefisien'.padEnd(12)} ${'Harga Satuan'.padEnd(14)} ${'Jumlah'}`);
           }
-          console.log(`  ${'Subtotal'.padEnd(totalLabelWidth)} ${formatIdr(group.total).padStart(14)}`);
+          for (const comp of group.components) {
+            for (const line of formatTerminalComponentLines(comp, layout)) console.log(line);
+          }
+          console.log(layout.compact ? `  Subtotal: ${formatIdr(group.total)}` : `  ${'Subtotal'.padEnd(totalLabelWidth)} ${formatIdr(group.total).padStart(14)}`);
         }
 
         console.log(`\n${sep}`);
-        console.log(`  ${'Biaya Langsung (A+B+C)'.padEnd(totalLabelWidth)} ${formatIdr(result.baseTotal).padStart(14)}`);
-        console.log(`  ${`Overhead (${result.overheadPct}%)`.padEnd(totalLabelWidth)} ${formatIdr(result.baseTotal * (result.overheadPct / 100)).padStart(14)}`);
-        console.log(`  ${`Profit (${result.profitPct}%)`.padEnd(totalLabelWidth)} ${formatIdr(result.baseTotal * (result.profitPct / 100)).padStart(14)}`);
-        console.log(`  ${'Harga Satuan Pekerjaan'.padEnd(totalLabelWidth)} ${formatIdr(result.grandTotal).padStart(14)}`);
+        const printTotal = (label: string, value: number): void => {
+          console.log(layout.compact ? `  ${label}: ${formatIdr(value)}` : `  ${label.padEnd(totalLabelWidth)} ${formatIdr(value).padStart(14)}`);
+        };
+        printTotal('Biaya Langsung (A+B+C)', result.baseTotal);
+        printTotal(`Overhead (${result.overheadPct}%)`, result.baseTotal * (result.overheadPct / 100));
+        printTotal(`Profit (${result.profitPct}%)`, result.baseTotal * (result.profitPct / 100));
+        printTotal('Harga Satuan Pekerjaan', result.grandTotal);
         console.log(sep);
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);

@@ -29,7 +29,14 @@ export function exportRabCommand(): Command {
         const { result } = await calculateHsp(options.bundle, kodeAhsp, options.hsd, variables);
         const buffer = await exportHspToExcelBuffer(result);
 
-        writeFileSync(outputPath, buffer);
+        try {
+          writeFileSync(outputPath, buffer, options.force ? undefined : { flag: 'wx' });
+        } catch (error) {
+          if (!options.force && isNodeError(error) && error.code === 'EEXIST') {
+            throw new Error(`Output file already exists: ${outputPath}. Pass --force to replace it.`);
+          }
+          throw error;
+        }
         console.log(`RAB berhasil diekspor ke ${outputPath}`);
       } catch (err) {
         console.error(`Error: ${(err as Error).message}`);
@@ -45,4 +52,8 @@ function defaultExcelName(kodeAhsp: string): string {
     throw new Error('kode-ahsp cannot contain a path. Pass --output to choose a file path.');
   }
   return `${kodeAhsp}.xlsx`;
+}
+
+function isNodeError(error: unknown): error is NodeJS.ErrnoException {
+  return error instanceof Error && 'code' in error;
 }

@@ -58,6 +58,21 @@ describe('calc-hsp from another directory', () => {
     expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('kode-ahsp') });
   });
 
+  it('emits parseable JSON for Commander parse errors', () => {
+    const result = run(['calc-hsp', '--json', '--unknown-option']);
+
+    expect(result.status).toBe(1);
+    expect(result.stdout).toBe('');
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('unknown option') });
+  });
+
+  it('emits parseable JSON when an option value is missing', () => {
+    const result = run(['calc-hsp', '--json', '--bundle']);
+
+    expect(result.status).toBe(1);
+    expect(JSON.parse(result.stderr)).toMatchObject({ error: expect.stringContaining('argument missing') });
+  });
+
   it('labels human-readable money values as Rupiah', () => {
     const result = run(['calc-hsp', '3.1.1', '--bundle', 'bina-marga-2016']);
 

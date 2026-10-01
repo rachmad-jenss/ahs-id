@@ -38,10 +38,10 @@ const featured = featuredCodes
           <SearchLauncher examples={[{ label: 'Galian tanah', query: 'galian tanah' }, { label: '3.1.1', query: '3.1.1' }, { label: 'Bina Marga', query: 'Bina Marga' }]} client:load />
         </div>
         <div class="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
-          <a class="inline-flex items-center gap-2 font-semibold text-foreground hover-fine-text-primary" href="/katalog/">
+          <a class="pressable inline-flex items-center gap-2 font-semibold text-foreground hover-fine-text-primary" href="/katalog/">
             Buka katalog <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </a>
-          <a class="inline-flex items-center gap-2 hover-fine-text-primary" href="/docs/">
+          <a class="pressable inline-flex items-center gap-2 hover-fine-text-primary" href="/docs/">
             Mulai dari npm <Code2 aria-hidden="true" className="h-4 w-4" />
           </a>
         </div>
@@ -112,7 +112,7 @@ const featured = featuredCodes
           <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Mulai dari item</p>
           <h2 class="mt-3 font-serif text-4xl tracking-[-0.03em] sm:text-5xl">Beberapa jalur kerja populer.</h2>
         </div>
-        <a class="inline-flex items-center gap-2 text-sm font-semibold hover-fine-text-primary" href="/katalog/">Lihat semua item <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
+        <a class="pressable inline-flex items-center gap-2 text-sm font-semibold hover-fine-text-primary" href="/katalog/">Lihat semua item <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
       </div>
       <div class="mt-10 grid gap-4 lg:grid-cols-3">
         {featured.map((item) => (

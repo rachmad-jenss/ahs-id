@@ -99,7 +99,8 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('role="status"');
     expect(catalog).toContain('aria-atomic="true"');
     expect(catalog).toContain('Pencarian aktif');
-    expect(catalog).toContain('aria-label="Buka filter katalog"');
+    expect(catalog).toContain('aria-label={filterOpen ? \'Tutup filter katalog\' : \'Buka filter katalog\'}');
+    expect(catalog).toContain('onToggle={(event) => setFilterOpen(event.currentTarget.open)}');
     expect(catalog).toContain('break-words font-medium');
     expect(catalog).not.toContain('block truncate font-medium');
     expect(catalog).toContain('grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]');
@@ -113,7 +114,8 @@ describe('web UI contracts', () => {
     expect(item).toContain('tabindex="0"');
     expect(item).toContain('role="region"');
     expect(item).toContain('aria-describedby');
-    expect(item).toContain('lg:sr-only');
+    expect(item).toContain('xl:sr-only');
+    expect(item).not.toContain('lg:sr-only');
     expect(item).toContain('table-scroll');
     expect(item).toContain('<caption class="sr-only">');
     expect(item).toContain('scope="col"');
@@ -135,6 +137,8 @@ describe('web UI contracts', () => {
 
     expect(home).not.toContain('text-primary-foreground/65');
     expect(home).toContain('transition-[transform,border-color,box-shadow]');
+    expect(home).toContain('class="pressable inline-flex items-center gap-2 font-semibold');
+    expect(styles).toContain('.pressable:not([class*="transition-"])');
     expect(bundles).toContain('Sumber data');
     expect(docs).toContain('Dokumentasi developer');
     expect(methodology).toContain('bg-warning-surface');
@@ -145,8 +149,8 @@ describe('web UI contracts', () => {
     expect(styles).toContain('--color-warning-surface');
     expect(styles).toContain('text-wrap: balance;');
     expect(styles).toContain('text-wrap: pretty;');
-    expect(styles).toContain('transition: opacity var(--motion-duration-fast)');
-    expect(styles).toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
+    expect(styles).toContain('transition: opacity 150ms ease-out');
+    expect(styles).not.toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
     expect(source).toContain('transition-[transform,color]');
   });
 });
