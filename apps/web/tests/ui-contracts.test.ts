@@ -99,9 +99,12 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('draftQuery');
     expect(catalog).toContain('catalogUrl(currentParams) !== catalogUrl(initialParams)');
     expect(catalog).toContain('syncFromLocation(false)');
+    expect(catalog).toContain('const appliedParams =');
+    expect(catalog).toContain('catalogUrl(appliedParams)');
     expect(catalog).toContain('data-catalog-url-pending');
-    expect(catalog).toContain('data-catalog-browser');
+    expect(page).toContain('data-catalog-shell');
     expect(page).toContain("['q', 'bundle', 'bidang', 'unit', 'page']");
+    expect(page).toContain('window.setTimeout');
     expect(catalog).toContain('resultsHeadingRef');
     expect(catalog).toContain('role="status"');
     expect(catalog).toContain('aria-atomic="true"');
@@ -156,7 +159,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('--color-warning-surface');
     expect(styles).toContain('text-wrap: balance;');
     expect(styles).toContain('text-wrap: pretty;');
-    expect(styles).toContain('[data-catalog-browser][data-catalog-url-pending]');
+    expect(styles).toContain('[data-catalog-shell][data-catalog-url-pending]');
     expect(styles).toContain('transition: opacity 150ms ease-out');
     expect(styles).not.toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
     expect(source).toContain('transition-[transform,color]');

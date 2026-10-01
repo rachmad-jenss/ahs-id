@@ -53,7 +53,7 @@ html {
   text-size-adjust: 100%;
 }
 
-[data-catalog-browser][data-catalog-url-pending] {
+[data-catalog-shell][data-catalog-url-pending] {
   visibility: hidden;
 }
 
