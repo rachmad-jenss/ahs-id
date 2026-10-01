@@ -35,6 +35,8 @@ describe('web UI contracts', () => {
     expect(layout).toContain('mobile-menu-panel');
     expect(styles).toContain('@media (hover: hover) and (pointer: fine)');
     expect(styles).toContain('@media (prefers-reduced-motion: reduce)');
+    expect(styles).toContain('display: block;');
+    expect(styles).toContain('max-height: 0;');
   });
 
   it('keeps every hover affordance scoped to fine pointers', () => {
@@ -82,10 +84,8 @@ describe('web UI contracts', () => {
 
     expect(page).toContain('mx-auto max-w-7xl');
     expect(catalog).toContain('<details');
-    expect(catalog).toContain('order-2');
     expect(catalog).toContain('lg:hidden');
-    expect(catalog).toContain('order-1');
-    expect(catalog).toContain('lg:order-2');
+    expect(catalog.indexOf('<section')).toBeLessThan(catalog.indexOf('<details'));
     expect(catalog).toContain('type="search"');
     expect(catalog).toContain('inputMode="search"');
     expect(catalog).toContain('enterKeyHint="search"');
@@ -100,6 +100,9 @@ describe('web UI contracts', () => {
     const styles = readSource('src/styles/global.css');
 
     expect(item).toContain('Geser tabel ke samping');
+    expect(item).toContain('tabindex="0"');
+    expect(item).toContain('role="region"');
+    expect(item).toContain('table-scroll');
     expect(item).toContain('<caption class="sr-only">');
     expect(item).toContain('scope="col"');
     expect(styles).toContain('--font-sans: ui-sans-serif');

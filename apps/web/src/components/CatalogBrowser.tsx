@@ -139,7 +139,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
   return (
     <div className="grid gap-8 lg:grid-cols-[15rem_1fr]">
-      <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:order-1 lg:block lg:sticky lg:top-24">
+      <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold">Saring katalog</p>
           <SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" />
@@ -147,15 +147,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
         {filterControls}
       </aside>
 
-      <details className="order-2 rounded-2xl border border-border/80 bg-card/60 lg:hidden" open={activeFilterCount > 0}>
-        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-          <span className="flex items-center gap-2"><SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" /> Filter katalog</span>
-          <span className="text-xs font-normal text-muted-foreground">{activeFilterCount > 0 ? `${activeFilterCount} aktif` : 'Opsional'}</span>
-        </summary>
-        <div className="border-t border-border/80 p-4">{filterControls}</div>
-      </details>
-
-      <section className="order-1 lg:order-2" aria-labelledby="catalog-results-heading">
+      <section aria-labelledby="catalog-results-heading">
         <form className="flex gap-2" onSubmit={submit} role="search">
           <label className="sr-only" htmlFor="catalog-search">Cari katalog</label>
           <div className="relative flex-1">
@@ -213,6 +205,14 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
           </div>
         )}
       </section>
+
+      <details className="rounded-2xl border border-border/80 bg-card/60 lg:hidden" open={activeFilterCount > 0}>
+        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+          <span className="flex items-center gap-2"><SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" /> Filter katalog</span>
+          <span className="text-xs font-normal text-muted-foreground">{activeFilterCount > 0 ? `${activeFilterCount} aktif` : 'Opsional'}</span>
+        </summary>
+        <div className="border-t border-border/80 p-4">{filterControls}</div>
+      </details>
     </div>
   );
 }
