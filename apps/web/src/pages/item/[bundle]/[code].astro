@@ -36,7 +36,7 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
 <SiteLayout canonical={detailUrl} title={pageTitle} description={pageDescription}>
   <script type="application/ld+json" set:html={jsonLdString}></script>
   <article class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-20">
-    <a class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary" href="/katalog/"><ArrowLeft aria-hidden="true" className="h-4 w-4" /> Kembali ke katalog</a>
+    <a class="inline-flex items-center gap-2 text-sm text-muted-foreground hover-fine-text-primary" href="/katalog/"><ArrowLeft aria-hidden="true" className="h-4 w-4" /> Kembali ke katalog</a>
     <div class="mt-10 grid gap-12 lg:grid-cols-[1fr_20rem]">
       <div>
         <div class="flex flex-wrap items-center gap-2"><Badge>{item.bundleName}</Badge><Badge variant="outline">{item.calculationType === 'dynamic_hsd' ? 'Dynamic HSD' : 'Fixed coefficient'}</Badge><Badge variant="muted">{item.provenance.verification_tier}</Badge></div>
@@ -86,7 +86,7 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Tier verifikasi</dt><dd class="mt-2"><Badge variant="muted">{item.provenance.verification_tier}</Badge></dd></div>
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Kunci katalog</dt><dd class="mt-2 break-all font-mono text-xs text-muted-foreground">{catalogItemKey(item)}</dd></div>
         </dl>
-        <a class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline" href="/metodologi/">Baca metodologi <ExternalLink aria-hidden="true" className="h-4 w-4" /></a>
+        <a class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/metodologi/">Baca metodologi <ExternalLink aria-hidden="true" className="h-4 w-4" /></a>
       </aside>
     </div>
   </article>

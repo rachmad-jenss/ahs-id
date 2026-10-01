@@ -37,8 +37,11 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
           <Input
             className="h-14 rounded-2xl border-primary/40 pl-12 pr-4 text-base shadow-sm focus-visible:border-primary"
             id="hero-search"
+            inputMode="search"
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Cari kode, nama pekerjaan, atau bundle…"
+            enterKeyHint="search"
+            type="search"
             value={query}
           />
         </div>
@@ -50,7 +53,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
         <span className="mr-1">Coba cari:</span>
         {examples.map((example) => (
           <button
-            className="rounded-full border border-border bg-background/70 px-3 py-1.5 transition-colors hover:border-primary/50 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="inline-flex min-h-11 items-center rounded-full border border-border bg-background/70 px-3 py-1.5 transition-colors hover-fine-border-primary hover-fine-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             key={example.query}
             onClick={() => chooseExample(example.query)}
             type="button"

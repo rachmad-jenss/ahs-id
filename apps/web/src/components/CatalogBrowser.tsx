@@ -167,7 +167,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
             <ul className="divide-y divide-border/70">
               {paged.items.map((entry) => (
                 <li key={entry.key}>
-                  <a className="grid gap-2 px-5 py-4 transition-colors hover:bg-muted/50 sm:grid-cols-[7rem_1fr_12rem_4rem] sm:items-center sm:gap-4" href={entry.href}>
+                  <a className="grid gap-2 px-5 py-4 transition-colors hover-fine-bg-muted-50 sm:grid-cols-[7rem_1fr_12rem_4rem] sm:items-center sm:gap-4" href={entry.href}>
                     <span className="font-mono text-sm font-semibold text-primary">{entry.code}</span>
                     <span className="min-w-0">
                       <span className="block truncate font-medium">{entry.name}</span>
