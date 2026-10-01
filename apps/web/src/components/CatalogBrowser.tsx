@@ -46,7 +46,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
     const currentParams = parseCatalogSearchParams(new URLSearchParams(window.location.search));
     if (catalogUrl(currentParams) !== catalogUrl(initialParams)) syncFromLocation(false);
-    document.querySelector<HTMLElement>('[data-catalog-browser]')?.removeAttribute('data-catalog-url-pending');
+    document.querySelector<HTMLElement>('[data-catalog-shell]')?.removeAttribute('data-catalog-url-pending');
     const handlePopState = (): void => syncFromLocation();
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);

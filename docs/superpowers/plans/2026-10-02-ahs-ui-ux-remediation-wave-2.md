@@ -10,7 +10,7 @@
 
 **Spec:** GitHub issue [DAS-42](https://github.com/rachmad-jenss/ahs-id/issues/42) and the read-only audit recorded in the task conversation.
 
-> Follow-up F28 is tracked separately in [DAS-44](https://github.com/rachmad-jenss/ahs-id/issues/44) because it was discovered during post-merge public smoke testing.
+> Follow-up F28 is tracked separately in [DAS-44](https://github.com/rachmad-jenss/ahs-id/issues/44) because it was discovered during post-merge public smoke testing. F29 is tracked in [DAS-46](https://github.com/rachmad-jenss/ahs-id/issues/46) as a follow-up runtime warning found while verifying F28.
 
 ## Global Constraints
 
@@ -56,6 +56,7 @@
 | F26 | Reduced-motion CSS globally collapses all transition durations instead of preserving useful non-motion feedback. | Retain animation cancellation but preserve short color/opacity transitions and remove transform movement for reduced-motion users; source contract/browser check. |
 | F27 | Search fields do not expose a stable form name/autocomplete policy. | Add `name="q"` and an intentional autocomplete value to catalog/launcher search fields; source contract/browser check. |
 | F28 | A direct catalog deep link keeps `?q=` in the URL but hydrates the React island with the unfiltered static state. | Cloak only parameterized catalog markup before hydration, reconcile the browser URL with Astro-provided params, then remove the cloak; add source contracts and repeat direct production URL QA. |
+| F29 | The pre-hydration cloak mutates the React island root before hydration and produces a React hydration-mismatch warning. | Keep the pending attribute on the Astro-owned wrapper outside the React root; verify local browser logs and public deep-link behavior. |
 
 ## Review Focus
 

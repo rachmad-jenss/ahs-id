@@ -23,7 +23,7 @@ const initialParams = parseCatalogSearchParams(Astro.url.searchParams);
       </div>
     </div>
   </section>
-  <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16">
+  <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16" data-catalog-shell>
     <CatalogBrowser
       bundles={catalog.bundles}
       entries={entries}
@@ -36,5 +36,5 @@ const initialParams = parseCatalogSearchParams(Astro.url.searchParams);
 <script is:inline>
   const catalogSearch = new URLSearchParams(window.location.search);
   const hasCatalogParams = ['q', 'bundle', 'bidang', 'unit', 'page'].some((key) => catalogSearch.has(key));
-  if (hasCatalogParams) document.querySelector('[data-catalog-browser]')?.setAttribute('data-catalog-url-pending', '');
+  if (hasCatalogParams) document.querySelector('[data-catalog-shell]')?.setAttribute('data-catalog-url-pending', '');
 </script>
