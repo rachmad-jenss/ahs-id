@@ -175,4 +175,54 @@ describe('web UI contracts', () => {
     expect(styles).not.toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
     expect(source).toContain('transition-[transform,color]');
   });
+
+  it('covers residual theme, shell, semantics, mobile, and copy contracts', () => {
+    const layout = readSource('src/layouts/SiteLayout.astro');
+    const styles = readSource('src/styles/global.css');
+    const home = readSource('src/pages/index.astro');
+    const bundles = readSource('src/pages/bundles/index.astro');
+    const docs = readSource('src/pages/docs/index.astro');
+    const item = readSource('src/pages/item/[bundle]/[code].astro');
+    const methodology = readSource('src/pages/metodologi/index.astro');
+    const about = readSource('src/pages/tentang/index.astro');
+    const notFound = readSource('src/pages/404.astro');
+    const launcher = readSource('src/components/SearchLauncher.tsx');
+
+    expect(layout).toContain('width=device-width, initial-scale=1, viewport-fit=cover');
+    expect(layout).toContain('<main id="main-content" tabindex="-1">');
+    expect(layout).toContain('ahs-id-theme');
+    expect(layout).toContain('theme-select');
+    expect(layout).toContain('value="system"');
+    expect(layout).toContain('value="light"');
+    expect(layout).toContain('value="dark"');
+    expect(layout).toContain('aria-labelledby="theme-label"');
+    expect(styles).toContain(":root[data-theme='dark']");
+    expect(styles).toContain("@media (prefers-color-scheme: dark)");
+    expect(styles).toContain('color-scheme:');
+    expect(styles).toContain('safe-area-inset-top');
+    expect(styles).toContain('safe-area-inset-bottom');
+    expect(styles).toContain('overscroll-behavior-x: none;');
+    expect(styles).toContain('[data-theme-switching]');
+    expect(styles).toContain('.pressable-chip:active');
+    expect(styles).toContain('.home-hero-backdrop');
+    expect(styles).toContain('a.pressable');
+
+    expect(layout).toContain('aria-labelledby="catalog-filters-heading"');
+    expect(item).toContain('aria-labelledby="summary-heading"');
+    expect(item).toContain('aria-labelledby="provenance-heading"');
+    expect(methodology).toContain('aria-labelledby="quarantine-heading"');
+    expect(docs).toContain('<pre');
+    expect(docs).toContain('tabindex="0" role="region"');
+    expect(docs).toContain('whitespace-pre');
+    expect(bundles).toContain('bundle-card-link');
+    expect(bundles).not.toContain('Jelajahi bundle</a>');
+    expect(home).toContain('home-hero-backdrop');
+    expect(launcher).toContain('pressable-chip');
+
+    expect(home).not.toContain('Open source · Indonesia');
+    expect(home).not.toContain('>Provenance</');
+    expect(layout).not.toContain('Source di GitHub');
+    expect(about).not.toContain('foundation layer');
+    expect(notFound).not.toContain('NOT FOUND');
+  });
 });
