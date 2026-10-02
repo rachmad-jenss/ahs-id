@@ -54,7 +54,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
           Cari AHSP
         </Button>
       </form>
-      <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground">
         <span className="mr-1">Coba cari:</span>
         {examples.map((example) => (
           <button
