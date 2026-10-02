@@ -48,6 +48,11 @@
   --code-keyword: oklch(0.88 0.1 166);
   --code-string: oklch(0.88 0.09 90);
   --code-number: oklch(0.88 0.1 75);
+  --scrollbar-track: var(--background);
+  --scrollbar-thumb: color-mix(in oklch, var(--foreground) 24%, transparent);
+  --scrollbar-thumb-hover: color-mix(in oklch, var(--foreground) 38%, transparent);
+  --code-scrollbar-thumb: color-mix(in oklch, var(--code-foreground) 36%, var(--code-surface));
+  --code-scrollbar-thumb-hover: color-mix(in oklch, var(--code-foreground) 52%, var(--code-surface));
   --motion-duration-fast: 180ms;
   --motion-ease-ui: cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -103,6 +108,27 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   overscroll-behavior-x: none;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border: 0.25rem solid var(--scrollbar-track);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }
 
 [data-catalog-shell][data-catalog-url-pending] {
@@ -171,6 +197,31 @@ a.pressable {
 
 .code-surface {
   background: var(--code-surface);
+  scrollbar-color: var(--code-scrollbar-thumb) var(--code-surface);
+  scrollbar-width: thin;
+}
+
+.code-surface::-webkit-scrollbar,
+.code-surface *::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.code-surface::-webkit-scrollbar-track,
+.code-surface *::-webkit-scrollbar-track {
+  background: var(--code-surface);
+}
+
+.code-surface::-webkit-scrollbar-thumb,
+.code-surface *::-webkit-scrollbar-thumb {
+  background: var(--code-scrollbar-thumb);
+  border: 0.1875rem solid var(--code-surface);
+  border-radius: 999px;
+}
+
+.code-surface::-webkit-scrollbar-thumb:hover,
+.code-surface *::-webkit-scrollbar-thumb:hover {
+  background: var(--code-scrollbar-thumb-hover);
 }
 
 .code-foreground {
@@ -195,6 +246,39 @@ a.pressable {
 
 .code-number {
   color: var(--code-number);
+}
+
+.featured-card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.theme-icon[data-theme-active='false'] {
+  display: none;
+}
+
+.theme-logo-dark {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-logo-light {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-logo-dark {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='system'] .theme-logo-light {
+    display: none;
+  }
+
+  :root[data-theme='system'] .theme-logo-dark {
+    display: block;
+  }
 }
 
 .home-hero-backdrop {
@@ -297,10 +381,6 @@ summary:focus-visible,
     box-shadow: 0 20px 40px color-mix(in oklch, var(--primary) 5%, transparent);
   }
 
-  .group:hover .group-hover-fine-rotate-6 {
-    transform: rotate(6deg);
-  }
-
   .group:hover .group-hover-fine-arrow {
     transform: translateX(0.25rem);
     color: var(--primary);
@@ -348,7 +428,6 @@ details[open] > .mobile-menu-panel {
 
   button:active,
   .hover-fine-card:hover,
-  .group:hover .group-hover-fine-rotate-6,
   .group:hover .group-hover-fine-arrow {
     transform: none !important;
   }

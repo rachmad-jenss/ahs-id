@@ -22,22 +22,21 @@ const featured = featuredCodes
 >
   <section class="relative overflow-hidden border-b border-border/80">
     <div class="home-hero-backdrop absolute inset-0 -z-10"></div>
-    <div class="mx-auto grid max-w-7xl gap-14 px-5 pb-20 pt-16 lg:grid-cols-[1.1fr_.9fr] lg:items-end lg:px-8 lg:pb-28 lg:pt-24">
-      <div>
-        <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-          <span class="h-px w-10 bg-primary"></span>
-          Sumber terbuka · Indonesia
+    <div class="mx-auto flex max-w-7xl flex-col items-center px-5 pb-20 pt-16 text-center lg:px-8 lg:pb-28 lg:pt-24">
+      <div class="flex w-full max-w-4xl flex-col items-center">
+        <div class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+          Project open-source untuk Indonesia
         </div>
-        <h1 class="mt-7 max-w-4xl font-serif text-5xl leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-8xl">
-          Angka yang rapi untuk pekerjaan yang nyata.
+        <h1 class="mt-7 max-w-4xl font-serif text-5xl leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
+          Temukan data AHSP dengan jejak sumber yang jelas.
         </h1>
         <p class="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-          AHS-ID menyusun Analisa Harga Satuan Pekerjaan Indonesia menjadi data yang bisa dicari, dibaca, dan dipakai ulang oleh engineer, quantity surveyor, dan developer.
+          Cari item pekerjaan, pahami konteks regulasinya, lalu gunakan datanya kembali untuk alur kerja Anda.
         </p>
-        <div class="mt-9">
+        <div class="mt-9 w-full max-w-3xl">
           <SearchLauncher examples={[{ label: 'Galian tanah', query: 'galian tanah' }, { label: '3.1.1', query: '3.1.1' }, { label: 'Bina Marga', query: 'Bina Marga' }]} client:load />
         </div>
-        <div class="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
+        <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
           <a class="pressable inline-flex items-center gap-2 font-semibold text-foreground hover-fine-text-primary" href="/katalog/">
             Buka katalog <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </a>
@@ -47,32 +46,45 @@ const featured = featuredCodes
         </div>
       </div>
 
-      <div class="relative lg:pb-5">
+      <div class="relative mt-14 w-full max-w-4xl lg:mt-16">
         <div class="absolute -right-4 -top-12 hidden h-40 w-40 rounded-full border border-primary/20 lg:block"></div>
-        <div class="relative rounded-[2rem] border border-foreground/15 bg-foreground p-6 text-background shadow-2xl shadow-primary/10 sm:p-8">
-          <div class="flex items-start justify-between gap-6 border-b border-background/15 pb-6">
+        <div class="relative overflow-hidden rounded-[2rem] border border-foreground/15 bg-foreground text-background shadow-2xl shadow-primary/10">
+          <div class="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-primary/20 blur-3xl"></div>
+          <div class="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <p class="font-mono text-xs uppercase tracking-[0.2em] text-background/70">Ringkasan katalog</p>
-              <p class="mt-3 font-serif text-4xl">{catalog.items.length.toLocaleString('id-ID')}</p>
-              <p class="mt-1 text-sm text-background/65">item AHSP siap ditelusuri</p>
+              <div class="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-background/70">
+                <span class="h-2 w-2 rounded-full bg-primary"></span>
+                Ringkasan katalog
+              </div>
+              <h2 class="mt-4 max-w-md font-serif text-3xl leading-tight sm:text-4xl">Data yang siap ditelusuri.</h2>
+              <p class="mt-3 max-w-xl text-sm leading-6 text-background/70">Satu tempat untuk menemukan item AHSP, membaca sumbernya, dan menyiapkannya untuk alur kerja Anda.</p>
             </div>
-            <div class="grid h-11 w-11 place-items-center rounded-full border border-background/20 text-primary-foreground">
-              <Database aria-hidden="true" className="h-5 w-5" />
+            <div class="flex items-end gap-4 lg:min-w-56 lg:justify-end">
+              <div>
+                <p class="font-mono text-5xl text-background">{catalog.items.length.toLocaleString('id-ID')}</p>
+                <p class="mt-1 text-sm text-background/65">item AHSP siap ditelusuri</p>
+              </div>
+              <div class="grid h-12 w-12 place-items-center rounded-2xl border border-background/20 text-primary-foreground">
+                <Database aria-hidden="true" className="h-5 w-5" />
+              </div>
             </div>
           </div>
-          <div class="mt-6 grid grid-cols-2 gap-5 text-sm">
-            <div>
+          <div class="relative grid border-t border-background/15 sm:grid-cols-3 sm:divide-x sm:divide-background/15">
+            <div class="p-6">
               <p class="font-mono text-2xl text-background">{catalog.bundles.length}</p>
-              <p class="mt-1 text-background/55">bundel regulasi</p>
+              <p class="mt-1 text-sm text-background/55">Bundel regulasi</p>
             </div>
-            <div>
+            <div class="p-6">
               <p class="font-mono text-2xl text-background">{catalog.sourceItemCount.toLocaleString('id-ID')}</p>
-              <p class="mt-1 text-background/55">baris sumber</p>
+              <p class="mt-1 text-sm text-background/55">Baris sumber</p>
             </div>
-          </div>
-          <div class="mt-8 rounded-2xl border border-background/15 bg-background/5 p-4">
-            <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-background/55"><ShieldCheck aria-hidden="true" className="h-4 w-4" /> Jejak sumber</div>
-            <p class="mt-3 text-sm leading-6 text-background/80">Setiap item memuat bundel, regulasi, halaman sumber, dan tingkat verifikasi jika tersedia.</p>
+            <div class="flex items-start gap-3 border-t border-background/15 p-6 sm:border-t-0">
+              <ShieldCheck aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-primary-foreground" />
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-background/55">Jejak sumber</p>
+                <p class="mt-2 text-sm leading-6 text-background/80">Setiap item memuat bundel, regulasi, halaman sumber, dan tingkat verifikasi jika tersedia.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -121,7 +133,7 @@ const featured = featuredCodes
               <span class="font-mono text-sm font-semibold text-primary">{item.code}</span>
               <Badge variant="muted">{item.unit}</Badge>
             </div>
-            <h3 class="mt-8 min-h-16 font-serif text-2xl leading-tight">{item.name}</h3>
+            <h3 class="featured-card-title mt-8 h-[5.625rem] font-serif text-2xl leading-tight">{item.name}</h3>
             <div class="mt-8 flex items-center justify-between border-t border-border/80 pt-4 text-xs text-muted-foreground">
               <span>{item.bundleName}</span>
               <ArrowRight aria-hidden="true" className="h-4 w-4 transition-[transform,color] duration-200 ease-out group-hover-fine-arrow" />
