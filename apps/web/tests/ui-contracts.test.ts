@@ -144,6 +144,8 @@ describe('web UI contracts', () => {
     expect(home).toContain('<div class="min-w-0">');
     expect(home).toContain('min-w-0 rounded-[2rem]');
     expect(home).toContain('max-w-full overflow-x-auto');
+    expect(home).toContain('tabindex="0" role="region" aria-label="Contoh kode npm quick start"');
+    expect(home).toContain('Geser kode ke samping untuk melihat baris lengkap.');
   });
 
   it('keeps visual tokens, copy, and motion properties semantic', () => {
