@@ -137,6 +137,15 @@ describe('web UI contracts', () => {
     expect(styles).not.toContain("--font-sans: 'Inter'");
   });
 
+  it('contains the homepage code sample within the mobile layout', () => {
+    const home = readSource('src/pages/index.astro');
+
+    expect(home).toContain('grid min-w-0 gap-12');
+    expect(home).toContain('<div class="min-w-0">');
+    expect(home).toContain('min-w-0 rounded-[2rem]');
+    expect(home).toContain('max-w-full overflow-x-auto');
+  });
+
   it('keeps visual tokens, copy, and motion properties semantic', () => {
     const home = readSource('src/pages/index.astro');
     const bundles = readSource('src/pages/bundles/index.astro');
