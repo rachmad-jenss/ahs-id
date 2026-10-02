@@ -29,7 +29,6 @@ describe('web UI contracts', () => {
   it('exposes complete navigation and mobile motion semantics', () => {
     const layout = readSource('src/layouts/SiteLayout.astro');
     const styles = readSource('src/styles/global.css');
-    const catalog = readSource('src/components/CatalogBrowser.tsx');
 
     expect(layout).toContain("{ href: '/tentang/', label: 'Tentang' }");
     expect(layout).toContain('aria-current={currentPath.startsWith(item.href) ? \'page\' : undefined}');
@@ -162,7 +161,7 @@ describe('web UI contracts', () => {
     expect(home).toContain('class="pressable inline-flex items-center gap-2 font-semibold');
     expect(styles).toContain('.pressable:not([class*="transition-"])');
     expect(bundles).toContain('Sumber data');
-    expect(docs).toContain('Dokumentasi developer');
+    expect(docs).toContain('Dokumentasi untuk developer');
     expect(methodology).toContain('bg-warning-surface');
     expect(methodology).not.toContain('bg-amber-');
     expect(methodology).toContain('Sumber');

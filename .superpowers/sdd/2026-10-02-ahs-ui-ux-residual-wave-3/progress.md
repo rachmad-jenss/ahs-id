@@ -10,9 +10,9 @@
 | Task | Status | Evidence |
 | --- | --- | --- |
 | 1. RED contracts and plan | Complete | Focused `ui-contracts.test.ts`: 9 passed, 1 expected RED residual-contract failure |
-| 2. Theme and shell semantics | Not started | — |
-| 3. Landmarks, code regions, cards, targets | Not started | — |
-| 4. Copy, color, typography, motion | Not started | — |
+| 2. Theme and shell semantics | Complete | `b010758` — theme modes, no-flash bootstrap, focus target, viewport, safe-area, semantic tokens |
+| 3. Landmarks, code regions, cards, targets | Complete | `5b72aaf` — named asides, preserved code regions, one-link bundle cards, 44px anchor contract |
+| 4. Copy, color, typography, motion | Complete | `148574d` — Indonesian copy, semantic hero backdrop, chip press feedback, residual contracts |
 | 5. Verification, review, PR, merge, cleanup | Not started | — |
 
 ## Review findings
