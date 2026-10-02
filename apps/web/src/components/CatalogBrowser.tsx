@@ -204,9 +204,9 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
   return (
     <div className="grid gap-8 lg:grid-cols-[15rem_1fr]" data-catalog-browser>
-      <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
+      <aside aria-labelledby="catalog-filters-heading" className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
-          <p className="text-sm font-semibold">Saring katalog</p>
+          <h2 className="text-sm font-semibold" id="catalog-filters-heading">Filter katalog</h2>
           <SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" />
         </div>
         {filterControls}

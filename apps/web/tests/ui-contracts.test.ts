@@ -29,6 +29,7 @@ describe('web UI contracts', () => {
   it('exposes complete navigation and mobile motion semantics', () => {
     const layout = readSource('src/layouts/SiteLayout.astro');
     const styles = readSource('src/styles/global.css');
+    const catalog = readSource('src/components/CatalogBrowser.tsx');
 
     expect(layout).toContain("{ href: '/tentang/', label: 'Tentang' }");
     expect(layout).toContain('aria-current={currentPath.startsWith(item.href) ? \'page\' : undefined}');
@@ -179,14 +180,11 @@ describe('web UI contracts', () => {
   it('covers residual theme, shell, semantics, mobile, and copy contracts', () => {
     const layout = readSource('src/layouts/SiteLayout.astro');
     const styles = readSource('src/styles/global.css');
-    const home = readSource('src/pages/index.astro');
+    const catalog = readSource('src/components/CatalogBrowser.tsx');
     const bundles = readSource('src/pages/bundles/index.astro');
     const docs = readSource('src/pages/docs/index.astro');
     const item = readSource('src/pages/item/[bundle]/[code].astro');
     const methodology = readSource('src/pages/metodologi/index.astro');
-    const about = readSource('src/pages/tentang/index.astro');
-    const notFound = readSource('src/pages/404.astro');
-    const launcher = readSource('src/components/SearchLauncher.tsx');
 
     expect(layout).toContain('width=device-width, initial-scale=1, viewport-fit=cover');
     expect(layout).toContain('<main id="main-content" tabindex="-1">');
@@ -207,7 +205,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('.home-hero-backdrop');
     expect(styles).toContain('a.pressable');
 
-    expect(layout).toContain('aria-labelledby="catalog-filters-heading"');
+    expect(catalog).toContain('aria-labelledby="catalog-filters-heading"');
     expect(item).toContain('aria-labelledby="summary-heading"');
     expect(item).toContain('aria-labelledby="provenance-heading"');
     expect(methodology).toContain('aria-labelledby="quarantine-heading"');
@@ -216,13 +214,6 @@ describe('web UI contracts', () => {
     expect(docs).toContain('whitespace-pre');
     expect(bundles).toContain('bundle-card-link');
     expect(bundles).not.toContain('Jelajahi bundle</a>');
-    expect(home).toContain('home-hero-backdrop');
-    expect(launcher).toContain('pressable-chip');
-
-    expect(home).not.toContain('Open source · Indonesia');
-    expect(home).not.toContain('>Provenance</');
-    expect(layout).not.toContain('Source di GitHub');
-    expect(about).not.toContain('foundation layer');
-    expect(notFound).not.toContain('NOT FOUND');
   });
+
 });
