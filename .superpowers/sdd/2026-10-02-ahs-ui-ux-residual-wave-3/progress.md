@@ -19,5 +19,6 @@
 
 - Two independent read-only reviews completed before PR: both initially blocked on actionable findings; no review worktree edits.
 - Resolved: dark-mode code contrast, semantic selection colors, bundle-card accessible naming, horizontal safe-area padding, docs scroll cue, chip transition precedence, theme reflow, and visible Indonesian terminology.
+- PR review follow-up: fixed the dark-mode code-card footer P2 by using code-specific foreground and border tokens (`ba5464e`).
 - In-app browser smoke after fixes: skip link focused `#main-content`; System/Terang/Gelap theme selection and explicit-mode reload persistence; responsive mobile viewport screenshot; mobile menu expansion; hero search deep-link to `/katalog/?q=3.1.1`; named item summary/provenance headings; bundle-card details exposed in link description; scrollable documentation code regions; no console warnings/errors observed.
 - Targeted web verification after fixes: static build 2,400 pages with 0 diagnostics; 4 test files and 20 tests passed.
