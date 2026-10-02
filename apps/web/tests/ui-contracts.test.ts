@@ -159,9 +159,9 @@ describe('web UI contracts', () => {
     expect(home).not.toContain('text-primary-foreground/65');
     expect(home).toContain('transition-[transform,border-color,box-shadow]');
     expect(home).toContain('class="pressable inline-flex items-center gap-2 font-semibold');
-    expect(styles).toContain('.pressable:not([class*="transition-"])');
+    expect(styles).toContain('.pressable:not([class*="transition-"]):not(.pressable-chip)');
     expect(bundles).toContain('Sumber data');
-    expect(docs).toContain('Dokumentasi developer');
+    expect(docs).toContain('Dokumentasi untuk developer');
     expect(methodology).toContain('bg-warning-surface');
     expect(methodology).not.toContain('bg-amber-');
     expect(methodology).toContain('Sumber');
@@ -175,4 +175,52 @@ describe('web UI contracts', () => {
     expect(styles).not.toContain('transition-property: opacity, color, background-color, border-color, box-shadow !important;');
     expect(source).toContain('transition-[transform,color]');
   });
+
+  it('covers residual theme, shell, semantics, mobile, and copy contracts', () => {
+    const layout = readSource('src/layouts/SiteLayout.astro');
+    const styles = readSource('src/styles/global.css');
+    const catalog = readSource('src/components/CatalogBrowser.tsx');
+    const bundles = readSource('src/pages/bundles/index.astro');
+    const docs = readSource('src/pages/docs/index.astro');
+    const item = readSource('src/pages/item/[bundle]/[code].astro');
+    const methodology = readSource('src/pages/metodologi/index.astro');
+
+    expect(layout).toContain('width=device-width, initial-scale=1, viewport-fit=cover');
+    expect(layout).toContain('<main class="safe-area-main" id="main-content" tabindex="-1">');
+    expect(layout).toContain('ahs-id-theme');
+    expect(layout).toContain('theme-select');
+    expect(layout).toContain('value="system"');
+    expect(layout).toContain('value="light"');
+    expect(layout).toContain('value="dark"');
+    expect(layout).toContain('aria-labelledby="theme-label"');
+    expect(styles).toContain(":root[data-theme='dark']");
+    expect(styles).toContain("@media (prefers-color-scheme: dark)");
+    expect(styles).toContain('color-scheme:');
+    expect(styles).toContain('safe-area-inset-top');
+    expect(styles).toContain('safe-area-inset-bottom');
+    expect(styles).toContain('safe-area-inset-left');
+    expect(styles).toContain('safe-area-inset-right');
+    expect(styles).toContain('overscroll-behavior-x: none;');
+    expect(styles).toContain('[data-theme-switching]');
+    expect(styles).toContain('.pressable-chip:active');
+    expect(styles).toContain('--selection-background');
+    expect(styles).toContain('--code-surface');
+    expect(styles).toContain('.code-border');
+    expect(styles).toContain('.code-keyword');
+    expect(styles).toContain('.home-hero-backdrop');
+    expect(styles).toContain('a.pressable');
+
+    expect(catalog).toContain('aria-labelledby="catalog-filters-heading"');
+    expect(item).toContain('aria-labelledby="summary-heading"');
+    expect(item).toContain('aria-labelledby="provenance-heading"');
+    expect(methodology).toContain('aria-labelledby="quarantine-heading"');
+    expect(docs).toContain('<pre');
+    expect(docs).toContain('tabindex="0" role="region"');
+    expect(docs).toContain('whitespace-pre');
+    expect(docs).toContain('Geser kode ke samping untuk melihat baris lengkap.');
+    expect(bundles).toContain('bundle-card-link');
+    expect(bundles).not.toContain('aria-label={`Jelajahi bundle');
+    expect(bundles).not.toContain('Jelajahi bundle</a>');
+  });
+
 });

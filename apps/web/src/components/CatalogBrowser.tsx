@@ -173,9 +173,9 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   const filterControls = (
     <div className="mt-5 grid gap-5">
       <label className="grid gap-2 text-sm">
-        <span className="font-medium">Bundle</span>
+         <span className="font-medium">Bundel</span>
         <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
-          <option value="">Semua bundle</option>
+           <option value="">Semua bundel</option>
           {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
         </select>
       </label>
@@ -204,9 +204,9 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
 
   return (
     <div className="grid gap-8 lg:grid-cols-[15rem_1fr]" data-catalog-browser>
-      <aside className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
+      <aside aria-labelledby="catalog-filters-heading" className="hidden h-fit rounded-2xl border border-border/80 bg-card/60 p-4 lg:block lg:sticky lg:top-24">
         <div className="flex items-center justify-between">
-          <p className="text-sm font-semibold">Saring katalog</p>
+          <h2 className="text-sm font-semibold" id="catalog-filters-heading">Filter katalog</h2>
           <SlidersHorizontal aria-hidden="true" className="h-4 w-4 text-muted-foreground" />
         </div>
         {filterControls}
@@ -240,7 +240,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
         {paged.items.length > 0 ? (
           <div className="mt-5 overflow-hidden rounded-2xl border border-border/80 bg-card/50">
             <div className="hidden grid-cols-[7rem_1fr_12rem_4rem] gap-4 border-b border-border/80 bg-muted/50 px-5 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:grid">
-              <span>Kode</span><span>Pekerjaan</span><span>Bundle</span><span>Satuan</span>
+              <span>Kode</span><span>Pekerjaan</span><span>Bundel</span><span>Satuan</span>
             </div>
             <ul className="divide-y divide-border/70">
               {paged.items.map((entry) => (

@@ -44,7 +44,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
             inputMode="search"
             name="q"
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Cari kode, nama pekerjaan, atau bundle…"
+            placeholder="Cari kode, nama pekerjaan, atau bundel…"
             enterKeyHint="search"
             type="search"
             value={query}
@@ -58,7 +58,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
         <span className="mr-1">Coba cari:</span>
         {examples.map((example) => (
           <button
-            className="pressable inline-flex min-h-11 items-center rounded-full border border-border bg-background/70 px-3 py-1.5 transition-colors hover-fine-border-primary hover-fine-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="pressable pressable-chip inline-flex min-h-11 items-center rounded-full border border-border bg-background/70 px-3 py-1.5 hover-fine-border-primary hover-fine-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             key={example.query}
             onClick={() => chooseExample(example.query)}
             type="button"

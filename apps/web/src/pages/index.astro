@@ -21,12 +21,12 @@ const featured = featuredCodes
   description="Jelajahi data AHSP Indonesia yang terstruktur, terbuka, dan dapat ditelusuri sumbernya."
 >
   <section class="relative overflow-hidden border-b border-border/80">
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_80%_10%,oklch(0.87_0.08_166/.5),transparent_34%),linear-gradient(115deg,oklch(0.975_0.012_84),oklch(0.94_0.035_82))]"></div>
+    <div class="home-hero-backdrop absolute inset-0 -z-10"></div>
     <div class="mx-auto grid max-w-7xl gap-14 px-5 pb-20 pt-16 lg:grid-cols-[1.1fr_.9fr] lg:items-end lg:px-8 lg:pb-28 lg:pt-24">
       <div>
         <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           <span class="h-px w-10 bg-primary"></span>
-          Open source · Indonesia
+          Sumber terbuka · Indonesia
         </div>
         <h1 class="mt-7 max-w-4xl font-serif text-5xl leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-8xl">
           Angka yang rapi untuk pekerjaan yang nyata.
@@ -54,7 +54,7 @@ const featured = featuredCodes
             <div>
               <p class="font-mono text-xs uppercase tracking-[0.2em] text-background/70">Ringkasan katalog</p>
               <p class="mt-3 font-serif text-4xl">{catalog.items.length.toLocaleString('id-ID')}</p>
-              <p class="mt-1 text-sm text-background/65">item AHSP siap dijelajahi</p>
+              <p class="mt-1 text-sm text-background/65">item AHSP siap ditelusuri</p>
             </div>
             <div class="grid h-11 w-11 place-items-center rounded-full border border-background/20 text-primary-foreground">
               <Database aria-hidden="true" className="h-5 w-5" />
@@ -63,7 +63,7 @@ const featured = featuredCodes
           <div class="mt-6 grid grid-cols-2 gap-5 text-sm">
             <div>
               <p class="font-mono text-2xl text-background">{catalog.bundles.length}</p>
-              <p class="mt-1 text-background/55">bundle regulasi</p>
+              <p class="mt-1 text-background/55">bundel regulasi</p>
             </div>
             <div>
               <p class="font-mono text-2xl text-background">{catalog.sourceItemCount.toLocaleString('id-ID')}</p>
@@ -71,8 +71,8 @@ const featured = featuredCodes
             </div>
           </div>
           <div class="mt-8 rounded-2xl border border-background/15 bg-background/5 p-4">
-            <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-background/55"><ShieldCheck aria-hidden="true" className="h-4 w-4" /> Provenance</div>
-            <p class="mt-3 text-sm leading-6 text-background/80">Setiap item membawa bundle, regulasi, halaman sumber, dan tier verifikasi yang tersedia.</p>
+            <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-background/55"><ShieldCheck aria-hidden="true" className="h-4 w-4" /> Jejak sumber</div>
+            <p class="mt-3 text-sm leading-6 text-background/80">Setiap item memuat bundel, regulasi, halaman sumber, dan tingkat verifikasi jika tersedia.</p>
           </div>
         </div>
       </div>
@@ -89,17 +89,17 @@ const featured = featuredCodes
         <article class="border-t-2 border-primary pt-5">
           <Search aria-hidden="true" className="h-5 w-5 text-primary" />
           <h3 class="mt-5 font-semibold">Cari dengan konteks</h3>
-          <p class="mt-2 text-sm leading-6 text-muted-foreground">Kode, nama pekerjaan, bidang, bundle, dan satuan tersedia dalam satu katalog.</p>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">Kode, nama pekerjaan, bidang, bundel, dan satuan tersedia dalam satu katalog.</p>
         </article>
         <article class="border-t-2 border-primary pt-5">
           <GitBranch aria-hidden="true" className="h-5 w-5 text-primary" />
           <h3 class="mt-5 font-semibold">Sumber tetap terlihat</h3>
-          <p class="mt-2 text-sm leading-6 text-muted-foreground">Metadata regulasi dan provenance mengikuti item yang dikirim package data.</p>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">Metadata regulasi dan jejak sumber ikut dibawa oleh paket data.</p>
         </article>
         <article class="border-t-2 border-primary pt-5">
           <Code2 aria-hidden="true" className="h-5 w-5 text-primary" />
           <h3 class="mt-5 font-semibold">Siap dipakai ulang</h3>
-          <p class="mt-2 text-sm leading-6 text-muted-foreground">Engine TypeScript, bundle JSON, dan dokumentasi terbuka untuk workflow berikutnya.</p>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">Engine TypeScript, bundel JSON, dan dokumentasi terbuka untuk alur kerja berikutnya.</p>
         </article>
       </div>
     </div>
@@ -135,24 +135,24 @@ const featured = featuredCodes
   <section class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
     <div class="grid min-w-0 gap-12 lg:grid-cols-[1fr_.9fr] lg:items-center">
       <div class="min-w-0">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Untuk workflow engineer</p>
-        <h2 class="mt-4 max-w-xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Dari bundle regulasi ke kalkulasi yang bisa diaudit.</h2>
-        <p class="mt-6 max-w-xl text-base leading-7 text-muted-foreground">AHS-ID memisahkan engine, data AHSP, dan HSD regional sebagai package yang dapat dikomposisikan. Baca struktur data, jalankan kalkulasi, lalu ekspor hasilnya ke workflow Anda.</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Untuk alur kerja engineer</p>
+        <h2 class="mt-4 max-w-xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Dari bundel regulasi ke kalkulasi yang bisa diaudit.</h2>
+        <p class="mt-6 max-w-xl text-base leading-7 text-muted-foreground">AHS-ID memisahkan engine, data AHSP, dan HSD regional sebagai paket yang dapat dirangkai. Baca struktur data, jalankan kalkulasi, lalu ekspor hasilnya ke alur kerja Anda.</p>
         <div class="mt-8 grid gap-3 text-sm">
           <div class="flex items-center gap-3"><Check aria-hidden="true" className="h-5 w-5 text-primary" /> TypeScript strict dan branded types</div>
           <div class="flex items-center gap-3"><Check aria-hidden="true" className="h-5 w-5 text-primary" /> Validasi schema dan golden tests</div>
-          <div class="flex items-center gap-3"><Check aria-hidden="true" className="h-5 w-5 text-primary" /> Data bundle terpisah dari engine</div>
+          <div class="flex items-center gap-3"><Check aria-hidden="true" className="h-5 w-5 text-primary" /> Data bundel terpisah dari engine</div>
         </div>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover-fine-bg-primary-90" href="/docs/">Baca quick start <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
-          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Lihat source <GitBranch aria-hidden="true" className="h-4 w-4" /></a>
+          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover-fine-bg-primary-90" href="/docs/">Buka quick start <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
+          <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Lihat kode sumber <GitBranch aria-hidden="true" className="h-4 w-4" /></a>
         </div>
       </div>
-      <div class="min-w-0 rounded-[2rem] bg-foreground p-5 text-background shadow-2xl shadow-primary/10 sm:p-7">
-        <div class="flex items-center gap-2 text-xs font-mono text-background/55"><span class="h-2 w-2 rounded-full bg-primary"></span> npm quick start</div>
-        <p class="mt-3 text-xs text-background/55 sm:hidden">Geser kode ke samping untuk melihat baris lengkap.</p>
-        <pre class="mt-6 min-w-0 max-w-full overflow-x-auto text-sm leading-7 text-background/85" tabindex="0" role="region" aria-label="Contoh kode npm quick start"><code><span class="text-primary-foreground">import</span> {'{ createCalculator }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/core'</span><br /><span class="text-primary-foreground">import</span> {'{ bundle }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/pupr-2023'</span><br /><span class="text-primary-foreground">import</span> {'{ hsd }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/hsd-kaltim-2025'</span><br /><br /><span class="text-primary-foreground">const</span> calculator = createCalculator(bundle, hsd)<br /><span class="text-primary-foreground">const</span> result = calculator.hitungHSP(<span class="text-emerald-200">'3.1.1'</span>, {'{'} jarak_buang_km: <span class="text-orange-200">5</span>, kondisi_jalan: <span class="text-emerald-200">'sedang'</span>, jenis_material: <span class="text-emerald-200">'tanah_biasa'</span> {'}'})</code></pre>
-        <div class="mt-6 flex items-center gap-2 border-t border-background/15 pt-5 text-xs text-background/55"><BookOpen aria-hidden="true" className="h-4 w-4" /> Dokumentasi berkembang bersama package</div>
+       <div class="code-surface code-foreground min-w-0 rounded-[2rem] p-5 shadow-2xl shadow-primary/10 sm:p-7">
+        <div class="code-muted flex items-center gap-2 text-xs font-mono"><span class="h-2 w-2 rounded-full bg-primary"></span> npm quick start</div>
+        <p class="code-muted mt-3 text-xs sm:hidden">Geser kode ke samping untuk melihat baris lengkap.</p>
+        <pre class="code-foreground mt-6 min-w-0 max-w-full overflow-x-auto text-sm leading-7" tabindex="0" role="region" aria-label="Contoh kode npm quick start"><code><span class="code-keyword">import</span> {'{ createCalculator }'} <span class="code-keyword">from</span> <span class="code-string">'@ahs-id/core'</span><br /><span class="code-keyword">import</span> {'{ bundle }'} <span class="code-keyword">from</span> <span class="code-string">'@ahs-id/pupr-2023'</span><br /><span class="code-keyword">import</span> {'{ hsd }'} <span class="code-keyword">from</span> <span class="code-string">'@ahs-id/hsd-kaltim-2025'</span><br /><br /><span class="code-keyword">const</span> calculator = createCalculator(bundle, hsd)<br /><span class="code-keyword">const</span> result = calculator.hitungHSP(<span class="code-string">'3.1.1'</span>, {'{'} jarak_buang_km: <span class="code-number">5</span>, kondisi_jalan: <span class="code-string">'sedang'</span>, jenis_material: <span class="code-string">'tanah_biasa'</span> {'}'})</code></pre>
+        <div class="code-muted mt-6 flex items-center gap-2 border-t code-border pt-5 text-xs"><BookOpen aria-hidden="true" className="code-muted h-4 w-4" /> Dokumentasi berkembang bersama paket</div>
       </div>
     </div>
   </section>

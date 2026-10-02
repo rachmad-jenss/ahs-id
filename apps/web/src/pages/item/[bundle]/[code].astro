@@ -34,7 +34,7 @@ const verificationTierLabels: Record<string, string> = {
 const verificationTierLabel = verificationTierLabels[item.provenance.verification_tier] ?? item.provenance.verification_tier;
 const detailUrl = `https://ahs-id.jenss.me${catalogItemPath(item.bundleId, item.code)}`;
 const pageTitle = [item.code, item.name, '— AHS-ID'].join(' ');
-const pageDescription = ['Data AHSP', item.code, item.name, 'dari', item.bundleName, 'dengan komponen, satuan, dan provenance sumber.'].join(' ');
+const pageDescription = ['Data AHSP', item.code, item.name, 'dari', item.bundleName, 'dengan komponen, satuan, dan jejak sumber.'].join(' ');
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Dataset',
@@ -59,10 +59,10 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
         <h1 class="mt-3 max-w-4xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-7xl">{item.name}</h1>
         <p class="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">Analisa harga satuan pekerjaan untuk bidang {item.bidang}, divisi {item.divisi}, dengan satuan pembayaran <span class="font-semibold text-foreground">{item.unit}</span>.</p>
       </div>
-      <aside class="h-fit rounded-3xl border border-border bg-card/60 p-6 lg:mt-4">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Ringkasan</p>
+      <aside aria-labelledby="summary-heading" class="h-fit rounded-3xl border border-border bg-card/60 p-6 lg:mt-4">
+        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground" id="summary-heading">Ringkasan</h2>
         <dl class="mt-5 grid gap-4 text-sm">
-          <div class="flex items-start justify-between gap-4"><dt class="text-muted-foreground">Bundle</dt><dd class="text-right font-medium">{item.bundleName}</dd></div>
+          <div class="flex items-start justify-between gap-4"><dt class="text-muted-foreground">Bundel</dt><dd class="text-right font-medium">{item.bundleName}</dd></div>
           <div class="flex items-start justify-between gap-4"><dt class="text-muted-foreground">Regulasi</dt><dd class="max-w-40 text-right font-medium">{item.regulation}</dd></div>
           <div class="flex items-start justify-between gap-4"><dt class="text-muted-foreground">Sub-divisi</dt><dd class="text-right font-mono">{item.subDivision}</dd></div>
           <div class="flex items-start justify-between gap-4"><dt class="text-muted-foreground">Jenis</dt><dd class="text-right font-medium capitalize">{item.workType}</dd></div>
@@ -94,8 +94,8 @@ const jsonLdString = JSON.stringify(jsonLd).replace(/</g, '\\u003c').replace(/>/
         {item.notes.length > 0 && <section class="mt-14" aria-labelledby="notes-heading"><div class="flex items-center gap-3"><FileText aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-3xl" id="notes-heading">Catatan</h2></div><ul class="mt-5 grid gap-3 text-sm leading-6 text-muted-foreground">{item.notes.map((note) => <li class="rounded-xl border border-border/70 bg-card/50 px-4 py-3">{note}</li>)}</ul></section>}
       </div>
 
-      <aside class="h-fit rounded-3xl border border-border bg-card/55 p-6">
-        <div class="flex items-center gap-3"><ShieldCheck aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-2xl">Provenance</h2></div>
+      <aside aria-labelledby="provenance-heading" class="h-fit rounded-3xl border border-border bg-card/55 p-6">
+        <div class="flex items-center gap-3"><ShieldCheck aria-hidden="true" className="h-5 w-5 text-primary" /><h2 class="font-serif text-2xl" id="provenance-heading">Jejak sumber</h2></div>
         <dl class="mt-6 grid gap-5 text-sm">
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Sumber regulasi</dt><dd class="mt-2 leading-6">{item.provenance.sumber_regulasi}</dd></div>
           <div><dt class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">Halaman</dt><dd class="mt-2 font-mono">{item.provenance.halaman}</dd></div>
