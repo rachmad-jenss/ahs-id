@@ -40,6 +40,14 @@
   --warning-surface: oklch(0.96 0.045 85);
   --warning-foreground: oklch(0.34 0.055 65);
   --warning-icon: oklch(0.48 0.09 70);
+  --selection-background: var(--primary);
+  --selection-foreground: var(--primary-foreground);
+  --code-surface: oklch(0.16 0.025 166);
+  --code-foreground: oklch(0.95 0.015 84);
+  --code-muted: oklch(0.8 0.035 84);
+  --code-keyword: oklch(0.88 0.1 166);
+  --code-string: oklch(0.88 0.09 90);
+  --code-number: oklch(0.88 0.1 75);
   --motion-duration-fast: 180ms;
   --motion-ease-ui: cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -120,8 +128,8 @@ p {
 }
 
 ::selection {
-  background: oklch(0.78 0.08 166);
-  color: var(--foreground);
+  background: var(--selection-background);
+  color: var(--selection-foreground);
 }
 
 a,
@@ -142,9 +150,47 @@ a.pressable {
   padding-top: env(safe-area-inset-top);
 }
 
+.safe-area-inline {
+  padding-inline-start: max(1.25rem, constant(safe-area-inset-left));
+  padding-inline-start: max(1.25rem, env(safe-area-inset-left));
+  padding-inline-end: max(1.25rem, constant(safe-area-inset-right));
+  padding-inline-end: max(1.25rem, env(safe-area-inset-right));
+}
+
+.safe-area-main {
+  padding-inline-start: max(0px, constant(safe-area-inset-left));
+  padding-inline-start: max(0px, env(safe-area-inset-left));
+  padding-inline-end: max(0px, constant(safe-area-inset-right));
+  padding-inline-end: max(0px, env(safe-area-inset-right));
+}
+
 .safe-area-footer {
   padding-bottom: max(1.25rem, constant(safe-area-inset-bottom));
   padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.code-surface {
+  background: var(--code-surface);
+}
+
+.code-foreground {
+  color: var(--code-foreground);
+}
+
+.code-muted {
+  color: var(--code-muted);
+}
+
+.code-keyword {
+  color: var(--code-keyword);
+}
+
+.code-string {
+  color: var(--code-string);
+}
+
+.code-number {
+  color: var(--code-number);
 }
 
 .home-hero-backdrop {
@@ -196,7 +242,7 @@ summary:focus-visible,
   transform: translateY(0);
 }
 
-.pressable:not([class*="transition-"]) {
+.pressable:not([class*="transition-"]):not(.pressable-chip) {
   transition: opacity 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out;
 }
 

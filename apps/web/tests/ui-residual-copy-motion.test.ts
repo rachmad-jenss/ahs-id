@@ -16,6 +16,9 @@ describe('residual web copy, color, and motion contracts', () => {
     const launcher = readSource('src/components/SearchLauncher.tsx');
 
     expect(styles).toContain('.pressable-chip:active');
+    expect(styles).toContain('.pressable:not([class*="transition-"]):not(.pressable-chip)');
+    expect(styles).toContain('--selection-background');
+    expect(styles).toContain('--code-surface');
     expect(styles).toContain('.home-hero-backdrop');
     expect(home).toContain('home-hero-backdrop');
     expect(launcher).toContain('pressable-chip');
@@ -23,7 +26,18 @@ describe('residual web copy, color, and motion contracts', () => {
     expect(home).not.toContain('>Provenance</');
     expect(layout).not.toContain('Source di GitHub');
     expect(about).not.toContain('foundation layer');
+    expect(about).not.toContain('open source');
     expect(notFound).not.toContain('NOT FOUND');
     expect(styles).not.toContain('transition: all');
+  });
+
+  it('emits theme and responsive code cues in the built page shell', () => {
+    const builtHome = readFileSync(fileURLToPath(new URL('../dist/index.html', import.meta.url)), 'utf8');
+
+    expect(builtHome).toContain('ahs-id-theme');
+    expect(builtHome).toContain('theme-select');
+    expect(builtHome).toContain('requestAnimationFrame');
+    expect(builtHome).toContain('Geser kode ke samping untuk melihat baris lengkap.');
+    expect(builtHome).toContain('code-surface');
   });
 });

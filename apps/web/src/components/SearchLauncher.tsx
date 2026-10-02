@@ -44,7 +44,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
             inputMode="search"
             name="q"
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Cari kode, nama pekerjaan, atau bundle…"
+            placeholder="Cari kode, nama pekerjaan, atau bundel…"
             enterKeyHint="search"
             type="search"
             value={query}
