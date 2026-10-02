@@ -10,7 +10,7 @@
 
 **Spec:** GitHub issue [DAS-42](https://github.com/rachmad-jenss/ahs-id/issues/42) and the read-only audit recorded in the task conversation.
 
-> Follow-up F28 is tracked separately in [DAS-44](https://github.com/rachmad-jenss/ahs-id/issues/44) because it was discovered during post-merge public smoke testing. F29 is tracked in [DAS-46](https://github.com/rachmad-jenss/ahs-id/issues/46) as a follow-up runtime warning found while verifying F28.
+> Follow-up F28 is tracked separately in [DAS-44](https://github.com/rachmad-jenss/ahs-id/issues/44) because it was discovered during post-merge public smoke testing. F29 is tracked in [DAS-46](https://github.com/rachmad-jenss/ahs-id/issues/46) as a follow-up runtime warning found while verifying F28. F30 is tracked in [DAS-48](https://github.com/rachmad-jenss/ahs-id/issues/48) after the supplied mobile screenshot exposed document-level horizontal overflow on the homepage.
 
 ## Global Constraints
 
@@ -57,6 +57,7 @@
 | F27 | Search fields do not expose a stable form name/autocomplete policy. | Add `name="q"` and an intentional autocomplete value to catalog/launcher search fields; source contract/browser check. |
 | F28 | A direct catalog deep link keeps `?q=` in the URL but hydrates the React island with the unfiltered static state. | Cloak only parameterized catalog markup before hydration, reconcile the browser URL with Astro-provided params, then remove the cloak; add source contracts and repeat direct production URL QA. |
 | F29 | The pre-hydration cloak mutated the React island root before hydration and could also reveal stale markup or remain hidden if hydration failed. | Keep the pending attribute on the Astro-owned wrapper outside the React root, remove it only after applied state matches the URL, add a bounded fallback timeout, and verify local browser logs plus public deep-link behavior. |
+| F30 | The homepage workflow section can expand the document beyond narrow mobile viewports because grid children retain min-content width around the code sample. | Add `min-w-0` to the workflow grid and its children, cap the code sample at the available width while retaining its internal horizontal scroll, expose the code region to keyboard/screen-reader users with a mobile cue, and add a containment contract. Manual mobile viewport verification remains required and must be reported as NOT_RUN when the current browser surface cannot set a device viewport. |
 
 ## Review Focus
 

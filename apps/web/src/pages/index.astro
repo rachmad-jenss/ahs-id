@@ -133,8 +133,8 @@ const featured = featuredCodes
   </section>
 
   <section class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
-    <div class="grid gap-12 lg:grid-cols-[1fr_.9fr] lg:items-center">
-      <div>
+    <div class="grid min-w-0 gap-12 lg:grid-cols-[1fr_.9fr] lg:items-center">
+      <div class="min-w-0">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Untuk workflow engineer</p>
         <h2 class="mt-4 max-w-xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Dari bundle regulasi ke kalkulasi yang bisa diaudit.</h2>
         <p class="mt-6 max-w-xl text-base leading-7 text-muted-foreground">AHS-ID memisahkan engine, data AHSP, dan HSD regional sebagai package yang dapat dikomposisikan. Baca struktur data, jalankan kalkulasi, lalu ekspor hasilnya ke workflow Anda.</p>
@@ -148,9 +148,10 @@ const featured = featuredCodes
           <a class="pressable inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">Lihat source <GitBranch aria-hidden="true" className="h-4 w-4" /></a>
         </div>
       </div>
-      <div class="rounded-[2rem] bg-foreground p-5 text-background shadow-2xl shadow-primary/10 sm:p-7">
+      <div class="min-w-0 rounded-[2rem] bg-foreground p-5 text-background shadow-2xl shadow-primary/10 sm:p-7">
         <div class="flex items-center gap-2 text-xs font-mono text-background/55"><span class="h-2 w-2 rounded-full bg-primary"></span> npm quick start</div>
-        <pre class="mt-6 overflow-x-auto text-sm leading-7 text-background/85"><code><span class="text-primary-foreground">import</span> {'{ createCalculator }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/core'</span><br /><span class="text-primary-foreground">import</span> {'{ bundle }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/pupr-2023'</span><br /><span class="text-primary-foreground">import</span> {'{ hsd }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/hsd-kaltim-2025'</span><br /><br /><span class="text-primary-foreground">const</span> calculator = createCalculator(bundle, hsd)<br /><span class="text-primary-foreground">const</span> result = calculator.hitungHSP(<span class="text-emerald-200">'3.1.1'</span>, {'{'} jarak_buang_km: <span class="text-orange-200">5</span>, kondisi_jalan: <span class="text-emerald-200">'sedang'</span>, jenis_material: <span class="text-emerald-200">'tanah_biasa'</span> {'}'})</code></pre>
+        <p class="mt-3 text-xs text-background/55 sm:hidden">Geser kode ke samping untuk melihat baris lengkap.</p>
+        <pre class="mt-6 min-w-0 max-w-full overflow-x-auto text-sm leading-7 text-background/85" tabindex="0" role="region" aria-label="Contoh kode npm quick start"><code><span class="text-primary-foreground">import</span> {'{ createCalculator }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/core'</span><br /><span class="text-primary-foreground">import</span> {'{ bundle }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/pupr-2023'</span><br /><span class="text-primary-foreground">import</span> {'{ hsd }'} <span class="text-primary-foreground">from</span> <span class="text-emerald-200">'@ahs-id/hsd-kaltim-2025'</span><br /><br /><span class="text-primary-foreground">const</span> calculator = createCalculator(bundle, hsd)<br /><span class="text-primary-foreground">const</span> result = calculator.hitungHSP(<span class="text-emerald-200">'3.1.1'</span>, {'{'} jarak_buang_km: <span class="text-orange-200">5</span>, kondisi_jalan: <span class="text-emerald-200">'sedang'</span>, jenis_material: <span class="text-emerald-200">'tanah_biasa'</span> {'}'})</code></pre>
         <div class="mt-6 flex items-center gap-2 border-t border-background/15 pt-5 text-xs text-background/55"><BookOpen aria-hidden="true" className="h-4 w-4" /> Dokumentasi berkembang bersama package</div>
       </div>
     </div>
