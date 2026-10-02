@@ -205,6 +205,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('.pressable-chip:active');
     expect(styles).toContain('--selection-background');
     expect(styles).toContain('--code-surface');
+    expect(styles).toContain('.code-border');
     expect(styles).toContain('.code-keyword');
     expect(styles).toContain('.home-hero-backdrop');
     expect(styles).toContain('a.pressable');

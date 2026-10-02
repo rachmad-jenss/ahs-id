@@ -181,6 +181,10 @@ a.pressable {
   color: var(--code-muted);
 }
 
+.code-border {
+  border-color: color-mix(in oklch, var(--code-foreground) 18%, transparent);
+}
+
 .code-keyword {
   color: var(--code-keyword);
 }
