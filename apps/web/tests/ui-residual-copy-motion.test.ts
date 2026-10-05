@@ -24,6 +24,7 @@ describe('residual web copy, color, and motion contracts', () => {
     expect(home).toContain('Temukan data AHSP dengan jejak sumber yang jelas.');
     expect(home).toContain('Data yang siap ditelusuri.');
     expect(home).toContain('featured-card-title');
+    expect(home).toContain('featured-card-enter');
     expect(launcher).toContain('pressable-chip');
     expect(launcher).toContain('justify-center');
     expect(home).not.toContain('Open source · Indonesia');
