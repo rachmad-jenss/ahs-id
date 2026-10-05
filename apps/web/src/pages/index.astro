@@ -1,11 +1,12 @@
 ---
-import { ArrowRight, BookOpen, Check, Code2, Database, GitBranch, Search, ShieldCheck } from 'lucide-react';
+import { ArrowRight, BookOpen, Check, Code2, GitBranch, Search } from 'lucide-react';
 import { SearchLauncher } from '../components/SearchLauncher';
 import { Badge } from '../components/ui/badge';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { buildCatalog, catalogItemPath, type CatalogItem } from '../lib/catalog';
 
 const catalog = buildCatalog();
+const catalogBidangCount = new Set(catalog.items.map((item) => item.bidang)).size;
 const featuredCodes = [
   ['pupr-2023', '3.1.1'],
   ['bina-marga-2022', '2.1.(1)'],
@@ -48,45 +49,53 @@ const featured = featuredCodes
 
       <div class="relative mt-14 w-full max-w-4xl lg:mt-16">
         <div class="absolute -right-4 -top-12 hidden h-40 w-40 rounded-full border border-primary/20 lg:block"></div>
-        <div class="relative overflow-hidden rounded-[2rem] border border-foreground/15 bg-foreground text-background shadow-2xl shadow-primary/10">
-          <div class="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-primary/20 blur-3xl"></div>
-          <div class="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-end">
-            <div>
-              <div class="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-background/70">
-                <span class="h-2 w-2 rounded-full bg-primary"></span>
-                Ringkasan katalog
-              </div>
-              <h2 class="mt-4 max-w-md font-serif text-3xl leading-tight sm:text-4xl">Data yang siap ditelusuri.</h2>
-              <p class="mt-3 max-w-xl text-sm leading-6 text-background/70">Satu tempat untuk menemukan item AHSP, membaca sumbernya, dan menyiapkannya untuk alur kerja Anda.</p>
+        <article class="catalog-hero-panel relative overflow-hidden rounded-3xl border border-border/80 bg-card text-left text-card-foreground">
+          <div class="relative flex flex-col gap-6 p-6 sm:p-8">
+            <header class="max-w-2xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Ringkasan katalog</p>
+              <h2 class="mt-3 font-serif text-3xl leading-tight tracking-[-0.03em] sm:text-4xl">Data yang siap ditelusuri.</h2>
+              <p class="mt-2 text-sm leading-6 text-muted-foreground">
+                Katalog terbuka dengan metadata regulasi dan jejak sumber pada setiap item.
+              </p>
+            </header>
+
+            <div class="grid border-y border-border/80 sm:grid-cols-3 sm:divide-x sm:divide-border/80">
+              <a class="pressable block py-5 transition-colors hover-fine-bg-muted-50 sm:px-5 sm:first:pl-0" href="/katalog/">
+                <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Item publik</p>
+                <p class="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight text-primary sm:text-4xl">{catalog.items.length.toLocaleString('id-ID')}</p>
+              </a>
+              <a class="pressable block border-t border-border/80 py-5 transition-colors hover-fine-bg-muted-50 sm:border-t-0 sm:px-5" href="/bundles/">
+                <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Bundel regulasi</p>
+                <p class="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight sm:text-4xl">{catalog.bundles.length}</p>
+              </a>
+              <a class="pressable block border-t border-border/80 py-5 transition-colors hover-fine-bg-muted-50 sm:border-t-0 sm:px-5 sm:last:pr-0" href="/katalog/">
+                <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Bidang pekerjaan</p>
+                <p class="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight sm:text-4xl">{catalogBidangCount}</p>
+              </a>
             </div>
-            <div class="flex items-end gap-4 lg:min-w-56 lg:justify-end">
-              <div>
-                <p class="font-mono text-5xl text-background">{catalog.items.length.toLocaleString('id-ID')}</p>
-                <p class="mt-1 text-sm text-background/65">item AHSP siap ditelusuri</p>
-              </div>
-              <div class="grid h-12 w-12 place-items-center rounded-2xl border border-background/20 text-primary-foreground">
-                <Database aria-hidden="true" className="h-5 w-5" />
-              </div>
+
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-5">
+              <a class="pressable group block flex-1 text-left sm:max-w-md" href="/metodologi/">
+                <span class="block text-sm font-semibold text-foreground">Sumber bisa dilacak</span>
+                <span class="mt-1 block text-sm leading-5 text-muted-foreground">
+                  Regulasi, halaman rujukan, bundel asal, dan tingkat verifikasi pada setiap item.
+                </span>
+                <span class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary hover-fine-underline">
+                  Baca metodologi
+                  <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" />
+                </span>
+              </a>
+
+              <a
+                class="inline-flex min-h-11 w-full shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-[transform,background-color] duration-150 ease-out hover-fine-bg-primary-90 active:scale-[0.98] sm:w-auto"
+                href="/katalog/"
+              >
+                Buka katalog
+                <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </a>
             </div>
           </div>
-          <div class="relative grid border-t border-background/15 sm:grid-cols-3 sm:divide-x sm:divide-background/15">
-            <div class="p-6">
-              <p class="font-mono text-2xl text-background">{catalog.bundles.length}</p>
-              <p class="mt-1 text-sm text-background/55">Bundel regulasi</p>
-            </div>
-            <div class="p-6">
-              <p class="font-mono text-2xl text-background">{catalog.sourceItemCount.toLocaleString('id-ID')}</p>
-              <p class="mt-1 text-sm text-background/55">Baris sumber</p>
-            </div>
-            <div class="flex items-start gap-3 border-t border-background/15 p-6 sm:border-t-0">
-              <ShieldCheck aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-primary-foreground" />
-              <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-background/55">Jejak sumber</p>
-                <p class="mt-2 text-sm leading-6 text-background/80">Setiap item memuat bundel, regulasi, halaman sumber, dan tingkat verifikasi jika tersedia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>

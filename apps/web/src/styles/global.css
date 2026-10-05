@@ -288,6 +288,12 @@ a.pressable {
     linear-gradient(115deg, var(--background), var(--secondary));
 }
 
+.catalog-hero-panel {
+  box-shadow:
+    0 1px 0 color-mix(in oklch, var(--foreground) 5%, transparent) inset,
+    0 28px 56px -32px color-mix(in oklch, var(--foreground) 14%, transparent);
+}
+
 [data-theme-switching],
 [data-theme-switching] *,
 [data-theme-switching] *::before,
