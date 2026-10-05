@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "scraped_at": "2026-10-05T07:58:24.743Z",
+  "sumber": "Direktorat Jenderal Bina Konstruksi — binakonstruksi.pu.go.id",
+  "pages": [
+    {
+      "id": "produk-hukum-djbk",
+      "url": "https://binakonstruksi.pu.go.id/produk-hukum-djbk/",
+      "label": "Indeks Produk Hukum DJBK",
+      "catalog_source_id": null,
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": []
+    },
+    {
+      "id": "se-47-2026",
+      "url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",
+      "label": "SE 47/SE/Dk/2026",
+      "catalog_source_id": null,
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": [
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10892",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10894",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10897",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10899",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10901",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10903",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10904",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10906",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "se-182-2025",
+      "url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-182-se-dk-2025/",
+      "label": "SE 182/SE/Dk/2025",
+      "catalog_source_id": null,
+      "status": 500,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": []
+    },
+    {
+      "id": "se-30-2025",
+      "url": "https://binakonstruksi.pu.go.id/pengumuman/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-30-se-dk-2025/",
+      "label": "SE 30/SE/Dk/2025",
+      "catalog_source_id": null,
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": [
+        {
+          "href": "https://binakonstruksi.pu.go.id/storage/se-dirjen-30-2025.pdf",
+          "text": ""
+        },
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=9466",
+          "text": ""
+        },
+        {
+          "href": "https://sijkt.pu.go.id/o/SE-Dirjen-30-2025",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "se-73-2023",
+      "url": "https://binakonstruksi.pu.go.id/pengumuman/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-73-se-dk-2023/",
+      "label": "SE 73/SE/Dk/2023",
+      "catalog_source_id": null,
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": [
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=7839",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "se-68-2024",
+      "url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-68-se-dk-2024/",
+      "label": "SE 68/SE/Dk/2024",
+      "catalog_source_id": null,
+      "status": 500,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": []
+    },
+    {
+      "id": "se-182-2025-lampiran-iii",
+      "url": "https://binakonstruksi.pu.go.id/sdm_downloads/lampiran-iii-surat-edaran-direktur-jenderal-bina-konstruksi-nomor-182-se-dk-2025/",
+      "label": "Lampiran III SE 182/SE/Dk/2025 (SMKK)",
+      "catalog_source_id": "se-binkon-182-2025",
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": [
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10199",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "se-182-2025-lampiran-i",
+      "url": "https://binakonstruksi.pu.go.id/sdm_downloads/lampiran-i-surat-edaran-direktur-jenderal-bina-konstruksi-nomor-182-se-dk-2025/",
+      "label": "Lampiran I SE 182/SE/Dk/2025 (HSP pokok)",
+      "catalog_source_id": "se-binkon-182-2025",
+      "status": 200,
+      "fetched_at": "2026-10-05T07:58:24.743Z",
+      "download_links": [
+        {
+          "href": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10195",
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

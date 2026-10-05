@@ -1,0 +1,96 @@
+[
+  {
+    "kode_ahsp": "2.2.1.3.2",
+    "nama": "Pemasangan 1 m2 Bekisting Bata Merah (5x11x22) cm tebal  Batu (Setara Campuran 1SP : 5PP)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 68758.5
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang batu/tembok",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 24111.2
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 2620.29
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 4158.59
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bata Merah",
+        "satuan": "buah",
+        "koefisien": 70,
+        "harga_satuan_ref": 56000
+      },
+      {
+        "nama": "Semen Portland",
+        "satuan": "kg",
+        "koefisien": 9.68,
+        "harga_satuan_ref": 14520
+      },
+      {
+        "nama": "Pasir Pasang",
+        "satuan": "m3",
+        "koefisien": 0.045,
+        "harga_satuan_ref": 22500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 221568.87,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "SE Dirjen Binkon No. 73/SE/Dk/2023",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "se-binkon-73-2023",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/pengumuman/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-73-se-dk-2023/",
+      "dokumen_pdf_url": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=7839",
+      "dokumen_lampiran_url": null,
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=1235"
+    }
+  }
+]

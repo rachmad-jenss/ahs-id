@@ -35,7 +35,7 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'schema',
     displayName: 'Permen PUPR 8/2023',
     defaultHsd: 'hsd-kaltim-2025',
-    compatibleHsd: ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025'],
+    compatibleHsd: ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025', 'hsd-jakarta-2026'],
     loadBundle: () => import('@ahs-id/pupr-2023'),
   },
   {
@@ -45,7 +45,7 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'syntax',
     displayName: 'Bina Marga 2016',
     defaultHsd: 'hsd-kaltim-2025',
-    compatibleHsd: ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025'],
+    compatibleHsd: ['hsd-kaltim-2025', 'hsd-jabar-2025', 'hsd-papua-2025', 'hsd-jakarta-2026'],
     loadBundle: () => import('@ahs-id/bina-marga-2016'),
   },
   {
@@ -97,6 +97,14 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'schema',
     displayName: 'HSD Bina Marga 2022',
     loadHsd: () => import('@ahs-id/hsd-bm-2022'),
+  },
+  {
+    name: 'hsd-jakarta-2026',
+    specifier: '@ahs-id/hsd-jakarta-2026',
+    strategy: 'hsd-only',
+    validation: 'schema',
+    displayName: 'HSD DKI Jakarta Q1 2026',
+    loadHsd: () => import('@ahs-id/hsd-jakarta-2026'),
   },
 ];
 

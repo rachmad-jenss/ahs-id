@@ -2,9 +2,12 @@
 import { ArrowRight, CheckCircle2, FileCheck2, GitBranch } from 'lucide-react';
 import { Badge } from '../../components/ui/badge';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { buildHsdLibraryPackages, VERIFICATION_TIER_LABELS } from '../../lib/library-packages';
+import { bundleIndex as ahspSourceBundles } from '@ahs-id/ahsp-dcktrp-by-source';
+import { manifest as hspManifest } from '@ahs-id/hsp-jakarta-dcktrp';
+import { buildHsdLibraryPackages, JAKARTA_DATA_LAYERS, VERIFICATION_TIER_LABELS } from '../../lib/library-packages';
 
 const hsdPackages = buildHsdLibraryPackages();
+const jakartaLegalRefs = hspManifest.dasar_hukum_summary ?? [];
 ---
 
 <SiteLayout title="Metodologi dan jejak sumber — AHS-ID" description="Cara AHS-ID menyusun, menormalisasi, dan menjelaskan data AHSP publik serta status verifikasi HSD.">
@@ -14,6 +17,39 @@ const hsdPackages = buildHsdLibraryPackages();
       <article class="rounded-3xl border border-border bg-card/50 p-7"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><GitBranch aria-hidden="true" className="h-5 w-5" /></span><p class="mt-7 font-mono text-xs uppercase tracking-[0.18em] text-primary">01 · Sumber</p><h2 class="mt-3 font-serif text-2xl">Bundel sebagai sumber</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Item berasal dari paket AHSP yang memiliki metadata regulasi, versi, bidang, dan jejak sumber.</p></article>
       <article class="rounded-3xl border border-border bg-card/50 p-7"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><FileCheck2 aria-hidden="true" className="h-5 w-5" /></span><p class="mt-7 font-mono text-xs uppercase tracking-[0.18em] text-primary">02 · Normalisasi</p><h2 class="mt-3 font-serif text-2xl">Satu bentuk untuk dicari</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Bundel HSD dinamis dan koefisien tetap dipetakan ke model tampilan yang konsisten tanpa mengubah data paket.</p></article>
       <article class="rounded-3xl border border-border bg-card/50 p-7"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><CheckCircle2 aria-hidden="true" className="h-5 w-5" /></span><p class="mt-7 font-mono text-xs uppercase tracking-[0.18em] text-primary">03 · Verifikasi</p><h2 class="mt-3 font-serif text-2xl">Status terlihat</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Tier verifikasi, sumber regulasi, halaman, dan tanggal verifikasi ditampilkan ketika tersedia.</p></article>
+    </div>
+
+    <div class="mt-16 max-w-3xl" id="jakarta-tiga-lapisan">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">DKI Jakarta</p>
+      <h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Tiga lapisan data (bukan satu bundel AHSP)</h2>
+      <div class="mt-7 grid gap-5 text-sm leading-6 text-muted-foreground">
+        <p><span class="font-medium text-foreground">{JAKARTA_DATA_LAYERS.ahspRegulasi.title}.</span> {JAKARTA_DATA_LAYERS.ahspRegulasi.description} Paket: <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">{JAKARTA_DATA_LAYERS.ahspRegulasi.npmName}</code> ({ahspSourceBundles.length} sub-bundel).</p>
+        <p><span class="font-medium text-foreground">{JAKARTA_DATA_LAYERS.hsdDaerah.title}.</span> {JAKARTA_DATA_LAYERS.hsdDaerah.description} Paket: <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">{JAKARTA_DATA_LAYERS.hsdDaerah.npmName}</code>.</p>
+        <p><span class="font-medium text-foreground">{JAKARTA_DATA_LAYERS.hspPortal.title}.</span> {JAKARTA_DATA_LAYERS.hspPortal.description} Paket: <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">{JAKARTA_DATA_LAYERS.hspPortal.npmName}</code> ({hspManifest.item_count.toLocaleString('id-ID')} item).</p>
+      </div>
+      {
+        jakartaLegalRefs.length > 0 ? (
+          <div class="mt-8 overflow-hidden rounded-2xl border border-border">
+            <table class="w-full text-left text-sm">
+              <caption class="sr-only">Rujukan hukum per item HSP portal Jakarta</caption>
+              <thead class="border-b border-border bg-muted/50 text-xs uppercase tracking-[0.12em] text-muted-foreground">
+                <tr>
+                  <th class="px-4 py-3 font-medium" scope="col">Dasar hukum (metadata portal)</th>
+                  <th class="px-4 py-3 font-medium" scope="col">Item</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border/70">
+                {jakartaLegalRefs.slice(0, 8).map((row) => (
+                  <tr>
+                    <td class="px-4 py-3 leading-6 text-muted-foreground">{row.label}</td>
+                    <td class="px-4 py-3 font-mono text-xs">{row.item_count.toLocaleString('id-ID')}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : null
+      }
     </div>
 
     <div class="mt-16 max-w-3xl" id="kebijakan-verifikasi">

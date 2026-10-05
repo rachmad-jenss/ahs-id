@@ -1,0 +1,173 @@
+{
+  "version": "1.1.0",
+  "updated_at": "2026-10-05",
+  "sumber_nasional_index": "https://binakonstruksi.pu.go.id/produk-hukum-djbk/",
+  "portal_bangun_jakarta": {
+    "id": "portal-bangun-jakarta",
+    "label": "Portal Bangun Jakarta (DCKTRP DKI)",
+    "jenis": "portal",
+    "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+    "api_hsp_base": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp",
+    "penerbit": "Dinas Cipta Karya, Tata Ruang dan Pertanahan Provinsi DKI Jakarta",
+    "dokumen_url": null,
+    "catatan": "HSP DKI di-scrape dari API portal; dasar hukum per item mengacu regulasi nasional di bawah."
+  },
+  "sources": [
+    {
+      "id": "se-binkon-47-2026",
+      "label": "SE Dirjen Binkon No. 47/SE/Dk/2026",
+      "jenis": "surat_edaran",
+      "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",
+      "dokumen_pdf_url": "https://binakonstruksi.pu.go.id/wp-content/uploads/Lampiran-VII-SE-DJBK-No-47-Tahun-2026-Tata-Cara-Pengajuan-Usulan-AHSP.pdf",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "SE DIRJEN  Binkon No. 47/SE/Dk/2026",
+        "SE DIRJEN Binkon No. 47/SE/Dk/2026"
+      ]
+    },
+    {
+      "id": "se-binkon-182-2025",
+      "label": "SE Dirjen Binkon No. 182/SE/Dk/2025",
+      "jenis": "surat_edaran",
+      "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-182-se-dk-2025/",
+      "dokumen_lampiran_url": "https://sijkt.pu.go.id/o/SE-Dirjen-182-2025",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "SE DIRJEN SE Dirjen Binkon No. 182/SE/Dk/2025",
+        "SE DIRJEN  Binkon No. 182/SE/Dk/2025",
+        "SE DIRJEN Binkon No. 182/SE/Dk/2025",
+        "SE DIRJEN BINKON NO 182/SE/Dk/2025",
+        "SE DIRJEN SE Dirjen Binkon No.182/SE/Dk/2025",
+        "SNI SE Dirjen Binkon No. 182/SE/Dk/2025",
+        "PERMEN SE Dirjen Binkon No. 182/SE/Dk/2025"
+      ],
+      "dokumen_pdf_url": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=10199"
+    },
+    {
+      "id": "se-binkon-30-2025",
+      "label": "SE Dirjen Binkon No. 30/SE/Dk/2025",
+      "jenis": "surat_edaran",
+      "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/pengumuman/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-30-se-dk-2025/",
+      "dokumen_lampiran_url": "https://sijkt.pu.go.id/o/SE-Dirjen-30-2025",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "SE DIRJEN SE Dirjen Binkon No. 30/SE/Dk/2025",
+        "SE DIRJEN BINKON NO 30/SE/Dk/2025",
+        "SE DIRJEN  Binkon No. 30/SE/Dk/2025"
+      ],
+      "dokumen_pdf_url": "https://binakonstruksi.pu.go.id/storage/se-dirjen-30-2025.pdf"
+    },
+    {
+      "id": "se-binkon-73-2023",
+      "label": "SE Dirjen Binkon No. 73/SE/Dk/2023",
+      "jenis": "surat_edaran",
+      "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/pengumuman/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-73-se-dk-2023/",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "SE DIRJEN SE Dirjen Nomor : 73/SE/DK/2023",
+        "SE DIRJEN SE Dirjen Binkon No.73/SE/Dk/2023"
+      ],
+      "dokumen_pdf_url": "https://binakonstruksi.pu.go.id/?sdm_process_download=1&download_id=7839"
+    },
+    {
+      "id": "se-binkon-68-2024",
+      "label": "SE Dirjen Binkon No. 68/SE/Dk/2024",
+      "jenis": "surat_edaran",
+      "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+      "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-68-se-dk-2024/",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": []
+    },
+    {
+      "id": "permen-pupr-8-2023",
+      "label": "Permen PUPR No. 8 Tahun 2023",
+      "jenis": "peraturan",
+      "penerbit": "Kementerian Pekerjaan Umum dan Perumahan Rakyat",
+      "dokumen_url": "https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023",
+      "dokumen_pdf_url": "https://peraturan.bpk.go.id/Download/335339/permen-pupr-no-8-tahun-2023.pdf",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "PERMEN PUPR No. 8 Tahun 2023",
+        "PERMEN PUPR No.8 Tahun 2023"
+      ]
+    },
+    {
+      "id": "permen-pupr-1-2022",
+      "label": "Permen PUPR No. 1 Tahun 2022",
+      "jenis": "peraturan",
+      "penerbit": "Kementerian Pekerjaan Umum dan Perumahan Rakyat",
+      "dokumen_url": "https://peraturan.bpk.go.id/Details/216825/permen-pupr-no-1-tahun-2022",
+      "dokumen_pdf_url": "https://peraturan.bpk.go.id/Download/211195/Permen%20PUPR_1%20Tahun%202022.pdf",
+      "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "PERMEN PUPR No. 1 Tahun 2022"
+      ]
+    },
+    {
+      "id": "sni-7394-2008",
+      "label": "SNI 7394:2008 (acuan Bina Konstruksi di portal)",
+      "jenis": "lainnya",
+      "penerbit": "BSN / acuan teknis pekerjaan beton",
+      "dokumen_url": "https://www.bsn.go.id/",
+      "dokumen_pencarian_url": "https://www.bsn.go.id/",
+      "portal_url": null,
+      "aliases": [
+        "Bina Konstruksi SNI 7394 - 2008 - 6.4",
+        "Bina Konstruksi SNI 7394 - 2008 - 6.12",
+        "Bina Konstruksi SNI 7394 - 2008 - 6.10",
+        "Bina Konstruksi SNI 7394 - 2008 - 6.7"
+      ]
+    },
+    {
+      "id": "bina-konstruksi-ebudgeting-2019",
+      "label": "Bina Konstruksi e-budgeting 2019",
+      "jenis": "lainnya",
+      "penerbit": "Referensi internal / legacy (label portal)",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": "https://binakonstruksi.pu.go.id/produk-hukum-djbk/",
+      "portal_url": null,
+      "aliases": [
+        "Bina Konstruksi e-budgeting 2019"
+      ]
+    },
+    {
+      "id": "bina-konstruksi-generik",
+      "label": "Bina Konstruksi (label portal tanpa nomor SE)",
+      "jenis": "lainnya",
+      "penerbit": "Tidak tercantum nomor SE di metadata portal",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": "https://binakonstruksi.pu.go.id/produk-hukum-djbk/",
+      "portal_url": null,
+      "aliases": [
+        "Bina Konstruksi",
+        "BINA KONSTRUKSI",
+        "SE DIRJEN"
+      ]
+    },
+    {
+      "id": "tidak-tercantum",
+      "label": "(tidak tercantum)",
+      "jenis": "lainnya",
+      "penerbit": null,
+      "dokumen_url": null,
+      "dokumen_pencarian_url": "https://binakonstruksi.pu.go.id/produk-hukum-djbk/",
+      "portal_url": null,
+      "aliases": [
+        "(tidak tercantum)",
+        "",
+        "(kosong)"
+      ]
+    }
+  ]
+}

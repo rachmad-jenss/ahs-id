@@ -1,0 +1,18 @@
+{
+  "source_id": "permen-pupr-8-2023",
+  "title": "Permen PUPR No. 8 Tahun 2023",
+  "jenis": "peraturan",
+  "penerbit": "Kementerian Pekerjaan Umum dan Perumahan Rakyat",
+  "item_count": 110,
+  "compatible_hsd": [
+    "hsd-jakarta-2026"
+  ],
+  "verification_tier": "auto-extracted",
+  "verification_note": "Koefisien dan harga_satuan_ref diekstrak dari breakdown HSP portal Bangun Jakarta. Bukan transkripsi PDF lampiran SE.",
+  "sumber": {
+    "label": "Permen PUPR No. 8 Tahun 2023",
+    "dokumen_url": "https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023",
+    "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+    "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp"
+  }
+}

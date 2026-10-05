@@ -1,0 +1,935 @@
+[
+  {
+    "kode_ahsp": "3.6.3.5",
+    "nama": "Pemasangan 1 m2 Dinding Kerawang (Rooster) 20x20 cm, Setara Campuran 1 SP : 3 PP",
+    "bidang": "cipta-karya",
+    "divisi": 3,
+    "sub_divisi": "3.6",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 45839
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 24111.2
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 2620.29
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0033,
+        "harga_satuan_ref": 914.89
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Roster Beton",
+        "satuan": "buah",
+        "koefisien": 26.25,
+        "harga_satuan_ref": 288750
+      },
+      {
+        "nama": "Semen Portland",
+        "satuan": "kg",
+        "koefisien": 14,
+        "harga_satuan_ref": 21000
+      },
+      {
+        "nama": "Pasir Pasang",
+        "satuan": "m3",
+        "koefisien": 0.032,
+        "harga_satuan_ref": 16000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 459120.69,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=5717"
+    }
+  },
+  {
+    "kode_ahsp": "5.3.1.3",
+    "nama": "Pemasangan 1 Unit Downlight 5 inch 14,5 Watt LED",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 14668.48
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 26935
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 2882.32
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 1108.96
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Downlight 5 Inch 14,5 Watt LED dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 209000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 292783.97,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=5155"
+    }
+  },
+  {
+    "kode_ahsp": "5.3.1.22",
+    "nama": "Pemasangan 1 Unit Fitting + 7 Watt LED c/w Nicad Battery",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 1108.96
+      },
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 14668.48
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 26935
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 2882.32
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lampu LED 7 Watt dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 51700
+      },
+      {
+        "nama": "Fitting E27 dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 12100
+      },
+      {
+        "nama": "Nicad Battery dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 121000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 264953.97,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=4935"
+    }
+  },
+  {
+    "kode_ahsp": "5.3.1.24",
+    "nama": "Pemasangan 1 Unit Fitting + 9 Watt LED c/w Nicad Battery",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.064,
+        "harga_satuan_ref": 14668.48
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.107,
+        "harga_satuan_ref": 26935
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.011,
+        "harga_satuan_ref": 2882.32
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.004,
+        "harga_satuan_ref": 1108.96
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lampu LED E27 9 Watt",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 61600
+      },
+      {
+        "nama": "Fitting E27 dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 12100
+      },
+      {
+        "nama": "Nicad Battery dan aksesoris",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 121000
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 276338.97,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=4936"
+    }
+  },
+  {
+    "kode_ahsp": "5.3.1.13",
+    "nama": "Pemasangan 1 Unit Lampu TLED 1 x 14 Watt 2.100 Lumen (Dust Proof)",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "unit",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.191,
+        "harga_satuan_ref": 48081
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.019,
+        "harga_satuan_ref": 4978.55
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.006,
+        "harga_satuan_ref": 1663.43
+      },
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.114,
+        "harga_satuan_ref": 26128.23
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lampu TLED 1 x 14 Watt 2.100 Lumen (Dust Proof)",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 203500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 327003.9,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=4901"
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.11.1",
+    "nama": "1 m3 Pekerjaan Grouting secara manual pada bangunan gedung",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m3",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.8333,
+        "harga_satuan_ref": 190988.19
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang batu/tembok",
+        "satuan": "OH",
+        "koefisien": 0.2778,
+        "harga_satuan_ref": 66980.91
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.0278,
+        "harga_satuan_ref": 7284.41
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.0093,
+        "harga_satuan_ref": 2578.32
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Semen Grout non Shrink",
+        "satuan": "kg",
+        "koefisien": 1920,
+        "harga_satuan_ref": 10368000
+      },
+      {
+        "nama": "Air Bersih",
+        "satuan": "liter",
+        "koefisien": 963,
+        "harga_satuan_ref": 385200
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 12674186.61,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=3940"
+    }
+  },
+  {
+    "kode_ahsp": "5.3.1.20",
+    "nama": "Pemasangan 1 Unit Lampu Taman 25 Watt + Tiang 1 M",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.3",
+    "satuan_bayar": "buah",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.255,
+        "harga_satuan_ref": 58444.73
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.425,
+        "harga_satuan_ref": 106986
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.043,
+        "harga_satuan_ref": 11267.25
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.014,
+        "harga_satuan_ref": 3881.35
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Lampu Taman 25 Watt + Tiang 1 M",
+        "satuan": "buah",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 921690
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 1267609.72,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=3137"
+    }
+  },
+  {
+    "kode_ahsp": "5.1.1.2.2",
+    "nama": "Pemasangan 1 m Kabel NYA 1 x 2,5 mm2",
+    "bidang": "cipta-karya",
+    "divisi": 5,
+    "sub_divisi": "5.1",
+    "satuan_bayar": "m",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.012,
+        "harga_satuan_ref": 2750.34
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang Listrik",
+        "satuan": "OH",
+        "koefisien": 0.02,
+        "harga_satuan_ref": 5035
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.002,
+        "harga_satuan_ref": 524.06
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.001,
+        "harga_satuan_ref": 277.24
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "NYA 1 x 2,5 mm2 dan aksesoris",
+        "satuan": "m",
+        "koefisien": 1.15,
+        "harga_satuan_ref": 7130
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 18074.13,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=1327"
+    }
+  },
+  {
+    "kode_ahsp": "2.2.1.3.2",
+    "nama": "Pemasangan 1 m2 Bekisting Bata Merah (5x11x22) cm tebal  Batu (Setara Campuran 1SP : 5PP)",
+    "bidang": "cipta-karya",
+    "divisi": 2,
+    "sub_divisi": "2.2",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 68758.5
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang batu/tembok",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 24111.2
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.01,
+        "harga_satuan_ref": 2620.29
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.015,
+        "harga_satuan_ref": 4158.59
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Bata Merah",
+        "satuan": "buah",
+        "koefisien": 70,
+        "harga_satuan_ref": 56000
+      },
+      {
+        "nama": "Semen Portland",
+        "satuan": "kg",
+        "koefisien": 9.68,
+        "harga_satuan_ref": 14520
+      },
+      {
+        "nama": "Pasir Pasang",
+        "satuan": "m3",
+        "koefisien": 0.045,
+        "harga_satuan_ref": 22500
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 221568.87,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=1235"
+    }
+  },
+  {
+    "kode_ahsp": "1.1.2.3",
+    "nama": "Pembuatan 1 m2 kantor sementara/rumah jaga/gudang semen dan peralatan lantai plesteran, dinding setengah tembok",
+    "bidang": "cipta-karya",
+    "divisi": 1,
+    "sub_divisi": "1.1",
+    "satuan_bayar": "m2",
+    "jenis_kalkulasi": "fixed_coefficient",
+    "jenis_pekerjaan": "manual",
+    "is_lump_sum": false,
+    "tenaga_kerja": [
+      {
+        "ref": "L.02",
+        "nama": "Tukang batu/tembok",
+        "satuan": "OH",
+        "koefisien": 1,
+        "harga_satuan_ref": 241112
+      },
+      {
+        "ref": "L.03",
+        "nama": "Kepala tukang",
+        "satuan": "OH",
+        "koefisien": 0.3,
+        "harga_satuan_ref": 78608.7
+      },
+      {
+        "ref": "L.01",
+        "nama": "Pekerja",
+        "satuan": "OH",
+        "koefisien": 2,
+        "harga_satuan_ref": 458390
+      },
+      {
+        "ref": "L.04",
+        "nama": "Mandor",
+        "satuan": "OH",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 27723.9
+      },
+      {
+        "ref": "L.02",
+        "nama": "Tukang kayu",
+        "satuan": "OH",
+        "koefisien": 2,
+        "harga_satuan_ref": 482224
+      }
+    ],
+    "bahan": [
+      {
+        "nama": "Dolken dia 8 s/d 10 cm panjang 4 m",
+        "satuan": "batang",
+        "koefisien": 1.25,
+        "harga_satuan_ref": 20000
+      },
+      {
+        "nama": "Kaso 5/7 Kayu Kelas II",
+        "satuan": "m3",
+        "koefisien": 0.18,
+        "harga_satuan_ref": 894600
+      },
+      {
+        "nama": "Besi Plat Strip",
+        "satuan": "kg",
+        "koefisien": 1.1,
+        "harga_satuan_ref": 30470
+      },
+      {
+        "nama": "Semen Portland",
+        "satuan": "kg",
+        "koefisien": 35,
+        "harga_satuan_ref": 52500
+      },
+      {
+        "nama": "Pasir Pasang",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 75000
+      },
+      {
+        "nama": "Pasir Beton",
+        "satuan": "m3",
+        "koefisien": 0.1,
+        "harga_satuan_ref": 30000
+      },
+      {
+        "nama": "Batu Pecah / Batu Split / Kerikil",
+        "satuan": "m3",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 40000.05
+      },
+      {
+        "nama": "Bata Merah",
+        "satuan": "buah",
+        "koefisien": 30,
+        "harga_satuan_ref": 24000
+      },
+      {
+        "nama": "Kaca Polos 3 mm",
+        "satuan": "m2",
+        "koefisien": 0.08,
+        "harga_satuan_ref": 6400
+      },
+      {
+        "nama": "Triplek / Plywood tebal 4 mm",
+        "satuan": "lembar",
+        "koefisien": 0.06,
+        "harga_satuan_ref": 3900
+      },
+      {
+        "nama": "Jendela Nako",
+        "satuan": "buah",
+        "koefisien": 0.2,
+        "harga_satuan_ref": 19500
+      },
+      {
+        "nama": "Seng Plat BJLS 30",
+        "satuan": "lembar",
+        "koefisien": 0.25,
+        "harga_satuan_ref": 10000
+      },
+      {
+        "nama": "Kunci Tanam Biasa",
+        "satuan": "buah",
+        "koefisien": 0.15,
+        "harga_satuan_ref": 95400
+      }
+    ],
+    "peralatan": [],
+    "harga_satuan_pekerjaan_ref": 2978302.95,
+    "margin": {
+      "overhead_pct": {
+        "label": "Biaya Umum (Overhead)",
+        "min": 0,
+        "max": 15,
+        "default": 10
+      },
+      "profit_pct": {
+        "label": "Keuntungan (Profit)",
+        "min": 0,
+        "max": 15,
+        "default": 5
+      },
+      "constraint": {
+        "rule": "10 <= overhead_pct + profit_pct <= 15"
+      }
+    },
+    "provenance": {
+      "sumber_regulasi": "(tidak tercantum)",
+      "halaman": null,
+      "verification_tier": "auto-extracted",
+      "diverifikasi_oleh": null,
+      "tanggal_verifikasi": null,
+      "source_id": "tidak-tercantum",
+      "dokumen_url": null,
+      "dokumen_pencarian_url": null,
+      "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp",
+      "portal_item_url": "https://dcktrp.jakarta.go.id/bangunjakarta/portal/api/hsp?id=986"
+    }
+  }
+]

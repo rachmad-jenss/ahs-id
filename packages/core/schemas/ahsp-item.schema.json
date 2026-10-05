@@ -217,7 +217,14 @@
           "enum": ["auto-extracted", "spot-checked", "verified", "executed"]
         },
         "diverifikasi_oleh": { "type": ["string", "null"] },
-        "tanggal_verifikasi": { "type": ["string", "null"] }
+        "tanggal_verifikasi": { "type": ["string", "null"] },
+        "source_id": { "type": ["string", "null"] },
+        "dokumen_url": { "type": ["string", "null"] },
+        "dokumen_pdf_url": { "type": ["string", "null"] },
+        "dokumen_lampiran_url": { "type": ["string", "null"] },
+        "dokumen_pencarian_url": { "type": ["string", "null"] },
+        "portal_url": { "type": ["string", "null"] },
+        "portal_item_url": { "type": ["string", "null"] }
       }
     }
   }

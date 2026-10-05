@@ -1,0 +1,18 @@
+{
+  "source_id": "se-binkon-182-2025",
+  "title": "SE Dirjen Binkon No. 182/SE/Dk/2025",
+  "jenis": "surat_edaran",
+  "penerbit": "Direktorat Jenderal Bina Konstruksi — Kementerian PUPR",
+  "item_count": 1392,
+  "compatible_hsd": [
+    "hsd-jakarta-2026"
+  ],
+  "verification_tier": "auto-extracted",
+  "verification_note": "Koefisien dan harga_satuan_ref diekstrak dari breakdown HSP portal Bangun Jakarta. Bukan transkripsi PDF lampiran SE.",
+  "sumber": {
+    "label": "SE Dirjen Binkon No. 182/SE/Dk/2025",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-182-se-dk-2025/",
+    "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+    "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp"
+  }
+}

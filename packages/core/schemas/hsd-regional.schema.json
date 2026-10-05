@@ -33,7 +33,11 @@
           "type": "string",
           "enum": ["auto-extracted", "spot-checked", "verified", "executed"]
         },
-        "verification_note": { "type": "string", "minLength": 1 }
+        "verification_note": { "type": "string", "minLength": 1 },
+        "sumber_rujukan": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sumber_rujukan_entry" }
+        }
       }
     },
     "tenaga_kerja": {
@@ -90,6 +94,25 @@
         "oli_mesin_rp_per_liter": { "type": "number", "exclusiveMinimum": 0 },
         "oli_hidrolik_rp_per_liter": { "type": "number", "exclusiveMinimum": 0 },
         "grease_rp_per_kg": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    }
+  },
+  "$defs": {
+    "sumber_rujukan_entry": {
+      "type": "object",
+      "required": ["source_id", "label"],
+      "additionalProperties": false,
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "jenis": {
+          "type": "string",
+          "enum": ["peraturan", "surat_edaran", "portal", "lainnya"]
+        },
+        "dokumen_url": { "type": ["string", "null"] },
+        "dokumen_pencarian_url": { "type": ["string", "null"] },
+        "portal_url": { "type": ["string", "null"] },
+        "catatan": { "type": ["string", "null"] }
       }
     }
   }

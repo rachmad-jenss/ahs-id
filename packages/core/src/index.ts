@@ -36,6 +36,7 @@ export type {
   VerificationTier,
   AhspItem,
   HsdRegionInfo,
+  HsdSumberRujukan,
   HsdTenagaKerjaEntry,
   HsdBahanEntry,
   HsdPeralatanSewaEntry,

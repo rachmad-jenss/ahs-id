@@ -12,6 +12,8 @@ const SCHEMA_PACKAGES = [
   'hsd-jabar-2025',
   'hsd-papua-2025',
   'hsd-bm-2022',
+  'hsd-jakarta-2026',
+  'ahsp-dcktrp-by-source',
 ];
 
 /** Legacy layouts stay syntax-only until their data matches the core schemas. */

@@ -1,0 +1,18 @@
+{
+  "source_id": "tidak-tercantum",
+  "title": "(tidak tercantum)",
+  "jenis": "lainnya",
+  "penerbit": null,
+  "item_count": 10,
+  "compatible_hsd": [
+    "hsd-jakarta-2026"
+  ],
+  "verification_tier": "auto-extracted",
+  "verification_note": "Koefisien dan harga_satuan_ref diekstrak dari breakdown HSP portal Bangun Jakarta. Bukan transkripsi PDF lampiran SE.",
+  "sumber": {
+    "label": "(tidak tercantum)",
+    "dokumen_url": null,
+    "dokumen_pencarian_url": null,
+    "portal_url": "https://dcktrp.jakarta.go.id/bangunjakarta/hsp"
+  }
+}

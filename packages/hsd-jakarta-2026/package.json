@@ -1,0 +1,39 @@
+{
+  "name": "@ahs-id/hsd-jakarta-2026",
+  "version": "0.1.0",
+  "description": "HSD DKI Jakarta Q1 2026 — agregasi harga komponen dari portal Bangun Jakarta DCKTRP",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "node ../../scripts/clean.mjs dist .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@ahs-id/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachmad-jenss/ahs-id.git",
+    "directory": "packages/hsd-jakarta-2026"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -304,10 +304,25 @@ export type VerificationTier =
 
 export interface Provenance {
   readonly sumber_regulasi: string;
-  readonly halaman: string;
+  readonly halaman: string | null;
   readonly verification_tier: VerificationTier;
   readonly diverifikasi_oleh: string | null;
   readonly tanggal_verifikasi: string | null;
+  readonly source_id?: string | null;
+  readonly dokumen_url?: string | null;
+  readonly dokumen_pencarian_url?: string | null;
+  readonly portal_url?: string | null;
+  readonly portal_item_url?: string | null;
+}
+
+export interface HsdSumberRujukan {
+  readonly source_id: string;
+  readonly label: string;
+  readonly jenis?: 'peraturan' | 'surat_edaran' | 'portal' | 'lainnya';
+  readonly dokumen_url?: string | null;
+  readonly dokumen_pencarian_url?: string | null;
+  readonly portal_url?: string | null;
+  readonly catatan?: string | null;
 }
 
 export interface AhspItem {
@@ -344,6 +359,7 @@ export interface HsdRegionInfo {
   readonly tanggal_terbit: string;
   readonly verification_tier: VerificationTier;
   readonly verification_note: string;
+  readonly sumber_rujukan?: readonly HsdSumberRujukan[];
 }
 
 export interface HsdTenagaKerjaEntry {

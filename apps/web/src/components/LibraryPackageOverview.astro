@@ -15,6 +15,7 @@ const kindLabels: Record<LibraryPackageKind, string> = {
   engine: 'Engine',
   cli: 'CLI',
   ahsp: 'Koefisien AHSP',
+  hsp: 'HSP jadi (portal)',
   hsd: 'HSD regional',
 };
 
@@ -47,6 +48,11 @@ function kindIcon(kind: LibraryPackageKind) {
             </div>
             <p class="mt-6 font-mono text-sm text-primary">{pkg.npmName}</p>
             <h3 class="mt-2 font-serif text-2xl">{pkg.title}</h3>
+            {
+              pkg.itemCount != null ? (
+                <p class="mt-2 font-mono text-xs text-muted-foreground">{pkg.itemCount.toLocaleString('id-ID')} item di katalog</p>
+              ) : null
+            }
             <p class="mt-2 flex-1 text-sm leading-6 text-muted-foreground">{pkg.description}</p>
             {
               pkg.verificationLabel ? (
