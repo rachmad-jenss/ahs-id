@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type SyntheticEvent 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { NativeSelect } from '@/components/ui/select';
 import { catalogUrl, parseCatalogSearchParams, type CatalogSearchParams } from '@/lib/catalog-url';
 import { paginateCatalogItems, type SearchIndexEntry } from '@/lib/search-client';
 
@@ -165,6 +166,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     : activeFilterCount > 0
       ? `${activeFilterCount} aktif`
       : 'Opsional';
+  const resultSurfaceKey = [query, bundle, bidang, unit, page, paged.items.length > 0 ? 'list' : 'empty'].join('|');
 
   useEffect(() => {
     setFilterOpen(hasActiveCriteria);
@@ -174,24 +176,24 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     <div className="mt-5 grid gap-5">
       <label className="grid gap-2 text-sm">
          <span className="font-medium">Bundel</span>
-        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
+        <NativeSelect onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
            <option value="">Semua bundel</option>
           {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
-        </select>
+        </NativeSelect>
       </label>
       <label className="grid gap-2 text-sm">
         <span className="font-medium">Bidang</span>
-        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('bidang', event.target.value)} value={bidang}>
+        <NativeSelect onChange={(event) => changeFilter('bidang', event.target.value)} value={bidang}>
           <option value="">Semua bidang</option>
           {bidangOptions.map((option) => <option key={option} value={option}>{option}</option>)}
-        </select>
+        </NativeSelect>
       </label>
       <label className="grid gap-2 text-sm">
         <span className="font-medium">Satuan</span>
-        <select className="min-h-11 rounded-xl border border-input bg-background px-3 text-sm" onChange={(event) => changeFilter('unit', event.target.value)} value={unit}>
+        <NativeSelect onChange={(event) => changeFilter('unit', event.target.value)} value={unit}>
           <option value="">Semua satuan</option>
           {unitOptions.map((option) => <option key={option} value={option}>{option}</option>)}
-        </select>
+        </NativeSelect>
       </label>
       {hasActiveCriteria && (
         <Button onClick={clearFilters} size="sm" variant="ghost">
@@ -238,7 +240,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
         </div>
 
         {paged.items.length > 0 ? (
-          <div className="mt-5 overflow-hidden rounded-2xl border border-border/80 bg-card/50">
+          <div className="catalog-surface-enter mt-5 overflow-hidden rounded-2xl border border-border/80 bg-card/50" key={resultSurfaceKey}>
             <div className="hidden grid-cols-[7rem_1fr_12rem_4rem] gap-4 border-b border-border/80 bg-muted/50 px-5 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:grid">
               <span>Kode</span><span>Pekerjaan</span><span>Bundel</span><span>Satuan</span>
             </div>
@@ -259,7 +261,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
             </ul>
           </div>
         ) : (
-          <div className="mt-5 rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center">
+          <div className="catalog-surface-enter mt-5 rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center" key={resultSurfaceKey}>
             <p className="font-serif text-2xl">Tidak ada hasil</p>
             <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-muted-foreground">{hasSearch ? `Tidak ada item yang cocok dengan “${query.trim()}”. Coba kata kunci lain atau reset filter.` : 'Tidak ada item yang cocok dengan filter saat ini. Coba ubah pilihan atau reset filter.'}</p>
             <Button className="mt-5" onClick={clearFilters} variant="outline">{clearLabel}</Button>
