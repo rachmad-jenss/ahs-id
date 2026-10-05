@@ -42,6 +42,8 @@ const hsdKaltim: HsdRegional = {
     kuartal: 1,
     dasar_hukum: 'SK Gubernur Kaltim',
     tanggal_terbit: '2025-01-15',
+    verification_tier: 'auto-extracted',
+    verification_note: 'Fixture uji.',
   },
   tenaga_kerja: [
     { ref: 'L.05', harga_rp: 195000, satuan: 'OH', sumber_data: 'Survei' },

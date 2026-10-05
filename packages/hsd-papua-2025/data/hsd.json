@@ -6,8 +6,10 @@
     "kabupaten": null,
     "tahun_berlaku": 2025,
     "kuartal": 1,
-    "dasar_hukum": "SK Gubernur Papua No. XXX/2025",
-    "tanggal_terbit": "2025-02-01"
+    "dasar_hukum": "Dataset referensi Q1 2025 (band harga tinggi); bukan transkripsi SK HSD provinsi",
+    "tanggal_terbit": "2025-02-01",
+    "verification_tier": "auto-extracted",
+    "verification_note": "Harga ilustratif untuk skenario wilayah tertinggi. Validasi ke dokumen HSD Papua resmi diperlukan untuk pekerjaan aktual."
   },
   "tenaga_kerja": [
     {

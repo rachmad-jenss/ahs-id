@@ -9,6 +9,8 @@ const region = {
   kuartal: 1,
   dasar_hukum: 'SK',
   tanggal_terbit: '2025-01-01',
+  verification_tier: 'auto-extracted',
+  verification_note: 'Fixture uji.',
 };
 
 describe('brandHsdRegional', () => {

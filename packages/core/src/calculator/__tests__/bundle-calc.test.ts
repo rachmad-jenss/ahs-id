@@ -57,6 +57,8 @@ const hsd: HsdRegional = {
     kuartal: 1,
     dasar_hukum: 'test',
     tanggal_terbit: '2022-01-01',
+    verification_tier: 'auto-extracted',
+    verification_note: 'Fixture uji.',
   },
   tenaga_kerja: [
     { ref: 'L.01', satuan: 'OH', harga_rp: 100000, sumber_data: 'test' },

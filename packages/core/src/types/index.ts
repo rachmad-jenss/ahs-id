@@ -342,6 +342,8 @@ export interface HsdRegionInfo {
   readonly kuartal: number;
   readonly dasar_hukum: string;
   readonly tanggal_terbit: string;
+  readonly verification_tier: VerificationTier;
+  readonly verification_note: string;
 }
 
 export interface HsdTenagaKerjaEntry {

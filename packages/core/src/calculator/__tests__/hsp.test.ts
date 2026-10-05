@@ -145,7 +145,17 @@ const testBundle: DataBundle = {
 
 const testHsd: HsdRegional = {
   version: '1',
-  region: { provinsi: 'Kalimantan Timur', kode_provinsi: '64', kabupaten: 'Samarinda', tahun_berlaku: 2025, kuartal: 1, dasar_hukum: 'SK Gubernur 2025', tanggal_terbit: '2025-01-01' },
+  region: {
+    provinsi: 'Kalimantan Timur',
+    kode_provinsi: '64',
+    kabupaten: 'Samarinda',
+    tahun_berlaku: 2025,
+    kuartal: 1,
+    dasar_hukum: 'SK Gubernur 2025',
+    tanggal_terbit: '2025-01-01',
+    verification_tier: 'auto-extracted',
+    verification_note: 'Fixture uji.',
+  },
   periode: { tahun: 2025, kuartal: 1 },
   tenaga_kerja: [
     { ref: 'L.01', satuan: 'OH' as const, harga_rp: 135000, sumber_data: 'SK Gubernur 2025' },

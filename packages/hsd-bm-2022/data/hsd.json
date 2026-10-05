@@ -6,8 +6,10 @@
     "kabupaten": null,
     "tahun_berlaku": 2022,
     "kuartal": 1,
-    "dasar_hukum": "Permen PUPR 1/2022 Lampiran",
-    "tanggal_terbit": "2022-01-01"
+    "dasar_hukum": "Permen PUPR No. 1 Tahun 2022 beserta lampiran HSD",
+    "tanggal_terbit": "2022-01-01",
+    "verification_tier": "spot-checked",
+    "verification_note": "Tarif upah, bahan, dan sewa peralatan diimpor dari lampiran Permen 1/2022 untuk jalur Bina Marga 2022. Tetap bandingkan dengan revisi regulasi terbaru."
   },
   "tenaga_kerja": [
     {
