@@ -8,6 +8,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "pretest": "astro build",
     "test": "vitest run",
     "typecheck": "astro check",
     "lint": "eslint src tests"

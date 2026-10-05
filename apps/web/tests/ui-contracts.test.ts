@@ -79,10 +79,16 @@ describe('web UI contracts', () => {
 
   it('keeps shared controls touch-sized', () => {
     const button = readSource('src/components/ui/button.tsx');
+    const input = readSource('src/components/ui/input.tsx');
+    const select = readSource('src/components/ui/select.tsx');
 
     expect(button).toContain("default: 'min-h-11'");
     expect(button).toContain("sm: 'min-h-11");
     expect(button).toContain("icon: 'h-11 w-11");
+    expect(input).toContain('text-base');
+    expect(input).not.toContain('md:text-sm');
+    expect(select).toContain('text-base');
+    expect(select).toContain('selectFieldClassName');
   });
 
   it('keeps catalog results contained, filterable, and screen-reader friendly', () => {
@@ -114,6 +120,9 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('break-words font-medium');
     expect(catalog).not.toContain('block truncate font-medium');
     expect(catalog).toContain('grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]');
+    expect(catalog).toContain('NativeSelect');
+    expect(catalog).toContain('catalog-surface-enter');
+    expect(catalog).toContain('resultSurfaceKey');
   });
 
   it('keeps wide item tables understandable on narrow screens', () => {
@@ -129,12 +138,16 @@ describe('web UI contracts', () => {
     expect(item).toContain('table-scroll');
     expect(item).toContain('<caption class="sr-only">');
     expect(item).toContain('scope="col"');
+    expect(item).toContain('tabular-nums');
     expect(item).toContain('HSD dinamis');
     expect(item).toContain('Ekstraksi otomatis');
     expect(item).not.toContain('Dynamic HSD');
     expect(item).not.toContain('Fixed coefficient');
     expect(styles).toContain('--font-sans: ui-sans-serif');
     expect(styles).not.toContain("--font-sans: 'Inter'");
+    expect(styles).toContain('font-optical-sizing: auto');
+    expect(styles).toContain('.catalog-surface-enter');
+    expect(styles).toContain('.featured-card-enter');
   });
 
   it('contains the homepage code sample within the mobile layout', () => {

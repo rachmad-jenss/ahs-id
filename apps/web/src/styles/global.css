@@ -140,6 +140,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
 }
 
@@ -302,6 +303,46 @@ a.pressable {
   transform: scale(0.97);
 }
 
+.catalog-surface-enter {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms var(--motion-ease-ui), transform 200ms var(--motion-ease-ui);
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+.featured-card-enter {
+  opacity: 0;
+  animation: featured-card-in 280ms var(--motion-ease-ui) forwards;
+}
+
+.featured-card-enter:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.featured-card-enter:nth-child(2) {
+  animation-delay: 50ms;
+}
+
+.featured-card-enter:nth-child(3) {
+  animation-delay: 100ms;
+}
+
+@keyframes featured-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -444,6 +485,17 @@ details[open] > .mobile-menu-panel {
   }
 
   .pressable-chip:active {
+    transform: none;
+  }
+
+  .catalog-surface-enter {
+    transform: none;
+    transition-property: opacity;
+  }
+
+  .featured-card-enter {
+    animation: none;
+    opacity: 1;
     transform: none;
   }
 }
