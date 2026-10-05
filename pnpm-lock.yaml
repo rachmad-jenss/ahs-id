@@ -93,6 +93,18 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@ahs-id/hsd-bm-2022':
+        specifier: workspace:*
+        version: link:../../packages/hsd-bm-2022
+      '@ahs-id/hsd-jabar-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-jabar-2025
+      '@ahs-id/hsd-kaltim-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-kaltim-2025
+      '@ahs-id/hsd-papua-2025':
+        specifier: workspace:*
+        version: link:../../packages/hsd-papua-2025
       '@ahs-id/pupr-2023':
         specifier: workspace:*
         version: link:../../packages/pupr-2023

@@ -1,0 +1,81 @@
+---
+import { ArrowRight, Calculator, Package, Terminal } from 'lucide-react';
+import type { LibraryPackageKind, LibraryPackageSummary } from '../lib/library-packages';
+import { Badge } from './ui/badge';
+
+interface Props {
+  packages: readonly LibraryPackageSummary[];
+  heading?: string;
+  intro?: string;
+}
+
+const { packages, heading = 'Paket npm di monorepo', intro } = Astro.props;
+
+const kindLabels: Record<LibraryPackageKind, string> = {
+  engine: 'Engine',
+  cli: 'CLI',
+  ahsp: 'Koefisien AHSP',
+  hsd: 'HSD regional',
+};
+
+function kindIcon(kind: LibraryPackageKind) {
+  if (kind === 'engine') return Calculator;
+  if (kind === 'cli') return Terminal;
+  return Package;
+}
+---
+
+<section aria-labelledby="library-packages-heading" class="mt-20">
+  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Library</p>
+  <h2 class="mt-4 max-w-3xl font-serif text-4xl tracking-[-0.03em]" id="library-packages-heading">{heading}</h2>
+  {
+    intro ? (
+      <p class="mt-5 max-w-3xl text-base leading-7 text-muted-foreground">{intro}</p>
+    ) : null
+  }
+  <div class="mt-10 grid gap-4 lg:grid-cols-2">
+    {
+      packages.map((pkg) => {
+        const Icon = kindIcon(pkg.kind);
+        return (
+          <article class="flex h-full flex-col rounded-3xl border border-border bg-card/50 p-6 sm:p-7">
+            <div class="flex items-start justify-between gap-4">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground">
+                <Icon aria-hidden="true" className="h-5 w-5" />
+              </span>
+              <Badge variant="outline">{kindLabels[pkg.kind]}</Badge>
+            </div>
+            <p class="mt-6 font-mono text-sm text-primary">{pkg.npmName}</p>
+            <h3 class="mt-2 font-serif text-2xl">{pkg.title}</h3>
+            <p class="mt-2 flex-1 text-sm leading-6 text-muted-foreground">{pkg.description}</p>
+            {
+              pkg.verificationLabel ? (
+                <div class="mt-5 space-y-2 border-t border-border/80 pt-5 text-sm">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-muted-foreground">Status data</span>
+                    <Badge variant="muted">{pkg.verificationLabel}</Badge>
+                  </div>
+                  {pkg.legalBasis ? <p class="leading-6 text-muted-foreground"><span class="font-medium text-foreground">Dasar hukum:</span> {pkg.legalBasis}</p> : null}
+                  {pkg.verificationNote ? <p class="text-xs leading-5 text-muted-foreground">{pkg.verificationNote}</p> : null}
+                </div>
+              ) : null
+            }
+            <div class="mt-6 flex flex-wrap gap-4 text-sm font-semibold">
+              <a
+                class="pressable inline-flex min-h-11 items-center gap-2 text-primary hover-fine-underline"
+                href={`https://github.com/rachmad-jenss/ahs-id/tree/main/${pkg.githubPath}`}
+                rel="noreferrer"
+              >
+                Sumber di GitHub
+                <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </a>
+              <a class="pressable inline-flex min-h-11 items-center text-muted-foreground hover-fine-text-primary" href={pkg.npmUrl} rel="noreferrer">
+                npm
+              </a>
+            </div>
+          </article>
+        );
+      })
+    }
+  </div>
+</section>

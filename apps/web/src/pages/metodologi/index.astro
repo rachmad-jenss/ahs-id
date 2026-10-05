@@ -1,13 +1,13 @@
 ---
-import { ArrowRight, CheckCircle2, CircleAlert, FileCheck2, GitBranch } from 'lucide-react';
+import { ArrowRight, CheckCircle2, FileCheck2, GitBranch } from 'lucide-react';
 import { Badge } from '../../components/ui/badge';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { buildCatalog, CIPTA_KARYA_QUARANTINE } from '../../lib/catalog';
+import { buildHsdLibraryPackages, VERIFICATION_TIER_LABELS } from '../../lib/library-packages';
 
-const catalog = buildCatalog();
+const hsdPackages = buildHsdLibraryPackages();
 ---
 
-<SiteLayout title="Metodologi dan jejak sumber — AHS-ID" description="Cara AHS-ID menyusun, menormalisasi, dan menjelaskan data AHSP publik.">
+<SiteLayout title="Metodologi dan jejak sumber — AHS-ID" description="Cara AHS-ID menyusun, menormalisasi, dan menjelaskan data AHSP publik serta status verifikasi HSD.">
   <section class="border-b border-border/80 bg-card/45"><div class="mx-auto max-w-7xl px-5 pb-14 pt-16 lg:px-8 lg:pb-20 lg:pt-24"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Metodologi</p><h1 class="mt-4 max-w-4xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-7xl">Data yang punya jejak.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">AHS-ID memisahkan fakta sumber, normalisasi untuk konsumsi engine, dan status verifikasi agar pengguna bisa menilai data sesuai kebutuhan proyek.</p></div></section>
   <section class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
     <div class="grid gap-5 md:grid-cols-3">
@@ -15,9 +15,60 @@ const catalog = buildCatalog();
       <article class="rounded-3xl border border-border bg-card/50 p-7"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><FileCheck2 aria-hidden="true" className="h-5 w-5" /></span><p class="mt-7 font-mono text-xs uppercase tracking-[0.18em] text-primary">02 · Normalisasi</p><h2 class="mt-3 font-serif text-2xl">Satu bentuk untuk dicari</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Bundel HSD dinamis dan koefisien tetap dipetakan ke model tampilan yang konsisten tanpa mengubah data paket.</p></article>
       <article class="rounded-3xl border border-border bg-card/50 p-7"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary text-primary-foreground"><CheckCircle2 aria-hidden="true" className="h-5 w-5" /></span><p class="mt-7 font-mono text-xs uppercase tracking-[0.18em] text-primary">03 · Verifikasi</p><h2 class="mt-3 font-serif text-2xl">Status terlihat</h2><p class="mt-3 text-sm leading-6 text-muted-foreground">Tier verifikasi, sumber regulasi, halaman, dan tanggal verifikasi ditampilkan ketika tersedia.</p></article>
     </div>
-    <div class="mt-16 grid gap-12 lg:grid-cols-[1fr_.8fr]">
-      <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Batas penggunaan</p><h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Katalog membantu membaca data. Keputusan tetap perlu validasi proyek.</h2><div class="mt-7 grid gap-4 text-sm leading-6 text-muted-foreground"><p>Website ini tidak menggantikan dokumen regulasi resmi, pertimbangan engineer, harga lokal, atau pemeriksaan kuantitas. Harga referensi dan HSD hanya bermakna dalam konteks bundel dan periode berlakunya.</p><p>Gunakan paket engine untuk kalkulasi yang membutuhkan HSD regional, tahap volume, produktivitas, overhead, dan profit. Katalog publik ini berfokus pada struktur AHSP dan jejak datanya.</p></div><a class="pressable mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/docs/">Lihat dokumentasi developer <ArrowRight aria-hidden="true" className="h-4 w-4" /></a></div>
-      <aside aria-labelledby="quarantine-heading" class="h-fit rounded-3xl border border-warning-foreground/25 bg-warning-surface p-7 text-warning-foreground"><div class="flex items-center gap-3"><CircleAlert aria-hidden="true" className="h-5 w-5 text-warning-icon" /><h2 class="font-serif text-2xl" id="quarantine-heading">Karantina web</h2></div><p class="mt-4 text-sm leading-6">{catalog.quarantinedItemCount} baris Cipta Karya 2024 belum dimasukkan ke katalog publik karena ada kode duplikat atau outlier divisi yang perlu ditinjau.</p><div class="mt-5 flex flex-wrap gap-2">{CIPTA_KARYA_QUARANTINE.map((entry) => <Badge variant="outline">{entry.code}</Badge>)}</div><p class="mt-5 text-xs leading-5">Karantina hanya berlaku untuk permukaan web. Bundel sumber dan histori paket tidak diubah oleh landing page ini.</p></aside>
+
+    <div class="mt-16 max-w-3xl" id="kebijakan-verifikasi">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Kebijakan verifikasi</p>
+      <h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Apa yang dijamin repo, dan apa yang menjadi tanggung jawab proyek.</h2>
+      <div class="mt-7 grid gap-5 text-sm leading-6 text-muted-foreground">
+        <p>
+          <span class="font-medium text-foreground">Golden test (ε 0,01 Rp)</span> mengunci bahwa kombinasi bundel + HSD + input variabel menghasilkan angka yang sama dengan fixture yang direview. Itu jaminan <span class="font-medium text-foreground">konsistensi engine</span>, bukan sertifikasi bahwa setiap rupiah cocok dengan SK atau PDF regulasi terbaru.
+        </p>
+        <p>
+          <span class="font-medium text-foreground">Item AHSP di katalog</span> banyak berstatus tier <Badge variant="muted">{VERIFICATION_TIER_LABELS['auto-extracted']}</Badge> — artinya struktur dan koefisien diekstrak ke JSON dan divalidasi skema, tetapi belum seluruhnya diaudit manual ke halaman sumber. Tier lebih tinggi (<Badge variant="muted">{VERIFICATION_TIER_LABELS['spot-checked']}</Badge>, {VERIFICATION_TIER_LABELS.verified}, {VERIFICATION_TIER_LABELS.executed}) ditampilkan per item bila ada di provenance.
+        </p>
+        <p>
+          <span class="font-medium text-foreground">Paket HSD regional</span> membawa <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">verification_tier</code> dan <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">verification_note</code> di metadata wilayah. Tiga paket Q1 2025 adalah dataset referensi untuk pengujian band harga (rendah / menengah / tinggi), bukan salinan SK gubernur. <span class="font-medium text-foreground">@ahs-id/hsd-bm-2022</span> mengacu lampiran Permen PUPR 1/2022 dan berstatus {VERIFICATION_TIER_LABELS['spot-checked']}.
+        </p>
+      </div>
+
+      <div class="mt-10 overflow-hidden rounded-2xl border border-border">
+        <table class="w-full text-left text-sm">
+          <caption class="sr-only">Status verifikasi paket HSD regional</caption>
+          <thead class="border-b border-border bg-muted/50 text-xs uppercase tracking-[0.12em] text-muted-foreground">
+            <tr>
+              <th class="px-4 py-3 font-medium" scope="col">Paket</th>
+              <th class="px-4 py-3 font-medium" scope="col">Status</th>
+              <th class="px-4 py-3 font-medium" scope="col">Dasar hukum (metadata)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border/70">
+            {
+              hsdPackages.map((pkg) => (
+                <tr>
+                  <td class="px-4 py-3 font-mono text-xs text-primary sm:text-sm">{pkg.npmName}</td>
+                  <td class="px-4 py-3"><Badge variant="muted">{pkg.verificationLabel}</Badge></td>
+                  <td class="px-4 py-3 leading-6 text-muted-foreground">{pkg.legalBasis}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-6 text-sm leading-6 text-muted-foreground">
+        Engine dapat memperingatkan HSD yang sudah lama (<code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">hsd_staleness_warning_days</code>). Itu pengingat operasional, bukan pengganti cek dokumen resmi.
+      </p>
+      <a class="pressable mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/bundles/">Lihat semua paket npm <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
+    </div>
+
+    <div class="mt-16 max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Batas penggunaan</p>
+      <h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Katalog membantu membaca data. Keputusan tetap perlu validasi proyek.</h2>
+      <div class="mt-7 grid gap-4 text-sm leading-6 text-muted-foreground">
+        <p>Website ini tidak menggantikan dokumen regulasi resmi, pertimbangan engineer, harga lokal, atau pemeriksaan kuantitas. Harga referensi dan HSD hanya bermakna dalam konteks bundel dan periode berlakunya.</p>
+        <p>Gunakan paket engine untuk kalkulasi yang membutuhkan HSD regional, tahap volume, produktivitas, overhead, dan profit. Katalog publik ini berfokus pada struktur AHSP dan jejak datanya.</p>
+      </div>
+      <a class="pressable mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline" href="/docs/">Lihat dokumentasi developer <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
     </div>
   </section>
 </SiteLayout>

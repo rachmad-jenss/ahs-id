@@ -175,7 +175,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('.pressable:not([class*="transition-"]):not(.pressable-chip)');
     expect(bundles).toContain('Sumber data');
     expect(docs).toContain('Dokumentasi untuk developer');
-    expect(methodology).toContain('bg-warning-surface');
+    expect(methodology).toContain('kebijakan-verifikasi');
     expect(methodology).not.toContain('bg-amber-');
     expect(methodology).toContain('Sumber');
     expect(methodology).toContain('Normalisasi');
@@ -244,7 +244,9 @@ describe('web UI contracts', () => {
     expect(catalog).toContain('aria-labelledby="catalog-filters-heading"');
     expect(item).toContain('aria-labelledby="summary-heading"');
     expect(item).toContain('aria-labelledby="provenance-heading"');
-    expect(methodology).toContain('aria-labelledby="quarantine-heading"');
+    expect(methodology).toContain('id="kebijakan-verifikasi"');
+    expect(methodology).toContain('Batas penggunaan');
+    expect(readSource('src/pages/bundles/index.astro')).toContain('LibraryPackageOverview');
     expect(docs).toContain('<pre');
     expect(docs).toContain('tabindex="0" role="region"');
     expect(docs).toContain('whitespace-pre');
