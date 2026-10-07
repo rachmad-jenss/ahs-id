@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from contextlib import contextmanager
 from dataclasses import dataclass, field
@@ -133,22 +134,32 @@ def _dedupe_dataframe_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _page_no_from_docling_table(table: Any) -> int | None:
+    prov = getattr(table, "prov", None) or []
+    if not prov:
+        return None
+    page_no = getattr(prov[0], "page_no", None)
+    return int(page_no) if page_no is not None else None
+
+
 def _extract_tables_from_doc(doc: Any, *, index_offset: int = 0) -> list[dict[str, Any]]:
     tables: list[dict[str, Any]] = []
     for index, table in enumerate(doc.tables):
         df: pd.DataFrame = table.export_to_dataframe(doc=doc)
         df = _dedupe_dataframe_columns(df)
         global_index = index_offset + index
-        tables.append(
-            {
-                "index": global_index,
-                "rows": int(len(df)),
-                "cols": int(len(df.columns)),
-                "columns": [str(c) for c in df.columns],
-                "records": df.fillna("").astype(str).to_dict(orient="records"),
-                "markdown": df.to_markdown(index=False) if _has_tabulate() else None,
-            }
-        )
+        page_no = _page_no_from_docling_table(table)
+        payload: dict[str, Any] = {
+            "index": global_index,
+            "rows": int(len(df)),
+            "cols": int(len(df.columns)),
+            "columns": [str(c) for c in df.columns],
+            "records": df.fillna("").astype(str).to_dict(orient="records"),
+            "markdown": df.to_markdown(index=False) if _has_tabulate() else None,
+        }
+        if page_no is not None:
+            payload["page_no"] = page_no
+        tables.append(payload)
     return tables
 
 
@@ -338,6 +349,114 @@ def _assemble_from_checkpoints(
             all_tables.append(tbl)
 
     return "".join(markdown_parts), all_tables
+
+
+_CKPT_RE = re.compile(r"batch-(\d+)-(\d+)\.json$")
+
+
+def interpolate_checkpoint_page_estimates(checkpoint_dir: Path) -> dict[str, int]:
+    """
+    Fast per-table page estimate inside each extract batch (no Docling re-run).
+
+    Writes ``page_no`` on every table when missing or when ``page_estimate`` is set.
+    """
+    ck_dir = Path(checkpoint_dir)
+    stats = {"batches": 0, "tables": 0}
+    if not ck_dir.is_dir():
+        return stats
+
+    for ckpt_path in sorted(ck_dir.glob("batch-*.json")):
+        m = _CKPT_RE.match(ckpt_path.name)
+        if not m:
+            continue
+        p_start, p_end = int(m.group(1)), int(m.group(2))
+        data = _load_checkpoint(ckpt_path)
+        if data is None:
+            continue
+        tables = data.get("tables", [])
+        if not tables:
+            continue
+        span = p_end - p_start + 1
+        for i, tbl in enumerate(tables):
+            if not isinstance(tbl, dict):
+                continue
+            est = p_start + (i * span) // max(len(tables), 1)
+            est = min(p_end, max(p_start, est))
+            tbl["page_no"] = est
+            tbl["page_estimate"] = True
+            stats["tables"] += 1
+        _write_checkpoint_atomic(ckpt_path, data)
+        stats["batches"] += 1
+
+    return stats
+
+
+def enrich_checkpoint_page_numbers(
+    source: str | Path,
+    checkpoint_dir: Path,
+    *,
+    enable_ocr: bool = False,
+    skip_complete: bool = True,
+    progress_every: int = 25,
+) -> dict[str, int]:
+    """
+    Attach Docling ``page_no`` to tables in existing batch checkpoints.
+
+    SE 47 full-check / formular linking need per-table pages; older checkpoints
+    only had batch-level page ranges.
+    """
+    src = Path(source).resolve()
+    ck_dir = Path(checkpoint_dir)
+    stats = {"batches_updated": 0, "batches_skipped": 0, "table_mismatches": 0}
+    if not ck_dir.is_dir():
+        return stats
+
+    converter: Any | None = None
+    batch_paths = sorted(ck_dir.glob("batch-*.json"))
+    for batch_idx, ckpt_path in enumerate(batch_paths, start=1):
+        m = _CKPT_RE.match(ckpt_path.name)
+        if not m:
+            continue
+        p_start, p_end = int(m.group(1)), int(m.group(2))
+        data = _load_checkpoint(ckpt_path)
+        if data is None:
+            continue
+        tables = data.get("tables", [])
+        if skip_complete and tables and all(
+            isinstance(t.get("page_no"), int) and not t.get("page_estimate") for t in tables
+        ):
+            stats["batches_skipped"] += 1
+            continue
+
+        if converter is None:
+            prepare_long_extract_env()
+            converter = build_converter(enable_ocr=enable_ocr)
+
+        with _safe_stderr():
+            conv = converter.convert(str(src), page_range=(p_start, p_end))
+        fresh = _extract_tables_from_doc(conv.document)
+        if len(fresh) != len(tables):
+            stats["table_mismatches"] += 1
+
+        span = p_end - p_start + 1
+        for i, tbl in enumerate(tables):
+            if i < len(fresh) and isinstance(fresh[i].get("page_no"), int):
+                tbl["page_no"] = fresh[i]["page_no"]
+                tbl.pop("page_estimate", None)
+            else:
+                est = p_start + (i * span) // max(len(tables), 1)
+                tbl["page_no"] = min(p_end, max(p_start, est))
+                tbl["page_estimate"] = True
+        _write_checkpoint_atomic(ckpt_path, data)
+        stats["batches_updated"] += 1
+        if progress_every and batch_idx % progress_every == 0:
+            print(
+                f"  enrich-pages: {batch_idx}/{len(batch_paths)} batches "
+                f"({stats['batches_updated']} updated)",
+                flush=True,
+            )
+
+    return stats
 
 
 def write_conversion_artifacts(result: ConversionResult, output_dir: Path) -> dict[str, Path]:

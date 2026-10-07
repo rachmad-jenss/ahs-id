@@ -6,7 +6,8 @@ $pdf = "sources\national\se-47-2026--sdm_download--id-10901.pdf"
 $out = "output\sda-se-47-2026"
 
 while ($true) {
-    & $exe extract $pdf -o $out --chunk-size 15
+    # Must match original run (10 pages/batch) so existing checkpoints resume.
+    & $exe extract $pdf -o $out --chunk-size 10
     if ($LASTEXITCODE -eq 0) {
         Write-Host "SDA extract complete." -ForegroundColor Green
         break

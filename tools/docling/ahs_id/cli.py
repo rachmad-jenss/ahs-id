@@ -9,7 +9,13 @@ import sys
 from pathlib import Path
 
 from ahs_id.bundle import collect_package_coefficients, repo_root
-from ahs_id.docling_convert import convert_document, count_pdf_pages, write_conversion_artifacts
+from ahs_id.docling_convert import (
+    convert_document,
+    count_pdf_pages,
+    enrich_checkpoint_page_numbers,
+    interpolate_checkpoint_page_estimates,
+    write_conversion_artifacts,
+)
 from ahs_id.kode_link import run_kode_link
 from ahs_id.spot_check import run_spot_check
 from ahs_id.table_analyze import analyze_and_clean
@@ -32,6 +38,40 @@ def _safe_print(message: str) -> None:
         print(message)
     except UnicodeEncodeError:
         print(message.encode("ascii", errors="replace").decode("ascii"))
+
+
+def cmd_assign_page_estimates(args: argparse.Namespace) -> int:
+    checkpoint_dir = Path(args.checkpoints)
+    _safe_print(f"Interpolating per-table page_no in {checkpoint_dir}")
+    stats = interpolate_checkpoint_page_estimates(checkpoint_dir)
+    _safe_print(json.dumps(stats, indent=2))
+    return 0
+
+
+def cmd_enrich_pages(args: argparse.Namespace) -> int:
+    checkpoint_dir = Path(args.checkpoints)
+    _safe_print(f"Enriching table page_no: {args.pdf} → {checkpoint_dir}")
+    stats = enrich_checkpoint_page_numbers(
+        args.pdf,
+        checkpoint_dir,
+        enable_ocr=args.ocr,
+        skip_complete=not args.force,
+    )
+    _safe_print(json.dumps(stats, indent=2))
+    if args.reassemble:
+        out_dir = checkpoint_dir.parent
+        _safe_print(f"Re-assembling tables JSON under {out_dir}")
+        result = convert_document(
+            args.pdf,
+            enable_ocr=args.ocr,
+            chunk_size=args.chunk_size,
+            show_progress=not args.no_progress,
+            status_path=out_dir / "progress.json",
+            checkpoint_dir=checkpoint_dir,
+            resume=True,
+        )
+        write_conversion_artifacts(result, out_dir)
+    return 0
 
 
 def cmd_extract(args: argparse.Namespace) -> int:
@@ -355,6 +395,42 @@ def build_parser() -> argparse.ArgumentParser:
         help="Ignore existing checkpoints and reconvert every batch",
     )
     p_extract.set_defaults(func=cmd_extract)
+
+    p_assign = sub.add_parser(
+        "assign-page-estimates",
+        help="Fast per-table page_no inside each checkpoint batch (no Docling re-run)",
+    )
+    p_assign.add_argument(
+        "--checkpoints",
+        required=True,
+        help="Checkpoint directory (e.g. output/.../checkpoints)",
+    )
+    p_assign.set_defaults(func=cmd_assign_page_estimates)
+
+    p_enrich = sub.add_parser(
+        "enrich-pages",
+        help="Add per-table page_no to existing extract checkpoints (for spot-check / formular link)",
+    )
+    p_enrich.add_argument("pdf", help="Source PDF used for extract")
+    p_enrich.add_argument(
+        "--checkpoints",
+        required=True,
+        help="Checkpoint directory (e.g. output/.../checkpoints)",
+    )
+    p_enrich.add_argument("--chunk-size", type=int, metavar="N", help="Pages per batch (reassemble)")
+    p_enrich.add_argument("--ocr", action="store_true", help="Enable OCR when re-scanning batches")
+    p_enrich.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-scan batches even if page_no already present",
+    )
+    p_enrich.add_argument(
+        "--reassemble",
+        action="store_true",
+        help="After enrich, rebuild *-tables.json from checkpoints",
+    )
+    p_enrich.add_argument("--no-progress", action="store_true", help="Disable progress bar on reassemble")
+    p_enrich.set_defaults(func=cmd_enrich_pages)
 
     p_verify = sub.add_parser("verify", help="Layer 1: compare bundle coefficients vs PDF text")
     p_verify.add_argument("--package", required=True, help="Package name, e.g. pupr-2023")
