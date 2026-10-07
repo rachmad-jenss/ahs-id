@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from ahs_id.kode_link import PdfHspAnchor, _first_l01_koef
-from ahs_id.spot_check import build_table_page_map
+from ahs_id.spot_check import build_table_page_map, refine_page_map_for_hsp_rows
 from ahs_id.table_clean import parse_id_number
 
 _KODE_IN_PARENS = re.compile(r"\((\d+\.\d+\.\([\w\d]+[a-z]?\)?)\)")
@@ -23,20 +23,36 @@ _FORMULAR_PAGE = re.compile(
     r"ASUMSI|URUTAN\s+KERJA|DATA\s+DAN\s+ASUMSI|ANALISA\s+HARGA",
     re.I,
 )
-_PAGE_EXPAND = 20
+_PAGE_EXPAND = 35
 _L01_ABS_TOL = 0.0002
 _L01_REL_TOL = 0.06
 _HSP_MARKER = "PERKIRAAN HARGA JUMLAH"
 _HSP_MARKER_LOOSE = re.compile(r"PERKIRAAN\s+HARGA", re.I)
 _HSP_BODY = re.compile(r"NO\.\s*KOMPONEN|A\.\s*TENAGA", re.I)
-_PAGE_INDEX_VERSION = 3
+_PAGE_INDEX_VERSION = 4
 
 
 def _is_hsp_text(text: str) -> bool:
-    """BM HSP pages often split 'PERKIRAAN HARGA' and 'JUMLAH' across lines."""
-    if _HSP_MARKER in text:
+    """BM HSP breakdown page (exclude blank HSD forms that only have PERKIRAAN HARGA header)."""
+    has_marker = _HSP_MARKER in text or bool(_HSP_MARKER_LOOSE.search(text))
+    if not has_marker:
+        return False
+    if _HSP_BODY.search(text):
         return True
-    return bool(_HSP_MARKER_LOOSE.search(text) and _HSP_BODY.search(text))
+    return _first_l01_koef(text) is not None
+
+
+def formular_block_expects_hsp_table(page_text: str) -> bool:
+    """Formular block that should have a matching Docling HSP table (not empty template)."""
+    return _is_hsp_text(page_text)
+
+
+def _read_pdf_page_text(doc: Any, page_num: int, limit: int = 3500) -> str:
+    textpage = doc[page_num - 1].get_textpage()
+    char_count = min(limit, textpage.count_chars())
+    if char_count <= 0:
+        return ""
+    return textpage.get_text_range(0, char_count).replace("\u00a0", " ")
 
 
 @dataclass(frozen=True)
@@ -332,6 +348,77 @@ def _should_link_row(row: dict[str, Any]) -> bool:
     )
 
 
+def _linkable_for_formular(row: dict[str, Any]) -> bool:
+    """HSP rows eligible for BM formular linking (includes equipment-only breakdowns)."""
+    if _should_link_row(row):
+        return True
+    sections = set(row.get("sections") or [])
+    if not sections & {"A", "B", "C", "D", "E", "F"}:
+        return False
+    if row.get("harga_satuan_pekerjaan") is not None:
+        return True
+    coefs = row.get("coefficients") or []
+    return bool(coefs) and any(c.get("koefisien") is not None for c in coefs)
+
+
+def _row_covers_hsp_page(
+    row: dict[str, Any],
+    hsp_page: int,
+    page_map: dict[int, tuple[int, int]],
+    *,
+    slack: int = 10,
+) -> bool:
+    pages = page_map.get(row["table_index"])
+    if not pages:
+        return False
+    if pages[0] <= hsp_page <= pages[1]:
+        return True
+    mid = pages[0] if pages[0] == pages[1] else (pages[0] + pages[1]) // 2
+    return abs(mid - hsp_page) <= slack
+
+
+def block_has_extracted_hsp(
+    block: FormularBlock,
+    linkable_rows: list[dict[str, Any]],
+    page_map: dict[int, tuple[int, int]],
+) -> bool:
+    return any(_row_covers_hsp_page(row, block.hsp_page, page_map) for row in linkable_rows)
+
+
+def count_blocks_without_extracted_hsp(
+    blocks: list[FormularBlock],
+    linkable_rows: list[dict[str, Any]],
+    page_map: dict[int, tuple[int, int]],
+) -> int:
+    """Formular blocks with no linkable HSP row near the formular HSP page in extract."""
+    return sum(
+        1 for block in blocks if not block_has_extracted_hsp(block, linkable_rows, page_map)
+    )
+
+
+def write_formular_canonical_hsp(
+    linked: list[dict[str, Any]],
+    blocks: list[FormularBlock],
+    output_path: Path,
+) -> list[dict[str, Any]]:
+    """One linked HSP row per formular block (for full-check / export)."""
+    by_key = {
+        (int(r["kode_link_page"]), r["kode_ahsp"]): r
+        for r in linked
+        if r.get("kode_ahsp") and r.get("kode_link_page") is not None
+    }
+    canonical: list[dict[str, Any]] = []
+    for block in blocks:
+        row = by_key.get((block.hsp_page, block.kode_ahsp))
+        if row is not None:
+            canonical.append(row)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as fh:
+        for row in canonical:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return canonical
+
+
 def link_hsp_via_formulars(
     hsp_parsed_path: Path,
     blocks: list[FormularBlock],
@@ -363,9 +450,52 @@ def link_hsp_via_formulars(
         linked_by_index[tidx] = out
 
     linkable = sorted(
-        [r for r in hsp_rows if _should_link_row(r)],
+        [r for r in hsp_rows if _linkable_for_formular(r)],
         key=lambda r: r["table_index"],
     )
+
+    def _row_page_mid(row: dict[str, Any]) -> int | None:
+        if not page_map:
+            return None
+        pages = page_map.get(row["table_index"])
+        if not pages:
+            return None
+        return pages[0] if pages[0] == pages[1] else (pages[0] + pages[1]) // 2
+
+    rows_on_hsp_page: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    for row in linkable:
+        mid = _row_page_mid(row)
+        if mid is not None:
+            rows_on_hsp_page[mid].append(row)
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        cands = [
+            r
+            for r in rows_on_hsp_page.get(block.hsp_page, [])
+            if r["table_index"] not in linked_by_index
+        ]
+        if not cands:
+            continue
+        chosen_row: dict[str, Any] | None = None
+        method: str | None = None
+        if len(cands) == 1:
+            chosen_row, method = cands[0], "formular_hsp_page"
+        elif block.l01_koef is not None:
+            l01_hits = [
+                r
+                for r in cands
+                if _l01_from_hsp_row(r) is not None
+                and _l01_close(_l01_from_hsp_row(r), block.l01_koef)
+            ]
+            if len(l01_hits) == 1:
+                chosen_row, method = l01_hits[0], "formular_hsp_page_l01"
+            elif l01_hits:
+                chosen_row = max(l01_hits, key=lambda r: len(r.get("coefficients") or []))
+                method = "formular_hsp_page_l01_best"
+        if chosen_row is not None and method is not None:
+            _assign(chosen_row, block, method)
 
     def _pick_block(
         row: dict[str, Any],
@@ -443,6 +573,187 @@ def link_hsp_via_formulars(
                 continue
             _assign(row, block, "formular_batch_sequential")
 
+    rows_by_mid: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    for row in linkable:
+        if row["table_index"] in linked_by_index:
+            continue
+        mid = _row_page_mid(row)
+        if mid is not None:
+            rows_by_mid[mid].append(row)
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        cands: list[dict[str, Any]] = []
+        for offset in range(-5, 6):
+            cands.extend(rows_by_mid.get(block.hsp_page + offset, []))
+        cands = [r for r in cands if r["table_index"] not in linked_by_index]
+        if not cands:
+            continue
+        if len(cands) == 1:
+            _assign(cands[0], block, "formular_mid_near_unique")
+            continue
+        if block.l01_koef is not None:
+            l01_hits = [
+                r
+                for r in cands
+                if _l01_from_hsp_row(r) is not None
+                and _l01_close(_l01_from_hsp_row(r), block.l01_koef)
+            ]
+            if len(l01_hits) == 1:
+                _assign(l01_hits[0], block, "formular_mid_near_l01")
+            elif l01_hits:
+                _assign(
+                    max(l01_hits, key=lambda r: len(r.get("coefficients") or [])),
+                    block,
+                    "formular_mid_near_l01_best",
+                )
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        if block.l01_koef is None:
+            continue
+        hits = [
+            r
+            for r in linkable
+            if r["table_index"] not in linked_by_index
+            and _l01_from_hsp_row(r) is not None
+            and _l01_close(_l01_from_hsp_row(r), block.l01_koef)
+        ]
+        if len(hits) == 1:
+            _assign(hits[0], block, "formular_l01_global_unique")
+        elif hits:
+            _assign(
+                min(hits, key=lambda r: abs((_row_page_mid(r) or block.hsp_page) - block.hsp_page)),
+                block,
+                "formular_l01_global_nearest",
+            )
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        cands = []
+        for row in linkable:
+            if row["table_index"] in linked_by_index:
+                continue
+            if page_map and _row_covers_hsp_page(row, block.hsp_page, page_map):
+                cands.append(row)
+        if len(cands) == 1:
+            _assign(cands[0], block, "formular_batch_window_unique")
+            continue
+        if len(cands) > 1 and block.l01_koef is not None:
+            l01_hits = [
+                r
+                for r in cands
+                if _l01_from_hsp_row(r) is not None
+                and _l01_close(_l01_from_hsp_row(r), block.l01_koef)
+            ]
+            if len(l01_hits) == 1:
+                _assign(l01_hits[0], block, "formular_batch_window_l01_unique")
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        tight: list[dict[str, Any]] = []
+        for row in linkable:
+            if row["table_index"] in linked_by_index:
+                continue
+            mid = _row_page_mid(row)
+            if mid is not None and abs(mid - block.hsp_page) <= 3:
+                tight.append(row)
+        if len(tight) == 1:
+            _assign(tight[0], block, "formular_tight_page_unique")
+            continue
+        if len(tight) > 1 and block.l01_koef is not None:
+            l01_hits = [
+                r
+                for r in tight
+                if _l01_from_hsp_row(r) is not None
+                and _l01_close(_l01_from_hsp_row(r), block.l01_koef)
+            ]
+            if len(l01_hits) == 1:
+                _assign(l01_hits[0], block, "formular_tight_page_l01_unique")
+
+    for block in sorted(blocks, key=lambda b: b.hsp_page):
+        if (block.hsp_page, block.kode_ahsp) in used_blocks:
+            continue
+        best_row: dict[str, Any] | None = None
+        best_dist = 10_000
+        for row in linkable:
+            if row["table_index"] in linked_by_index:
+                continue
+            mid = _row_page_mid(row)
+            if mid is None:
+                continue
+            dist = abs(mid - block.hsp_page)
+            if dist > 25:
+                continue
+            if block.l01_koef is not None:
+                row_l01 = _l01_from_hsp_row(row)
+                if row_l01 is None or not _l01_close(row_l01, block.l01_koef):
+                    continue
+            if dist < best_dist:
+                best_dist = dist
+                best_row = row
+        if best_row is not None:
+            _assign(best_row, block, "formular_distance_nearest")
+
+    blocks_by_key = {(b.hsp_page, b.kode_ahsp): b for b in blocks}
+
+    def _unassign_block(block_key: tuple[int, str]) -> None:
+        used_blocks.discard(block_key)
+        for tidx, out in list(linked_by_index.items()):
+            if (int(out["kode_link_page"]), out["kode_ahsp"]) == block_key:
+                del linked_by_index[tidx]
+                return
+
+    for _ in range(4):
+        improved = False
+        for block in sorted(blocks, key=lambda b: b.hsp_page):
+            block_key = (block.hsp_page, block.kode_ahsp)
+            if block_key in used_blocks:
+                continue
+            best_tidx: int | None = None
+            best_my_dist = 10_000
+            best_steal_other: tuple[int, str] | None = None
+            for row in linkable:
+                tidx = row["table_index"]
+                mid = _row_page_mid(row)
+                if mid is None or abs(mid - block.hsp_page) > 4:
+                    continue
+                my_dist = abs(mid - block.hsp_page)
+                if tidx not in linked_by_index:
+                    if my_dist < best_my_dist:
+                        best_my_dist = my_dist
+                        best_tidx = tidx
+                        best_steal_other = None
+                    continue
+                out = linked_by_index[tidx]
+                other_key = (int(out["kode_link_page"]), out["kode_ahsp"])
+                other = blocks_by_key.get(other_key)
+                if other is None:
+                    continue
+                their_dist = abs(mid - other.hsp_page)
+                if my_dist + 1 < their_dist and my_dist < best_my_dist:
+                    best_my_dist = my_dist
+                    best_tidx = tidx
+                    best_steal_other = other_key
+            if best_tidx is None:
+                continue
+            if best_steal_other is not None:
+                _unassign_block(best_steal_other)
+            row = next(r for r in linkable if r["table_index"] == best_tidx)
+            method = (
+                "formular_rebalance_steal"
+                if best_steal_other is not None
+                else "formular_rebalance_open"
+            )
+            _assign(row, block, method)
+            improved = True
+        if not improved:
+            break
+
     linked: list[dict[str, Any]] = []
     for row in hsp_rows:
         tidx = row["table_index"]
@@ -506,6 +817,13 @@ def run_formular_link(
     )
 
     page_map = build_table_page_map(checkpoint_dir)
+    hsp_preview = [
+        json.loads(line)
+        for line in hsp_parsed_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    linkable_preview = [r for r in hsp_preview if _linkable_for_formular(r)]
+    page_map = refine_page_map_for_hsp_rows(page_map, linkable_preview, pdf_path)
     linked = link_hsp_via_formulars(hsp_parsed_path, blocks, page_map=page_map)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -519,8 +837,51 @@ def run_formular_link(
     high_conf = sum(
         1
         for r in linked
-        if r.get("kode_link_method") in ("formular_l01_unique", "formular_page_unique")
+        if r.get("kode_link_method")
+        in (
+            "formular_l01_unique",
+            "formular_page_unique",
+            "formular_hsp_page",
+            "formular_hsp_page_l01",
+            "formular_hsp_page_l01_best",
+            "formular_mid_near_unique",
+            "formular_mid_near_l01",
+            "formular_mid_near_l01_best",
+            "formular_l01_global_unique",
+            "formular_l01_global_nearest",
+            "formular_batch_window_unique",
+            "formular_rebalance_steal",
+            "formular_rebalance_open",
+        )
     )
+    linked_block_keys = {
+        (int(r["kode_link_page"]), r["kode_ahsp"])
+        for r in linked
+        if r.get("kode_ahsp") and r.get("kode_link_page") is not None
+    }
+    blocks_linked = sum(1 for b in blocks if (b.hsp_page, b.kode_ahsp) in linked_block_keys)
+    blocks_without_extract = count_blocks_without_extracted_hsp(blocks, linkable_preview, page_map)
+    blocks_with_extracted = len(blocks) - blocks_without_extract
+    blocks_linked_with_extract = sum(
+        1
+        for b in blocks
+        if (b.hsp_page, b.kode_ahsp) in linked_block_keys
+        and block_has_extracted_hsp(b, linkable_preview, page_map)
+    )
+
+    import pypdfium2 as pdfium
+
+    pdf_doc = pdfium.PdfDocument(str(pdf_path))
+    page_text_cache: dict[int, str] = {}
+    eligible_blocks = 0
+    template_blocks = 0
+    for block in blocks:
+        if block.hsp_page not in page_text_cache:
+            page_text_cache[block.hsp_page] = _read_pdf_page_text(pdf_doc, block.hsp_page)
+        if formular_block_expects_hsp_table(page_text_cache[block.hsp_page]):
+            eligible_blocks += 1
+        else:
+            template_blocks += 1
 
     summary = {
         "mode": "formular",
@@ -535,12 +896,33 @@ def run_formular_link(
         if linkable_count
         else 0,
         "high_confidence_links": high_conf,
+        "formular_blocks_linked": blocks_linked,
+        "formular_block_link_rate_pct": round(100 * blocks_linked / len(blocks), 1) if blocks else 0,
+        "formular_blocks_eligible": eligible_blocks,
+        "formular_blocks_template": template_blocks,
+        "formular_block_link_rate_on_eligible_pct": round(100 * blocks_linked / eligible_blocks, 1)
+        if eligible_blocks
+        else 0,
+        "formular_blocks_without_extracted_hsp": blocks_without_extract,
+        "formular_blocks_with_extracted_hsp": blocks_with_extracted,
+        "formular_blocks_linked_with_extract": blocks_linked_with_extract,
+        "formular_block_link_rate_with_extract_pct": round(
+            100 * blocks_linked_with_extract / blocks_with_extracted, 1
+        )
+        if blocks_with_extracted
+        else 0,
         "output": str(output_path),
         "formular_blocks_path": str(blocks_path),
         "page_index_cache": str(cache),
     }
 
     summary_path = output_path.with_name("kode-link-summary.json")
+    summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    canonical_path = output_path.with_name("hsp-parsed-formular-canonical.jsonl")
+    canonical_rows = write_formular_canonical_hsp(linked, blocks, canonical_path)
+    summary["canonical_hsp_tables"] = len(canonical_rows)
+    summary["canonical_hsp_path"] = str(canonical_path)
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     map_path = output_path.with_name("kode-table-map.csv")

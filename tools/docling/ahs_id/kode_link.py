@@ -9,16 +9,94 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from ahs_id.spot_check import build_table_page_map
+from ahs_id.spot_check import _PdfPageCache, build_table_page_map, refine_page_map_for_hsp_rows
 from ahs_id.table_clean import parse_id_number
 
 _KODE_AHSP = re.compile(r"^(A\.[\d\w\.]+)\s+(.+)$", re.MULTILINE)
 _KODE_BM = re.compile(r"^(\d+\.\d+\.\([\w\d]+[a-z]?)\)\s+(.+)$", re.MULTILINE)
 _KODE_CK_ITEM = re.compile(r"^(\d+\.\d+\.\d+)\s+(.+)$", re.MULTILINE)
-_KODE_CK_INLINE = re.compile(r"(\d+\.\d+\.\d+)\s+([^\n]{4,200})")
-_KODE_SDA_INLINE = re.compile(r"(A\.\d[\w\.]*)\s+([^\n]{4,200})")
+_KODE_CK_INLINE = re.compile(r"(\d+\.\d+\.\d+)\s*([^\n]{4,200})")
+_KODE_CK_LONG = re.compile(r"(\d+(?:\.[\w\d]+){3,})\s*([^\n]{4,200})")
+_KODE_SDA_INLINE_A = re.compile(r"(A\.\d[\w\.]*)\s*([^\n]{4,200})")
+_KODE_SDA_INLINE_TX = re.compile(r"(TM\.\d{2}[\w\.]*|T\.\d{2}[\w\.]*)\s*([^\n]{4,200})")
 _REF_KODE = re.compile(r"^[LMEB]\.", re.I)
 _ITEM_KODE = re.compile(r"^A\.\d", re.I)
+_HSP_TABLE_MARKERS = re.compile(
+    r"A\s+Tenaga\s+Kerja|1\s+2\s+3\s+4\s+5\s+6\s+7|Harga\s+Satuan",
+    re.I,
+)
+
+
+def _is_sda_item_kode(candidate: str) -> bool:
+    """SDA PDF item headers: A.*, T.04…, TM.02… (not time refs like T.1)."""
+    if _REF_KODE.match(candidate):
+        return False
+    if candidate.startswith("TM."):
+        parts = candidate.split(".")
+        return len(parts) >= 3 and parts[1].isdigit()
+    if candidate.startswith("T.") and not candidate.startswith("TM."):
+        parts = candidate.split(".")
+        return len(parts) >= 3 and len(parts[1]) >= 2 and parts[1].isdigit()
+    return bool(_ITEM_KODE.match(candidate))
+
+
+def _iter_sda_inline_matches(text: str) -> list[re.Match[str]]:
+    hits: list[re.Match[str]] = []
+    for pattern in (_KODE_SDA_INLINE_A, _KODE_SDA_INLINE_TX):
+        hits.extend(pattern.finditer(text))
+    hits.sort(key=lambda m: m.start())
+    return hits
+
+
+def _block_has_hsp_table(block: str) -> bool:
+    return bool(_HSP_TABLE_MARKERS.search(block))
+
+
+def _orphan_hsp_anchors_on_page(
+    text: str,
+    page_num: int,
+    taken: set[tuple[int, str]],
+) -> list[PdfHspAnchor]:
+    """HSP tables without a preceding A./T./TM. item line (e.g. Contoh AHSP appendix)."""
+    out: list[PdfHspAnchor] = []
+    for header in re.finditer(r"1\s+2\s+3\s+4\s+5\s+6\s+7", text):
+        block = text[header.start() : min(len(text), header.start() + 2500)]
+        if not re.search(r"A\s+Tenaga\s+Kerja", block, re.I):
+            continue
+        l01 = _first_l01_koef(block)
+        if l01 is None:
+            continue
+        before = text[max(0, header.start() - 1500) : header.start()]
+        kode: str | None = None
+        uraian = ""
+        for match in reversed(_iter_sda_inline_matches(before)):
+            candidate = match.group(1)
+            if _is_sda_item_kode(candidate):
+                kode = candidate
+                uraian = match.group(2).strip()[:120]
+                break
+        if not kode:
+            title = re.search(
+                r"(?:Contoh\s+AHSP[^\n]{0,120}|a\.\s*Contoh[^\n]{0,120})",
+                before,
+                re.I,
+            )
+            uraian = (title.group(0).strip() if title else "HSP tanpa kode item")[:120]
+            kode = f"SDA-ORPHAN.P{page_num}"
+            if (page_num, kode) in taken:
+                kode = f"SDA-ORPHAN.P{page_num}.L{int(round(l01 * 1_000_000))}"
+        if (page_num, kode) in taken:
+            continue
+        taken.add((page_num, kode))
+        out.append(
+            PdfHspAnchor(
+                kode_ahsp=kode,
+                uraian=uraian,
+                page=page_num,
+                l01_koef=l01,
+            )
+        )
+    return out
 
 
 def _is_item_kode(candidate: str, valid_kodes: set[str] | None) -> bool:
@@ -170,15 +248,15 @@ def extract_sda_inline_anchors_from_pdf(
         text = _page_text(pdf, page_num)
         if not text.strip():
             continue
-        for match in _KODE_SDA_INLINE.finditer(text):
+        for match in _iter_sda_inline_matches(text):
             kode = match.group(1)
-            if not _is_item_kode(kode, None):
+            if not _is_sda_item_kode(kode):
                 continue
             uraian = match.group(2).strip()
             if not uraian or uraian[0].isdigit():
                 continue
             block = text[match.start() : min(len(text), match.start() + 2500)]
-            if not re.search(r"A\s+Tenaga\s+Kerja", block, re.I):
+            if not _block_has_hsp_table(block):
                 continue
             l01 = _first_l01_koef(block)
             key = (page_num, kode, l01)
@@ -193,6 +271,14 @@ def extract_sda_inline_anchors_from_pdf(
                     l01_koef=l01,
                 )
             )
+
+        taken_on_page = {(a.page, a.kode_ahsp) for a in anchors if a.page == page_num}
+        for orphan in _orphan_hsp_anchors_on_page(text, page_num, taken_on_page):
+            key = (page_num, orphan.kode_ahsp, orphan.l01_koef)
+            if key in seen:
+                continue
+            seen.add(key)
+            anchors.append(orphan)
 
     if cache_path:
         cache_path.parent.mkdir(parents=True, exist_ok=True)
@@ -271,10 +357,65 @@ def extract_ck_inline_anchors_from_pdf(
             if not uraian or uraian[0].isdigit():
                 continue
             block = text[match.start() : min(len(text), match.start() + 2500)]
-            if not re.search(r"A\s+TENAGA\s+KERJA", block, re.I):
+            if not _block_has_hsp_table(block):
                 continue
             kode = match.group(1)
             l01 = _first_l01_koef(block)
+            key = (page_num, kode, l01)
+            if key in seen:
+                continue
+            seen.add(key)
+            anchors.append(
+                PdfHspAnchor(
+                    kode_ahsp=kode,
+                    uraian=uraian,
+                    page=page_num,
+                    l01_koef=l01,
+                )
+            )
+
+        for match in _KODE_CK_LONG.finditer(text):
+            kode = match.group(1)
+            uraian = match.group(2).strip()
+            if not uraian or uraian[0].isdigit():
+                continue
+            block = text[match.start() : min(len(text), match.start() + 2500)]
+            if not _block_has_hsp_table(block):
+                continue
+            l01 = _first_l01_koef(block)
+            key = (page_num, kode, l01)
+            if key in seen:
+                continue
+            seen.add(key)
+            anchors.append(
+                PdfHspAnchor(
+                    kode_ahsp=kode,
+                    uraian=uraian,
+                    page=page_num,
+                    l01_koef=l01,
+                )
+            )
+
+        taken_on_page = {(a.page, a.kode_ahsp) for a in anchors if a.page == page_num}
+        for header in re.finditer(r"1\s+2\s+3\s+4\s+5\s+6\s+7", text):
+            block = text[header.start() : min(len(text), header.start() + 2500)]
+            if not re.search(r"A\s+Tenaga\s+Kerja", block, re.I):
+                continue
+            l01 = _first_l01_koef(block)
+            if l01 is None:
+                continue
+            before = text[max(0, header.start() - 1500) : header.start()]
+            kode: str | None = None
+            uraian = ""
+            for match in reversed(list(_KODE_CK_LONG.finditer(before))):
+                kode = match.group(1)
+                uraian = match.group(2).strip()[:120]
+                break
+            if not kode:
+                continue
+            if (page_num, kode) in taken_on_page:
+                continue
+            taken_on_page.add((page_num, kode))
             key = (page_num, kode, l01)
             if key in seen:
                 continue
@@ -380,9 +521,62 @@ def _l01_from_hsp_row(row: dict[str, Any]) -> float | None:
     for coef in row.get("coefficients", []):
         kode = coef.get("kode") or ""
         uraian = (coef.get("uraian") or "").lower()
-        if kode in {"L.01", "L01"} or (not kode and "pekerja" in uraian):
+        if (
+            kode in {"L.01", "L01"}
+            or re.search(r"l\.?01", kode, re.I)
+            or re.search(r"l\.?01", uraian)
+        ):
+            return coef.get("koefisien")
+        if not kode and "pekerja" in uraian:
             return coef.get("koefisien")
     return None
+
+
+_SDA_PAGE_SLACK = 3
+
+
+def _page_slack_range(pages: tuple[int, int] | None, slack: int = _SDA_PAGE_SLACK) -> tuple[int, int] | None:
+    if not pages:
+        return None
+    if pages[0] == pages[1]:
+        p = pages[0]
+        return (max(1, p - slack), p + slack)
+    return pages
+
+
+def _primary_material_kode(row: dict[str, Any]) -> str | None:
+    for coef in row.get("coefficients", []):
+        kode = (coef.get("kode") or "").strip()
+        if kode.startswith(("M.", "E.")):
+            return kode
+    return None
+
+
+def _linkable_for_sda(row: dict[str, Any]) -> bool:
+    """SDA rows that should receive kode_ahsp (incl. equipment-only / total-only breakdowns)."""
+    if _l01_from_hsp_row(row) is not None:
+        return True
+    sections = set(row.get("sections") or [])
+    if sections <= {"data"}:
+        return False
+    if row.get("harga_satuan_pekerjaan") is not None:
+        return True
+    coefs = row.get("coefficients") or []
+    return bool(sections & {"A", "B", "C", "D", "E"}) and any(
+        c.get("koefisien") is not None for c in coefs
+    )
+
+
+def _row_page_mid(
+    row: dict[str, Any],
+    page_map: dict[int, tuple[int, int]] | None,
+) -> int | None:
+    if not page_map:
+        return None
+    pages = page_map.get(row["table_index"])
+    if not pages:
+        return None
+    return pages[0] if pages[0] == pages[1] else (pages[0] + pages[1]) // 2
 
 
 def _link_batch_pass(
@@ -444,6 +638,7 @@ def link_hsp_tables(
     anchors: list[PdfHspAnchor],
     *,
     page_map: dict[int, tuple[int, int]] | None = None,
+    pdf_path: Path | None = None,
 ) -> list[dict[str, Any]]:
     """
     Assign kode_ahsp to HSP breakdown rows.
@@ -468,48 +663,57 @@ def link_hsp_tables(
             out["page_range"] = f"{pages[0]}-{pages[1]}"
         linked_by_index[tidx] = out
 
-    def _pick_for_row(row: dict[str, Any]) -> tuple[PdfHspAnchor | None, str | None, int | None]:
-        l01 = _l01_from_hsp_row(row)
-        if l01 is None:
-            return None, None, None
-
-        pages = page_map.get(row["table_index"]) if page_map else None
+    def _l01_anchor_hits(l01: float, pages: tuple[int, int] | None) -> list[int]:
         hits: list[int] = []
         for i, cand in enumerate(anchors):
             if i in used_anchor_idx:
                 continue
             if cand.l01_koef is not None and abs(cand.l01_koef - l01) < 0.00011:
                 hits.append(i)
-
         if pages:
             hits = [i for i in hits if pages[0] <= anchors[i].page <= pages[1]]
+        return hits
 
+    def _pick_l01_confident(row: dict[str, Any]) -> tuple[PdfHspAnchor | None, str | None, int | None]:
+        l01 = _l01_from_hsp_row(row)
+        if l01 is None:
+            return None, None, None
+        pages = page_map.get(row["table_index"]) if page_map else None
+        hits = _l01_anchor_hits(l01, pages)
         if len(hits) == 1:
             return anchors[hits[0]], "l01_unique", hits[0]
-
         if len(hits) > 1 and pages:
             mid = (pages[0] + pages[1]) // 2
             best = min(hits, key=lambda i: abs(anchors[i].page - mid))
             return anchors[best], "page_l01_nearest", best
+        if len(hits) > 1:
+            best = min(hits, key=lambda i: anchors[i].page)
+            return anchors[best], "l01_nearest_global", best
+        return None, None, None
 
-        if pages:
-            for i, cand in enumerate(anchors):
-                if i in used_anchor_idx:
-                    continue
-                if pages[0] <= cand.page <= pages[1]:
-                    method = "page_nearest_mismatch"
-                    if cand.l01_koef is not None and abs(cand.l01_koef - l01) < 0.00011:
-                        method = "page_nearest"
-                    return cand, method, i
-
+    def _pick_l01_page_mismatch(row: dict[str, Any]) -> tuple[PdfHspAnchor | None, str | None, int | None]:
+        l01 = _l01_from_hsp_row(row)
+        if l01 is None:
+            return None, None, None
+        pages = page_map.get(row["table_index"]) if page_map else None
+        if not pages:
+            return None, None, None
         for i, cand in enumerate(anchors):
             if i in used_anchor_idx:
                 continue
-            method = "sequential_mismatch"
-            if cand.l01_koef is not None and abs(cand.l01_koef - l01) < 0.00011:
-                method = "sequential"
-            return cand, method, i
+            if pages[0] <= cand.page <= pages[1]:
+                return anchors[i], "page_nearest_mismatch", i
+        return None, None, None
 
+    def _pick_l01_global_match(row: dict[str, Any]) -> tuple[PdfHspAnchor | None, str | None, int | None]:
+        l01 = _l01_from_hsp_row(row)
+        if l01 is None:
+            return None, None, None
+        for i, cand in enumerate(anchors):
+            if i in used_anchor_idx:
+                continue
+            if cand.l01_koef is not None and abs(cand.l01_koef - l01) < 0.00011:
+                return anchors[i], "sequential", i
         return None, None, None
 
     linkable = sorted(
@@ -517,11 +721,197 @@ def link_hsp_tables(
         key=lambda r: r["table_index"],
     )
     for row in linkable:
-        matched, method, idx = _pick_for_row(row)
+        matched, method, idx = _pick_l01_confident(row)
         if matched is not None and idx is not None and method is not None:
             _assign(row, matched, method, idx)
 
     _link_batch_pass(linkable, anchors, used_anchor_idx, page_map, linked_by_index, _assign)
+
+    for row in linkable:
+        if row["table_index"] in linked_by_index:
+            continue
+        matched, method, idx = _pick_l01_page_mismatch(row)
+        if matched is not None and idx is not None and method is not None:
+            _assign(row, matched, method, idx)
+
+    _link_batch_pass(linkable, anchors, used_anchor_idx, page_map, linked_by_index, _assign)
+
+    for row in linkable:
+        if row["table_index"] in linked_by_index:
+            continue
+        matched, method, idx = _pick_l01_global_match(row)
+        if matched is not None and idx is not None and method is not None:
+            _assign(row, matched, method, idx)
+
+    def _pick_l01_page_slack(row: dict[str, Any]) -> tuple[PdfHspAnchor | None, str | None, int | None]:
+        l01 = _l01_from_hsp_row(row)
+        if l01 is None:
+            return None, None, None
+        pages = page_map.get(row["table_index"]) if page_map else None
+        slack = _page_slack_range(pages)
+        if not slack:
+            return None, None, None
+        hits: list[int] = []
+        for i, cand in enumerate(anchors):
+            if i in used_anchor_idx:
+                continue
+            if cand.l01_koef is not None and abs(cand.l01_koef - l01) < 0.00011:
+                if slack[0] <= cand.page <= slack[1]:
+                    hits.append(i)
+        if not hits:
+            return None, None, None
+        if pages and pages[0] == pages[1]:
+            target = pages[0]
+            best = min(hits, key=lambda i: abs(anchors[i].page - target))
+            return anchors[best], "page_slack_l01", best
+        if len(hits) == 1:
+            return anchors[hits[0]], "page_slack_l01", hits[0]
+        return None, None, None
+
+    for row in linkable:
+        if row["table_index"] in linked_by_index:
+            continue
+        matched, method, idx = _pick_l01_page_slack(row)
+        if matched is not None and idx is not None and method is not None:
+            _assign(row, matched, method, idx)
+
+    extended = sorted(
+        [
+            r
+            for r in hsp_rows
+            if _linkable_for_sda(r)
+            and _l01_from_hsp_row(r) is None
+            and r["table_index"] not in linked_by_index
+        ],
+        key=lambda r: r["table_index"],
+    )
+
+    def _anchor_indices_in_slack(row: dict[str, Any], *, used_ok: bool) -> list[int]:
+        pages = page_map.get(row["table_index"]) if page_map else None
+        slack = _page_slack_range(pages)
+        if not slack:
+            return []
+        out: list[int] = []
+        for i, cand in enumerate(anchors):
+            if not used_ok and i in used_anchor_idx:
+                continue
+            if slack[0] <= cand.page <= slack[1]:
+                out.append(i)
+        return out
+
+    for row in extended:
+        hits = [
+            i
+            for i in _anchor_indices_in_slack(row, used_ok=False)
+            if i not in used_anchor_idx
+        ]
+        if len(hits) == 1:
+            _assign(row, anchors[hits[0]], "page_unique_no_l01", hits[0])
+
+    _link_batch_pass(extended, anchors, used_anchor_idx, page_map, linked_by_index, _assign)
+
+    for row in extended:
+        if row["table_index"] in linked_by_index:
+            continue
+        hits = [i for i in _anchor_indices_in_slack(row, used_ok=False) if i not in used_anchor_idx]
+        if len(hits) == 1:
+            _assign(row, anchors[hits[0]], "batch_page_unique_no_l01", hits[0])
+
+    for row in sorted(extended, key=lambda r: r["table_index"]):
+        if row["table_index"] in linked_by_index:
+            continue
+        avail = [i for i in _anchor_indices_in_slack(row, used_ok=False) if i not in used_anchor_idx]
+        if not avail:
+            continue
+        pages = page_map.get(row["table_index"]) if page_map else None
+        target = pages[0] if pages and pages[0] == pages[1] else _row_page_mid(row, page_map)
+        avail.sort(
+            key=lambda i: (
+                abs(anchors[i].page - target) if target is not None else anchors[i].page,
+                anchors[i].kode_ahsp,
+            )
+        )
+        _assign(row, anchors[avail[0]], "page_sequential_no_l01", avail[0])
+
+    pdf_text_cache: _PdfPageCache | None = None
+
+    def _page_text(page_num: int) -> str:
+        nonlocal pdf_text_cache
+        if pdf_text_cache is None:
+            raise RuntimeError("pdf cache not initialized")
+        return pdf_text_cache.get(page_num)
+
+    for row in linkable + extended:
+        if row["table_index"] in linked_by_index:
+            continue
+        mat = _primary_material_kode(row)
+        if not mat:
+            continue
+        pages = page_map.get(row["table_index"]) if page_map else None
+        slack = _page_slack_range(pages)
+        if not slack:
+            continue
+        hits: list[int] = []
+        for i, cand in enumerate(anchors):
+            if i in used_anchor_idx:
+                continue
+            if not (slack[0] <= cand.page <= slack[1]):
+                continue
+            if pdf_text_cache is None:
+                if pdf_path is None:
+                    break
+                pdf_text_cache = _PdfPageCache(pdf_path)
+            if mat in _page_text(cand.page):
+                hits.append(i)
+        if len(hits) != 1:
+            continue
+        _assign(row, anchors[hits[0]], "material_slack", hits[0])
+
+    for row in hsp_rows:
+        if row["table_index"] in linked_by_index:
+            continue
+        if not _linkable_for_sda(row):
+            continue
+        l01 = _l01_from_hsp_row(row)
+        pages = page_map.get(row["table_index"]) if page_map else None
+        slack = _page_slack_range(pages)
+        if not slack:
+            continue
+        tidx = row["table_index"]
+        best_other: dict[str, Any] | None = None
+        best_dist = 10_000
+        for other in linked_by_index.values():
+            op = page_map.get(other["table_index"]) if page_map else None
+            if not op:
+                continue
+            if not (slack[0] <= op[0] <= slack[1] and slack[0] <= op[1] <= slack[1]):
+                continue
+            mat = _primary_material_kode(row)
+            omat = _primary_material_kode(other)
+            if mat and omat and mat != omat:
+                continue
+            if l01 is not None:
+                ol01 = _l01_from_hsp_row(other)
+                if ol01 is None or abs(ol01 - l01) >= 0.00011:
+                    continue
+            elif row.get("harga_satuan_pekerjaan") is None:
+                continue
+            elif other.get("harga_satuan_pekerjaan") != row.get("harga_satuan_pekerjaan"):
+                continue
+            dist = abs(other["table_index"] - tidx)
+            if dist < best_dist and dist <= 24:
+                best_dist = dist
+                best_other = other
+        if best_other is None or not best_other.get("kode_ahsp"):
+            continue
+        out = dict(row)
+        out["kode_ahsp"] = best_other["kode_ahsp"]
+        out["kode_link_method"] = "sibling_mirror"
+        out["kode_link_page"] = best_other.get("kode_link_page")
+        out["uraian_item"] = best_other.get("uraian_item")
+        if pages:
+            out["page_range"] = f"{pages[0]}-{pages[1]}"
+        linked_by_index[tidx] = out
 
     linked: list[dict[str, Any]] = []
     for row in hsp_rows:
@@ -555,6 +945,14 @@ def run_kode_link(
 ) -> dict[str, Any]:
     """Full pipeline: extract anchors from PDF, link to hsp-parsed, write JSONL + summary."""
     page_map = build_table_page_map(checkpoint_dir)
+    hsp_preview = [
+        json.loads(line)
+        for line in hsp_parsed_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    if not ck_inline:
+        refine_rows = [r for r in hsp_preview if _linkable_for_sda(r)]
+        page_map = refine_page_map_for_hsp_rows(page_map, refine_rows, pdf_path)
 
     if ck_inline:
         cache_path = output_path.with_name("ck-anchors.json")
@@ -581,8 +979,15 @@ def run_kode_link(
             cache_path=inline_cache,
         )
         anchors = _merge_anchors(header, inline)
-    index_lookup = load_index_lookup(item_index_path)
-    linked = link_hsp_tables(hsp_parsed_path, anchors, page_map=page_map)
+    index_lookup: dict[str, dict[str, str]] = {}
+    if item_index_path.is_file():
+        index_lookup = load_index_lookup(item_index_path)
+    linked = link_hsp_tables(
+        hsp_parsed_path,
+        anchors,
+        page_map=page_map,
+        pdf_path=pdf_path,
+    )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as fh:

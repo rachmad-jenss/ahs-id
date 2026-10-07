@@ -11,42 +11,43 @@ function Log($msg) {
     Write-Host $line
 }
 
+function Test-ExtractIncomplete($progressPath) {
+    if (-not (Test-Path $progressPath)) { return $true }
+    $p = Get-Content $progressPath -Raw | ConvertFrom-Json
+    return ($p.status -ne "done") -or ($p.completed_pages -lt $p.total_pages)
+}
+
 function Wait-ExtractDone($outDir) {
     $progress = Join-Path $outDir "progress.json"
-    $tables = Get-ChildItem -Path $outDir -Filter "*-tables.json" -ErrorAction SilentlyContinue | Select-Object -First 1
     while ($true) {
-        $running = Get-Process -Name "ahs-docling","python" -ErrorAction SilentlyContinue |
-            Where-Object { $_.Path -like "*docling*" }
+        $tables = Get-ChildItem -Path $outDir -Filter "*-tables.json" -ErrorAction SilentlyContinue | Select-Object -First 1
         if (Test-Path $progress) {
             $p = Get-Content $progress -Raw | ConvertFrom-Json
             if ($p.status -eq "done" -and $p.completed_pages -ge $p.total_pages -and $tables) {
                 return $tables.FullName
             }
-            Log ("SDA extract {0}% batch {1} tables={2}" -f $p.percent, $p.chunk, $p.tables_found)
+            Log ("extract {0}% batch {1} tables={2}" -f $p.percent, $p.chunk, $p.tables_found)
         } elseif ($tables) {
             return $tables.FullName
-        }
-        if (-not $running) {
-            Start-Sleep -Seconds 15
-            $tables = Get-ChildItem -Path $outDir -Filter "*-tables.json" -ErrorAction SilentlyContinue | Select-Object -First 1
-            if ($tables) { return $tables.FullName }
-            throw "Extract stopped but no tables JSON in $outDir"
         }
         Start-Sleep -Seconds 90
     }
 }
 
-function Run-Phase($name, $pdf, $outDir, $linkFormular) {
+Log "SE 47 AHSP chain started"
+$sdaPdf = "sources\national\se-47-2026--sdm_download--id-10901.pdf"
+$bmPdf = "sources\national\se-47-2026--sdm_download--id-10904.pdf"
+
+function Run-PhaseLink($name, $pdf, $outDir, [string]$linkMode) {
     Log "=== Phase: $name ==="
     if (-not (Test-Path $pdf)) { throw "Missing PDF: $pdf" }
 
     $progress = Join-Path $outDir "progress.json"
-    $tables = Get-ChildItem -Path $outDir -Filter "*-tables.json" -ErrorAction SilentlyContinue | Select-Object -First 1
-    if (-not $tables) {
-        Log "extract -> $outDir"
-        & $exe extract $pdf -o $outDir --chunk-size 15
+    if (Test-ExtractIncomplete $progress) {
+        Log "extract (resume) -> $outDir"
+        & $exe extract $pdf -o $outDir --chunk-size 10
     } else {
-        Log "extract skipped (tables exist); waiting if still running..."
+        Log "extract already done, skipping"
     }
     $tablesPath = Wait-ExtractDone $outDir
     Log "analyze $tablesPath"
@@ -59,7 +60,8 @@ function Run-Phase($name, $pdf, $outDir, $linkFormular) {
         return
     }
     $linked = Join-Path $cleaned "hsp-linked.jsonl"
-    Log "link-kode -> $linked"
+    $itemIndex = Join-Path $cleaned "item-index.csv"
+    Log "link-kode ($linkMode) -> $linked"
     $linkArgs = @(
         "link-kode",
         "--pdf", (Resolve-Path $pdf).Path,
@@ -67,16 +69,20 @@ function Run-Phase($name, $pdf, $outDir, $linkFormular) {
         "--checkpoints", (Join-Path $outDir "checkpoints"),
         "-o", $linked
     )
-    if ($linkFormular) { $linkArgs += "--formular" }
+    switch ($linkMode) {
+        "sda" { $linkArgs += @("--item-index", (Resolve-Path $itemIndex).Path) }
+        "formular" { $linkArgs += "--formular" }
+        "ck-inline" { $linkArgs += "--ck-inline" }
+        default { }
+    }
     & $exe @linkArgs
     Log "=== Phase $name done ==="
 }
 
-Log "SE 47 AHSP chain started"
-$sdaPdf = "sources\national\se-47-2026--sdm_download--id-10901.pdf"
-$bmPdf = "sources\national\se-47-2026--sdm_download--id-10904.pdf"
+$ckPdf = "sources\national\se-47-2026--sdm_download--id-10903.pdf"
 
-Run-Phase "SDA Lampiran IV" $sdaPdf "output\sda-se-47-2026" $false
-Run-Phase "Bina Marga Lampiran V" $bmPdf "output\bina-marga-lampiran-v" $true
+Run-PhaseLink "SDA Lampiran IV" $sdaPdf "output\sda-se-47-2026" "sda"
+Run-PhaseLink "Bina Marga Lampiran V" $bmPdf "output\bina-marga-lampiran-v" "formular"
+Run-PhaseLink "Cipta Karya Lampiran VI" $ckPdf "output\cipta-karya-se-47-2026" "ck-inline"
 
 Log "All phases complete."

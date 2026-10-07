@@ -9,6 +9,7 @@ from ahs_id.formular_link import (
     FormularBlock,
     PageMeta,
     _extract_kode_from_page,
+    _linkable_for_formular,
     extract_formular_blocks,
     link_hsp_via_formulars,
     page_meta_from_text,
@@ -94,6 +95,43 @@ def test_link_hsp_via_formulars_expanded_window(tmp_path: Path):
     by_idx = {r["table_index"]: r for r in linked}
     assert by_idx[1356]["kode_ahsp"] == "7.12.(1b)"
     assert by_idx[1358]["kode_ahsp"] == "7.12.(1b)"
+
+
+def test_linkable_for_formular_hsp_total_only():
+    row = {
+        "sections": ["B", "E", "F"],
+        "coefficients": [],
+        "harga_satuan_pekerjaan": 476699.97,
+    }
+    assert _linkable_for_formular(row) is True
+
+
+def test_linkable_for_formular_equipment_only():
+    row = {
+        "sections": ["B", "E"],
+        "coefficients": [{"section": "B", "uraian": "Water Tanker", "koefisien": 1.0}],
+        "harga_satuan_pekerjaan": None,
+    }
+    assert _linkable_for_formular(row) is True
+
+
+def test_link_hsp_via_formulars_equipment_on_hsp_page(tmp_path: Path):
+    blocks = [FormularBlock("9.1.(6)", "Truk Tangki", 1747, 1748, None)]
+    hsp_file = tmp_path / "hsp.jsonl"
+    hsp_file.write_text(
+        json.dumps(
+            {
+                "table_index": 10,
+                "sections": ["B"],
+                "coefficients": [{"section": "B", "koefisien": 1.0, "uraian": "Tanker"}],
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    linked = link_hsp_via_formulars(hsp_file, blocks, page_map={10: (1748, 1748)})
+    assert linked[0]["kode_ahsp"] == "9.1.(6)"
+    assert linked[0]["kode_link_method"] == "formular_hsp_page"
 
 
 def test_link_hsp_via_formulars_l01_match(tmp_path: Path):

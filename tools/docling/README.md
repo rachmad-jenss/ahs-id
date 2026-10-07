@@ -73,6 +73,7 @@ Resuming: 128 batch(es) already on disk will be skipped
 - Final `.md` / CSV are assembled from checkpoints when the run completes.
 - Use `--no-resume` to force a clean reconvert.
 - Delete the `checkpoints/` folder to start over.
+- **Keep `--chunk-size` identical across resume runs.** Checkpoints are keyed by page range; switching chunk size (e.g. 10 → 15) starts a parallel batch grid and can leave `progress.json` stuck mid-run while older checkpoints remain on disk. SE 47 Lampiran IV (SDA) and V (BM) full runs used `--chunk-size 10`.
 
 Options:
 
