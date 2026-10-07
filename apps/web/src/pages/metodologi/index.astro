@@ -52,6 +52,29 @@ const jakartaLegalRefs = hspManifest.dasar_hukum_summary ?? [];
       }
     </div>
 
+    <div class="mt-16 max-w-3xl" id="se47-nasional">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Nasional · SE 47/2026</p>
+      <h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Ekstraksi Lampiran dan penautan kode AHSP</h2>
+      <div class="mt-7 grid gap-5 text-sm leading-6 text-muted-foreground">
+        <p>
+          Lampiran SE Direktur Jenderal Bina Konstruksi <span class="font-medium text-foreground">SE 47/SE/Dk/2026</span> (SDA, Bina Marga, Cipta Karya) diproses di repo dengan toolchain <span class="font-medium text-foreground">Docling</span> (Python, tidak dipublikasikan ke npm). Alur: PDF → tabel terstruktur → analisis HSP → penautan <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">kode_ahsp</code> ke baris breakdown → spot-check sampel ke PDF.
+        </p>
+        <p>
+          Tiga jalur bidang memakai strategi berbeda: <span class="font-medium text-foreground">SDA</span> (header item + L01), <span class="font-medium text-foreground">Bina Marga</span> (blok formular + tabel HSP kanonik), dan <span class="font-medium text-foreground">Cipta Karya</span> (kode inline di Lampiran V). Gate otomatis <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">pnpm national:se47-validate-all</code> menggabungkan manifest bersih, full-check PDF, dan ambang penautan (≥90% SDA/CK, ≥95% blok formular BM dengan HSP ter-ekstrak).
+        </p>
+        <p>
+          Per integrasi <span class="font-medium text-foreground">DAS-56</span> (Oktober 2026), cakupan penautan referensi: SDA <span class="font-medium text-foreground">~94%</span> baris HSP, Cipta Karya <span class="font-medium text-foreground">~99,6%</span>, formular Bina Marga <span class="font-medium text-foreground">~99,9%</span> pada blok yang punya HSP ter-ekstrak. Angka ini mengukur konsistensi metadata ekstraksi, bukan sertifikasi kesesuaian koefisien dengan PDF resmi.
+        </p>
+      </div>
+      <a
+        class="pressable mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover-fine-underline"
+        href="https://github.com/rachmad-jenss/ahs-id/tree/main/tools/docling"
+        rel="noreferrer"
+      >
+        Baca panduan Docling di GitHub <ArrowRight aria-hidden="true" className="h-4 w-4" />
+      </a>
+    </div>
+
     <div class="mt-16 max-w-3xl" id="kebijakan-verifikasi">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Kebijakan verifikasi</p>
       <h2 class="mt-4 font-serif text-4xl tracking-[-0.03em]">Apa yang dijamin repo, dan apa yang menjadi tanggung jawab proyek.</h2>
