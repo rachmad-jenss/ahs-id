@@ -1,8 +1,12 @@
 /**
  * Overlay component harga_satuan_ref onto @ahs-id/ahsp-se-binkon-47-2026 items
- * from packages/ahsp-dcktrp-by-source (Jakarta portal), matching by kode_ahsp.
+ * from packages/ahsp-dcktrp-by-source (Jakarta portal).
  *
- * Never invents prices. Unmatched items stay at 0.
+ * Item join: kode_ahsp only.
+ * Component price join: component `ref` first, then normalized `nama` (national
+ * rows often have ref:null). Never invents prices. Unmatched stay at 0.
+ *
+ * Writes a bidang file only when at least one item matched (avoids SDA/BM churn).
  *
  *   node scripts/enrich-se47-prices-from-dcktrp.mjs
  */
@@ -110,7 +114,9 @@ for (const [bidang, filePath] of bidangFiles) {
     return enriched;
   });
 
-  await writeFile(filePath, `${JSON.stringify(nextItems, null, 2)}\n`, 'utf8');
+  if (matched > 0) {
+    await writeFile(filePath, `${JSON.stringify(nextItems, null, 2)}\n`, 'utf8');
+  }
   report.bidang[bidang] = {
     items: items.length,
     matched,
@@ -119,7 +125,8 @@ for (const [bidang, filePath] of bidangFiles) {
     samples,
   };
   console.log(
-    `${bidang}: matched ${matched}/${items.length}, filled ${componentsFilled} component prices`,
+    `${bidang}: matched ${matched}/${items.length}, filled ${componentsFilled} component prices` +
+      (matched > 0 ? '' : ' (skip write)'),
   );
 }
 
