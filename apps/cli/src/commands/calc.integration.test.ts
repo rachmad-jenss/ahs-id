@@ -129,6 +129,22 @@ describe('calc-hsp from another directory', () => {
     expect(result.stderr).toContain('does not use an HSD');
   });
 
+  it('lists SE Binkon 47/2026 bidang bundles', () => {
+    const result = run(['calc-hsp', '--list-bundles', '--json']);
+    expect(result.status, result.stderr).toBe(0);
+    const parsed = JSON.parse(result.stdout) as { bundles: string[] };
+    expect(parsed.bundles).toContain('sda-se-binkon-47-2026');
+    expect(parsed.bundles).toContain('bina-marga-se-binkon-47-2026');
+    expect(parsed.bundles).toContain('cipta-karya-se-binkon-47-2026');
+  });
+
+  it('runs fixed-coefficient calc for SE Binkon SDA (template harga 0)', () => {
+    const result = run(['calc-hsp', 'A.1.01.a', '--bundle', 'sda-se-binkon-47-2026', '--json']);
+    expect(result.status, result.stderr).toBe(0);
+    const parsed = JSON.parse(result.stdout) as { grandTotal: number };
+    expect(parsed.grandTotal).toBe(0);
+  });
+
   it('exports a Bina Marga 2016 workbook', () => {
     const cwd = mkdtempSync(join(tmpdir(), 'ahs-cli-'));
     const output = join(cwd, 'rab.xlsx');

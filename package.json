@@ -18,6 +18,7 @@
     "national:se47-coverage": "node scripts/run-se47-coverage.mjs --skip-extract",
     "national:se47-full-check": "node scripts/run-se47-full-check.mjs",
     "national:se47-validate-all": "node scripts/run-se47-validate-all.mjs",
+    "promote:docling-se47": "node scripts/promote-docling-to-packages.mjs",
     "national:se47-enrich-pages": "node scripts/run-se47-enrich-pages.mjs",
     "national:se47-patch-hsp-gaps": "node scripts/run-se47-patch-hsp-gaps.mjs",
     "national:se47-reextract-bm-gaps": "node scripts/run-se47-reextract-bm-gaps.mjs",

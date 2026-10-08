@@ -183,6 +183,17 @@ cd tools/docling
 4. Resolve `not_found` / `ambiguous` manually against PDF.
 5. Update `provenance.verification_tier` to `spot-checked` or `verified` in bundle JSON after human sign-off.
 
+## SE 47/2026 — promote to `@ahs-id/ahsp-se-binkon-47-2026`
+
+After bidang IV–VI pipelines produce `tools/docling/output/.../cleaned/hsp-linked.jsonl` (see `pnpm national:se47-coverage` / `scripts/run-se47-coverage.mjs`):
+
+```bash
+pnpm promote:docling-se47
+pnpm validate-data
+```
+
+Writes `packages/ahsp-se-binkon-47-2026/data/` with **three AHSP bundles by bidang**: `sda/`, `bina-marga/`, `cipta-karya/` (plus `referensi/` for lampiran I–III/VII). CLI: `--bundle sda-se-binkon-47-2026` (atau `bina-marga-…`, `cipta-karya-…`). Tahun/SE baru → paket baru `ahsp-se-binkon-{nomor}-{tahun}`. `download_id` = ID unduhan portal Binkon, bukan kode AHSP.
+
 ## Scope
 
 | In scope | Out of scope |
@@ -190,6 +201,7 @@ cd tools/docling
 | PDF → markdown/tables | Auto-publish to npm |
 | Heuristic coefficient spot-check | Full AhspItem JSON generation from PDF |
 | Layer 1 QA assist | Runtime dependency of `@ahs-id/core` |
+| SE 47 promote script → `packages/ahsp-se-binkon-47-2026` | |
 
 Domain-specific table → `AhspItem` mapping remains in `scripts/extract-*.py` (Excel) and future adapters; Docling provides the **document understanding layer**.
 

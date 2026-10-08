@@ -14,6 +14,7 @@ const SCHEMA_PACKAGES = [
   'hsd-bm-2022',
   'hsd-jakarta-2026',
   'ahsp-dcktrp-by-source',
+  'ahsp-se-binkon-47-2026',
 ];
 
 /** Legacy layouts stay syntax-only until their data matches the core schemas. */

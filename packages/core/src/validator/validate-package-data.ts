@@ -57,7 +57,14 @@ function detectSchema(filePath: string): SchemaKey | null {
   if (name === 'hsd-acuan') return 'hsd-acuan';
   if (name === 'items') return 'ahsp-item';
   if (name === 'peralatan-hsd') return null;
-  if (name === 'bundle-meta' || name === 'bundle-index' || name === 'legal-sources-catalog') return null;
+  if (
+    name === 'bundle-meta' ||
+    name === 'bundle-index' ||
+    name === 'legal-sources-catalog' ||
+    name === 'docling-summary'
+  ) {
+    return null;
+  }
   return 'ahsp-item';
 }
 
