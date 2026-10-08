@@ -1,4 +1,10 @@
-import type { DataBundle, FixedCoefficientItem, HsdRegional, PackageDataMode } from '@ahs-id/core';
+import {
+  mergeHsdBaseWithRegionalOverlay,
+  type DataBundle,
+  type FixedCoefficientItem,
+  type HsdRegional,
+  type PackageDataMode,
+} from '@ahs-id/core';
 
 export type BundleStrategy = 'dynamic-bundle' | 'fixed-coefficient' | 'hsd-only';
 
@@ -54,7 +60,15 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'syntax',
     displayName: 'Bina Marga 2022',
     defaultHsd: 'hsd-bm-2022',
-    compatibleHsd: ['hsd-bm-2022'],
+    // Regional catalogs use PUPR-scheme refs; loaders keep Permen BM base and overlay
+    // only when ref+nama+satuan match (labor stays Permen). Fuels/region come from overlay.
+    compatibleHsd: [
+      'hsd-bm-2022',
+      'hsd-kaltim-2025',
+      'hsd-jabar-2025',
+      'hsd-papua-2025',
+      'hsd-jakarta-2026',
+    ],
     loadBundle: () => import('@ahs-id/bina-marga-2022'),
   },
   {
@@ -172,4 +186,38 @@ export function calculationPackages(): readonly PackageRecord[] {
 /** HSD-only packages. */
 export function hsdPackages(): readonly PackageRecord[] {
   return PACKAGES.filter((pkg) => pkg.strategy === 'hsd-only');
+}
+
+/**
+ * Load HSD for a dynamic AHSP bundle, applying BM-2022 Permen-base overlay when
+ * a regional catalog is selected. Prefer this over raw `loadHsd()` whenever pairing
+ * with `compatibleHsd` — advertisers of those pairs must resolve identity-safe merge.
+ */
+export async function loadResolvedHsdForBundle(
+  bundleName: string,
+  hsdName: string,
+): Promise<HsdRegional> {
+  const bundlePkg = findPackage(bundleName);
+  if (!bundlePkg || bundlePkg.strategy !== 'dynamic-bundle') {
+    throw new Error(`Bundle "${bundleName}" is not a dynamic AHSP bundle`);
+  }
+  if (!bundlePkg.compatibleHsd.includes(hsdName)) {
+    throw new Error(
+      `HSD "${hsdName}" is not compatible with ${bundleName}. Available: ${bundlePkg.compatibleHsd.join(', ')}`,
+    );
+  }
+  const hsdPkg = findPackage(hsdName);
+  if (!hsdPkg || hsdPkg.strategy !== 'hsd-only') {
+    throw new Error(`Unknown HSD "${hsdName}"`);
+  }
+  const { hsd } = await hsdPkg.loadHsd();
+  if (bundleName === 'bina-marga-2022' && hsdName !== 'hsd-bm-2022') {
+    const basePkg = findPackage('hsd-bm-2022');
+    if (!basePkg || basePkg.strategy !== 'hsd-only') {
+      throw new Error('hsd-bm-2022 missing for BM-2022 regional overlay');
+    }
+    const base = await basePkg.loadHsd();
+    return mergeHsdBaseWithRegionalOverlay(base.hsd, hsd);
+  }
+  return hsd;
 }

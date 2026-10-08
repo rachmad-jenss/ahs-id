@@ -1,5 +1,12 @@
-import { calcHspFixedCoefficient, createCalculator, type DataBundle, type FixedCoefficientItem, type HsdRegional, type HSPResult } from '@ahs-id/core';
-import { findPackage, PACKAGES, type PackageRecord } from './registry.js';
+import {
+  calcHspFixedCoefficient,
+  createCalculator,
+  type DataBundle,
+  type FixedCoefficientItem,
+  type HsdRegional,
+  type HSPResult,
+} from '@ahs-id/core';
+import { findPackage, loadResolvedHsdForBundle, PACKAGES, type PackageRecord } from './registry.js';
 
 export interface CalculatorBundle {
   bundle: DataBundle;
@@ -91,12 +98,11 @@ export async function resolveCalculation(bundleName: string, hsdName?: string): 
   switch (pkg.strategy) {
     case 'dynamic-bundle': {
       const resolvedHsd = resolveHsdName(bundleName, hsdName);
-      const hsdPkg = findPackage(resolvedHsd);
-      if (!hsdPkg || hsdPkg.strategy !== 'hsd-only') {
-        throw new Error(`Unknown HSD "${resolvedHsd}"`);
-      }
-      const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
-      return { kind: 'dynamic-bundle', bundle: bundleMod.bundle, hsd: hsdMod.hsd, hsdName: resolvedHsd };
+      const [bundleMod, hsd] = await Promise.all([
+        pkg.loadBundle(),
+        loadResolvedHsdForBundle(bundleName, resolvedHsd),
+      ]);
+      return { kind: 'dynamic-bundle', bundle: bundleMod.bundle, hsd, hsdName: resolvedHsd };
     }
     case 'fixed-coefficient': {
       if (hsdName !== undefined) {

@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { brandHsdRegional, createCalculator } from '@ahs-id/core';
+import { brandHsdRegional, createCalculator, mergeHsdBaseWithRegionalOverlay } from '@ahs-id/core';
 import { bundle } from '../index.js';
 import hsdData from '../../../hsd-bm-2022/data/hsd.json' with { type: 'json' };
+import kaltimData from '../../../hsd-kaltim-2025/data/hsd.json' with { type: 'json' };
 
 const hsd = brandHsdRegional(hsdData);
 
@@ -32,6 +33,25 @@ describe('bina-marga-2022 createCalculator uses Permen sewa rates', () => {
 
   it('fails closed when a priced item has no components', () => {
     expect(() => calc.hitungHSP('6.3.(8)', {})).toThrow('no components');
+  });
+
+  it('calculates with regional HSD via Permen-base overlay (identity-safe)', () => {
+    const kaltim = brandHsdRegional(kaltimData);
+    const merged = mergeHsdBaseWithRegionalOverlay(hsd, kaltim);
+    const regionalCalc = createCalculator(bundle, merged);
+    const result = regionalCalc.hitungHSP('3.1.(1)', {});
+    const alat = result.groups.find((group) => group.type === 'E');
+    const dumpTruck = alat?.components.find((component) => component.ref === 'E.09');
+    // E.09 is Permen-only — must keep Permen sewa rate after overlay.
+    expect(dumpTruck?.unit_price).toBe(692885);
+    // E.01 shares a code with Kaltim excavator but is AMP in Permen — must not remapped.
+    const amp = hsd.peralatan_sewa.find((row) => row.ref === 'E.01');
+    const mergedAmp = merged.peralatan_sewa.find((row) => row.ref === 'E.01');
+    expect(amp).toBeDefined();
+    expect(mergedAmp?.harga_rp).toBe(amp?.harga_rp);
+    expect(mergedAmp?.nama).toBe(amp?.nama);
+    expect(result.grandTotal).toBeGreaterThan(0);
+    expect(merged.region.provinsi).toBe(kaltim.region.provinsi);
   });
 
   it('fails closed when an alat ref has no Permen rate', () => {

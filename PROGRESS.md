@@ -101,6 +101,6 @@ All published engine/data rows above are on npm. Bina Marga 2022 uses `@ahs-id/h
 ## Follow-ups
 
 - [x] **DAS-65** — Hero autocomplete + kalkulator item variables + `@ahs-id/engine-registry` on npm
-- [ ] **DAS-66** — Unify `bina-marga-2022` with regional HSD
+- [ ] **DAS-66** — BM-2022 regional HSD via Permen-base overlay (in progress)
 - [ ] **DAS-67** — Fill SE Binkon 47/2026 `harga_satuan_ref` where source available
 - [x] Epics DAS-1 / DAS-2 / DAS-3 closed (Phase 2 exit + eng quality + engine consistency)

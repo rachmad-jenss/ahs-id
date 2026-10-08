@@ -9,6 +9,7 @@ import {
   calculationPackages,
   findPackage,
   hsdPackages,
+  loadResolvedHsdForBundle,
   type PackageRecord,
 } from '@ahs-id/engine-registry';
 
@@ -228,12 +229,11 @@ export async function calculateHspInBrowser(input: {
       if (!pkg.compatibleHsd.includes(hsdName)) {
         throw new Error(`HSD "${hsdName}" tidak kompatibel dengan ${pkg.name}`);
       }
-      const hsdPkg = findPackage(hsdName);
-      if (!hsdPkg || hsdPkg.strategy !== 'hsd-only') {
-        throw new Error(`Unknown HSD "${hsdName}"`);
-      }
-      const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
-      const calculator = createCalculator(bundleMod.bundle, hsdMod.hsd);
+      const [bundleMod, hsd] = await Promise.all([
+        pkg.loadBundle(),
+        loadResolvedHsdForBundle(input.bundle, hsdName),
+      ]);
+      const calculator = createCalculator(bundleMod.bundle, hsd);
       return calculator.hitungHSP(input.item, { ...(input.variables ?? {}) });
     }
     case 'fixed-coefficient': {
