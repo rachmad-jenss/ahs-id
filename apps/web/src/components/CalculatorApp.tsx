@@ -234,7 +234,7 @@ export function CalculatorApp(): React.JSX.Element {
           )}
           {needsHsd && metaStatus === 'ready' && variableEntries.length === 0 && (
             <p className="text-xs leading-5 text-muted-foreground">
-              Item ini tidak mendeklarasikan variabel input tambahan.
+              Tidak ada variabel yang memengaruhi HSP untuk item ini (biasanya koefisien tabel).
             </p>
           )}
           {!needsHsd && (

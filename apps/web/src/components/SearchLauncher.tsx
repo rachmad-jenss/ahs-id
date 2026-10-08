@@ -101,6 +101,11 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
         <div className="relative flex-1">
           <Search aria-hidden="true" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
           <Input
+            aria-activedescendant={
+              activeIndex >= 0 && suggestions[activeIndex]
+                ? `${listboxId}-opt-${activeIndex}`
+                : undefined
+            }
             aria-autocomplete="list"
             aria-controls={listboxId}
             aria-expanded={open && query.trim().length > 0}
@@ -168,13 +173,19 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
                 <li className="px-3 py-2 text-sm text-muted-foreground">Tidak ada saran. Tekan Enter untuk cari.</li>
               )}
               {suggestions.map((entry, index) => (
-                <li key={entry.key} role="option" aria-selected={index === activeIndex}>
+                <li
+                  aria-selected={index === activeIndex}
+                  id={`${listboxId}-opt-${index}`}
+                  key={entry.key}
+                  role="option"
+                >
                   <button
                     className={`flex w-full flex-col gap-0.5 rounded-xl px-3 py-2 text-left text-sm hover-fine-bg-muted ${
                       index === activeIndex ? 'bg-muted' : ''
                     }`}
                     onMouseDown={(event) => event.preventDefault()}
                     onClick={() => chooseSuggestion(entry)}
+                    tabIndex={-1}
                     type="button"
                   >
                     <span className="font-medium text-foreground">

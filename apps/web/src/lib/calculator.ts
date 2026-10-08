@@ -25,11 +25,48 @@ export interface CalculatorItemMeta {
   readonly kode_ahsp: string;
   readonly nama: string;
   readonly strategy: 'dynamic-bundle' | 'fixed-coefficient';
+  /** Declared AHSP variabel that can change the computed HSP for this item. */
   readonly variables: Readonly<Record<string, VariabelDefinition>>;
   readonly marginDefaults: {
     readonly overhead_pct: number;
     readonly profit_pct: number;
   };
+}
+
+/** Minimal peralatan shape for deciding which declared variabel affect HSP. */
+export interface EffectiveVariablePeralatan {
+  readonly koef_sumber: 'tabel' | 'kalkulasi';
+  readonly variabel_input: readonly string[];
+}
+
+/**
+ * Keep only variabel keys the engine can consume for this item.
+ * Tabel-coefficient peralatan ignore haul inputs; kalkulasi reads `variabel_input`.
+ * `kondisi_operasi` / `jenis_material` still affect HSD rate / bahan conversion when declared.
+ */
+export function effectiveVariablesFromAhsp(item: {
+  readonly variabel: Readonly<Record<string, VariabelDefinition>>;
+  readonly peralatan: readonly EffectiveVariablePeralatan[];
+}): Readonly<Record<string, VariabelDefinition>> {
+  const keys = new Set<string>();
+  let hasKalkulasi = false;
+  for (const entry of item.peralatan) {
+    if (entry.koef_sumber !== 'kalkulasi') continue;
+    hasKalkulasi = true;
+    for (const key of entry.variabel_input) keys.add(key);
+  }
+  if (hasKalkulasi && 'faktor_efisiensi' in item.variabel) {
+    keys.add('faktor_efisiensi');
+  }
+  if ('kondisi_operasi' in item.variabel) keys.add('kondisi_operasi');
+  if ('jenis_material' in item.variabel) keys.add('jenis_material');
+
+  const next: Record<string, VariabelDefinition> = {};
+  for (const key of keys) {
+    const def = item.variabel[key];
+    if (def) next[key] = def;
+  }
+  return next;
 }
 
 export function listCalculatorBundles(): readonly CalculatorBundleOption[] {
@@ -87,7 +124,7 @@ export async function loadCalculatorItemMeta(input: {
         kode_ahsp: found.kode_ahsp,
         nama: found.nama,
         strategy: 'dynamic-bundle',
-        variables: found.variabel,
+        variables: effectiveVariablesFromAhsp(found),
         marginDefaults: {
           overhead_pct: found.margin.overhead_pct.default,
           profit_pct: found.margin.profit_pct.default,

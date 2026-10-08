@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   calculateHspInBrowser,
   defaultsFromItemMeta,
+  effectiveVariablesFromAhsp,
   listCalculatorBundles,
   loadCalculatorItemMeta,
   parseCalculatorVariables,
@@ -15,22 +16,33 @@ describe('web calculator registry', () => {
     expect(bundles.some((row) => row.name === 'sda-se-binkon-47-2026')).toBe(true);
   });
 
-  it('loads declared item variables and parses only those keys', async () => {
+  it('loads only variables that can affect HSP and parses declared keys', async () => {
+    // 3.1.1 declares L_km but peralatan are koef tabel — do not expose L_km.
     const meta = await loadCalculatorItemMeta({
       bundle: 'bina-marga-2016',
       item: '3.1.1',
     });
     expect(meta.strategy).toBe('dynamic-bundle');
-    expect(meta.variables.L_km?.tipe).toBe('number');
-    const seeded = defaultsFromItemMeta(meta);
-    expect(seeded.L_km).toBe('2');
-    const parsed = parseCalculatorVariables(meta, { ...seeded, unknown_key: '9' }, {
-      overhead: '12',
-      profit: '3',
+    expect(meta.variables).toEqual({});
+    expect(defaultsFromItemMeta(meta)).toEqual({});
+
+    const filtered = effectiveVariablesFromAhsp({
+      variabel: {
+        L_km: { label: 'Jarak', tipe: 'number', default: 2 },
+        jarak_quarry_km: { label: 'Quarry', tipe: 'number', default: null, required: true },
+        jenis_material: {
+          label: 'Material',
+          tipe: 'enum',
+          options: ['a'],
+          default: 'a',
+        },
+      },
+      peralatan: [
+        { koef_sumber: 'tabel', variabel_input: [] as const },
+        { koef_sumber: 'kalkulasi', variabel_input: ['jarak_quarry_km'] as const },
+      ],
     });
-    expect(parsed).toEqual({ L_km: 2 });
-    expect(parsed).not.toHaveProperty('unknown_key');
-    expect(parsed).not.toHaveProperty('overhead_pct');
+    expect(Object.keys(filtered).sort()).toEqual(['jarak_quarry_km', 'jenis_material']);
 
     const fixedMeta = await loadCalculatorItemMeta({
       bundle: 'cipta-karya-2024',
