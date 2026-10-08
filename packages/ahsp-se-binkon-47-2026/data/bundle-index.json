@@ -1,0 +1,80 @@
+[
+  {
+    "source_id": "se-binkon-47-2026-sda",
+    "title": "SDA — SE Binkon 47/2026",
+    "item_count": 1151,
+    "path": "data/sda",
+    "bidang": "sda",
+    "lampiran": "IV",
+    "regulation_slug": "se-binkon-47-2026",
+    "download_id": "10901",
+    "label": "SE Dirjen Binkon No. 47/SE/Dk/2026",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",
+    "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+    "portal_url": null
+  },
+  {
+    "source_id": "se-binkon-47-2026-bina-marga",
+    "title": "Bina Marga — SE Binkon 47/2026",
+    "item_count": 1041,
+    "path": "data/bina-marga",
+    "bidang": "bina-marga",
+    "lampiran": "V",
+    "regulation_slug": "se-binkon-47-2026",
+    "download_id": "10903",
+    "label": "SE Dirjen Binkon No. 47/SE/Dk/2026",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",
+    "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+    "portal_url": null
+  },
+  {
+    "source_id": "se-binkon-47-2026-cipta-karya",
+    "title": "Cipta Karya — SE Binkon 47/2026",
+    "item_count": 1289,
+    "path": "data/cipta-karya",
+    "bidang": "cipta-karya",
+    "lampiran": "VI",
+    "regulation_slug": "se-binkon-47-2026",
+    "download_id": "10904",
+    "label": "SE Dirjen Binkon No. 47/SE/Dk/2026",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",
+    "dokumen_pencarian_url": "https://jdih.pu.go.id/",
+    "portal_url": null
+  },
+  {
+    "source_id": "se-binkon-47-2026-lampiran-i-ketentuan-umum",
+    "title": "Lampiran I — Ketentuan umum",
+    "item_count": 0,
+    "path": "data/referensi/lampiran-i-ketentuan-umum",
+    "kind": "docling-reference",
+    "download_id": "10894",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/"
+  },
+  {
+    "source_id": "se-binkon-47-2026-lampiran-ii-acuan-ahsp",
+    "title": "Lampiran II — Acuan AHSP",
+    "item_count": 0,
+    "path": "data/referensi/lampiran-ii-acuan-ahsp",
+    "kind": "docling-reference",
+    "download_id": "10897",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/"
+  },
+  {
+    "source_id": "se-binkon-47-2026-lampiran-iii-smkk",
+    "title": "Lampiran III — SMKK",
+    "item_count": 0,
+    "path": "data/referensi/lampiran-iii-smkk",
+    "kind": "docling-reference",
+    "download_id": "10899",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/"
+  },
+  {
+    "source_id": "se-binkon-47-2026-lampiran-vii-pengajuan",
+    "title": "Lampiran VII — Pengajuan",
+    "item_count": 0,
+    "path": "data/referensi/lampiran-vii-pengajuan",
+    "kind": "docling-reference",
+    "download_id": "10906",
+    "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/"
+  }
+]

@@ -11,7 +11,12 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "kode_ahsp": { "type": "string", "pattern": "^\\d+\\.\\d+" },
+    "kode_ahsp": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9.\\s()_-]*$"
+    },
     "nama": { "type": "string", "minLength": 1 },
     "bidang": { "type": "string", "enum": ["umum", "sda", "bina-marga", "cipta-karya"] },
     "divisi": { "type": "integer", "minimum": 1 },

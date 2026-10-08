@@ -1,0 +1,36 @@
+{
+  "name": "@ahs-id/ahsp-se-binkon-47-2026",
+  "version": "0.1.0",
+  "description": "AHSP SE Binkon 47/2026 — bidang SDA, Bina Marga, Cipta Karya (Docling PDF nasional)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "node ../../scripts/clean.mjs dist .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@ahs-id/core": "workspace:*"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachmad-jenss/ahs-id.git",
+    "directory": "packages/ahsp-se-binkon-47-2026"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

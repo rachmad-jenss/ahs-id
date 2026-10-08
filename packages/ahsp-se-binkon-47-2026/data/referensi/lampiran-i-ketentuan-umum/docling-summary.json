@@ -1,0 +1,33 @@
+{
+  "manifest": {
+    "source": "C:\\Users\\Legion\\.gemini\\antigravity\\scratch\\ahs-id\\tools\\docling\\output\\se-47-2026-id-10894\\se-47-2026--sdm_download--id-10894-tables.json",
+    "source_tables": 45,
+    "categories": {
+      "other": 45
+    },
+    "hsp_breakdown": {
+      "total": 0,
+      "verified_ok": 0,
+      "with_issues": 0
+    },
+    "item_index": {
+      "rows": 0,
+      "unique_codes": 0
+    },
+    "issue_counts": {},
+    "issues": [],
+    "info_counts": {}
+  },
+  "progress": {
+    "total_pages": 109,
+    "completed_pages": 109,
+    "percent": 100,
+    "current_range": "106-109",
+    "chunk": "8/8",
+    "tables_found": 45,
+    "elapsed_s": 541.5,
+    "status": "done",
+    "note": null
+  },
+  "generated_at": "2026-10-08T07:48:23.542Z"
+}

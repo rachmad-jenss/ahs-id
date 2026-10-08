@@ -21,6 +21,7 @@
   "dependencies": {
     "@ahs-id/bina-marga-2016": "workspace:*",
     "@ahs-id/bina-marga-2022": "workspace:*",
+    "@ahs-id/ahsp-se-binkon-47-2026": "workspace:*",
     "@ahs-id/cipta-karya-2024": "workspace:*",
     "@ahs-id/core": "workspace:*",
     "@ahs-id/hsd-bm-2022": "workspace:^",

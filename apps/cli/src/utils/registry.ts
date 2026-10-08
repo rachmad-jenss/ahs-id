@@ -67,6 +67,39 @@ export const PACKAGES: readonly PackageRecord[] = [
     loadItems: () => import('@ahs-id/cipta-karya-2024'),
   },
   {
+    name: 'sda-se-binkon-47-2026',
+    specifier: '@ahs-id/ahsp-se-binkon-47-2026',
+    strategy: 'fixed-coefficient',
+    validation: 'schema',
+    displayName: 'SDA — SE Binkon 47/2026',
+    loadItems: async () => {
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
+      return { ahspItems: mod.ahspItemsSda };
+    },
+  },
+  {
+    name: 'bina-marga-se-binkon-47-2026',
+    specifier: '@ahs-id/ahsp-se-binkon-47-2026',
+    strategy: 'fixed-coefficient',
+    validation: 'schema',
+    displayName: 'Bina Marga — SE Binkon 47/2026',
+    loadItems: async () => {
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
+      return { ahspItems: mod.ahspItemsBinaMarga };
+    },
+  },
+  {
+    name: 'cipta-karya-se-binkon-47-2026',
+    specifier: '@ahs-id/ahsp-se-binkon-47-2026',
+    strategy: 'fixed-coefficient',
+    validation: 'schema',
+    displayName: 'Cipta Karya — SE Binkon 47/2026',
+    loadItems: async () => {
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
+      return { ahspItems: mod.ahspItemsCiptaKarya };
+    },
+  },
+  {
     name: 'hsd-kaltim-2025',
     specifier: '@ahs-id/hsd-kaltim-2025',
     strategy: 'hsd-only',
