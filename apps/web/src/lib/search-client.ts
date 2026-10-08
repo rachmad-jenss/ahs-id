@@ -1,14 +1,6 @@
-export interface SearchIndexEntry {
-  readonly key: string;
-  readonly code: string;
-  readonly name: string;
-  readonly bundleId: string;
-  readonly bundleName: string;
-  readonly bidang: string;
-  readonly divisi: number;
-  readonly unit: string;
-  readonly href: string;
-}
+import type { SearchIndexEntry, SearchManifest } from './search-index.js';
+
+export type { SearchIndexEntry, SearchKind, SearchManifest } from './search-index.js';
 
 export interface CatalogPage<T> {
   readonly items: readonly T[];
@@ -34,4 +26,26 @@ export function paginateCatalogItems<T>(
     total: items.length,
     totalPages,
   };
+}
+
+/** Fetch search manifest + all shards from `/search/`. */
+export async function loadSearchIndex(baseUrl = ''): Promise<{
+  readonly manifest: SearchManifest;
+  readonly entries: readonly SearchIndexEntry[];
+}> {
+  const manifestRes = await fetch(`${baseUrl}/search/manifest.json`);
+  if (!manifestRes.ok) {
+    throw new Error(`Failed to load search manifest (${manifestRes.status})`);
+  }
+  const manifest = (await manifestRes.json()) as SearchManifest;
+  const shards = await Promise.all(
+    manifest.shards.map(async (shard) => {
+      const response = await fetch(`${baseUrl}${shard.path}`);
+      if (!response.ok) {
+        throw new Error(`Failed to load search shard ${shard.path} (${response.status})`);
+      }
+      return (await response.json()) as SearchIndexEntry[];
+    }),
+  );
+  return { manifest, entries: shards.flat() };
 }

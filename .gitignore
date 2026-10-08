@@ -10,6 +10,10 @@ coverage/
 .env.*
 !.env.example
 
+# Generated unified catalog search / HSP shards (emit at web prebuild)
+apps/web/public/search/
+apps/web/public/hsp/
+
 # Internal dev notes & AI workflow (private — jangan publish)
 AGENTS.md
 CLAUDE.md

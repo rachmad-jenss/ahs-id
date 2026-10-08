@@ -73,4 +73,11 @@ describe('catalog search model', () => {
 
     expect(params).toEqual({ q: 'galian', page: 1 });
   });
+
+  it('keeps kind on search index entries from toSearchIndex', () => {
+    const [entry] = toSearchIndex([item({})]);
+    expect(entry?.kind).toBe('ahsp-coef');
+    expect(entry?.badge).toBe('AHSP nasional');
+    expect(entry?.subtitle).toContain('Permen PUPR');
+  });
 });

@@ -12,11 +12,11 @@ const libraryPackages = buildEngineAndHsdLibraryPackages();
 ---
 
 <SiteLayout title="Bundel data — AHS-ID" description="Bundel AHSP di katalog, plus engine, CLI, dan HSD regional yang dipublikasikan di npm.">
-  <section class="border-b border-border/80 bg-card/45"><div class="mx-auto max-w-7xl px-5 pb-14 pt-16 lg:px-8 lg:pb-20 lg:pt-24"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Sumber data</p><h1 class="mt-4 max-w-4xl font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Dari koefisien hingga angka HSP.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">Katalog web menampilkan empat bundel koefisien AHSP. Hitung HSP membutuhkan <span class="font-semibold text-foreground">@ahs-id/core</span>, bundel AHSP, dan paket HSD regional — semuanya ada di monorepo dan npm.</p></div></section>
+  <section class="border-b border-border/80 bg-card/45"><div class="mx-auto max-w-7xl px-5 pb-14 pt-16 lg:px-8 lg:pb-20 lg:pt-24"><p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Sumber data</p><h1 class="mt-4 max-w-4xl font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Dari koefisien hingga angka HSP.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">Katalog web menampilkan {catalog.bundles.length} bundel koefisien AHSP nasional (termasuk SE Binkon 47/2026), plus HSP portal DKI dan AHSP DCKTRP di indeks pencarian. Hitung HSP membutuhkan <span class="font-semibold text-foreground">@ahs-id/core</span>, bundel AHSP, dan paket HSD regional — semuanya ada di monorepo dan npm.</p></div></section>
   <section class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
     <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Koefisien AHSP</p>
     <h2 class="mt-4 font-serif text-3xl tracking-[-0.03em] sm:text-4xl">Yang bisa ditelusuri di katalog</h2>
-    <p class="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">Empat paket ini yang dinormalisasi untuk pencarian di website. Item lain di repo (engine, HSD, CLI) tidak muncul sebagai baris katalog.</p>
+    <p class="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">{catalog.bundles.length} paket nasional dinormalisasi untuk pencarian di website. HSP portal DCKTRP dan AHSP per sumber hukum juga masuk indeks terpadu; engine, HSD, dan CLI tetap paket terpisah.</p>
     <div class="mt-10 grid gap-5 lg:grid-cols-2">
       {catalog.bundles.map((bundle, index) => (
         <a class="bundle-card-link group pressable block rounded-3xl border border-border bg-card/50 p-7 transition-[transform,border-color,box-shadow] duration-200 ease-out hover-fine-card sm:p-9" href={catalogUrl({ bundle: bundle.id })}>
@@ -33,7 +33,7 @@ const libraryPackages = buildEngineAndHsdLibraryPackages();
     <LibraryPackageOverview
       packages={libraryPackages}
       heading="Engine, HSP portal, HSD regional, dan CLI"
-      intro="Koefisien AHSP mengikuti regulasi sumber (empat bundel di atas). Untuk DKI: HSD daerah (@ahs-id/hsd-jakarta-2026) dipakai dengan engine; katalog HSP jadi portal (@ahs-id/hsp-jakarta-dcktrp) untuk lookup harga yang sudah dihitung DCKTRP."
+      intro="Koefisien AHSP mengikuti regulasi sumber (bundel nasional di atas). Untuk DKI: HSD daerah (@ahs-id/hsd-jakarta-2026) dipakai dengan engine; katalog HSP jadi portal (@ahs-id/hsp-jakarta-dcktrp) untuk lookup harga yang sudah dihitung DCKTRP."
     />
   </section>
 </SiteLayout>

@@ -84,5 +84,15 @@ Golden tolerance: ε = 0.01 Rp.
 | `@ahs-id/hsd-papua-2025` | HSD Papua Q1 2025 |
 | `@ahs-id/hsd-bm-2022` | Permen PUPR 1/2022 embedded HSD (Bina Marga 2022) |
 | `@ahs-id/cli` | `ahs-id` CLI (`calc-hsp`, `export-rab`, `validate`) |
+| `@ahs-id/engine-registry` | Shared AHSP/HSD registry for CLI + web `/kalkulator` (workspace) |
 
-All rows above are published to npm. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates in the CLI default path.
+All published engine/data rows above are on npm. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates in the CLI default path.
+
+## Web catalog (DAS-63 / epic DAS-57)
+
+- [x] Unified search shards (`public/search/*`) — AHSP nasional + DCKTRP, HSP portal, resource, productivity
+- [x] `CatalogBrowser` fetch + `?kind=` badges (no giant HTML props)
+- [x] HSP Jakarta detail `/hsp/jakarta/[sourceId]/`
+- [x] AHSP DCKTRP detail `/ahsp/sumber/[sourceId]/[code]/`
+- [x] `@ahs-id/engine-registry` + `/kalkulator`
+- [x] Docs: `docs/web-catalog.md`

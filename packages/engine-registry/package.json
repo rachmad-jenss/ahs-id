@@ -1,48 +1,46 @@
 {
-  "name": "@ahs-id/cli",
-  "version": "0.1.1",
-  "description": "CLI for AHS-ID — AHSP calculation, RAB export, and bundle validation",
+  "name": "@ahs-id/engine-registry",
+  "version": "0.1.0",
+  "description": "Shared AHSP/HSD package registry for AHS-ID CLI and web calculator",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "ahs-id": "dist/index.js"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "clean": "node ../../scripts/clean.mjs dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
+    "@ahs-id/ahsp-se-binkon-47-2026": "workspace:*",
     "@ahs-id/bina-marga-2016": "workspace:*",
     "@ahs-id/bina-marga-2022": "workspace:*",
-    "@ahs-id/ahsp-se-binkon-47-2026": "workspace:*",
     "@ahs-id/cipta-karya-2024": "workspace:*",
     "@ahs-id/core": "workspace:*",
-    "@ahs-id/engine-registry": "workspace:*",
-    "@ahs-id/hsd-bm-2022": "workspace:^",
+    "@ahs-id/hsd-bm-2022": "workspace:*",
     "@ahs-id/hsd-jabar-2025": "workspace:*",
     "@ahs-id/hsd-jakarta-2026": "workspace:*",
     "@ahs-id/hsd-kaltim-2025": "workspace:*",
     "@ahs-id/hsd-papua-2025": "workspace:*",
-    "@ahs-id/pupr-2023": "workspace:*",
-    "commander": "^13.0.0"
+    "@ahs-id/pupr-2023": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "typescript": "^5.5.0",
-    "vitest": "^2.0.0"
+    "typescript": "^5.5.0"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rachmad-jenss/ahs-id.git",
-    "directory": "apps/cli"
+    "directory": "packages/engine-registry"
   },
   "publishConfig": {
     "access": "public"

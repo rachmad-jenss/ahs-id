@@ -6,26 +6,55 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { NativeSelect } from '@/components/ui/select';
 import { catalogUrl, parseCatalogSearchParams, type CatalogSearchParams } from '@/lib/catalog-url';
-import { paginateCatalogItems, type SearchIndexEntry } from '@/lib/search-client';
+import { loadSearchIndex, paginateCatalogItems, type SearchIndexEntry } from '@/lib/search-client';
+import { SEARCH_KIND_LABELS, SEARCH_KINDS, type SearchKind } from '@/lib/search-index';
 
 interface CatalogBrowserProps {
-  readonly entries: readonly SearchIndexEntry[];
-  readonly bundles: readonly { id: string; name: string }[];
   readonly initialParams: CatalogSearchParams;
+  readonly initialBundles?: readonly { id: string; name: string }[];
 }
 
 const PAGE_SIZE = 20;
 
-/** Render the searchable, filterable catalog and synchronize applied state with its URL. */
-export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrowserProps): React.JSX.Element {
+/** Render the searchable, filterable catalog (shards fetched client-side). */
+export function CatalogBrowser({ initialParams, initialBundles = [] }: CatalogBrowserProps): React.JSX.Element {
+  const [entries, setEntries] = useState<readonly SearchIndexEntry[]>([]);
+  const [bundles, setBundles] = useState(initialBundles);
+  const [loadState, setLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [query, setQuery] = useState(initialParams.q ?? '');
   const [draftQuery, setDraftQuery] = useState(initialParams.q ?? '');
   const [bundle, setBundle] = useState(initialParams.bundle ?? '');
   const [bidang, setBidang] = useState(initialParams.bidang ?? '');
   const [unit, setUnit] = useState(initialParams.unit ?? '');
+  const [kind, setKind] = useState<SearchKind | ''>(initialParams.kind ?? '');
   const [page, setPage] = useState(initialParams.page ?? 1);
-  const [filterOpen, setFilterOpen] = useState(Boolean(initialParams.q || initialParams.bundle || initialParams.bidang || initialParams.unit));
+  const [filterOpen, setFilterOpen] = useState(
+    Boolean(initialParams.q || initialParams.bundle || initialParams.bidang || initialParams.unit || initialParams.kind),
+  );
   const resultsHeadingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    /** Load manifest + shards once on mount. */
+    async function load(): Promise<void> {
+      try {
+        const { manifest, entries: loaded } = await loadSearchIndex();
+        if (cancelled) return;
+        setEntries(loaded);
+        setBundles(manifest.bundles);
+        setLoadState('ready');
+      } catch (error) {
+        if (cancelled) return;
+        setLoadState('error');
+        setLoadError(error instanceof Error ? error.message : 'Gagal memuat indeks pencarian');
+      }
+    }
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   /** Move focus to the result summary after a navigation state change. */
   const focusResults = useCallback((): void => {
@@ -41,6 +70,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       setBundle(params.bundle ?? '');
       setBidang(params.bidang ?? '');
       setUnit(params.unit ?? '');
+      setKind(params.kind ?? '');
       setPage(params.page ?? 1);
       if (shouldFocus) focusResults();
     }
@@ -59,22 +89,24 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       bundle: bundle || undefined,
       bidang: bidang || undefined,
       unit: unit || undefined,
+      kind: kind || undefined,
       page,
     };
     if (catalogUrl(currentParams) !== catalogUrl(appliedParams)) return;
     document.querySelector<HTMLElement>('[data-catalog-shell]')?.removeAttribute('data-catalog-url-pending');
-  }, [bidang, bundle, page, query, unit]);
+  }, [bidang, bundle, kind, page, query, unit]);
 
   const bidangOptions = useMemo(
-    () => [...new Set(entries.map((entry) => entry.bidang))].sort(),
+    () => [...new Set(entries.map((entry) => entry.bidang).filter((value): value is string => Boolean(value)))].sort(),
     [entries],
   );
   const unitOptions = useMemo(
-    () => [...new Set(entries.map((entry) => entry.unit))].sort(),
+    () => [...new Set(entries.map((entry) => entry.unit).filter((value): value is string => Boolean(value)))].sort(),
     [entries],
   );
   const filteredEntries = useMemo(() => {
     const narrowed = entries.filter((entry) => {
+      if (kind && entry.kind !== kind) return false;
       if (bundle && entry.bundleId !== bundle) return false;
       if (bidang && entry.bidang !== bidang) return false;
       if (unit && entry.unit !== unit) return false;
@@ -88,10 +120,12 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       keys: [
         { name: 'code', weight: 1.4 },
         { name: 'name', weight: 1.2 },
-        { name: 'bundleName', weight: 0.6 },
+        { name: 'badge', weight: 0.5 },
+        { name: 'subtitle', weight: 0.6 },
+        { name: 'bundleName', weight: 0.5 },
       ],
     }).search(query.trim()).map((result) => result.item);
-  }, [bidang, bundle, entries, query, unit]);
+  }, [bidang, bundle, entries, kind, query, unit]);
   const paged = paginateCatalogItems(filteredEntries, page, PAGE_SIZE);
 
   /** Commit a catalog state change to browser history and announce the result context. */
@@ -111,20 +145,22 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       bundle: bundle || undefined,
       bidang: bidang || undefined,
       unit: unit || undefined,
+      kind: kind || undefined,
       page: 1,
     });
   }
 
   /** Apply one catalog filter while preserving the other committed criteria. */
-  function changeFilter(field: 'bundle' | 'bidang' | 'unit', value: string): void {
-    const setters = { bundle: setBundle, bidang: setBidang, unit: setUnit };
-    setters[field](value);
+  function changeFilter(field: 'bundle' | 'bidang' | 'unit' | 'kind', value: string): void {
+    const setters = { bundle: setBundle, bidang: setBidang, unit: setUnit, kind: setKind };
+    setters[field](value as never);
     setPage(1);
     pushUrl({
       q: query.trim() || undefined,
       bundle: field === 'bundle' ? value || undefined : bundle || undefined,
       bidang: field === 'bidang' ? value || undefined : bidang || undefined,
       unit: field === 'unit' ? value || undefined : unit || undefined,
+      kind: (field === 'kind' ? value || undefined : kind || undefined) as SearchKind | undefined,
       page: 1,
     });
   }
@@ -136,6 +172,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     setBundle('');
     setBidang('');
     setUnit('');
+    setKind('');
     setPage(1);
     pushUrl({ page: 1 });
   }
@@ -148,12 +185,13 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
       bundle: bundle || undefined,
       bidang: bidang || undefined,
       unit: unit || undefined,
+      kind: kind || undefined,
       page: nextPage,
     });
   }
 
   const hasSearch = query.trim().length > 0;
-  const hasFilters = [bundle, bidang, unit].some(Boolean);
+  const hasFilters = [bundle, bidang, unit, kind].some(Boolean);
   const hasActiveCriteria = hasSearch || hasFilters;
   const activeFilterCount = [hasSearch, hasFilters].filter(Boolean).length;
   const clearLabel = hasSearch && hasFilters
@@ -166,7 +204,7 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
     : activeFilterCount > 0
       ? `${activeFilterCount} aktif`
       : 'Opsional';
-  const resultSurfaceKey = [query, bundle, bidang, unit, page, paged.items.length > 0 ? 'list' : 'empty'].join('|');
+  const resultSurfaceKey = [query, bundle, bidang, unit, kind, page, paged.items.length > 0 ? 'list' : 'empty'].join('|');
 
   useEffect(() => {
     setFilterOpen(hasActiveCriteria);
@@ -175,9 +213,18 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
   const filterControls = (
     <div className="mt-5 grid gap-5">
       <label className="grid gap-2 text-sm">
-         <span className="font-medium">Bundel</span>
+        <span className="font-medium">Jenis</span>
+        <NativeSelect onChange={(event) => changeFilter('kind', event.target.value)} value={kind}>
+          <option value="">Semua jenis</option>
+          {SEARCH_KINDS.map((option) => (
+            <option key={option} value={option}>{SEARCH_KIND_LABELS[option]}</option>
+          ))}
+        </NativeSelect>
+      </label>
+      <label className="grid gap-2 text-sm">
+        <span className="font-medium">Bundel</span>
         <NativeSelect onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
-           <option value="">Semua bundel</option>
+          <option value="">Semua bundel</option>
           {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
         </NativeSelect>
       </label>
@@ -227,44 +274,61 @@ export function CatalogBrowser({ entries, bundles, initialParams }: CatalogBrows
           <label className="sr-only" htmlFor="catalog-search">Cari katalog</label>
           <div className="relative flex-1">
             <Search aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <Input autoComplete="off" className="pl-10" enterKeyHint="search" id="catalog-search" inputMode="search" name="q" onChange={(event) => setDraftQuery(event.target.value)} placeholder="Cari kode atau nama pekerjaan…" type="search" value={draftQuery} />
+            <Input autoComplete="off" className="pl-10" enterKeyHint="search" id="catalog-search" inputMode="search" name="q" onChange={(event) => setDraftQuery(event.target.value)} placeholder="Cari kode, nama, HSP, atau resource…" type="search" value={draftQuery} />
           </div>
           <Button type="submit">Cari</Button>
         </form>
         <div className="mt-5 flex flex-wrap items-end justify-between gap-3">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Hasil katalog</p>
-            <h2 className="mt-1 font-serif text-2xl" id="catalog-results-heading" ref={resultsHeadingRef} tabIndex={-1}>{paged.total.toLocaleString('id-ID')} item</h2>
+            <h2 className="mt-1 font-serif text-2xl" id="catalog-results-heading" ref={resultsHeadingRef} tabIndex={-1}>
+              {loadState === 'loading' ? 'Memuat…' : `${paged.total.toLocaleString('id-ID')} item`}
+            </h2>
           </div>
-          <p aria-atomic="true" aria-live="polite" className="text-sm text-muted-foreground" role="status">{paged.total.toLocaleString('id-ID')} hasil · Halaman {paged.page} dari {paged.totalPages}</p>
+          <p aria-atomic="true" aria-live="polite" className="text-sm text-muted-foreground" role="status">
+            {loadState === 'ready'
+              ? `${paged.total.toLocaleString('id-ID')} hasil · Halaman ${paged.page} dari ${paged.totalPages}`
+              : loadState === 'loading'
+                ? 'Memuat indeks pencarian…'
+                : 'Indeks gagal dimuat'}
+          </p>
         </div>
 
-        {paged.items.length > 0 ? (
+        {loadState === 'error' ? (
+          <div className="mt-5 rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center">
+            <p className="font-serif text-2xl">Indeks tidak tersedia</p>
+            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-muted-foreground">{loadError}</p>
+          </div>
+        ) : paged.items.length > 0 ? (
           <div className="catalog-surface-enter mt-5 overflow-hidden rounded-2xl border border-border/80 bg-card/50" key={resultSurfaceKey}>
-            <div className="hidden grid-cols-[7rem_1fr_12rem_4rem] gap-4 border-b border-border/80 bg-muted/50 px-5 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:grid">
-              <span>Kode</span><span>Pekerjaan</span><span>Bundel</span><span>Satuan</span>
+            <div className="hidden grid-cols-[7rem_1fr_10rem_4rem] gap-4 border-b border-border/80 bg-muted/50 px-5 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground sm:grid">
+              <span>Kode</span><span>Pekerjaan</span><span>Jenis</span><span>Satuan</span>
             </div>
             <ul className="divide-y divide-border/70">
               {paged.items.map((entry) => (
                 <li key={entry.key}>
-                  <a className="pressable grid gap-2 px-5 py-4 transition-colors hover-fine-bg-muted-50 sm:grid-cols-[7rem_1fr_12rem_4rem] sm:items-center sm:gap-4" href={entry.href}>
+                  <a className="pressable grid gap-2 px-5 py-4 transition-colors hover-fine-bg-muted-50 sm:grid-cols-[7rem_1fr_10rem_4rem] sm:items-center sm:gap-4" href={entry.href}>
                     <span className="font-mono text-sm font-semibold text-primary">{entry.code}</span>
                     <span className="min-w-0">
                       <span className="block break-words font-medium sm:truncate" title={entry.name}>{entry.name}</span>
-                      <span className="mt-1 block text-xs text-muted-foreground">{entry.bidang} · Divisi {entry.divisi}</span>
+                      <span className="mt-1 block text-xs text-muted-foreground">{entry.subtitle}</span>
                     </span>
-                    <Badge className="w-fit" variant="muted">{entry.bundleName}</Badge>
-                    <span className="text-sm text-muted-foreground sm:text-right">{entry.unit}</span>
+                    <Badge className="w-fit" variant="muted">{entry.badge}</Badge>
+                    <span className="text-sm text-muted-foreground sm:text-right">{entry.unit ?? '—'}</span>
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-        ) : (
+        ) : loadState === 'ready' ? (
           <div className="catalog-surface-enter mt-5 rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center" key={resultSurfaceKey}>
             <p className="font-serif text-2xl">Tidak ada hasil</p>
             <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-muted-foreground">{hasSearch ? `Tidak ada item yang cocok dengan “${query.trim()}”. Coba kata kunci lain atau reset filter.` : 'Tidak ada item yang cocok dengan filter saat ini. Coba ubah pilihan atau reset filter.'}</p>
             <Button className="mt-5" onClick={clearFilters} variant="outline">{clearLabel}</Button>
+          </div>
+        ) : (
+          <div className="mt-5 rounded-2xl border border-border/80 bg-card/50 px-6 py-12 text-center text-sm text-muted-foreground">
+            Memuat indeks pencarian…
           </div>
         )}
 

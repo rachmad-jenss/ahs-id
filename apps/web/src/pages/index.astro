@@ -1,12 +1,24 @@
 ---
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { ArrowRight, BookOpen, Check, Code2, GitBranch, Search } from 'lucide-react';
 import { SearchLauncher } from '../components/SearchLauncher';
 import { Badge } from '../components/ui/badge';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { buildCatalog, catalogItemPath, type CatalogItem } from '../lib/catalog';
+import type { SearchManifest } from '../lib/search-index';
 
 const catalog = buildCatalog();
 const catalogBidangCount = new Set(catalog.items.map((item) => item.bidang)).size;
+let searchManifest: SearchManifest | null = null;
+try {
+  searchManifest = JSON.parse(
+    await readFile(join(process.cwd(), 'public/search/manifest.json'), 'utf8'),
+  ) as SearchManifest;
+} catch {
+  searchManifest = null;
+}
+const indexedTotal = searchManifest?.total ?? catalog.items.length;
 const featuredCodes = [
   ['pupr-2023', '3.1.1'],
   ['bina-marga-2022', '2.1.(1)'],
@@ -61,8 +73,8 @@ const featured = featuredCodes
 
             <div class="grid border-y border-border/80 sm:grid-cols-3 sm:divide-x sm:divide-border/80">
               <a class="pressable block py-5 transition-colors hover-fine-bg-muted-50 sm:px-5 sm:first:pl-0" href="/katalog/">
-                <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Item publik</p>
-                <p class="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight text-primary sm:text-4xl">{catalog.items.length.toLocaleString('id-ID')}</p>
+                <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Entri terindeks</p>
+                <p class="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight text-primary sm:text-4xl">{indexedTotal.toLocaleString('id-ID')}</p>
               </a>
               <a class="pressable block border-t border-border/80 py-5 transition-colors hover-fine-bg-muted-50 sm:border-t-0 sm:px-5" href="/bundles/">
                 <p class="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Bundel regulasi</p>

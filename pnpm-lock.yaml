@@ -53,6 +53,9 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@ahs-id/engine-registry':
+        specifier: workspace:*
+        version: link:../../packages/engine-registry
       '@ahs-id/hsd-bm-2022':
         specifier: workspace:^
         version: link:../../packages/hsd-bm-2022
@@ -105,6 +108,9 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@ahs-id/engine-registry':
+        specifier: workspace:*
+        version: link:../../packages/engine-registry
       '@ahs-id/hsd-bm-2022':
         specifier: workspace:*
         version: link:../../packages/hsd-bm-2022
@@ -244,6 +250,46 @@ importers:
       vitest:
         specifier: ^2.0.0
         version: 2.1.9(@types/node@22.19.19)(lightningcss@1.33.0)
+
+  packages/engine-registry:
+    dependencies:
+      '@ahs-id/ahsp-se-binkon-47-2026':
+        specifier: workspace:*
+        version: link:../ahsp-se-binkon-47-2026
+      '@ahs-id/bina-marga-2016':
+        specifier: workspace:*
+        version: link:../bina-marga-2016
+      '@ahs-id/bina-marga-2022':
+        specifier: workspace:*
+        version: link:../bina-marga-2022
+      '@ahs-id/cipta-karya-2024':
+        specifier: workspace:*
+        version: link:../cipta-karya-2024
+      '@ahs-id/core':
+        specifier: workspace:*
+        version: link:../core
+      '@ahs-id/hsd-bm-2022':
+        specifier: workspace:*
+        version: link:../hsd-bm-2022
+      '@ahs-id/hsd-jabar-2025':
+        specifier: workspace:*
+        version: link:../hsd-jabar-2025
+      '@ahs-id/hsd-jakarta-2026':
+        specifier: workspace:*
+        version: link:../hsd-jakarta-2026
+      '@ahs-id/hsd-kaltim-2025':
+        specifier: workspace:*
+        version: link:../hsd-kaltim-2025
+      '@ahs-id/hsd-papua-2025':
+        specifier: workspace:*
+        version: link:../hsd-papua-2025
+      '@ahs-id/pupr-2023':
+        specifier: workspace:*
+        version: link:../pupr-2023
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
 
   packages/hsd-bm-2022:
     dependencies:

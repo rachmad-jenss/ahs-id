@@ -1,32 +1,47 @@
 ---
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { CatalogBrowser } from '../../components/CatalogBrowser';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { buildCatalog } from '../../lib/catalog';
 import { parseCatalogSearchParams } from '../../lib/catalog-url';
-import { toSearchIndex } from '../../lib/search';
+import type { SearchManifest } from '../../lib/search-index';
 
-const catalog = buildCatalog();
-const entries = toSearchIndex(catalog.items);
+const manifestPath = join(process.cwd(), 'public/search/manifest.json');
+let manifest: SearchManifest | null = null;
+try {
+  manifest = JSON.parse(await readFile(manifestPath, 'utf8')) as SearchManifest;
+} catch {
+  manifest = null;
+}
+
 const initialParams = parseCatalogSearchParams(Astro.url.searchParams);
+const totalLabel = manifest ? manifest.total.toLocaleString('id-ID') : '…';
+const kindSummary = manifest
+  ? [
+      `${manifest.counts['ahsp-coef'].toLocaleString('id-ID')} AHSP`,
+      `${manifest.counts['hsp-portal'].toLocaleString('id-ID')} HSP portal`,
+      `${manifest.counts.resource.toLocaleString('id-ID')} resource`,
+      `${manifest.counts.productivity.toLocaleString('id-ID')} produktivitas`,
+    ].join(' · ')
+  : 'Indeks multi-jenis (AHSP, HSP, resource, produktivitas)';
 ---
 
 <SiteLayout
   title="Katalog AHSP — AHS-ID"
-  description="Cari dan telusuri item AHSP Indonesia dari bundel PUPR, Bina Marga, dan Cipta Karya."
+  description="Cari dan telusuri item AHSP nasional, HSP portal DKI, resource, dan produktivitas."
 >
   <section class="border-b border-border/80 bg-card/45">
     <div class="mx-auto max-w-7xl px-5 pb-12 pt-14 lg:px-8 lg:pb-16 lg:pt-20">
       <div class="max-w-3xl">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Katalog publik</p>
         <h1 class="mt-4 font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Cari pekerjaan dengan cepat.</h1>
-        <p class="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">{catalog.items.length.toLocaleString('id-ID')} item publik dari {catalog.bundles.length} bundel. Gunakan kode, nama pekerjaan, bidang, bundel, atau satuan.</p>
+        <p class="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">{totalLabel} entri terindeks. {kindSummary}. Filter dengan jenis, kode, nama, bidang, bundel, atau satuan.</p>
       </div>
     </div>
   </section>
   <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16" data-catalog-shell>
     <CatalogBrowser
-      bundles={catalog.bundles}
-      entries={entries}
+      initialBundles={manifest?.bundles ?? []}
       initialParams={initialParams}
       client:load
     />
@@ -35,7 +50,7 @@ const initialParams = parseCatalogSearchParams(Astro.url.searchParams);
 
 <script is:inline>
   const catalogSearch = new URLSearchParams(window.location.search);
-  const hasCatalogParams = ['q', 'bundle', 'bidang', 'unit', 'page'].some((key) => catalogSearch.has(key));
+  const hasCatalogParams = ['q', 'bundle', 'bidang', 'unit', 'kind', 'page'].some((key) => catalogSearch.has(key));
   if (hasCatalogParams) {
     const catalogShell = document.querySelector('[data-catalog-shell]');
     catalogShell?.setAttribute('data-catalog-url-pending', '');
