@@ -66,6 +66,9 @@ All packages above are published on [npm](https://www.npmjs.com/org/ahs-id) unde
 | `@ahs-id/bina-marga-2016` | Permen PUPR 28/2016 + Spesif. Umum 2010 Rev.3 | Bina Marga Divisi 3 | 23 |
 | `@ahs-id/bina-marga-2022` | Permen PUPR 1/2022 | Bina Marga Divisi 2–10 | 422 |
 | `@ahs-id/cipta-karya-2024` | SE Bina Konstruksi 68/2024 | Cipta Karya Divisi 1–10 | 1,943 |
+| `@ahs-id/ahsp-se-binkon-47-2026` | SE Dirjen Binkon 47/2026 | SDA + Bina Marga + Cipta Karya (nasional Docling) | ~3,481 |
+
+CLI bundles for SE 47: `sda-se-binkon-47-2026`, `bina-marga-se-binkon-47-2026`, `cipta-karya-se-binkon-47-2026`. Component prices are often `0` in the PDF template — pair with regional HSD for real HSP (engine path forthcoming).
 
 ### HSD Regional Prices
 
@@ -75,6 +78,7 @@ All packages above are published on [npm](https://www.npmjs.com/org/ahs-id) unde
 | `@ahs-id/hsd-kaltim-2025` | Kalimantan Timur Q1 2025 | Menengah |
 | `@ahs-id/hsd-papua-2025` | Papua Q1 2025 | Tertinggi |
 | `@ahs-id/hsd-bm-2022` | Permen PUPR 1/2022 (acuan nasional) | Embedded with Bina Marga 2022 |
+| `@ahs-id/hsd-jakarta-2026` | DKI Jakarta Q1 2026 | Portal Bangun Jakarta |
 
 ## Key Concepts
 
@@ -108,9 +112,11 @@ packages/
 ├── bina-marga-2016/       ← Permen PUPR 28/2016 (Bina Marga Divisi 3)
 ├── bina-marga-2022/       ← Permen PUPR 1/2022 (Bina Marga Divisi 2–10)
 ├── cipta-karya-2024/      ← SE Bina Konstruksi 68/2024 (Cipta Karya)
+├── ahsp-se-binkon-47-2026/← SE Binkon 47/2026 (SDA / BM / CK nasional)
 ├── hsd-jabar-2025/        ← HSD Jawa Barat Q1 2025
 ├── hsd-kaltim-2025/       ← HSD Kalimantan Timur Q1 2025
 ├── hsd-papua-2025/        ← HSD Papua Q1 2025
+├── hsd-jakarta-2026/      ← HSD DKI Jakarta Q1 2026
 └── hsd-bm-2022/           ← Permen PUPR 1/2022 embedded HSD
 
 tests/golden/              ← Cross-bundle regression fixtures
@@ -132,9 +138,10 @@ ahs-id calc-hsp 3.2.1 --bundle pupr-2023 --hsd hsd-jabar-2025 \
   --variable jarak_quarry_km=25 --variable kondisi_jalan=sedang --variable faktor_efisiensi=0.83
 ahs-id export-rab 3.1.1 --bundle bina-marga-2016 --output rab.xlsx
 ahs-id calc-hsp "3.1.(1)" --bundle bina-marga-2022
+ahs-id calc-hsp A.1.01.a --bundle sda-se-binkon-47-2026 --json
 ```
 
-`pupr-2023` defaults to `hsd-kaltim-2025`. `bina-marga-2022` defaults to `hsd-bm-2022` and prices equipment from those Permen hourly rates. `cipta-karya-2024` does not take an `--hsd` flag.
+`pupr-2023` defaults to `hsd-kaltim-2025`. `bina-marga-2022` defaults to `hsd-bm-2022` and prices equipment from those Permen hourly rates. Fixed-coefficient bundles (`cipta-karya-2024`, `*-se-binkon-47-2026`) do not take an `--hsd` flag.
 
 **Monorepo contributors:** after `pnpm install`, use `pnpm --filter @ahs-id/cli exec ahs-id …` without publishing.
 

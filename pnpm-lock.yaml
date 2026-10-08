@@ -90,6 +90,9 @@ importers:
       '@ahs-id/ahsp-dcktrp-by-source':
         specifier: workspace:*
         version: link:../../packages/ahsp-dcktrp-by-source
+      '@ahs-id/ahsp-se-binkon-47-2026':
+        specifier: workspace:*
+        version: link:../../packages/ahsp-se-binkon-47-2026
       '@ahs-id/bina-marga-2016':
         specifier: workspace:*
         version: link:../../packages/bina-marga-2016

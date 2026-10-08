@@ -18,3 +18,7 @@ pnpm typecheck
 ```
 
 Gate resmi: **GitHub Actions** (`ubuntu-latest`), bukan runner self-hosted Windows.
+
+## Orphan Next/Vite servers
+
+Cursor **tidak** mematikan child process saat turn/chat selesai. User hook `~/.cursor/hooks.json` → `kill-orphan-dev-servers.mjs` di `stop` / `sessionEnd` mematikan `next start-server`, Vite, Astro, Wrangler yang tertinggal (penyebab OOM multi-GB yang sering dikira “ahs-id OOM”).

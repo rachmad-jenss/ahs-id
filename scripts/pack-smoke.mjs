@@ -44,6 +44,14 @@ function fail(message) {
   process.exit(1);
 }
 
+const packedNames = new Set(manifest.packages.map((pkg) => pkg.name));
+const cliPkg = JSON.parse(readFileSync(join(root, 'apps/cli/package.json'), 'utf8'));
+for (const [dep, spec] of Object.entries(cliPkg.dependencies ?? {})) {
+  if (dep.startsWith('@ahs-id/') && String(spec).startsWith('workspace') && !packedNames.has(dep)) {
+    fail(`CLI workspace dependency ${dep} missing from scripts/release-packages.json`);
+  }
+}
+
 if (!skipPrepare) {
   console.log('==> pack-smoke: release prepare');
   run('node scripts/release-prepare.mjs');

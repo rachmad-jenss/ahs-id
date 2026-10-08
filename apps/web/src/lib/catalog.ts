@@ -26,6 +26,12 @@ import {
   meta as ciptaKaryaMeta,
 } from '@ahs-id/cipta-karya-2024';
 import {
+  ahspItemsBinaMarga as se47BinaMargaItems,
+  ahspItemsCiptaKarya as se47CiptaKaryaItems,
+  ahspItemsSda as se47SdaItems,
+  meta as se47Meta,
+} from '@ahs-id/ahsp-se-binkon-47-2026';
+import {
   ahspItems as puprItems,
   bahanMaster as puprBahan,
   meta as puprMeta,
@@ -175,6 +181,45 @@ const SOURCES: readonly BundleSource[] = [
     displayName: 'Cipta Karya 2024',
     meta: ciptaKaryaMeta,
     items: ciptaKaryaItems,
+  },
+  {
+    id: 'sda-se-binkon-47-2026',
+    displayName: 'SDA — SE Binkon 47/2026',
+    meta: {
+      ...se47Meta,
+      ahs_meta: {
+        ...se47Meta.ahs_meta,
+        bidang: ['sda'],
+        data_source: 'Lampiran IV SE 47/2026 — Docling PDF nasional',
+      },
+    },
+    items: se47SdaItems,
+  },
+  {
+    id: 'bina-marga-se-binkon-47-2026',
+    displayName: 'Bina Marga — SE Binkon 47/2026',
+    meta: {
+      ...se47Meta,
+      ahs_meta: {
+        ...se47Meta.ahs_meta,
+        bidang: ['bina-marga'],
+        data_source: 'Lampiran V SE 47/2026 — Docling PDF nasional',
+      },
+    },
+    items: se47BinaMargaItems,
+  },
+  {
+    id: 'cipta-karya-se-binkon-47-2026',
+    displayName: 'Cipta Karya — SE Binkon 47/2026',
+    meta: {
+      ...se47Meta,
+      ahs_meta: {
+        ...se47Meta.ahs_meta,
+        bidang: ['cipta-karya'],
+        data_source: 'Lampiran VI SE 47/2026 — Docling PDF nasional',
+      },
+    },
+    items: se47CiptaKaryaItems,
   },
 ];
 
