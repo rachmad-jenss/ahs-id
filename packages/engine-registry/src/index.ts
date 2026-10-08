@@ -54,7 +54,8 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'syntax',
     displayName: 'Bina Marga 2022',
     defaultHsd: 'hsd-bm-2022',
-    // Regional HSD uses a different ref catalog; loaders merge Permen base + matching overlay refs.
+    // Regional catalogs use PUPR-scheme refs; loaders keep Permen BM base and overlay
+    // only when ref+nama+satuan match (labor stays Permen). Fuels/region come from overlay.
     compatibleHsd: [
       'hsd-bm-2022',
       'hsd-kaltim-2025',

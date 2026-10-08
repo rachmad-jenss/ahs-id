@@ -35,7 +35,7 @@ describe('bina-marga-2022 createCalculator uses Permen sewa rates', () => {
     expect(() => calc.hitungHSP('6.3.(8)', {})).toThrow('no components');
   });
 
-  it('calculates with regional HSD via Permen-base overlay (matching refs only)', () => {
+  it('calculates with regional HSD via Permen-base overlay (identity-safe)', () => {
     const kaltim = brandHsdRegional(kaltimData);
     const merged = mergeHsdBaseWithRegionalOverlay(hsd, kaltim);
     const regionalCalc = createCalculator(bundle, merged);
@@ -44,6 +44,12 @@ describe('bina-marga-2022 createCalculator uses Permen sewa rates', () => {
     const dumpTruck = alat?.components.find((component) => component.ref === 'E.09');
     // E.09 is Permen-only — must keep Permen sewa rate after overlay.
     expect(dumpTruck?.unit_price).toBe(692885);
+    // E.01 shares a code with Kaltim excavator but is AMP in Permen — must not remapped.
+    const amp = hsd.peralatan_sewa.find((row) => row.ref === 'E.01');
+    const mergedAmp = merged.peralatan_sewa.find((row) => row.ref === 'E.01');
+    expect(amp).toBeDefined();
+    expect(mergedAmp?.harga_rp).toBe(amp?.harga_rp);
+    expect(mergedAmp?.nama).toBe(amp?.nama);
     expect(result.grandTotal).toBeGreaterThan(0);
     expect(merged.region.provinsi).toBe(kaltim.region.provinsi);
   });
