@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/pupr-2023",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AHSP coefficient data bundle — Permen PUPR No. 8 Tahun 2023",
   "type": "module",
   "main": "dist/index.js",

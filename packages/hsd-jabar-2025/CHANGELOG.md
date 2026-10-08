@@ -1,5 +1,12 @@
 # @ahs-id/hsd-jabar-2025
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [3646e80]
+  - @ahs-id/core@0.1.1
+
 ## 0.0.2
 
 ### Patch Changes

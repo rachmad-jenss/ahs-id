@@ -78,7 +78,7 @@ Golden tolerance: ε = 0.01 Rp.
 | `@ahs-id/bina-marga-2016` | Bina Marga 2016 (createCalculator path) |
 | `@ahs-id/bina-marga-2022` | Bina Marga 2022 (422 items, separate calc path) |
 | `@ahs-id/cipta-karya-2024` | Fixed-coefficient Cipta Karya |
-| `@ahs-id/ahsp-se-binkon-47-2026` | SE Binkon 47/2026 — SDA / Bina Marga / Cipta Karya (Docling nasional; PR pending) |
+| `@ahs-id/ahsp-se-binkon-47-2026` | SE Binkon 47/2026 — SDA / Bina Marga / Cipta Karya (Docling nasional) |
 | `@ahs-id/hsd-jabar-2025` | HSD Jawa Barat Q1 2025 |
 | `@ahs-id/hsd-kaltim-2025` | HSD Kalimantan Timur Q1 2025 |
 | `@ahs-id/hsd-papua-2025` | HSD Papua Q1 2025 |

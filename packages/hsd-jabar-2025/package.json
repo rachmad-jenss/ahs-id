@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/hsd-jabar-2025",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HSD regional price data — Jawa Barat Q1 2025",
   "type": "module",
   "main": "dist/index.js",

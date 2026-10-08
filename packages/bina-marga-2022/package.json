@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/bina-marga-2022",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AHSP coefficient data bundle — Permen PUPR No. 1 Tahun 2022 (Bina Marga)",
   "type": "module",
   "main": "dist/index.js",

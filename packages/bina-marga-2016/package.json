@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/bina-marga-2016",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AHSP coefficient data bundle — Permen PUPR No. 28/PRT/M/2016 & Spesifikasi Umum Bina Marga 2010 Rev.3",
   "type": "module",
   "main": "dist/index.js",

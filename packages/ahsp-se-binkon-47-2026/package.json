@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/ahsp-se-binkon-47-2026",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "AHSP SE Binkon 47/2026 — bidang SDA, Bina Marga, Cipta Karya (Docling PDF nasional)",
   "type": "module",
   "main": "dist/index.js",

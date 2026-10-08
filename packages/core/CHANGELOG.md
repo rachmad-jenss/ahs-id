@@ -1,5 +1,11 @@
 # @ahs-id/core
 
+## 0.1.1
+
+### Patch Changes
+
+- 3646e80: Add national SE Binkon 47/2026 AHSP data bundles (SDA, Bina Marga, Cipta Karya) from Docling promote pipeline.
+
 ## 0.1.0
 
 ### Minor Changes

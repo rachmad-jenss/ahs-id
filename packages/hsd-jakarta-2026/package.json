@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/hsd-jakarta-2026",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HSD DKI Jakarta Q1 2026 — agregasi harga komponen dari portal Bangun Jakarta DCKTRP",
   "type": "module",
   "main": "dist/index.js",

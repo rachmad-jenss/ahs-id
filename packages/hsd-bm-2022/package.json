@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/hsd-bm-2022",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Permen PUPR 1/2022 embedded HSD for the bina-marga-2022 bundle",
   "type": "module",
   "main": "dist/index.js",

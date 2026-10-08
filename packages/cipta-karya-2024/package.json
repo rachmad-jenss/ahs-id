@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/cipta-karya-2024",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AHSP coefficient data bundle — SE Bina Konstruksi No. 68/SE/Dk/2024 Bidang Cipta Karya",
   "type": "module",
   "main": "dist/index.js",

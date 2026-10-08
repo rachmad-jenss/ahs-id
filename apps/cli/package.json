@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI for AHS-ID — AHSP calculation, RAB export, and bundle validation",
   "type": "module",
   "main": "dist/index.js",

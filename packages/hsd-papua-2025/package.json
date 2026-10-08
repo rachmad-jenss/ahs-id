@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/hsd-papua-2025",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HSD regional price data — Papua Q1 2025",
   "type": "module",
   "main": "dist/index.js",
