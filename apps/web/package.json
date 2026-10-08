@@ -2,15 +2,18 @@
   "name": "@ahs-id/web",
   "version": "0.1.1",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "type": "module",
   "description": "Public AHS-ID landing page and searchable AHSP catalog",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "node ../../scripts/astro-check.mjs && astro build",
     "preview": "astro preview",
     "pretest": "astro build",
     "test": "vitest run",
-    "typecheck": "astro check",
+    "typecheck": "node ../../scripts/astro-check.mjs",
     "lint": "eslint src tests"
   },
   "dependencies": {

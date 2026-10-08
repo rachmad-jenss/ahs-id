@@ -7,6 +7,7 @@
     { "name": "@ahs-id/pupr-2023", "dir": "packages/pupr-2023" },
     { "name": "@ahs-id/bina-marga-2016", "dir": "packages/bina-marga-2016" },
     { "name": "@ahs-id/bina-marga-2022", "dir": "packages/bina-marga-2022" },
+    { "name": "@ahs-id/hsd-jakarta-2026", "dir": "packages/hsd-jakarta-2026" },
     { "name": "@ahs-id/cipta-karya-2024", "dir": "packages/cipta-karya-2024" },
     { "name": "@ahs-id/hsd-kaltim-2025", "dir": "packages/hsd-kaltim-2025" },
     { "name": "@ahs-id/hsd-jabar-2025", "dir": "packages/hsd-jabar-2025" },

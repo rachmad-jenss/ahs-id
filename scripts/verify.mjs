@@ -6,8 +6,8 @@
 import { spawnSync } from 'node:child_process';
 
 const steps = [
-  ['lint', 'pnpm lint'],
-  ['typecheck', 'pnpm typecheck'],
+  ['lint', 'node scripts/run-turbo.mjs lint'],
+  ['typecheck', 'node scripts/run-turbo.mjs typecheck'],
   ['validate-data', 'pnpm validate-data'],
   ['validate-bundles', 'pnpm validate-bundles'],
   ['test', 'pnpm exec turbo run test --concurrency=1'],
