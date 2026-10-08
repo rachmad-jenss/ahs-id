@@ -158,17 +158,24 @@ async function resourceAndProductivityEntries(): Promise<{
   const catalog = buildCatalog();
   /** First national item href that actually contains this component ref. */
   const anchorByRef = new Map<string, string>();
+  /** First AHSP code that uses this peralatan ref (for kalkulator prefill). */
+  const ahspByPeralatan = new Map<string, string>();
   for (const item of catalog.items) {
     for (const component of item.components) {
       if (!component.ref) continue;
       const kindPrefix =
         component.kind === 'tenaga kerja' ? 'tenaga' : component.kind === 'bahan' ? 'bahan' : 'peralatan';
       const mapKey = `${item.bundleId}:${kindPrefix}:${component.ref}`;
-      if (anchorByRef.has(mapKey)) continue;
-      anchorByRef.set(
-        mapKey,
-        `${catalogItemPath(item.bundleId, item.code)}#${kindPrefix}-${encodeURIComponent(component.ref)}`,
-      );
+      if (!anchorByRef.has(mapKey)) {
+        anchorByRef.set(
+          mapKey,
+          `${catalogItemPath(item.bundleId, item.code)}#${kindPrefix}-${encodeURIComponent(component.ref)}`,
+        );
+      }
+      if (kindPrefix === 'peralatan') {
+        const equipKey = `${item.bundleId}:${component.ref}`;
+        if (!ahspByPeralatan.has(equipKey)) ahspByPeralatan.set(equipKey, item.code);
+      }
     }
   }
 
@@ -186,7 +193,7 @@ async function resourceAndProductivityEntries(): Promise<{
       if (!code) continue;
       const name = String(item.nama ?? code);
       const unit = item.satuan != null ? String(item.satuan) : null;
-      const resourceKey = `${master.kind}:${code}`;
+      const resourceKey = `${master.bundleId}:${master.kind}:${code}`;
       if (!seenResource.has(resourceKey)) {
         seenResource.add(resourceKey);
         const anchor =
@@ -209,19 +216,24 @@ async function resourceAndProductivityEntries(): Promise<{
 
       if (master.kind === 'peralatan') {
         const tipe = item.tipe_produksi != null ? String(item.tipe_produksi) : '';
-        if (tipe && tipe !== 'none' && !seenProd.has(code)) {
-          seenProd.add(code);
+        const prodKey = `${master.bundleId}:${code}`;
+        if (tipe && tipe !== 'none' && !seenProd.has(prodKey)) {
+          seenProd.add(prodKey);
+          const ahspCode = ahspByPeralatan.get(prodKey);
+          const href = ahspCode
+            ? `/kalkulator/?bundle=${encodeURIComponent(master.bundleId)}&item=${encodeURIComponent(ahspCode)}&focus=${encodeURIComponent(code)}`
+            : `/katalog/?q=${encodeURIComponent(code)}&bundle=${encodeURIComponent(master.bundleId)}&kind=productivity`;
           productivity.push({
-            key: `productivity:${code}`,
+            key: `productivity:${prodKey}`,
             kind: 'productivity',
             badge: 'Produktivitas',
             code,
             name,
             subtitle: `${tipe} · ${master.bundleName}`,
-            href: `/kalkulator/?bundle=${encodeURIComponent(master.bundleId)}&focus=${encodeURIComponent(code)}`,
+            href,
             bundleId: master.bundleId,
             bundleName: master.bundleName,
-            meta: { tipe_produksi: tipe },
+            meta: { tipe_produksi: tipe, ahsp_item: ahspCode ?? null },
           });
         }
       }

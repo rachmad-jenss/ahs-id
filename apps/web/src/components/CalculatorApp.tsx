@@ -85,25 +85,20 @@ export function CalculatorApp(): React.JSX.Element {
     setError(null);
     writeUrlState({ bundle, item: item.trim(), hsd: needsHsd ? hsd : '' });
     try {
+      // Dynamic bundles: pass only engine defaults from the item definition (no injected keys).
+      // Fixed-coefficient: optional margin overrides only.
       const variables: Record<string, number | string> = {};
-      const overheadPct = Number(overhead);
-      const profitPct = Number(profit);
-      if (Number.isFinite(overheadPct)) variables.overhead_pct = overheadPct;
-      if (Number.isFinite(profitPct)) variables.profit_pct = profitPct;
-      if (needsHsd) {
-        // Sensible defaults for common PUPR / Bina Marga productivity inputs.
-        variables.jenis_material = 'tanah_biasa';
-        variables.jarak_buang_km = 5;
-        variables.jarak_quarry_km = 25;
-        variables.kondisi_jalan = 'sedang';
-        variables.faktor_efisiensi = 0.83;
-        variables.kondisi_operasi = 'normal';
+      if (!needsHsd) {
+        const overheadPct = Number(overhead);
+        const profitPct = Number(profit);
+        if (Number.isFinite(overheadPct)) variables.overhead_pct = overheadPct;
+        if (Number.isFinite(profitPct)) variables.profit_pct = profitPct;
       }
       const next = await calculateHspInBrowser({
         bundle,
         item: item.trim(),
         hsd: needsHsd ? hsd : undefined,
-        variables,
+        variables: Object.keys(variables).length > 0 ? variables : undefined,
       });
       setResult(next);
       setStatus('done');
@@ -143,18 +138,25 @@ export function CalculatorApp(): React.JSX.Element {
               </NativeSelect>
             </label>
           )}
-          <div className="grid grid-cols-2 gap-3">
-            <label className="grid gap-2 text-sm">
-              <span className="font-medium">Overhead %</span>
-              <Input inputMode="decimal" onChange={(event) => setOverhead(event.target.value)} value={overhead} />
-            </label>
-            <label className="grid gap-2 text-sm">
-              <span className="font-medium">Profit %</span>
-              <Input inputMode="decimal" onChange={(event) => setProfit(event.target.value)} value={profit} />
-            </label>
-          </div>
+          {!needsHsd && (
+            <div className="grid grid-cols-2 gap-3">
+              <label className="grid gap-2 text-sm">
+                <span className="font-medium">Overhead %</span>
+                <Input inputMode="decimal" onChange={(event) => setOverhead(event.target.value)} value={overhead} />
+              </label>
+              <label className="grid gap-2 text-sm">
+                <span className="font-medium">Profit %</span>
+                <Input inputMode="decimal" onChange={(event) => setProfit(event.target.value)} value={profit} />
+              </label>
+            </div>
+          )}
+          {needsHsd && (
+            <p className="text-xs leading-5 text-muted-foreground">
+              Variabel produktivitas memakai default dari definisi item AHSP (tidak diisi manual di sini).
+            </p>
+          )}
           {focus && (
-            <p className="text-xs text-muted-foreground">Fokus resource dari search: <span className="font-mono">{focus}</span></p>
+            <p className="text-xs text-muted-foreground">Fokus peralatan dari search: <span className="font-mono">{focus}</span></p>
           )}
           <Button disabled={status === 'running'} type="submit">
             {status === 'running' ? 'Menghitung…' : 'Hitung'}
