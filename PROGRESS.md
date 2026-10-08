@@ -84,9 +84,9 @@ Golden tolerance: ε = 0.01 Rp.
 | `@ahs-id/hsd-papua-2025` | HSD Papua Q1 2025 |
 | `@ahs-id/hsd-bm-2022` | Permen PUPR 1/2022 embedded HSD (Bina Marga 2022) |
 | `@ahs-id/cli` | `ahs-id` CLI (`calc-hsp`, `export-rab`, `validate`) |
-| `@ahs-id/engine-registry` | Shared AHSP/HSD registry for CLI + web `/kalkulator` (workspace) |
+| `@ahs-id/engine-registry` | Shared AHSP/HSD registry for CLI + web `/kalkulator` (npm pending DAS-65) |
 
-All published engine/data rows above are on npm. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates in the CLI default path.
+All published engine/data rows above (except engine-registry) are on npm. Bina Marga 2022 uses `@ahs-id/hsd-bm-2022` sewa rates in the CLI default path.
 
 ## Web catalog (DAS-63 / epic DAS-57)
 
@@ -96,3 +96,11 @@ All published engine/data rows above are on npm. Bina Marga 2022 uses `@ahs-id/h
 - [x] AHSP DCKTRP detail `/ahsp/sumber/[sourceId]/[code]/`
 - [x] `@ahs-id/engine-registry` + `/kalkulator`
 - [x] Docs: `docs/web-catalog.md`
+- [x] Production verify (`ahs-id.jenss.me`) — katalog/kalkulator/search manifest live after DAS-63 merge
+
+## Follow-ups
+
+- [ ] **DAS-65** — Hero autocomplete + kalkulator item variables + publish `@ahs-id/engine-registry`
+- [ ] **DAS-66** — Unify `bina-marga-2022` with regional HSD
+- [ ] **DAS-67** — Fill SE Binkon 47/2026 `harga_satuan_ref` where source available
+- [x] Epics DAS-2 / DAS-3 closed (children done); DAS-1 remains open until npm/CLI exit complete

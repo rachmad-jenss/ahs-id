@@ -6,9 +6,13 @@ import { Input } from '@/components/ui/input';
 import { NativeSelect } from '@/components/ui/select';
 import {
   calculateHspInBrowser,
+  defaultsFromItemMeta,
   listCalculatorBundles,
   listCalculatorHsd,
+  loadCalculatorItemMeta,
+  parseCalculatorVariables,
   type CalculatorBundleOption,
+  type CalculatorItemMeta,
 } from '@/lib/calculator';
 
 function formatIdr(value: number): string {
@@ -49,12 +53,20 @@ export function CalculatorApp(): React.JSX.Element {
   const [focus, setFocus] = useState('');
   const [overhead, setOverhead] = useState('10');
   const [profit, setProfit] = useState('5');
+  const [itemVars, setItemVars] = useState<Record<string, string>>({});
+  const [itemMeta, setItemMeta] = useState<CalculatorItemMeta | null>(null);
+  const [metaError, setMetaError] = useState<string | null>(null);
+  const [metaStatus, setMetaStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<HSPResult | null>(null);
 
   const selected: CalculatorBundleOption | undefined = bundles.find((row) => row.name === bundle);
   const needsHsd = selected?.strategy === 'dynamic-bundle';
+  const variableEntries = useMemo(
+    () => Object.entries(itemMeta?.variables ?? {}),
+    [itemMeta],
+  );
 
   useEffect(() => {
     const state = readUrlState();
@@ -78,25 +90,67 @@ export function CalculatorApp(): React.JSX.Element {
     }
   }, [bundle, hsd, selected]);
 
+  useEffect(() => {
+    let cancelled = false;
+    const code = item.trim();
+    // Invalidate immediately so submit cannot use variables from a previous item.
+    setItemMeta(null);
+    setItemVars({});
+    setMetaError(null);
+    if (!code) {
+      setMetaStatus('idle');
+      return;
+    }
+    setMetaStatus('loading');
+
+    const timer = window.setTimeout(() => {
+      void loadCalculatorItemMeta({ bundle, item: code })
+        .then((meta) => {
+          if (cancelled) return;
+          setItemMeta(meta);
+          setItemVars(defaultsFromItemMeta(meta));
+          setOverhead(String(meta.marginDefaults.overhead_pct));
+          setProfit(String(meta.marginDefaults.profit_pct));
+          setMetaStatus('ready');
+        })
+        .catch((err: unknown) => {
+          if (cancelled) return;
+          setItemMeta(null);
+          setItemVars({});
+          setMetaStatus('error');
+          setMetaError(err instanceof Error ? err.message : 'Gagal memuat definisi item');
+        });
+    }, 250);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, [bundle, item]);
+
+  const metaReady =
+    metaStatus === 'ready'
+    && itemMeta !== null
+    && itemMeta.kode_ahsp === item.trim();
+
   /** Run calculation and sync URL state. */
   async function onSubmit(event: SyntheticEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
     setStatus('running');
     setError(null);
-    writeUrlState({ bundle, item: item.trim(), hsd: needsHsd ? hsd : '' });
+    const code = item.trim();
+    writeUrlState({ bundle, item: code, hsd: needsHsd ? hsd : '' });
     try {
-      // Dynamic bundles: pass only engine defaults from the item definition (no injected keys).
-      // Fixed-coefficient: optional margin overrides only.
-      const variables: Record<string, number | string> = {};
-      if (!needsHsd) {
-        const overheadPct = Number(overhead);
-        const profitPct = Number(profit);
-        if (Number.isFinite(overheadPct)) variables.overhead_pct = overheadPct;
-        if (Number.isFinite(profitPct)) variables.profit_pct = profitPct;
+      if (!itemMeta || itemMeta.kode_ahsp !== code) {
+        throw new Error(metaError ?? 'Definisi item belum siap');
       }
+      const variables = parseCalculatorVariables(itemMeta, itemVars, {
+        overhead,
+        profit,
+      });
       const next = await calculateHspInBrowser({
         bundle,
-        item: item.trim(),
+        item: code,
         hsd: needsHsd ? hsd : undefined,
         variables: Object.keys(variables).length > 0 ? variables : undefined,
       });
@@ -127,6 +181,12 @@ export function CalculatorApp(): React.JSX.Element {
             <span className="font-medium">Kode AHSP</span>
             <Input onChange={(event) => setItem(event.target.value)} value={item} />
           </label>
+          {itemMeta && (
+            <p className="text-xs leading-5 text-muted-foreground">{itemMeta.nama}</p>
+          )}
+          {metaStatus === 'error' && metaError && (
+            <p className="text-xs leading-5 text-destructive">{metaError}</p>
+          )}
           {needsHsd && (
             <label className="grid gap-2 text-sm">
               <span className="font-medium">HSD regional</span>
@@ -137,6 +197,45 @@ export function CalculatorApp(): React.JSX.Element {
                 })}
               </NativeSelect>
             </label>
+          )}
+          {needsHsd && variableEntries.length > 0 && (
+            <div className="grid gap-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                Variabel item
+              </p>
+              {variableEntries.map(([key, def]) => (
+                <label className="grid gap-2 text-sm" key={key}>
+                  <span className="font-medium">
+                    {def.label}
+                    {def.satuan ? ` (${def.satuan})` : ''}
+                    {def.required ? ' *' : ''}
+                  </span>
+                  {def.tipe === 'enum' ? (
+                    <NativeSelect
+                      onChange={(event) => setItemVars((prev) => ({ ...prev, [key]: event.target.value }))}
+                      value={itemVars[key] ?? ''}
+                    >
+                      <option value="">Pilih…</option>
+                      {(def.options ?? []).map((option) => (
+                        <option key={option} value={option}>{option}</option>
+                      ))}
+                    </NativeSelect>
+                  ) : (
+                    <Input
+                      inputMode="decimal"
+                      onChange={(event) => setItemVars((prev) => ({ ...prev, [key]: event.target.value }))}
+                      placeholder={def.default === null ? 'Wajib diisi' : undefined}
+                      value={itemVars[key] ?? ''}
+                    />
+                  )}
+                </label>
+              ))}
+            </div>
+          )}
+          {needsHsd && metaStatus === 'ready' && variableEntries.length === 0 && (
+            <p className="text-xs leading-5 text-muted-foreground">
+              Tidak ada variabel yang memengaruhi HSP untuk item ini (biasanya koefisien tabel).
+            </p>
           )}
           {!needsHsd && (
             <div className="grid grid-cols-2 gap-3">
@@ -150,16 +249,11 @@ export function CalculatorApp(): React.JSX.Element {
               </label>
             </div>
           )}
-          {needsHsd && (
-            <p className="text-xs leading-5 text-muted-foreground">
-              Variabel produktivitas memakai default dari definisi item AHSP (tidak diisi manual di sini).
-            </p>
-          )}
           {focus && (
             <p className="text-xs text-muted-foreground">Fokus peralatan dari search: <span className="font-mono">{focus}</span></p>
           )}
-          <Button disabled={status === 'running'} type="submit">
-            {status === 'running' ? 'Menghitung…' : 'Hitung'}
+          <Button disabled={status === 'running' || !metaReady} type="submit">
+            {status === 'running' ? 'Menghitung…' : !metaReady ? 'Memuat item…' : 'Hitung'}
           </Button>
         </div>
         <p className="mt-5 text-xs leading-5 text-muted-foreground">
