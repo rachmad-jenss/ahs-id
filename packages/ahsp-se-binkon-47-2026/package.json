@@ -17,12 +17,16 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "clean": "node ../../scripts/clean.mjs dist .turbo *.tsbuildinfo"
   },
   "dependencies": {
     "@ahs-id/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
   },
   "license": "MIT",
   "repository": {

@@ -20,6 +20,7 @@
     "national:se47-validate-all": "node scripts/run-se47-validate-all.mjs",
     "build:web-search-index": "node scripts/build-web-search-index.mjs",
     "promote:docling-se47": "node scripts/promote-docling-to-packages.mjs",
+    "national:se47-enrich-dcktrp-prices": "node scripts/enrich-se47-prices-from-dcktrp.mjs",
     "national:se47-enrich-pages": "node scripts/run-se47-enrich-pages.mjs",
     "national:se47-patch-hsp-gaps": "node scripts/run-se47-patch-hsp-gaps.mjs",
     "national:se47-reextract-bm-gaps": "node scripts/run-se47-reextract-bm-gaps.mjs",

@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-10-08T11:05:14.573Z",
+  "portalItems": 194,
+  "bidang": {
+    "sda": {
+      "items": 1151,
+      "matched": 0,
+      "componentsFilled": 0,
+      "componentsSkipped": 0,
+      "samples": []
+    },
+    "bina-marga": {
+      "items": 1041,
+      "matched": 0,
+      "componentsFilled": 0,
+      "componentsSkipped": 0,
+      "samples": []
+    },
+    "cipta-karya": {
+      "items": 1289,
+      "matched": 63,
+      "componentsFilled": 313,
+      "componentsSkipped": 73,
+      "samples": [
+        "1.6.46",
+        "1.6.47",
+        "1.6.48",
+        "3.10.1.4",
+        "3.10.2.1"
+      ]
+    }
+  }
+}

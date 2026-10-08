@@ -5524,7 +5524,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0595,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13637.1,
         "koef_sumber": "tabel"
       },
       {
@@ -5532,7 +5532,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.0595,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 14978,
         "koef_sumber": "tabel"
       },
       {
@@ -5540,7 +5540,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1663.43,
         "koef_sumber": "tabel"
       }
     ],
@@ -5577,8 +5577,10 @@
     },
     "catatan_umum": [
       "kode_link_method=batch_sequential",
-      "table_index=321"
-    ]
+      "table_index=321",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 34820.32
   },
   {
     "kode_ahsp": "1.6.47",
@@ -5596,7 +5598,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.286,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 65549.77,
         "koef_sumber": "tabel"
       },
       {
@@ -5604,7 +5606,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.286,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 71995,
         "koef_sumber": "tabel"
       },
       {
@@ -5612,7 +5614,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.029,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8039.93,
         "koef_sumber": "tabel"
       }
     ],
@@ -5649,8 +5651,10 @@
     },
     "catatan_umum": [
       "kode_link_method=batch_sequential",
-      "table_index=322"
-    ]
+      "table_index=322",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 167422.41
   },
   {
     "kode_ahsp": "1.6.48",
@@ -5668,7 +5672,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 333,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 305516.94,
         "koef_sumber": "tabel"
       },
       {
@@ -5676,7 +5680,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 333,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 83827,
         "koef_sumber": "tabel"
       },
       {
@@ -5684,7 +5688,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 67,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18575.01,
         "koef_sumber": "tabel"
       }
     ],
@@ -5721,8 +5725,10 @@
     },
     "catatan_umum": [
       "kode_link_method=batch_sequential",
-      "table_index=323"
-    ]
+      "table_index=323",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 469106.79
   },
   {
     "kode_ahsp": "1.6.5",
@@ -15947,7 +15953,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 91678,
         "koef_sumber": "tabel"
       },
       {
@@ -15955,7 +15961,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 48222.4,
         "koef_sumber": "tabel"
       },
       {
@@ -15963,7 +15969,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 5240.58,
         "koef_sumber": "tabel"
       },
       {
@@ -15971,7 +15977,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1940.67,
         "koef_sumber": "tabel"
       }
     ],
@@ -15989,7 +15995,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13950,
         "koef_sumber": "tabel"
       },
       {
@@ -15997,7 +16003,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16033,8 +16039,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=773"
-    ]
+      "table_index=773",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 359756.4
   },
   {
     "kode_ahsp": "3.10.2",
@@ -16165,7 +16173,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -16173,7 +16181,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 120556,
         "koef_sumber": "tabel"
       },
       {
@@ -16181,7 +16189,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13101.45,
         "koef_sumber": "tabel"
       },
       {
@@ -16189,7 +16197,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4629.89,
         "koef_sumber": "tabel"
       }
     ],
@@ -16207,7 +16215,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13950,
         "koef_sumber": "tabel"
       },
       {
@@ -16215,7 +16223,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16251,8 +16259,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=774"
-    ]
+      "table_index=774",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 448997.19
   },
   {
     "kode_ahsp": "3.10.2.2",
@@ -16270,7 +16280,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.9,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 206275.5,
         "koef_sumber": "tabel"
       },
       {
@@ -16278,7 +16288,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.45,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 108500.4,
         "koef_sumber": "tabel"
       },
       {
@@ -16286,7 +16296,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11791.31,
         "koef_sumber": "tabel"
       },
       {
@@ -16294,7 +16304,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4158.59,
         "koef_sumber": "tabel"
       }
     ],
@@ -16312,7 +16322,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13950,
         "koef_sumber": "tabel"
       },
       {
@@ -16320,7 +16330,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16356,8 +16366,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=775"
-    ]
+      "table_index=775",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 406727.17
   },
   {
     "kode_ahsp": "3.10.2.4",
@@ -16375,7 +16387,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -16383,7 +16395,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 120556,
         "koef_sumber": "tabel"
       },
       {
@@ -16391,7 +16403,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13101.45,
         "koef_sumber": "tabel"
       },
       {
@@ -16399,7 +16411,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4629.89,
         "koef_sumber": "tabel"
       }
     ],
@@ -16417,7 +16429,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 12.44,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13950,
         "koef_sumber": "tabel"
       },
       {
@@ -16425,7 +16437,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.025,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9000,
         "koef_sumber": "tabel"
       },
       {
@@ -16469,8 +16481,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=780"
-    ]
+      "table_index=780",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 448997.19
   },
   {
     "kode_ahsp": "3.10.3",
@@ -16706,7 +16720,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 160436.5,
         "koef_sumber": "tabel"
       },
       {
@@ -16714,7 +16728,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 84389.2,
         "koef_sumber": "tabel"
       },
       {
@@ -16722,7 +16736,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9171.02,
         "koef_sumber": "tabel"
       },
       {
@@ -16730,7 +16744,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3326.87,
         "koef_sumber": "tabel"
       }
     ],
@@ -16748,7 +16762,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 11.75,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 17625,
         "koef_sumber": "tabel"
       },
       {
@@ -16756,7 +16770,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.035,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 17500,
         "koef_sumber": "tabel"
       }
     ],
@@ -16792,8 +16806,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=782"
-    ]
+      "table_index=782",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 652565.88
   },
   {
     "kode_ahsp": "3.10.5",
@@ -16924,7 +16940,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 22919.5,
         "koef_sumber": "tabel"
       },
       {
@@ -16932,7 +16948,7 @@
         "nama": "Tukang Kayu",
         "satuan": "OH",
         "koefisien": 0.45,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 12055.6,
         "koef_sumber": "tabel"
       },
       {
@@ -16940,7 +16956,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1310.15,
         "koef_sumber": "tabel"
       },
       {
@@ -16948,7 +16964,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 554.48,
         "koef_sumber": "tabel"
       }
     ],
@@ -17002,8 +17018,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=791"
-    ]
+      "table_index=791",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 266144.19
   },
   {
     "kode_ahsp": "3.10.5.7",
@@ -17021,7 +17039,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 458390,
         "koef_sumber": "tabel"
       },
       {
@@ -17029,7 +17047,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 120556,
         "koef_sumber": "tabel"
       },
       {
@@ -17037,7 +17055,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13101.45,
         "koef_sumber": "tabel"
       },
       {
@@ -17045,7 +17063,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4713.06,
         "koef_sumber": "tabel"
       }
     ],
@@ -17063,7 +17081,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 12.44,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18660,
         "koef_sumber": "tabel"
       },
       {
@@ -17071,7 +17089,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.025,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 12500,
         "koef_sumber": "tabel"
       },
       {
@@ -17079,7 +17097,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.65,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13000,
         "koef_sumber": "tabel"
       },
       {
@@ -17123,8 +17141,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=789"
-    ]
+      "table_index=789",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 2659858.59
   },
   {
     "kode_ahsp": "3.10.6",
@@ -20272,7 +20292,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9855.39,
         "koef_sumber": "tabel"
       },
       {
@@ -20280,7 +20300,7 @@
         "nama": "Tukang Aluminium",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11267.25,
         "koef_sumber": "tabel"
       },
       {
@@ -20288,7 +20308,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0043,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1126.72,
         "koef_sumber": "tabel"
       },
       {
@@ -20296,7 +20316,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0014,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 388.13,
         "koef_sumber": "tabel"
       }
     ],
@@ -20350,8 +20370,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=862"
-    ]
+      "table_index=862",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 89363.61
   },
   {
     "kode_ahsp": "3.13.2",
@@ -30389,7 +30411,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 45839,
         "koef_sumber": "tabel"
       },
       {
@@ -30397,7 +30419,7 @@
         "nama": "Tukang Cat/Pelitur",
         "satuan": "OH",
         "koefisien": 1.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 289334.4,
         "koef_sumber": "tabel"
       },
       {
@@ -30405,7 +30427,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31443.48,
         "koef_sumber": "tabel"
       },
       {
@@ -30413,7 +30435,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11089.56,
         "koef_sumber": "tabel"
       }
     ],
@@ -30431,7 +30453,7 @@
         "nama": "Woodstain",
         "satuan": "kg",
         "koefisien": 0.15,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 15795,
         "koef_sumber": "tabel"
       },
       {
@@ -30439,7 +30461,7 @@
         "nama": "Sanding",
         "satuan": "kg",
         "koefisien": 0.15,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11895,
         "koef_sumber": "tabel"
       },
       {
@@ -30447,7 +30469,7 @@
         "nama": "Melamic",
         "satuan": "kg",
         "koefisien": 0.24,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19080,
         "koef_sumber": "tabel"
       },
       {
@@ -30455,7 +30477,7 @@
         "nama": "Thinner",
         "satuan": "liter",
         "koefisien": 0.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 7020,
         "koef_sumber": "tabel"
       },
       {
@@ -30499,8 +30521,10 @@
     },
     "catatan_umum": [
       "kode_link_method=l01_unique",
-      "table_index=678"
-    ]
+      "table_index=678",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 514678.41
   },
   {
     "kode_ahsp": "3.8.3",
@@ -32367,7 +32391,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0625,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 14324.69,
         "koef_sumber": "tabel"
       },
       {
@@ -32375,7 +32399,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0313,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 7546.81,
         "koef_sumber": "tabel"
       },
       {
@@ -32383,7 +32407,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0031,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 812.29,
         "koef_sumber": "tabel"
       },
       {
@@ -32391,7 +32415,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 277.24,
         "koef_sumber": "tabel"
       }
     ],
@@ -32409,7 +32433,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2556,
         "koef_sumber": "tabel"
       },
       {
@@ -32417,7 +32441,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3760,
         "koef_sumber": "tabel"
       },
       {
@@ -32425,7 +32449,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       }
     ],
@@ -32461,8 +32485,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=709"
-    ]
+      "table_index=709",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 35393.58
   },
   {
     "kode_ahsp": "3.9.4.11",
@@ -32480,7 +32506,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0667,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 15287.31,
         "koef_sumber": "tabel"
       },
       {
@@ -32488,7 +32514,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0333,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8029.03,
         "koef_sumber": "tabel"
       },
       {
@@ -32496,7 +32522,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 864.7,
         "koef_sumber": "tabel"
       },
       {
@@ -32504,7 +32530,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 304.96,
         "koef_sumber": "tabel"
       }
     ],
@@ -32522,7 +32548,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2556,
         "koef_sumber": "tabel"
       },
       {
@@ -32530,7 +32556,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3760,
         "koef_sumber": "tabel"
       },
       {
@@ -32538,7 +32564,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       }
     ],
@@ -32574,8 +32600,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=710"
-    ]
+      "table_index=710",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 37147.3
   },
   {
     "kode_ahsp": "3.9.4.12",
@@ -32593,7 +32621,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 16364.52,
         "koef_sumber": "tabel"
       },
       {
@@ -32601,7 +32629,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0357,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8607.7,
         "koef_sumber": "tabel"
       },
       {
@@ -32609,7 +32637,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0036,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 943.3,
         "koef_sumber": "tabel"
       },
       {
@@ -32617,7 +32645,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 332.69,
         "koef_sumber": "tabel"
       }
     ],
@@ -32635,7 +32663,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2556,
         "koef_sumber": "tabel"
       },
       {
@@ -32643,7 +32671,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3760,
         "koef_sumber": "tabel"
       },
       {
@@ -32651,7 +32679,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       }
     ],
@@ -32687,8 +32715,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=711"
-    ]
+      "table_index=711",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 79423.84
   },
   {
     "kode_ahsp": "3.9.4.8",
@@ -32706,7 +32736,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1538,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 35250.19,
         "koef_sumber": "tabel"
       },
       {
@@ -32714,7 +32744,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0769,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18541.51,
         "koef_sumber": "tabel"
       },
       {
@@ -32722,7 +32752,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0077,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2017.62,
         "koef_sumber": "tabel"
       },
       {
@@ -32730,7 +32760,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0026,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 720.82,
         "koef_sumber": "tabel"
       }
     ],
@@ -32748,7 +32778,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -32756,7 +32786,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -32764,7 +32794,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -32800,8 +32830,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=707"
-    ]
+      "table_index=707",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 138549.86
   },
   {
     "kode_ahsp": "3.9.4.9",
@@ -32819,7 +32851,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 57298.75,
         "koef_sumber": "tabel"
       },
       {
@@ -32827,7 +32859,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0833,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20084.63,
         "koef_sumber": "tabel"
       },
       {
@@ -32835,7 +32867,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0083,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2174.84,
         "koef_sumber": "tabel"
       },
       {
@@ -32843,7 +32875,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0028,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 776.27,
         "koef_sumber": "tabel"
       }
     ],
@@ -32861,7 +32893,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -32869,7 +32901,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -32877,7 +32909,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -32913,8 +32945,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=708"
-    ]
+      "table_index=708",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 358811.49
   },
   {
     "kode_ahsp": "3.9.5",
@@ -33949,7 +33983,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3333,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 76390.69,
         "koef_sumber": "tabel"
       },
       {
@@ -33957,7 +33991,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.1667,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 40193.37,
         "koef_sumber": "tabel"
       },
       {
@@ -33965,7 +33999,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4375.88,
         "koef_sumber": "tabel"
       },
       {
@@ -33973,7 +34007,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0056,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1552.54,
         "koef_sumber": "tabel"
       }
     ],
@@ -33991,7 +34025,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -33999,7 +34033,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       },
       {
@@ -34007,7 +34041,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34043,8 +34077,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=728"
-    ]
+      "table_index=728",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 866479.55
   },
   {
     "kode_ahsp": "3.9.7.3",
@@ -34062,7 +34098,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 160436.5,
         "koef_sumber": "tabel"
       },
       {
@@ -34070,7 +34106,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 84389.2,
         "koef_sumber": "tabel"
       },
       {
@@ -34078,7 +34114,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9171.02,
         "koef_sumber": "tabel"
       },
       {
@@ -34086,7 +34122,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0117,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3243.7,
         "koef_sumber": "tabel"
       }
     ],
@@ -34104,7 +34140,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -34112,7 +34148,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       },
       {
@@ -34120,7 +34156,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34156,8 +34192,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=730"
-    ]
+      "table_index=730",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 1021416.68
   },
   {
     "kode_ahsp": "3.9.7.4",
@@ -34175,7 +34213,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 160436.5,
         "koef_sumber": "tabel"
       },
       {
@@ -34183,7 +34221,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 84389.2,
         "koef_sumber": "tabel"
       },
       {
@@ -34191,7 +34229,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9171.02,
         "koef_sumber": "tabel"
       },
       {
@@ -34199,7 +34237,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0117,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3243.7,
         "koef_sumber": "tabel"
       }
     ],
@@ -34217,7 +34255,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -34225,7 +34263,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       },
       {
@@ -34233,7 +34271,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34269,8 +34307,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=731"
-    ]
+      "table_index=731",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 1021416.68
   },
   {
     "kode_ahsp": "3.9.8",
@@ -34401,7 +34441,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1429,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 32751.97,
         "koef_sumber": "tabel"
       },
       {
@@ -34409,7 +34449,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 17215.4,
         "koef_sumber": "tabel"
       },
       {
@@ -34417,7 +34457,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0071,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1860.41,
         "koef_sumber": "tabel"
       },
       {
@@ -34425,7 +34465,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0024,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 665.37,
         "koef_sumber": "tabel"
       }
     ],
@@ -34443,7 +34483,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -34451,7 +34491,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -34459,7 +34499,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -34495,8 +34535,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=744"
-    ]
+      "table_index=744",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 215419.78
   },
   {
     "kode_ahsp": "3.9.8.13",
@@ -34740,7 +34782,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 16364.52,
         "koef_sumber": "tabel"
       },
       {
@@ -34748,7 +34790,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0357,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8607.7,
         "koef_sumber": "tabel"
       },
       {
@@ -34756,7 +34798,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0036,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 943.3,
         "koef_sumber": "tabel"
       },
       {
@@ -34764,7 +34806,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 332.69,
         "koef_sumber": "tabel"
       }
     ],
@@ -34782,7 +34824,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2556,
         "koef_sumber": "tabel"
       },
       {
@@ -34790,7 +34832,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3760,
         "koef_sumber": "tabel"
       },
       {
@@ -34798,7 +34840,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       }
     ],
@@ -34834,8 +34876,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=753"
-    ]
+      "table_index=753",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 69361.34
   },
   {
     "kode_ahsp": "3.9.8.3",
@@ -34853,7 +34897,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1429,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 32751.97,
         "koef_sumber": "tabel"
       },
       {
@@ -34861,7 +34905,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 17215.4,
         "koef_sumber": "tabel"
       },
       {
@@ -34869,7 +34913,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0071,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1860.41,
         "koef_sumber": "tabel"
       },
       {
@@ -34877,7 +34921,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0024,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 665.37,
         "koef_sumber": "tabel"
       }
     ],
@@ -34895,7 +34939,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -34903,7 +34947,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -34911,7 +34955,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -34947,8 +34991,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=736"
-    ]
+      "table_index=736",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 288618.26
   },
   {
     "kode_ahsp": "3.9.8.5",
@@ -34966,7 +35012,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1538,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 35250.19,
         "koef_sumber": "tabel"
       },
       {
@@ -34974,7 +35020,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0769,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18541.51,
         "koef_sumber": "tabel"
       },
       {
@@ -34982,7 +35028,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0077,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2017.62,
         "koef_sumber": "tabel"
       },
       {
@@ -34990,7 +35036,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0026,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 720.82,
         "koef_sumber": "tabel"
       }
     ],
@@ -35008,7 +35054,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -35016,7 +35062,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -35024,7 +35070,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -35060,8 +35106,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=738"
-    ]
+      "table_index=738",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 355906.07
   },
   {
     "kode_ahsp": "3.9.8.7",
@@ -35079,7 +35127,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -35087,7 +35135,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 120556,
         "koef_sumber": "tabel"
       },
       {
@@ -35095,7 +35143,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13101.45,
         "koef_sumber": "tabel"
       },
       {
@@ -35103,7 +35151,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4629.89,
         "koef_sumber": "tabel"
       }
     ],
@@ -35121,7 +35169,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20448,
         "koef_sumber": "tabel"
       },
       {
@@ -35129,7 +35177,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 30000,
         "koef_sumber": "tabel"
       },
       {
@@ -35137,7 +35185,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13500,
         "koef_sumber": "tabel"
       }
     ],
@@ -35173,8 +35221,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=740"
-    ]
+      "table_index=740",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 679287.62
   },
   {
     "kode_ahsp": "3.9.9",
@@ -35305,7 +35355,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 27503.4,
         "koef_sumber": "tabel"
       },
       {
@@ -35313,7 +35363,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 28933.44,
         "koef_sumber": "tabel"
       },
       {
@@ -35321,7 +35371,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3144.35,
         "koef_sumber": "tabel"
       },
       {
@@ -35329,7 +35379,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1108.96,
         "koef_sumber": "tabel"
       }
     ],
@@ -35383,8 +35433,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=759"
-    ]
+      "table_index=759",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 161353.22
   },
   {
     "kode_ahsp": "3.9.9.4",
@@ -35402,7 +35454,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 45839,
         "koef_sumber": "tabel"
       },
       {
@@ -35410,7 +35462,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 24111.2,
         "koef_sumber": "tabel"
       },
       {
@@ -35418,7 +35470,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2620.29,
         "koef_sumber": "tabel"
       },
       {
@@ -35426,7 +35478,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 914.89,
         "koef_sumber": "tabel"
       }
     ],
@@ -35444,7 +35496,7 @@
         "nama": "Lem Kayu",
         "satuan": "kg",
         "koefisien": 0.6,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 27000,
         "koef_sumber": "tabel"
       }
     ],
@@ -35480,8 +35532,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=758"
-    ]
+      "table_index=758",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 767608.19
   },
   {
     "kode_ahsp": "30.30.3",
@@ -68203,7 +68257,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 5500.68,
         "koef_sumber": "tabel"
       },
       {
@@ -68211,7 +68265,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10069,
         "koef_sumber": "tabel"
       },
       {
@@ -68219,7 +68273,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1048.12,
         "koef_sumber": "tabel"
       },
       {
@@ -68227,7 +68281,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 277.24,
         "koef_sumber": "tabel"
       }
     ],
@@ -68273,8 +68327,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1369"
-    ]
+      "table_index=1369",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 92166.79
   },
   {
     "kode_ahsp": "5.1.1.7.1",
@@ -69611,7 +69667,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.205,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 46984.98,
         "koef_sumber": "tabel"
       },
       {
@@ -69619,7 +69675,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.342,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 86092,
         "koef_sumber": "tabel"
       },
       {
@@ -69627,7 +69683,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.034,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8908.99,
         "koef_sumber": "tabel"
       },
       {
@@ -69635,7 +69691,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3049.63,
         "koef_sumber": "tabel"
       }
     ],
@@ -69661,7 +69717,7 @@
         "nama": "T Dus",
         "satuan": "buah",
         "koefisien": 1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 6400,
         "koef_sumber": "tabel"
       },
       {
@@ -69677,7 +69733,7 @@
         "nama": "Klem 20 mm",
         "satuan": "buah",
         "koefisien": 8,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 6720,
         "koef_sumber": "tabel"
       },
       {
@@ -69745,8 +69801,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1559"
-    ]
+      "table_index=1559",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 711344.69
   },
   {
     "kode_ahsp": "5.1.5.15",
@@ -69853,7 +69911,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 771,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 5959.07,
         "koef_sumber": "tabel"
       },
       {
@@ -69861,7 +69919,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 1.288,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11076,
         "koef_sumber": "tabel"
       },
       {
@@ -69869,7 +69927,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.129,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1048.12,
         "koef_sumber": "tabel"
       },
       {
@@ -69877,7 +69935,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 277.24,
         "koef_sumber": "tabel"
       }
     ],
@@ -69923,8 +69981,10 @@
     },
     "catatan_umum": [
       "kode_link_method=batch_sequential",
-      "table_index=1580"
-    ]
+      "table_index=1580",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 81834.49
   },
   {
     "kode_ahsp": "5.1.5.17",
@@ -70387,7 +70447,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 145768.02,
         "koef_sumber": "tabel"
       },
       {
@@ -70395,7 +70455,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 1.062,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 267339,
         "koef_sumber": "tabel"
       },
       {
@@ -70403,7 +70463,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.106,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 27775.07,
         "koef_sumber": "tabel"
       },
       {
@@ -70411,7 +70471,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 9703.37,
         "koef_sumber": "tabel"
       }
     ],
@@ -70457,8 +70517,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1566"
-    ]
+      "table_index=1566",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 1508323.28
   },
   {
     "kode_ahsp": "5.1.8",
@@ -70621,7 +70683,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 4,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 916780,
         "koef_sumber": "tabel"
       },
       {
@@ -70629,7 +70691,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 503464,
         "koef_sumber": "tabel"
       },
       {
@@ -70637,7 +70699,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 52405.8,
         "koef_sumber": "tabel"
       },
       {
@@ -70645,7 +70707,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18575.01,
         "koef_sumber": "tabel"
       }
     ],
@@ -70663,7 +70725,7 @@
         "nama": "Terminal Busbar 300 x 50 x 5 mm",
         "satuan": "buah",
         "koefisien": 1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 302500,
         "koef_sumber": "tabel"
       },
       {
@@ -70695,7 +70757,7 @@
         "nama": "Kabel Skun 95 mm2",
         "satuan": "m",
         "koefisien": 4.4,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 123200,
         "koef_sumber": "tabel"
       },
       {
@@ -70703,7 +70765,7 @@
         "nama": "Rod Coupling",
         "satuan": "buah",
         "koefisien": 6,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 420000,
         "koef_sumber": "tabel"
       },
       {
@@ -70747,8 +70809,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1568"
-    ]
+      "table_index=1568",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 13741153.18
   },
   {
     "kode_ahsp": "5.1.9",
@@ -76191,7 +76255,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 14668.48,
         "koef_sumber": "tabel"
       },
       {
@@ -76199,7 +76263,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.107,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 26935,
         "koef_sumber": "tabel"
       },
       {
@@ -76207,7 +76271,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2882.32,
         "koef_sumber": "tabel"
       },
       {
@@ -76215,7 +76279,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1108.96,
         "koef_sumber": "tabel"
       }
     ],
@@ -76261,8 +76325,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1655"
-    ]
+      "table_index=1655",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 290253.97
   },
   {
     "kode_ahsp": "5.3.1.56",
@@ -76927,7 +76993,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 14668.48,
         "koef_sumber": "tabel"
       },
       {
@@ -76935,7 +77001,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.107,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 26935,
         "koef_sumber": "tabel"
       },
       {
@@ -76943,7 +77009,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2882.32,
         "koef_sumber": "tabel"
       },
       {
@@ -76951,7 +77017,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1108.96,
         "koef_sumber": "tabel"
       }
     ],
@@ -76997,8 +77063,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1699"
-    ]
+      "table_index=1699",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 204233.97
   },
   {
     "kode_ahsp": "5.3.1.72",
@@ -79674,7 +79742,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.381,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 87323.3,
         "koef_sumber": "tabel"
       },
       {
@@ -79682,7 +79750,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 160102,
         "koef_sumber": "tabel"
       },
       {
@@ -79690,7 +79758,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 16769.86,
         "koef_sumber": "tabel"
       },
       {
@@ -79698,7 +79766,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.021,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 582.2,
         "koef_sumber": "tabel"
       }
     ],
@@ -79744,8 +79812,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1743"
-    ]
+      "table_index=1743",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 6776693.96
   },
   {
     "kode_ahsp": "5.4.2.15",
@@ -79763,7 +79833,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.381,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 87323.3,
         "koef_sumber": "tabel"
       },
       {
@@ -79771,7 +79841,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 160102,
         "koef_sumber": "tabel"
       },
       {
@@ -79779,7 +79849,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 16769.86,
         "koef_sumber": "tabel"
       },
       {
@@ -79787,7 +79857,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.021,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 582.2,
         "koef_sumber": "tabel"
       }
     ],
@@ -79833,8 +79903,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1747"
-    ]
+      "table_index=1747",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 3564743.96
   },
   {
     "kode_ahsp": "5.4.2.16",
@@ -80127,7 +80199,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 57298.75,
         "koef_sumber": "tabel"
       },
       {
@@ -80135,7 +80207,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.418,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 105224,
         "koef_sumber": "tabel"
       },
       {
@@ -80143,7 +80215,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11005.22,
         "koef_sumber": "tabel"
       },
       {
@@ -80151,7 +80223,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3881.35,
         "koef_sumber": "tabel"
       }
     ],
@@ -80197,8 +80269,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1726"
-    ]
+      "table_index=1726",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 3061077.26
   },
   {
     "kode_ahsp": "5.4.2.7",
@@ -82042,7 +82116,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 250,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8709.41,
         "koef_sumber": "tabel"
       },
       {
@@ -82050,7 +82124,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 418,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 16110.85,
         "koef_sumber": "tabel"
       },
       {
@@ -82058,7 +82132,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1572.17,
         "koef_sumber": "tabel"
       },
       {
@@ -82066,7 +82140,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 554.48,
         "koef_sumber": "tabel"
       }
     ],
@@ -82112,8 +82186,10 @@
     },
     "catatan_umum": [
       "kode_link_method=batch_sequential",
-      "table_index=1805"
-    ]
+      "table_index=1805",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 4716088.95
   },
   {
     "kode_ahsp": "5.4.5.3",
@@ -82939,7 +83015,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.205,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 46984.98,
         "koef_sumber": "tabel"
       },
       {
@@ -82947,7 +83023,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.342,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 86092,
         "koef_sumber": "tabel"
       },
       {
@@ -82955,7 +83031,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.034,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 8908.99,
         "koef_sumber": "tabel"
       },
       {
@@ -82963,7 +83039,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3049.63,
         "koef_sumber": "tabel"
       }
     ],
@@ -83000,8 +83076,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1811"
-    ]
+      "table_index=1811",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 536722.94
   },
   {
     "kode_ahsp": "5.4.8",
@@ -83561,7 +83639,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 204671.14,
         "koef_sumber": "tabel"
       },
       {
@@ -83569,7 +83647,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 375332.41,
         "koef_sumber": "tabel"
       },
       {
@@ -83577,7 +83655,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 39042.32,
         "koef_sumber": "tabel"
       },
       {
@@ -83585,7 +83663,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13861.95,
         "koef_sumber": "tabel"
       }
     ],
@@ -83631,8 +83709,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1826"
-    ]
+      "table_index=1826",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 9556278.99
   },
   {
     "kode_ahsp": "5.5.1.11",
@@ -83650,7 +83730,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 289702.48,
         "koef_sumber": "tabel"
       },
       {
@@ -83658,7 +83738,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 531406.25,
         "koef_sumber": "tabel"
       },
       {
@@ -83666,7 +83746,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 55314.32,
         "koef_sumber": "tabel"
       },
       {
@@ -83674,7 +83754,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19406.73,
         "koef_sumber": "tabel"
       }
     ],
@@ -83720,8 +83800,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1830"
-    ]
+      "table_index=1830",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 10011704.25
   },
   {
     "kode_ahsp": "5.5.1.12",
@@ -83739,7 +83821,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 289794.16,
         "koef_sumber": "tabel"
       },
       {
@@ -83747,7 +83829,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 531406.25,
         "koef_sumber": "tabel"
       },
       {
@@ -83755,7 +83837,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 55288.12,
         "koef_sumber": "tabel"
       },
       {
@@ -83763,7 +83845,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19406.73,
         "koef_sumber": "tabel"
       }
     ],
@@ -83809,8 +83891,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1831"
-    ]
+      "table_index=1831",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 28745164.55
   },
   {
     "kode_ahsp": "5.5.1.14",
@@ -83828,7 +83912,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 289702.48,
         "koef_sumber": "tabel"
       },
       {
@@ -83836,7 +83920,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 531406.25,
         "koef_sumber": "tabel"
       },
       {
@@ -83844,7 +83928,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 55288.12,
         "koef_sumber": "tabel"
       },
       {
@@ -83852,7 +83936,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19406.73,
         "koef_sumber": "tabel"
       }
     ],
@@ -83898,8 +83982,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1827"
-    ]
+      "table_index=1827",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 30085959.12
   },
   {
     "kode_ahsp": "5.5.1.15",
@@ -83917,7 +84003,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 289702.48,
         "koef_sumber": "tabel"
       },
       {
@@ -83925,7 +84011,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 531406.25,
         "koef_sumber": "tabel"
       },
       {
@@ -83933,7 +84019,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 55314.32,
         "koef_sumber": "tabel"
       },
       {
@@ -83941,7 +84027,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19406.73,
         "koef_sumber": "tabel"
       }
     ],
@@ -83987,8 +84073,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1828"
-    ]
+      "table_index=1828",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 30085989.25
   },
   {
     "kode_ahsp": "5.5.1.17",
@@ -84006,7 +84094,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2.024,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 463890.68,
         "koef_sumber": "tabel"
       },
       {
@@ -84014,7 +84102,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 3.38,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 850854.16,
         "koef_sumber": "tabel"
       },
       {
@@ -84022,7 +84110,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.338,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 88565.8,
         "koef_sumber": "tabel"
       },
       {
@@ -84030,7 +84118,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.113,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31328.01,
         "koef_sumber": "tabel"
       }
     ],
@@ -84076,8 +84164,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1832"
-    ]
+      "table_index=1832",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 73222269.45
   },
   {
     "kode_ahsp": "5.5.1.19",
@@ -84184,7 +84274,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 204671.14,
         "koef_sumber": "tabel"
       },
       {
@@ -84192,7 +84282,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 375332,
         "koef_sumber": "tabel"
       },
       {
@@ -84200,7 +84290,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 39042.32,
         "koef_sumber": "tabel"
       },
       {
@@ -84208,7 +84298,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13861.95,
         "koef_sumber": "tabel"
       }
     ],
@@ -84254,8 +84344,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1819"
-    ]
+      "table_index=1819",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 6610093.52
   },
   {
     "kode_ahsp": "5.5.1.25",
@@ -84629,7 +84721,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 204671.14,
         "koef_sumber": "tabel"
       },
       {
@@ -84637,7 +84729,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 375332,
         "koef_sumber": "tabel"
       },
       {
@@ -84645,7 +84737,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 39042.32,
         "koef_sumber": "tabel"
       },
       {
@@ -84653,7 +84745,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 13861.95,
         "koef_sumber": "tabel"
       }
     ],
@@ -84699,8 +84791,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1820"
-    ]
+      "table_index=1820",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 8823843.52
   },
   {
     "kode_ahsp": "5.5.1.33",
@@ -84807,7 +84901,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 5500.68,
         "koef_sumber": "tabel"
       },
       {
@@ -84815,7 +84909,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10069,
         "koef_sumber": "tabel"
       },
       {
@@ -84823,7 +84917,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1048.12,
         "koef_sumber": "tabel"
       },
       {
@@ -84831,7 +84925,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 277.24,
         "koef_sumber": "tabel"
       }
     ],
@@ -84877,8 +84971,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1825"
-    ]
+      "table_index=1825",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 788733.3
   },
   {
     "kode_ahsp": "5.5.2",
@@ -89472,7 +89568,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.09,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20627.55,
         "koef_sumber": "tabel"
       },
       {
@@ -89480,7 +89576,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.151,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 36407.91,
         "koef_sumber": "tabel"
       },
       {
@@ -89488,7 +89584,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3930.44,
         "koef_sumber": "tabel"
       },
       {
@@ -89496,7 +89592,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1386.2,
         "koef_sumber": "tabel"
       }
     ],
@@ -89542,8 +89638,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1951"
-    ]
+      "table_index=1951",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 451204.91
   },
   {
     "kode_ahsp": "5.6.1",
@@ -89658,7 +89756,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.512,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 117347.84,
         "koef_sumber": "tabel"
       },
       {
@@ -89666,7 +89764,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.855,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 195961.73,
         "koef_sumber": "tabel"
       },
       {
@@ -89674,7 +89772,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.085,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 22272.47,
         "koef_sumber": "tabel"
       },
       {
@@ -89682,7 +89780,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.028,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 7762.69,
         "koef_sumber": "tabel"
       }
     ],
@@ -89728,8 +89826,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=1964"
-    ]
+      "table_index=1964",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 30759446.43
   },
   {
     "kode_ahsp": "5.6.1.10",
@@ -91664,7 +91764,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 167083.16,
         "koef_sumber": "tabel"
       },
       {
@@ -91672,7 +91772,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 278930.32,
         "koef_sumber": "tabel"
       },
       {
@@ -91680,7 +91780,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31967.54,
         "koef_sumber": "tabel"
       },
       {
@@ -91688,7 +91788,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11366.8,
         "koef_sumber": "tabel"
       }
     ],
@@ -91734,8 +91834,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2028"
-    ]
+      "table_index=2028",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 48862749.98
   },
   {
     "kode_ahsp": "6.1.2.12",
@@ -91753,7 +91855,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 167083.16,
         "koef_sumber": "tabel"
       },
       {
@@ -91761,7 +91863,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 278930.32,
         "koef_sumber": "tabel"
       },
       {
@@ -91769,7 +91871,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31967.54,
         "koef_sumber": "tabel"
       },
       {
@@ -91777,7 +91879,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11366.8,
         "koef_sumber": "tabel"
       }
     ],
@@ -91823,8 +91925,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2020"
-    ]
+      "table_index=2020",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 39806499.98
   },
   {
     "kode_ahsp": "6.1.2.13",
@@ -91842,7 +91946,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 167083.16,
         "koef_sumber": "tabel"
       },
       {
@@ -91850,7 +91954,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 278930.32,
         "koef_sumber": "tabel"
       },
       {
@@ -91858,7 +91962,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31967.54,
         "koef_sumber": "tabel"
       },
       {
@@ -91866,7 +91970,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11366.8,
         "koef_sumber": "tabel"
       }
     ],
@@ -91912,8 +92016,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2022"
-    ]
+      "table_index=2022",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 41617749.99
   },
   {
     "kode_ahsp": "6.1.2.14",
@@ -91931,7 +92037,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 174875.79,
         "koef_sumber": "tabel"
       },
       {
@@ -91939,7 +92045,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 291994.43,
         "koef_sumber": "tabel"
       },
       {
@@ -91947,7 +92053,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 33277.68,
         "koef_sumber": "tabel"
       },
       {
@@ -91955,7 +92061,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10535.08,
         "koef_sumber": "tabel"
       }
     ],
@@ -92001,8 +92107,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2015"
-    ]
+      "table_index=2015",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 6722535.43
   },
   {
     "kode_ahsp": "6.1.2.15",
@@ -92020,7 +92128,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 174875.79,
         "koef_sumber": "tabel"
       },
       {
@@ -92028,7 +92136,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 291994.43,
         "koef_sumber": "tabel"
       },
       {
@@ -92036,7 +92144,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 33277.68,
         "koef_sumber": "tabel"
       },
       {
@@ -92044,7 +92152,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10535.08,
         "koef_sumber": "tabel"
       }
     ],
@@ -92090,8 +92198,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2016"
-    ]
+      "table_index=2016",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 13237285.43
   },
   {
     "kode_ahsp": "6.1.2.16",
@@ -92109,7 +92219,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 174875.79,
         "koef_sumber": "tabel"
       },
       {
@@ -92117,7 +92227,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 291994.43,
         "koef_sumber": "tabel"
       },
       {
@@ -92125,7 +92235,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 33277.68,
         "koef_sumber": "tabel"
       },
       {
@@ -92133,7 +92243,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10535.08,
         "koef_sumber": "tabel"
       }
     ],
@@ -92143,7 +92253,7 @@
         "nama": "Pompa Centrifugal 120 lpm + Material Bantu dan Aksesoris",
         "satuan": "unit",
         "koefisien": 1.1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 20790000,
         "koef_sumber": "tabel"
       }
     ],
@@ -92179,8 +92289,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2026"
-    ]
+      "table_index=2026",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 24495785.43
   },
   {
     "kode_ahsp": "6.1.2.17",
@@ -92198,7 +92310,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 174875.79,
         "koef_sumber": "tabel"
       },
       {
@@ -92206,7 +92318,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 291994.43,
         "koef_sumber": "tabel"
       },
       {
@@ -92214,7 +92326,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 33277.68,
         "koef_sumber": "tabel"
       },
       {
@@ -92222,7 +92334,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10535.08,
         "koef_sumber": "tabel"
       }
     ],
@@ -92232,7 +92344,7 @@
         "nama": "Pompa Centrifugal 60 lpm + Material Bantu dan Aksesoris",
         "satuan": "unit",
         "koefisien": 1.1,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3960000,
         "koef_sumber": "tabel"
       }
     ],
@@ -92268,8 +92380,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2027"
-    ]
+      "table_index=2027",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 5141285.43
   },
   {
     "kode_ahsp": "6.1.2.9",
@@ -92287,7 +92401,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 174875.79,
         "koef_sumber": "tabel"
       },
       {
@@ -92295,7 +92409,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 291994.43,
         "koef_sumber": "tabel"
       },
       {
@@ -92303,7 +92417,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 33277.68,
         "koef_sumber": "tabel"
       },
       {
@@ -92311,7 +92425,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 10535.08,
         "koef_sumber": "tabel"
       }
     ],
@@ -92357,8 +92471,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2024"
-    ]
+      "table_index=2024",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 7458765.43
   },
   {
     "kode_ahsp": "6.1.3",
@@ -94380,7 +94496,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.069,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 15814.46,
         "koef_sumber": "tabel"
       },
       {
@@ -94388,7 +94504,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.115,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 26357.43,
         "koef_sumber": "tabel"
       },
       {
@@ -94396,7 +94512,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2882.32,
         "koef_sumber": "tabel"
       },
       {
@@ -94404,7 +94520,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.003,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 831.72,
         "koef_sumber": "tabel"
       }
     ],
@@ -94450,8 +94566,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2107"
-    ]
+      "table_index=2107",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 156441.3
   },
   {
     "kode_ahsp": "6.4.2.4",
@@ -94469,7 +94587,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.085,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 19481.58,
         "koef_sumber": "tabel"
       },
       {
@@ -94477,7 +94595,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.143,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 32774.89,
         "koef_sumber": "tabel"
       },
       {
@@ -94485,7 +94603,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 3668.41,
         "koef_sumber": "tabel"
       },
       {
@@ -94493,7 +94611,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1108.96,
         "koef_sumber": "tabel"
       }
     ],
@@ -94539,8 +94657,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2108"
-    ]
+      "table_index=2108",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 202381.4
   },
   {
     "kode_ahsp": "6.4.2.5",
@@ -94558,7 +94678,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.104,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 23836.28,
         "koef_sumber": "tabel"
       },
       {
@@ -94566,7 +94686,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.174,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 39879.93,
         "koef_sumber": "tabel"
       },
       {
@@ -94574,7 +94694,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 4454.49,
         "koef_sumber": "tabel"
       },
       {
@@ -94582,7 +94702,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1386.2,
         "koef_sumber": "tabel"
       }
     ],
@@ -94628,8 +94748,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2109"
-    ]
+      "table_index=2109",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 257665.43
   },
   {
     "kode_ahsp": "6.4.2.6",
@@ -94647,7 +94769,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.138,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 31628.91,
         "koef_sumber": "tabel"
       },
       {
@@ -94655,7 +94777,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.23,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 52714.85,
         "koef_sumber": "tabel"
       },
       {
@@ -94663,7 +94785,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.023,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 6026.67,
         "koef_sumber": "tabel"
       },
       {
@@ -94671,7 +94793,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 1940.67,
         "koef_sumber": "tabel"
       }
     ],
@@ -94717,8 +94839,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2110"
-    ]
+      "table_index=2110",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 320575.27
   },
   {
     "kode_ahsp": "6.4.3",
@@ -99849,7 +99973,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.048,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 11001.36,
         "koef_sumber": "tabel"
       },
       {
@@ -99857,7 +99981,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.08,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 18335.6,
         "koef_sumber": "tabel"
       },
       {
@@ -99865,7 +99989,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 2096.23,
         "koef_sumber": "tabel"
       },
       {
@@ -99873,7 +99997,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 0,
+        "harga_satuan_ref": 554.48,
         "koef_sumber": "tabel"
       }
     ],
@@ -99919,8 +100043,10 @@
     },
     "catatan_umum": [
       "kode_link_method=page_l01_nearest",
-      "table_index=2420"
-    ]
+      "table_index=2420",
+      "harga_satuan_ref komponen diisi dari HSP portal DCKTRP Jakarta (exemplar DKI), bukan kolom harga PDF lampiran nasional."
+    ],
+    "harga_satuan_pekerjaan_ref": 46100.82
   },
   {
     "kode_ahsp": "6.5.25",

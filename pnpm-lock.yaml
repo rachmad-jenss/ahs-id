@@ -198,6 +198,10 @@ importers:
       '@ahs-id/core':
         specifier: workspace:*
         version: link:../core
+    devDependencies:
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9(@types/node@24.19.0)(lightningcss@1.33.0)
 
   packages/bina-marga-2016:
     dependencies:
