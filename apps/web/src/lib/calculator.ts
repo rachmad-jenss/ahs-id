@@ -1,7 +1,6 @@
 import {
   calcHspFixedCoefficient,
   createCalculator,
-  mergeHsdBaseWithRegionalOverlay,
   type FixedCoefficientItem,
   type HSPResult,
   type VariabelDefinition,
@@ -10,6 +9,7 @@ import {
   calculationPackages,
   findPackage,
   hsdPackages,
+  loadResolvedHsdForBundle,
   type PackageRecord,
 } from '@ahs-id/engine-registry';
 
@@ -229,20 +229,10 @@ export async function calculateHspInBrowser(input: {
       if (!pkg.compatibleHsd.includes(hsdName)) {
         throw new Error(`HSD "${hsdName}" tidak kompatibel dengan ${pkg.name}`);
       }
-      const hsdPkg = findPackage(hsdName);
-      if (!hsdPkg || hsdPkg.strategy !== 'hsd-only') {
-        throw new Error(`Unknown HSD "${hsdName}"`);
-      }
-      const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
-      let hsd = hsdMod.hsd;
-      if (input.bundle === 'bina-marga-2022' && hsdName !== 'hsd-bm-2022') {
-        const basePkg = findPackage('hsd-bm-2022');
-        if (!basePkg || basePkg.strategy !== 'hsd-only') {
-          throw new Error('hsd-bm-2022 missing for BM-2022 regional overlay');
-        }
-        const baseMod = await basePkg.loadHsd();
-        hsd = mergeHsdBaseWithRegionalOverlay(baseMod.hsd, hsdMod.hsd);
-      }
+      const [bundleMod, hsd] = await Promise.all([
+        pkg.loadBundle(),
+        loadResolvedHsdForBundle(input.bundle, hsdName),
+      ]);
       const calculator = createCalculator(bundleMod.bundle, hsd);
       return calculator.hitungHSP(input.item, { ...(input.variables ?? {}) });
     }

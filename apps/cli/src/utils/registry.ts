@@ -5,6 +5,7 @@ export {
   calculationPackages,
   findPackage,
   hsdPackages,
+  loadResolvedHsdForBundle,
   packageNames,
   PACKAGES,
   type BundleStrategy,
