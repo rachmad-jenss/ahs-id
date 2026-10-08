@@ -3,6 +3,7 @@ import {
   createCalculator,
   type FixedCoefficientItem,
   type HSPResult,
+  type VariabelDefinition,
 } from '@ahs-id/core';
 import {
   calculationPackages,
@@ -17,6 +18,18 @@ export interface CalculatorBundleOption {
   readonly strategy: 'dynamic-bundle' | 'fixed-coefficient';
   readonly defaultHsd?: string;
   readonly compatibleHsd?: readonly string[];
+}
+
+/** Item metadata used to render kalkulator variable fields. */
+export interface CalculatorItemMeta {
+  readonly kode_ahsp: string;
+  readonly nama: string;
+  readonly strategy: 'dynamic-bundle' | 'fixed-coefficient';
+  readonly variables: Readonly<Record<string, VariabelDefinition>>;
+  readonly marginDefaults: {
+    readonly overhead_pct: number;
+    readonly profit_pct: number;
+  };
 }
 
 export function listCalculatorBundles(): readonly CalculatorBundleOption[] {
@@ -49,6 +62,114 @@ function assertCalcPackage(pkg: PackageRecord | undefined, name: string): CalcPa
     throw new Error(`Unknown calculation bundle "${name}"`);
   }
   return pkg;
+}
+
+/** Load AHSP item variable definitions for the calculator form. */
+export async function loadCalculatorItemMeta(input: {
+  readonly bundle: string;
+  readonly item: string;
+}): Promise<CalculatorItemMeta> {
+  const pkg = assertCalcPackage(findPackage(input.bundle), input.bundle);
+  const code = input.item.trim();
+  if (!code) {
+    throw new Error('Kode AHSP kosong');
+  }
+  switch (pkg.strategy) {
+    case 'dynamic-bundle': {
+      const { bundle } = await pkg.loadBundle();
+      const matches = bundle.ahsp_items.filter((row) => row.kode_ahsp === code);
+      const found = matches[0];
+      if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+      if (matches.length > 1) {
+        throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
+      }
+      return {
+        kode_ahsp: found.kode_ahsp,
+        nama: found.nama,
+        strategy: 'dynamic-bundle',
+        variables: found.variabel,
+        marginDefaults: {
+          overhead_pct: found.margin.overhead_pct.default,
+          profit_pct: found.margin.profit_pct.default,
+        },
+      };
+    }
+    case 'fixed-coefficient': {
+      const loaded = await pkg.loadItems();
+      const matches = loaded.ahspItems.filter((row: FixedCoefficientItem) => row.kode_ahsp === code);
+      const found = matches[0];
+      if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+      if (matches.length > 1) {
+        throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
+      }
+      return {
+        kode_ahsp: found.kode_ahsp,
+        nama: found.nama,
+        strategy: 'fixed-coefficient',
+        variables: {},
+        marginDefaults: {
+          overhead_pct: found.margin.overhead_pct.default,
+          profit_pct: found.margin.profit_pct.default,
+        },
+      };
+    }
+    default: {
+      const unreachable: never = pkg;
+      throw new Error(`Unhandled strategy: ${String(unreachable)}`);
+    }
+  }
+}
+
+/** Seed form values from item variable defaults (skips null defaults). */
+export function defaultsFromItemMeta(meta: CalculatorItemMeta): Record<string, string> {
+  const next: Record<string, string> = {};
+  for (const [key, def] of Object.entries(meta.variables)) {
+    if (def.default === null || def.default === undefined) continue;
+    next[key] = String(def.default);
+  }
+  return next;
+}
+
+/** Parse form strings into typed variabel payload for hitungHSP / fixed margin. */
+export function parseCalculatorVariables(
+  meta: CalculatorItemMeta,
+  raw: Readonly<Record<string, string>>,
+  margin?: { readonly overhead: string; readonly profit: string },
+): Record<string, number | string> {
+  const variables: Record<string, number | string> = {};
+  for (const [key, def] of Object.entries(meta.variables)) {
+    const text = raw[key]?.trim() ?? '';
+    if (!text) continue;
+    if (def.tipe === 'number') {
+      const value = Number(text);
+      if (!Number.isFinite(value)) {
+        throw new Error(`Variabel "${key}" harus angka`);
+      }
+      variables[key] = value;
+      continue;
+    }
+    if (def.tipe === 'enum') {
+      variables[key] = text;
+      continue;
+    }
+    const unreachable: never = def.tipe;
+    throw new Error(`Tipe variabel tidak didukung: ${String(unreachable)}`);
+  }
+  if (meta.strategy === 'fixed-coefficient' && margin) {
+    const overheadText = margin.overhead.trim();
+    const profitText = margin.profit.trim();
+    if (overheadText) {
+      const overheadPct = Number(overheadText);
+      if (!Number.isFinite(overheadPct)) throw new Error('Overhead % harus angka');
+      variables.overhead_pct = overheadPct;
+    }
+    if (profitText) {
+      const profitPct = Number(profitText);
+      if (!Number.isFinite(profitPct)) throw new Error('Profit % harus angka');
+      variables.profit_pct = profitPct;
+    }
+  }
+  return variables;
 }
 
 /** Run HSP calculation for a registry bundle (browser-safe dynamic imports). */
