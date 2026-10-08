@@ -5524,7 +5524,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0595,
-        "harga_satuan_ref": 13637.1,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -5532,7 +5532,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.0595,
-        "harga_satuan_ref": 14978,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -5540,7 +5540,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1663.43,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -5598,7 +5598,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.286,
-        "harga_satuan_ref": 65549.77,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -5606,7 +5606,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.286,
-        "harga_satuan_ref": 71995,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -5614,7 +5614,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.029,
-        "harga_satuan_ref": 8039.93,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -5672,7 +5672,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 333,
-        "harga_satuan_ref": 305516.94,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -5680,7 +5680,7 @@
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 333,
-        "harga_satuan_ref": 83827,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -5688,7 +5688,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 67,
-        "harga_satuan_ref": 18575.01,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -15953,7 +15953,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4,
-        "harga_satuan_ref": 91678,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -15961,7 +15961,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 48222.4,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -15969,7 +15969,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5240.58,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -15977,7 +15977,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 1940.67,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -15995,7 +15995,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 13950,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -16003,7 +16003,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 9000,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16181,7 +16181,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 120556,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -16189,7 +16189,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13101.45,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -16197,7 +16197,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 4629.89,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -16215,7 +16215,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 13950,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -16223,7 +16223,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 9000,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16280,7 +16280,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.9,
-        "harga_satuan_ref": 206275.5,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -16288,7 +16288,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.45,
-        "harga_satuan_ref": 108500.4,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -16296,7 +16296,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 11791.31,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -16304,7 +16304,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -16322,7 +16322,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 13950,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -16330,7 +16330,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 9000,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16395,7 +16395,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 120556,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -16403,7 +16403,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13101.45,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -16411,7 +16411,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 4629.89,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -16429,7 +16429,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 12.44,
-        "harga_satuan_ref": 13950,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -16437,7 +16437,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.025,
-        "harga_satuan_ref": 9000,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       },
       {
@@ -16720,7 +16720,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 160436.5,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -16728,7 +16728,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 84389.2,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -16736,7 +16736,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 9171.02,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -16744,7 +16744,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3326.87,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -16762,7 +16762,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 11.75,
-        "harga_satuan_ref": 17625,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -16770,7 +16770,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.035,
-        "harga_satuan_ref": 17500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -16940,7 +16940,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -16948,7 +16948,7 @@
         "nama": "Tukang Kayu",
         "satuan": "OH",
         "koefisien": 0.45,
-        "harga_satuan_ref": 12055.6,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -16956,7 +16956,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 1310.15,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -16964,7 +16964,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 554.48,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -17039,7 +17039,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 458390,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -17047,7 +17047,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 120556,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -17055,7 +17055,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13101.45,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -17063,7 +17063,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 4713.06,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -17081,7 +17081,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 12.44,
-        "harga_satuan_ref": 18660,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -17089,7 +17089,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.025,
-        "harga_satuan_ref": 12500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       },
       {
@@ -17097,7 +17097,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.65,
-        "harga_satuan_ref": 13000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -20292,7 +20292,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 9855.39,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -20300,7 +20300,7 @@
         "nama": "Tukang Aluminium",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 11267.25,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -20308,7 +20308,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0043,
-        "harga_satuan_ref": 1126.72,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -20316,7 +20316,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0014,
-        "harga_satuan_ref": 388.13,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -30411,7 +30411,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 45839,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -30419,7 +30419,7 @@
         "nama": "Tukang Cat/Pelitur",
         "satuan": "OH",
         "koefisien": 1.2,
-        "harga_satuan_ref": 289334.4,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -30427,7 +30427,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 31443.48,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -30435,7 +30435,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11089.56,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -30453,7 +30453,7 @@
         "nama": "Woodstain",
         "satuan": "kg",
         "koefisien": 0.15,
-        "harga_satuan_ref": 15795,
+        "harga_satuan_ref": 105300,
         "koef_sumber": "tabel"
       },
       {
@@ -30461,7 +30461,7 @@
         "nama": "Sanding",
         "satuan": "kg",
         "koefisien": 0.15,
-        "harga_satuan_ref": 11895,
+        "harga_satuan_ref": 79300,
         "koef_sumber": "tabel"
       },
       {
@@ -30469,7 +30469,7 @@
         "nama": "Melamic",
         "satuan": "kg",
         "koefisien": 0.24,
-        "harga_satuan_ref": 19080,
+        "harga_satuan_ref": 79500,
         "koef_sumber": "tabel"
       },
       {
@@ -30477,7 +30477,7 @@
         "nama": "Thinner",
         "satuan": "liter",
         "koefisien": 0.2,
-        "harga_satuan_ref": 7020,
+        "harga_satuan_ref": 35100,
         "koef_sumber": "tabel"
       },
       {
@@ -32391,7 +32391,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0625,
-        "harga_satuan_ref": 14324.69,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -32399,7 +32399,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0313,
-        "harga_satuan_ref": 7546.81,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -32407,7 +32407,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0031,
-        "harga_satuan_ref": 812.29,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -32415,7 +32415,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -32433,7 +32433,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 2556,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -32441,7 +32441,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 3760,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -32449,7 +32449,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -32506,7 +32506,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0667,
-        "harga_satuan_ref": 15287.31,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -32514,7 +32514,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0333,
-        "harga_satuan_ref": 8029.03,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -32522,7 +32522,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 864.7,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -32530,7 +32530,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0011,
-        "harga_satuan_ref": 304.96,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -32548,7 +32548,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 2556,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -32556,7 +32556,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 3760,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -32564,7 +32564,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -32621,7 +32621,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 16364.52,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -32629,7 +32629,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0357,
-        "harga_satuan_ref": 8607.7,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -32637,7 +32637,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0036,
-        "harga_satuan_ref": 943.3,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -32645,7 +32645,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 332.69,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -32663,7 +32663,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 2556,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -32671,7 +32671,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 3760,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -32679,7 +32679,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -32736,7 +32736,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1538,
-        "harga_satuan_ref": 35250.19,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -32744,7 +32744,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0769,
-        "harga_satuan_ref": 18541.51,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -32752,7 +32752,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0077,
-        "harga_satuan_ref": 2017.62,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -32760,7 +32760,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0026,
-        "harga_satuan_ref": 720.82,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -32778,7 +32778,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -32786,7 +32786,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -32794,7 +32794,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -32851,7 +32851,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -32859,7 +32859,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0833,
-        "harga_satuan_ref": 20084.63,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -32867,7 +32867,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0083,
-        "harga_satuan_ref": 2174.84,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -32875,7 +32875,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0028,
-        "harga_satuan_ref": 776.27,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -32893,7 +32893,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -32901,7 +32901,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -32909,7 +32909,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -33983,7 +33983,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3333,
-        "harga_satuan_ref": 76390.69,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -33991,7 +33991,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.1667,
-        "harga_satuan_ref": 40193.37,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -33999,7 +33999,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 4375.88,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34007,7 +34007,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0056,
-        "harga_satuan_ref": 1552.54,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34025,7 +34025,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34033,7 +34033,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       },
       {
@@ -34041,7 +34041,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34098,7 +34098,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 160436.5,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -34106,7 +34106,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 84389.2,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -34114,7 +34114,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 9171.02,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34122,7 +34122,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0117,
-        "harga_satuan_ref": 3243.7,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34140,7 +34140,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34148,7 +34148,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       },
       {
@@ -34156,7 +34156,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34213,7 +34213,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.7,
-        "harga_satuan_ref": 160436.5,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -34221,7 +34221,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.35,
-        "harga_satuan_ref": 84389.2,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -34229,7 +34229,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 9171.02,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34237,7 +34237,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0117,
-        "harga_satuan_ref": 3243.7,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34255,7 +34255,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34263,7 +34263,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       },
       {
@@ -34271,7 +34271,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34441,7 +34441,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1429,
-        "harga_satuan_ref": 32751.97,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -34449,7 +34449,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 17215.4,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -34457,7 +34457,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0071,
-        "harga_satuan_ref": 1860.41,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34465,7 +34465,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0024,
-        "harga_satuan_ref": 665.37,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34483,7 +34483,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34491,7 +34491,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -34499,7 +34499,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34782,7 +34782,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 16364.52,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -34790,7 +34790,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0357,
-        "harga_satuan_ref": 8607.7,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -34798,7 +34798,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0036,
-        "harga_satuan_ref": 943.3,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34806,7 +34806,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 332.69,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34824,7 +34824,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 1.704,
-        "harga_satuan_ref": 2556,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34832,7 +34832,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 0.188,
-        "harga_satuan_ref": 3760,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -34840,7 +34840,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -34897,7 +34897,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1429,
-        "harga_satuan_ref": 32751.97,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -34905,7 +34905,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0714,
-        "harga_satuan_ref": 17215.4,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -34913,7 +34913,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0071,
-        "harga_satuan_ref": 1860.41,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -34921,7 +34921,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0024,
-        "harga_satuan_ref": 665.37,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -34939,7 +34939,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -34947,7 +34947,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -34955,7 +34955,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -35012,7 +35012,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1538,
-        "harga_satuan_ref": 35250.19,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -35020,7 +35020,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0769,
-        "harga_satuan_ref": 18541.51,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -35028,7 +35028,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.0077,
-        "harga_satuan_ref": 2017.62,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -35036,7 +35036,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0026,
-        "harga_satuan_ref": 720.82,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -35054,7 +35054,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -35062,7 +35062,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -35070,7 +35070,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -35135,7 +35135,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 120556,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -35143,7 +35143,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13101.45,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -35151,7 +35151,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 4629.89,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -35169,7 +35169,7 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 13.632,
-        "harga_satuan_ref": 20448,
+        "harga_satuan_ref": 1500,
         "koef_sumber": "tabel"
       },
       {
@@ -35177,7 +35177,7 @@
         "nama": "Semen Warna",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 30000,
+        "harga_satuan_ref": 20000,
         "koef_sumber": "tabel"
       },
       {
@@ -35185,7 +35185,7 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.027,
-        "harga_satuan_ref": 13500,
+        "harga_satuan_ref": 500000,
         "koef_sumber": "tabel"
       }
     ],
@@ -35355,7 +35355,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 27503.4,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -35363,7 +35363,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 28933.44,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -35371,7 +35371,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3144.35,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -35379,7 +35379,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1108.96,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -35454,7 +35454,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 45839,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -35462,7 +35462,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 24111.2,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -35470,7 +35470,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2620.29,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -35478,7 +35478,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 914.89,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -35496,7 +35496,7 @@
         "nama": "Lem Kayu",
         "satuan": "kg",
         "koefisien": 0.6,
-        "harga_satuan_ref": 27000,
+        "harga_satuan_ref": 45000,
         "koef_sumber": "tabel"
       }
     ],
@@ -68257,7 +68257,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -68265,7 +68265,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -68273,7 +68273,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -68281,7 +68281,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -69667,7 +69667,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.205,
-        "harga_satuan_ref": 46984.98,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -69675,7 +69675,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.342,
-        "harga_satuan_ref": 86092,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -69683,7 +69683,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.034,
-        "harga_satuan_ref": 8908.99,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -69691,7 +69691,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 3049.63,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -69733,7 +69733,7 @@
         "nama": "Klem 20 mm",
         "satuan": "buah",
         "koefisien": 8,
-        "harga_satuan_ref": 6720,
+        "harga_satuan_ref": 840,
         "koef_sumber": "tabel"
       },
       {
@@ -69911,7 +69911,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 771,
-        "harga_satuan_ref": 5959.07,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -69919,7 +69919,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 1.288,
-        "harga_satuan_ref": 11076,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -69927,7 +69927,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.129,
-        "harga_satuan_ref": 1048.12,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -69935,7 +69935,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.043,
-        "harga_satuan_ref": 277.24,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -70447,7 +70447,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 145768.02,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -70455,7 +70455,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 1.062,
-        "harga_satuan_ref": 267339,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -70463,7 +70463,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.106,
-        "harga_satuan_ref": 27775.07,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -70471,7 +70471,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.035,
-        "harga_satuan_ref": 9703.37,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -70683,7 +70683,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 4,
-        "harga_satuan_ref": 916780,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -70691,7 +70691,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 503464,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -70699,7 +70699,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 52405.8,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -70707,7 +70707,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 18575.01,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -70757,7 +70757,7 @@
         "nama": "Kabel Skun 95 mm2",
         "satuan": "m",
         "koefisien": 4.4,
-        "harga_satuan_ref": 123200,
+        "harga_satuan_ref": 28000,
         "koef_sumber": "tabel"
       },
       {
@@ -70765,7 +70765,7 @@
         "nama": "Rod Coupling",
         "satuan": "buah",
         "koefisien": 6,
-        "harga_satuan_ref": 420000,
+        "harga_satuan_ref": 70000,
         "koef_sumber": "tabel"
       },
       {
@@ -76255,7 +76255,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 14668.48,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -76263,7 +76263,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.107,
-        "harga_satuan_ref": 26935,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -76271,7 +76271,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 2882.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -76279,7 +76279,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1108.96,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -76993,7 +76993,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 14668.48,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -77001,7 +77001,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.107,
-        "harga_satuan_ref": 26935,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -77009,7 +77009,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 2882.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -77017,7 +77017,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1108.96,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -79742,7 +79742,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.381,
-        "harga_satuan_ref": 87323.3,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -79750,7 +79750,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 160102,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -79758,7 +79758,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 16769.86,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -79766,7 +79766,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.021,
-        "harga_satuan_ref": 582.2,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -79833,7 +79833,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.381,
-        "harga_satuan_ref": 87323.3,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -79841,7 +79841,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.636,
-        "harga_satuan_ref": 160102,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -79849,7 +79849,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.064,
-        "harga_satuan_ref": 16769.86,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -79857,7 +79857,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.021,
-        "harga_satuan_ref": 582.2,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -80199,7 +80199,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -80207,7 +80207,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.418,
-        "harga_satuan_ref": 105224,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -80215,7 +80215,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 11005.22,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -80223,7 +80223,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 3881.35,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -82116,7 +82116,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 250,
-        "harga_satuan_ref": 8709.41,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -82124,7 +82124,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 418,
-        "harga_satuan_ref": 16110.85,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -82132,7 +82132,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 1572.17,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -82140,7 +82140,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 554.48,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -83015,7 +83015,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.205,
-        "harga_satuan_ref": 46984.98,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -83023,7 +83023,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.342,
-        "harga_satuan_ref": 86092,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -83031,7 +83031,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.034,
-        "harga_satuan_ref": 8908.99,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -83039,7 +83039,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 3049.63,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -83639,7 +83639,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 204671.14,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -83647,7 +83647,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 375332.41,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -83655,7 +83655,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 39042.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -83663,7 +83663,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13861.95,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -83730,7 +83730,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 289702.48,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -83738,7 +83738,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 531406.25,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -83746,7 +83746,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 55314.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -83754,7 +83754,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 19406.73,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -83821,7 +83821,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 289794.16,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -83829,7 +83829,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 531406.25,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -83837,7 +83837,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 55288.12,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -83845,7 +83845,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 19406.73,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -83912,7 +83912,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 289702.48,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -83920,7 +83920,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 531406.25,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -83928,7 +83928,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 55288.12,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -83936,7 +83936,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 19406.73,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -84003,7 +84003,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.264,
-        "harga_satuan_ref": 289702.48,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -84011,7 +84011,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 2.111,
-        "harga_satuan_ref": 531406.25,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -84019,7 +84019,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.211,
-        "harga_satuan_ref": 55314.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -84027,7 +84027,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 19406.73,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -84094,7 +84094,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2.024,
-        "harga_satuan_ref": 463890.68,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -84102,7 +84102,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 3.38,
-        "harga_satuan_ref": 850854.16,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -84110,7 +84110,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.338,
-        "harga_satuan_ref": 88565.8,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -84118,7 +84118,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.113,
-        "harga_satuan_ref": 31328.01,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -84274,7 +84274,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 204671.14,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -84282,7 +84282,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 375332,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -84290,7 +84290,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 39042.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -84298,7 +84298,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13861.95,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -84721,7 +84721,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.893,
-        "harga_satuan_ref": 204671.14,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -84729,7 +84729,7 @@
         "nama": "Tukang Listrik/Elektronik",
         "satuan": "OH",
         "koefisien": 1.491,
-        "harga_satuan_ref": 375332,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -84737,7 +84737,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.149,
-        "harga_satuan_ref": 39042.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -84745,7 +84745,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 13861.95,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -84901,7 +84901,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -84909,7 +84909,7 @@
         "nama": "Tukang Listrik / Elektronik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069,
+        "harga_satuan_ref": 251732,
         "koef_sumber": "tabel"
       },
       {
@@ -84917,7 +84917,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -84925,7 +84925,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -89568,7 +89568,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.09,
-        "harga_satuan_ref": 20627.55,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -89576,7 +89576,7 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.151,
-        "harga_satuan_ref": 36407.91,
+        "harga_satuan_ref": 241112,
         "koef_sumber": "tabel"
       },
       {
@@ -89584,7 +89584,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 3930.44,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -89592,7 +89592,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1386.2,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -89756,7 +89756,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.512,
-        "harga_satuan_ref": 117347.84,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -89764,7 +89764,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.855,
-        "harga_satuan_ref": 195961.73,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -89772,7 +89772,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.085,
-        "harga_satuan_ref": 22272.47,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -89780,7 +89780,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.028,
-        "harga_satuan_ref": 7762.69,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -91764,7 +91764,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 167083.16,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91772,7 +91772,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 278930.32,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91780,7 +91780,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 31967.54,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -91788,7 +91788,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 11366.8,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -91855,7 +91855,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 167083.16,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91863,7 +91863,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 278930.32,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91871,7 +91871,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 31967.54,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -91879,7 +91879,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 11366.8,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -91946,7 +91946,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.729,
-        "harga_satuan_ref": 167083.16,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91954,7 +91954,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.217,
-        "harga_satuan_ref": 278930.32,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -91962,7 +91962,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.122,
-        "harga_satuan_ref": 31967.54,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -91970,7 +91970,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 11366.8,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -92037,7 +92037,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 174875.79,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92045,7 +92045,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 291994.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92053,7 +92053,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 33277.68,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -92061,7 +92061,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -92128,7 +92128,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 174875.79,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92136,7 +92136,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 291994.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92144,7 +92144,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 33277.68,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -92152,7 +92152,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -92219,7 +92219,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 174875.79,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92227,7 +92227,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 291994.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92235,7 +92235,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 33277.68,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -92243,7 +92243,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -92253,7 +92253,7 @@
         "nama": "Pompa Centrifugal 120 lpm + Material Bantu dan Aksesoris",
         "satuan": "unit",
         "koefisien": 1.1,
-        "harga_satuan_ref": 20790000,
+        "harga_satuan_ref": 18900000,
         "koef_sumber": "tabel"
       }
     ],
@@ -92310,7 +92310,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 174875.79,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92318,7 +92318,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 291994.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92326,7 +92326,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 33277.68,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -92334,7 +92334,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -92344,7 +92344,7 @@
         "nama": "Pompa Centrifugal 60 lpm + Material Bantu dan Aksesoris",
         "satuan": "unit",
         "koefisien": 1.1,
-        "harga_satuan_ref": 3960000,
+        "harga_satuan_ref": 3600000,
         "koef_sumber": "tabel"
       }
     ],
@@ -92401,7 +92401,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.763,
-        "harga_satuan_ref": 174875.79,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92409,7 +92409,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 1.274,
-        "harga_satuan_ref": 291994.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -92417,7 +92417,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.127,
-        "harga_satuan_ref": 33277.68,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -92425,7 +92425,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -94496,7 +94496,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.069,
-        "harga_satuan_ref": 15814.46,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94504,7 +94504,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.115,
-        "harga_satuan_ref": 26357.43,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94512,7 +94512,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 2882.32,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -94520,7 +94520,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.003,
-        "harga_satuan_ref": 831.72,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -94587,7 +94587,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.085,
-        "harga_satuan_ref": 19481.58,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94595,7 +94595,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.143,
-        "harga_satuan_ref": 32774.89,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94603,7 +94603,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 3668.41,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -94611,7 +94611,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1108.96,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -94678,7 +94678,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.104,
-        "harga_satuan_ref": 23836.28,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94686,7 +94686,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.174,
-        "harga_satuan_ref": 39879.93,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94694,7 +94694,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 4454.49,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -94702,7 +94702,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1386.2,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -94769,7 +94769,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.138,
-        "harga_satuan_ref": 31628.91,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94777,7 +94777,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.23,
-        "harga_satuan_ref": 52714.85,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -94785,7 +94785,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.023,
-        "harga_satuan_ref": 6026.67,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -94793,7 +94793,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 1940.67,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],
@@ -99973,7 +99973,7 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.048,
-        "harga_satuan_ref": 11001.36,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -99981,7 +99981,7 @@
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.08,
-        "harga_satuan_ref": 18335.6,
+        "harga_satuan_ref": 229195,
         "koef_sumber": "tabel"
       },
       {
@@ -99989,7 +99989,7 @@
         "nama": "Kepala Tukang",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 2096.23,
+        "harga_satuan_ref": 262029,
         "koef_sumber": "tabel"
       },
       {
@@ -99997,7 +99997,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 554.48,
+        "harga_satuan_ref": 277239,
         "koef_sumber": "tabel"
       }
     ],

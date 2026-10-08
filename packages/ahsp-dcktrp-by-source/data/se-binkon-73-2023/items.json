@@ -15,28 +15,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 68758.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 24111.2
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2620.29
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -44,19 +44,19 @@
         "nama": "Bata Merah",
         "satuan": "buah",
         "koefisien": 70,
-        "harga_satuan_ref": 56000
+        "harga_satuan_ref": 800
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.68,
-        "harga_satuan_ref": 14520
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.045,
-        "harga_satuan_ref": 22500
+        "harga_satuan_ref": 500000
       }
     ],
     "peralatan": [],

@@ -52,11 +52,13 @@ describe('SE47 DCKTRP price enrich', () => {
     expect(report.bidang['cipta-karya'].samples).toContain(code);
     const item = ahspItemsCiptaKarya.find((row) => row.kode_ahsp === code);
     expect(item).toBeDefined();
-    // Portal labor unit prices for this kode (nama fallback — national refs are null).
+    // Portal labor *unit* prices (jumlah_rp), not line totals (nama fallback — refs null).
     expect(item!.tenaga_kerja.map((row) => row.harga_satuan_ref)).toEqual([
-      13637.1, 14978, 1663.43,
+      229_195, 251_732, 277_239,
     ]);
     const result = calcHspFixedCoefficient(item!);
-    expect(result.grandTotal).toBeGreaterThan(0);
+    // Portal HSP pekerjaan ~34820 (after O/P); base ≈ sum(koef×unit).
+    expect(result.baseTotal).toBeCloseTo(30_278.59, 1);
+    expect(result.grandTotal).toBeCloseTo(34_820.32, 0);
   });
 });
