@@ -1,6 +1,6 @@
 {
   "name": "@ahs-id/engine-registry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared AHSP/HSD package registry for AHS-ID CLI and web calculator",
   "type": "module",
   "main": "dist/index.js",
