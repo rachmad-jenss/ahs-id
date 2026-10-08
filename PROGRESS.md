@@ -101,6 +101,6 @@ All published engine/data rows above (except engine-registry) are on npm. Bina M
 ## Follow-ups
 
 - [ ] **DAS-65** — Hero autocomplete + kalkulator item variables + publish `@ahs-id/engine-registry`
-- [ ] **DAS-66** — Unify `bina-marga-2022` with regional HSD
+- [ ] **DAS-66** — BM-2022 regional HSD via Permen-base overlay (in progress)
 - [ ] **DAS-67** — Fill SE Binkon 47/2026 `harga_satuan_ref` where source available
 - [x] Epics DAS-2 / DAS-3 closed (children done); DAS-1 remains open until npm/CLI exit complete

@@ -1,6 +1,7 @@
 import {
   calcHspFixedCoefficient,
   createCalculator,
+  mergeHsdBaseWithRegionalOverlay,
   type FixedCoefficientItem,
   type HSPResult,
   type VariabelDefinition,
@@ -233,7 +234,16 @@ export async function calculateHspInBrowser(input: {
         throw new Error(`Unknown HSD "${hsdName}"`);
       }
       const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
-      const calculator = createCalculator(bundleMod.bundle, hsdMod.hsd);
+      let hsd = hsdMod.hsd;
+      if (input.bundle === 'bina-marga-2022' && hsdName !== 'hsd-bm-2022') {
+        const basePkg = findPackage('hsd-bm-2022');
+        if (!basePkg || basePkg.strategy !== 'hsd-only') {
+          throw new Error('hsd-bm-2022 missing for BM-2022 regional overlay');
+        }
+        const baseMod = await basePkg.loadHsd();
+        hsd = mergeHsdBaseWithRegionalOverlay(baseMod.hsd, hsdMod.hsd);
+      }
+      const calculator = createCalculator(bundleMod.bundle, hsd);
       return calculator.hitungHSP(input.item, { ...(input.variables ?? {}) });
     }
     case 'fixed-coefficient': {

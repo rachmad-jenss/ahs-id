@@ -54,7 +54,14 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'syntax',
     displayName: 'Bina Marga 2022',
     defaultHsd: 'hsd-bm-2022',
-    compatibleHsd: ['hsd-bm-2022'],
+    // Regional HSD uses a different ref catalog; loaders merge Permen base + matching overlay refs.
+    compatibleHsd: [
+      'hsd-bm-2022',
+      'hsd-kaltim-2025',
+      'hsd-jabar-2025',
+      'hsd-papua-2025',
+      'hsd-jakarta-2026',
+    ],
     loadBundle: () => import('@ahs-id/bina-marga-2022'),
   },
   {

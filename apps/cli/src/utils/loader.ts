@@ -1,4 +1,12 @@
-import { calcHspFixedCoefficient, createCalculator, type DataBundle, type FixedCoefficientItem, type HsdRegional, type HSPResult } from '@ahs-id/core';
+import {
+  calcHspFixedCoefficient,
+  createCalculator,
+  mergeHsdBaseWithRegionalOverlay,
+  type DataBundle,
+  type FixedCoefficientItem,
+  type HsdRegional,
+  type HSPResult,
+} from '@ahs-id/core';
 import { findPackage, PACKAGES, type PackageRecord } from './registry.js';
 
 export interface CalculatorBundle {
@@ -96,7 +104,16 @@ export async function resolveCalculation(bundleName: string, hsdName?: string): 
         throw new Error(`Unknown HSD "${resolvedHsd}"`);
       }
       const [bundleMod, hsdMod] = await Promise.all([pkg.loadBundle(), hsdPkg.loadHsd()]);
-      return { kind: 'dynamic-bundle', bundle: bundleMod.bundle, hsd: hsdMod.hsd, hsdName: resolvedHsd };
+      let hsd = hsdMod.hsd;
+      if (bundleName === 'bina-marga-2022' && resolvedHsd !== 'hsd-bm-2022') {
+        const basePkg = findPackage('hsd-bm-2022');
+        if (!basePkg || basePkg.strategy !== 'hsd-only') {
+          throw new Error('hsd-bm-2022 missing for BM-2022 regional overlay');
+        }
+        const baseMod = await basePkg.loadHsd();
+        hsd = mergeHsdBaseWithRegionalOverlay(baseMod.hsd, hsdMod.hsd);
+      }
+      return { kind: 'dynamic-bundle', bundle: bundleMod.bundle, hsd, hsdName: resolvedHsd };
     }
     case 'fixed-coefficient': {
       if (hsdName !== undefined) {
