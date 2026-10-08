@@ -1,0 +1,135 @@
+---
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { Badge } from '../../../components/ui/badge';
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import { index as hspIndex } from '@ahs-id/hsp-jakarta-dcktrp';
+
+interface HspDetail {
+  readonly source_id: number;
+  readonly kode: string | null;
+  readonly nama: string;
+  readonly uraian_lengkap?: string;
+  readonly kategori: string | null;
+  readonly satuan_bayar: string | null;
+  readonly dasar_hukum: string | null;
+  readonly harga_satuan_rp: number | null;
+  readonly profit_pct: number | null;
+  readonly profit_rp: number | null;
+  readonly tenaga_kerja?: readonly Record<string, unknown>[];
+  readonly bahan?: readonly Record<string, unknown>[];
+  readonly peralatan?: readonly Record<string, unknown>[];
+  readonly provenance?: { readonly api_url?: string };
+}
+
+export async function getStaticPaths() {
+  return hspIndex.map((row) => ({
+    params: { sourceId: String(row.source_id) },
+    props: { summary: row },
+  }));
+}
+
+const { summary } = Astro.props as { summary: (typeof hspIndex)[number] };
+const sourceId = String(summary.source_id);
+const shardPath = join(process.cwd(), 'public/hsp/jakarta', `shard-${sourceId.slice(-1)}.json`);
+let detail: HspDetail = {
+  source_id: summary.source_id,
+  kode: summary.kode,
+  nama: summary.nama,
+  kategori: summary.kategori,
+  satuan_bayar: summary.satuan_bayar,
+  dasar_hukum: summary.dasar_hukum,
+  harga_satuan_rp: summary.harga_satuan_rp,
+  profit_pct: summary.profit_pct,
+  profit_rp: summary.profit_rp,
+};
+try {
+  const shard = JSON.parse(await readFile(shardPath, 'utf8')) as Record<string, HspDetail>;
+  detail = shard[sourceId] ?? detail;
+} catch {
+  // Index row is enough for a minimal page when shards are missing.
+}
+
+const code = detail.kode?.trim() || `id-${sourceId}`;
+const harga = detail.harga_satuan_rp;
+const pageTitle = `${code} — ${detail.nama} · HSP Jakarta`;
+const pageDescription = `Harga satuan portal DCKTRP Jakarta untuk ${detail.nama}.`;
+const formatRp = (value: number | null | undefined): string =>
+  value == null ? '—' : value.toLocaleString('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 2 });
+---
+
+<SiteLayout title={pageTitle} description={pageDescription}>
+  <article class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-20">
+    <a class="pressable inline-flex items-center gap-2 text-sm text-muted-foreground hover-fine-text-primary" href="/katalog/?kind=hsp-portal">
+      <ArrowLeft aria-hidden="true" className="h-4 w-4" /> Kembali ke katalog HSP
+    </a>
+    <div class="mt-10 flex flex-wrap items-center gap-2">
+      <Badge>HSP portal</Badge>
+      <Badge variant="outline">DKI Jakarta · DCKTRP</Badge>
+      {detail.kategori && <Badge variant="muted">{detail.kategori}</Badge>}
+    </div>
+    <p class="mt-7 font-mono text-lg font-semibold text-primary">{code}</p>
+    <h1 class="mt-3 max-w-4xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl">{detail.nama}</h1>
+    <p class="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
+      Harga satuan dari portal Bangun Jakarta. Angka ini <span class="font-semibold text-foreground">bukan</span> hasil `hitungHSP` engine AHS-ID.
+    </p>
+
+    <div class="mt-12 grid gap-6 lg:grid-cols-3">
+      <div class="rounded-3xl border border-border bg-card/60 p-6 lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Harga satuan</p>
+        <p class="mt-3 font-mono text-4xl font-semibold tabular-nums text-primary">{formatRp(harga)}</p>
+        <dl class="mt-8 grid gap-4 text-sm sm:grid-cols-2">
+          <div><dt class="text-muted-foreground">Satuan bayar</dt><dd class="mt-1 font-medium">{detail.satuan_bayar ?? '—'}</dd></div>
+          <div><dt class="text-muted-foreground">Dasar hukum</dt><dd class="mt-1 font-medium">{detail.dasar_hukum ?? '—'}</dd></div>
+          <div><dt class="text-muted-foreground">Profit</dt><dd class="mt-1 font-medium">{detail.profit_pct != null ? `${detail.profit_pct}% (${formatRp(detail.profit_rp)})` : '—'}</dd></div>
+          <div><dt class="text-muted-foreground">Source ID</dt><dd class="mt-1 font-mono">{sourceId}</dd></div>
+        </dl>
+      </div>
+      <aside class="rounded-3xl border border-border bg-card/55 p-6 text-sm leading-6 text-muted-foreground">
+        <p class="font-semibold text-foreground">Portal DCKTRP</p>
+        <p class="mt-3">Lookup harga resmi portal; untuk menghitung ulang dari koefisien + HSD daerah, gunakan katalog AHSP nasional dan <a class="font-semibold text-primary hover-fine-underline" href="/kalkulator/">kalkulator</a>.</p>
+        {detail.provenance?.api_url && (
+          <a class="pressable mt-5 inline-flex items-center gap-2 font-semibold text-primary" href={detail.provenance.api_url} rel="noreferrer" target="_blank">
+            Sumber API <ExternalLink aria-hidden="true" className="h-4 w-4" />
+          </a>
+        )}
+      </aside>
+    </div>
+
+    {((detail.tenaga_kerja?.length ?? 0) + (detail.bahan?.length ?? 0) + (detail.peralatan?.length ?? 0)) > 0 && (
+      <section class="mt-14" aria-labelledby="hsp-components-heading">
+        <h2 class="font-serif text-3xl" id="hsp-components-heading">Komponen portal</h2>
+        <div class="mt-5 overflow-hidden rounded-2xl border border-border">
+          {[
+            { label: 'Tenaga kerja', rows: detail.tenaga_kerja ?? [] },
+            { label: 'Bahan', rows: detail.bahan ?? [] },
+            { label: 'Peralatan', rows: detail.peralatan ?? [] },
+          ].filter((group) => group.rows.length > 0).map((group) => (
+            <div class="border-b border-border last:border-b-0">
+              <h3 class="bg-muted/55 px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">{group.label}</h3>
+              <table class="w-full text-left text-sm">
+                <thead class="border-b border-border/70 text-xs text-muted-foreground">
+                  <tr>
+                    <th class="px-5 py-3 font-medium" scope="col">Nama</th>
+                    <th class="px-5 py-3 text-right font-medium" scope="col">Koefisien</th>
+                    <th class="px-5 py-3 text-right font-medium" scope="col">Harga</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-border/60">
+                  {group.rows.map((row) => (
+                    <tr>
+                      <td class="px-5 py-3">{String(row.nama ?? row.kode ?? '—')}</td>
+                      <td class="px-5 py-3 text-right font-mono">{row.koefisien != null ? Number(row.koefisien).toLocaleString('id-ID') : '—'}</td>
+                      <td class="px-5 py-3 text-right font-mono">{row.harga_satuan_rp != null ? formatRp(Number(row.harga_satuan_rp)) : '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+  </article>
+</SiteLayout>

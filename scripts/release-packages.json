@@ -13,6 +13,7 @@
     { "name": "@ahs-id/hsd-jabar-2025", "dir": "packages/hsd-jabar-2025" },
     { "name": "@ahs-id/hsd-papua-2025", "dir": "packages/hsd-papua-2025" },
     { "name": "@ahs-id/hsd-bm-2022", "dir": "packages/hsd-bm-2022" },
+    { "name": "@ahs-id/engine-registry", "dir": "packages/engine-registry" },
     { "name": "@ahs-id/cli", "dir": "apps/cli" }
   ]
 }

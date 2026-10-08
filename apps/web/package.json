@@ -8,16 +8,20 @@
   "type": "module",
   "description": "Public AHS-ID landing page and searchable AHSP catalog",
   "scripts": {
+    "predev": "node ../../scripts/build-web-search-index.mjs",
     "dev": "astro dev",
+    "prebuild": "node ../../scripts/build-web-search-index.mjs",
     "build": "node ../../scripts/astro-check.mjs && astro build",
     "preview": "astro preview",
     "pretest": "astro build",
     "test": "vitest run",
     "typecheck": "node ../../scripts/astro-check.mjs",
-    "lint": "eslint src tests"
+    "lint": "eslint src tests",
+    "build-search-index": "node ../../scripts/build-web-search-index.mjs"
   },
   "dependencies": {
     "@ahs-id/core": "workspace:*",
+    "@ahs-id/engine-registry": "workspace:*",
     "@ahs-id/bina-marga-2016": "workspace:*",
     "@ahs-id/bina-marga-2022": "workspace:*",
     "@ahs-id/ahsp-se-binkon-47-2026": "workspace:*",

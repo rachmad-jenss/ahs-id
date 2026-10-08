@@ -145,6 +145,15 @@ ahs-id calc-hsp A.1.01.a --bundle sda-se-binkon-47-2026 --json
 
 **Monorepo contributors:** after `pnpm install`, use `pnpm --filter @ahs-id/cli exec ahs-id …` without publishing.
 
+## Web catalog & calculator
+
+Public site (`apps/web`): searchable multi-kind catalog (AHSP nasional, AHSP portal DCKTRP, HSP Jakarta, resource, produktivitas), item/HSP detail pages, and `/kalkulator` backed by `@ahs-id/engine-registry` (same registry as the CLI). See [docs/web-catalog.md](docs/web-catalog.md).
+
+```bash
+pnpm --filter @ahs-id/web build-search-index
+pnpm --filter @ahs-id/web dev
+```
+
 ## Documentation
 
 - [Public web catalog](docs/web-catalog.md)
