@@ -10,9 +10,9 @@ describe('public catalog adapter', () => {
   it('keeps a complete source count and excludes the seven approved quarantines', () => {
     const catalog = buildCatalog();
 
-    expect(catalog.sourceItemCount).toBe(2_400);
+    expect(catalog.sourceItemCount).toBe(5_881);
     expect(catalog.quarantinedItemCount).toBe(7);
-    expect(catalog.items).toHaveLength(2_393);
+    expect(catalog.items).toHaveLength(5_874);
     expect(QUARANTINED_CIPTA_KEYS).toHaveLength(7);
     expect(new Set(QUARANTINED_CIPTA_KEYS).size).toBe(7);
   });
@@ -25,6 +25,8 @@ describe('public catalog adapter', () => {
     expect(keys).toContain('pupr-2023:3.1.1');
     expect(keys).toContain('bina-marga-2022:2.1.(1)');
     expect(keys).toContain('cipta-karya-2024:1.2.1.1.1');
+    expect(keys).toContain('sda-se-binkon-47-2026:A.1.01.a');
+    expect(keys).toContain('bina-marga-se-binkon-47-2026:10.1.(1)');
   });
 
   it('preserves provenance and verification status for published items', () => {
