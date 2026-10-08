@@ -1,8 +1,9 @@
 {
   "$comment": "First public release scope. Versions stay at current 0.0.x/0.1.x until maintainer approves 1.0.0. See docs/architecture.md section 15.",
-  "maxTarballBytes": 10485760,
+  "maxTarballBytes": 15728640,
   "packages": [
     { "name": "@ahs-id/core", "dir": "packages/core" },
+    { "name": "@ahs-id/ahsp-se-binkon-47-2026", "dir": "packages/ahsp-se-binkon-47-2026" },
     { "name": "@ahs-id/pupr-2023", "dir": "packages/pupr-2023" },
     { "name": "@ahs-id/bina-marga-2016", "dir": "packages/bina-marga-2016" },
     { "name": "@ahs-id/bina-marga-2022", "dir": "packages/bina-marga-2022" },
