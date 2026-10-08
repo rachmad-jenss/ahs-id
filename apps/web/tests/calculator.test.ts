@@ -55,6 +55,20 @@ describe('web calculator registry', () => {
     expect(
       parseCalculatorVariables(fixedMeta, {}, { overhead: '  ', profit: '' }),
     ).toEqual({});
+
+    const requiredMeta = {
+      ...fixedMeta,
+      strategy: 'dynamic-bundle' as const,
+      variables: {
+        jarak_quarry_km: {
+          label: 'Quarry',
+          tipe: 'number' as const,
+          default: null,
+          required: true,
+        },
+      },
+    };
+    expect(() => parseCalculatorVariables(requiredMeta, {})).toThrow(/wajib diisi/);
   }, 30_000);
 
   it('spot-checks HSP totals for sample codes across strategies', async () => {

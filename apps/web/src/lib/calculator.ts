@@ -176,7 +176,12 @@ export function parseCalculatorVariables(
   const variables: Record<string, number | string> = {};
   for (const [key, def] of Object.entries(meta.variables)) {
     const text = raw[key]?.trim() ?? '';
-    if (!text) continue;
+    if (!text) {
+      if (def.required) {
+        throw new Error(`Variabel "${key}" wajib diisi`);
+      }
+      continue;
+    }
     if (def.tipe === 'number') {
       const value = Number(text);
       if (!Number.isFinite(value)) {

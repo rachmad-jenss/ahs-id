@@ -125,20 +125,34 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
               setOpen(true);
             }}
             onKeyDown={(event) => {
-              if (!open || suggestions.length === 0) return;
+              if (!open) return;
+              if (event.key === 'Escape') {
+                event.preventDefault();
+                setOpen(false);
+                setActiveIndex(-1);
+                return;
+              }
+              if (suggestions.length === 0) return;
               if (event.key === 'ArrowDown') {
                 event.preventDefault();
-                setActiveIndex((prev) => (prev + 1) % suggestions.length);
+                setActiveIndex((prev) => {
+                  const next = (prev + 1) % suggestions.length;
+                  window.requestAnimationFrame(() => {
+                    document.getElementById(`${listboxId}-opt-${next}`)?.scrollIntoView({ block: 'nearest' });
+                  });
+                  return next;
+                });
                 return;
               }
               if (event.key === 'ArrowUp') {
                 event.preventDefault();
-                setActiveIndex((prev) => (prev <= 0 ? suggestions.length - 1 : prev - 1));
-                return;
-              }
-              if (event.key === 'Escape') {
-                setOpen(false);
-                setActiveIndex(-1);
+                setActiveIndex((prev) => {
+                  const next = prev <= 0 ? suggestions.length - 1 : prev - 1;
+                  window.requestAnimationFrame(() => {
+                    document.getElementById(`${listboxId}-opt-${next}`)?.scrollIntoView({ block: 'nearest' });
+                  });
+                  return next;
+                });
                 return;
               }
               if (event.key === 'Enter' && activeIndex >= 0) {
