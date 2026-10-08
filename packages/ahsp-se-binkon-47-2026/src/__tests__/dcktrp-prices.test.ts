@@ -7,7 +7,7 @@ import { ahspItemsBinaMarga, ahspItemsCiptaKarya, ahspItemsSda } from '../index.
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
 const report = JSON.parse(
-  readFileSync(join(root, 'data/dcktrp-price-enrich-report.json'), 'utf8'),
+  readFileSync(join(root, 'reports/dcktrp-price-enrich-report.json'), 'utf8'),
 ) as {
   bidang: {
     sda: { matched: number; componentsFilled: number };

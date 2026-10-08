@@ -10,7 +10,7 @@
  *
  *   node scripts/enrich-se47-prices-from-dcktrp.mjs
  */
-import { readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -130,6 +130,9 @@ for (const [bidang, filePath] of bidangFiles) {
   );
 }
 
-const reportPath = join(root, 'packages/ahsp-se-binkon-47-2026/data/dcktrp-price-enrich-report.json');
+const reportPath = join(
+  root,
+  'packages/ahsp-se-binkon-47-2026/reports/dcktrp-price-enrich-report.json',
+);
 await writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
 console.log(`Wrote ${reportPath}`);
