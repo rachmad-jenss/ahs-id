@@ -188,15 +188,24 @@ export function CalculatorApp(): React.JSX.Element {
             <p className="text-xs leading-5 text-destructive">{metaError}</p>
           )}
           {needsHsd && (
-            <label className="grid gap-2 text-sm">
-              <span className="font-medium">HSD regional</span>
-              <NativeSelect onChange={(event) => setHsd(event.target.value)} value={hsd}>
-                {(selected?.compatibleHsd ?? []).map((name) => {
-                  const label = hsdOptions.find((row) => row.name === name)?.displayName ?? name;
-                  return <option key={name} value={name}>{label}</option>;
-                })}
-              </NativeSelect>
-            </label>
+            <div className="grid gap-2 text-sm">
+              <label className="grid gap-2">
+                <span className="font-medium">HSD regional</span>
+                <NativeSelect onChange={(event) => setHsd(event.target.value)} value={hsd}>
+                  {(selected?.compatibleHsd ?? []).map((name) => {
+                    const label = hsdOptions.find((row) => row.name === name)?.displayName ?? name;
+                    return <option key={name} value={name}>{label}</option>;
+                  })}
+                </NativeSelect>
+              </label>
+              {bundle === 'bina-marga-2022' && hsd !== 'hsd-bm-2022' && (
+                <p className="text-xs leading-5 text-muted-foreground">
+                  Bina Marga 2022: harga L/M/E tetap dari Permen kecuali ref+nama+satuan
+                  cocok dengan HSD regional; pilihan regional terutama mengubah label wilayah
+                  dan harga bahan bakar.
+                </p>
+              )}
+            </div>
           )}
           {needsHsd && variableEntries.length > 0 && (
             <div className="grid gap-3">
