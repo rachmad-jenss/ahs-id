@@ -16,7 +16,7 @@
     "hsd-jakarta-2026"
   ],
   "verification_tier": "auto-extracted",
-  "verification_note": "Koefisien dari PDF lampiran nasional via Docling (hsp-linked). Tanpa harga_satuan_ref komponen — gunakan HSD regional untuk hitung engine.",
+  "verification_note": "Koefisien dari PDF lampiran nasional via Docling (hsp-linked). Subset kode yang cocok dengan HSP portal DCKTRP mendapat harga_satuan_ref komponen (exemplar DKI); sisanya 0.",
   "sumber": {
     "label": "SE Dirjen Binkon No. 47/SE/Dk/2026",
     "dokumen_url": "https://binakonstruksi.pu.go.id/produk/produk-hukum/surat-edaran-direktur-jenderal-bina-konstruksi-nomor-47-se-dk-2026/",

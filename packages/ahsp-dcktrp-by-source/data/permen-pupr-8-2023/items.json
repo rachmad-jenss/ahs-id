@@ -15,43 +15,43 @@
         "nama": "1.2.1.1.1 Penggalian 1 m3 tanah biasa sedalam s.d. 1 m untuk volume s.d. 200 m3 cara manual",
         "satuan": "m3",
         "koefisien": 0.273,
-        "harga_satuan_ref": 46909.32
+        "harga_satuan_ref": 171829
       },
       {
         "nama": "1.3.2.2 1 m3 Timbunan dan Pemadatan Sirtu secara manual",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1246.69
+        "harga_satuan_ref": 415564
       },
       {
         "nama": "2.2.1.1.3 1 kg Penulangan kolom, balok, ring balk, dan sloof untuk BjTP diameter < 12 mm, cara Manual (untuk bangunan gedung)",
         "satuan": "kg",
         "koefisien": 2.3,
-        "harga_satuan_ref": 46862.5
+        "harga_satuan_ref": 20375
       },
       {
         "nama": "2.2.1.3.4 Pemasangan 1 m2 bekisting untuk kolom (3 kali pakai)",
         "satuan": "m2",
         "koefisien": 0.4,
-        "harga_satuan_ref": 143160
+        "harga_satuan_ref": 357900
       },
       {
         "nama": "2.2.1.4.3 1 m3 beton mutu rendah f'c 15 MPa, Slump (100+/-  25) mm, agregat maks 19 mm secara manual",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 19441.86
+        "harga_satuan_ref": 1495528
       },
       {
         "nama": "Pen Kuningan Titik Acuan",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 42000
+        "harga_satuan_ref": 40000
       },
       {
         "nama": "Marmer Graphir 10 x10 cm",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 20213
+        "harga_satuan_ref": 19250
       }
     ],
     "peralatan": [],
@@ -104,43 +104,43 @@
         "nama": "1.2.1.1.1 Penggalian 1 m3 tanah biasa sedalam s.d. 1 m untuk volume s.d. 200 m3 cara manual",
         "satuan": "m3",
         "koefisien": 0.3,
-        "harga_satuan_ref": 51548.7
+        "harga_satuan_ref": 171829
       },
       {
         "nama": "1.3.2.2 1 m3 Timbunan dan Pemadatan Sirtu secara manual",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 8311.28
+        "harga_satuan_ref": 415564
       },
       {
         "nama": "2.2.1.1.3 1 kg Penulangan kolom, balok, ring balk, dan sloof untuk BjTP diameter < 12 mm, cara Manual (untuk bangunan gedung)",
         "satuan": "kg",
         "koefisien": 4.1,
-        "harga_satuan_ref": 83537.5
+        "harga_satuan_ref": 20375
       },
       {
         "nama": "2.2.1.3.4 Pemasangan 1 m2 bekisting untuk kolom (3 kali pakai)",
         "satuan": "m2",
         "koefisien": 0.86,
-        "harga_satuan_ref": 307794
+        "harga_satuan_ref": 357900
       },
       {
         "nama": "2.2.1.4.3 1 m3 beton mutu rendah f'c 15 MPa, Slump (100+/-  25) mm, agregat maks 19 mm secara manual",
         "satuan": "m3",
         "koefisien": 0.05,
-        "harga_satuan_ref": 74776.4
+        "harga_satuan_ref": 1495528
       },
       {
         "nama": "Pen Kuningan Titik Acuan",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 42000
+        "harga_satuan_ref": 40000
       },
       {
         "nama": "Marmer Graphir 10 x10 cm",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 20213
+        "harga_satuan_ref": 19250
       }
     ],
     "peralatan": [],
@@ -193,25 +193,25 @@
         "nama": "1.1.3.1 1 m2 pembersihan dan pengupasan permukaan tanah (Striping) s.d. tanaman  diameter 2 cm",
         "satuan": "m2",
         "koefisien": 1.0476,
-        "harga_satuan_ref": 23982.71
+        "harga_satuan_ref": 22893
       },
       {
         "nama": "1.3.2.1 1 m3 Pemadatan Tanah per 20 cm menggunakan alat timbris secara manual",
         "satuan": "m3",
         "koefisien": 1.0476,
-        "harga_satuan_ref": 119914.58
+        "harga_satuan_ref": 114466
       },
       {
         "nama": "1.3.3.5 1 m3 Timbunan dan Pemadatan batu kerikil menggunakan mesin Stamper Kodok",
         "satuan": "m3",
         "koefisien": 0.2048,
-        "harga_satuan_ref": 98531.74
+        "harga_satuan_ref": 481112
       },
       {
         "nama": "Aspal",
         "satuan": "kg",
         "koefisien": 1.03,
-        "harga_satuan_ref": 10300
+        "harga_satuan_ref": 10000
       }
     ],
     "peralatan": [],
@@ -264,14 +264,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2.0296,
-        "harga_satuan_ref": 465174.17
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1309,
-        "harga_satuan_ref": 36290.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -279,25 +279,25 @@
         "nama": "Batu Belah",
         "satuan": "m3",
         "koefisien": 1.0594,
-        "harga_satuan_ref": 336889.2
+        "harga_satuan_ref": 318000
       },
       {
         "nama": "Batu Pecah / Batu Split / Kerikil",
         "satuan": "m3",
         "koefisien": 0.3311,
-        "harga_satuan_ref": 88293.44
+        "harga_satuan_ref": 266667
       },
       {
         "nama": "Pasir Uruk / Pasir Urug",
         "satuan": "m3",
         "koefisien": 0.1854,
-        "harga_satuan_ref": 59495
+        "harga_satuan_ref": 320900
       },
       {
         "nama": "Aspal",
         "satuan": "kg",
         "koefisien": 80,
-        "harga_satuan_ref": 800000
+        "harga_satuan_ref": 10000
       }
     ],
     "peralatan": [
@@ -306,42 +306,42 @@
         "nama": "Sewa Wheel Loader",
         "satuan": "jam",
         "koefisien": 0.0071,
-        "harga_satuan_ref": 2613
+        "harga_satuan_ref": 368000
       },
       {
         "ref": null,
         "nama": "Sewa Dump Truck",
         "satuan": "jam",
         "koefisien": 0.3189,
-        "harga_satuan_ref": 318900
+        "harga_satuan_ref": 1000000
       },
       {
         "ref": null,
         "nama": "Sewa Dump Truck",
         "satuan": "jam",
         "koefisien": 0.3202,
-        "harga_satuan_ref": 320200
+        "harga_satuan_ref": 1000000
       },
       {
         "ref": null,
         "nama": "Sewa Dump Truck",
         "satuan": "jam",
         "koefisien": 0.3237,
-        "harga_satuan_ref": 323700
+        "harga_satuan_ref": 1000000
       },
       {
         "ref": null,
         "nama": "Pneumatic Tyre Roller (PTR)",
         "satuan": "jam",
         "koefisien": 0.0655,
-        "harga_satuan_ref": 22925
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Sewa Asphalt Finisher",
         "satuan": "jam",
         "koefisien": 0.0157,
-        "harga_satuan_ref": 7065
+        "harga_satuan_ref": 450000
       }
     ],
     "harga_satuan_pekerjaan_ref": 3198777.21,
@@ -393,19 +393,19 @@
         "nama": "1.1.3.1 1 m2 pembersihan dan pengupasan permukaan tanah (Striping) s.d. tanaman  diameter 2 cm",
         "satuan": "m2",
         "koefisien": 1.0476,
-        "harga_satuan_ref": 23982.71
+        "harga_satuan_ref": 22893
       },
       {
         "nama": "1.3.2.1 1 m3 Pemadatan Tanah per 20 cm menggunakan alat timbris secara manual",
         "satuan": "m3",
         "koefisien": 1.0476,
-        "harga_satuan_ref": 119914.58
+        "harga_satuan_ref": 114466
       },
       {
         "nama": "1.3.2.2 1 m3 Timbunan dan Pemadatan Sirtu secara manual",
         "satuan": "m3",
         "koefisien": 0.2048,
-        "harga_satuan_ref": 85107.51
+        "harga_satuan_ref": 415564
       }
     ],
     "peralatan": [],
@@ -458,14 +458,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4,
-        "harga_satuan_ref": 91678
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5544.78
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -475,14 +475,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 12250
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 17500
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 146018.7,
@@ -534,14 +534,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 45839
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5544.78
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -551,14 +551,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 12250
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 17500
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 93303.85,
@@ -610,14 +610,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 3.6,
-        "harga_satuan_ref": 825102
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.18,
-        "harga_satuan_ref": 49903.02
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -625,7 +625,7 @@
         "nama": "Cuka Pelunak Beton",
         "satuan": "liter",
         "koefisien": 1.2,
-        "harga_satuan_ref": 174000
+        "harga_satuan_ref": 145000
       }
     ],
     "peralatan": [
@@ -634,28 +634,28 @@
         "nama": "Palu godam baja keras",
         "satuan": "jam",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6000
+        "harga_satuan_ref": 300000
       },
       {
         "ref": null,
         "nama": "Gergaji Besi",
         "satuan": "jam",
         "koefisien": 0.1,
-        "harga_satuan_ref": 15600
+        "harga_satuan_ref": 156000
       },
       {
         "ref": null,
         "nama": "Pahat beton baja keras",
         "satuan": "jam",
         "koefisien": 0.03,
-        "harga_satuan_ref": 4500
+        "harga_satuan_ref": 150000
       },
       {
         "ref": null,
         "nama": "Linggis baja keras",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 10000
+        "harga_satuan_ref": 200000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1247870.77,
@@ -707,14 +707,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.075,
-        "harga_satuan_ref": 246384.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.108,
-        "harga_satuan_ref": 29941.81
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -722,7 +722,7 @@
         "nama": "Cuka Pelunak Beton",
         "satuan": "liter",
         "koefisien": 1.2,
-        "harga_satuan_ref": 174000
+        "harga_satuan_ref": 145000
       }
     ],
     "peralatan": [
@@ -731,28 +731,28 @@
         "nama": "Palu godam baja keras",
         "satuan": "jam",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6000
+        "harga_satuan_ref": 300000
       },
       {
         "ref": null,
         "nama": "Gergaji Besi",
         "satuan": "jam",
         "koefisien": 0.1,
-        "harga_satuan_ref": 15600
+        "harga_satuan_ref": 156000
       },
       {
         "ref": null,
         "nama": "Pahat beton baja keras",
         "satuan": "jam",
         "koefisien": 0.03,
-        "harga_satuan_ref": 4500
+        "harga_satuan_ref": 150000
       },
       {
         "ref": null,
         "nama": "Linggis baja keras",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 10000
+        "harga_satuan_ref": 200000
       }
     ],
     "harga_satuan_pekerjaan_ref": 559390.4,
@@ -804,14 +804,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 554.48
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 4583.9
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -821,7 +821,7 @@
         "nama": "Sewa Pompa Lumpur, Diesel 10 KW; 5 inchi",
         "satuan": "jam",
         "koefisien": 0.01,
-        "harga_satuan_ref": 15000
+        "harga_satuan_ref": 1500000
       }
     ],
     "harga_satuan_pekerjaan_ref": 23159.13,
@@ -873,14 +873,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.27,
-        "harga_satuan_ref": 61882.65
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.027,
-        "harga_satuan_ref": 7485.45
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -890,7 +890,7 @@
         "nama": "Sewa Pompa Lumpur, Diesel 7,5 KW; 4 inchi",
         "satuan": "jam",
         "koefisien": 0.1,
-        "harga_satuan_ref": 100000
+        "harga_satuan_ref": 1000000
       }
     ],
     "harga_satuan_pekerjaan_ref": 194773.32,
@@ -942,14 +942,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.24,
-        "harga_satuan_ref": 55006.8
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 6653.74
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -959,7 +959,7 @@
         "nama": "Sewa Pompa Lumpur, Diesel 7,5 KW; 4 inchi",
         "satuan": "jam",
         "koefisien": 0.025,
-        "harga_satuan_ref": 25000
+        "harga_satuan_ref": 1000000
       }
     ],
     "harga_satuan_pekerjaan_ref": 99659.62,
@@ -1011,14 +1011,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.15,
-        "harga_satuan_ref": 34379.25
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1072,14 +1072,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.295,
-        "harga_satuan_ref": 67612.53
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0295,
-        "harga_satuan_ref": 8178.55
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1089,7 +1089,7 @@
         "nama": "Sewa Pompa Lumpur, Diesel 10 KW; 5 inchi",
         "satuan": "jam",
         "koefisien": 0.045,
-        "harga_satuan_ref": 67500
+        "harga_satuan_ref": 1500000
       }
     ],
     "harga_satuan_pekerjaan_ref": 164784.74,
@@ -1141,14 +1141,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.15,
-        "harga_satuan_ref": 263574.25
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.115,
-        "harga_satuan_ref": 31882.49
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1202,14 +1202,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.44,
-        "harga_satuan_ref": 330040.8
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.072,
-        "harga_satuan_ref": 19961.21
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1263,14 +1263,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.83,
-        "harga_satuan_ref": 190231.85
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.083,
-        "harga_satuan_ref": 23010.84
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1331,7 +1331,7 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 27723.9
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1385,14 +1385,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.392,
-        "harga_satuan_ref": 89844.44
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0392,
-        "harga_satuan_ref": 10867.77
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1402,14 +1402,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.07,
-        "harga_satuan_ref": 17150
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.07,
-        "harga_satuan_ref": 24500
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 163716.54,
@@ -1461,14 +1461,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2772.39
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1478,14 +1478,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.004,
-        "harga_satuan_ref": 980
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1400
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 32282.67,
@@ -1537,14 +1537,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3027,
-        "harga_satuan_ref": 69377.33
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0303,
-        "harga_satuan_ref": 8400.34
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1554,14 +1554,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.0658,
-        "harga_satuan_ref": 16121
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.0658,
-        "harga_satuan_ref": 23030
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 134467.97,
@@ -1613,14 +1613,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.14,
-        "harga_satuan_ref": 32087.3
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 3881.35
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1630,14 +1630,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1225
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1750
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 44785.19,
@@ -1689,14 +1689,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0227,
-        "harga_satuan_ref": 6293.33
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2268,
-        "harga_satuan_ref": 51981.43
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -1706,14 +1706,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.063,
-        "harga_satuan_ref": 15435
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.063,
-        "harga_satuan_ref": 22050
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 110123.71,
@@ -1765,14 +1765,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0395,
-        "harga_satuan_ref": 10950.94
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.395,
-        "harga_satuan_ref": 90532.03
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -1782,14 +1782,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.079,
-        "harga_satuan_ref": 19355
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.079,
-        "harga_satuan_ref": 27650
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 170761.16,
@@ -1841,14 +1841,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.504,
-        "harga_satuan_ref": 115514.28
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0504,
-        "harga_satuan_ref": 13972.85
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1858,14 +1858,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.084,
-        "harga_satuan_ref": 20580
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.084,
-        "harga_satuan_ref": 29400
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 206387.19,
@@ -1917,14 +1917,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.28,
-        "harga_satuan_ref": 64174.6
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.028,
-        "harga_satuan_ref": 7762.69
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -1934,7 +1934,7 @@
         "nama": "Sewa Pompa sedot pasir, Diesel 10 KW; 5 inchi",
         "satuan": "jam",
         "koefisien": 0.072,
-        "harga_satuan_ref": 108000
+        "harga_satuan_ref": 1500000
       }
     ],
     "harga_satuan_pekerjaan_ref": 206927.89,
@@ -1986,14 +1986,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.265,
-        "harga_satuan_ref": 60736.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0265,
-        "harga_satuan_ref": 7346.83
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2003,7 +2003,7 @@
         "nama": "Sewa Pompa Sedot Pasir, Diesel 7,5 KW; 5 inchi",
         "satuan": "jam",
         "koefisien": 0.055,
-        "harga_satuan_ref": 55000
+        "harga_satuan_ref": 1000000
       }
     ],
     "harga_satuan_pekerjaan_ref": 141546.03,
@@ -2055,14 +2055,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 3437.93
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0015,
-        "harga_satuan_ref": 415.86
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2072,7 +2072,7 @@
         "nama": "Sewa Pompa Sedot Pasir, Diesel 20 KW; 5 Inchi",
         "satuan": "jam",
         "koefisien": 0.022,
-        "harga_satuan_ref": 55000
+        "harga_satuan_ref": 2500000
       }
     ],
     "harga_satuan_pekerjaan_ref": 67681.85,
@@ -2124,14 +2124,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3024,
-        "harga_satuan_ref": 69308.57
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0302,
-        "harga_satuan_ref": 8372.62
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2141,14 +2141,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.0756,
-        "harga_satuan_ref": 18522
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.0756,
-        "harga_satuan_ref": 26460
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 141062.66,
@@ -2200,14 +2200,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.075,
-        "harga_satuan_ref": 17189.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0075,
-        "harga_satuan_ref": 2079.29
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2217,14 +2217,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.003,
-        "harga_satuan_ref": 735
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa Genset dibawah 5000w",
         "satuan": "jam",
         "koefisien": 0.003,
-        "harga_satuan_ref": 1035
+        "harga_satuan_ref": 345000
       }
     ],
     "harga_satuan_pekerjaan_ref": 24194.76,
@@ -2276,14 +2276,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2293,14 +2293,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 12250
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa Genset dibawah 5000w",
         "satuan": "jam",
         "koefisien": 0.05,
-        "harga_satuan_ref": 17250
+        "harga_satuan_ref": 345000
       }
     ],
     "harga_satuan_pekerjaan_ref": 107789.18,
@@ -2352,14 +2352,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2369,7 +2369,7 @@
         "nama": "Sewa Pompa Sedot Pasir, Diesel 7,5 KW; 5 inchi",
         "satuan": "jam",
         "koefisien": 0.04,
-        "harga_satuan_ref": 40000
+        "harga_satuan_ref": 1000000
       }
     ],
     "harga_satuan_pekerjaan_ref": 119864.18,
@@ -2421,14 +2421,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.075,
-        "harga_satuan_ref": 17189.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0075,
-        "harga_satuan_ref": 2079.29
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2482,14 +2482,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.76,
-        "harga_satuan_ref": 174188.2
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.076,
-        "harga_satuan_ref": 21070.16
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2543,14 +2543,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.135,
-        "harga_satuan_ref": 30941.33
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0135,
-        "harga_satuan_ref": 3742.73
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2560,14 +2560,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.045,
-        "harga_satuan_ref": 11025
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa Genset dibawah 5000w",
         "satuan": "jam",
         "koefisien": 0.045,
-        "harga_satuan_ref": 15525
+        "harga_satuan_ref": 345000
       }
     ],
     "harga_satuan_pekerjaan_ref": 70419.16,
@@ -2619,14 +2619,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0188,
-        "harga_satuan_ref": 5212.09
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.188,
-        "harga_satuan_ref": 43088.66
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -2636,14 +2636,14 @@
         "nama": "Sewa Jack hammer /drill",
         "satuan": "jam",
         "koefisien": 0.047,
-        "harga_satuan_ref": 11515
+        "harga_satuan_ref": 245000
       },
       {
         "ref": null,
         "nama": "Sewa Genset dibawah 5000w",
         "satuan": "jam",
         "koefisien": 0.047,
-        "harga_satuan_ref": 16215
+        "harga_satuan_ref": 345000
       }
     ],
     "harga_satuan_pekerjaan_ref": 87435.37,
@@ -2695,14 +2695,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.05,
-        "harga_satuan_ref": 240654.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 18575.01
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -2756,28 +2756,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 2750.34
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1446.67
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0006,
-        "harga_satuan_ref": 157.22
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 332.69
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -2785,13 +2785,13 @@
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.0035,
-        "harga_satuan_ref": 17395
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Paku Payung",
         "satuan": "kg",
         "koefisien": 0.004583,
-        "harga_satuan_ref": 206
+        "harga_satuan_ref": 45000
       }
     ],
     "peralatan": [
@@ -2800,7 +2800,7 @@
         "nama": "Sewa waterpass",
         "satuan": "jam",
         "koefisien": 0.006,
-        "harga_satuan_ref": 510
+        "harga_satuan_ref": 85000
       }
     ],
     "harga_satuan_pekerjaan_ref": 26217.61,
@@ -2852,14 +2852,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.75,
-        "harga_satuan_ref": 171896.25
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.075,
-        "harga_satuan_ref": 17189.63
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -2869,7 +2869,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.524,
-        "harga_satuan_ref": 154580
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 395215.76,
@@ -2921,28 +2921,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 1833.56
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 964.45
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0004,
-        "harga_satuan_ref": 104.81
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0008,
-        "harga_satuan_ref": 221.79
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -2950,13 +2950,13 @@
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.0018,
-        "harga_satuan_ref": 8946
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Paku Payung",
         "satuan": "kg",
         "koefisien": 0.004583,
-        "harga_satuan_ref": 206
+        "harga_satuan_ref": 45000
       }
     ],
     "peralatan": [
@@ -2965,7 +2965,7 @@
         "nama": "Sewa waterpass",
         "satuan": "jam",
         "koefisien": 0.004,
-        "harga_satuan_ref": 340
+        "harga_satuan_ref": 85000
       }
     ],
     "harga_satuan_pekerjaan_ref": 14509.1,
@@ -3017,14 +3017,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4713,
-        "harga_satuan_ref": 108019.6
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0471,
-        "harga_satuan_ref": 13057.96
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3034,7 +3034,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.35,
-        "harga_satuan_ref": 103250
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 257976.69,
@@ -3086,14 +3086,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3433,
-        "harga_satuan_ref": 78682.64
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0343,
-        "harga_satuan_ref": 9509.3
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3103,7 +3103,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.524,
-        "harga_satuan_ref": 154580
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 279187.73,
@@ -3155,14 +3155,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1507,
-        "harga_satuan_ref": 34539.69
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0151,
-        "harga_satuan_ref": 4186.31
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3172,7 +3172,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.09,
-        "harga_satuan_ref": 26550
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 75067.39,
@@ -3224,14 +3224,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3082,
-        "harga_satuan_ref": 70637.9
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0308,
-        "harga_satuan_ref": 8538.96
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3241,7 +3241,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.22,
-        "harga_satuan_ref": 64900
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 165688.39,
@@ -3293,14 +3293,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2495,
-        "harga_satuan_ref": 57184.15
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3310,7 +3310,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.14,
-        "harga_satuan_ref": 41300
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 121227.4,
@@ -3362,14 +3362,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1825,
-        "harga_satuan_ref": 41828.09
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0182,
-        "harga_satuan_ref": 5045.75
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3379,7 +3379,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.22,
-        "harga_satuan_ref": 64900
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 128539.91,
@@ -3431,14 +3431,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1675,
-        "harga_satuan_ref": 38390.16
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0168,
-        "harga_satuan_ref": 4657.62
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3448,7 +3448,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.14,
-        "harga_satuan_ref": 41300
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 96999.94,
@@ -3500,14 +3500,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2613,
-        "harga_satuan_ref": 59888.65
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0261,
-        "harga_satuan_ref": 7235.94
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3517,7 +3517,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.35,
-        "harga_satuan_ref": 103250
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 195930.78,
@@ -3569,14 +3569,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1429,
-        "harga_satuan_ref": 32751.97
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0143,
-        "harga_satuan_ref": 3964.52
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3586,7 +3586,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.09,
-        "harga_satuan_ref": 26550
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 72756.46,
@@ -3638,14 +3638,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.17,
-        "harga_satuan_ref": 38963.15
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.017,
-        "harga_satuan_ref": 4713.06
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3655,7 +3655,7 @@
         "nama": "Sewa Chainsaw 30 inchi; 7,5 HP",
         "satuan": "jam",
         "koefisien": 0.08,
-        "harga_satuan_ref": 23600
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 77367.64,
@@ -3707,14 +3707,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -3724,7 +3724,7 @@
         "nama": "Sewa Chainsaw 35 inchi; 10 HP",
         "satuan": "jam",
         "koefisien": 0.09,
-        "harga_satuan_ref": 26550
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 104396.68,
@@ -3776,14 +3776,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 2750.34
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 332.69
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3793,7 +3793,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.0625,
-        "harga_satuan_ref": 18438
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 24749.18,
@@ -3845,14 +3845,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.08,
-        "harga_satuan_ref": 18335.6
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 2217.91
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -3862,7 +3862,7 @@
         "nama": "Sewa Chainsaw 20 inchi; 5,5 HP",
         "satuan": "jam",
         "koefisien": 0.0357,
-        "harga_satuan_ref": 10532
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 35748.34,
@@ -3914,21 +3914,21 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.3901,
-        "harga_satuan_ref": 318603.97
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.2896,
-        "harga_satuan_ref": 69826.04
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0695,
-        "harga_satuan_ref": 19268.11
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -3936,31 +3936,31 @@
         "nama": "Batu Belah",
         "satuan": "m3",
         "koefisien": 0.528,
-        "harga_satuan_ref": 167904
+        "harga_satuan_ref": 318000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 190,
-        "harga_satuan_ref": 285000
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Beton",
         "satuan": "kg",
         "koefisien": 494,
-        "harga_satuan_ref": 158080
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.4488,
-        "harga_satuan_ref": 157080
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Air Bersih",
         "satuan": "liter",
         "koefisien": 121,
-        "harga_satuan_ref": 48400
+        "harga_satuan_ref": 400
       }
     ],
     "peralatan": [],
@@ -4013,7 +4013,7 @@
         "nama": "Tenaga terampil operator",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 9729
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [],
@@ -4023,7 +4023,7 @@
         "nama": "Sewa Stamper Smooth Drum 1.5 Ton",
         "satuan": "jam",
         "koefisien": 0.0089,
-        "harga_satuan_ref": 2670
+        "harga_satuan_ref": 300000
       }
     ],
     "harga_satuan_pekerjaan_ref": 14259,
@@ -4075,7 +4075,7 @@
         "nama": "Tenaga terampil operator",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 9729
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [],
@@ -4085,7 +4085,7 @@
         "nama": "Sewa Stamper D-Drum 550 Kg",
         "satuan": "jam",
         "koefisien": 0.0183,
-        "harga_satuan_ref": 19307
+        "harga_satuan_ref": 1055000
       }
     ],
     "harga_satuan_pekerjaan_ref": 33391,
@@ -4137,7 +4137,7 @@
         "nama": "Tenaga terampil operator",
         "satuan": "OH",
         "koefisien": 0.057,
-        "harga_satuan_ref": 13203
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [],
@@ -4147,7 +4147,7 @@
         "nama": "Sewa Stamper Kodok",
         "satuan": "jam",
         "koefisien": 0.0574,
-        "harga_satuan_ref": 16933
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 34656,
@@ -4199,7 +4199,7 @@
         "nama": "Tenaga terampil operator",
         "satuan": "OH",
         "koefisien": 0.077,
-        "harga_satuan_ref": 17836
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [],
@@ -4209,7 +4209,7 @@
         "nama": "Sewa Stamper Kuda",
         "satuan": "jam",
         "koefisien": 0.077,
-        "harga_satuan_ref": 22715
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 46634,
@@ -4261,14 +4261,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.013,
-        "harga_satuan_ref": 3604.11
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -4276,7 +4276,7 @@
         "nama": "Sirtu / Basecourse",
         "satuan": "m3",
         "koefisien": 1.2,
-        "harga_satuan_ref": 358200
+        "harga_satuan_ref": 298500
       }
     ],
     "peralatan": [],
@@ -4329,14 +4329,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.125,
-        "harga_satuan_ref": 28649.38
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0125,
-        "harga_satuan_ref": 3465.49
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -4344,7 +4344,7 @@
         "nama": "Tanah Liat",
         "satuan": "m3",
         "koefisien": 1.62,
-        "harga_satuan_ref": 243000
+        "harga_satuan_ref": 150000
       }
     ],
     "peralatan": [],
@@ -4397,14 +4397,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.065,
-        "harga_satuan_ref": 14897.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0065,
-        "harga_satuan_ref": 1802.05
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -4412,7 +4412,7 @@
         "nama": "Pasir Uruk / Pasir Urug",
         "satuan": "m3",
         "koefisien": 1.2,
-        "harga_satuan_ref": 385080
+        "harga_satuan_ref": 320900
       }
     ],
     "peralatan": [],
@@ -4465,14 +4465,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2772.39
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -4480,7 +4480,7 @@
         "nama": "Tanah Uruk / Tanah Urug",
         "satuan": "m3",
         "koefisien": 1.4,
-        "harga_satuan_ref": 210000
+        "harga_satuan_ref": 150000
       }
     ],
     "peralatan": [],
@@ -4533,14 +4533,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 68758.5
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [
@@ -4548,7 +4548,7 @@
         "nama": "Pasir Uruk / Pasir Urug",
         "satuan": "m3",
         "koefisien": 1.2,
-        "harga_satuan_ref": 385080
+        "harga_satuan_ref": 320900
       }
     ],
     "peralatan": [],
@@ -4601,14 +4601,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.275,
-        "harga_satuan_ref": 63028.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0137,
-        "harga_satuan_ref": 3798.17
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4662,14 +4662,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.8475,
-        "harga_satuan_ref": 194242.76
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0423,
-        "harga_satuan_ref": 11727.21
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4723,14 +4723,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.3777,
-        "harga_satuan_ref": 315761.95
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0688,
-        "harga_satuan_ref": 19074.04
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4784,14 +4784,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.0938,
-        "harga_satuan_ref": 250693.49
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0546,
-        "harga_satuan_ref": 15137.25
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4845,14 +4845,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.6513,
-        "harga_satuan_ref": 149274.7
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0325,
-        "harga_satuan_ref": 9010.27
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4906,14 +4906,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4843,
-        "harga_satuan_ref": 110999.14
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0242,
-        "harga_satuan_ref": 6709.18
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -4967,14 +4967,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2722,
-        "harga_satuan_ref": 62386.88
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0136,
-        "harga_satuan_ref": 3770.45
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5028,14 +5028,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.344,
-        "harga_satuan_ref": 78843.08
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0172,
-        "harga_satuan_ref": 4768.51
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5089,14 +5089,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2505,
-        "harga_satuan_ref": 57413.35
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0125,
-        "harga_satuan_ref": 3465.49
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5150,14 +5150,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2254,
-        "harga_satuan_ref": 51660.55
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0112,
-        "harga_satuan_ref": 3105.08
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5211,14 +5211,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2104,
-        "harga_satuan_ref": 48222.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0105,
-        "harga_satuan_ref": 2911.01
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5272,14 +5272,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2363,
-        "harga_satuan_ref": 54158.78
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0118,
-        "harga_satuan_ref": 3271.42
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5333,28 +5333,28 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.125,
-        "harga_satuan_ref": 30139
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 314.43
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.019,
-        "harga_satuan_ref": 5267.54
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.375,
-        "harga_satuan_ref": 85948.13
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [
@@ -5362,31 +5362,31 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 45,
-        "harga_satuan_ref": 67500
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.074,
-        "harga_satuan_ref": 22200
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.146,
-        "harga_satuan_ref": 51100
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Panel beton  pracetak",
         "satuan": "lembar",
         "koefisien": 0.986,
-        "harga_satuan_ref": 118320
+        "harga_satuan_ref": 120000
       },
       {
         "nama": "Kolom beton pracetak",
         "satuan": "batang",
         "koefisien": 0.525,
-        "harga_satuan_ref": 189000
+        "harga_satuan_ref": 360000
       }
     ],
     "peralatan": [],
@@ -5439,28 +5439,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 9626.19
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 9644.48
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -5468,7 +5468,7 @@
         "nama": "Kawat  Pagar  BRC Galvanis",
         "satuan": "lembar",
         "koefisien": 0.01649,
-        "harga_satuan_ref": 8327
+        "harga_satuan_ref": 505000
       }
     ],
     "peralatan": [],
@@ -5521,28 +5521,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 45839
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang besi/besi beton",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 24111.2
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 24111.2
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5544.78
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -5550,31 +5550,31 @@
         "nama": "Seng Gelombang",
         "satuan": "lembar",
         "koefisien": 1.2,
-        "harga_satuan_ref": 126600
+        "harga_satuan_ref": 105500
       },
       {
         "nama": "Seng Gelombang",
         "satuan": "lembar",
         "koefisien": 1.2,
-        "harga_satuan_ref": 68400
+        "harga_satuan_ref": 57000
       },
       {
         "nama": "Besi Siku L 40x40x4",
         "satuan": "kg",
         "koefisien": 13.5,
-        "harga_satuan_ref": 182250
+        "harga_satuan_ref": 13500
       },
       {
         "nama": "Kawat Seng",
         "satuan": "kg",
         "koefisien": 0.3,
-        "harga_satuan_ref": 7800
+        "harga_satuan_ref": 26000
       },
       {
         "nama": "2.2.2.1.6 Pemasangan 1 m3 Fondasi Batu Belah Mortar Tipe N (5,2 MPa) setara 1 SP : 4 PP, cara manual",
         "satuan": "m3",
         "koefisien": 0.15,
-        "harga_satuan_ref": 236565.53
+        "harga_satuan_ref": 1577103.5
       }
     ],
     "peralatan": [],
@@ -5627,14 +5627,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2772.39
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5688,14 +5688,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.392,
-        "harga_satuan_ref": 319039.44
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1392,
-        "harga_satuan_ref": 38591.67
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5749,14 +5749,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.06,
-        "harga_satuan_ref": 16634.34
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.2,
-        "harga_satuan_ref": 275034
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -5810,14 +5810,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.5,
-        "harga_satuan_ref": 343792.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.15,
-        "harga_satuan_ref": 41585.85
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5871,14 +5871,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.5,
-        "harga_satuan_ref": 343792.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.06,
-        "harga_satuan_ref": 16634.34
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5932,14 +5932,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.25,
-        "harga_satuan_ref": 286493.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.125,
-        "harga_satuan_ref": 34654.88
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -5993,14 +5993,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.14,
-        "harga_satuan_ref": 32087.3
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 3881.35
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6054,14 +6054,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.5,
-        "harga_satuan_ref": 343792.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.075,
-        "harga_satuan_ref": 20792.93
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6115,14 +6115,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.65,
-        "harga_satuan_ref": 378171.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.165,
-        "harga_satuan_ref": 45744.44
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6176,14 +6176,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.5,
-        "harga_satuan_ref": 343792.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.15,
-        "harga_satuan_ref": 41585.85
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6237,14 +6237,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.351,
-        "harga_satuan_ref": 309642.45
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1351,
-        "harga_satuan_ref": 37454.99
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6298,14 +6298,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2772.39
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -6359,14 +6359,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.66,
-        "harga_satuan_ref": 151268.7
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.066,
-        "harga_satuan_ref": 18297.77
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6420,14 +6420,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.92,
-        "harga_satuan_ref": 210859.4
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.092,
-        "harga_satuan_ref": 25505.99
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6481,14 +6481,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.8,
-        "harga_satuan_ref": 183356
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.08,
-        "harga_satuan_ref": 22179.12
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6556,21 +6556,21 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 26202.9
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.02",
         "nama": "Tukang cat/pelitur",
         "satuan": "OH",
         "koefisien": 1.5,
-        "harga_satuan_ref": 361668
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 27723.9
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -6578,31 +6578,31 @@
         "nama": "Triplek / Plywood tebal 18 mm",
         "satuan": "lembar",
         "koefisien": 0.35,
-        "harga_satuan_ref": 80535
+        "harga_satuan_ref": 230100
       },
       {
         "nama": "Balok 8/12 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.077,
-        "harga_satuan_ref": 770770
+        "harga_satuan_ref": 10010000
       },
       {
         "nama": "Besi Siku L 30x30x3",
         "satuan": "kg",
         "koefisien": 5.8,
-        "harga_satuan_ref": 106140
+        "harga_satuan_ref": 18300
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 1.25,
-        "harga_satuan_ref": 25000
+        "harga_satuan_ref": 20000
       },
       {
         "nama": "Cat kayu/Besi",
         "satuan": "kg",
         "koefisien": 2.5,
-        "harga_satuan_ref": 237500
+        "harga_satuan_ref": 95000
       }
     ],
     "peralatan": [],
@@ -6655,35 +6655,35 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 2217.91
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 57298.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.125,
-        "harga_satuan_ref": 30139
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.125,
-        "harga_satuan_ref": 30139
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6550.73
+        "harga_satuan_ref": 262029
       }
     ],
     "bahan": [
@@ -6691,43 +6691,43 @@
         "nama": "Seng Gelombang",
         "satuan": "lembar",
         "koefisien": 1.3125,
-        "harga_satuan_ref": 74813
+        "harga_satuan_ref": 57000
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 0.4271,
-        "harga_satuan_ref": 8542
+        "harga_satuan_ref": 20000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 61.56,
-        "harga_satuan_ref": 92340
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.044,
-        "harga_satuan_ref": 13200
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.0617,
-        "harga_satuan_ref": 21609
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Air Bersih",
         "satuan": "liter",
         "koefisien": 17.415,
-        "harga_satuan_ref": 6966
+        "harga_satuan_ref": 400
       },
       {
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.031,
-        "harga_satuan_ref": 154070
+        "harga_satuan_ref": 4970000
       }
     ],
     "peralatan": [],
@@ -6780,35 +6780,35 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.308,
-        "harga_satuan_ref": 70592.06
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.154,
-        "harga_satuan_ref": 37131.25
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.154,
-        "harga_satuan_ref": 37131.25
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.031,
-        "harga_satuan_ref": 8122.9
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2772.39
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -6816,43 +6816,43 @@
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.0139,
-        "harga_satuan_ref": 69083
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Kawat Duri Galvanis",
         "satuan": "m",
         "koefisien": 20.4457,
-        "harga_satuan_ref": 106318
+        "harga_satuan_ref": 5200
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 0.4715,
-        "harga_satuan_ref": 9430
+        "harga_satuan_ref": 20000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 26.406,
-        "harga_satuan_ref": 39609
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.044,
-        "harga_satuan_ref": 13200
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.0617,
-        "harga_satuan_ref": 21609
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Air Bersih",
         "satuan": "liter",
         "koefisien": 17.415,
-        "harga_satuan_ref": 6966
+        "harga_satuan_ref": 400
       }
     ],
     "peralatan": [],
@@ -6905,14 +6905,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.675,
-        "harga_satuan_ref": 154706.63
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0675,
-        "harga_satuan_ref": 18713.63
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -6966,14 +6966,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.9,
-        "harga_satuan_ref": 206275.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 12475.76
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7027,14 +7027,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4,
-        "harga_satuan_ref": 91678
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11089.56
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7088,14 +7088,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0563,
-        "harga_satuan_ref": 15608.56
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.563,
-        "harga_satuan_ref": 129036.79
+        "harga_satuan_ref": 229195
       }
     ],
     "bahan": [],
@@ -7149,14 +7149,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 11459.75
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1386.2
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7210,14 +7210,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.75,
-        "harga_satuan_ref": 171896.25
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.038,
-        "harga_satuan_ref": 10535.08
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7271,14 +7271,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.03,
-        "harga_satuan_ref": 6875.85
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.003,
-        "harga_satuan_ref": 831.72
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7332,14 +7332,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 114597.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7393,14 +7393,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22919.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1386.2
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7454,14 +7454,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 114597.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.025,
-        "harga_satuan_ref": 6930.98
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7515,28 +7515,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.75,
-        "harga_satuan_ref": 171896.25
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.75,
-        "harga_satuan_ref": 180834
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 26202.9
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.075,
-        "harga_satuan_ref": 20792.93
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7544,37 +7544,37 @@
         "nama": "Banner plastik",
         "satuan": "m2",
         "koefisien": 0.48,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 65000
       },
       {
         "nama": "Triplek / Plywood tebal 9 mm",
         "satuan": "lembar",
         "koefisien": 0.18,
-        "harga_satuan_ref": 20700
+        "harga_satuan_ref": 115000
       },
       {
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.021,
-        "harga_satuan_ref": 104370
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Bahan",
         "satuan": "kg",
         "koefisien": 0.1,
-        "harga_satuan_ref": 4000
+        "harga_satuan_ref": 40000
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 1.25,
-        "harga_satuan_ref": 25000
+        "harga_satuan_ref": 20000
       },
       {
         "nama": "Cat kayu/Besi",
         "satuan": "kg",
         "koefisien": 1.5,
-        "harga_satuan_ref": 142500
+        "harga_satuan_ref": 95000
       }
     ],
     "peralatan": [],
@@ -7634,28 +7634,28 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 78608.7
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 458390
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 27723.9
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 2,
-        "harga_satuan_ref": 482224
+        "harga_satuan_ref": 241112
       }
     ],
     "bahan": [
@@ -7663,79 +7663,79 @@
         "nama": "Dolken dia 8 s/d 10 cm panjang 4 m",
         "satuan": "batang",
         "koefisien": 1.25,
-        "harga_satuan_ref": 20000
+        "harga_satuan_ref": 16000
       },
       {
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.18,
-        "harga_satuan_ref": 894600
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Besi Plat Strip",
         "satuan": "kg",
         "koefisien": 1.1,
-        "harga_satuan_ref": 30470
+        "harga_satuan_ref": 27700
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 35,
-        "harga_satuan_ref": 52500
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.15,
-        "harga_satuan_ref": 75000
+        "harga_satuan_ref": 500000
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.1,
-        "harga_satuan_ref": 30000
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Batu Pecah / Batu Split / Kerikil",
         "satuan": "m3",
         "koefisien": 0.15,
-        "harga_satuan_ref": 40000.05
+        "harga_satuan_ref": 266667
       },
       {
         "nama": "Bata Merah",
         "satuan": "buah",
         "koefisien": 30,
-        "harga_satuan_ref": 24000
+        "harga_satuan_ref": 800
       },
       {
         "nama": "Kaca Polos 3 mm",
         "satuan": "m2",
         "koefisien": 0.08,
-        "harga_satuan_ref": 6400
+        "harga_satuan_ref": 80000
       },
       {
         "nama": "Triplek / Plywood tebal 4 mm",
         "satuan": "lembar",
         "koefisien": 0.06,
-        "harga_satuan_ref": 3900
+        "harga_satuan_ref": 65000
       },
       {
         "nama": "Jendela Nako",
         "satuan": "buah",
         "koefisien": 0.2,
-        "harga_satuan_ref": 19500
+        "harga_satuan_ref": 97500
       },
       {
         "nama": "Seng Plat BJLS 30",
         "satuan": "lembar",
         "koefisien": 0.25,
-        "harga_satuan_ref": 10000
+        "harga_satuan_ref": 40000
       },
       {
         "nama": "Kunci Tanam Biasa",
         "satuan": "buah",
         "koefisien": 0.15,
-        "harga_satuan_ref": 95400
+        "harga_satuan_ref": 636000
       }
     ],
     "peralatan": [],
@@ -7788,28 +7788,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 2750.34
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1446.67
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0006,
-        "harga_satuan_ref": 157.22
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 332.69
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7817,19 +7817,19 @@
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 64610
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Papan 3/20 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.007,
-        "harga_satuan_ref": 32340
+        "harga_satuan_ref": 4620000
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 0.02,
-        "harga_satuan_ref": 400
+        "harga_satuan_ref": 20000
       }
     ],
     "peralatan": [
@@ -7838,7 +7838,7 @@
         "nama": "Sewa waterpass",
         "satuan": "jam",
         "koefisien": 0.006,
-        "harga_satuan_ref": 510
+        "harga_satuan_ref": 85000
       }
     ],
     "harga_satuan_pekerjaan_ref": 117928.96,
@@ -7890,35 +7890,35 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10481.16
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.6,
-        "harga_satuan_ref": 137517
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 48222.4
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.2,
-        "harga_satuan_ref": 48222.4
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.013,
-        "harga_satuan_ref": 3604.11
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7926,49 +7926,49 @@
         "nama": "Kaso 5/7 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.0387,
-        "harga_satuan_ref": 192339
+        "harga_satuan_ref": 4970000
       },
       {
         "nama": "Papan 2/20 Kayu Kelas II",
         "satuan": "m3",
         "koefisien": 0.0396,
-        "harga_satuan_ref": 174636
+        "harga_satuan_ref": 4410000
       },
       {
         "nama": "Paku 5 s/d 12 cm",
         "satuan": "kg",
         "koefisien": 0.5872,
-        "harga_satuan_ref": 11744
+        "harga_satuan_ref": 20000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 26.406,
-        "harga_satuan_ref": 39609
+        "harga_satuan_ref": 1500
       },
       {
         "nama": "Pasir Beton",
         "satuan": "kg",
         "koefisien": 61.56,
-        "harga_satuan_ref": 19699
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.0617,
-        "harga_satuan_ref": 21609
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Air Bersih",
         "satuan": "liter",
         "koefisien": 17.415,
-        "harga_satuan_ref": 6966
+        "harga_satuan_ref": 400
       },
       {
         "nama": "Residu atau Ter",
         "satuan": "liter",
         "koefisien": 0.4,
-        "harga_satuan_ref": 4138
+        "harga_satuan_ref": 10346
       }
     ],
     "peralatan": [],

@@ -45,33 +45,48 @@ function toAhspItem(item, catalog, legalSource) {
   const kode = item.kode;
   if (!kode) return null;
 
+  /**
+   * DCKTRP scrape naming: `jumlah_rp` is the unit price; `harga_satuan_rp` is the
+   * line total (koefisien × unit). Engine `harga_satuan_ref` must be the unit price.
+   */
+  const unitPrice = (r) => {
+    if (typeof r.jumlah_rp === 'number' && r.jumlah_rp > 0) return r.jumlah_rp;
+    if (typeof r.harga_satuan_rp === 'number' && r.harga_satuan_rp > 0 && r.koefisien > 0) {
+      return r.harga_satuan_rp / r.koefisien;
+    }
+    return null;
+  };
+
   const tenaga_kerja = (item.tenaga_kerja ?? [])
-    .filter((r) => r.koefisien > 0 && r.harga_satuan_rp > 0)
-    .map((r) => ({
+    .map((r) => ({ row: r, unit: unitPrice(r) }))
+    .filter(({ row, unit }) => row.koefisien > 0 && unit != null)
+    .map(({ row: r, unit }) => ({
       ref: r.kode?.startsWith('L.') ? r.kode : null,
       nama: r.nama ?? 'Tenaga kerja',
       satuan: 'OH',
       koefisien: r.koefisien,
-      harga_satuan_ref: r.harga_satuan_rp,
+      harga_satuan_ref: unit,
     }));
 
   const bahan = (item.bahan ?? [])
-    .filter((r) => r.koefisien > 0 && r.harga_satuan_rp > 0)
-    .map((r) => ({
+    .map((r) => ({ row: r, unit: unitPrice(r) }))
+    .filter(({ row, unit }) => row.koefisien > 0 && unit != null)
+    .map(({ row: r, unit }) => ({
       nama: r.nama ?? 'Bahan',
       satuan: mapSatuan(r.satuan),
       koefisien: r.koefisien,
-      harga_satuan_ref: r.harga_satuan_rp,
+      harga_satuan_ref: unit,
     }));
 
   const peralatan = (item.peralatan ?? [])
-    .filter((r) => r.koefisien > 0 && r.harga_satuan_rp > 0)
-    .map((r) => ({
+    .map((r) => ({ row: r, unit: unitPrice(r) }))
+    .filter(({ row, unit }) => row.koefisien > 0 && unit != null)
+    .map(({ row: r, unit }) => ({
       ref: r.kode?.startsWith('E.') ? r.kode : null,
       nama: r.nama ?? 'Peralatan',
       satuan: 'jam',
       koefisien: r.koefisien,
-      harga_satuan_ref: r.harga_satuan_rp,
+      harga_satuan_ref: unit,
     }));
 
   const links = provenanceLinks(catalog, legalSource, item.source_id);

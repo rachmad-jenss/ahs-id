@@ -15,28 +15,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.562,
-        "harga_satuan_ref": 128807.59
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.938,
-        "harga_satuan_ref": 236125
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.094,
-        "harga_satuan_ref": 24630.73
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.031,
-        "harga_satuan_ref": 8594.41
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -97,28 +97,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 3.333,
-        "harga_satuan_ref": 763906.94
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 5.567,
-        "harga_satuan_ref": 1401392
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.557,
-        "harga_satuan_ref": 145950.15
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.186,
-        "harga_satuan_ref": 51566.45
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -179,28 +179,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 14752.6
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 19399.58
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.022,
-        "harga_satuan_ref": 6922.63
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0073,
-        "harga_satuan_ref": 1944.31
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -208,43 +208,43 @@
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Pohon Mahoni di Polybag 75 Liter",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 367500
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       }
     ],
     "peralatan": [],
@@ -297,21 +297,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.13,
-        "harga_satuan_ref": 37640.98
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.0065,
-        "harga_satuan_ref": 2045.32
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0022,
-        "harga_satuan_ref": 585.96
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -365,21 +365,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3474.55
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.0006,
-        "harga_satuan_ref": 188.8
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0002,
-        "harga_satuan_ref": 53.27
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -433,21 +433,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21136.86
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.0037,
-        "harga_satuan_ref": 1164.26
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0012,
-        "harga_satuan_ref": 319.61
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -501,14 +501,14 @@
         "nama": "Tukang Pemelihara Taman",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3474.55
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0006,
-        "harga_satuan_ref": 159.81
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -562,14 +562,14 @@
         "nama": "Tukang Pemelihara Taman",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5790.92
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0009,
-        "harga_satuan_ref": 239.71
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -623,21 +623,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.0476,
-        "harga_satuan_ref": 13782.39
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.00238,
-        "harga_satuan_ref": 748.9
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.00079,
-        "harga_satuan_ref": 210.41
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -691,14 +691,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 110
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.000025,
-        "harga_satuan_ref": 7
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -752,28 +752,28 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -781,43 +781,43 @@
         "nama": "Bahan",
         "satuan": "buah",
         "koefisien": 5,
-        "harga_satuan_ref": 434500
+        "harga_satuan_ref": 86900
       },
       {
         "nama": "AC Cassete Kap 29.000 BTUH",
         "satuan": "unit",
         "koefisien": 5,
-        "harga_satuan_ref": 114845000
+        "harga_satuan_ref": 22969000
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -870,28 +870,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 22018.8
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.1,
-        "harga_satuan_ref": 28954.6
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 15733.25
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 4447.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -899,43 +899,43 @@
         "nama": "Palem Ekor Tupai di polybag 200 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 1496250
+        "harga_satuan_ref": 1425000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.02,
-        "harga_satuan_ref": 475
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 10-12 cm",
         "satuan": "m",
         "koefisien": 18,
-        "harga_satuan_ref": 65700
+        "harga_satuan_ref": 3650
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.195,
-        "harga_satuan_ref": 58500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.052,
-        "harga_satuan_ref": 49920
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 4308
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [
@@ -944,7 +944,7 @@
         "nama": "Sewa Crane",
         "satuan": "jam",
         "koefisien": 0.56,
-        "harga_satuan_ref": 476000
+        "harga_satuan_ref": 850000
       }
     ],
     "harga_satuan_pekerjaan_ref": 2559333.05,
@@ -996,28 +996,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1025,43 +1025,43 @@
         "nama": "Palem Phoenix di polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 288278
+        "harga_satuan_ref": 274550
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -1114,28 +1114,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1143,43 +1143,43 @@
         "nama": "Palem Phoenix di polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 388028
+        "harga_satuan_ref": 369550
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -1232,28 +1232,28 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 19399.58
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.033,
-        "harga_satuan_ref": 10383.95
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.011,
-        "harga_satuan_ref": 2929.78
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.067,
-        "harga_satuan_ref": 14752.6
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -1261,43 +1261,43 @@
         "nama": "Palem Ekor Tupai di polybag 150 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 847875
+        "harga_satuan_ref": 807500
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.02,
-        "harga_satuan_ref": 475
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 8-10 cm",
         "satuan": "m",
         "koefisien": 18,
-        "harga_satuan_ref": 59400
+        "harga_satuan_ref": 3300
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.146,
-        "harga_satuan_ref": 43800
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.039,
-        "harga_satuan_ref": 37440
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3314
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [
@@ -1306,7 +1306,7 @@
         "nama": "Sewa Crane",
         "satuan": "jam",
         "koefisien": 0.041,
-        "harga_satuan_ref": 34850
+        "harga_satuan_ref": 850000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1239491.85,
@@ -1358,28 +1358,28 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       }
     ],
     "bahan": [
@@ -1387,43 +1387,43 @@
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Palem Waregu di polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 99750
+        "harga_satuan_ref": 95000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       }
     ],
     "peralatan": [],
@@ -1476,28 +1476,28 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -1505,43 +1505,43 @@
         "nama": "Palem Waregu di polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 44888
+        "harga_satuan_ref": 42750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -1594,28 +1594,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1623,43 +1623,43 @@
         "nama": "Palem Merah / Pinang Merah di polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 168578
+        "harga_satuan_ref": 160550
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       }
     ],
     "peralatan": [],
@@ -1712,28 +1712,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1741,43 +1741,43 @@
         "nama": "Palem Kuning di polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 134563
+        "harga_satuan_ref": 128155
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       }
     ],
     "peralatan": [],
@@ -1830,28 +1830,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1859,43 +1859,43 @@
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Palem Merah / Pinang Merah di polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 124688
+        "harga_satuan_ref": 118750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       }
     ],
     "peralatan": [],
@@ -1948,28 +1948,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -1977,43 +1977,43 @@
         "nama": "Palem Komodoria / Komodor / Chamadorea di polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 134663
+        "harga_satuan_ref": 128250
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2066,28 +2066,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2095,43 +2095,43 @@
         "nama": "Palem Komodoria / Komodor / Chamadorea di polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 79800
+        "harga_satuan_ref": 76000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2184,28 +2184,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 15413.16
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.07,
-        "harga_satuan_ref": 20268.22
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2213,43 +2213,43 @@
         "nama": "Palem Jepang polybag 75 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 299250
+        "harga_satuan_ref": 285000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.073,
-        "harga_satuan_ref": 21900
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 19200
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1657
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2302,28 +2302,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2331,43 +2331,43 @@
         "nama": "Palem Kuning di polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 74813
+        "harga_satuan_ref": 71250
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       }
     ],
     "peralatan": [],
@@ -2420,28 +2420,28 @@
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       }
     ],
     "bahan": [
@@ -2449,43 +2449,43 @@
         "nama": "Palem Jepang polybag 50 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 144638
+        "harga_satuan_ref": 137750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2538,21 +2538,21 @@
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.  0 2",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       }
     ],
     "bahan": [
@@ -2560,31 +2560,31 @@
         "nama": "Semak Walisongo / Umbrella Tree",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 178125
+        "harga_satuan_ref": 7125
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2637,21 +2637,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2659,31 +2659,31 @@
         "nama": "Semak Tabernae / Mondokaki",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 225000
+        "harga_satuan_ref": 9000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2736,21 +2736,21 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       }
     ],
     "bahan": [
@@ -2758,31 +2758,31 @@
         "nama": "Semak Agave / Lidah Naga",
         "satuan": "buah",
         "koefisien": 16,
-        "harga_satuan_ref": 380000
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.011,
-        "harga_satuan_ref": 3300
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 2880
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 331
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2835,21 +2835,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2857,31 +2857,31 @@
         "nama": "Semak Pandan Kuning",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 95000
+        "harga_satuan_ref": 3800
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -2934,21 +2934,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -2956,31 +2956,31 @@
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Semak Sanseviera / Lidah Mertua",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 154375
+        "harga_satuan_ref": 6175
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3033,21 +3033,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3055,31 +3055,31 @@
         "nama": "Semak Pretty Pink",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 118750
+        "harga_satuan_ref": 4750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3132,21 +3132,21 @@
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.  0 2",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       }
     ],
     "bahan": [
@@ -3154,31 +3154,31 @@
         "nama": "Semak Melati Putih",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 166250
+        "harga_satuan_ref": 6650
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.0003,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3231,21 +3231,21 @@
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.  0 2",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       }
     ],
     "bahan": [
@@ -3253,31 +3253,31 @@
         "nama": "Semak Kemuning",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 201875
+        "harga_satuan_ref": 8075
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3330,21 +3330,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3352,31 +3352,31 @@
         "nama": "Semak Kacapiring Wangi / Gardenia",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 237500
+        "harga_satuan_ref": 9500
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3429,21 +3429,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3451,31 +3451,31 @@
         "nama": "Semak Hujan Mas",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 237500
+        "harga_satuan_ref": 9500
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3528,21 +3528,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3550,31 +3550,31 @@
         "nama": "Semak Cendrawasih",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 178125
+        "harga_satuan_ref": 7125
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3627,21 +3627,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3649,31 +3649,31 @@
         "nama": "Semak Calathea",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 237500
+        "harga_satuan_ref": 9500
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3726,21 +3726,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3748,31 +3748,31 @@
         "nama": "Semak Bunga Iris",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 59375
+        "harga_satuan_ref": 2375
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3825,21 +3825,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3847,31 +3847,31 @@
         "nama": "Bakung Lele",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 118750
+        "harga_satuan_ref": 4750
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -3924,21 +3924,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -3952,19 +3952,19 @@
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 150
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.0001,
-        "harga_satuan_ref": 96
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       }
     ],
     "peralatan": [],
@@ -4017,21 +4017,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4045,19 +4045,19 @@
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 150
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.0001,
-        "harga_satuan_ref": 96
+        "harga_satuan_ref": 960000
       }
     ],
     "peralatan": [],
@@ -4110,21 +4110,21 @@
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.  0 2",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 14477.3
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4132,31 +4132,31 @@
         "nama": "Semak Alamanda / Bunga Terompet Emas",
         "satuan": "buah",
         "koefisien": 25,
-        "harga_satuan_ref": 356250
+        "harga_satuan_ref": 14250
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1500
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.000325,
-        "harga_satuan_ref": 108
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -4209,21 +4209,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4237,19 +4237,19 @@
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 150
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.0001,
-        "harga_satuan_ref": 96
+        "harga_satuan_ref": 960000
       }
     ],
     "peralatan": [],
@@ -4302,21 +4302,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4330,19 +4330,19 @@
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 150
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.0001,
-        "harga_satuan_ref": 96
+        "harga_satuan_ref": 960000
       }
     ],
     "peralatan": [],
@@ -4395,21 +4395,21 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 3146.65
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4417,7 +4417,7 @@
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Kucai Mini (Ophiopogon Japonicus)",
@@ -4429,7 +4429,7 @@
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 150
+        "harga_satuan_ref": 300000
       }
     ],
     "peralatan": [],
@@ -4482,21 +4482,21 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.0873,
-        "harga_satuan_ref": 20008.72
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang batu/tembok",
         "satuan": "OH",
         "koefisien": 0.0437,
-        "harga_satuan_ref": 10536.59
+        "harga_satuan_ref": 241112
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0044,
-        "harga_satuan_ref": 1219.85
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -4504,7 +4504,7 @@
         "nama": "Tutup U-Ditch 62x60x7,5 cm (tipe LD)",
         "satuan": "buah",
         "koefisien": 1.6667,
-        "harga_satuan_ref": 228338
+        "harga_satuan_ref": 137000
       }
     ],
     "peralatan": [],
@@ -4557,28 +4557,28 @@
         "nama": "Tukang besi/besi beton",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1158.19
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0005,
-        "harga_satuan_ref": 125.87
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0002,
-        "harga_satuan_ref": 53.27
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1100.94
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -4586,13 +4586,13 @@
         "nama": "Besi Beton Polos",
         "satuan": "kg",
         "koefisien": 1.05,
-        "harga_satuan_ref": 11025
+        "harga_satuan_ref": 10500
       },
       {
         "nama": "Kawat Beton / Bendrat",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 215
+        "harga_satuan_ref": 21500
       }
     ],
     "peralatan": [
@@ -4601,7 +4601,7 @@
         "nama": "Sewa Crane",
         "satuan": "jam",
         "koefisien": 0.019,
-        "harga_satuan_ref": 142500
+        "harga_satuan_ref": 7500000
       }
     ],
     "harga_satuan_pekerjaan_ref": 179604.7,
@@ -4653,21 +4653,21 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 11581.85
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2517.32
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4675,31 +4675,31 @@
         "nama": "Semak Puring Apel",
         "satuan": "buah",
         "koefisien": 9,
-        "harga_satuan_ref": 432000
+        "harga_satuan_ref": 48000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6000
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.005,
-        "harga_satuan_ref": 4800
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 331
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -4752,28 +4752,28 @@
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -4781,43 +4781,43 @@
         "nama": "Palem Sikas Halus / Mawar Jambe di polybag 50L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 697253
+        "harga_satuan_ref": 664050
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 6-8 cm",
         "satuan": "m",
         "koefisien": 12,
-        "harga_satuan_ref": 31200
+        "harga_satuan_ref": 2600
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.049,
-        "harga_satuan_ref": 14700
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.013,
-        "harga_satuan_ref": 12480
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 994
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -4870,21 +4870,21 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2517.32
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.02",
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 11581.85
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [
@@ -4892,31 +4892,31 @@
         "nama": "Semak Puring Apel",
         "satuan": "buah",
         "koefisien": 16,
-        "harga_satuan_ref": 768000
+        "harga_satuan_ref": 48000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.011,
-        "harga_satuan_ref": 3300
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 2880
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 331
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -4969,28 +4969,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -4998,43 +4998,43 @@
         "nama": "Ketapang Kencana",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 787500
+        "harga_satuan_ref": 750000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.02,
-        "harga_satuan_ref": 475
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 8-10 cm",
         "satuan": "m",
         "koefisien": 18,
-        "harga_satuan_ref": 59400
+        "harga_satuan_ref": 3300
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.098,
-        "harga_satuan_ref": 29400
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.026,
-        "harga_satuan_ref": 24960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.007,
-        "harga_satuan_ref": 2320
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [
@@ -5043,7 +5043,7 @@
         "nama": "Sewa Crane",
         "satuan": "jam",
         "koefisien": 0.28,
-        "harga_satuan_ref": 238000
+        "harga_satuan_ref": 850000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1349780.3,
@@ -5095,21 +5095,21 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2517.32
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0033,
-        "harga_satuan_ref": 878.94
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.02",
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 11581.85
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [
@@ -5117,31 +5117,31 @@
         "nama": "Semak Ruelia / Kencana Ungu",
         "satuan": "buah",
         "koefisien": 16,
-        "harga_satuan_ref": 56000
+        "harga_satuan_ref": 3500
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.01,
-        "harga_satuan_ref": 238
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.011,
-        "harga_satuan_ref": 3300
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.003,
-        "harga_satuan_ref": 2880
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 331
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -5194,28 +5194,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 8807.52
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Tanam",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 11581.84
+        "harga_satuan_ref": 289546
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang tanam",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 6293.3
+        "harga_satuan_ref": 314665
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0067,
-        "harga_satuan_ref": 1784.5
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -5223,43 +5223,43 @@
         "nama": "Palem Ekor Tupai di polybag 100 L",
         "satuan": "buah",
         "koefisien": 1.05,
-        "harga_satuan_ref": 367500
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.02,
-        "harga_satuan_ref": 475
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 8-10 cm",
         "satuan": "m",
         "koefisien": 18,
-        "harga_satuan_ref": 59400
+        "harga_satuan_ref": 3300
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.098,
-        "harga_satuan_ref": 29400
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.026,
-        "harga_satuan_ref": 24960
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.007,
-        "harga_satuan_ref": 2320
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [
@@ -5268,7 +5268,7 @@
         "nama": "Sewa Crane",
         "satuan": "jam",
         "koefisien": 0.28,
-        "harga_satuan_ref": 238000
+        "harga_satuan_ref": 850000
       }
     ],
     "harga_satuan_pekerjaan_ref": 866780.3,
@@ -5320,14 +5320,14 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.4444,
-        "harga_satuan_ref": 118363.27
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 4.4444,
-        "harga_satuan_ref": 978603.55
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [],
@@ -5337,14 +5337,14 @@
         "nama": "Sewa stang bor, batang bor  diameter 1 1/4 inchi",
         "satuan": "jam",
         "koefisien": 1.1111,
-        "harga_satuan_ref": 333330
+        "harga_satuan_ref": 300000
       },
       {
         "ref": null,
         "nama": "Sewa bor Auger diameter 50 cm",
         "satuan": "jam",
         "koefisien": 1.1111,
-        "harga_satuan_ref": 261109
+        "harga_satuan_ref": 235000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1945115.75,
@@ -5396,21 +5396,21 @@
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.0048,
-        "harga_satuan_ref": 1208.31
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0016,
-        "harga_satuan_ref": 426.15
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.02",
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.0143,
-        "harga_satuan_ref": 3312.41
+        "harga_satuan_ref": 231637
       }
     ],
     "bahan": [
@@ -5418,43 +5418,43 @@
         "nama": "Anti Rayap Tanah",
         "satuan": "kg",
         "koefisien": 0.005,
-        "harga_satuan_ref": 119
+        "harga_satuan_ref": 23750
       },
       {
         "nama": "Bambu Dia. 3-5 cm",
         "satuan": "m",
         "koefisien": 6,
-        "harga_satuan_ref": 21276
+        "harga_satuan_ref": 3546
       },
       {
         "nama": "Tali Pengikat Tanaman",
         "satuan": "m",
         "koefisien": 10,
-        "harga_satuan_ref": 3200
+        "harga_satuan_ref": 320
       },
       {
         "nama": "Tanah Subur",
         "satuan": "m3",
         "koefisien": 0.0146,
-        "harga_satuan_ref": 4380
+        "harga_satuan_ref": 300000
       },
       {
         "nama": "Pupuk Organik",
         "satuan": "m3",
         "koefisien": 0.0039,
-        "harga_satuan_ref": 3744
+        "harga_satuan_ref": 960000
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.001,
-        "harga_satuan_ref": 331
+        "harga_satuan_ref": 331400
       },
       {
         "nama": "Tanaman hias bunga sabrina",
         "satuan": "buah",
         "koefisien": 16,
-        "harga_satuan_ref": 480000
+        "harga_satuan_ref": 30000
       }
     ],
     "peralatan": [],
@@ -5507,28 +5507,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -5536,7 +5536,7 @@
         "nama": "Kabel NYM 3 x 2,5 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 27600
+        "harga_satuan_ref": 23000
       }
     ],
     "peralatan": [],
@@ -5589,14 +5589,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2008,
-        "harga_satuan_ref": 44213.75
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2663.44
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -5604,25 +5604,25 @@
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.389,
-        "harga_satuan_ref": 136150
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.273,
-        "harga_satuan_ref": 109200
+        "harga_satuan_ref": 400000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.45,
-        "harga_satuan_ref": 13230
+        "harga_satuan_ref": 1400
       },
       {
         "nama": "Aspal",
         "satuan": "kg",
         "koefisien": 57.68,
-        "harga_satuan_ref": 576800
+        "harga_satuan_ref": 10000
       }
     ],
     "peralatan": [
@@ -5631,49 +5631,49 @@
         "nama": "Sewa Wheel Loader",
         "satuan": "jam",
         "koefisien": 0.0096,
-        "harga_satuan_ref": 3533
+        "harga_satuan_ref": 368000
       },
       {
         "ref": null,
         "nama": "Sewa  Asphalt Mixing Plant",
         "satuan": "jam",
         "koefisien": 0.0201,
-        "harga_satuan_ref": 104520
+        "harga_satuan_ref": 5200000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.0025125,
-        "harga_satuan_ref": 879
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Sewa Dump Truck",
         "satuan": "jam",
         "koefisien": 0.2589,
-        "harga_satuan_ref": 258900
+        "harga_satuan_ref": 1000000
       },
       {
         "ref": null,
         "nama": "Sewa Asphalt Finisher",
         "satuan": "jam",
         "koefisien": 0.11,
-        "harga_satuan_ref": 49500
+        "harga_satuan_ref": 450000
       },
       {
         "ref": null,
         "nama": "Sewa Tandem Roller 8-10 Ton",
         "satuan": "jam",
         "koefisien": 0.0108,
-        "harga_satuan_ref": 3780
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Pneumatic Tyre Roller (PTR)",
         "satuan": "jam",
         "koefisien": 0.0046,
-        "harga_satuan_ref": 1610
+        "harga_satuan_ref": 350000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1500725.85,
@@ -5725,14 +5725,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.2008,
-        "harga_satuan_ref": 44213.75
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.01,
-        "harga_satuan_ref": 2663.44
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -5740,25 +5740,25 @@
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 0.331,
-        "harga_satuan_ref": 115850
+        "harga_satuan_ref": 350000
       },
       {
         "nama": "Pasir Beton",
         "satuan": "m3",
         "koefisien": 0.321,
-        "harga_satuan_ref": 128400
+        "harga_satuan_ref": 400000
       },
       {
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.87,
-        "harga_satuan_ref": 13818
+        "harga_satuan_ref": 1400
       },
       {
         "nama": "Aspal",
         "satuan": "kg",
         "koefisien": 62.83,
-        "harga_satuan_ref": 628300
+        "harga_satuan_ref": 10000
       }
     ],
     "peralatan": [
@@ -5767,49 +5767,49 @@
         "nama": "Sewa Wheel Loader",
         "satuan": "jam",
         "koefisien": 0.0096,
-        "harga_satuan_ref": 3533
+        "harga_satuan_ref": 368000
       },
       {
         "ref": null,
         "nama": "Sewa  Asphalt Mixing Plant",
         "satuan": "jam",
         "koefisien": 0.0201,
-        "harga_satuan_ref": 104520
+        "harga_satuan_ref": 5200000
       },
       {
         "ref": null,
         "nama": "Sewa genset diatas 5000w",
         "satuan": "jam",
         "koefisien": 0.0025,
-        "harga_satuan_ref": 875
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Sewa Asphalt Finisher",
         "satuan": "jam",
         "koefisien": 0.137,
-        "harga_satuan_ref": 61650
+        "harga_satuan_ref": 450000
       },
       {
         "ref": null,
         "nama": "Sewa Tandem Roller 8-10 Ton",
         "satuan": "jam",
         "koefisien": 0.0135,
-        "harga_satuan_ref": 4725
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Pneumatic Tyre Roller (PTR)",
         "satuan": "jam",
         "koefisien": 0.0058,
-        "harga_satuan_ref": 2030
+        "harga_satuan_ref": 350000
       },
       {
         "ref": null,
         "nama": "Sewa Dump Truck",
         "satuan": "jam",
         "koefisien": 0.2589,
-        "harga_satuan_ref": 258900
+        "harga_satuan_ref": 1000000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1574899.7,
@@ -5861,28 +5861,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.375,
-        "harga_satuan_ref": 302758.5
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 2.75,
-        "harga_satuan_ref": 637001.75
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.275,
-        "harga_satuan_ref": 69226.3
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.083,
-        "harga_satuan_ref": 22106.55
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -5890,7 +5890,7 @@
         "nama": "Pipa BS (Black Steel) SCH 40 ; DN. 10\" (250 mm) + fitting & aksesoris",
         "satuan": "m",
         "koefisien": 1.4,
-        "harga_satuan_ref": 2175880
+        "harga_satuan_ref": 1554200
       }
     ],
     "peralatan": [],
@@ -5943,28 +5943,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 1.096,
-        "harga_satuan_ref": 241326.05
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 2.193,
-        "harga_satuan_ref": 507979.94
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.219,
-        "harga_satuan_ref": 55129.31
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.066,
-        "harga_satuan_ref": 17578.7
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -5972,7 +5972,7 @@
         "nama": "Bahan",
         "satuan": "m",
         "koefisien": 1.4,
-        "harga_satuan_ref": 1549380
+        "harga_satuan_ref": 1106700
       }
     ],
     "peralatan": [],
@@ -6025,21 +6025,21 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 440.38
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang besi/besi beton",
         "satuan": "OH",
         "koefisien": 0.0004,
-        "harga_satuan_ref": 92.65
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0002,
-        "harga_satuan_ref": 53.27
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [],
@@ -6049,7 +6049,7 @@
         "nama": "Sewa Tower Crane arm 30 m",
         "satuan": "jam",
         "koefisien": 0.00025,
-        "harga_satuan_ref": 950
+        "harga_satuan_ref": 3800000
       }
     ],
     "harga_satuan_pekerjaan_ref": 1766.4,
@@ -6101,28 +6101,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.25,
-        "harga_satuan_ref": 55047
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.418,
-        "harga_satuan_ref": 105223.98
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.042,
-        "harga_satuan_ref": 10572.74
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.014,
-        "harga_satuan_ref": 3728.82
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6130,7 +6130,7 @@
         "nama": "UPS 2 KVA (Inverter, Rectifier, Battery Backup 4 jam) dan aksesoris",
         "satuan": "unit",
         "koefisien": 1.05,
-        "harga_satuan_ref": 8925000
+        "harga_satuan_ref": 8500000
       }
     ],
     "peralatan": [],
@@ -6183,28 +6183,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 26422.56
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 27796.44
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3020.78
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1065.38
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6212,7 +6212,7 @@
         "nama": "Plafon akustik 30x60 cm",
         "satuan": "lembar",
         "koefisien": 5.8,
-        "harga_satuan_ref": 359600
+        "harga_satuan_ref": 62000
       }
     ],
     "peralatan": [],
@@ -6265,28 +6265,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 26422.56
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang kayu",
         "satuan": "OH",
         "koefisien": 0.12,
-        "harga_satuan_ref": 27796.44
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3020.78
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1065.38
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6294,7 +6294,7 @@
         "nama": "Plafon akustik 30x30 cm",
         "satuan": "lembar",
         "koefisien": 12,
-        "harga_satuan_ref": 660000
+        "harga_satuan_ref": 55000
       }
     ],
     "peralatan": [],
@@ -6347,28 +6347,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.244,
-        "harga_satuan_ref": 53725.87
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.408,
-        "harga_satuan_ref": 94507.9
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.041,
-        "harga_satuan_ref": 10321.01
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.012,
-        "harga_satuan_ref": 3196.13
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6376,7 +6376,7 @@
         "nama": "Header Pipa PVC AW DN 4\" (100 mm) + Material Bantu",
         "satuan": "m",
         "koefisien": 1.3,
-        "harga_satuan_ref": 4550000
+        "harga_satuan_ref": 3500000
       }
     ],
     "peralatan": [],
@@ -6429,28 +6429,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.119,
-        "harga_satuan_ref": 26202.37
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.199,
-        "harga_satuan_ref": 50094.67
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5034.64
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 1864.41
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6458,7 +6458,7 @@
         "nama": "Kabel Tray (Vertikal) 200 x 100 mm TRU Powder Coating dan aksesoris",
         "satuan": "unit",
         "koefisien": 1.29,
-        "harga_satuan_ref": 776580
+        "harga_satuan_ref": 602000
       }
     ],
     "peralatan": [],
@@ -6511,28 +6511,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.119,
-        "harga_satuan_ref": 26202.37
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.199,
-        "harga_satuan_ref": 50094.67
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5034.64
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 1864.41
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6540,7 +6540,7 @@
         "nama": "Kabel Tray (Vertikal) 300 x 100 mm TRU Powder Coating dan aksesoris",
         "satuan": "unit",
         "koefisien": 1.2,
-        "harga_satuan_ref": 865200
+        "harga_satuan_ref": 721000
       }
     ],
     "peralatan": [],
@@ -6593,28 +6593,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.119,
-        "harga_satuan_ref": 26202.37
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.199,
-        "harga_satuan_ref": 50094.67
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5034.64
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.007,
-        "harga_satuan_ref": 1864.41
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6622,7 +6622,7 @@
         "nama": "Kabel Tray (Vertikal) 400 x 100 mm TRU Powder Coating dan aksesoris",
         "satuan": "unit",
         "koefisien": 1.2,
-        "harga_satuan_ref": 1032000
+        "harga_satuan_ref": 860000
       }
     ],
     "peralatan": [],
@@ -6675,28 +6675,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.123,
-        "harga_satuan_ref": 28190.99
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Pipa",
         "satuan": "OH",
         "koefisien": 0.205,
-        "harga_satuan_ref": 46984.98
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.021,
-        "harga_satuan_ref": 5502.61
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1663.43
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -6704,7 +6704,7 @@
         "nama": "Pipa PVC D ; DN. 4\" (100 mm) + fitting & aksesoris",
         "satuan": "m",
         "koefisien": 1.45,
-        "harga_satuan_ref": 68984
+        "harga_satuan_ref": 47575
       }
     ],
     "peralatan": [],
@@ -6757,28 +6757,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.036,
-        "harga_satuan_ref": 7926.77
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.06,
-        "harga_satuan_ref": 15103.92
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1510.39
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 532.69
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6786,7 +6786,7 @@
         "nama": "Kabel NYFGBY 4 x 6 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 94800
+        "harga_satuan_ref": 79000
       }
     ],
     "peralatan": [],
@@ -6839,28 +6839,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.036,
-        "harga_satuan_ref": 7926.77
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.06,
-        "harga_satuan_ref": 15103.92
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.006,
-        "harga_satuan_ref": 1510.39
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 532.69
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6868,7 +6868,7 @@
         "nama": "Kabel NYFGBY 4 x 10 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 140400
+        "harga_satuan_ref": 117000
       }
     ],
     "peralatan": [],
@@ -6921,28 +6921,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.048,
-        "harga_satuan_ref": 10569.02
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.08,
-        "harga_satuan_ref": 20138.56
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.008,
-        "harga_satuan_ref": 2013.86
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.003,
-        "harga_satuan_ref": 799.03
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -6950,7 +6950,7 @@
         "nama": "Kabel NYFGBY 4 x 16 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 207600
+        "harga_satuan_ref": 173000
       }
     ],
     "peralatan": [],
@@ -7003,28 +7003,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.029,
-        "harga_satuan_ref": 6646.66
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.048,
-        "harga_satuan_ref": 12083
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1310.15
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 554.48
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7032,7 +7032,7 @@
         "nama": "Kabel NYFGBY 4 x 4 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 91908
+        "harga_satuan_ref": 76590
       }
     ],
     "peralatan": [],
@@ -7085,28 +7085,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.029,
-        "harga_satuan_ref": 6385.45
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.048,
-        "harga_satuan_ref": 12083.14
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.005,
-        "harga_satuan_ref": 1258.66
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.002,
-        "harga_satuan_ref": 532.69
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -7114,7 +7114,7 @@
         "nama": "Kabel NYM 3 x 6 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 57024
+        "harga_satuan_ref": 47520
       }
     ],
     "peralatan": [],
@@ -7167,35 +7167,35 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5285
+        "harga_satuan_ref": 220188
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7203,7 +7203,7 @@
         "nama": "Kabel NYM 2 x 10 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.2,
-        "harga_satuan_ref": 62400
+        "harga_satuan_ref": 52000
       }
     ],
     "peralatan": [],
@@ -7256,14 +7256,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.000447,
-        "harga_satuan_ref": 102.45
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.000045,
-        "harga_satuan_ref": 12.48
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [],
@@ -7317,28 +7317,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7346,13 +7346,13 @@
         "nama": "Bahan",
         "satuan": "m",
         "koefisien": 1.15,
-        "harga_satuan_ref": 22138
+        "harga_satuan_ref": 19250
       },
       {
         "nama": "Conduit PVC HI (High Impact) 20 mm dan aksesoris",
         "satuan": "m",
         "koefisien": 1.15,
-        "harga_satuan_ref": 7590
+        "harga_satuan_ref": 6600
       }
     ],
     "peralatan": [],
@@ -7405,14 +7405,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.4,
-        "harga_satuan_ref": 91678
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.02,
-        "harga_satuan_ref": 5544.78
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7420,7 +7420,7 @@
         "nama": "Batu Pecah / Batu Split / Kerikil",
         "satuan": "m3",
         "koefisien": 1.13,
-        "harga_satuan_ref": 301333.71
+        "harga_satuan_ref": 266667
       }
     ],
     "peralatan": [
@@ -7429,7 +7429,7 @@
         "nama": "Sewa Stamper Kodok",
         "satuan": "jam",
         "koefisien": 0.0574,
-        "harga_satuan_ref": 16933
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 477812.91,
@@ -7481,14 +7481,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 68758.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7496,7 +7496,7 @@
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 1.13,
-        "harga_satuan_ref": 395500
+        "harga_satuan_ref": 350000
       }
     ],
     "peralatan": [
@@ -7505,7 +7505,7 @@
         "nama": "Sewa Stamper Kodok",
         "satuan": "jam",
         "koefisien": 0.0574,
-        "harga_satuan_ref": 16933
+        "harga_satuan_ref": 295000
       }
     ],
     "harga_satuan_pekerjaan_ref": 558152.6,
@@ -7557,14 +7557,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 68758.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7572,7 +7572,7 @@
         "nama": "Kerikil",
         "satuan": "m3",
         "koefisien": 1.13,
-        "harga_satuan_ref": 395500
+        "harga_satuan_ref": 350000
       }
     ],
     "peralatan": [],
@@ -7625,14 +7625,14 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.3,
-        "harga_satuan_ref": 68758.5
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 4158.59
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7693,28 +7693,28 @@
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       }
     ],
     "bahan": [
@@ -7722,7 +7722,7 @@
         "nama": "Kabel NYY 2 x 10 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.15,
-        "harga_satuan_ref": 72220
+        "harga_satuan_ref": 62800
       }
     ],
     "peralatan": [],
@@ -7775,28 +7775,28 @@
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.024,
-        "harga_satuan_ref": 5500.68
+        "harga_satuan_ref": 229195
       },
       {
         "ref": "L.02",
         "nama": "Tukang Listrik",
         "satuan": "OH",
         "koefisien": 0.04,
-        "harga_satuan_ref": 10069
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.004,
-        "harga_satuan_ref": 1048.12
+        "harga_satuan_ref": 262029
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.001,
-        "harga_satuan_ref": 277.24
+        "harga_satuan_ref": 277239
       }
     ],
     "bahan": [
@@ -7804,7 +7804,7 @@
         "nama": "Kabel NYY 2 x 2,5 mm2 dan aksesoris",
         "satuan": "m",
         "koefisien": 1.15,
-        "harga_satuan_ref": 21827
+        "harga_satuan_ref": 18980
       }
     ],
     "peralatan": [],
@@ -7857,28 +7857,28 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.45,
-        "harga_satuan_ref": 104236.65
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.045,
-        "harga_satuan_ref": 11327.94
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.015,
-        "harga_satuan_ref": 3995.16
+        "harga_satuan_ref": 266344
       },
       {
         "ref": "L.01",
         "nama": "Pekerja",
         "satuan": "OH",
         "koefisien": 0.9,
-        "harga_satuan_ref": 198169.2
+        "harga_satuan_ref": 220188
       }
     ],
     "bahan": [
@@ -7886,13 +7886,13 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 13020
+        "harga_satuan_ref": 1400
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 5965
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
@@ -7952,21 +7952,21 @@
         "nama": "Tukang",
         "satuan": "OH",
         "koefisien": 0.5,
-        "harga_satuan_ref": 115818.5
+        "harga_satuan_ref": 231637
       },
       {
         "ref": "L.03",
         "nama": "Kepala tukang",
         "satuan": "OH",
         "koefisien": 0.05,
-        "harga_satuan_ref": 12586.6
+        "harga_satuan_ref": 251732
       },
       {
         "ref": "L.04",
         "nama": "Mandor",
         "satuan": "OH",
         "koefisien": 0.0167,
-        "harga_satuan_ref": 4447.94
+        "harga_satuan_ref": 266344
       }
     ],
     "bahan": [
@@ -7974,13 +7974,13 @@
         "nama": "Semen Portland",
         "satuan": "kg",
         "koefisien": 9.3,
-        "harga_satuan_ref": 13020
+        "harga_satuan_ref": 1400
       },
       {
         "nama": "Pasir Pasang",
         "satuan": "m3",
         "koefisien": 0.018,
-        "harga_satuan_ref": 5965
+        "harga_satuan_ref": 331400
       }
     ],
     "peralatan": [],
