@@ -11,7 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 # Production deployment is owned by the Cloudflare Workers Git integration.
-# This workflow only verifies the exact commit that Cloudflare will build.
+# This workflow only verifies the Worker package for the exact commit that
+# Cloudflare will build. Unit/typecheck already ran in CI for @ahs-id/web.
 permissions:
   contents: read
 
@@ -21,7 +22,7 @@ defaults:
 
 jobs:
   verify:
-    name: Build and validate web
+    name: Build and wrangler dry-run
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'push' &&
@@ -40,6 +41,4 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @ahs-id/web... build
-      - run: pnpm --filter @ahs-id/web test
-      - run: pnpm --filter @ahs-id/web typecheck
       - run: pnpm --filter @ahs-id/web exec wrangler deploy --dry-run --env production
