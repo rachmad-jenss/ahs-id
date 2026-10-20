@@ -1,98 +1,79 @@
-# LEGAL.md
+# Legal and Data Provenance
 
-## Regulatory Data
+AHS-ID combines original software with coefficients and reference prices derived
+from Indonesian government instruments and regional publications. This document
+summarizes provenance and the project's reuse policy; it is not a legal opinion.
+Check the notices shipped with each data package before redistributing it.
 
-AHS-ID contains coefficient data extracted from official Indonesian
-government regulations, specifically:
+## Source inventory
 
-- Permen PUPR No. 8 Tahun 2023 and its appendices (Lampiran I-IV)
-- SE Dirjen Bina Konstruksi No. 73/2023
+| Data package or source group | Source described by the project |
+|---|---|
+| `@ahs-id/pupr-2023` | Permen PUPR No. 8 Tahun 2023, Lampiran I–IV |
+| `@ahs-id/bina-marga-2016` | Permen PUPR No. 28 Tahun 2016 and Spesifikasi Umum Bina Marga 2010 Rev. 3 |
+| `@ahs-id/bina-marga-2022`, `@ahs-id/hsd-bm-2022` | Permen PUPR No. 1 Tahun 2022 |
+| `@ahs-id/cipta-karya-2024` | SE Dirjen Bina Konstruksi No. 68/2024 |
+| `@ahs-id/ahsp-se-binkon-47-2026` | SE Dirjen Bina Konstruksi No. 47/2026 |
+| `@ahs-id/hsd-jabar-2025`, `@ahs-id/hsd-kaltim-2025`, `@ahs-id/hsd-papua-2025` | Regional HSD price schedules for Jawa Barat, Kalimantan Timur, and Papua |
+| `@ahs-id/hsd-jakarta-2026`, Jakarta portal catalog data | DCKTRP's Bangun Jakarta portal; the package describes Jakarta Q1 2026 HSD and portal AHSP/HSP data |
 
-### Legal Basis for Republication
+Each published bundle should carry the exact source title, issuing body,
+publication/version date, URL or document identifier, relevant page or sheet,
+access date, extraction method, attribution, and any known reuse terms. If a
+detail is absent from a bundle, do not infer it from this overview.
 
-Under Indonesian law:
+## Copyright and reuse
 
-1. **PP No. 70 Tahun 2019** tentang Perencanaan, Penganggaran,
-   Pelaksanaan, Pelaporan, dan Evaluasi atas Penerimaan dan
-   Pengeluaran Negara:
-   Government regulations are public documents intended for public use.
+UU No. 28 Tahun 2014 tentang Hak Cipta, Pasal 42(b), states that copyright does
+not apply to peraturan perundang-undangan. AHS-ID relies on this provision only
+for the legal instruments themselves. It does not make a blanket rights
+determination for separate price schedules, circulars, portal content, source
+spreadsheets, compilations, or other material merely because a government body
+published or hosts it.
 
-2. **UU No. 14 Tahun 2008** tentang Keterbukaan Informasi Publik:
-   Government regulations and their appendices are classified as
-   "Informasi Publik yang Wajib Disediakan dan Diumumkan" (Article 9).
+Public availability is not treated here as a blanket license to republish every
+source file or transformed dataset. In particular, this project makes no general
+claim that all regional HSD data is public domain. Verify the applicable source
+terms or permission for each dataset and retain its attribution and provenance.
 
-3. **UU No. 28 Tahun 2014** tentang Hak Cipta, Pasal 43 huruf (b):
-   "Tidak merupakan pelanggaran Hak Cipta: (b) pengambilan berita aktual,
-   baik seluruhnya maupun sebagian, dari kantor berita, Lembaga Penyiaran,
-   dan surat kabar atau sumber sejenis lainnya dengan ketentuan sumbernya
-   harus disebutkan secara lengkap."
+Official references:
 
-   Additionally, Pasal 42:
-   "Tidak ada Hak Cipta atas: (a) hasil rapat terbuka lembaga negara;
-   (b) peraturan perundang-undangan; (c) pidato kenegaraan atau pidato
-   pejabat pemerintah; (d) putusan pengadilan atau penetapan hakim;
-   (e) kitab suci atau simbol keagamaan."
+- [UU No. 28 Tahun 2014 tentang Hak Cipta (Database Peraturan BPK)](https://peraturan.bpk.go.id/Home/Download/28018/UU%20Nomor%2028%20Tahun%202014.pdf)
+- [UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik (Database Peraturan BPK)](https://peraturan.bpk.go.id/Details/39047/uu-no-14-2008)
 
-   Point (b) directly exempts government regulations from copyright.
+## Attribution and verification
 
-### Attribution
-
-While government regulations are not copyrighted, AHS-ID provides
-full attribution as good practice:
-
-- Every coefficient entry includes `provenance.sumber_regulasi`
-  tracing to the specific Permen, Lampiran, and page number.
-- The data source is clearly stated in bundle metadata (`ahs_meta`).
-
-### Disclaimer
-
-AHS-ID data is provided "as is" for informational and computational
-purposes. This data does not constitute official government documents.
-For authoritative regulatory text, always refer to the original
-publications on JDIH (jdih.pu.go.id) or Peraturan BPK (peraturan.bpk.go.id).
-
-### Separation of Official Data from Processing Layer
-
-AHS-ID clearly separates two layers, inspired by the methodology of
-[Pasal.id](https://pasal.id/metodologi):
-
-1. **Official data** — The AHSP coefficients, HSD prices, and equipment
-   specifications are extracted from official government regulations
-   (Permen PUPR, SK Gubernur). These are in the public domain under
-   UU 28/2014 Pasal 42.
-
-2. **Processing layer** — The JSON representation, validation schemas,
-   calculation engine, and tooling are MIT-licensed original work.
-   This layer provides structure and compute but does not modify the
-   underlying coefficients.
-
-Every AHSP item includes a `provenance.verification_tier` field that
-documents the current verification level:
+AHSP entries include `provenance.sumber_regulasi` and bundle metadata identifies
+the stated data source. Keep attribution connected to every package and
+published dataset. Record verification with the existing
+`provenance.verification_tier` field:
 
 | Tier | Meaning |
-|------|---------|
-| `auto-extracted` | Parsed from PDF/Excel source without manual verification |
-| `spot-checked` | Random sample checked against original source document |
-| `verified` | Every entry has been manually compared against the source |
-| `executed` | Verified + calculation output confirmed against known results |
+|---|---|
+| `auto-extracted` | Parsed from the source PDF or spreadsheet without manual verification |
+| `spot-checked` | A sample was checked against the source document |
+| `verified` | Every entry was manually compared with the source |
+| `executed` | Verified and calculation output was checked against known results |
 
-This tier system lets users assess data confidence at a glance, just as
-Pasal.id distinguishes "automatically parsed" from "verified" content.
+Users must check coefficients against the latest applicable regulation and
+confirm prices against the relevant source before using results in official
+HPS/RAB documents. AHS-ID outputs are computational references, not official
+government documents.
 
-Users are responsible for verifying coefficients against the latest
-applicable regulations before using them in official HPS/RAB documents.
+## Regional HSD data
 
-### HSD Regional Data
+Regional HSD sources can differ by issuing authority, publication type, period,
+and reuse terms. A source being hosted on an official portal does not establish
+that the extracted table may be redistributed under the software's license.
+The package must identify its specific source and applicable notice or
+permission. When reuse terms cannot be established, resolve them with the
+publisher or rights holder before publishing or republishing the affected data.
 
-HSD (Harga Satuan Dasar) prices are published by regional governments
-via SK Gubernur/Bupati. These are public procurement reference prices
-intended for government project cost estimation. The same legal basis
-(UU 14/2008, UU 28/2014 Pasal 42) applies.
+## Software license
 
-### Software License
-
-The AHS-ID calculation engine, schemas, validators, and CLI tools are
-licensed under the MIT License. See LICENSE file.
-
-The coefficient data in bundle packages is public domain (government
-regulation data). The structured JSON representation is MIT-licensed.
+The MIT License in `LICENSE` applies to AHS-ID software authored in this
+repository, including the calculation engine, validators, schemas, CLI, and
+other original code. It does not by itself grant rights in third-party source
+documents or data. Read each data package's source attribution and reuse notice
+alongside the MIT license; do not interpret the root license as a blanket
+public-domain or MIT license for every underlying dataset.
