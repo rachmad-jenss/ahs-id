@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { validatePackageData } from '@ahs-id/core';
+import { validatePackageData } from '@ahs-id/core/validate-package-data';
 import { assertKnownStrategy, findPackage, installedDataDir, PACKAGES, packageNames, type PackageRecord } from '../utils/registry.js';
 
 export interface ValidationResult {

@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import { existsSync, writeFileSync } from 'node:fs';
-import { exportHspToExcelBuffer } from '@ahs-id/core';
+import { exportHspToExcelBuffer } from '@ahs-id/core/excel';
 import { calculateHsp, parseKeyValue } from '../utils/loader.js';
 
 /** Build the Commander command for safe RAB workbook export. */

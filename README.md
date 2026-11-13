@@ -40,7 +40,8 @@ console.log(hsp.grandTotal); // HSP termasuk overhead & profit (15%)
 Export the breakdown to Excel (RAB columns: Uraian, Satuan, Koefisien, Harga Satuan, Jumlah):
 
 ```typescript
-import { createCalculator, exportHspToExcelBuffer } from '@ahs-id/core';
+import { createCalculator } from '@ahs-id/core';
+import { exportHspToExcelBuffer } from '@ahs-id/core/excel';
 import { writeFileSync } from 'node:fs';
 
 const buffer = await exportHspToExcelBuffer(hsp);

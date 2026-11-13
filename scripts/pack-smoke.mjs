@@ -125,7 +125,8 @@ for (const pkg of manifest.packages) {
 }
 
 const smokeScript = `
-import { createCalculator, exportHspToExcelBuffer } from '@ahs-id/core';
+import { createCalculator } from '@ahs-id/core';
+import { exportHspToExcelBuffer } from '@ahs-id/core/excel';
 import { bundle as puprBundle } from '@ahs-id/pupr-2023';
 import { hsd as kaltimHsd } from '@ahs-id/hsd-kaltim-2025';
 import { bundle as bm2016Bundle } from '@ahs-id/bina-marga-2016';
