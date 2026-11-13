@@ -45,6 +45,13 @@ function nationalAhspEntries(): SearchIndexEntry[] {
     bidang: item.bidang,
     divisi: item.divisi,
     unit: item.unit,
+    meta: {
+      overhead_pct: item.margin.overhead_pct.default,
+      profit_pct: item.margin.profit_pct.default,
+      ...(item.provenance.sumber_regulasi
+        ? { sumber_regulasi: item.provenance.sumber_regulasi }
+        : {}),
+    },
   }));
 }
 

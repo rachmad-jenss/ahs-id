@@ -1,4 +1,4 @@
-import { loadSearchIndex, type SearchIndexEntry } from '@/lib/search-client';
+import { loadHspPortalSearchEntries, type SearchIndexEntry } from '@/lib/search-client';
 
 export const PORTAL_BUNDLE_ID = 'hsp-jakarta-dcktrp';
 export const PORTAL_BUNDLE_DISPLAY = 'HSP portal DCKTRP (DKI Jakarta)';
@@ -38,7 +38,7 @@ export async function findPortalIndexEntry(code: string): Promise<SearchIndexEnt
   if (!q) {
     throw new Error('Kode atau ID pekerjaan kosong');
   }
-  const { entries } = await loadSearchIndex();
+  const entries = await loadHspPortalSearchEntries();
   const scoped = portalEntries(entries);
   const exact = scoped.filter((row) => row.code === q);
   const sole = exact[0];

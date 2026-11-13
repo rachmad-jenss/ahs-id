@@ -12,12 +12,8 @@ import {
   loadResolvedHsdForBundle,
   type PackageRecord,
 } from '@ahs-id/engine-registry';
-import {
-  findPortalIndexEntry,
-  PORTAL_BUNDLE_DISPLAY,
-  PORTAL_BUNDLE_ID,
-} from '@/lib/portal-hsp';
-import { loadSearchIndex } from '@/lib/search-client';
+import { findPortalIndexEntry, PORTAL_BUNDLE_DISPLAY, PORTAL_BUNDLE_ID } from '@/lib/portal-hsp';
+import { loadAhspSearchEntries, type SearchIndexEntry } from '@/lib/search-client';
 
 type FixedCoefficientPackage = Extract<PackageRecord, { strategy: 'fixed-coefficient' }>;
 
@@ -31,16 +27,34 @@ function loadFixedItemsCached(pkg: FixedCoefficientPackage): Promise<{ ahspItems
   return pending;
 }
 
-/** Warm bundle JSON in the background (fixed-coefficient catalogs are large). */
+/** Warm bundle JSON in the background when the browser is idle (calc still loads on demand). */
 export function prefetchCalculatorBundle(bundleName: string): void {
   if (bundleName === PORTAL_BUNDLE_ID) return;
   const pkg = findPackage(bundleName);
   if (!pkg || pkg.strategy === 'hsd-only') return;
-  if (pkg.strategy === 'fixed-coefficient') {
-    void loadFixedItemsCached(pkg);
-    return;
+  const warm = (): void => {
+    if (pkg.strategy === 'fixed-coefficient') {
+      void loadFixedItemsCached(pkg);
+      return;
+    }
+    void pkg.loadBundle();
+  };
+  if (typeof globalThis.requestIdleCallback === 'function') {
+    globalThis.requestIdleCallback(warm, { timeout: 12_000 });
+  } else {
+    globalThis.setTimeout(warm, 2_000);
   }
-  void pkg.loadBundle();
+}
+
+function marginDefaultsFromSearchMeta(
+  meta: SearchIndexEntry['meta'] | undefined,
+): { readonly overhead_pct: number; readonly profit_pct: number } {
+  const overhead = meta?.overhead_pct;
+  const profit = meta?.profit_pct;
+  return {
+    overhead_pct: typeof overhead === 'number' && Number.isFinite(overhead) ? overhead : 10,
+    profit_pct: typeof profit === 'number' && Number.isFinite(profit) ? profit : 5,
+  };
 }
 
 export interface CalculatorBundleOption {
@@ -160,32 +174,14 @@ function assertCalcPackage(pkg: PackageRecord | undefined, name: string): CalcPa
 }
 
 /**
- * Fast item label + default margin for fixed-coefficient bundles via search index
- * (avoids blocking the UI on the full JSON bundle download).
+ * @deprecated Use {@link loadCalculatorItemMeta} — fixed bundles now resolve from the AHSP search shard only.
  */
 export async function loadCalculatorItemMetaProvisional(input: {
   readonly bundle: string;
   readonly item: string;
 }): Promise<CalculatorItemMeta | null> {
-  const code = input.item.trim();
-  if (!code) return null;
-  const pkg = findPackage(input.bundle);
-  if (!pkg || pkg.strategy !== 'fixed-coefficient') return null;
   try {
-    const { entries } = await loadSearchIndex();
-    const hit = entries.find(
-      (row) => row.kind === 'ahsp-coef' && row.bundleId === input.bundle && row.code === code,
-    );
-    if (!hit) return null;
-    return {
-      kode_ahsp: hit.code,
-      nama: hit.name,
-      strategy: 'fixed-coefficient',
-      bundleDisplayName: pkg.displayName,
-      sumberRegulasi: hit.subtitle || undefined,
-      variables: {},
-      marginDefaults: { overhead_pct: 10, profit_pct: 5 },
-    };
+    return await loadCalculatorItemMeta(input);
   } catch {
     return null;
   }
@@ -236,24 +232,29 @@ export async function loadCalculatorItemMeta(input: {
       };
     }
     case 'fixed-coefficient': {
-      const loaded = await loadFixedItemsCached(pkg);
-      const matches = loaded.ahspItems.filter((row: FixedCoefficientItem) => row.kode_ahsp === code);
-      const found = matches[0];
-      if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+      const entries = await loadAhspSearchEntries();
+      const matches = entries.filter(
+        (row) => row.kind === 'ahsp-coef' && row.bundleId === input.bundle && row.code === code,
+      );
+      const hit = matches[0];
+      if (!hit) {
+        throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+      }
       if (matches.length > 1) {
         throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
       }
+      const sumber =
+        typeof hit.meta?.sumber_regulasi === 'string'
+          ? hit.meta.sumber_regulasi
+          : undefined;
       return {
-        kode_ahsp: found.kode_ahsp,
-        nama: found.nama,
+        kode_ahsp: hit.code,
+        nama: hit.name,
         strategy: 'fixed-coefficient',
         bundleDisplayName: pkg.displayName,
-        sumberRegulasi: found.provenance.sumber_regulasi || undefined,
+        sumberRegulasi: sumber,
         variables: {},
-        marginDefaults: {
-          overhead_pct: found.margin.overhead_pct.default,
-          profit_pct: found.margin.profit_pct.default,
-        },
+        marginDefaults: marginDefaultsFromSearchMeta(hit.meta),
       };
     }
     default: {

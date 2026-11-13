@@ -15,7 +15,6 @@ import {
   listCalculatorHsd,
   loadCalculatorHsdMeta,
   loadCalculatorItemMeta,
-  loadCalculatorItemMetaProvisional,
   parseCalculatorVariables,
   prefetchCalculatorBundle,
   type CalculatorBundleOption,
@@ -38,8 +37,8 @@ function readUrlState(): {
 } {
   const params = new URLSearchParams(window.location.search);
   return {
-    bundle: params.get('bundle') ?? 'cipta-karya-2024',
-    item: params.get('item') ?? '1.2.1.1.1',
+    bundle: params.get('bundle') ?? 'pupr-2023',
+    item: params.get('item') ?? '',
     hsd: params.get('hsd') ?? '',
     focus: params.get('focus') ?? '',
   };
@@ -58,8 +57,8 @@ function writeUrlState(next: { bundle: string; item: string; hsd: string }): voi
 export function CalculatorApp(): React.JSX.Element {
   const bundles = useMemo(() => listCalculatorBundles(), []);
   const hsdOptions = useMemo(() => listCalculatorHsd(), []);
-  const [bundle, setBundle] = useState('cipta-karya-2024');
-  const [item, setItem] = useState('1.2.1.1.1');
+  const [bundle, setBundle] = useState('pupr-2023');
+  const [item, setItem] = useState('');
   const [hsd, setHsd] = useState('');
   const [focus, setFocus] = useState('');
   const [overhead, setOverhead] = useState('10');
@@ -121,22 +120,6 @@ export function CalculatorApp(): React.JSX.Element {
       return;
     }
     setMetaStatus('loading');
-
-    if (selected?.strategy === 'fixed-coefficient') {
-      void loadCalculatorItemMetaProvisional({ bundle, item: code })
-        .then((provisional) => {
-          if (cancelled || !provisional) return;
-          setItemMeta(provisional);
-          setItemVars(defaultsFromItemMeta(provisional));
-          setOverhead(String(provisional.marginDefaults.overhead_pct));
-          setProfit(String(provisional.marginDefaults.profit_pct));
-          setMetaStatus('ready');
-          setMetaError(null);
-        })
-        .catch(() => {
-          /* full load will surface errors */
-        });
-    }
 
     const timer = window.setTimeout(() => {
       void loadCalculatorItemMeta({ bundle, item: code })

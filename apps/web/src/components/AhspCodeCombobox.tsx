@@ -2,7 +2,11 @@ import Fuse from 'fuse.js';
 import { Search } from 'lucide-react';
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Input } from '@/components/ui/input';
-import { loadSearchIndex, type SearchIndexEntry } from '@/lib/search-client';
+import {
+  loadAhspSearchEntries,
+  loadHspPortalSearchEntries,
+  type SearchIndexEntry,
+} from '@/lib/search-client';
 import { cn } from '@/lib/utils';
 
 const SUGGESTION_LIMIT = 10;
@@ -75,8 +79,10 @@ export function AhspCodeCombobox({
   function ensureIndex(): void {
     if (indexState !== 'idle') return;
     setIndexState('loading');
-    void loadSearchIndex()
-      .then(({ entries: loaded }) => {
+    const loader =
+      bundle === 'hsp-jakarta-dcktrp' ? loadHspPortalSearchEntries() : loadAhspSearchEntries();
+    void loader
+      .then((loaded) => {
         setEntries(loaded);
         setIndexState('ready');
       })
@@ -84,6 +90,13 @@ export function AhspCodeCombobox({
         setIndexState('error');
       });
   }
+
+  useEffect(() => {
+    setEntries([]);
+    setIndexState('idle');
+    setOpen(false);
+    setActiveIndex(-1);
+  }, [bundle]);
 
   useEffect(() => {
     if (value.trim()) {
