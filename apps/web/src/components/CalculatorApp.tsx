@@ -14,7 +14,8 @@ import {
   listCalculatorBundles,
   listCalculatorHsd,
   loadCalculatorHsdMeta,
-  loadCalculatorItemMeta,
+  enrichDynamicCalculatorItemMeta,
+  loadCalculatorItemMetaFromSearch,
   parseCalculatorVariables,
   prefetchCalculatorBundle,
   type CalculatorBundleOption,
@@ -67,6 +68,7 @@ export function CalculatorApp(): React.JSX.Element {
   const [itemMeta, setItemMeta] = useState<CalculatorItemMeta | null>(null);
   const [metaError, setMetaError] = useState<string | null>(null);
   const [metaStatus, setMetaStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
+  const [enrichStatus, setEnrichStatus] = useState<'idle' | 'loading' | 'ready'>('idle');
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<HSPResult | null>(null);
@@ -117,12 +119,14 @@ export function CalculatorApp(): React.JSX.Element {
     setMetaError(null);
     if (!code) {
       setMetaStatus('idle');
+      setEnrichStatus('idle');
       return;
     }
     setMetaStatus('loading');
+    setEnrichStatus('idle');
 
     const timer = window.setTimeout(() => {
-      void loadCalculatorItemMeta({ bundle, item: code })
+      void loadCalculatorItemMetaFromSearch({ bundle, item: code })
         .then((meta) => {
           if (cancelled) return;
           setItemMeta(meta);
@@ -130,11 +134,32 @@ export function CalculatorApp(): React.JSX.Element {
           setOverhead(String(meta.marginDefaults.overhead_pct));
           setProfit(String(meta.marginDefaults.profit_pct));
           setMetaStatus('ready');
+          if (meta.strategy !== 'dynamic-bundle') {
+            setEnrichStatus('ready');
+            return;
+          }
+          setEnrichStatus('loading');
+          return enrichDynamicCalculatorItemMeta({ bundle, item: code }, meta)
+            .then((enriched) => {
+              if (cancelled) return;
+              setItemMeta(enriched);
+              setItemVars(defaultsFromItemMeta(enriched));
+              setOverhead(String(enriched.marginDefaults.overhead_pct));
+              setProfit(String(enriched.marginDefaults.profit_pct));
+              setEnrichStatus('ready');
+            })
+            .catch((err: unknown) => {
+              if (cancelled) return;
+              setEnrichStatus('idle');
+              setMetaStatus('error');
+              setMetaError(err instanceof Error ? err.message : 'Gagal memuat variabel item');
+            });
         })
         .catch((err: unknown) => {
           if (cancelled) return;
           setItemMeta(null);
           setItemVars({});
+          setEnrichStatus('idle');
           setMetaStatus('error');
           setMetaError(err instanceof Error ? err.message : 'Gagal memuat definisi item');
         });
@@ -146,10 +171,13 @@ export function CalculatorApp(): React.JSX.Element {
     };
   }, [bundle, item, selected?.strategy]);
 
+  const trimmedItem = item.trim();
   const metaReady =
-    metaStatus === 'ready'
+    trimmedItem !== ''
+    && metaStatus === 'ready'
+    && enrichStatus !== 'loading'
     && itemMeta !== null
-    && itemMeta.kode_ahsp === item.trim();
+    && itemMeta.kode_ahsp === trimmedItem;
 
   /** Run calculation and sync URL state. */
   async function onSubmit(event: SyntheticEvent<HTMLFormElement>): Promise<void> {
@@ -219,7 +247,16 @@ export function CalculatorApp(): React.JSX.Element {
             <span className="font-medium" id="calc-bundle-label">Bundel</span>
             <NativeSelect
               aria-labelledby="calc-bundle-label"
-              onChange={(event) => setBundle(event.target.value)}
+              onChange={(event) => {
+                const nextBundle = event.target.value;
+                const match = bundles.find((row) => row.name === nextBundle);
+                const nextHsd =
+                  match?.strategy === 'dynamic-bundle' ? (match.defaultHsd ?? '') : '';
+                setBundle(nextBundle);
+                setItem('');
+                setHsd(nextHsd);
+                writeUrlState({ bundle: nextBundle, item: '', hsd: nextHsd });
+              }}
               value={bundle}
             >
               {bundles.map((option) => (
@@ -348,13 +385,19 @@ export function CalculatorApp(): React.JSX.Element {
           <Button className="w-full" disabled={status === 'running' || !metaReady} type="submit">
             {status === 'running'
               ? isPortal ? 'Memuat…' : 'Menghitung…'
-              : !metaReady
-                ? selected?.strategy === 'fixed-coefficient'
-                  ? 'Memuat bundel…'
-                  : 'Memuat item…'
-                : isPortal
-                  ? 'Tampilkan harga'
-                  : 'Hitung'}
+              : !trimmedItem
+                ? 'Pilih kode AHSP'
+                : metaStatus === 'loading' || enrichStatus === 'loading'
+                  ? selected?.strategy === 'fixed-coefficient'
+                    ? 'Memuat indeks…'
+                    : 'Memuat item…'
+                  : metaStatus === 'error'
+                    ? 'Perbaiki kode item'
+                    : !metaReady
+                      ? 'Pilih kode AHSP'
+                      : isPortal
+                        ? 'Tampilkan harga'
+                        : 'Hitung'}
           </Button>
         </div>
         {!isPortal ? (
