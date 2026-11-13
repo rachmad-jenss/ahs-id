@@ -187,8 +187,58 @@ export async function loadCalculatorItemMetaProvisional(input: {
   }
 }
 
-/** Load AHSP item variable definitions for the calculator form. */
-export async function loadCalculatorItemMeta(input: {
+function findAhspCoefInSearch(
+  entries: readonly SearchIndexEntry[],
+  bundleId: string,
+  code: string,
+): SearchIndexEntry {
+  const matches = entries.filter(
+    (row) => row.kind === 'ahsp-coef' && row.bundleId === bundleId && row.code === code,
+  );
+  const hit = matches[0];
+  if (!hit) {
+    throw new Error(`AHSP "${code}" tidak ditemukan di indeks ${bundleId}`);
+  }
+  if (matches.length > 1) {
+    throw new Error(`AHSP "${code}" tidak unik di indeks ${bundleId}`);
+  }
+  return hit;
+}
+
+function dynamicMetaFromBundleRow(
+  pkg: Extract<PackageRecord, { strategy: 'dynamic-bundle' }>,
+  found: {
+    readonly kode_ahsp: string;
+    readonly nama: string;
+    readonly provenance: { readonly sumber_regulasi?: string };
+    readonly margin: {
+      readonly overhead_pct: { readonly default: number };
+      readonly profit_pct: { readonly default: number };
+    };
+    readonly variabel: Readonly<Record<string, VariabelDefinition>>;
+    readonly peralatan: readonly EffectiveVariablePeralatan[];
+  },
+  base?: CalculatorItemMeta,
+): CalculatorItemMeta {
+  return {
+    kode_ahsp: found.kode_ahsp,
+    nama: found.nama,
+    strategy: 'dynamic-bundle',
+    bundleDisplayName: pkg.displayName,
+    sumberRegulasi: found.provenance.sumber_regulasi || base?.sumberRegulasi,
+    variables: effectiveVariablesFromAhsp(found),
+    marginDefaults: {
+      overhead_pct: found.margin.overhead_pct.default,
+      profit_pct: found.margin.profit_pct.default,
+    },
+  };
+}
+
+/**
+ * Fast path for the kalkulator form — search shards only (no full AHSP bundle JSON).
+ * Dynamic bundles ship with `variables: {}` until {@link enrichDynamicCalculatorItemMeta}.
+ */
+export async function loadCalculatorItemMetaFromSearch(input: {
   readonly bundle: string;
   readonly item: string;
 }): Promise<CalculatorItemMeta> {
@@ -211,38 +261,29 @@ export async function loadCalculatorItemMeta(input: {
   const pkg = assertCalcPackage(findPackage(input.bundle), input.bundle);
   switch (pkg.strategy) {
     case 'dynamic-bundle': {
-      const { bundle } = await pkg.loadBundle();
-      const matches = bundle.ahsp_items.filter((row) => row.kode_ahsp === code);
-      const found = matches[0];
-      if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
-      if (matches.length > 1) {
-        throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
+      const entries = await loadAhspSearchEntries();
+      try {
+        const hit = findAhspCoefInSearch(entries, input.bundle, code);
+        const sumber =
+          typeof hit.meta?.sumber_regulasi === 'string'
+            ? hit.meta.sumber_regulasi
+            : undefined;
+        return {
+          kode_ahsp: hit.code,
+          nama: hit.name,
+          strategy: 'dynamic-bundle',
+          bundleDisplayName: pkg.displayName,
+          sumberRegulasi: sumber,
+          variables: {},
+          marginDefaults: marginDefaultsFromSearchMeta(hit.meta),
+        };
+      } catch {
+        return loadDynamicCalculatorItemMetaFromBundle(pkg, code);
       }
-      return {
-        kode_ahsp: found.kode_ahsp,
-        nama: found.nama,
-        strategy: 'dynamic-bundle',
-        bundleDisplayName: pkg.displayName,
-        sumberRegulasi: found.provenance.sumber_regulasi || undefined,
-        variables: effectiveVariablesFromAhsp(found),
-        marginDefaults: {
-          overhead_pct: found.margin.overhead_pct.default,
-          profit_pct: found.margin.profit_pct.default,
-        },
-      };
     }
     case 'fixed-coefficient': {
       const entries = await loadAhspSearchEntries();
-      const matches = entries.filter(
-        (row) => row.kind === 'ahsp-coef' && row.bundleId === input.bundle && row.code === code,
-      );
-      const hit = matches[0];
-      if (!hit) {
-        throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
-      }
-      if (matches.length > 1) {
-        throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
-      }
+      const hit = findAhspCoefInSearch(entries, input.bundle, code);
       const sumber =
         typeof hit.meta?.sumber_regulasi === 'string'
           ? hit.meta.sumber_regulasi
@@ -262,6 +303,51 @@ export async function loadCalculatorItemMeta(input: {
       throw new Error(`Unhandled strategy: ${String(unreachable)}`);
     }
   }
+}
+
+async function loadDynamicCalculatorItemMetaFromBundle(
+  pkg: Extract<PackageRecord, { strategy: 'dynamic-bundle' }>,
+  code: string,
+): Promise<CalculatorItemMeta> {
+  const { bundle } = await pkg.loadBundle();
+  const matches = bundle.ahsp_items.filter((row) => row.kode_ahsp === code);
+  const found = matches[0];
+  if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+  if (matches.length > 1) {
+    throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
+  }
+  return dynamicMetaFromBundleRow(pkg, found);
+}
+
+/** Merge AHSP bundle variabel definitions after the search index quick path. */
+export async function enrichDynamicCalculatorItemMeta(
+  input: { readonly bundle: string; readonly item: string },
+  base: CalculatorItemMeta,
+): Promise<CalculatorItemMeta> {
+  if (base.strategy !== 'dynamic-bundle') return base;
+  const code = input.item.trim();
+  const pkg = assertCalcPackage(findPackage(input.bundle), input.bundle);
+  if (pkg.strategy !== 'dynamic-bundle') return base;
+  const { bundle } = await pkg.loadBundle();
+  const matches = bundle.ahsp_items.filter((row) => row.kode_ahsp === code);
+  const found = matches[0];
+  if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
+  if (matches.length > 1) {
+    throw new Error(`AHSP "${code}" tidak unik di ${pkg.name}`);
+  }
+  return dynamicMetaFromBundleRow(pkg, found, base);
+}
+
+/** Load AHSP item variable definitions for the calculator form. */
+export async function loadCalculatorItemMeta(input: {
+  readonly bundle: string;
+  readonly item: string;
+}): Promise<CalculatorItemMeta> {
+  const base = await loadCalculatorItemMetaFromSearch(input);
+  if (base.strategy === 'dynamic-bundle') {
+    return enrichDynamicCalculatorItemMeta(input, base);
+  }
+  return base;
 }
 
 /** Load wilayah + legal basis text for the selected HSD catalog. */
