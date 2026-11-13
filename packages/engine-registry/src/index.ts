@@ -86,8 +86,8 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'schema',
     displayName: 'SDA — SE Binkon 47/2026',
     loadItems: async () => {
-      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
-      return { ahspItems: mod.ahspItemsSda };
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026/sda');
+      return { ahspItems: mod.ahspItems };
     },
   },
   {
@@ -97,8 +97,8 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'schema',
     displayName: 'Bina Marga — SE Binkon 47/2026',
     loadItems: async () => {
-      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
-      return { ahspItems: mod.ahspItemsBinaMarga };
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026/bina-marga');
+      return { ahspItems: mod.ahspItems };
     },
   },
   {
@@ -108,8 +108,8 @@ export const PACKAGES: readonly PackageRecord[] = [
     validation: 'schema',
     displayName: 'Cipta Karya — SE Binkon 47/2026',
     loadItems: async () => {
-      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026');
-      return { ahspItems: mod.ahspItemsCiptaKarya };
+      const mod = await import('@ahs-id/ahsp-se-binkon-47-2026/cipta-karya');
+      return { ahspItems: mod.ahspItems };
     },
   },
   {

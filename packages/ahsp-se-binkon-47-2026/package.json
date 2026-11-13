@@ -9,6 +9,18 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./sda": {
+      "types": "./dist/sda.d.ts",
+      "import": "./dist/sda.js"
+    },
+    "./bina-marga": {
+      "types": "./dist/bina-marga.d.ts",
+      "import": "./dist/bina-marga.js"
+    },
+    "./cipta-karya": {
+      "types": "./dist/cipta-karya.d.ts",
+      "import": "./dist/cipta-karya.js"
     }
   },
   "files": [
