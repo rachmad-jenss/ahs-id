@@ -278,7 +278,7 @@ export async function loadCalculatorItemMetaFromSearch(input: {
           marginDefaults: marginDefaultsFromSearchMeta(hit.meta),
         };
       } catch {
-        return loadDynamicCalculatorItemMetaFromBundle(input, pkg, code);
+        return loadDynamicCalculatorItemMetaFromBundle(pkg, code);
       }
     }
     case 'fixed-coefficient': {
@@ -306,7 +306,6 @@ export async function loadCalculatorItemMetaFromSearch(input: {
 }
 
 async function loadDynamicCalculatorItemMetaFromBundle(
-  input: { readonly bundle: string; readonly item: string },
   pkg: Extract<PackageRecord, { strategy: 'dynamic-bundle' }>,
   code: string,
 ): Promise<CalculatorItemMeta> {
