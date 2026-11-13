@@ -236,6 +236,13 @@ describe('hitungHSP', () => {
     expect(result.baseTotal).toBeGreaterThan(0);
   });
 
+  it('labels tenaga kerja with master bundle names', () => {
+    const result = calc.hitungHSP('3.2.1', BASE_VARS);
+    const l01 = result.groups[0]?.components.find((c) => c.ref === 'L.01');
+    expect(l01?.nama).toBe('Pekerja');
+    expect(l01?.nama).not.toBe('L.01');
+  });
+
   it('groups are L, M, E order', () => {
     const result = calc.hitungHSP('3.2.1', BASE_VARS);
     expect(result.groups.map(g => g.type)).toEqual(['L', 'M', 'E']);

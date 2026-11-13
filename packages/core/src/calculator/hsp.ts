@@ -52,6 +52,7 @@ export function createCalculator(
   const hsdSewa = firstByKey(hsd.peralatan_sewa, (entry) => entry.ref);
   const alatMap = new Map(bundle.peralatan.items.map((a) => [a.kode, a]));
   const bahanMasterMap = new Map(bundle.bahan.items.map((b) => [b.kode, b]));
+  const tkMasterMap = new Map(bundle.tenaga_kerja.items.map((tk) => [tk.kode, tk]));
   const fkMap = new Map(bundle.faktor_konversi.items.map((f) => [f.material, f]));
   const mode = config?.mode ?? 'penuh';
   const stalenessDays = config?.hsd_staleness_warning_days;
@@ -88,7 +89,7 @@ export function createCalculator(
       }
     }
 
-    const tkComponents = calcTenagaKerja(item, hsdTenaga, audit);
+    const tkComponents = calcTenagaKerja(item, hsdTenaga, tkMasterMap, audit);
     const bahanComponents = calcBahan(item, hsdBahan, fkMap, bahanMasterMap, item.volume_state_bayar, variabel, audit);
     const alatComponents = calcPeralatan(item, hsd, hsdTenaga, hsdSewa, variabel, alatMap, fkMap, audit, warnings, mode);
 
@@ -166,6 +167,7 @@ function assertModelledItem(item: AhspItem): void {
 function calcTenagaKerja(
   item: AhspItem,
   hsdTenaga: ReadonlyMap<string, HsdRegional['tenaga_kerja'][number]>,
+  tkMasterMap: ReadonlyMap<string, DataBundle['tenaga_kerja']['items'][number]>,
   audit: AuditEntry[],
 ): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
@@ -173,17 +175,19 @@ function calcTenagaKerja(
     if (!hsdEntry) {
       throw new Error(`HSD tenaga kerja "${tk.ref}" not found`);
     }
+    const master = tkMasterMap.get(tk.ref);
+    const nama = master?.nama ?? tk.ref;
     const total = tk.koefisien * hsdEntry.harga_rp;
     audit.push({
       step: 'hsp_tenaga_kerja',
-      detail: `${tk.ref}: ${tk.koefisien} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
+      detail: `${nama} (${tk.ref}): ${tk.koefisien} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
       value: total,
       unit: 'Rp',
     });
     return {
       ref: tk.ref,
       type: 'L' as const,
-      nama: tk.ref,
+      nama,
       satuan: 'OH',
       coefficient: tk.koefisien,
       unit_price: hsdEntry.harga_rp,

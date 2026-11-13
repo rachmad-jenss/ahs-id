@@ -27,13 +27,17 @@ export function calcHspFromBundle(
   item: AhspItem,
   hsd: HsdRegional,
   alatPrices: Map<string, number>,
-  opts?: { overhead_pct?: number; profit_pct?: number },
+  opts?: {
+    readonly overhead_pct?: number;
+    readonly profit_pct?: number;
+    readonly tenagaKerjaNames?: ReadonlyMap<string, string>;
+  },
 ): HSPResult {
   const pricedHsd = brandHsdRegional(hsd);
   const audit: AuditEntry[] = [];
   const warnings: string[] = [];
 
-  const tkComponents = calcTk(item, pricedHsd, audit);
+  const tkComponents = calcTk(item, pricedHsd, opts?.tenagaKerjaNames, audit);
   const bahanComponents = calcBahan(item, pricedHsd, audit);
   const alatComponents = calcAlat(item, alatPrices, audit);
 
@@ -70,20 +74,26 @@ export function calcHspFromBundle(
   });
 }
 
-function calcTk(item: AhspItem, hsd: HsdRegional, audit: AuditEntry[]): PricedComponent[] {
+function calcTk(
+  item: AhspItem,
+  hsd: HsdRegional,
+  tenagaKerjaNames: ReadonlyMap<string, string> | undefined,
+  audit: AuditEntry[],
+): PricedComponent[] {
   return item.tenaga_kerja.map((tk) => {
     const hsdEntry = hsd.tenaga_kerja.find((h) => h.ref === tk.ref);
     if (!hsdEntry) {
       throw new Error(`HSD tenaga kerja "${tk.ref}" not found`);
     }
+    const nama = tenagaKerjaNames?.get(tk.ref) ?? tk.ref;
     const total = tk.koefisien * hsdEntry.harga_rp;
     audit.push({
       step: 'hsp_tenaga_kerja',
-      detail: `${tk.ref}: ${tk.koefisien} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
+      detail: `${nama} (${tk.ref}): ${tk.koefisien} × ${hsdEntry.harga_rp} = ${total.toFixed(0)}`,
       value: total, unit: 'Rp',
     });
     return {
-      ref: tk.ref, type: 'L' as const, nama: tk.ref,
+      ref: tk.ref, type: 'L' as const, nama,
       satuan: 'OH', coefficient: tk.koefisien,
       unit_price: hsdEntry.harga_rp, total_price: total,
     };

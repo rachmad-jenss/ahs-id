@@ -2,19 +2,9 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { basename, dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Ajv, type ErrorObject, type ValidateFunction } from 'ajv';
+import type { PackageDataFileResult, PackageDataMode, PackageDataReport } from './package-data-types.js';
 
-export type PackageDataMode = 'schema' | 'syntax';
-
-export interface PackageDataFileResult {
-  readonly file: string;
-  readonly status: 'ok' | 'fail' | 'skip';
-  readonly message: string;
-}
-
-export interface PackageDataReport {
-  readonly valid: boolean;
-  readonly files: readonly PackageDataFileResult[];
-}
+export type { PackageDataFileResult, PackageDataMode, PackageDataReport } from './package-data-types.js';
 
 const SCHEMA_FILES = {
   'tenaga-kerja': 'tenaga-kerja.schema.json',

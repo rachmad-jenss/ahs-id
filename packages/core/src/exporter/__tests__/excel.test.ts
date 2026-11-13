@@ -99,6 +99,15 @@ function findRowWithLabel(sheet: ExcelJS.Worksheet, label: string): ExcelJS.Row 
   return undefined;
 }
 
+function numericCellValue(value: ExcelJS.CellValue): number {
+  if (typeof value === 'number') return value;
+  if (value && typeof value === 'object' && 'result' in value) {
+    const maybe = (value as { result?: number }).result;
+    if (typeof maybe === 'number') return maybe;
+  }
+  throw new Error(`Unexpected cell value: ${JSON.stringify(value)}`);
+}
+
 describe('exportHspToExcelBuffer', () => {
   it('exports HSP breakdown in RAB column layout', async () => {
     const result = mockHspResult();
@@ -121,13 +130,13 @@ describe('exportHspToExcelBuffer', () => {
     expect(findRowWithLabel(sheet, 'C. Peralatan')).toBeDefined();
 
     const tkSubtotal = findRowWithLabel(sheet, 'Subtotal A. Tenaga Kerja');
-    expect(tkSubtotal?.getCell(5).value).toBeCloseTo(result.groups[0]!.total, 0);
+    expect(numericCellValue(tkSubtotal?.getCell(5).value)).toBeCloseTo(result.groups[0]!.total, 0);
 
     const biayaLangsung = findRowWithLabel(sheet, 'Biaya Langsung');
-    expect(biayaLangsung?.getCell(5).value).toBeCloseTo(result.baseTotal, 0);
+    expect(numericCellValue(biayaLangsung?.getCell(5).value)).toBeCloseTo(result.baseTotal, 0);
 
     const hspRow = findRowWithLabel(sheet, 'Harga Satuan Pekerjaan');
-    expect(hspRow?.getCell(5).value).toBeCloseTo(result.grandTotal, 0);
+    expect(numericCellValue(hspRow?.getCell(5).value)).toBeCloseTo(result.grandTotal, 0);
     expect(result.grandTotal).toBeCloseTo(result.baseTotal * 1.15, 0);
   });
 

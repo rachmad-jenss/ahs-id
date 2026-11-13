@@ -9,6 +9,14 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./validate-package-data": {
+      "types": "./dist/validator/validate-package-data.d.ts",
+      "import": "./dist/validator/validate-package-data.js"
+    },
+    "./excel": {
+      "types": "./dist/exporter/excel.d.ts",
+      "import": "./dist/exporter/excel.js"
     }
   },
   "files": [

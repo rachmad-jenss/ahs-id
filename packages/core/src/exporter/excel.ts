@@ -37,7 +37,10 @@ function writeComponentRow(sheet: ExcelJS.Worksheet, row: number, component: Ahs
   data.getCell(3).numFmt = COEF_FMT;
   data.getCell(4).value = component.unit_price;
   data.getCell(4).numFmt = IDR_FMT;
-  data.getCell(5).value = component.total_price;
+  data.getCell(5).value = {
+    formula: `C${row}*D${row}`,
+    result: component.total_price,
+  };
   data.getCell(5).numFmt = IDR_FMT;
 }
 
@@ -45,39 +48,54 @@ function writeSubtotalRow(
   sheet: ExcelJS.Worksheet,
   row: number,
   sectionLabel: string,
+  firstSumRow: number,
+  lastSumRow: number,
   total: number,
-): void {
+): number {
   const data = sheet.getRow(row);
   data.getCell(1).value = `Subtotal ${sectionLabel}`;
   data.getCell(1).font = { bold: true };
   data.getCell(4).value = 'Subtotal';
   data.getCell(4).font = { bold: true };
   data.getCell(4).alignment = { horizontal: 'right' };
-  data.getCell(5).value = total;
+  data.getCell(5).value = {
+    formula: `SUM(E${firstSumRow}:E${lastSumRow})`,
+    result: total,
+  };
   data.getCell(5).numFmt = IDR_FMT;
   data.getCell(5).font = { bold: true };
+  return row;
 }
 
 function writeSummaryRow(
   sheet: ExcelJS.Worksheet,
   row: number,
   label: string,
-  amount: number,
+  amount: number | { formula: string; result: number },
   options?: { bold?: boolean },
-): void {
+): number {
   const data = sheet.getRow(row);
   data.getCell(1).value = label;
   if (options?.bold) {
     data.getCell(1).font = { bold: true };
   }
-  data.getCell(5).value = amount;
+  if (typeof amount === 'number') {
+    data.getCell(5).value = amount;
+  } else {
+    data.getCell(5).value = amount;
+  }
   data.getCell(5).numFmt = IDR_FMT;
   if (options?.bold) {
     data.getCell(5).font = { bold: true };
   }
+  return row;
 }
 
-function writeSubAhspSection(sheet: ExcelJS.Worksheet, startRow: number, result: HSPResult): number {
+function writeSubAhspSection(
+  sheet: ExcelJS.Worksheet,
+  startRow: number,
+  result: HSPResult,
+): { nextRow: number; subtotalRow: number } {
   let row = startRow;
   const title = sheet.getRow(row);
   title.getCell(1).value = 'D. Sub AHSP';
@@ -85,6 +103,7 @@ function writeSubAhspSection(sheet: ExcelJS.Worksheet, startRow: number, result:
   row += 1;
   writeHeaderRow(sheet, row);
   row += 1;
+  const firstSumRow = row;
   let total = 0;
   for (const line of result.subAhsp) {
     const data = sheet.getRow(row);
@@ -93,16 +112,31 @@ function writeSubAhspSection(sheet: ExcelJS.Worksheet, startRow: number, result:
     data.getCell(3).numFmt = COEF_FMT;
     data.getCell(4).value = line.unit_price;
     data.getCell(4).numFmt = IDR_FMT;
-    data.getCell(5).value = line.total_price;
+    data.getCell(5).value = {
+      formula: `C${row}*D${row}`,
+      result: line.total_price,
+    };
     data.getCell(5).numFmt = IDR_FMT;
     total += line.total_price;
     row += 1;
   }
-  writeSubtotalRow(sheet, row, 'D. Sub AHSP', total);
-  return row + 2;
+  const lastSumRow = result.subAhsp.length > 0 ? row - 1 : row;
+  const subtotalRow = writeSubtotalRow(
+    sheet,
+    row,
+    'D. Sub AHSP',
+    firstSumRow,
+    lastSumRow,
+    total,
+  );
+  return { nextRow: row + 2, subtotalRow };
 }
 
-function writeGroupSection(sheet: ExcelJS.Worksheet, startRow: number, group: AhspGroup): number {
+function writeGroupSection(
+  sheet: ExcelJS.Worksheet,
+  startRow: number,
+  group: AhspGroup,
+): { nextRow: number; subtotalRow: number } {
   let row = startRow;
   const sectionLabel = GROUP_SECTION_LABEL[group.type];
 
@@ -114,15 +148,23 @@ function writeGroupSection(sheet: ExcelJS.Worksheet, startRow: number, group: Ah
   writeHeaderRow(sheet, row);
   row += 1;
 
+  const firstSumRow = row;
   for (const component of group.components) {
     writeComponentRow(sheet, row, component);
     row += 1;
   }
-
-  writeSubtotalRow(sheet, row, sectionLabel, group.total);
+  const lastSumRow = group.components.length > 0 ? row - 1 : row;
+  const subtotalRow = writeSubtotalRow(
+    sheet,
+    row,
+    sectionLabel,
+    firstSumRow,
+    lastSumRow,
+    group.total,
+  );
   row += 2;
 
-  return row;
+  return { nextRow: row, subtotalRow };
 }
 
 /**
@@ -149,11 +191,16 @@ function buildRabWorksheet(workbook: ExcelJS.Workbook, result: HSPResult): Excel
   meta.getCell(1).value = `Satuan pekerjaan: ${result.satuan_bayar}`;
   row += 2;
 
+  const subtotalRows: number[] = [];
   for (const group of result.groups) {
-    row = writeGroupSection(sheet, row, group);
+    const section = writeGroupSection(sheet, row, group);
+    row = section.nextRow;
+    subtotalRows.push(section.subtotalRow);
   }
   if (result.subAhsp.length > 0) {
-    row = writeSubAhspSection(sheet, row, result);
+    const sub = writeSubAhspSection(sheet, row, result);
+    row = sub.nextRow;
+    subtotalRows.push(sub.subtotalRow);
   }
 
   const { overheadValue, profitValue } = splitMargin(result);
@@ -166,18 +213,44 @@ function buildRabWorksheet(workbook: ExcelJS.Workbook, result: HSPResult): Excel
   const directLabel = result.subAhsp.length > 0
     ? 'Biaya Langsung (A+B+C+D)'
     : 'Biaya Langsung (A+B+C)';
-  writeSummaryRow(sheet, row, directLabel, result.baseTotal);
+  const directFormula =
+    subtotalRows.length > 0
+      ? subtotalRows.map((r) => `E${r}`).join('+')
+      : String(result.baseTotal);
+  const directRow = writeSummaryRow(
+    sheet,
+    row,
+    directLabel,
+    subtotalRows.length > 0
+      ? { formula: directFormula, result: result.baseTotal }
+      : result.baseTotal,
+  );
+  row += 1;
+  const overheadRow = writeSummaryRow(
+    sheet,
+    row,
+    `Overhead (${result.overheadPct}%)`,
+    {
+      formula: `E${directRow}*${result.overheadPct}/100`,
+      result: overheadValue,
+    },
+  );
+  row += 1;
+  const profitRow = writeSummaryRow(sheet, row, `Profit (${result.profitPct}%)`, {
+    formula: `E${directRow}*${result.profitPct}/100`,
+    result: profitValue,
+  });
   row += 1;
   writeSummaryRow(
     sheet,
     row,
-    `Overhead (${result.overheadPct}%)`,
-    overheadValue,
+    'Harga Satuan Pekerjaan',
+  {
+      formula: `E${directRow}+E${overheadRow}+E${profitRow}`,
+      result: result.grandTotal,
+    },
+    { bold: true },
   );
-  row += 1;
-  writeSummaryRow(sheet, row, `Profit (${result.profitPct}%)`, profitValue);
-  row += 1;
-  writeSummaryRow(sheet, row, 'Harga Satuan Pekerjaan', result.grandTotal, { bold: true });
 
   return sheet;
 }
@@ -187,7 +260,7 @@ function buildRabWorksheet(workbook: ExcelJS.Workbook, result: HSPResult): Excel
  *
  * Columns: Uraian, Satuan, Koefisien, Harga Satuan, Jumlah — with sections
  * Tenaga Kerja (L), Bahan (M), Peralatan (E), subtotals, overhead, profit,
- * and grand total.
+ * and grand total. Kolom Jumlah memakai formula Excel (koef × harga, SUM, rekapitulasi).
  */
 export async function exportHspToExcelBuffer(result: HSPResult): Promise<Buffer> {
   const workbook = new ExcelJS.Workbook();

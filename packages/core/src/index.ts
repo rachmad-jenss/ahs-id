@@ -67,8 +67,7 @@ export { createCalculator } from './calculator/hsp.js';
 export type { Calculator } from './calculator/hsp.js';
 
 export { validateBundle } from './validator/validate-bundle.js';
-export { validatePackageData } from './validator/validate-package-data.js';
-export type { PackageDataMode, PackageDataFileResult, PackageDataReport } from './validator/validate-package-data.js';
+export type { PackageDataMode, PackageDataFileResult, PackageDataReport } from './validator/package-data-types.js';
 
 export { hitungHsdPeralatan, hitungHsdPeralatanSewa, hitungHsdPeralatanAny } from './calculator/hsd-peralatan.js';
 export type {
@@ -118,8 +117,6 @@ export type { ProduktivitasResult } from './calculator/produktivitas/siklus.js';
 export { calcHspFixedCoefficient } from './calculator/fixed-coefficient.js';
 
 export { calcHspFromBundle } from './calculator/bundle-calc.js';
-
-export { exportHspToExcelBuffer } from './exporter/excel.js';
 
 export type {
   FixedCoefficientItem,
