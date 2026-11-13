@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import {
+  buildHspCalculationSources,
   calculateHspInBrowser,
   defaultsFromItemMeta,
   effectiveVariablesFromAhsp,
   listCalculatorBundles,
+  loadCalculatorHsdMeta,
   loadCalculatorItemMeta,
   parseCalculatorVariables,
 } from '../src/lib/calculator.js';
@@ -13,6 +15,7 @@ describe('web calculator registry', () => {
     const bundles = listCalculatorBundles();
     expect(bundles.some((row) => row.name === 'pupr-2023' && row.strategy === 'dynamic-bundle')).toBe(true);
     expect(bundles.some((row) => row.name === 'cipta-karya-2024' && row.strategy === 'fixed-coefficient')).toBe(true);
+    expect(bundles.some((row) => row.name === 'hsp-jakarta-dcktrp' && row.strategy === 'portal-lookup')).toBe(true);
     expect(bundles.some((row) => row.name === 'sda-se-binkon-47-2026')).toBe(true);
   });
 
@@ -23,8 +26,23 @@ describe('web calculator registry', () => {
       item: '3.1.1',
     });
     expect(meta.strategy).toBe('dynamic-bundle');
+    expect(meta.bundleDisplayName).toBeTruthy();
+    expect(meta.sumberRegulasi).toMatch(/PUPR/);
     expect(meta.variables).toEqual({});
     expect(defaultsFromItemMeta(meta)).toEqual({});
+
+    const bm324 = await loadCalculatorItemMeta({ bundle: 'bina-marga-2016', item: '3.2.4' });
+    const hsdMeta = await loadCalculatorHsdMeta('hsd-kaltim-2025');
+    expect(hsdMeta.displayName).toMatch(/Kalimantan Timur/);
+    const sources = buildHspCalculationSources({
+      bundleName: 'bina-marga-2016',
+      hsdName: 'hsd-kaltim-2025',
+      itemMeta: bm324,
+      hsdMeta,
+    });
+    expect(sources.ahspBundle).toBe(bm324.bundleDisplayName);
+    expect(sources.hsdCatalog).toBe(hsdMeta.displayName);
+    expect(sources.hsdDetail).toContain('Kalimantan Timur');
 
     const filtered = effectiveVariablesFromAhsp({
       variabel: {
@@ -43,6 +61,9 @@ describe('web calculator registry', () => {
       ],
     });
     expect(Object.keys(filtered).sort()).toEqual(['jarak_quarry_km', 'jenis_material']);
+    expect(
+      parseCalculatorVariables(meta, {}, { overhead: '9', profit: '6' }),
+    ).toEqual({ overhead_pct: 9, profit_pct: 6 });
 
     const fixedMeta = await loadCalculatorItemMeta({
       bundle: 'cipta-karya-2024',

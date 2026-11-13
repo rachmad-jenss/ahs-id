@@ -12,11 +12,41 @@ import {
   loadResolvedHsdForBundle,
   type PackageRecord,
 } from '@ahs-id/engine-registry';
+import {
+  findPortalIndexEntry,
+  PORTAL_BUNDLE_DISPLAY,
+  PORTAL_BUNDLE_ID,
+} from '@/lib/portal-hsp';
+import { loadSearchIndex } from '@/lib/search-client';
+
+type FixedCoefficientPackage = Extract<PackageRecord, { strategy: 'fixed-coefficient' }>;
+
+const fixedItemsLoadCache = new Map<string, Promise<{ ahspItems: readonly FixedCoefficientItem[] }>>();
+
+function loadFixedItemsCached(pkg: FixedCoefficientPackage): Promise<{ ahspItems: readonly FixedCoefficientItem[] }> {
+  const existing = fixedItemsLoadCache.get(pkg.name);
+  if (existing) return existing;
+  const pending = pkg.loadItems();
+  fixedItemsLoadCache.set(pkg.name, pending);
+  return pending;
+}
+
+/** Warm bundle JSON in the background (fixed-coefficient catalogs are large). */
+export function prefetchCalculatorBundle(bundleName: string): void {
+  if (bundleName === PORTAL_BUNDLE_ID) return;
+  const pkg = findPackage(bundleName);
+  if (!pkg || pkg.strategy === 'hsd-only') return;
+  if (pkg.strategy === 'fixed-coefficient') {
+    void loadFixedItemsCached(pkg);
+    return;
+  }
+  void pkg.loadBundle();
+}
 
 export interface CalculatorBundleOption {
   readonly name: string;
   readonly displayName: string;
-  readonly strategy: 'dynamic-bundle' | 'fixed-coefficient';
+  readonly strategy: 'dynamic-bundle' | 'fixed-coefficient' | 'portal-lookup';
   readonly defaultHsd?: string;
   readonly compatibleHsd?: readonly string[];
 }
@@ -25,13 +55,32 @@ export interface CalculatorBundleOption {
 export interface CalculatorItemMeta {
   readonly kode_ahsp: string;
   readonly nama: string;
-  readonly strategy: 'dynamic-bundle' | 'fixed-coefficient';
+  readonly strategy: 'dynamic-bundle' | 'fixed-coefficient' | 'portal-lookup';
+  readonly bundleDisplayName: string;
+  /** Item-level regulation citation from bundle provenance (when present). */
+  readonly sumberRegulasi?: string;
   /** Declared AHSP variabel that can change the computed HSP for this item. */
   readonly variables: Readonly<Record<string, VariabelDefinition>>;
   readonly marginDefaults: {
     readonly overhead_pct: number;
     readonly profit_pct: number;
   };
+}
+
+/** Shown beside RAB breakdown so users know which bundles fed the calculation. */
+export interface HspCalculationSources {
+  readonly ahspBundle: string;
+  readonly ahspRegulation?: string;
+  readonly hsdCatalog?: string;
+  readonly hsdDetail?: string;
+  readonly fixedPriceNote?: string;
+  readonly overlayNote?: string;
+}
+
+export interface CalculatorHsdMeta {
+  readonly displayName: string;
+  readonly wilayah: string;
+  readonly dasarHukum: string;
 }
 
 /** Minimal peralatan shape for deciding which declared variabel affect HSP. */
@@ -71,12 +120,12 @@ export function effectiveVariablesFromAhsp(item: {
 }
 
 export function listCalculatorBundles(): readonly CalculatorBundleOption[] {
-  return calculationPackages().map((pkg) => {
+  const engine = calculationPackages().map((pkg) => {
     if (pkg.strategy === 'dynamic-bundle') {
       return {
         name: pkg.name,
         displayName: pkg.displayName,
-        strategy: 'dynamic-bundle',
+        strategy: 'dynamic-bundle' as const,
         defaultHsd: pkg.defaultHsd,
         compatibleHsd: pkg.compatibleHsd,
       };
@@ -84,9 +133,17 @@ export function listCalculatorBundles(): readonly CalculatorBundleOption[] {
     return {
       name: pkg.name,
       displayName: pkg.displayName,
-      strategy: 'fixed-coefficient',
+      strategy: 'fixed-coefficient' as const,
     };
   });
+  return [
+    ...engine,
+    {
+      name: PORTAL_BUNDLE_ID,
+      displayName: PORTAL_BUNDLE_DISPLAY,
+      strategy: 'portal-lookup' as const,
+    },
+  ];
 }
 
 export function listCalculatorHsd(): readonly { name: string; displayName: string }[] {
@@ -102,16 +159,60 @@ function assertCalcPackage(pkg: PackageRecord | undefined, name: string): CalcPa
   return pkg;
 }
 
+/**
+ * Fast item label + default margin for fixed-coefficient bundles via search index
+ * (avoids blocking the UI on the full JSON bundle download).
+ */
+export async function loadCalculatorItemMetaProvisional(input: {
+  readonly bundle: string;
+  readonly item: string;
+}): Promise<CalculatorItemMeta | null> {
+  const code = input.item.trim();
+  if (!code) return null;
+  const pkg = findPackage(input.bundle);
+  if (!pkg || pkg.strategy !== 'fixed-coefficient') return null;
+  try {
+    const { entries } = await loadSearchIndex();
+    const hit = entries.find(
+      (row) => row.kind === 'ahsp-coef' && row.bundleId === input.bundle && row.code === code,
+    );
+    if (!hit) return null;
+    return {
+      kode_ahsp: hit.code,
+      nama: hit.name,
+      strategy: 'fixed-coefficient',
+      bundleDisplayName: pkg.displayName,
+      sumberRegulasi: hit.subtitle || undefined,
+      variables: {},
+      marginDefaults: { overhead_pct: 10, profit_pct: 5 },
+    };
+  } catch {
+    return null;
+  }
+}
+
 /** Load AHSP item variable definitions for the calculator form. */
 export async function loadCalculatorItemMeta(input: {
   readonly bundle: string;
   readonly item: string;
 }): Promise<CalculatorItemMeta> {
-  const pkg = assertCalcPackage(findPackage(input.bundle), input.bundle);
   const code = input.item.trim();
   if (!code) {
     throw new Error('Kode AHSP kosong');
   }
+  if (input.bundle === PORTAL_BUNDLE_ID) {
+    const entry = await findPortalIndexEntry(code);
+    return {
+      kode_ahsp: entry.code,
+      nama: entry.name,
+      strategy: 'portal-lookup',
+      bundleDisplayName: PORTAL_BUNDLE_DISPLAY,
+      sumberRegulasi: entry.subtitle || undefined,
+      variables: {},
+      marginDefaults: { overhead_pct: 0, profit_pct: 0 },
+    };
+  }
+  const pkg = assertCalcPackage(findPackage(input.bundle), input.bundle);
   switch (pkg.strategy) {
     case 'dynamic-bundle': {
       const { bundle } = await pkg.loadBundle();
@@ -125,6 +226,8 @@ export async function loadCalculatorItemMeta(input: {
         kode_ahsp: found.kode_ahsp,
         nama: found.nama,
         strategy: 'dynamic-bundle',
+        bundleDisplayName: pkg.displayName,
+        sumberRegulasi: found.provenance.sumber_regulasi || undefined,
         variables: effectiveVariablesFromAhsp(found),
         marginDefaults: {
           overhead_pct: found.margin.overhead_pct.default,
@@ -133,7 +236,7 @@ export async function loadCalculatorItemMeta(input: {
       };
     }
     case 'fixed-coefficient': {
-      const loaded = await pkg.loadItems();
+      const loaded = await loadFixedItemsCached(pkg);
       const matches = loaded.ahspItems.filter((row: FixedCoefficientItem) => row.kode_ahsp === code);
       const found = matches[0];
       if (!found) throw new Error(`AHSP "${code}" tidak ditemukan di ${pkg.name}`);
@@ -144,6 +247,8 @@ export async function loadCalculatorItemMeta(input: {
         kode_ahsp: found.kode_ahsp,
         nama: found.nama,
         strategy: 'fixed-coefficient',
+        bundleDisplayName: pkg.displayName,
+        sumberRegulasi: found.provenance.sumber_regulasi || undefined,
         variables: {},
         marginDefaults: {
           overhead_pct: found.margin.overhead_pct.default,
@@ -156,6 +261,71 @@ export async function loadCalculatorItemMeta(input: {
       throw new Error(`Unhandled strategy: ${String(unreachable)}`);
     }
   }
+}
+
+/** Load wilayah + legal basis text for the selected HSD catalog. */
+export async function loadCalculatorHsdMeta(hsdName: string): Promise<CalculatorHsdMeta> {
+  const pkg = findPackage(hsdName);
+  if (!pkg || pkg.strategy !== 'hsd-only') {
+    throw new Error(`Unknown HSD "${hsdName}"`);
+  }
+  const { hsd } = await pkg.loadHsd();
+  const { region } = hsd;
+  const wilayahParts = [
+    region.provinsi,
+    region.kuartal ? `Q${region.kuartal} ${region.tahun_berlaku}` : String(region.tahun_berlaku),
+  ].filter(Boolean);
+  return {
+    displayName: pkg.displayName,
+    wilayah: wilayahParts.join(' · '),
+    dasarHukum: region.dasar_hukum,
+  };
+}
+
+/** Build provenance labels for the calculator result panel. */
+export function buildHspCalculationSources(input: {
+  readonly bundleName: string;
+  readonly hsdName?: string;
+  readonly itemMeta: CalculatorItemMeta;
+  readonly hsdMeta?: CalculatorHsdMeta | null;
+}): HspCalculationSources {
+  const base: HspCalculationSources = {
+    ahspBundle: input.itemMeta.bundleDisplayName,
+    ahspRegulation: input.itemMeta.sumberRegulasi,
+  };
+  if (input.itemMeta.strategy === 'portal-lookup') {
+    return {
+      ...base,
+      fixedPriceNote:
+        'Harga satuan publikasi portal Bangun Jakarta (DCKTRP). Bukan hasil hitung koefisien nasional + HSD regional.',
+    };
+  }
+  if (input.itemMeta.strategy === 'fixed-coefficient') {
+    return {
+      ...base,
+      fixedPriceNote:
+        'Koefisien dan harga acuan komponen (`harga_satuan_ref`) dari bundel ini — tanpa katalog HSD regional.',
+    };
+  }
+  let hsdCatalog: string | undefined;
+  let hsdDetail: string | undefined;
+  if (input.hsdMeta) {
+    hsdDetail = [input.hsdMeta.wilayah, input.hsdMeta.dasarHukum].filter(Boolean).join(' — ');
+    hsdCatalog = input.hsdMeta.displayName;
+  } else if (input.hsdName) {
+    hsdCatalog = hsdPackages().find((row) => row.name === input.hsdName)?.displayName ?? input.hsdName;
+  }
+  const overlayNote =
+    input.bundleName === 'bina-marga-2022' && input.hsdName && input.hsdName !== 'hsd-bm-2022'
+      ? 'Harga L/M/E mengikuti Permen (hsd-bm-2022) kecuali ref+nama+satuan cocok dengan HSD regional; '
+        + 'wilayah dan bahan bakar mengikuti katalog regional yang dipilih.'
+      : undefined;
+  return {
+    ...base,
+    hsdCatalog,
+    hsdDetail,
+    overlayNote,
+  };
 }
 
 /** Seed form values from item variable defaults (skips null defaults). */
@@ -198,7 +368,7 @@ export function parseCalculatorVariables(
     const unreachable: never = def.tipe;
     throw new Error(`Tipe variabel tidak didukung: ${String(unreachable)}`);
   }
-  if (meta.strategy === 'fixed-coefficient' && margin) {
+  if (margin) {
     const overheadText = margin.overhead.trim();
     const profitText = margin.profit.trim();
     if (overheadText) {
@@ -240,7 +410,7 @@ export async function calculateHspInBrowser(input: {
       if (input.hsd) {
         throw new Error(`${pkg.name} tidak memakai HSD`);
       }
-      const loaded = await pkg.loadItems();
+      const loaded = await loadFixedItemsCached(pkg);
       const matches = loaded.ahspItems.filter((row: FixedCoefficientItem) => row.kode_ahsp === input.item);
       const found = matches[0];
       if (!found) throw new Error(`AHSP "${input.item}" tidak ditemukan di ${pkg.name}`);

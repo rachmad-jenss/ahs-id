@@ -212,36 +212,52 @@ export function CatalogBrowser({ initialParams, initialBundles = [] }: CatalogBr
 
   const filterControls = (
     <div className="mt-5 grid gap-5">
-      <label className="grid gap-2 text-sm">
-        <span className="font-medium">Jenis</span>
-        <NativeSelect onChange={(event) => changeFilter('kind', event.target.value)} value={kind}>
+      <div className="grid gap-2 text-sm">
+        <span className="font-medium" id="catalog-filter-kind-label">Jenis</span>
+        <NativeSelect
+          aria-labelledby="catalog-filter-kind-label"
+          onChange={(event) => changeFilter('kind', event.target.value)}
+          value={kind}
+        >
           <option value="">Semua jenis</option>
           {SEARCH_KINDS.map((option) => (
             <option key={option} value={option}>{SEARCH_KIND_LABELS[option]}</option>
           ))}
         </NativeSelect>
-      </label>
-      <label className="grid gap-2 text-sm">
-        <span className="font-medium">Bundel</span>
-        <NativeSelect onChange={(event) => changeFilter('bundle', event.target.value)} value={bundle}>
+      </div>
+      <div className="grid gap-2 text-sm">
+        <span className="font-medium" id="catalog-filter-bundle-label">Bundel</span>
+        <NativeSelect
+          aria-labelledby="catalog-filter-bundle-label"
+          onChange={(event) => changeFilter('bundle', event.target.value)}
+          value={bundle}
+        >
           <option value="">Semua bundel</option>
           {bundles.map((option) => <option key={option.id} value={option.id}>{option.name}</option>)}
         </NativeSelect>
-      </label>
-      <label className="grid gap-2 text-sm">
-        <span className="font-medium">Bidang</span>
-        <NativeSelect onChange={(event) => changeFilter('bidang', event.target.value)} value={bidang}>
+      </div>
+      <div className="grid gap-2 text-sm">
+        <span className="font-medium" id="catalog-filter-bidang-label">Bidang</span>
+        <NativeSelect
+          aria-labelledby="catalog-filter-bidang-label"
+          onChange={(event) => changeFilter('bidang', event.target.value)}
+          value={bidang}
+        >
           <option value="">Semua bidang</option>
           {bidangOptions.map((option) => <option key={option} value={option}>{option}</option>)}
         </NativeSelect>
-      </label>
-      <label className="grid gap-2 text-sm">
-        <span className="font-medium">Satuan</span>
-        <NativeSelect onChange={(event) => changeFilter('unit', event.target.value)} value={unit}>
+      </div>
+      <div className="grid gap-2 text-sm">
+        <span className="font-medium" id="catalog-filter-unit-label">Satuan</span>
+        <NativeSelect
+          aria-labelledby="catalog-filter-unit-label"
+          onChange={(event) => changeFilter('unit', event.target.value)}
+          value={unit}
+        >
           <option value="">Semua satuan</option>
           {unitOptions.map((option) => <option key={option} value={option}>{option}</option>)}
         </NativeSelect>
-      </label>
+      </div>
       {hasActiveCriteria && (
         <Button onClick={clearFilters} size="sm" variant="ghost">
           <X aria-hidden="true" className="h-4 w-4" />

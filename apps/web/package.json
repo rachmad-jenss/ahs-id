@@ -38,6 +38,7 @@
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.3.5",
     "class-variance-authority": "^0.7.1",
+    "exceljs": "^4.4.0",
     "clsx": "^2.1.1",
     "fuse.js": "^7.5.0",
     "lucide-react": "^1.49.0",

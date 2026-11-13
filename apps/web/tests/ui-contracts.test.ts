@@ -89,6 +89,7 @@ describe('web UI contracts', () => {
     expect(input).not.toContain('md:text-sm');
     expect(select).toContain('text-base');
     expect(select).toContain('selectFieldClassName');
+    expect(select).toContain('scrollbar-surface');
   });
 
   it('keeps catalog results contained, filterable, and screen-reader friendly', () => {
@@ -130,6 +131,9 @@ describe('web UI contracts', () => {
     const styles = readSource('src/styles/global.css');
 
     expect(item).toContain('Geser tabel ke samping');
+    expect(readSource('src/components/hsp-rab-table.tsx')).toContain('min-w-[44rem]');
+    expect(readSource('src/components/RabDraftPanel.tsx')).toContain('RabDraftMobileCard');
+    expect(readSource('src/components/RabDraftPanel.tsx')).toContain('md:hidden');
     expect(item).toContain('tabindex="0"');
     expect(item).toContain('role="region"');
     expect(item).toContain('aria-describedby');
@@ -140,7 +144,8 @@ describe('web UI contracts', () => {
     expect(item).toContain('scope="col"');
     expect(item).toContain('tabular-nums');
     expect(item).toContain('HSD dinamis');
-    expect(item).toContain('Ekstraksi otomatis');
+    expect(item).toContain('VerificationTierBadge');
+    expect(readSource('src/lib/library-packages.ts')).toContain('Ekstraksi otomatis');
     expect(item).not.toContain('Dynamic HSD');
     expect(item).not.toContain('Fixed coefficient');
     expect(styles).toContain('--font-sans: ui-sans-serif');
@@ -238,6 +243,7 @@ describe('web UI contracts', () => {
     expect(styles).toContain('.home-hero-backdrop');
     expect(styles).toContain('--scrollbar-thumb');
     expect(styles).toContain('.code-surface::-webkit-scrollbar');
+    expect(styles).toContain('.scrollbar-surface');
     expect(styles).toContain('.featured-card-title');
     expect(styles).toContain('a.pressable');
 
@@ -254,6 +260,51 @@ describe('web UI contracts', () => {
     expect(bundles).toContain('bundle-card-link');
     expect(bundles).not.toContain('aria-label={`Jelajahi bundle');
     expect(bundles).not.toContain('Jelajahi bundle</a>');
+  });
+
+  it('shows resolved AHSP name beside the code combobox field', () => {
+    const combobox = readSource('src/components/AhspCodeCombobox.tsx');
+    const calc = readSource('src/components/CalculatorApp.tsx');
+    const styles = readSource('src/styles/global.css');
+
+    expect(combobox).toContain('previewName');
+    expect(combobox).toContain('resolvedName');
+    expect(combobox).toContain('exactMatch');
+    expect(combobox).toContain('showResolvedName');
+    expect(combobox).toContain('line-clamp-3');
+    expect(combobox).toContain('min-w-0 w-full');
+    expect(combobox).not.toContain('text-transparent caret-foreground');
+    expect(combobox).not.toContain('border-l border-border/60');
+    expect(combobox).not.toContain('flex-[1_1_0]');
+    expect(calc).toContain('resolvedName=');
+    expect(calc).toContain('2xl:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]');
+    expect(styles).toContain('.table-scroll-root');
+    expect(readSource('src/components/RabDraftPanel.tsx')).not.toMatch(/table-scroll-root hidden/);
+    expect(calc).toContain('className="w-full"');
+  });
+
+  it('lists DCKTRP portal as a calculator bundle', () => {
+    const calc = readSource('src/components/CalculatorApp.tsx');
+    expect(calc).toContain('portal-lookup');
+    expect(calc).toContain('PortalHspBreakdown');
+    expect(readSource('src/lib/portal-hsp.ts')).toContain('hsp-jakarta-dcktrp');
+  });
+
+  it('exposes overhead and profit for dynamic HSD bundles', () => {
+    const calc = readSource('src/components/CalculatorApp.tsx');
+    expect(calc).toContain('Overhead &amp; profit');
+    expect(calc).not.toMatch(/!needsHsd &&[\s\S]*Overhead %/);
+  });
+
+  it('surfaces AHSP and HSD provenance on calculator results', () => {
+    const breakdown = readSource('src/components/HspRabBreakdown.tsx');
+    const calc = readSource('src/components/CalculatorApp.tsx');
+
+    expect(breakdown).toContain('Sumber data');
+    expect(breakdown).toContain('Koefisien AHSP (AHS)');
+    expect(breakdown).toContain('Harga satuan dasar (HSD)');
+    expect(calc).toContain('buildHspCalculationSources');
+    expect(calc).toContain('resultSources');
   });
 
 });

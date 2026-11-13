@@ -5,20 +5,22 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 
 <SiteLayout
   title="Kalkulator HSP — AHS-ID"
-  description="Hitung harga satuan pekerjaan dari bundel AHSP dan HSD regional — registry yang sama dengan CLI."
+  description="Hitung harga satuan pekerjaan: koefisien AHSP nasional + HSD regional, bundel harga tetap, atau publikasi portal DCKTRP Jakarta."
 >
   <section class="border-b border-border/80 bg-card/45">
-    <div class="mx-auto max-w-7xl px-5 pb-12 pt-14 lg:px-8 lg:pb-16 lg:pt-20">
-      <div class="max-w-3xl">
+    <div class="mx-auto w-full min-w-0 max-w-7xl px-5 pb-12 pt-14 lg:px-8 lg:pb-16 lg:pt-20">
+      <div class="w-full min-w-0 max-w-4xl">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Kalkulator</p>
         <h1 class="mt-4 font-serif text-5xl tracking-[-0.04em] sm:text-7xl">Hitung HSP di browser.</h1>
-        <p class="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-          Memakai `@ahs-id/engine-registry` yang sama dengan CLI. Prefill dari katalog dengan query `bundle` dan `item`.
+        <p class="mt-5 text-lg leading-8 text-pretty text-muted-foreground">
+          Pilih bundel, cari pekerjaan, lihat rincian harga satuan. Link dari katalog mengisi bundel dan kode otomatis.
         </p>
       </div>
     </div>
   </section>
-  <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16">
-    <CalculatorApp client:load />
+  <div class="mx-auto w-full min-w-0 max-w-7xl overflow-x-hidden px-5 py-12 lg:px-8 lg:py-16">
+    <div class="min-w-0 overflow-x-hidden">
+      <CalculatorApp client:load />
+    </div>
   </div>
 </SiteLayout>

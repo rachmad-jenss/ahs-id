@@ -171,7 +171,7 @@ export function SearchLauncher({ examples }: SearchLauncherProps): React.JSX.Ele
           />
           {open && query.trim() && (
             <ul
-              className="absolute z-20 mt-2 max-h-80 w-full overflow-auto rounded-2xl border border-border/80 bg-card p-2 shadow-lg"
+              className="scrollbar-surface absolute z-20 mt-2 max-h-80 w-full overflow-auto rounded-2xl border border-border/80 bg-card p-2 shadow-lg"
               id={listboxId}
               role="listbox"
             >

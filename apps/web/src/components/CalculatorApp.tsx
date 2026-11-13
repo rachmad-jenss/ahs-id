@@ -1,23 +1,34 @@
-import { useEffect, useMemo, useState, type SyntheticEvent } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState, type SyntheticEvent } from 'react';
 import type { HSPResult } from '@ahs-id/core';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { AhspCodeCombobox } from '@/components/AhspCodeCombobox';
+import { HspRabBreakdown } from '@/components/HspRabBreakdown';
+import { PortalHspBreakdown } from '@/components/PortalHspBreakdown';
 import { Input } from '@/components/ui/input';
 import { NativeSelect } from '@/components/ui/select';
 import {
+  buildHspCalculationSources,
   calculateHspInBrowser,
   defaultsFromItemMeta,
   listCalculatorBundles,
   listCalculatorHsd,
+  loadCalculatorHsdMeta,
   loadCalculatorItemMeta,
+  loadCalculatorItemMetaProvisional,
   parseCalculatorVariables,
+  prefetchCalculatorBundle,
   type CalculatorBundleOption,
   type CalculatorItemMeta,
+  type HspCalculationSources,
 } from '@/lib/calculator';
+import { lookupPortalHspInBrowser, PORTAL_BUNDLE_ID, type PortalHspResult } from '@/lib/portal-hsp';
+import { RabDraftPanel } from '@/components/RabDraftPanel';
 
-function formatIdr(value: number): string {
-  return value.toLocaleString('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 2 });
-}
+const HspResultActions = lazy(async () => {
+  const mod = await import('@/components/HspResultActions');
+  return { default: mod.HspResultActions };
+});
 
 function readUrlState(): {
   bundle: string;
@@ -60,8 +71,12 @@ export function CalculatorApp(): React.JSX.Element {
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<HSPResult | null>(null);
+  const [resultSources, setResultSources] = useState<HspCalculationSources | null>(null);
+  const [portalResult, setPortalResult] = useState<PortalHspResult | null>(null);
+  const [rabDraftTick, setRabDraftTick] = useState(0);
 
   const selected: CalculatorBundleOption | undefined = bundles.find((row) => row.name === bundle);
+  const isPortal = selected?.strategy === 'portal-lookup';
   const needsHsd = selected?.strategy === 'dynamic-bundle';
   const variableEntries = useMemo(
     () => Object.entries(itemMeta?.variables ?? {}),
@@ -91,6 +106,10 @@ export function CalculatorApp(): React.JSX.Element {
   }, [bundle, hsd, selected]);
 
   useEffect(() => {
+    void prefetchCalculatorBundle(bundle);
+  }, [bundle]);
+
+  useEffect(() => {
     let cancelled = false;
     const code = item.trim();
     // Invalidate immediately so submit cannot use variables from a previous item.
@@ -102,6 +121,22 @@ export function CalculatorApp(): React.JSX.Element {
       return;
     }
     setMetaStatus('loading');
+
+    if (selected?.strategy === 'fixed-coefficient') {
+      void loadCalculatorItemMetaProvisional({ bundle, item: code })
+        .then((provisional) => {
+          if (cancelled || !provisional) return;
+          setItemMeta(provisional);
+          setItemVars(defaultsFromItemMeta(provisional));
+          setOverhead(String(provisional.marginDefaults.overhead_pct));
+          setProfit(String(provisional.marginDefaults.profit_pct));
+          setMetaStatus('ready');
+          setMetaError(null);
+        })
+        .catch(() => {
+          /* full load will surface errors */
+        });
+    }
 
     const timer = window.setTimeout(() => {
       void loadCalculatorItemMeta({ bundle, item: code })
@@ -126,7 +161,7 @@ export function CalculatorApp(): React.JSX.Element {
       cancelled = true;
       window.clearTimeout(timer);
     };
-  }, [bundle, item]);
+  }, [bundle, item, selected?.strategy]);
 
   const metaReady =
     metaStatus === 'ready'
@@ -144,6 +179,19 @@ export function CalculatorApp(): React.JSX.Element {
       if (!itemMeta || itemMeta.kode_ahsp !== code) {
         throw new Error(metaError ?? 'Definisi item belum siap');
       }
+      if (isPortal) {
+        const portal = await lookupPortalHspInBrowser(code);
+        setPortalResult(portal);
+        setResult(null);
+        setResultSources(
+          buildHspCalculationSources({
+            bundleName: PORTAL_BUNDLE_ID,
+            itemMeta,
+          }),
+        );
+        setStatus('done');
+        return;
+      }
       const variables = parseCalculatorVariables(itemMeta, itemVars, {
         overhead,
         profit,
@@ -154,50 +202,78 @@ export function CalculatorApp(): React.JSX.Element {
         hsd: needsHsd ? hsd : undefined,
         variables: Object.keys(variables).length > 0 ? variables : undefined,
       });
+      const hsdMeta = needsHsd && hsd ? await loadCalculatorHsdMeta(hsd) : null;
+      setPortalResult(null);
       setResult(next);
+      setResultSources(
+        buildHspCalculationSources({
+          bundleName: bundle,
+          hsdName: needsHsd ? hsd : undefined,
+          itemMeta,
+          hsdMeta,
+        }),
+      );
       setStatus('done');
     } catch (err) {
       setResult(null);
+      setPortalResult(null);
+      setResultSources(null);
       setStatus('error');
       setError(err instanceof Error ? err.message : 'Perhitungan gagal');
     }
   }
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[22rem_1fr]">
-      <form className="h-fit rounded-3xl border border-border/80 bg-card/60 p-6" onSubmit={(event) => void onSubmit(event)}>
+    <div className="grid w-full min-w-0 max-w-full grid-cols-1 gap-8 overflow-x-hidden 2xl:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] 2xl:items-start">
+      <form
+        className="h-fit min-w-0 w-full rounded-3xl border border-border/80 bg-card/60 p-5 sm:p-6 2xl:sticky 2xl:top-6"
+        onSubmit={(event) => void onSubmit(event)}
+      >
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Input</p>
-        <h2 className="mt-2 font-serif text-2xl">Hitung HSP</h2>
-        <div className="mt-6 grid gap-4">
-          <label className="grid gap-2 text-sm">
-            <span className="font-medium">Bundel</span>
-            <NativeSelect onChange={(event) => setBundle(event.target.value)} value={bundle}>
+        <h2 className="mt-2 font-serif text-xl sm:text-2xl">Hitung HSP</h2>
+        <div className="mt-6 grid min-w-0 gap-4">
+          <div className="grid gap-2 text-sm">
+            <span className="font-medium" id="calc-bundle-label">Bundel</span>
+            <NativeSelect
+              aria-labelledby="calc-bundle-label"
+              onChange={(event) => setBundle(event.target.value)}
+              value={bundle}
+            >
               {bundles.map((option) => (
                 <option key={option.name} value={option.name}>{option.displayName}</option>
               ))}
             </NativeSelect>
-          </label>
-          <label className="grid gap-2 text-sm">
-            <span className="font-medium">Kode AHSP</span>
-            <Input onChange={(event) => setItem(event.target.value)} value={item} />
-          </label>
-          {itemMeta && (
-            <p className="text-xs leading-5 text-muted-foreground">{itemMeta.nama}</p>
-          )}
+          </div>
+          <div className="grid gap-2 text-sm">
+            <span className="font-medium" id="calc-item-label">{isPortal ? 'Kode / pekerjaan' : 'Kode AHSP'}</span>
+            <AhspCodeCombobox
+              aria-labelledby="calc-item-label"
+              bundle={bundle}
+              onChange={setItem}
+              resolvedName={
+                itemMeta && itemMeta.kode_ahsp === item.trim() ? itemMeta.nama : undefined
+              }
+              value={item}
+            />
+          </div>
           {metaStatus === 'error' && metaError && (
             <p className="text-xs leading-5 text-destructive">{metaError}</p>
           )}
           {needsHsd && (
             <div className="grid gap-2 text-sm">
-              <label className="grid gap-2">
-                <span className="font-medium">HSD regional</span>
-                <NativeSelect onChange={(event) => setHsd(event.target.value)} value={hsd}>
+              <div className="grid gap-2">
+                <span className="font-medium" id="calc-hsd-label">HSD regional</span>
+                <NativeSelect
+                  aria-labelledby="calc-hsd-label"
+                  onChange={(event) => setHsd(event.target.value)}
+                  value={hsd}
+                >
                   {(selected?.compatibleHsd ?? []).map((name) => {
                     const label = hsdOptions.find((row) => row.name === name)?.displayName ?? name;
                     return <option key={name} value={name}>{label}</option>;
                   })}
                 </NativeSelect>
-              </label>
+              </div>
               {bundle === 'bina-marga-2022' && hsd !== 'hsd-bm-2022' && (
                 <p className="text-xs leading-5 text-muted-foreground">
                   Bina Marga 2022: harga L/M/E tetap dari Permen kecuali ref+nama+satuan
@@ -213,14 +289,15 @@ export function CalculatorApp(): React.JSX.Element {
                 Variabel item
               </p>
               {variableEntries.map(([key, def]) => (
-                <label className="grid gap-2 text-sm" key={key}>
-                  <span className="font-medium">
+                <div className="grid gap-2 text-sm" key={key}>
+                  <span className="font-medium" id={`calc-var-label-${key}`}>
                     {def.label}
                     {def.satuan ? ` (${def.satuan})` : ''}
                     {def.required ? ' *' : ''}
                   </span>
                   {def.tipe === 'enum' ? (
                     <NativeSelect
+                      aria-labelledby={`calc-var-label-${key}`}
                       onChange={(event) => setItemVars((prev) => ({ ...prev, [key]: event.target.value }))}
                       value={itemVars[key] ?? ''}
                     >
@@ -231,13 +308,14 @@ export function CalculatorApp(): React.JSX.Element {
                     </NativeSelect>
                   ) : (
                     <Input
+                      aria-labelledby={`calc-var-label-${key}`}
                       inputMode="decimal"
                       onChange={(event) => setItemVars((prev) => ({ ...prev, [key]: event.target.value }))}
                       placeholder={def.default === null ? 'Wajib diisi' : undefined}
                       value={itemVars[key] ?? ''}
                     />
                   )}
-                </label>
+                </div>
               ))}
             </div>
           )}
@@ -246,37 +324,79 @@ export function CalculatorApp(): React.JSX.Element {
               Tidak ada variabel yang memengaruhi HSP untuk item ini (biasanya koefisien tabel).
             </p>
           )}
-          {!needsHsd && (
-            <div className="grid grid-cols-2 gap-3">
-              <label className="grid gap-2 text-sm">
+          {!isPortal ? (
+          <div className="grid gap-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+              Overhead &amp; profit
+            </p>
+            <div className="grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-2">
+              <label className="grid min-w-0 gap-2 text-sm">
                 <span className="font-medium">Overhead %</span>
-                <Input inputMode="decimal" onChange={(event) => setOverhead(event.target.value)} value={overhead} />
+                <Input
+                  disabled={!metaReady}
+                  inputMode="decimal"
+                  onChange={(event) => setOverhead(event.target.value)}
+                  value={overhead}
+                />
               </label>
-              <label className="grid gap-2 text-sm">
+              <label className="grid min-w-0 gap-2 text-sm">
                 <span className="font-medium">Profit %</span>
-                <Input inputMode="decimal" onChange={(event) => setProfit(event.target.value)} value={profit} />
+                <Input
+                  disabled={!metaReady}
+                  inputMode="decimal"
+                  onChange={(event) => setProfit(event.target.value)}
+                  value={profit}
+                />
               </label>
             </div>
+            <p className="text-pretty text-xs leading-5 text-muted-foreground">
+              Nilai awal mengikuti item AHSP yang dipilih. Total overhead dan profit harus antara 10% dan 15%
+              dari biaya langsung (A+B+C).
+            </p>
+          </div>
+          ) : (
+            <p className="text-xs leading-5 text-muted-foreground">
+              Pilih pekerjaan dari katalog portal Jakarta — harga satuan ditampilkan apa adanya dari DCKTRP.
+            </p>
           )}
           {focus && (
             <p className="text-xs text-muted-foreground">Fokus peralatan dari search: <span className="font-mono">{focus}</span></p>
           )}
-          <Button disabled={status === 'running' || !metaReady} type="submit">
-            {status === 'running' ? 'Menghitung…' : !metaReady ? 'Memuat item…' : 'Hitung'}
+          <Button className="w-full" disabled={status === 'running' || !metaReady} type="submit">
+            {status === 'running'
+              ? isPortal ? 'Memuat…' : 'Menghitung…'
+              : !metaReady
+                ? selected?.strategy === 'fixed-coefficient'
+                  ? 'Memuat bundel…'
+                  : 'Memuat item…'
+                : isPortal
+                  ? 'Tampilkan harga'
+                  : 'Hitung'}
           </Button>
         </div>
-        <p className="mt-5 text-xs leading-5 text-muted-foreground">
-          HSP portal DCKTRP tidak dihitung di sini — buka halaman detail HSP untuk harga portal.
-        </p>
+        {!isPortal ? (
+          <p className="mt-5 text-pretty text-xs leading-5 text-muted-foreground">
+            Mode ini menghitung HSP dari koefisien AHSP nasional dan HSD regional. Untuk harga portal DKI, pilih
+            bundel <span className="font-medium text-foreground">HSP portal DCKTRP</span> di atas.
+          </p>
+        ) : null}
       </form>
 
-      <section aria-labelledby="calc-result-heading">
+      <section aria-labelledby="calc-result-heading" className="min-w-0">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Hasil</p>
-            <h2 className="mt-1 font-serif text-3xl" id="calc-result-heading">Rincian HSP</h2>
+            <h2 className="mt-1 font-serif text-2xl sm:text-3xl" id="calc-result-heading">Rincian HSP</h2>
           </div>
-          {selected && <Badge variant="muted">{selected.strategy === 'dynamic-bundle' ? 'HSD dinamis' : 'Koefisien tetap'}</Badge>}
+          {selected && (
+            <Badge variant="muted">
+              {selected.strategy === 'portal-lookup'
+                ? 'Harga portal'
+                : selected.strategy === 'dynamic-bundle'
+                  ? 'HSD dinamis'
+                  : 'Koefisien tetap'}
+            </Badge>
+          )}
         </div>
 
         {status === 'error' && (
@@ -285,63 +405,42 @@ export function CalculatorApp(): React.JSX.Element {
           </div>
         )}
 
-        {result ? (
-          <div className="mt-6 overflow-hidden rounded-2xl border border-border/80 bg-card/50">
-            <div className="grid gap-4 border-b border-border/80 px-5 py-5 sm:grid-cols-3">
-              <div>
-                <p className="text-xs text-muted-foreground">Kode</p>
-                <p className="mt-1 font-mono font-semibold text-primary">{result.kode_ahsp}</p>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Nama</p>
-                <p className="mt-1 font-medium">{result.nama}</p>
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">HSP</p>
-                <p className="mt-1 font-mono text-xl font-semibold tabular-nums">{formatIdr(result.grandTotal)}</p>
-              </div>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[40rem] text-left text-sm">
-                <thead className="border-b border-border/80 bg-muted/50 text-xs uppercase tracking-[0.12em] text-muted-foreground">
-                  <tr>
-                    <th className="px-5 py-3 font-medium">Komponen</th>
-                    <th className="px-5 py-3 font-medium">Satuan</th>
-                    <th className="px-5 py-3 text-right font-medium">Koefisien</th>
-                    <th className="px-5 py-3 text-right font-medium">Harga satuan</th>
-                    <th className="px-5 py-3 text-right font-medium">Jumlah</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border/70">
-                  {result.groups.flatMap((group) =>
-                    group.components.map((component) => (
-                      <tr key={`${group.type}-${component.ref}-${component.nama}`}>
-                        <td className="px-5 py-3">
-                          <div className="font-medium">{component.nama || component.ref}</div>
-                          <div className="mt-1 font-mono text-xs text-muted-foreground">{component.ref} · {group.title}</div>
-                        </td>
-                        <td className="px-5 py-3 text-muted-foreground">{component.satuan}</td>
-                        <td className="px-5 py-3 text-right font-mono">{component.coefficient.toLocaleString('id-ID')}</td>
-                        <td className="px-5 py-3 text-right font-mono">{formatIdr(component.unit_price)}</td>
-                        <td className="px-5 py-3 text-right font-mono">{formatIdr(component.total_price)}</td>
-                      </tr>
-                    )),
-                  )}
-                </tbody>
-              </table>
-            </div>
-            <dl className="grid gap-3 border-t border-border/80 px-5 py-5 text-sm sm:grid-cols-3">
-              <div><dt className="text-muted-foreground">Biaya langsung</dt><dd className="mt-1 font-mono">{formatIdr(result.baseTotal)}</dd></div>
-              <div><dt className="text-muted-foreground">Overhead + profit</dt><dd className="mt-1 font-mono">{formatIdr(result.overheadProfitValue)}</dd></div>
-              <div><dt className="text-muted-foreground">HSP akhir</dt><dd className="mt-1 font-mono font-semibold">{formatIdr(result.grandTotal)}</dd></div>
-            </dl>
+        {portalResult ? (
+          <div className="mt-6 min-w-0 space-y-5">
+            <PortalHspBreakdown result={portalResult} />
+            <Suspense fallback={null}>
+              <HspResultActions
+                bundle={PORTAL_BUNDLE_ID}
+                kind="portal"
+                onSaved={() => setRabDraftTick((n) => n + 1)}
+                portalResult={portalResult}
+              />
+            </Suspense>
+          </div>
+        ) : result ? (
+          <div className="mt-6 min-w-0 space-y-5">
+            <HspRabBreakdown result={result} sources={resultSources} />
+            <Suspense fallback={null}>
+              <HspResultActions
+                bundle={bundle}
+                engineResult={result}
+                hsd={needsHsd ? hsd : undefined}
+                kind="engine"
+                onSaved={() => setRabDraftTick((n) => n + 1)}
+              />
+            </Suspense>
           </div>
         ) : status === 'idle' || status === 'running' ? (
           <p className="mt-6 text-sm leading-6 text-muted-foreground">
-            Pilih bundel dan kode AHSP, lalu hitung. Hasil memakai registry yang sama dengan CLI `ahs-id calc-hsp`.
+            {isPortal
+              ? 'Cari pekerjaan di katalog DCKTRP, lalu klik Tampilkan harga.'
+              : 'Pilih bundel dan kode AHSP, lalu hitung. Hasil rincian mengikuti format analisa harga satuan (A+B+C, overhead, profit).'}
           </p>
         ) : null}
       </section>
+      <div className="min-w-0 2xl:col-span-2">
+        <RabDraftPanel refreshKey={rabDraftTick} />
+      </div>
     </div>
   );
 }

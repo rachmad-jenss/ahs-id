@@ -1,5 +1,5 @@
 ---
-import { ChevronDown, Monitor, Moon, Sun } from 'lucide-react';
+import { Menu, Monitor, Moon, Sun } from 'lucide-react';
 import '../styles/global.css';
 
 interface Props {
@@ -105,9 +105,25 @@ const navItems = [
             <span class="sr-only" id="theme-toggle-label">Tema tampilan: Sistem</span>
           </button>
 
+          <a
+            class="pressable inline-flex min-h-11 w-11 shrink-0 items-center justify-center text-muted-foreground transition-colors hover-fine-text-primary md:hidden"
+            href="https://github.com/rachmad-jenss/ahs-id"
+            rel="noreferrer"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg aria-hidden="true" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.483 0-.237-.009-.866-.014-1.7-2.782.604-3.369-1.342-3.369-1.342-.455-1.157-1.11-1.465-1.11-1.465-.908-.621.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.892 1.529 2.341 1.088 2.91.832.091-.647.349-1.088.635-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .268.18.578.688.48A10.001 10.001 0 0 0 22 12c0-5.523-4.477-10-10-10Z" />
+            </svg>
+          </a>
+
           <details class="group relative md:hidden">
-            <summary class="pressable flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-full border border-border px-4 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-              Menu <ChevronDown aria-hidden="true" className="disclosure-chevron h-4 w-4 transition-transform duration-150 group-open:rotate-180" />
+            <summary
+              class="pressable inline-flex min-h-11 w-11 cursor-pointer list-none items-center justify-center text-muted-foreground transition-colors hover-fine-text-primary marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label="Menu navigasi"
+              title="Menu"
+            >
+              <Menu aria-hidden="true" className="h-5 w-5" />
             </summary>
             <nav class="mobile-menu-panel absolute right-0 top-14 w-56 rounded-2xl border border-border bg-card p-2 shadow-xl" aria-label="Navigasi mobile">
               {navItems.map((item) => (
@@ -120,7 +136,6 @@ const navItems = [
                   href={item.href}
                 >{item.label}</a>
               ))}
-              <a class="pressable flex min-h-11 items-center rounded-xl px-3 py-2 text-sm text-foreground hover-fine-bg-muted" href="https://github.com/rachmad-jenss/ahs-id" rel="noreferrer">GitHub</a>
             </nav>
           </details>
         </div>
